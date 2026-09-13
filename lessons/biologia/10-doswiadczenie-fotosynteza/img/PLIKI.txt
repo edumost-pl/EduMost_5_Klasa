@@ -1,0 +1,28 @@
+# Lekcja 10 — Doświadczenie: fotosynteza
+# Folder GitHub:
+# Biologia/L10_Doswiadczenie_fotosynteza/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l10-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9. Zielony liść na roślinie, przez środek przyklejony jasny pasek papieru lub folii. Jasne światło. Bez twarzy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L10_Doswiadczenie_fotosynteza/images/l10-zacznijmy.png?raw=true
+
+l10-hipoteza.png
+IMAGE PROMPT: Edukacyjna plansza 16:9, szkolna tablica, polskie napisy: Problem: Czy do powstania skrobi w liściu potrzebne jest światło? Hipoteza: Skrobia powstanie tylko w oświetlonej części liścia. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L10_Doswiadczenie_fotosynteza/images/l10-hipoteza.png?raw=true
+
+l10-proby.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Jeden liść podzielony na dwie połowy. LEWA odkryta, słońce, etykieta PL: próba badawcza — światło dochodzi. PRAWA pasek papieru, etykieta: próba kontrolna — światło nie dochodzi. Napis: reszta warunków taka sama (ta sama roślina, woda, powietrze). Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L10_Doswiadczenie_fotosynteza/images/l10-proby.png?raw=true
+
+l10-jodyna.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9, szkolne. Na białym talerzyku odrobina skrobi ziemniaczanej i kropla jodyny — plama granatowa. Obok buteleczka z etykietą PL: jodyna. Bez twarzy dzieci, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L10_Doswiadczenie_fotosynteza/images/l10-jodyna.png?raw=true
+
+l10-szkola.png
+IMAGE PROMPT: Edukacyjna plansza 16:9, cztery kadry, polskie etykiety. 1 roślina kilka dni w ciemności (zużycie zapasu skrobi). 2 pasek na liściu, potem światło. 3 nauczyciel przygotowuje liść (odbarwianie — bez płomienia w kadrze dziecka). 4 jodyna: odkryta część granatowa, zasłonięta — bez skrobi. Napis: nie powtarzaj w domu z alkoholem i ogniem. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L10_Doswiadczenie_fotosynteza/images/l10-szkola.png?raw=true
+
+l10-wynik.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9 odbarwionego liścia po teście jodyną. Pas, który był zasłonięty, żółtawy. Reszta blaszki granatowa. Etykiety PL: było światło — skrobia; nie było światła — brak skrobi. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L10_Doswiadczenie_fotosynteza/images/l10-wynik.png?raw=true

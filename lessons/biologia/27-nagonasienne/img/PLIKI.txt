@@ -1,0 +1,28 @@
+# Lekcja 27 — Rośliny nagonasienne
+# Folder GitHub:
+# Biologia/L27_Nagonasienne/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l27-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9 sosny lub świerka z szyszkami, dzień, las. Etykieta PL: rośliny nagonasienne. Bez kwiatu, bez owocu, bez kupek zarodni paproci. Bez tabliczki gatunków (sosna vs świerk). Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L27_Nagonasienne/images/l27-zacznijmy.png?raw=true
+
+l27-nasiona.png
+IMAGE PROMPT: Edukacyjny schemat 16:9. Otwarta szyszka, etykiety PL: łuska; nasiono (skrzydełko OK). Napis: nago = nie w owocu. Przekreślony jabłko / owoc z etykietą: to później (okrytonasienne). Bez kwiatu. Bez tablicy gatunków. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L27_Nagonasienne/images/l27-nasiona.png?raw=true
+
+l27-szyszki.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, dwa kadry, etykiety PL. LEWA: skupisko małych żółtawych szyszek męskich — pyłek. PRAWA: większa drewniejąca szyszka żeńska — nasiona na łuskach. Napis: szyszka ≠ kwiat. Bez przekroju kwiatu (pręciki, słupek). Bez owocu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L27_Nagonasienne/images/l27-szyszki.png?raw=true
+
+l27-wiatr.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Strzałki wiatru niosą żółty pyłek od szyszek męskich do szyszki żeńskiej. Etykiety PL: pyłek; wiatr; zapylenie. Mały napis: mech i paproć potrzebują kropli wody — tu nie. Bez pszczoły i kwiatu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L27_Nagonasienne/images/l27-wiatr.png?raw=true
+
+l27-igly.png
+IMAGE PROMPT: Edukacyjny zbliżenie 16:9 pędu z igłami. Etykiety PL: igła = liść; skórka chroni przed suszą. Bez porównania sosna 2 igły / świerk pojedynczo / jodła miękka — to lekcja 28. Bez kwiatu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L27_Nagonasienne/images/l27-igly.png?raw=true
+
+l27-vs-zarodniki.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, trzy kadry, etykiety PL. 1 mech — puszka, zarodniki. 2 paproć — kupki na liściu. 3 szyszka — nasiona nagie. Napis: nagonasienne. Bez kwiatu jabłoni. Bez klucza sosna/świerk. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L27_Nagonasienne/images/l27-vs-zarodniki.png?raw=true

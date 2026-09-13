@@ -1,0 +1,30 @@
+# Lekcja 02 — Jak poznawać biologię?
+# W projekcie tylko nazwa, IMAGE PROMPT i link GitHub.
+
+l02-zacznijmy-banany.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9 jak prawdziwa fotografia, nie rysunek i nie infografika. Na drewnianym stole szklana miska: kilka niedojrzałych zielonych bananów i 2–3 czerwone jabłka. Jasne dzienne światło, kuchnia lub jadalnia. Bez napisów, bez logotypów, bez twarzy, bez angielskiego.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L02_Jak_poznawac_biologie/images/l02-zacznijmy-banany.png?raw=true
+
+l02-obserwacja-bocian.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9 jak prawdziwa fotografia. Dwa białe bociany w dużym gnieździe na dachu wiejskiego domu w Polsce, słoneczny dzień, cegły, słoma gniazda. Ptaki spokojne, bez zbliżenia na twarze ludzi, bez napisów, bez logotypów, bez angielskiego.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L02_Jak_poznawac_biologie/images/l02-obserwacja-bocian.png?raw=true
+
+l02-doswiadczenie-fasola.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9 jak prawdziwa fotografia. Na parapecie dwie identyczne pomarańczowe doniczki z młodymi sadzonkami fasoli. Lewa: gleba wyraźnie wilgotna, liście zdrowsze. Prawa: gleba sucha, roślina słabsza. Dłoń dziecka podlewa tylko lewą doniczkę, twarz poza kadrem. Jasne światło. Bez napisów, bez logotypów, bez angielskiego.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L02_Jak_poznawac_biologie/images/l02-doswiadczenie-fasola.png?raw=true
+
+l02-proby-banany.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9 jak prawdziwa fotografia, nie rysunek. Dwie identyczne szklane miski obok siebie na stole. LEWA: zielone banany i czerwone jabłka; pod spodem duża czytelna etykieta po polsku: próba badawcza. PRAWA: tylko zielone banany, tyle samo sztuk; etykieta: próba kontrolna. Napisy tylko po polsku, duże, bez angielskiego, bez logotypów, bez twarzy.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L02_Jak_poznawac_biologie/images/l02-proby-banany.png?raw=true
+
+l02-etapy-metody.png
+IMAGE PROMPT: Fotorealistyczny kolaż 16:9, sześć równych kadrów od lewej do prawej ze strzałkami, jak prawdziwe zdjęcia, nie kreskówka. Duże polskie etykiety pod kadrami, bez angielskiego, bez logotypów: 1) obserwacja — zielone banany obok jabłek, 2) problem badawczy — znak zapytania przy owocach, 3) hipoteza — kartka z krótkim zdaniem po polsku, 4) przeprowadzenie doświadczenia — dwie miski, 5) analiza wyników — żółte banany z plamami vs jasnożółte, 6) wniosek — ołówek i notatka. Jasne tło.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L02_Jak_poznawac_biologie/images/l02-etapy-metody.png?raw=true
+
+l02-zrodla-wiedzy.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9 jak prawdziwa fotografia. Ogród botaniczny w słoneczny dzień: wysokie kaktusy i sukulenty, ścieżka, inne rośliny z ciepłych krajów. Bez napisów, bez logotypów, bez zbliżenia na twarze, bez angielskiego.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L02_Jak_poznawac_biologie/images/l02-zrodla-wiedzy.png?raw=true
+
+l02-badacz-teren.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9 jak prawdziwa fotografia. Dziecko ok. 11 lat siedzi w wysokiej trawie, kapelusz z szerokim rondem, patrzy przez czarną lornetkę; twarz częściowo zasłonięta lornetką lub ujęcie z boku, bez zbliżenia. Letni dzień, łąka. Bez napisów, bez logotypów, bez angielskiego.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L02_Jak_poznawac_biologie/images/l02-badacz-teren.png?raw=true

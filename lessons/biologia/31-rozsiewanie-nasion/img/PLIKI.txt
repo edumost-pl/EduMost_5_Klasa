@@ -1,0 +1,28 @@
+# Lekcja 31 — Jak rozsiewają się nasiona
+# Folder GitHub:
+# Biologia/L31_Rozsiewanie_nasion/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l31-zacznijmy.png
+IMAGE PROMPT: Edukacyjny kolaż 16:9, cztery małe kadry, etykiety PL: puch mniszka; skrzydełko klonu; haczyki łopianu; ptak z jagodą. Napis: rozsiew nasion. Bez części kwiatu (kielich, pręciki). Bez kiełkującej fasoli. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L31_Rozsiewanie_nasion/images/l31-zacznijmy.png?raw=true
+
+l31-po-co.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, dwa kadry, etykiety PL. LEWA: młode rośliny stłoczone pod rośliną mateczną, mało światła. PRAWA: nasiona daleko, więcej miejsca. Napis: rozsiew = mniej konkurencji. Bez kiełkującej fasoli w słoiku (L32). Bez atlasu owoców. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L31_Rozsiewanie_nasion/images/l31-po-co.png?raw=true
+
+l31-wiatr.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, dwa kadry, etykiety PL. LEWA: nasiono klonu ze skrzydełkiem, strzałka wiatru. PRAWA: mniszek, puch jak spadochron. Napis: rozsiew przez wiatr. Bez pszczoły na kwiecie (zapylenie L30). Bez kiełkującej fasoli. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L31_Rozsiewanie_nasion/images/l31-wiatr.png?raw=true
+
+l31-zwierzeta.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, dwa kadry, etykiety PL. LEWA: owoc łopianu z haczykami na sierści psa / lisa (bez grozy, bez krwi). PRAWA: ptak dziobie jarzębinę / czereśnię, nasiona w tle. Napis: rozsiew przez zwierzęta. Bez pszczoły na kwiecie. Bez atlasu pestkowców. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L31_Rozsiewanie_nasion/images/l31-zwierzeta.png?raw=true
+
+l31-woda.png
+IMAGE PROMPT: Edukacyjny kadr 16:9. Owoc / nasiono unosi się na wodzie (np. kokos przy brzegu albo owoc rośliny nadwodnej), etykieta PL: rozsiew przez wodę. Strzałka prądu. Bez słoika z fasolą i wodą (kiełkowanie L32). Bez pszczoły. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L31_Rozsiewanie_nasion/images/l31-woda.png?raw=true
+
+l31-samodzielnie.png
+IMAGE PROMPT: Edukacyjny schemat 16:9. Pękający strąk / torebka (groch albo niecierpek), etykiety PL: pękający owoc; nasiona w locie. Napis: rozsiew samodzielny. Bez psa z haczykami. Bez skrzydełka klonu jako głównego motywu. Bez kiełkującej fasoli. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L31_Rozsiewanie_nasion/images/l31-samodzielnie.png?raw=true

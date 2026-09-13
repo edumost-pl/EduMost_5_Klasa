@@ -1,0 +1,28 @@
+# Lekcja 24 — Liść
+# Folder GitHub:
+# Biologia/L24_Lisc/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l24-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9 liści lipy lub dębu w słońcu. Etykieta PL: liść — wytwórnia pokarmu. Bez kwiatu, owocu, nasion. Bez przekroju jeszcze. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L24_Lisc/images/l24-zacznijmy.png?raw=true
+
+l24-czesci.png
+IMAGE PROMPT: Edukacyjny schemat 16:9 liścia. Etykiety PL: blaszka liściowa; ogonek; nasada (przy łodydze). Brzeg blaszki spokojny, bez kwiatu. Bez warstw wewnętrznych na tym kadrze. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L24_Lisc/images/l24-czesci.png?raw=true
+
+l24-pojedynczy-zlozony.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. LEWA: liść dębu / lipy, etykieta PL: liść pojedynczy — jedna blaszka. PRAWA: liść kasztanowca lub robinii, etykieta: liść złożony — listki na wspólnym ogonku. Bez kwiatów. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L24_Lisc/images/l24-pojedynczy-zlozony.png?raw=true
+
+l24-unerwienie.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. LEWA: liść lipy, etykieta PL: unerwienie siatkowate. PRAWA: liść trawy / kukurydzy, etykieta: unerwienie równoległe. Napis: nerwy = wiązki przewodzące. Bez nazw okrytonasienne / nagonasienne. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L24_Lisc/images/l24-unerwienie.png?raw=true
+
+l24-przekroj.png
+IMAGE PROMPT: Edukacyjny przekrój 16:9 blaszki. Etykiety PL od góry: skórka górna; miękisz palisadowy (chloroplasty); miękisz gąbczasty (przestrzenie powietrzne); wiązka w nerwie; skórka dolna; szparka. Napis: tkanki z lekcji 21 w organie liść. Bez kwiatu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L24_Lisc/images/l24-przekroj.png?raw=true
+
+l24-funkcje.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, trzy kadry, etykiety PL. 1 słońce + liść: dwutlenek węgla + woda → glukoza + tlen (przypomnienie L9). 2 szparka — wymiana gazów. 3 kropelki / para ze szparki — transpiracja. Bez wzoru chemicznego jako wymagania. Bez jodyny. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L24_Lisc/images/l24-funkcje.png?raw=true

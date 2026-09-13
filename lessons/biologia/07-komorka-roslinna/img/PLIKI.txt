@@ -1,0 +1,32 @@
+# Lekcja 07 — Komórka roślinna
+# Folder GitHub:
+# Biologia/L07_Komorka_roslinna/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l07-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9. Pędy moczarki kanadyjskiej (Elodea) w przezroczystej wodzie, jasnozielone listki. Etykieta PL: moczarka kanadyjska. Bez twarzy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L07_Komorka_roslinna/images/l07-zacznijmy.png?raw=true
+
+l07-ksztalty.png
+IMAGE PROMPT: Edukacyjna plansza 16:9, trzy kadry, polskie etykiety, schematy. 1 komórki szparkowe — dwie zielone komórki jak fasolki tworzą szparkę. 2 włośniki — palczaste wypustki na korzeniu. 3 komórki transportujące wodę — brązowe walce jak rury. Bez angielskiego, bez logotypów, bez równania fotosyntezy.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L07_Komorka_roslinna/images/l07-ksztalty.png?raw=true
+
+l07-mikroskop.png
+IMAGE PROMPT: Fotorealistyczna mikrofotografia 16:9 liścia moczarki, powiększenie ok. 400×. Prostokątne zielone komórki. Polskie etykiety: ściana komórkowa, błona komórkowa, chloroplasty, wakuola, jądro komórkowe. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L07_Komorka_roslinna/images/l07-mikroskop.png?raw=true
+
+l07-schemat.png
+IMAGE PROMPT: Edukacyjny schemat 16:9, przekrój sześciokątnej komórki roślinnej. Polskie etykiety: 1 błona komórkowa, 2 cytozol, 3 jądro komórkowe, 4 wakuola (wodniczka) — duża, 5 mitochondrium, 6 rybosomy, 7 chloroplast, 8 ściana komórkowa. Numery 7 i 8 z zieloną ikoną. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L07_Komorka_roslinna/images/l07-schemat.png?raw=true
+
+l07-sciana.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Zbliżenie na grubą żółtawą ścianę komórki roślinnej; pod nią cienka czerwona błona. Etykiety PL: ściana komórkowa — kształt i ochrona; celuloza (cukier); błona komórkowa pod ścianą. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L07_Komorka_roslinna/images/l07-sciana.png?raw=true
+
+l07-chloroplast.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Kilka owalnych zielonych chloroplastów w komórce roślinnej. Etykiety PL: chloroplast; chlorofil — zielony barwnik; wytwarzanie substancji odżywczych podczas fotosyntezy. Bez równania chemicznego, bez wzorów CO2, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L07_Komorka_roslinna/images/l07-chloroplast.png?raw=true
+
+l07-wakuola.png
+IMAGE PROMPT: Edukacyjne porównanie 16:9. LEWA: komórka roślinna z jedną dużą jasnoniebieską wakuolą. PRAWA: komórka zwierzęca z kilkoma drobnymi wakuolami. Polskie napisy. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L07_Komorka_roslinna/images/l07-wakuola.png?raw=true

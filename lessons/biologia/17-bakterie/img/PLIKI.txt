@@ -1,0 +1,32 @@
+# Lekcja 17 — Jak żyją bakterie
+# Folder GitHub:
+# Biologia/L17_Jak_zyja_bakterie/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l17-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczny / edukacyjny kadr 16:9: schematyczne bakterie kilku kształtów w cytozolu-tle, nie groza. Etykieta PL: królestwo bakterii. Bez chorób, bez antybiotyków, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L17_Jak_zyja_bakterie/images/l17-zacznijmy.png?raw=true
+
+l17-nic-dna.png
+IMAGE PROMPT: Edukacyjny model 16:9 komórki bakteryjnej z etykietami PL: błona, cytozol, nić DNA (nie jądro), ściana komórkowa, rybosomy. Bez jądra. Nawiązanie do lekcji 8. Bez wirusów, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L17_Jak_zyja_bakterie/images/l17-nic-dna.png?raw=true
+
+l17-ksztalty.png
+IMAGE PROMPT: Edukacyjna plansza 16:9, cztery rzędy z polskimi etykietami: ziarenkowce (kulki); pałeczki (walce); przecinki (wygięte); krętki (spirale). Proste, czyste modele, nie groza, nie choroby. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L17_Jak_zyja_bakterie/images/l17-ksztalty.png?raw=true
+
+l17-odzywianie.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. LEWA: bakterie przy świetle / związki nieorganiczne, etykieta PL: samożywne. PRAWA: bakterie przy resztkach organicznych, etykieta: cudzożywne (w tym saprobionty). Bez chorób, bez krwi, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L17_Jak_zyja_bakterie/images/l17-odzywianie.png?raw=true
+
+l17-podzial.png
+IMAGE PROMPT: Edukacyjny schemat 16:9, trzy klatki: jedna pałeczka; przewężenie; dwie pałeczki. Etykiety PL: podział komórki; dwie identyczne bakterie. Bez chorób, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L17_Jak_zyja_bakterie/images/l17-podzial.png?raw=true
+
+l17-przetrwalniki.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. LEWA: bakteria w dobrych warunkach. ŚRODEK: przetrwalnik (grubsza ściana), etykieta PL: przetrwalnik — przetrwa suszę / gorąco. PRAWA: znów zwykła komórka, gdy wrócą dobre warunki. Bez chorób, bez grozy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L17_Jak_zyja_bakterie/images/l17-przetrwalniki.png?raw=true
+
+l17-rzeski.png
+IMAGE PROMPT: Edukacyjny model 16:9 bakterii z etykietami PL: rzęska (lub kilka) — ruch; otoczka śluzowa — ochrona. Ściana komórkowa osobno. Bez chorób, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L17_Jak_zyja_bakterie/images/l17-rzeski.png?raw=true

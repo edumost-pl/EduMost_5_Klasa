@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" role="img" aria-label="Suma kątów trójkąta 180 stopni">
+  <rect width="640" height="200" rx="18" fill="#F3E5F5"/>
+  <polygon points="120,160 280,160 200,50" fill="#E1BEE7" stroke="#6A32A0" stroke-width="3"/>
+  <path d="M140 160 A20 20 0 0 1 155 145" fill="none" stroke="#FF9800" stroke-width="3"/>
+  <path d="M260 160 A20 20 0 0 0 245 145" fill="none" stroke="#00BCD4" stroke-width="3"/>
+  <path d="M190 70 A22 22 0 0 0 210 70" fill="none" stroke="#43A047" stroke-width="3"/>
+  <text x="200" y="185" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="12" fill="#546E7A">odrywamy kąty…</text>
+  <text x="340" y="100" font-size="28" font-weight="900" fill="#6A32A0" font-family="Segoe UI,sans-serif">→</text>
+  <line x1="380" y1="120" x2="600" y2="120" stroke="#263238" stroke-width="4"/>
+  <path d="M420 120 A30 30 0 0 1 480 90" fill="#FFE082" stroke="#FF9800" stroke-width="2"/>
+  <path d="M480 90 A30 30 0 0 1 540 120" fill="#B2EBF2" stroke="#00BCD4" stroke-width="2"/>
+  <path d="M400 120 A25 25 0 0 1 420 100" fill="#C8E6C9" stroke="#43A047" stroke-width="2"/>
+  <text x="490" y="160" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="18" font-weight="900" fill="#6A32A0">= 180°</text>
+  <text x="490" y="40" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="13" font-weight="800" fill="#6A32A0">zawsze prosta linia</text>
+</svg>

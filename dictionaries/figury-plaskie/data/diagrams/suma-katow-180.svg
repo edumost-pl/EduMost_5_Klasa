@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 260" role="img" aria-label="Suma kątów trójkąta">
+  <rect width="320" height="260" fill="#fff"/>
+
+  <polygon points="160,40 280,210 40,210" fill="#F3E5F5" stroke="#6A32A0" stroke-width="3"/>
+  <text x="160" y="80" text-anchor="middle" font-size="14" font-family="Segoe UI,sans-serif" fill="#263238">60°</text>
+  <text x="70" y="195" font-size="14" font-family="Segoe UI,sans-serif" fill="#263238">70°</text>
+  <text x="230" y="195" font-size="14" font-family="Segoe UI,sans-serif" fill="#263238">50°</text>
+  <text x="160" y="245" text-anchor="middle" font-size="15" font-weight="700" font-family="Segoe UI,sans-serif" fill="#6A32A0">60° + 70° + 50° = 180°</text>
+
+</svg>

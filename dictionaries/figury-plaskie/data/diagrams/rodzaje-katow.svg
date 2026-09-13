@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 220" role="img" aria-label="Rodzaje kątów">
+  <rect width="540" height="220" fill="#fff"/>
+
+  <path d="M60,160 L60,60 L150,140" fill="none" stroke="#FF9800" stroke-width="3"/>
+  <text x="90" y="190" text-anchor="middle" font-size="13" font-family="Segoe UI,sans-serif" fill="#263238">ostry &lt; 90°</text>
+  <path d="M220,160 L220,50 L340,50" fill="none" stroke="#6A32A0" stroke-width="3"/>
+  <path d="M220,80 L250,80 L250,50" fill="none" stroke="#FF9800" stroke-width="2"/>
+  <text x="280" y="190" text-anchor="middle" font-size="13" font-family="Segoe UI,sans-serif" fill="#263238">prosty = 90°</text>
+  <path d="M400,160 L400,70 L520,150" fill="none" stroke="#00BCD4" stroke-width="3"/>
+  <text x="450" y="190" text-anchor="middle" font-size="13" font-family="Segoe UI,sans-serif" fill="#263238">rozwarty &gt; 90°</text>
+
+</svg>

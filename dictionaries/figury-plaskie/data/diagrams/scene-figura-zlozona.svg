@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" role="img" aria-label="Figura złożona rozbita na części">
+  <rect width="640" height="200" rx="18" fill="#FFF3E0"/>
+  <path d="M60 40 H160 V100 H220 V160 H60 Z" fill="#FFE0B2" stroke="#FF9800" stroke-width="3"/>
+  <text x="120" y="30" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="13" font-weight="800" fill="#EF6C00">figura L</text>
+  <text x="270" y="105" font-family="Segoe UI,sans-serif" font-size="28" font-weight="900" fill="#6A32A0">→</text>
+  <rect x="320" y="40" width="80" height="120" fill="#BBDEFB" stroke="#1565C0" stroke-width="3"/>
+  <text x="360" y="105" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="12" font-weight="800" fill="#1565C0">A</text>
+  <text x="420" y="105" font-size="22" font-weight="900" fill="#6A32A0" font-family="Segoe UI,sans-serif">+</text>
+  <rect x="450" y="100" width="100" height="60" fill="#C8E6C9" stroke="#43A047" stroke-width="3"/>
+  <text x="500" y="138" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="12" font-weight="800" fill="#2E7D32">B</text>
+  <text x="320" y="185" font-family="Segoe UI,sans-serif" font-size="13" font-weight="700" fill="#5D4037">P = P(A) + P(B)</text>
+</svg>

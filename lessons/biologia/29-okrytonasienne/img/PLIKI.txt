@@ -1,0 +1,28 @@
+# Lekcja 29 — Rośliny okrytonasienne
+# Folder GitHub:
+# Biologia/L29_Okrytonasienne/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l29-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczny kolaż 16:9: łąka z kwiatami i jabłoń z jabłkami, dzień. Etykieta PL: rośliny okrytonasienne. Bez przekroju kwiatu (pręciki, słupek). Bez szyszki jako głównego motywu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L29_Okrytonasienne/images/l29-zacznijmy.png?raw=true
+
+l29-owoc.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, dwa kadry. LEWA: przekrój jabłka, etykiety PL: owoc; nasiona w środku. PRAWA: łuska szyszki z nagim nasionem, etykieta: nagonasienne (L27). Napis: okryte = w owocu. Bez części kwiatu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L29_Okrytonasienne/images/l29-owoc.png?raw=true
+
+l29-kwiat.png
+IMAGE PROMPT: Fotorealistyczne zbliżenie 16:9 barwnego kwiatu (np. jabłoń lub mniszek), dzień. Etykieta PL: kwiat. Bez podpisów: kielich, korona, pręciki, słupek. Napis: budowa — lekcja 30. Bez pszczoły jako jedynego tematu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L29_Okrytonasienne/images/l29-kwiat.png?raw=true
+
+l29-formy.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, trzy kadry, etykiety PL. 1 drzewo (np. jabłoń) — jeden pień zdrewniały. 2 krzew (np. porzeczka, leszczyna) — kilka pędów od ziemi. 3 roślina zielna (np. trawa, mniszek) — pęd nie drewnieje jak pień. Bez przekroju kwiatu. Bez klucza dąb vs lipa (L33). Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L29_Okrytonasienne/images/l29-formy.png?raw=true
+
+l29-jedno-dwu.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, dwa kadry, etykiety PL. LEWA: fasola / dąb — dwa liścienie, unerwienie siatkowate, napis: dwuliścienne. PRAWA: trawa / kukurydza — jeden liścień, unerwienie równoległe, napis: jednoliścienne. Bez podpisów części kwiatu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L29_Okrytonasienne/images/l29-jedno-dwu.png?raw=true
+
+l29-liczba.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, trzy kadry, etykiety PL. 1 łąka — rośliny zielne. 2 pole zbóż — jednoliścienne. 3 sad / warzywnik. Napis: okrytonasienne. Bez listy dąb-lipa-klon jako klucza (L33). Bez przekroju kwiatu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L29_Okrytonasienne/images/l29-liczba.png?raw=true

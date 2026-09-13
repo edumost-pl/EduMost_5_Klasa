@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EduMost — Master Plan 2026/2027</title>
+<style>
+:root {
+  --bg: #f6f3ee;
+  --ink: #1c1917;
+  --muted: #57534e;
+  --accent: #0f766e;
+  --accent2: #b45309;
+  --red: #dc2626;
+  --blue: #1d4ed8;
+  --line: #d6d3d1;
+  --card: #fffcf7;
+  --green: #15803d;
+  --sans: "Avenir Next","Segoe UI",sans-serif;
+  --font: "Iowan Old Style","Palatino Linotype",Georgia,serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--sans); background: var(--bg); color: var(--ink); line-height: 1.55; }
+
+.wrap { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem 4rem; }
+
+h1 { font-family: var(--font); font-size: clamp(1.6rem,3.5vw,2.4rem); letter-spacing: -.02em; }
+.tagline { color: var(--muted); font-size: .95rem; margin-top: .3rem; }
+
+/* NAV */
+.nav-pills { display: flex; flex-wrap: wrap; gap: .4rem; margin: 1.5rem 0 .5rem; }
+.nav-pills a {
+  padding: .35rem .85rem; border-radius: 20px; font-size: .82rem; font-weight: 600;
+  text-decoration: none; border: 1.5px solid var(--line);
+  color: var(--muted); background: var(--card); transition: all .15s;
+}
+.nav-pills a:hover, .nav-pills a.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* SUBJECT SECTION */
+.subject { margin-bottom: 3.5rem; scroll-margin-top: 1rem; }
+.subject-header {
+  display: flex; align-items: baseline; gap: .75rem;
+  padding-bottom: .6rem; border-bottom: 2.5px solid var(--ink); margin-bottom: 1.2rem;
+}
+.subject-icon { font-size: 1.6rem; }
+.subject-title { font-family: var(--font); font-size: 1.35rem; font-weight: 700; }
+.subject-book { font-size: .85rem; color: var(--muted); font-style: italic; margin-left: auto; }
+
+/* META ROW */
+.meta-row { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
+.badge {
+  font-size: .78rem; font-weight: 700; padding: .25rem .65rem;
+  border-radius: 4px; letter-spacing: .03em;
+}
+.badge-lang  { background: #fef3c7; color: #92400e; }
+.badge-hard  { background: #fee2e2; color: #991b1b; }
+.badge-medium{ background: #fef9c3; color: #854d0e; }
+.badge-easy  { background: #dcfce7; color: #166534; }
+
+/* GRID: розділи + теми */
+.sections { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+@media(max-width:640px){ .sections { grid-template-columns: 1fr; } }
+
+.section-card {
+  background: var(--card); border: 1px solid var(--line); border-radius: 8px;
+  padding: .85rem 1rem;
+}
+.section-card h3 {
+  font-size: .88rem; font-weight: 700; color: var(--accent); text-transform: uppercase;
+  letter-spacing: .05em; margin-bottom: .6rem;
+}
+.section-card ol { padding-left: 1.1rem; font-size: .9rem; }
+.section-card ol li { margin-bottom: .25rem; }
+.section-card .note { font-size: .8rem; color: var(--muted); margin-top: .5rem; font-style: italic; }
+
+/* TERMS TABLE */
+.terms-block { margin-top: 1rem; }
+.terms-block h3 {
+  font-size: .88rem; font-weight: 700; color: var(--accent2); text-transform: uppercase;
+  letter-spacing: .05em; margin-bottom: .5rem;
+}
+.terms-table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+.terms-table th {
+  background: var(--accent2); color: #fff;
+  padding: .4rem .7rem; text-align: left; font-weight: 600; font-size: .8rem;
+}
+.terms-table td { padding: .4rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.terms-table tr:last-child td { border-bottom: none; }
+.terms-table .ua { color: var(--accent2); }
+.terms-table .note-cell { font-size: .78rem; color: var(--muted); font-style: italic; }
+
+/* PEDAGOGY BOX */
+.pedagogy {
+  margin-top: 1rem; background: #f0fdf4; border: 1px solid #86efac;
+  border-radius: 8px; padding: .85rem 1rem;
+}
+.pedagogy h3 { font-size: .85rem; font-weight: 700; color: var(--green); margin-bottom: .5rem; }
+.pedagogy ul { font-size: .88rem; padding-left: 1.1rem; }
+.pedagogy ul li { margin-bottom: .2rem; }
+
+/* LEARNING PATH */
+.path-row {
+  display: flex; gap: 0; margin-top: 1rem; flex-wrap: wrap;
+}
+.path-step {
+  flex: 1; min-width: 90px; padding: .55rem .5rem; text-align: center;
+  font-size: .75rem; font-weight: 700; background: var(--card);
+  border: 1px solid var(--line); border-right: none; color: var(--muted);
+  letter-spacing: .02em;
+}
+.path-step:last-child { border-right: 1px solid var(--line); }
+.path-step .step-icon { font-size: 1.1rem; display: block; margin-bottom: .15rem; }
+.path-step.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* SZKOLNY POLSKI */
+.szkolny-box {
+  margin-top: 3rem; background: #eff6ff; border: 1.5px solid #93c5fd;
+  border-radius: 10px; padding: 1.25rem 1.5rem;
+}
+.szkolny-box h2 { font-family: var(--font); font-size: 1.2rem; color: var(--blue); margin-bottom: .75rem; }
+.szkolny-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); gap: .5rem; }
+.szkolny-card {
+  background: #fff; border: 1px solid #bfdbfe; border-radius: 6px;
+  padding: .6rem .9rem; font-size: .88rem;
+}
+.szkolny-card .cmd { font-weight: 700; color: var(--blue); font-size: .95rem; }
+.szkolny-card .ua-meaning { color: var(--accent2); font-size: .82rem; margin-top: .2rem; }
+
+/* MODES BOX */
+.modes-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 3rem; }
+@media(max-width:600px){ .modes-row { grid-template-columns: 1fr; } }
+.mode-card {
+  background: var(--card); border: 1.5px solid var(--line); border-radius: 10px;
+  padding: 1.1rem 1.25rem;
+}
+.mode-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: .6rem; }
+.mode-card p, .mode-card li { font-size: .88rem; color: var(--muted); }
+.mode-card ul { padding-left: 1.1rem; }
+.mode-card ul li { margin-bottom: .2rem; }
+
+/* TOPIC TEMPLATE */
+.topic-template {
+  margin-top: 3rem; border: 2px dashed var(--accent); border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+}
+.topic-template h2 { font-family: var(--font); font-size: 1.2rem; color: var(--accent); margin-bottom: 1rem; }
+.topic-block { margin-bottom: 1rem; }
+.topic-block .label {
+  font-size: .78rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .06em; color: var(--muted); margin-bottom: .3rem;
+}
+.topic-block .content {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: 6px; padding: .6rem .9rem; font-size: .9rem;
+}
+.topic-block .pl { color: var(--blue); }
+.topic-block .ua { color: var(--accent2); }
+
+footer { text-align: center; font-size: .82rem; color: var(--muted); padding: 1rem; border-top: 1px solid var(--line); margin-top: 2rem; }
+footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div style="background:#fff7ed;border:1.5px solid #fdba74;border-radius:8px;padding:.85rem 1rem;margin-bottom:1.25rem;font-size:.9rem">
+  <strong>Внутрішній документ.</strong> Це Master Plan / ТЗ для розробки EduMost, не сторінка навчання дитини.
+  Дитина заходить з <a href="index.html" style="color:#0f766e">головної</a> → предмет.
+</div>
+
+<div style="display:flex;align-items:baseline;gap:1rem;padding-bottom:.8rem;border-bottom:2px solid var(--ink);margin-bottom:1rem">
+  <div>
+    <h1>EduMost — Master Plan</h1>
+    <p class="tagline">Klasa 5 · SP nr 3 Poznań · Rok szkolny 2026/2027 · Robocza matryca pedagogiczna PL↔UA</p>
+  </div>
+  <div style="margin-left:auto;font-size:.82rem;color:var(--muted);white-space:nowrap">
+    <a href="index.html" style="color:var(--accent)">← Головна</a> ·
+    <a href="schedule.html" style="color:var(--accent)">Розклад</a>
+  </div>
+</div>
+
+<!-- Навигация по предметам -->
+<nav class="nav-pills">
+  <a href="#matematyka">🔢 Matematyka</a>
+  <a href="#polski">📖 J. polski</a>
+  <a href="#angielski">🇬🇧 J. angielski</a>
+  <a href="#historia">🏛️ Historia</a>
+  <a href="#geografia">🌍 Geografia</a>
+  <a href="#biologia">🧬 Biologia</a>
+  <a href="#informatyka">💻 Informatyka</a>
+  <a href="#technika">🔧 Technika</a>
+  <a href="#muzyka">🎵 Muzyka</a>
+  <a href="#plastyka">🎨 Plastyka</a>
+  <a href="#szkolny-polski">🗣️ Polski szkolny</a>
+  <a href="#model">📐 Model tematu</a>
+</nav>
+
+<!-- ══════════════════════════════════════════════
+     MATEMATYKA
+══════════════════════════════════════════════ -->
+<section class="subject" id="matematyka">
+  <div class="subject-header">
+    <span class="subject-icon">🔢</span>
+    <span class="subject-title">Matematyka</span>
+    <span class="subject-book">«Matematyka z kluczem» cz. 1 i 2 · Nowa Era · 875/2/2018</span>
+  </div>
+  <div class="meta-row">
+    <span class="badge badge-hard">⚠️ Висока мовна складність</span>
+    <span class="badge badge-easy">✅ Є готові словники</span>
+    <span class="badge">Пілотний предмет ЕТАП 2</span>
+  </div>
+
+  <!-- Шлях навчання -->
+  <div class="path-row">
+    <div class="path-step active"><span class="step-icon">📅</span>Розклад</div>
+    <div class="path-step active"><span class="step-icon">📚</span>Підручник</div>
+    <div class="path-step active"><span class="step-icon">📑</span>Розділ</div>
+    <div class="path-step active"><span class="step-icon">📌</span>Тема</div>
+    <div class="path-step"><span class="step-icon">🧠</span>Навчання</div>
+    <div class="path-step"><span class="step-icon">✏️</span>Практика</div>
+    <div class="path-step"><span class="step-icon">❓</span>Перевірка</div>
+    <div class="path-step"><span class="step-icon">🔄</span>Повторення</div>
+  </div>
+
+  <div class="sections" style="margin-top:1rem">
+    <div class="section-card">
+      <h3>Część 1 — Rozdziały</h3>
+      <ol>
+        <li>Liczby naturalne</li>
+        <li>Działania na liczbach naturalnych</li>
+        <li>Ułamki zwykłe</li>
+        <li>Dodawanie i odejmowanie ułamków</li>
+        <li>Mnożenie i dzielenie ułamków</li>
+      </ol>
+    </div>
+    <div class="section-card">
+      <h3>Część 2 — Rozdziały</h3>
+      <ol start="6">
+        <li>Ułamki dziesiętne</li>
+        <li>Procenty</li>
+        <li>Figury geometryczne</li>
+        <li>Bryły</li>
+        <li>Dane i diagramy</li>
+      </ol>
+    </div>
+    <div class="section-card">
+      <h3>Ключові теми (пріоритет)</h3>
+      <ol>
+        <li>Potęgowanie — ступінь числа</li>
+        <li>Kolejność działań — порядок дій</li>
+        <li>Ułamki zwykłe — звичайні дроби</li>
+        <li>Procenty — відсотки</li>
+        <li>Pole i obwód — площа і периметр</li>
+      </ol>
+      <p class="note">Ці теми найчастіше викликають труднощі + є мовний бар'єр у задачах</p>
+    </div>
+    <div class="section-card">
+      <h3>Мовний бар'єр у задачах</h3>
+      <ol>
+        <li>Oblicz / Wyznacz / Znajdź — слова-команди</li>
+        <li>«O ile więcej/mniej» — порівняльні задачі</li>
+        <li>«Ile razy» — кратне порівняння</li>
+        <li>Dane / Szukane — умова задачі</li>
+        <li>Sprawdź / Uzasadnij — перевірка і обґрунтування</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="terms-block">
+    <h3>🇵🇱 → 🇺🇦 Ключові терміни</h3>
+    <table class="terms-table">
+      <tr><th>Polski</th><th>Українська</th><th>Пояснення</th></tr>
+      <tr><td>potęga</td><td class="ua">степінь</td><td class="note-cell">2³ — двійка у третьому степені</td></tr>
+      <tr><td>podstawa potęgi</td><td class="ua">основа степеня</td><td class="note-cell">число, яке множиться</td></tr>
+      <tr><td>wykładnik</td><td class="ua">показник степеня</td><td class="note-cell">маленьке число вгорі</td></tr>
+      <tr><td>ułamek zwykły</td><td class="ua">звичайний дріб</td><td class="note-cell">¾</td></tr>
+      <tr><td>licznik</td><td class="ua">чисельник</td><td class="note-cell">число над рискою</td></tr>
+      <tr><td>mianownik</td><td class="ua">знаменник</td><td class="note-cell">число під рискою</td></tr>
+      <tr><td>procent</td><td class="ua">відсоток</td><td class="note-cell">% — сота частина</td></tr>
+      <tr><td>obwód</td><td class="ua">периметр</td><td class="note-cell">сума всіх сторін</td></tr>
+      <tr><td>pole</td><td class="ua">площа</td><td class="note-cell">скільки поміщається всередині</td></tr>
+      <tr><td>czynnik</td><td class="ua">множник</td><td class="note-cell">числа при множенні</td></tr>
+      <tr><td>iloczyn</td><td class="ua">добуток</td><td class="note-cell">результат множення</td></tr>
+      <tr><td>iloraz</td><td class="ua">частка</td><td class="note-cell">результат ділення</td></tr>
+    </table>
+  </div>
+  <div class="pedagogy">
+    <h3>🎓 Педагогічна модель для математики</h3>
+    <ul>
+      <li><b>PL → UA → PL:</b> спочатку польський термін, потім пояснення по-українськи, потім польська практика</li>
+      <li><b>Візуалізація:</b> кожна формула — з малюнком або схемою</li>
+      <li><b>Типова помилка:</b> для кожної теми показуємо найчастішу помилку (наприклад: 2³ ≠ 2×3)</li>
+      <li><b>Зв'язок зі словниками:</b> посилання на готові словники проекту</li>
+      <li><b>Задачі у двох мовах:</b> задача по-польськи → ключові слова виділені → переклад умови</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     JĘZYK POLSKI
+══════════════════════════════════════════════ -->
+<section class="subject" id="polski">
+  <div class="subject-header">
+    <span class="subject-icon">📖</span>
+    <span class="subject-title">Język polski</span>
+    <span class="subject-book">«Między nami» · GWO · 867/2/2018</span>
+  </div>
+  <div class="meta-row">
+    <span class="badge badge-hard">⚠️ Найскладніший предмет для іноземця</span>
+    <span class="badge badge-lang">🇺🇦 Потрібна максимальна мовна підтримка</span>
+  </div>
+  <div class="sections">
+    <div class="section-card">
+      <h3>Блоки програми</h3>
+      <ol>
+        <li>Czytanie ze zrozumieniem — читання з розумінням</li>
+        <li>Kształcenie językowe — граматика</li>
+        <li>Ortografia i interpunkcja — правопис</li>
+        <li>Tworzenie własnego tekstu — написання текстів</li>
+        <li>Lektury obowiązkowe — обов'язкова література</li>
+      </ol>
+    </div>
+    <div class="section-card">
+      <h3>Обов'язкові твори (5 клас)</h3>
+      <ol>
+        <li>Adam Mickiewicz — «Pan Tadeusz» (fragmenty)</li>
+        <li>Aleksander Fredro — «Zemsta»</li>
+        <li>Antoine de Saint-Exupéry — «Mały Książę»</li>
+        <li>Opowiadania różnych autorów</li>
+      </ol>
+      <p class="note">Для кожного твору — короткий переказ по-українськи</p>
+    </div>
+    <div class="section-card">
+      <h3>Граматика — ключові теми</h3>
+      <ol>
+        <li>Części mowy — частини мови</li>
+        <li>Odmiana przez przypadki — відмінювання</li>
+        <li>Czasownik — дієслово (кон'югація)</li>
+        <li>Zdanie — речення (типи)</li>
+        <li>Pisownia — «nie» з різними частинами мови</li>
+      </ol>
+    </div>
+    <div class="section-card">
+      <h3>Мовний бар'єр</h3>
+      <ol>
+        <li>Польська відмінкова система (7 відмінків)</li>
+        <li>Рід і число іменників (інакше ніж в укр.)</li>
+        <li>Складний правопис (rz/ż, ch/h, u/ó)</li>
+        <li>Мова творів — архаїчна польська</li>
+        <li>Написання власних текстів на польській</li>
+      </ol>
+    </div>
+  </div>
+  <div class="terms-block">
+    <h3>🇵🇱 → 🇺🇦 Граматичні терміни</h3>
+    <table class="terms-table">
+      <tr><th>Polski</th><th>Українська</th><th>Пояснення</th></tr>
+      <tr><td>rzeczownik</td><td class="ua">іменник</td><td class="note-cell">хто? що? (dom, kot)</td></tr>
+      <tr><td>przymiotnik</td><td class="ua">прикметник</td><td class="note-cell">який? яка? (duży, mały)</td></tr>
+      <tr><td>czasownik</td><td class="ua">дієслово</td><td class="note-cell">що робить? (biega, czyta)</td></tr>
+      <tr><td>przysłówek</td><td class="ua">прислівник</td><td class="note-cell">як? (szybko, cicho)</td></tr>
+      <tr><td>zdanie</td><td class="ua">речення</td><td class="note-cell">закінчена думка</td></tr>
+      <tr><td>mianownik</td><td class="ua">називний відмінок</td><td class="note-cell">хто? що? (kto? co?)</td></tr>
+      <tr><td>podmiot</td><td class="ua">підмет</td><td class="note-cell">про кого/що речення</td></tr>
+      <tr><td>orzeczenie</td><td class="ua">присудок</td><td class="note-cell">що робить підмет</td></tr>
+    </table>
+  </div>
+  <div class="pedagogy">
+    <h3>🎓 Педагогічна модель для польської мови</h3>
+    <ul>
+      <li><b>Тексти:</b> уривок твору польською → ключові слова виділені → переклад складних слів</li>
+      <li><b>Граматика:</b> правило польською → таблиця → порівняння з українською де допомагає</li>
+      <li><b>НЕ перекладаємо весь текст</b> — лише ключові слова, щоб дитина думала по-польськи</li>
+      <li><b>Лектури:</b> короткий переказ по-українськи + список дійових осіб</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     JĘZYK ANGIELSKI
+══════════════════════════════════════════════ -->
+<section class="subject" id="angielski">
+  <div class="subject-header">
+    <span class="subject-icon">🇬🇧</span>
+    <span class="subject-title">Język angielski</span>
+    <span class="subject-book">«Flash» · Express Publishing · 866/2/2018</span>
+  </div>
+  <div class="meta-row">
+    <span class="badge badge-medium">Подвійний бар'єр: польська + англійська</span>
+  </div>
+  <div class="sections">
+    <div class="section-card">
+      <h3>Модулі підручника Flash 5</h3>
+      <ol>
+        <li>Module 1 — My World (s. 4–19)</li>
+        <li>Module 2 — Round we go! (s. 20–35)</li>
+        <li>Module 3 — Back in time (s. 36–51)</li>
+        <li>Module 4 — Celebrities (s. 52–67)</li>
+        <li>Module 5 — What an adventure! (s. 68–83)</li>
+        <li>Module 6 — Let's celebrate! (s. 84–99) + Festivities (s. 101–106)</li>
+      </ol>
+    </div>
+    <div class="section-card">
+      <h3>Граматика 5 клас</h3>
+      <ol>
+        <li>Present Simple / Continuous</li>
+        <li>Past Simple</li>
+        <li>Future: will / going to</li>
+        <li>Comparatives &amp; Superlatives</li>
+        <li>Modal verbs (can, must, should)</li>
+        <li>There is / There are</li>
+      </ol>
+    </div>
+    <div class="section-card">
+      <h3>Особлива модель: PL ↔ UA ↔ EN</h3>
+      <ol>
+        <li>Польський термін із підручника</li>
+        <li>Переклад українською</li>
+        <li>Англійське слово</li>
+        <li>Приклад речення по-англійськи</li>
+        <li>Переклад прикладу по-українськи</li>
+      </ol>
+      <p class="note">Три мови одночасно — унікальна фіча для цього предмету</p>
+    </div>
+    <div class="section-card">
+      <h3>Мовний бар'єр</h3>
+      <ol>
+        <li>Завдання сформульовані по-польськи</li>
+        <li>Відповіді треба давати по-англійськи</li>
+        <li>Польські граматичні пояснення</li>
+        <li>Read / Listen / Write — інструкції PL</li>
+      </ol>
+    </div>
+  </div>
+  <div class="terms-block">
+    <h3>🇵🇱 → 🇺🇦 → 🇬🇧 Граматичні терміни</h3>
+    <table class="terms-table">
+      <tr><th>Polski</th><th>Українська</th><th>English</th></tr>
+      <tr><td>czas teraźniejszy</td><td class="ua">теперішній час</td><td>Present tense</td></tr>
+      <tr><td>czas przeszły</td><td class="ua">минулий час</td><td>Past tense</td></tr>
+      <tr><td>czas przyszły</td><td class="ua">майбутній час</td><td>Future tense</td></tr>
+      <tr><td>rzeczownik</td><td class="ua">іменник</td><td>noun</td></tr>
+      <tr><td>przymiotnik</td><td class="ua">прикметник</td><td>adjective</td></tr>
+      <tr><td>czasownik</td><td class="ua">дієслово</td><td>verb</td></tr>
+      <tr><td>liczba mnoga</td><td class="ua">множина</td><td>plural</td></tr>
+      <tr><td>przeczenie</td><td class="ua">заперечення</td><td>negation</td></tr>
+    </table>
+  </div>
+  <div class="pedagogy">
+    <h3>🎓 Педагогічна модель для англійської</h3>
+    <ul>
+      <li><b>Три мови:</b> PL (інструкція) → UA (зрозумів) → EN (виконую)</li>
+      <li><b>Словник модуля:</b> всі нові слова EN + переклад UA (не PL!)</li>
+      <li><b>Граматика:</b> правило EN → таблиця EN → пояснення UA → вправа EN</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     HISTORIA
+══════════════════════════════════════════════ -->
+<section class="subject" id="historia">
+  <div class="subject-header">
+    <span class="subject-icon">🏛️</span>
+    <span class="subject-title">Historia</span>
+    <span class="subject-book">«Wczoraj i dziś» · Nowa Era · 877/2/2018</span>
+  </div>
+  <div class="meta-row">
+    <span class="badge badge-medium">Середня складність</span>
+    <span class="badge badge-lang">🇺🇦 Різний шкільний контекст PL vs UA</span>
+  </div>
+  <div class="sections">
+    <div class="section-card">
+      <h3>Розділи підручника</h3>
+      <ol>
+        <li>Pierwsze cywilizacje — Перші цивілізації</li>
+        <li>Starożytna Grecja — Стародавня Греція</li>
+        <li>Starożytny Rzym — Стародавній Рим</li>
+        <li>Początki chrześcijaństwa — Початки христ.</li>
+        <li>Średniowiecze — Середньовіччя</li>
+        <li>Polska pierwszych Piastów — Перші Пясти</li>
+      </ol>
+    </div>
+    <div class="section-card">
+      <h3>Ключові вміння (5 клас)</h3>
+      <ol>
+        <li>Читати хронологічну лінію (oś czasu)</li>
+        <li>Розташовувати події по порядку</li>
+        <li>Описати постать історичну</li>
+        <li>Пояснити причини і наслідки</li>
+        <li>Читати карту (mapa historyczna)</li>
+        <li>Порівняти цивілізації</li>
+      </ol>
+    </div>
+    <div class="section-card">
+      <h3>Специфіка для UA дитини</h3>
+      <ol>
+        <li>Польська версія всесвітньої історії</li>
+        <li>Акцент на польській державності</li>
+        <li>Терміни з латини (часті в польській)</li>
+        <li>Дати у форматі польської хронології</li>
+        <li>Карти — польські назви міст/країн</li>
+      </ol>
+    </div>
+    <div class="section-card">
+      <h3>Тип завдань на уроці</h3>
+      <ol>
+        <li>Wymień (перелічи) — факти</li>
+        <li>Opisz (опиши) — постать, подію</li>
+        <li>Porównaj (порівняй) — цивілізації</li>
+        <li>Uzasadnij (обґрунтуй) — причини</li>
+        <li>Zaznacz na mapie (позначте на карті)</li>
+      </ol>
+    </div>
+  </div>
+  <div class="terms-block">
+    <h3>🇵🇱 → 🇺🇦 Ключові терміни</h3>
+    <table class="terms-table">
+      <tr><th>Polski</th><th>Українська</th><th>Пояснення</th></tr>
+      <tr><td>oś czasu</td><td class="ua">хронологічна лінія</td><td class="note-cell">графік подій у часі</td></tr>
+      <tr><td>cywilizacja</td><td class="ua">цивілізація</td><td class="note-cell"></td></tr>
+      <tr><td>faraon</td><td class="ua">фараон</td><td class="note-cell">правитель Єгипту</td></tr>
+      <tr><td>demokracja</td><td class="ua">демократія</td><td class="note-cell">влада народу (Греція)</td></tr>
+      <tr><td>republika</td><td class="ua">республіка</td><td class="note-cell">Стародавній Рим</td></tr>
+      <tr><td>rycerz</td><td class="ua">лицар</td><td class="note-cell">середньовічний воїн</td></tr>
+      <tr><td>przyczyna</td><td class="ua">причина</td><td class="note-cell">чому це сталося?</td></tr>
+      <tr><td>skutek</td><td class="ua">наслідок</td><td class="note-cell">що сталося після?</td></tr>
+    </table>
+  </div>
+  <div class="pedagogy">
+    <h3>🎓 Педагогічна модель для історії</h3>
+    <ul>
+      <li><b>Хронологія:</b> для кожного розділу — візуальна лінія часу з датами PL+UA</li>
+      <li><b>Постаті:</b> картка персонажа (ім'я, роки, роль, чому важливий)</li>
+      <li><b>Причина → Наслідок:</b> схема для кожної події</li>
+      <li><b>Карта:</b> підписи польською + переклад назв UA</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     GEOGRAFIA
+══════════════════════════════════════════════ -->
+<section class="subject" id="geografia">
+  <div class="subject-header">
+    <span class="subject-icon">🌍</span>
+    <span class="subject-title">Geografia</span>
+    <span class="subject-book">«Planeta Nowa» · Nowa Era · 906/1/2018</span>
+  </div>
+  <div class="meta-row">
+    <span class="badge badge-medium">Середня складність</span>
+    <span class="badge">Карти + схеми</span>
+  </div>
+  <div class="sections">
+    <div class="section-card">
+      <h3>Розділи підручника</h3>
+      <ol>
+        <li>Ziemia we Wszechświecie — Земля у Всесвіті</li>
+        <li>Ruchy Ziemi — Рухи Землі</li>
+        <li>Sfery Ziemi — Сфери Землі</li>
+        <li>Lądy i oceany — Суходіл та океани</li>
+        <li>Klimat i roślinność — Клімат і рослинність</li>
+        <li>Polska — Польща (географія)</li>
+      </ol>
+    </div>
+    <div class="section-card">
+      <h3>Ключові вміння</h3>
+      <ol>
+        <li>Читати географічну карту</li>
+        <li>Знати сторони світу (strony świata)</li>
+        <li>Читати діаграми температур/опадів</li>
+        <li>Описати клімат за схемою</li>
+        <li>Порівняти материки</li>
+        <li>Знати регіони Польщі</li>
+      </ol>
+    </div>
+  </div>
+  <div class="terms-block">
+    <h3>🇵🇱 → 🇺🇦 Ключові терміни</h3>
+    <table class="terms-table">
+      <tr><th>Polski</th><th>Українська</th><th>Пояснення</th></tr>
+      <tr><td>równoleżnik</td><td class="ua">паралель</td><td class="note-cell">горизонтальна лінія на карті</td></tr>
+      <tr><td>południk</td><td class="ua">меридіан</td><td class="note-cell">вертикальна лінія на карті</td></tr>
+      <tr><td>klimat</td><td class="ua">клімат</td><td class="note-cell">погода за багато років</td></tr>
+      <tr><td>opad atmosferyczny</td><td class="ua">атмосферні опади</td><td class="note-cell">дощ, сніг, град</td></tr>
+      <tr><td>kontynent</td><td class="ua">материк</td><td class="note-cell">великий масив суходолу</td></tr>
+      <tr><td>nizina</td><td class="ua">низовина</td><td class="note-cell">рівнинна місцевість</td></tr>
+      <tr><td>wyżyna</td><td class="ua">височина</td><td class="note-cell">підвищена рівнина</td></tr>
+      <tr><td>skala mapy</td><td class="ua">масштаб карти</td><td class="note-cell">1:100 000</td></tr>
+    </table>
+  </div>
+  <div class="pedagogy">
+    <h3>🎓 Педагогічна модель для географії</h3>
+    <ul>
+      <li><b>Карта:</b> для кожного розділу — пояснення елементів карти PL→UA</li>
+      <li><b>Схеми:</b> клімат, рельєф, гідрологія — у вигляді підписаних малюнків</li>
+      <li><b>Польща:</b> окрема увага — назви міст, регіонів, річок польською</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     BIOLOGIA
+══════════════════════════════════════════════ -->
+<section class="subject" id="biologia">
+  <div class="subject-header">
+    <span class="subject-icon">🧬</span>
+    <span class="subject-title">Biologia</span>
+    <span class="subject-book">«Puls życia» · Nowa Era · 844/1/2018</span>
+  </div>
+  <div class="meta-row">
+    <span class="badge badge-hard">⚠️ Багато наукової термінології</span>
+    <span class="badge">Латинські терміни</span>
+  </div>
+  <div class="sections">
+    <div class="section-card">
+      <h3>Розділи підручника</h3>
+      <ol>
+        <li>Biologia — nauka o życiu</li>
+        <li>Komórka — клітина</li>
+        <li>Wirusy, bakterie, protisty, grzyby</li>
+        <li>Rośliny — рослини</li>
+        <li>Tkanki i organy roślin</li>
+        <li>Rozmnażanie roślin</li>
+      </ol>
+    </div>
+    <div class="section-card">
+      <h3>Ключові вміння</h3>
+      <ol>
+        <li>Описати будову клітини</li>
+        <li>Розрізнити типи організмів</li>
+        <li>Підписати схему органу/клітини</li>
+        <li>Провести спостереження</li>
+        <li>Класифікувати організми</li>
+      </ol>
+    </div>
+  </div>
+  <div class="terms-block">
+    <h3>🇵🇱 → 🇺🇦 Ключові терміни</h3>
+    <table class="terms-table">
+      <tr><th>Polski</th><th>Українська</th><th>Пояснення</th></tr>
+      <tr><td>komórka</td><td class="ua">клітина</td><td class="note-cell">найменша одиниця живого</td></tr>
+      <tr><td>jądro komórkowe</td><td class="ua">ядро клітини</td><td class="note-cell">«мозок» клітини</td></tr>
+      <tr><td>organizm</td><td class="ua">організм</td><td class="note-cell">жива істота</td></tr>
+      <tr><td>tkanka</td><td class="ua">тканина</td><td class="note-cell">група однакових клітин</td></tr>
+      <tr><td>narząd</td><td class="ua">орган</td><td class="note-cell">серце, легені, корінь</td></tr>
+      <tr><td>fotosynteza</td><td class="ua">фотосинтез</td><td class="note-cell">рослина виробляє їжу зі світла</td></tr>
+      <tr><td>rozmnażanie</td><td class="ua">розмноження</td><td class="note-cell">як з'являються нові організми</td></tr>
+      <tr><td>obserwacja</td><td class="ua">спостереження</td><td class="note-cell">дивитися і записувати</td></tr>
+    </table>
+  </div>
+  <div class="pedagogy">
+    <h3>🎓 Педагогічна модель для біології</h3>
+    <ul>
+      <li><b>Схеми:</b> підписані малюнки клітини, органів — PL + UA підписи</li>
+      <li><b>Класифікація:</b> таблиця «організм → група → ознаки»</li>
+      <li><b>Латинські терміни:</b> пояснюємо, що латина → спільний корінь PL та UA</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     INFORMATYKA
+══════════════════════════════════════════════ -->
+<section class="subject" id="informatyka">
+  <div class="subject-header">
+    <span class="subject-icon">💻</span>
+    <span class="subject-title">Informatyka</span>
+    <span class="subject-book">«Lubię to!» · Nowa Era · 847/2/2021/z1</span>
+  </div>
+  <div class="meta-row">
+    <span class="badge badge-easy">✅ Легший предмет (практика)</span>
+  </div>
+  <div class="sections">
+    <div class="section-card">
+      <h3>Теми програми</h3>
+      <ol>
+        <li>Bezpieczne korzystanie z internetu — безпека</li>
+        <li>Edytor tekstu (Word) — текстовий редактор</li>
+        <li>Arkusz kalkulacyjny (Excel) — таблиці</li>
+        <li>Prezentacja (PowerPoint) — презентації</li>
+        <li>Algorytmy — алгоритми</li>
+        <li>Programowanie (Scratch) — програмування</li>
+      </ol>
+    </div>
+    <div class="section-card">
+      <h3>Перевага для UA дитини</h3>
+      <ol>
+        <li>Інтерфейс програм — міжнародний</li>
+        <li>Scratch — англійська мова (зрозуміліше)</li>
+        <li>Практичні завдання = менше мовного бар'єру</li>
+        <li>Дитина може вже знати ці програми</li>
+      </ol>
+    </div>
+  </div>
+  <div class="terms-block">
+    <h3>🇵🇱 → 🇺🇦 Ключові терміни</h3>
+    <table class="terms-table">
+      <tr><th>Polski</th><th>Українська</th><th>Пояснення</th></tr>
+      <tr><td>plik</td><td class="ua">файл</td><td class="note-cell"></td></tr>
+      <tr><td>folder</td><td class="ua">папка / тека</td><td class="note-cell"></td></tr>
+      <tr><td>algorytm</td><td class="ua">алгоритм</td><td class="note-cell">покрокова інструкція</td></tr>
+      <tr><td>pętla</td><td class="ua">цикл</td><td class="note-cell">повторення дій</td></tr>
+      <tr><td>warunek</td><td class="ua">умова</td><td class="note-cell">якщо... то...</td></tr>
+      <tr><td>program</td><td class="ua">програма</td><td class="note-cell"></td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     TECHNIKA
+══════════════════════════════════════════════ -->
+<section class="subject" id="technika">
+  <div class="subject-header">
+    <span class="subject-icon">🔧</span>
+    <span class="subject-title">Technika</span>
+    <span class="subject-book">«Jak to działa?» · Nowa Era · 295/2/2018</span>
+  </div>
+  <div class="meta-row">
+    <span class="badge badge-easy">✅ Практичний предмет</span>
+  </div>
+  <div class="sections">
+    <div class="section-card">
+      <h3>Теми програми</h3>
+      <ol>
+        <li>Materiały i ich właściwości — матеріали</li>
+        <li>Narzędzia — інструменти</li>
+        <li>Elektryczność — електрика</li>
+        <li>Konstrukcje — конструювання</li>
+        <li>Bezpieczeństwo — безпека</li>
+        <li>Dom i jego wyposażenie — будинок</li>
+      </ol>
+    </div>
+    <div class="section-card">
+      <h3>Ключові терміни</h3>
+      <ol>
+        <li>narzędzie → інструмент</li>
+        <li>materiał → матеріал</li>
+        <li>prąd elektryczny → електричний струм</li>
+        <li>bezpiecznik → запобіжник</li>
+        <li>projekt → проект, креслення</li>
+      </ol>
+    </div>
+  </div>
+  <div class="pedagogy">
+    <h3>🎓 Педагогічна модель для техніки</h3>
+    <ul>
+      <li><b>Інструкції:</b> покрокові завдання з малюнками</li>
+      <li><b>Безпека:</b> правила безпеки — двомовні (критично важливо розуміти)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     MUZYKA
+══════════════════════════════════════════════ -->
+<section class="subject" id="muzyka">
+  <div class="subject-header">
+    <span class="subject-icon">🎵</span>
+    <span class="subject-title">Muzyka</span>
+    <span class="subject-book">«Lekcja muzyki» · Nowa Era · 852/2/2018</span>
+  </div>
+  <div class="meta-row">
+    <span class="badge badge-easy">✅ Менш критичний предмет</span>
+  </div>
+  <div class="sections">
+    <div class="section-card">
+      <h3>Теми програми</h3>
+      <ol>
+        <li>Notacja muzyczna — нотна грамота</li>
+        <li>Instrumenty muzyczne — інструменти</li>
+        <li>Głos ludzki — людський голос</li>
+        <li>Wielcy kompozytorzy — великі композитори</li>
+        <li>Muzyka polska — польська музика</li>
+        <li>Taniec — танець</li>
+      </ol>
+    </div>
+    <div class="section-card">
+      <h3>Терміни PL→UA</h3>
+      <ol>
+        <li>nuta → нота</li>
+        <li>melodia → мелодія</li>
+        <li>rytm → ритм</li>
+        <li>instrument → інструмент</li>
+        <li>kompozytor → композитор</li>
+        <li>takt → такт</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     PLASTYKA
+══════════════════════════════════════════════ -->
+<section class="subject" id="plastyka">
+  <div class="subject-header">
+    <span class="subject-icon">🎨</span>
+    <span class="subject-title">Plastyka</span>
+    <span class="subject-book">«Do dzieła!» · Nowa Era · 903/2/2018</span>
+  </div>
+  <div class="meta-row">
+    <span class="badge badge-easy">✅ Менш критичний предмет</span>
+  </div>
+  <div class="sections">
+    <div class="section-card">
+      <h3>Теми програми</h3>
+      <ol>
+        <li>Elementy języka plastycznego — елементи</li>
+        <li>Techniki plastyczne — техніки</li>
+        <li>Historia sztuki — історія мистецтва</li>
+        <li>Kompozycja — композиція</li>
+        <li>Barwy — кольори</li>
+        <li>Perspektywa — перспектива</li>
+      </ol>
+    </div>
+    <div class="section-card">
+      <h3>Терміни PL→UA</h3>
+      <ol>
+        <li>barwa → колір</li>
+        <li>linia → лінія</li>
+        <li>kompozycja → композиція</li>
+        <li>perspektywa → перспектива</li>
+        <li>kontrast → контраст</li>
+        <li>bryła → об'єм</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SZKOLNY POLSKI
+══════════════════════════════════════════════ -->
+<section class="szkolny-box" id="szkolny-polski">
+  <h2>🗣️ Polski szkolny — Мова завдань</h2>
+  <p style="font-size:.9rem;color:var(--muted);margin-bottom:1rem">
+    Дитина може знати предмет, але не розуміти <b>що від неї просять зробити</b>.
+    Ці слова зустрічаються у всіх підручниках і на всіх контрольних роботах.
+  </p>
+  <div class="szkolny-grid">
+    <div class="szkolny-card"><div class="cmd">Oblicz</div><div class="ua-meaning">Обчисли / порахуй</div></div>
+    <div class="szkolny-card"><div class="cmd">Wyznacz</div><div class="ua-meaning">Визнач / знайди</div></div>
+    <div class="szkolny-card"><div class="cmd">Uzasadnij</div><div class="ua-meaning">Обґрунтуй / поясни чому</div></div>
+    <div class="szkolny-card"><div class="cmd">Porównaj</div><div class="ua-meaning">Порівняй</div></div>
+    <div class="szkolny-card"><div class="cmd">Wymień</div><div class="ua-meaning">Назви / перелічи</div></div>
+    <div class="szkolny-card"><div class="cmd">Zaznacz</div><div class="ua-meaning">Познач / відмітъ</div></div>
+    <div class="szkolny-card"><div class="cmd">Przyporządkuj</div><div class="ua-meaning">З'єднай / співвіднеси</div></div>
+    <div class="szkolny-card"><div class="cmd">Wyjaśnij</div><div class="ua-meaning">Поясни</div></div>
+    <div class="szkolny-card"><div class="cmd">Scharakteryzuj</div><div class="ua-meaning">Охарактеризуй / опиши</div></div>
+    <div class="szkolny-card"><div class="cmd">Opisz</div><div class="ua-meaning">Опиши</div></div>
+    <div class="szkolny-card"><div class="cmd">Podkreśl</div><div class="ua-meaning">Підкресли</div></div>
+    <div class="szkolny-card"><div class="cmd">Wpisz</div><div class="ua-meaning">Впиши / запиши</div></div>
+    <div class="szkolny-card"><div class="cmd">Dopasuj</div><div class="ua-meaning">Підбери / добери</div></div>
+    <div class="szkolny-card"><div class="cmd">Przelicz</div><div class="ua-meaning">Перерахуй / переведи</div></div>
+    <div class="szkolny-card"><div class="cmd">Narysuj</div><div class="ua-meaning">Намалюй / накресли</div></div>
+    <div class="szkolny-card"><div class="cmd">Sprawdź</div><div class="ua-meaning">Перевір</div></div>
+    <div class="szkolny-card"><div class="cmd">Znajdź</div><div class="ua-meaning">Знайди</div></div>
+    <div class="szkolny-card"><div class="cmd">Podaj przykład</div><div class="ua-meaning">Наведи приклад</div></div>
+    <div class="szkolny-card"><div class="cmd">Na podstawie...</div><div class="ua-meaning">На основі... (тексту, карти)</div></div>
+    <div class="szkolny-card"><div class="cmd">O ile więcej/mniej</div><div class="ua-meaning">На скільки більше/менше</div></div>
+    <div class="szkolny-card"><div class="cmd">Ile razy</div><div class="ua-meaning">У скільки разів</div></div>
+    <div class="szkolny-card"><div class="cmd">Odpowiedz na pytanie</div><div class="ua-meaning">Дай відповідь на питання</div></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     ДВА РЕЖИМИ РОБОТИ
+══════════════════════════════════════════════ -->
+<div class="modes-row" style="margin-top:3rem" id="modes">
+  <div class="mode-card">
+    <h3>🏫 Режим «Сьогодні в школі»</h3>
+    <p style="margin-bottom:.6rem">Ребёнок открывает расписание → нажимает на предмет → получает:</p>
+    <ul>
+      <li>5 ключових слів до уроку (2 хв)</li>
+      <li>3 поняття з поясненням</li>
+      <li>Що треба вспомнити з минулого</li>
+      <li>— — —</li>
+      <li>Після уроку: пояснення теми</li>
+      <li>5 запитань на перевірку</li>
+      <li>3 вправи для закріплення</li>
+    </ul>
+  </div>
+  <div class="mode-card">
+    <h3>📚 Режим «Вчуся за програмою»</h3>
+    <p style="margin-bottom:.6rem">Ребёнок выбирает предмет → видит полную программу с прогрессом:</p>
+    <ul>
+      <li>🟢 Опрацьована тема</li>
+      <li>🟡 Частково (треба повторити)</li>
+      <li>⚪ Ще не вивчена</li>
+      <li>— — —</li>
+      <li>Довгострокове навчання</li>
+      <li>Відстеження прогресу</li>
+      <li>Система повторення</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     МОДЕЛЬ ОДНІЄЇ ТЕМИ
+══════════════════════════════════════════════ -->
+<div class="topic-template" id="model">
+  <h2>📐 Шаблон однієї теми (приклад: Potęgowanie)</h2>
+  <p style="font-size:.85rem;color:var(--muted);margin-bottom:1rem">
+    Це шаблон, за яким будуватиметься КОЖНА тема у всіх предметах. ЕТАП 2 — реалізуємо перший.
+  </p>
+
+  <div class="path-row" style="margin-bottom:1.25rem">
+    <div class="path-step active"><span class="step-icon">🇵🇱</span>Польська</div>
+    <div class="path-step active"><span class="step-icon">🇺🇦</span>Пояснення UA</div>
+    <div class="path-step active"><span class="step-icon">🧠</span>Запам'ятай</div>
+    <div class="path-step active"><span class="step-icon">📋</span>Терміни</div>
+    <div class="path-step active"><span class="step-icon">✏️</span>Спробуй</div>
+    <div class="path-step active"><span class="step-icon">❓</span>Перевір</div>
+    <div class="path-step active"><span class="step-icon">⚠️</span>Помилка</div>
+    <div class="path-step active"><span class="step-icon">🟢</span>Освоєно</div>
+  </div>
+
+  <div class="topic-block">
+    <div class="label">🇵🇱 Польською (як у підручнику)</div>
+    <div class="content pl">Potęgowanie to krótszy zapis mnożenia tych samych czynników.</div>
+  </div>
+  <div class="topic-block">
+    <div class="label">🇺🇦 Простими словами (по-українськи)</div>
+    <div class="content ua">Степінь — це короткий запис множення однакових чисел.<br>3 × 3 × 3 × 3 = 3⁴ (три в четвертому степені)</div>
+  </div>
+  <div class="topic-block">
+    <div class="label">🧠 Запам'ятай (схема)</div>
+    <div class="content" style="font-size:1.1rem;letter-spacing:.05em">
+      3<sup>4</sup> → <b>3</b> = podstawa (основа) · <b>4</b> = wykładnik (показник)
+    </div>
+  </div>
+  <div class="topic-block">
+    <div class="label">📋 Терміни PL → UA</div>
+    <div class="content">
+      potęga → <span style="color:var(--accent2)">степінь</span> ·
+      podstawa → <span style="color:var(--accent2)">основа</span> ·
+      wykładnik → <span style="color:var(--accent2)">показник</span> ·
+      czynnik → <span style="color:var(--accent2)">множник</span>
+    </div>
+  </div>
+  <div class="topic-block">
+    <div class="label">✏️ Спробуй сам</div>
+    <div class="content">2³ = ? &nbsp;·&nbsp; 5² = ? &nbsp;·&nbsp; запиши 4×4×4×4 як степінь</div>
+  </div>
+  <div class="topic-block">
+    <div class="label">⚠️ Типова помилка</div>
+    <div class="content" style="color:var(--red)">
+      2³ ≠ 2 × 3 = 6 ❌<br>
+      <span style="color:var(--green)">2³ = 2 × 2 × 2 = 8 ✅</span>
+    </div>
+  </div>
+  <div class="topic-block">
+    <div class="label">🟢 Після цієї теми дитина вміє:</div>
+    <div class="content" style="color:var(--green)">
+      rozpoznać podstawę · rozpoznać wykładnik · zapisać iloczyn jako potęgę · obliczyć prostą potęgę
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  EduMost 5 Klasa · SP nr 3 Poznań · 2026/2027 ·
+  <a href="index.html">Головна</a> · <a href="schedule.html">Розклад</a>
+</footer>
+
+</div>
+</body>
+</html>

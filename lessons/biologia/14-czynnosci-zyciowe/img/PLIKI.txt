@@ -1,0 +1,20 @@
+# Lekcja 14 — Czynności życiowe organizmów
+# Folder GitHub:
+# Biologia/L14_Czynnosci_zyciowe_organizmow/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l14-odzywianie.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Nagłówek PL: odżywianie się. Dwie strzałki: samożywność (liść, fotosynteza) i cudzożywność (zając, saprobiont, pasożyt). Bez angielskiego, bez logotypów, bez krwi.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L14_Czynnosci_zyciowe_organizmow/images/l14-odzywianie.png?raw=true
+
+l14-oddychanie.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Strzałka 1: tlen z powietrza do organizmu (wymiana gazów). Strzałka 2: cukier + tlen w mitochondrium → energia. Polskie etykiety. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L14_Czynnosci_zyciowe_organizmow/images/l14-oddychanie.png?raw=true
+
+l14-zaleznosc.png
+IMAGE PROMPT: Edukacyjny schemat 16:9. Roślina i zwierzę. Strzałki PL: tlen z rośliny do zwierzęcia; CO₂ ze zwierzęcia do rośliny; pokarm z rośliny do zwierzęcia. Bez skomplikowanego obiegu węgla, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L14_Czynnosci_zyciowe_organizmow/images/l14-zaleznosc.png?raw=true
+
+l14-pozostale.png
+IMAGE PROMPT: Edukacyjna plansza 16:9, pięć ikon z etykietami PL: wydalanie; ruch; wzrost i rozwój; rozmnażanie się; reakcja na bodźce. Bez angielskiego, bez logotypów, bez grozy.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L14_Czynnosci_zyciowe_organizmow/images/l14-pozostale.png?raw=true

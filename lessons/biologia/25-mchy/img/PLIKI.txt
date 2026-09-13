@@ -1,0 +1,28 @@
+# Lekcja 25 — Mchy
+# Folder GitHub:
+# Biologia/L25_Mchy/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l25-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9 zielonej poduszki mchu na pniu lub kamieniu w wilgotnym lesie, dzień. Etykieta PL: mech. Bez paproci, bez kwiatu, bez szyszek, bez porostu jako jedynego motywu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L25_Mchy/images/l25-zacznijmy.png?raw=true
+
+l25-srodowisko.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, trzy kadry, etykiety PL. 1 runo leśne — cień i wilgoć. 2 mech na kamieniu / korze. 3 torfowisko / bagno. Napis: środowisko mchów. Bez paproci jako głównego motywu. Bez kwiatu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L25_Mchy/images/l25-srodowisko.png?raw=true
+
+l25-budowa.png
+IMAGE PROMPT: Edukacyjny schemat 16:9 jednej rośliny mchu. Etykiety PL: listki; łodyżka; chwytniki (przy podłożu). Bez puszki na tym kadrze. Bez przekroju liścia z lekcji 24. Bez korzenia z włośnikami. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L25_Mchy/images/l25-budowa.png?raw=true
+
+l25-nie-korzen.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, dwa kadry. LEWA: nitkowate chwytniki mchu, etykieta PL: chwytniki — przytwierdzają, nie są korzeniem. PRAWA: korzeń z włośnikami (przypomnienie L22), etykieta: korzeń. Bez stref czepca. Bez paproci. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L25_Mchy/images/l25-nie-korzen.png?raw=true
+
+l25-puszka.png
+IMAGE PROMPT: Edukacyjny schemat 16:9. Zielony mech, z niego cienki trzonek i puszka. Etykiety PL: łodyżka z listkami; trzonek; puszka zarodniona; zarodniki (drobny proszek, nie groza). Napis: rozmnażanie zarodnikami. Bez kwiatu, bez nasion, bez kupki zarodni paproci. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L25_Mchy/images/l25-puszka.png?raw=true
+
+l25-torfowiec.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, trzy kadry, etykiety PL. 1 poduszka mchu chłonie deszcz — zatrzymuje wodę. 2 torfowiec na torfowisku. 3 przekrój gleby: torf. Napis: znaczenie mchów. Bez kopalni i dymu. Bez kwiatu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L25_Mchy/images/l25-torfowiec.png?raw=true

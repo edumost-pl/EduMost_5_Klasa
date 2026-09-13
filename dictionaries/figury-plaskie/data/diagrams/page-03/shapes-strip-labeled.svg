@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 78" role="img" aria-label="Figury wokół nas">
+  <rect width="720" height="78" rx="12" fill="#FAF5FF"/>
+  <rect x="18" y="14" width="36" height="36" rx="4" fill="#CE93D8" stroke="#6A32A0" stroke-width="2"/>
+  <text x="36" y="68" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="9" font-weight="700" fill="#6A32A0">□ poduszka</text>
+  <rect x="92" y="18" width="50" height="28" rx="4" fill="#90CAF9" stroke="#1565C0" stroke-width="2"/>
+  <text x="117" y="68" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="9" font-weight="700" fill="#1565C0">▭ telefon</text>
+  <polygon points="195,14 220,50 170,50" fill="#FFE082" stroke="#FF9800" stroke-width="2"/>
+  <text x="195" y="68" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="9" font-weight="700" fill="#EF6C00">△ pizza</text>
+  <circle cx="270" cy="32" r="18" fill="#B2EBF2" stroke="#00BCD4" stroke-width="2"/>
+  <text x="270" y="68" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="9" font-weight="700" fill="#00838F">○ talerz</text>
+  <rect x="318" y="14" width="36" height="36" fill="#E1BEE7" stroke="#6A32A0" stroke-width="2"/>
+  <line x1="336" y1="14" x2="336" y2="50" stroke="#6A32A0" stroke-width="1"/>
+  <line x1="318" y1="32" x2="354" y2="32" stroke="#6A32A0" stroke-width="1"/>
+  <text x="336" y="68" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="9" font-weight="700" fill="#6A32A0">□ kafelki</text>
+  <rect x="392" y="12" width="28" height="40" rx="2" fill="#FFE0B2" stroke="#EF6C00" stroke-width="2"/>
+  <circle cx="412" cy="32" r="2" fill="#5D4037"/>
+  <text x="406" y="68" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="9" font-weight="700" fill="#EF6C00">▭ drzwi</text>
+  <polygon points="480,16 505,50 455,50" fill="#C8E6C9" stroke="#43A047" stroke-width="2"/>
+  <text x="480" y="68" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="9" font-weight="700" fill="#2E7D32">△ wieszak</text>
+  <circle cx="560" cy="32" r="18" fill="#E0F7FA" stroke="#00838F" stroke-width="2"/>
+  <ellipse cx="554" cy="26" rx="5" ry="8" fill="#fff" opacity=".7"/>
+  <text x="560" y="68" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="9" font-weight="700" fill="#00838F">○ lustro</text>
+  <text x="655" y="38" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="11" font-weight="800" fill="#6A32A0">FIGURY</text>
+  <text x="655" y="52" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="10" font-weight="700" fill="#00BCD4">WOKÓŁ NAS</text>
+</svg>

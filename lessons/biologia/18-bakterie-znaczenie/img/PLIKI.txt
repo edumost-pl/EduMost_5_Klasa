@@ -1,0 +1,32 @@
+# Lekcja 18 — Bakterie — znaczenie i zdrowie
+# Folder GitHub:
+# Biologia/L18_Bakterie_znaczenie_i_zdrowie/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l18-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczny kolaż 16:9: kubek jogurtu, korzenie rośliny w glebie, dziecko myje ręce. Etykiety PL: pożyteczne; gleba; higiena. Bez grozy, bez ran, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L18_Bakterie_znaczenie_i_zdrowie/images/l18-zacznijmy.png?raw=true
+
+l18-pozyteczne.png
+IMAGE PROMPT: Edukacyjna plansza 16:9, cztery kafelki z etykietami PL: jogurt i ser; bakterie azotowe przy korzeniu motylkowego; saprobionty — liść w glebie; flora jelitowa (schemat brzucha, nie anatomia grozy). Bez chorób, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L18_Bakterie_znaczenie_i_zdrowie/images/l18-pozyteczne.png?raw=true
+
+l18-chorobotworcze.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Spokojna ikona termometru i lekarza. Etykiety PL: niektóre bakterie są chorobotwórcze; przykłady na klasę 5: angina, próchnica — bez ran w zbliżeniu, bez sepsy, bez grozy. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L18_Bakterie_znaczenie_i_zdrowie/images/l18-chorobotworcze.png?raw=true
+
+l18-higiena.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, trzy kafelki PL: myj ręce przed jedzeniem; pij bezpieczną wodę; trzymaj łatwo psujące się jedzenie w lodówce. Uśmiechnięte dziecko, bez grozy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L18_Bakterie_znaczenie_i_zdrowie/images/l18-higiena.png?raw=true
+
+l18-pasteryzacja.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Karton mleka z etykietą PL: pasteryzowane. Termometr / ciepła kąpiel, nie wrzątek w kłębach. Napis: podgrzanie niszczy wiele bakterii. Bez marek, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L18_Bakterie_znaczenie_i_zdrowie/images/l18-pasteryzacja.png?raw=true
+
+l18-antybiotyki.png
+IMAGE PROMPT: Edukacyjne porównanie 16:9. LEWA: bakteria + pudełko leku, etykieta PL: antybiotyk może pomóc. PRAWA: wirus + przekreślone pudełko, etykieta: antybiotyk nie działa na wirusy. Bez nazw marek, bez grozy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L18_Bakterie_znaczenie_i_zdrowie/images/l18-antybiotyki.png?raw=true
+
+l18-nie-naduzywac.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Kalendarz tabletek z etykietą PL: do końca, jak kazał lekarz. Przekreślone: branie „na wszelki wypadek”; dzielenie się lekiem z kolegą. Napis: odporność bakterii na antybiotyk. Bez grozy, bez marek, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L18_Bakterie_znaczenie_i_zdrowie/images/l18-nie-naduzywac.png?raw=true

@@ -1,0 +1,13 @@
+# Lekcja 10 — Kultura starożytnej Grecji
+# Wrzuć pliki do GitHub: Historia/076.png … 082.png
+# https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Historia/
+# Obrazy: bez grozy; teatr półkole (nie Koloseum); zapasy bez krwi;
+# Dyskobol jak w podręczniku; nowożytne igrzyska osobno od pięcioboju.
+
+076.png  Malarstwo: wazy i amfory
+077.png  Rzeźba: Dyskobol, Atena, Zeus (Myron, Fidiasz)
+078.png  Narodziny teatru: Dionizos, Wielkie Dionizje
+079.png  Teatr grecki z podpisami (widownia, chór, scena) — NIE amfiteatr
+080.png  Filozofia: Sokrates, Platon, Arystoteles
+081.png  Pięciobój (biegi, skok, oszczep, dysk, zapasy)
+082.png  Odrodzenie igrzysk (1896, znicz, Grecja)

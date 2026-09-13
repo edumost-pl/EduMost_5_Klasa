@@ -1,0 +1,28 @@
+# Lekcja 22 — Korzeń
+# Folder GitHub:
+# Biologia/L22_Korzen/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l22-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczny przekrój 16:9 doniczki z sadzonką. Nad ziemią liście i łodyga bez etykiet-lekcji. Pod ziemią sieć korzeni, etykieta PL: korzeń — organ podziemny. Bez kwiatu, owocu, nasion. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L22_Korzen/images/l22-zacznijmy.png?raw=true
+
+l22-funkcje.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, trzy kadry, etykiety PL. 1 roślina nie wywraca się na wietrze — umocowanie. 2 niebieskie strzałki z gleby do korzenia — woda i sole. 3 przekrój marchewki — zapas. Bez łodygi w przekroju, bez liścia jako tematu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L22_Korzen/images/l22-funkcje.png?raw=true
+
+l22-systemy.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. LEWA: marchew / dąb — jeden gruby korzeń główny w głąb, cieńsze boczne, etykieta PL: system palowy. PRAWA: trawa / cebula — pęk cienkich korzeni podobnej grubości, etykieta: system wiązkowy. Bez kwiatów. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L22_Korzen/images/l22-systemy.png?raw=true
+
+l22-strefy.png
+IMAGE PROMPT: Edukacyjny schemat 16:9, czubek korzenia w dół. Etykiety PL od dołu: czepiec; stożek wzrostu (tkanka twórcza); strefa włośnikowa; wyżej korzenie boczne / strefa przewodząca. Małe włośniki jak meszek. Bez pełnego przekroju łodygi. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L22_Korzen/images/l22-strefy.png?raw=true
+
+l22-przekroj.png
+IMAGE PROMPT: Edukacyjny przekrój poprzeczny 16:9 młodego korzenia. Etykiety PL od zewnątrz: skórka + włośnik; kora (miękisz); walec osiowy — drewno i łyko. Napis: tkanki z lekcji 21 w organie korzeń. Bez słojów rocznych, bez wiązki łodygi. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L22_Korzen/images/l22-przekroj.png?raw=true
+
+l22-spichrzowy.png
+IMAGE PROMPT: Fotorealistyczny kolaż 16:9: marchew, pietruszka, burak ćwikłowy na desce, ziemia na skórce. Etykieta PL: korzenie spichrzowe — magazyn. Napis: to organ podziemny, nie owoc. Bez kwiatu i nasion. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L22_Korzen/images/l22-spichrzowy.png?raw=true

@@ -1,0 +1,149 @@
+.hero {
+  display: grid;
+  grid-template-columns:
+    170px
+    1fr
+    260px;
+
+  /* align-items: end; */
+  column-gap: 40px;
+  padding: 0px 40px;
+  height: 260px;
+  position:relative;
+}
+
+/* Decor */
+
+
+
+.hero-decor{
+
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    z-index:1;
+
+}
+.dec{
+
+position:absolute;
+
+}
+
+
+/* Badge */
+
+.hero-badge {
+  width: 170px;
+  flex-shrink: 0;
+}
+.hero-badge img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Hero Content */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 620px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Title */
+.hero-title {
+  font-size: 82px;
+  font-weight: 900;
+  line-height: 0.9;
+  color: #1746a2;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+/* Subtitle */
+.hero-subtitle {
+  font-size: 56px;
+  font-weight: 900;
+  margin-top: 14px;
+}
+.hero-subtitle.green {
+  color: #25a244;
+}
+
+.hero-subtitle.orange {
+  color: orange;
+}
+
+.hero-subtitle.blue {
+  color: blue;
+}
+
+.hero-subtitle.purple {
+  color: purple;
+}
+/* Маленький текст */
+.hero-kicker {
+  font-size: 22px;
+  font-weight: 800;
+  color: #2f2f2f;
+  letter-spacing: 0.3px;
+}
+
+/* Сова */
+.hero-owl {
+  position: relative;
+
+  width: 240px;
+  height: 240px;
+
+  margin-top: 10px;
+}
+/* Облачко */
+.hero-bubble {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  max-width: 170px;
+  padding: 14px 20px;
+  background: #fff;
+  border: 3px solid #2a52be;
+  border-radius: 22px;
+  font-weight: 800;
+  z-index: 2;
+  font-size: 20px;
+  text-align: center;
+}
+
+.hero-bubble::after {
+  content: "";
+
+  position: absolute;
+  bottom: -10px;
+  right: 30px;
+
+  width: 18px;
+  height: 18px;
+
+  background: white;
+
+  border-right: 3px solid #2a52be;
+  border-bottom: 3px solid #2a52be;
+
+  transform: rotate(45deg);
+}
+
+.owl-image {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  bottom: 0;
+
+  width: 200px;
+  height: 190px;
+}

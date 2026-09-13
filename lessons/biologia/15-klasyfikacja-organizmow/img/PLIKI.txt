@@ -1,0 +1,32 @@
+# Lekcja 15 — Klasyfikacja organizmów
+# Folder GitHub:
+# Biologia/L15_Klasyfikacja_organizmow/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l15-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczny kolaż 16:9, cztery kadry: dąb, pies, muchomor, kropla stawu. Polskie etykiety bez nazw królestw jeszcze. Bez wirusów, bez grozy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L15_Klasyfikacja_organizmow/images/l15-zacznijmy.png?raw=true
+
+l15-po-co.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Półki z etykietami PL: podobne razem; wspólny język nazw; łatwiej uczyć się pokrewieństwa. Proste ikony organizmów. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L15_Klasyfikacja_organizmow/images/l15-po-co.png?raw=true
+
+l15-gatunek.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. LEWA: jamnik, owczarek, labrador — etykieta PL: jeden gatunek (pies). PRAWA: wilk — inny gatunek. Napis: osobniki jednego gatunku mogą mieć płodne potomstwo. Bez walki, bez grozy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L15_Klasyfikacja_organizmow/images/l15-gatunek.png?raw=true
+
+l15-jednostki.png
+IMAGE PROMPT: Edukacyjna drabina 16:9 od dołu do góry, polskie etykiety: gatunek → rodzaj → rodzina → rząd → gromada → typ → królestwo. Przykład: wilk szary → pies → psowate → drapieżne → ssaki → strunowce → zwierzęta. Jasne tło, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L15_Klasyfikacja_organizmow/images/l15-jednostki.png?raw=true
+
+l15-nazwa.png
+IMAGE PROMPT: Edukacyjna karta 16:9. Zdjęcie wilka (spokojne). Etykiety PL: nazwa polska — wilk szary; nazwa dwuczłonowa — Canis lupus (rodzaj Canis, gatunek lupus). Bez angielskiego w UI poza łaciną naukową, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L15_Klasyfikacja_organizmow/images/l15-nazwa.png?raw=true
+
+l15-krolestwa.png
+IMAGE PROMPT: Edukacyjna plansza 16:9, pięć równych kafelków z polskimi etykietami i prostymi zdjęciami: bakterie (mikroskop); protisty (pantofelek); grzyby (muchomor bez grozy); rośliny (dąb); zwierzęta (sarna). Osobno mała szara karta: wirusy — nie królestwo. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L15_Klasyfikacja_organizmow/images/l15-krolestwa.png?raw=true
+
+l15-wirusy.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Drzewo pięciu królestw. Obok, za kreską, prosta osłonka wirusa (nie groźna, schematyczna) z etykietą PL: wirusy — poza królestwami; nie są komórkami. Bez choroby w zbliżeniu, bez grozy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L15_Klasyfikacja_organizmow/images/l15-wirusy.png?raw=true

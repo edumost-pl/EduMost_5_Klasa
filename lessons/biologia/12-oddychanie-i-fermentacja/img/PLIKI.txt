@@ -1,0 +1,32 @@
+# Lekcja 12 — Oddychanie tlenowe i fermentacja
+# Folder GitHub:
+# Biologia/L12_Oddychanie_tlenowe_i_fermentacja/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l12-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9. Dziecko ok. 11 lat biegnie po boisku szkolnym, twarz nie w zbliżeniu, dzień. Etykieta PL: komórki potrzebują energii. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L12_Oddychanie_tlenowe_i_fermentacja/images/l12-zacznijmy.png?raw=true
+
+l12-dwa-znaczenia.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, dwa kadry, polskie etykiety. LEWA: sylwetka człowieka, strzałki tlen do płuc, CO2 na zewnątrz — wymiana gazów. PRAWA: mitochondrium, cukier + tlen → energia — oddychanie tlenowe (komórkowe). Bez angielskiego, bez logotypów, bez grozy.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L12_Oddychanie_tlenowe_i_fermentacja/images/l12-dwa-znaczenia.png?raw=true
+
+l12-rownanie.png
+IMAGE PROMPT: Czysty edukacyjny schemat 16:9. Polskie równanie: glukoza + tlen → dwutlenek węgla + woda + energia. Porównanie małą czcionką: fotosynteza idzie odwrotnie (bez wymagania wzorów). Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L12_Oddychanie_tlenowe_i_fermentacja/images/l12-rownanie.png?raw=true
+
+l12-mitochondrium.png
+IMAGE PROMPT: Edukacyjny schemat 16:9. Owalne mitochondrium z fałdami, etykiety PL: mitochondrium; oddychanie tlenowe; energia. Komórka zwierzęca lub roślinna bez chloroplastu na pierwszym planie. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L12_Oddychanie_tlenowe_i_fermentacja/images/l12-mitochondrium.png?raw=true
+
+l12-fermentacja.png
+IMAGE PROMPT: Edukacyjna plansza 16:9, dwa kadry. 1 drożdże w cieście / w słoiku — fermentacja alkoholowa, CO2, etykieta PL. 2 biegacz trzyma udo — fermentacja mlekowa, kwas mlekowy, bez grozy. Napis: mniej energii niż przy oddychaniu tlenowym. Bez alkoholu do picia, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L12_Oddychanie_tlenowe_i_fermentacja/images/l12-fermentacja.png?raw=true
+
+l12-roslina.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. LEWA dzień: liść, słońce, strzałki fotosyntezy i mniejsza strzałka oddychania. PRAWA noc: tylko oddychanie (CO2 na zewnątrz, O2 do komórki). Polskie etykiety. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L12_Oddychanie_tlenowe_i_fermentacja/images/l12-roslina.png?raw=true
+
+l12-energia.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, trzy ikony z etykietami PL: ruch; wzrost; ciepło ciała. Źródło: energia z oddychania tlenowego lub fermentacji. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L12_Oddychanie_tlenowe_i_fermentacja/images/l12-energia.png?raw=true

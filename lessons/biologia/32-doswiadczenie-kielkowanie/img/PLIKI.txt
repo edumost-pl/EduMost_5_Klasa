@@ -1,0 +1,28 @@
+# Lekcja 32 — Doświadczenie: kiełkowanie
+# Folder GitHub:
+# Biologia/L32_Doswiadczenie_kielkowanie/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l32-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9. Przezroczysty słoik, wilgotna bibuła, nasiona fasoli, z jednego wychodzi biały kiełek. Etykieta PL: kiełkowanie. Szkolny stół, dzień. Bez haczyków i skrzydełek (L31). Bez twarzy. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L32_Doswiadczenie_kielkowanie/images/l32-zacznijmy.png?raw=true
+
+l32-kielkowanie.png
+IMAGE PROMPT: Edukacyjny schemat 16:9, dwa kadry, etykiety PL. LEWA: suche nasiono fasoli. PRAWA: to samo nasiono z białym kiełkiem i korzonkiem. Napis: kiełkowanie. Bez siewki dębu z liśćmi (L33). Bez pszczoły. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L32_Doswiadczenie_kielkowanie/images/l32-kielkowanie.png?raw=true
+
+l32-hipoteza.png
+IMAGE PROMPT: Szkolna tablica 16:9, napisy PL. Problem: Czy do kiełkowania fasoli potrzebna jest woda? Hipoteza: Fasola kiełkuje, gdy bibuła jest wilgotna. Bez gotowego wniosku jako pewnika. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L32_Doswiadczenie_kielkowanie/images/l32-hipoteza.png?raw=true
+
+l32-czynniki.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, trzy karty, etykiety PL: woda (kropla); temperatura (termometr); światło (słońce / szafa). Jedna karta pogrubiona: woda. Napis: w jednym doświadczeniu — jeden czynnik. Przekreślone: woda + lodówka naraz. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L32_Doswiadczenie_kielkowanie/images/l32-czynniki.png?raw=true
+
+l32-proby.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9, dwa identyczne słoiki, etykiety PL. LEWY: wilgotna bibuła, fasola, napis: próba badawcza — jest woda. PRAWY: sucha bibuła, fasola, napis: próba kontrolna — brak wody. Ten sam stół, to samo światło. Bez pleśni w grozie. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L32_Doswiadczenie_kielkowanie/images/l32-proby.png?raw=true
+
+l32-wynik.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, dwa kadry po kilku dniach, etykiety PL. LEWA: wilgotna bibuła, kiełek, napis: wynik — kiełkuje. PRAWA: sucha bibuła, nasiono bez kiełka, napis: wynik — nie kiełkuje. Na dole: Wniosek: do kiełkowania fasoli potrzebna jest woda. Bez drzew liściastych. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L32_Doswiadczenie_kielkowanie/images/l32-wynik.png?raw=true

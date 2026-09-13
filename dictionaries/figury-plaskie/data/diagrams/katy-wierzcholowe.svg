@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 280" role="img" aria-label="Kąty wierzchołowe i przyległe">
+  <rect width="320" height="280" fill="#fff"/>
+
+  <line x1="40" y1="40" x2="280" y2="240" stroke="#263238" stroke-width="3"/>
+  <line x1="40" y1="240" x2="280" y2="40" stroke="#263238" stroke-width="3"/>
+  <text x="145" y="100" font-size="16" font-weight="700" font-family="Segoe UI,sans-serif" fill="#6A32A0">1</text>
+  <text x="200" y="145" font-size="16" font-weight="700" font-family="Segoe UI,sans-serif" fill="#FF9800">2</text>
+  <text x="155" y="190" font-size="16" font-weight="700" font-family="Segoe UI,sans-serif" fill="#6A32A0">3</text>
+  <text x="100" y="145" font-size="16" font-weight="700" font-family="Segoe UI,sans-serif" fill="#FF9800">4</text>
+  <text x="160" y="265" text-anchor="middle" font-size="12" font-family="Segoe UI,sans-serif" fill="#263238">1 = 3 (wierzchołowe) · 1 + 2 = 180° (przyległe)</text>
+
+</svg>

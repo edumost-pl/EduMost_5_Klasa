@@ -1,0 +1,32 @@
+# Lekcja 23 — Łodyga
+# Folder GitHub:
+# Biologia/L23_Lodyga/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l23-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9 młodej rośliny (fasola lub pelargonia). Etykiety PL: pęd; łodyga; liście; pąk. Korzeń w doniczce bez stref z lekcji 22. Bez kwiatu, owocu, nasion. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L23_Lodyga/images/l23-zacznijmy.png?raw=true
+
+l23-ped.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Schemat pędu z etykietami PL: łodyga (oś); liście; pąk szczytowy; pąk boczny. Napis: pęd. Liście bez przekroju blaszki. Bez kwiatu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L23_Lodyga/images/l23-ped.png?raw=true
+
+l23-funkcje.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, trzy kadry, etykiety PL. 1 łodyga trzyma liście do światła — podpora. 2 strzałki: drewno w górę, łyko w dół — transport. 3 zielona łodyga / zgrubienie — zapas lub fotosynteza. Bez warstw liścia. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L23_Lodyga/images/l23-funkcje.png?raw=true
+
+l23-wezly.png
+IMAGE PROMPT: Edukacyjny schemat 16:9 łodygi. Etykiety PL: pąk szczytowy; międzywęźle; węzeł; liść; pąk boczny (w kącie liścia). Bez przekroju blaszki liścia. Bez kwiatu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L23_Lodyga/images/l23-wezly.png?raw=true
+
+l23-przekroj.png
+IMAGE PROMPT: Edukacyjny przekrój poprzeczny 16:9 zielonej łodygi (np. słonecznik). Etykiety PL od zewnątrz: skórka; kora; wiązka przewodząca (drewno + łyko); rdzeń. Napis: wiązki jak rury w kręgu. Bez słojów drzewa na tym kadrze. Bez walca osiowego korzenia jako jedynej etykiety. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L23_Lodyga/images/l23-przekroj.png?raw=true
+
+l23-sloje.png
+IMAGE PROMPT: Fotorealistyczny przekrój 16:9 pnia drzewa. Etykiety PL: kora; słoje roczne (drewno); rdzeń. Mała strzałka: jasne drewno wiosenne, ciemniejsze letnie. Napis: przyrost na grubość. Bez kwiatu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L23_Lodyga/images/l23-sloje.png?raw=true
+
+l23-przeksztalcenia.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, dwa kadry. LEWA: bulwa ziemniaka z oczkami (pąki), etykieta PL: pęd spichrzowy (bulwa). PRAWA: marchew, etykieta: korzeń spichrzowy (lekcja 22). Napis: zapas w różnym organie. Bez kwiatu, bez nasion. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L23_Lodyga/images/l23-przeksztalcenia.png?raw=true

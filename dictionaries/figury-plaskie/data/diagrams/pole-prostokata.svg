@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" role="img" aria-label="Pole prostokąta i kwadratu">
+  <rect width="360" height="200" fill="#fff"/>
+
+  <rect x="40" y="40" width="180" height="110" fill="#E8F5E9" stroke="#43A047" stroke-width="3"/>
+  <text x="130" y="30" text-anchor="middle" font-size="14" font-family="Segoe UI,sans-serif" fill="#263238">a</text>
+  <text x="235" y="100" font-size="14" font-family="Segoe UI,sans-serif" fill="#263238">b</text>
+  <text x="130" y="105" text-anchor="middle" font-size="16" font-weight="700" font-family="Segoe UI,sans-serif" fill="#2E7D32">P = a · b</text>
+  <rect x="260" y="50" width="80" height="80" fill="#F3E5F5" stroke="#6A32A0" stroke-width="3"/>
+  <text x="300" y="95" text-anchor="middle" font-size="14" font-weight="700" font-family="Segoe UI,sans-serif" fill="#6A32A0">a²</text>
+  <text x="300" y="160" text-anchor="middle" font-size="12" font-family="Segoe UI,sans-serif" fill="#263238">P = a²</text>
+
+</svg>

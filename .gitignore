@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Temporary project files
+.tmp-kn/
+.ocr-t*/
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Dependencies / generated files
+node_modules/
+dist/
+build/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example

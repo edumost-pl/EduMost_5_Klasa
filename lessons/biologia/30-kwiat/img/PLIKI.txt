@@ -1,0 +1,28 @@
+# Lekcja 30 — Kwiat
+# Folder GitHub:
+# Biologia/L30_Kwiat/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l30-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczne zbliżenie 16:9 kwiatu (np. jabłoń, groszek, tulipan), dzień. Etykieta PL: kwiat. Bez podpisów części jeszcze. Bez szyszki. Bez sposobów rozsiewu nasion (haczyki, skrzydełka). Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L30_Kwiat/images/l30-zacznijmy.png?raw=true
+
+l30-kielich-korona.png
+IMAGE PROMPT: Edukacyjny schemat 16:9 kwiatu. Etykiety PL: kielich (zielone działki); korona / płatki. Napis: kielich chroni pąk; płatki wabią. Bez pręcików i słupka na tym kadrze (albo szare, niepodpisane). Bez pszczoły jeszcze. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L30_Kwiat/images/l30-kielich-korona.png?raw=true
+
+l30-preciki.png
+IMAGE PROMPT: Edukacyjny schemat 16:9. Pręciki w środku kwiatu, etykiety PL: pręcik; pyłek (żółty proszek, nie groza). Napis: pręciki = pyłek. Płatki w tle, słupek jeszcze nie podpisany albo szary. Bez anatomii owada. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L30_Kwiat/images/l30-preciki.png?raw=true
+
+l30-slupek.png
+IMAGE PROMPT: Edukacyjny przekrój 16:9 kwiatu. Etykiety PL: słupek; znamię (góra); zalążnia (dół, pogrubiona); zalążki w środku. Napis: tu powstaną nasiona. Pręciki w tle. Bez owocu jabłka jeszcze. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L30_Kwiat/images/l30-slupek.png?raw=true
+
+l30-zapylenie.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, dwa kadry, etykiety PL. LEWA: pszczoła / motyl na barwnym kwiecie, nektar, napis: zapylenie przez owady. PRAWA: kłos zboża, strzałki wiatru, pyłek, napis: zapylenie przez wiatr. Bez haków i skrzydełek nasion (L31). Bez grozy użądlenia. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L30_Kwiat/images/l30-zapylenie.png?raw=true
+
+l30-owoc.png
+IMAGE PROMPT: Edukacyjny schemat 16:9, trzy kroki, etykiety PL: kwiat; zalążnia po zapyleniu; owoc z nasionami (np. jabłko albo strąk). Napis: z kwiatu → owoc. Bez skrzydełek, haczyków, zwierząt zjadających owoce jako tematu rozsiewu (L31). Bez kiełkującej fasoli (L32). Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L30_Kwiat/images/l30-owoc.png?raw=true

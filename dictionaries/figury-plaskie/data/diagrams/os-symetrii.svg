@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 280" role="img" aria-label="Oś symetrii">
+  <rect width="360" height="280" fill="#fff"/>
+
+  <ellipse cx="180" cy="140" rx="55" ry="90" fill="#FCE4EC" stroke="#EC407A" stroke-width="3"/>
+  <ellipse cx="125" cy="100" rx="35" ry="55" fill="#F8BBD0" stroke="#EC407A" stroke-width="2" transform="rotate(-25 125 100)"/>
+  <ellipse cx="235" cy="100" rx="35" ry="55" fill="#F8BBD0" stroke="#EC407A" stroke-width="2" transform="rotate(25 235 100)"/>
+  <line x1="180" y1="30" x2="180" y2="250" stroke="#6A32A0" stroke-width="3" stroke-dasharray="8 5"/>
+  <text x="195" y="50" font-family="Segoe UI,sans-serif" font-size="14" font-weight="700" fill="#6A32A0">oś symetrii</text>
+  <text x="180" y="270" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="13" fill="#263238">połówki jak w lustrze</text>
+
+</svg>

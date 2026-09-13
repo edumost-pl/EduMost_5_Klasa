@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" role="img" aria-label="Koło i okrąg">
+  <rect width="480" height="240" fill="#fff"/>
+
+  <circle cx="120" cy="110" r="75" fill="none" stroke="#00BCD4" stroke-width="4"/>
+  <circle cx="120" cy="110" r="4" fill="#263238"/>
+  <text x="120" y="210" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="15" font-weight="700" fill="#263238">okrąg = linia (brzeg)</text>
+  <circle cx="360" cy="110" r="75" fill="#B2EBF2" stroke="#00BCD4" stroke-width="4"/>
+  <circle cx="360" cy="110" r="4" fill="#263238"/>
+  <line x1="360" y1="110" x2="435" y2="110" stroke="#FF9800" stroke-width="3"/>
+  <text x="395" y="100" font-family="Segoe UI,sans-serif" font-size="14" font-weight="700" fill="#FF9800">r</text>
+  <text x="360" y="210" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="15" font-weight="700" fill="#263238">koło = linia + wnętrze</text>
+
+</svg>

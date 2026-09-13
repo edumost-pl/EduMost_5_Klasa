@@ -1,0 +1,1830 @@
+.lesson-block {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1.15rem 1.2rem 1.3rem;
+  border-left: 5px solid var(--accent);
+  --math: #087F73;
+}
+.lesson-block[data-type="goal"] { border-left-color: var(--accent); }
+.lesson-block[data-type="observe"],
+.lesson-block[data-type="visual"] { border-left-color: #0e7490; }
+.lesson-block[data-type="concept"] { border-left-color: #7c3aed; }
+.lesson-block[data-type="vocabulary"] { border-left-color: var(--blue); }
+.lesson-block[data-type="example"],
+.lesson-block[data-type="guided-practice"] { border-left-color: var(--accent2); }
+.lesson-block[data-type="algorithm"] { border-left-color: #b45309; }
+.lesson-block[data-type="task"],
+.lesson-block[data-type="practice"] { border-left-color: var(--green); }
+.lesson-block[data-type="mistake"] { border-left-color: #b91c1c; }
+.lesson-block[data-type="comparison"] { border-left-color: #0e7490; }
+.lesson-block[data-type="classification"] { border-left-color: #0f766e; }
+.lesson-block[data-type="classification"] .block-list {
+  list-style: none;
+  padding: .35rem .6rem .5rem;
+  margin: .35rem 0 .7rem;
+  background: #f0fdfa;
+  border: 1px solid #99f6e4;
+  border-radius: 10px;
+}
+.lesson-block[data-type="classification"] .block-list li {
+  margin: .2rem 0;
+  padding-left: .15rem;
+  font-size: 1.08rem;
+  line-height: 1.45;
+}
+.lesson-block[data-type="problem"] { border-left-color: var(--green); }
+.lesson-block[data-type="check"] { border-left-color: #0369a1; }
+.lesson-block[data-type="summary"] {
+  border-left-color: #ca8a04;
+  background: #fffbeb;
+  box-shadow: inset 0 0 0 1px #fde68a;
+}
+.lesson-block[data-type="summary"] .block-title {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  background: #facc15;
+  color: #1c1917;
+  padding: .28rem .7rem .32rem;
+  border-radius: 6px;
+  margin-bottom: .95rem;
+}
+.lesson-block[data-type="summary"] .block-list {
+  list-style: none;
+  padding-left: 0;
+}
+.lesson-block[data-type="summary"] .block-list li {
+  position: relative;
+  padding: .22rem 0 .22rem 1.15rem;
+  margin: .08rem 0;
+  line-height: 1.4;
+}
+.lesson-block[data-type="summary"] .block-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .7rem;
+  width: .55rem;
+  height: .18rem;
+  background: #ca8a04;
+  border-radius: 2px;
+}
+.lesson-block[data-type="summary"] .tx-pl { font-size: 1.05rem; }
+.lesson-block[data-type="summary"] .tx-ua { font-size: .9rem; margin-top: .1rem; }
+.lesson-block[data-type="summary"] .tx-mark {
+  background: #fde68a;
+  color: #9a3412;
+  padding: 0 .18em;
+  border-radius: 3px;
+  box-decoration-break: clone;
+}
+.lesson-block[data-type="review"] { border-left-color: #6d28d9; }
+
+.block-title { font-size: 1.42rem; margin-bottom: .8rem; }
+.block-title .emoji { margin-right: .25rem; }
+.block-title:has(.block-icon) {
+  display: flex;
+  align-items: flex-start;
+  gap: .5rem;
+}
+.block-icon {
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  margin-top: .18rem;
+  color: #0e7490;
+}
+.block-icon svg {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.block-title-text { flex: 1; min-width: 0; }
+
+.block-empty {
+  background: #f5f5f4;
+  border: 1.5px dashed var(--line);
+  border-radius: 8px;
+  padding: .9rem 1rem;
+  color: var(--muted);
+}
+
+.tx-pl {font-size: 1.15rem; }
+.tx-ua { color: var(--accent2); font-size: 1rem; margin-top: .45rem;}
+.tx-pl + .tx-pl,
+.tx-ua + .tx-ua { margin-top: .35rem; }
+.tx-pl strong,
+.tx-ua strong { font-weight: 700; }
+.tx-mark { font-weight: 700; color: var(--accent); }
+.tx-ua .tx-mark { color: #9a3412; }
+.tx-bold { font-weight: 700; color: inherit; }
+
+.block-list { list-style: disc; padding-left: 1.2rem; }
+.block-list li { margin: .35rem 0; }
+
+.viz {
+  display: flex;
+  justify-content: center;
+  background: #fafaf9;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: .8rem;
+  margin-top: .4rem;
+  overflow-x: auto;
+}
+.viz-svg { display: block; max-width: 100%; height: auto; }
+.viz-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #0c0a09;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.viz-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.viz-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: .35rem 0;
+  cursor: zoom-in;
+}
+.viz-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 4000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(12, 10, 9, .88);
+  cursor: zoom-out;
+}
+.viz-lightbox[hidden] { display: none; }
+.viz-lightbox-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  cursor: zoom-out;
+}
+body.viz-lightbox-open { overflow: hidden; }
+
+.vocab-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .92rem;
+}
+.vocab-table th,
+.vocab-table td {
+  border: 1px solid var(--line);
+  padding: .5rem .6rem;
+  text-align: left;
+}
+.lesson-block[data-type="intro"],
+.lesson-block[data-type="lesson-intro"] { border-left-color: #0f766e; }
+
+.math-line {
+  font-family: var(--font);
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+  margin: .45rem 0;
+  letter-spacing: .02em;
+color: var(--math);
+}
+.prompt {
+  background: #ecfdf5;
+  border-radius: 8px;
+  padding: .7rem .85rem;
+  margin: .6rem 0 .2rem;
+  font-weight: 600;
+}
+
+body[data-subject="polski"] .math-line {
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-align: left;
+  letter-spacing: 0;
+  color: #0f766e;
+  margin: 0 0 .65rem;
+}
+
+body[data-subject="polski"] .lesson-block[data-type="observe"] .tx-pl {
+  font-size: 1.18rem;
+  line-height: 1.55;
+  margin: .08rem 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-subject="polski"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-subject="polski"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: .7rem;
+  margin: .1rem 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+body[data-subject="polski"] .task-opt .tx-pl,
+body[data-subject="polski"] .task-opt .tx-ua {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+body[data-subject="polski"] .lesson-block[data-type="observe"] .tx-ua {
+  font-size: .95rem;
+  line-height: 1.45;
+}
+.goal-list { list-style: none; }
+.goal-list li {
+  display: grid;
+  grid-template-columns: 1.05rem minmax(0, 1fr);
+  column-gap: .55rem;
+  align-items: start;
+  margin: 0 0 .9rem;
+}
+.goal-list li:last-child { margin-bottom: 0; }
+.goal-box {
+  width: 1.05rem;
+  height: 1.05rem;
+  margin-top: .2rem;
+  border: 2px solid var(--accent);
+  border-radius: 4px;
+}
+.goal-list .tx-pl,
+.goal-list .tx-ua {
+  grid-column: 2;
+  min-width: 0;
+  margin: 0;
+}
+.goal-list .tx-pl { margin-bottom: .12rem; }
+.goal-list .tx-ua {
+  margin-top: 0;
+  font-size: .9rem;
+  color: var(--accent2);
+}
+.claim {
+  background: #fef2f2;
+  border-radius: 8px;
+  padding: .7rem .85rem;
+  font-size: 1.15rem;
+  text-align: center;
+}
+.verdict {
+  text-align: center;
+  font-weight: 800;
+  color: #b91c1c;
+  margin: .5rem 0 .7rem;
+}
+.step-next {
+  display: block;
+  margin: .85rem auto 0;
+  font-family: var(--sans);
+  font-weight: 700;
+  padding: .55rem 1rem;
+  border: 0;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+.reveal-step { margin-bottom: .35rem; }
+.phrases-label {
+  margin-top: 1rem;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.phrase-list { list-style: disc; padding-left: 1.2rem; margin-top: .35rem; }
+.block-title .name-ua {
+  display: block;
+  font-size: .92rem;
+  font-weight: 600;
+  color: var(--accent2);
+  margin-top: .2rem;
+}
+
+.hist-placeholder {
+  width: 100%;
+  background: #faf6f1;
+  border: 1.5px dashed #c4b5a5;
+  border-radius: 10px;
+  padding: .9rem 1rem 1rem;
+  text-align: left;
+}
+.hist-placeholder.is-map { border-color: #0e7490; background: #f0f9fb; }
+.hist-placeholder.is-image { border-color: #b45309; background: #faf6f1; }
+.hist-ph-tag {
+  font-family: var(--sans);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+  color: #9a3412;
+  margin-bottom: .35rem;
+}
+.hist-placeholder.is-map .hist-ph-tag { color: #0e7490; }
+.hist-ph-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: .45rem;
+}
+.hist-ph-prompt {
+  font-family: var(--sans);
+  font-size: .88rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+body[data-topic="kartkowka-wiersz"] .lesson-block .prompt > p.tx-pl,
+body[data-topic="kartkowka-wiersz"] .lesson-block .prompt > p.tx-ua {
+  margin: 0;
+}
+body[data-topic="kartkowka-wiersz"] .lesson-block[data-type="observe"] .prompt > p + p,
+body[data-topic="kartkowka-wiersz"] .lesson-block[data-type="concept"] .prompt > p + p {
+  margin-top: .75rem;
+}
+
+body[data-topic="kartkowka-wiersz"] .lesson-block[data-type="observe"] .prompt {
+  margin-top: 1.15rem;
+  margin-bottom: .35rem;
+  padding: .85rem .95rem;
+}
+
+body[data-topic="kartkowka-wiersz"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="kartkowka-wiersz"] .lesson-block[data-type="concept"] .block-body > p.tx-pl {
+  margin: .08rem 0;
+  line-height: 1.55;
+}
+
+body[data-topic="kartkowka-wiersz"] .lesson-block .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="kartkowka-wiersz"] .lesson-block .block-body > p.tx-pl:nth-of-type(7) {
+  height: 1.35rem;
+  margin: .45rem 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+
+body[data-topic="kartkowka-wiersz"] .lesson-block[data-type="concept"] .prompt {
+  margin-bottom: 1.45rem;
+}
+
+body[data-topic="kartkowka-wiersz"] .lesson-block[data-type="concept"] .task-card {
+  margin-top: 1.75rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--line);
+}
+
+body[data-topic="kartkowka-wiersz"] .lesson-block[data-type="concept"] .task-actions {
+  margin-top: .15rem;
+}
+
+body[data-topic="Jakie_tajemnice_kosmosu"] .tx-pl,
+body[data-topic="Jakie_tajemnice_kosmosu"] .tx-ua,
+body[data-topic="Jakie_tajemnice_kosmosu"] .prompt,
+body[data-topic="Jakie_tajemnice_kosmosu"] .task-opt,
+body[data-topic="Jakie_tajemnice_kosmosu"] .hist-ph-prompt,
+body[data-topic="Jakie_tajemnice_kosmosu"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="Jakie_tajemnice_kosmosu"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="Jakie_tajemnice_kosmosu"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .35rem 0;
+  font-size: 1.18rem;
+  line-height: 1.55;
+  overflow: visible;
+}
+body[data-topic="Jakie_tajemnice_kosmosu"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+body[data-topic="Doskonalimy_czytanie"] .tx-pl,
+body[data-topic="Doskonalimy_czytanie"] .tx-ua,
+body[data-topic="Doskonalimy_czytanie"] .prompt,
+body[data-topic="Doskonalimy_czytanie"] .task-opt,
+body[data-topic="Doskonalimy_czytanie"] .hist-ph-prompt,
+body[data-topic="Doskonalimy_czytanie"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="Doskonalimy_czytanie"] .lesson-block[data-type="observe"] .block-body > p.tx-pl {
+  font-size: 1.16rem;
+  line-height: 1.65;
+  margin: .7rem 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="Doskonalimy_czytanie"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="Doskonalimy_czytanie"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .7rem 0;
+  font-size: 1.16rem;
+  line-height: 1.65;
+  overflow: visible;
+}
+body[data-topic="Doskonalimy_czytanie"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="Doskonalimy_czytanie"] .task-card {
+  margin-top: 1.1rem;
+}
+
+body[data-topic="pisownia-wymienna"] .tx-pl,
+body[data-topic="pisownia-wymienna"] .tx-ua,
+body[data-topic="pisownia-wymienna"] .prompt,
+body[data-topic="pisownia-wymienna"] .task-opt,
+body[data-topic="pisownia-wymienna"] .hist-ph-prompt,
+body[data-topic="pisownia-wymienna"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="pisownia-wymienna"] .math-line {
+  font-size: 1.18rem;
+  line-height: 1.55;
+  letter-spacing: .01em;
+  margin: .7rem 0 .95rem;
+}
+body[data-topic="pisownia-wymienna"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .55rem 0;
+}
+body[data-topic="pisownia-wymienna"] .lesson-block[data-type="observe"] .block-body > p.tx-pl {
+  font-size: 1.16rem;
+  line-height: 1.58;
+  margin: .42rem 0;
+}
+body[data-topic="pisownia-wymienna"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="pisownia-wymienna"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .42rem 0;
+  font-size: 1.16rem;
+  line-height: 1.58;
+  overflow: visible;
+}
+body[data-topic="pisownia-wymienna"] .tx-mark {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+  font-weight: 700;
+}
+body[data-topic="pisownia-wymienna"] .viz {
+  width: 100%;
+  padding: .55rem;
+}
+body[data-topic="pisownia-wymienna"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="pisownia-wymienna"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="pisownia-wymienna"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+body[data-topic="pisownia-wymienna"] .reveal-step .tx-pl {
+  font-size: 1.12rem;
+  line-height: 1.55;
+}
+body[data-topic="pisownia-wymienna"] .task-card {
+  margin-top: 1.1rem;
+}
+
+body[data-topic="podmiot-liryczny"] .tx-pl,
+body[data-topic="podmiot-liryczny"] .tx-ua,
+body[data-topic="podmiot-liryczny"] .prompt,
+body[data-topic="podmiot-liryczny"] .task-opt,
+body[data-topic="podmiot-liryczny"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="podmiot-liryczny"] .lesson-block[data-type="observe"] .block-body > p.tx-pl {
+  font-size: 1.2rem;
+  line-height: 1.58;
+  margin: .12rem 0;
+  min-height: 1.15rem;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="podmiot-liryczny"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="podmiot-liryczny"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .12rem 0;
+  font-size: 1.2rem;
+  line-height: 1.58;
+  overflow: visible;
+}
+body[data-topic="podmiot-liryczny"] .lesson-block[data-type="observe"] .task-card {
+  margin-top: 1.25rem;
+}
+body[data-topic="podmiot-liryczny"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .4rem 0;
+}
+body[data-topic="podmiot-liryczny"] .math-line {
+  font-size: 1.12rem;
+  line-height: 1.5;
+  margin: .7rem 0 1rem;
+}
+
+body[data-topic="pisownia-rz-niewymienne"] .tx-pl,
+body[data-topic="pisownia-rz-niewymienne"] .tx-ua,
+body[data-topic="pisownia-rz-niewymienne"] .prompt,
+body[data-topic="pisownia-rz-niewymienne"] .task-opt,
+body[data-topic="pisownia-rz-niewymienne"] .hist-ph-prompt,
+body[data-topic="pisownia-rz-niewymienne"] .math-line,
+body[data-topic="rz-niewymienne-cwiczenia"] .tx-pl,
+body[data-topic="rz-niewymienne-cwiczenia"] .tx-ua,
+body[data-topic="rz-niewymienne-cwiczenia"] .prompt,
+body[data-topic="rz-niewymienne-cwiczenia"] .task-opt,
+body[data-topic="rz-niewymienne-cwiczenia"] .hist-ph-prompt,
+body[data-topic="rz-niewymienne-cwiczenia"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="pisownia-rz-niewymienne"] .math-line,
+body[data-topic="rz-niewymienne-cwiczenia"] .math-line {
+  font-size: 1.18rem;
+  line-height: 1.55;
+  margin: .7rem 0 .95rem;
+}
+body[data-topic="pisownia-rz-niewymienne"] .lesson-block .block-body > p.tx-pl,
+body[data-topic="rz-niewymienne-cwiczenia"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .55rem 0;
+}
+body[data-topic="pisownia-rz-niewymienne"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="rz-niewymienne-cwiczenia"] .lesson-block[data-type="observe"] .block-body > p.tx-pl {
+  font-size: 1.16rem;
+  line-height: 1.6;
+  margin: .42rem 0;
+}
+body[data-topic="pisownia-rz-niewymienne"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="pisownia-rz-niewymienne"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7),
+body[data-topic="rz-niewymienne-cwiczenia"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="rz-niewymienne-cwiczenia"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .42rem 0;
+  font-size: 1.16rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body[data-topic="pisownia-rz-niewymienne"] .tx-mark,
+body[data-topic="rz-niewymienne-cwiczenia"] .tx-mark {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+  font-weight: 700;
+}
+body[data-topic="pisownia-rz-niewymienne"] .viz,
+body[data-topic="rz-niewymienne-cwiczenia"] .viz {
+  width: 100%;
+  padding: .55rem;
+}
+body[data-topic="pisownia-rz-niewymienne"] .viz-img,
+body[data-topic="rz-niewymienne-cwiczenia"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="pisownia-rz-niewymienne"] .block-list li,
+body[data-topic="rz-niewymienne-cwiczenia"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="pisownia-rz-niewymienne"] .reveal-step,
+body[data-topic="rz-niewymienne-cwiczenia"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+body[data-topic="pisownia-rz-niewymienne"] .task-card,
+body[data-topic="rz-niewymienne-cwiczenia"] .task-card {
+  margin-top: 1.1rem;
+}
+
+body[data-topic="jerzy-tajny-klucz"] .tx-pl,
+body[data-topic="jerzy-tajny-klucz"] .tx-ua,
+body[data-topic="jerzy-tajny-klucz"] .prompt,
+body[data-topic="jerzy-tajny-klucz"] .task-opt,
+body[data-topic="jerzy-tajny-klucz"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="jerzy-tajny-klucz"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body[data-topic="jerzy-tajny-klucz"] .lesson-block[data-type="observe"] .block-body > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body[data-topic="jerzy-tajny-klucz"] .lesson-block[data-type="observe"] .block-body > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body[data-topic="jerzy-tajny-klucz"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="jerzy-tajny-klucz"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body[data-topic="jerzy-tajny-klucz"] .lesson-block[data-type="observe"] .task-card {
+  margin-top: 1.15rem;
+}
+body[data-topic="jerzy-tajny-klucz"] .tx-mark {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+  font-weight: 700;
+}
+body[data-topic="jerzy-tajny-klucz"] .viz {
+  width: 100%;
+  padding: .55rem;
+}
+body[data-topic="jerzy-tajny-klucz"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="jerzy-tajny-klucz"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="jerzy-tajny-klucz"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+body[data-topic="jerzy-tajny-klucz"] .vocab-table {
+  width: 100%;
+  table-layout: fixed;
+}
+body[data-topic="jerzy-tajny-klucz"] .vocab-table td,
+body[data-topic="jerzy-tajny-klucz"] .vocab-table th {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+body[data-topic="przypowiesc-o-maku"] .tx-pl,
+body[data-topic="przypowiesc-o-maku"] .tx-ua,
+body[data-topic="przypowiesc-o-maku"] .prompt,
+body[data-topic="przypowiesc-o-maku"] .task-opt,
+body[data-topic="przypowiesc-o-maku"] .math-line,
+body[data-topic="przypowiesc-cwiczenia"] .tx-pl,
+body[data-topic="przypowiesc-cwiczenia"] .tx-ua,
+body[data-topic="przypowiesc-cwiczenia"] .prompt,
+body[data-topic="przypowiesc-cwiczenia"] .task-opt,
+body[data-topic="przypowiesc-cwiczenia"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="przypowiesc-o-maku"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="przypowiesc-cwiczenia"] .lesson-block[data-type="observe"] .block-body > p.tx-pl {
+  font-size: 1.18rem;
+  line-height: 1.58;
+  margin: .14rem 0;
+  min-height: 1.15rem;
+}
+body[data-topic="przypowiesc-o-maku"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="przypowiesc-o-maku"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7),
+body[data-topic="przypowiesc-cwiczenia"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="przypowiesc-cwiczenia"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .14rem 0;
+  font-size: 1.18rem;
+  line-height: 1.58;
+  overflow: visible;
+}
+body[data-topic="przypowiesc-o-maku"] .lesson-block[data-type="observe"] .task-card,
+body[data-topic="przypowiesc-cwiczenia"] .lesson-block[data-type="observe"] .task-card {
+  margin-top: 1.2rem;
+}
+body[data-topic="przypowiesc-o-maku"] .tx-mark,
+body[data-topic="przypowiesc-cwiczenia"] .tx-mark {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+  font-weight: 700;
+}
+body[data-topic="przypowiesc-o-maku"] .viz,
+body[data-topic="przypowiesc-cwiczenia"] .viz {
+  width: 100%;
+  padding: .55rem;
+}
+body[data-topic="przypowiesc-o-maku"] .viz-img,
+body[data-topic="przypowiesc-cwiczenia"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="przypowiesc-o-maku"] .block-list li,
+body[data-topic="przypowiesc-cwiczenia"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="przypowiesc-o-maku"] .reveal-step,
+body[data-topic="przypowiesc-cwiczenia"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+
+body[data-topic="komiks-tytul"] .tx-pl,
+body[data-topic="komiks-tytul"] .tx-ua,
+body[data-topic="komiks-tytul"] .prompt,
+body[data-topic="komiks-tytul"] .task-opt,
+body[data-topic="komiks-tytul"] .math-line,
+body[data-topic="komiks-cwiczenia"] .tx-pl,
+body[data-topic="komiks-cwiczenia"] .tx-ua,
+body[data-topic="komiks-cwiczenia"] .prompt,
+body[data-topic="komiks-cwiczenia"] .task-opt,
+body[data-topic="komiks-cwiczenia"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="komiks-tytul"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="komiks-cwiczenia"] .lesson-block[data-type="observe"] .block-body > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.55;
+  margin: .32rem 0;
+}
+body[data-topic="komiks-tytul"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="komiks-tytul"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7),
+body[data-topic="komiks-cwiczenia"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="komiks-cwiczenia"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .32rem 0;
+  font-size: 1.14rem;
+  line-height: 1.55;
+  overflow: visible;
+}
+body[data-topic="komiks-tytul"] .lesson-block[data-type="observe"] .task-card,
+body[data-topic="komiks-cwiczenia"] .lesson-block[data-type="observe"] .task-card {
+  margin-top: 1.15rem;
+}
+body[data-topic="komiks-tytul"] .tx-mark,
+body[data-topic="komiks-cwiczenia"] .tx-mark {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+  font-weight: 700;
+}
+body[data-topic="komiks-tytul"] .viz,
+body[data-topic="komiks-cwiczenia"] .viz {
+  width: 100%;
+  padding: .55rem;
+}
+body[data-topic="komiks-tytul"] .viz-img,
+body[data-topic="komiks-cwiczenia"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="komiks-tytul"] .block-list li,
+body[data-topic="komiks-cwiczenia"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="komiks-tytul"] .reveal-step,
+body[data-topic="komiks-cwiczenia"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+
+body[data-topic="poczatek-swiata"] .tx-pl,
+body[data-topic="poczatek-swiata"] .tx-ua,
+body[data-topic="poczatek-swiata"] .prompt,
+body[data-topic="poczatek-swiata"] .task-opt,
+body[data-topic="poczatek-swiata"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="poczatek-swiata"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body[data-topic="poczatek-swiata"] .lesson-block[data-type="observe"] .block-body > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body[data-topic="poczatek-swiata"] .lesson-block[data-type="observe"] .block-body > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body[data-topic="poczatek-swiata"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="poczatek-swiata"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body[data-topic="poczatek-swiata"] .lesson-block[data-type="observe"] .task-card {
+  margin-top: 1.15rem;
+}
+body[data-topic="poczatek-swiata"] .tx-mark {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+  font-weight: 700;
+}
+body[data-topic="poczatek-swiata"] .viz,
+body[data-topic="poczatek-swiata"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="poczatek-swiata"] .viz {
+  padding: .55rem;
+}
+body[data-topic="poczatek-swiata"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="poczatek-swiata"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+body[data-topic="poczatek-swiata"] .vocab-table {
+  width: 100%;
+  table-layout: fixed;
+}
+body[data-topic="poczatek-swiata"] .vocab-table td,
+body[data-topic="poczatek-swiata"] .vocab-table th {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+body[data-topic="swiat-stworzony"] .tx-pl,
+body[data-topic="swiat-stworzony"] .tx-ua,
+body[data-topic="swiat-stworzony"] .prompt,
+body[data-topic="swiat-stworzony"] .task-opt,
+body[data-topic="swiat-stworzony"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="swiat-stworzony"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body[data-topic="swiat-stworzony"] .lesson-block[data-type="observe"] .block-body > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body[data-topic="swiat-stworzony"] .lesson-block[data-type="observe"] .block-body > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body[data-topic="swiat-stworzony"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="swiat-stworzony"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body[data-topic="swiat-stworzony"] .lesson-block[data-type="observe"] .task-card {
+  margin-top: 1.15rem;
+}
+body[data-topic="swiat-stworzony"] .tx-mark {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+  font-weight: 700;
+}
+body[data-topic="swiat-stworzony"] .viz,
+body[data-topic="swiat-stworzony"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="swiat-stworzony"] .viz {
+  padding: .55rem;
+}
+body[data-topic="swiat-stworzony"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="swiat-stworzony"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+body[data-topic="swiat-stworzony"] .vocab-table {
+  width: 100%;
+  table-layout: fixed;
+}
+body[data-topic="swiat-stworzony"] .vocab-table td,
+body[data-topic="swiat-stworzony"] .vocab-table th {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+body[data-topic="biblia-ilustracja"] .tx-pl,
+body[data-topic="biblia-ilustracja"] .tx-ua,
+body[data-topic="biblia-ilustracja"] .prompt,
+body[data-topic="biblia-ilustracja"] .task-opt,
+body[data-topic="biblia-ilustracja"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="biblia-ilustracja"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body[data-topic="biblia-ilustracja"] .lesson-block[data-type="observe"] .block-body > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body[data-topic="biblia-ilustracja"] .lesson-block[data-type="observe"] .block-body > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body[data-topic="biblia-ilustracja"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="biblia-ilustracja"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body[data-topic="biblia-ilustracja"] .lesson-block[data-type="observe"] .task-card {
+  margin-top: 1.15rem;
+}
+body[data-topic="biblia-ilustracja"] .tx-mark {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+  font-weight: 700;
+}
+body[data-topic="biblia-ilustracja"] .viz,
+body[data-topic="biblia-ilustracja"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="biblia-ilustracja"] .viz {
+  padding: .55rem;
+}
+body[data-topic="biblia-ilustracja"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="biblia-ilustracja"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+body[data-topic="biblia-ilustracja"] .vocab-table {
+  width: 100%;
+  table-layout: fixed;
+}
+body[data-topic="biblia-ilustracja"] .vocab-table td,
+body[data-topic="biblia-ilustracja"] .vocab-table th {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+body[data-topic="twardowski-jagody"] .tx-pl,
+body[data-topic="twardowski-jagody"] .tx-ua,
+body[data-topic="twardowski-jagody"] .prompt,
+body[data-topic="twardowski-jagody"] .task-opt,
+body[data-topic="twardowski-jagody"] .math-line,
+body[data-topic="twardowski-cwiczenia"] .tx-pl,
+body[data-topic="twardowski-cwiczenia"] .tx-ua,
+body[data-topic="twardowski-cwiczenia"] .prompt,
+body[data-topic="twardowski-cwiczenia"] .task-opt,
+body[data-topic="twardowski-cwiczenia"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="twardowski-jagody"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="twardowski-cwiczenia"] .lesson-block[data-type="observe"] .block-body > p.tx-pl {
+  font-size: 1.18rem;
+  line-height: 1.55;
+  margin: .16rem 0;
+  min-height: 1.15rem;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="twardowski-jagody"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="twardowski-cwiczenia"] .lesson-block[data-type="observe"] .block-body > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .5rem;
+  color: var(--accent2);
+}
+body[data-topic="twardowski-jagody"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="twardowski-jagody"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7),
+body[data-topic="twardowski-cwiczenia"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="twardowski-cwiczenia"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .16rem 0;
+  font-size: 1.18rem;
+  line-height: 1.55;
+  overflow: visible;
+}
+body[data-topic="twardowski-jagody"] .lesson-block[data-type="observe"] .task-card,
+body[data-topic="twardowski-cwiczenia"] .lesson-block[data-type="observe"] .task-card {
+  margin-top: 1.2rem;
+}
+body[data-topic="twardowski-jagody"] .tx-mark,
+body[data-topic="twardowski-cwiczenia"] .tx-mark {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+  font-weight: 700;
+}
+body[data-topic="twardowski-jagody"] .viz,
+body[data-topic="twardowski-jagody"] .viz-img,
+body[data-topic="twardowski-cwiczenia"] .viz,
+body[data-topic="twardowski-cwiczenia"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="twardowski-jagody"] .block-list li,
+body[data-topic="twardowski-cwiczenia"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="twardowski-jagody"] .reveal-step,
+body[data-topic="twardowski-cwiczenia"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+body[data-topic="twardowski-jagody"] .vocab-table,
+body[data-topic="twardowski-cwiczenia"] .vocab-table {
+  width: 100%;
+  table-layout: fixed;
+}
+body[data-topic="twardowski-jagody"] .vocab-table td,
+body[data-topic="twardowski-jagody"] .vocab-table th,
+body[data-topic="twardowski-cwiczenia"] .vocab-table td,
+body[data-topic="twardowski-cwiczenia"] .vocab-table th {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+body[data-topic="demeter-kora"] .tx-pl,
+body[data-topic="demeter-kora"] .tx-ua,
+body[data-topic="demeter-kora"] .prompt,
+body[data-topic="demeter-kora"] .task-opt,
+body[data-topic="demeter-kora"] .math-line,
+body[data-topic="demeter-teatr"] .tx-pl,
+body[data-topic="demeter-teatr"] .tx-ua,
+body[data-topic="demeter-teatr"] .prompt,
+body[data-topic="demeter-teatr"] .task-opt,
+body[data-topic="demeter-teatr"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="demeter-kora"] .lesson-block .block-body > p.tx-pl,
+body[data-topic="demeter-teatr"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body[data-topic="demeter-kora"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="demeter-teatr"] .lesson-block[data-type="observe"] .block-body > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body[data-topic="demeter-kora"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="demeter-teatr"] .lesson-block[data-type="observe"] .block-body > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body[data-topic="demeter-kora"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="demeter-kora"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7),
+body[data-topic="demeter-teatr"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="demeter-teatr"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body[data-topic="demeter-kora"] .lesson-block[data-type="observe"] .task-card,
+body[data-topic="demeter-teatr"] .lesson-block[data-type="observe"] .task-card {
+  margin-top: 1.15rem;
+}
+body[data-topic="demeter-kora"] .tx-mark,
+body[data-topic="demeter-teatr"] .tx-mark {
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: inherit;
+}
+body[data-topic="demeter-kora"] .tx-bold,
+body[data-topic="demeter-teatr"] .tx-bold {
+  font-style: italic;
+  font-weight: 400;
+  color: inherit;
+}
+body[data-topic="demeter-kora"] .viz,
+body[data-topic="demeter-kora"] .viz-img,
+body[data-topic="demeter-teatr"] .viz,
+body[data-topic="demeter-teatr"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="demeter-kora"] .block-list li,
+body[data-topic="demeter-teatr"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="demeter-kora"] .reveal-step,
+body[data-topic="demeter-teatr"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+body[data-topic="demeter-kora"] .vocab-table,
+body[data-topic="demeter-teatr"] .vocab-table {
+  width: 100%;
+  table-layout: fixed;
+}
+body[data-topic="demeter-kora"] .vocab-table td,
+body[data-topic="demeter-kora"] .vocab-table th,
+body[data-topic="demeter-teatr"] .vocab-table td,
+body[data-topic="demeter-teatr"] .vocab-table th {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+body[data-topic="markowska-prometeusz"] .tx-pl,
+body[data-topic="markowska-prometeusz"] .tx-ua,
+body[data-topic="markowska-prometeusz"] .prompt,
+body[data-topic="markowska-prometeusz"] .task-opt,
+body[data-topic="markowska-prometeusz"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="markowska-prometeusz"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body[data-topic="markowska-prometeusz"] .lesson-block[data-type="observe"] .block-body > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body[data-topic="markowska-prometeusz"] .lesson-block[data-type="observe"] .block-body > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body[data-topic="markowska-prometeusz"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="markowska-prometeusz"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body[data-topic="markowska-prometeusz"] .lesson-block[data-type="observe"] .task-card {
+  margin-top: 1.15rem;
+}
+body[data-topic="markowska-prometeusz"] .tx-mark {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+  font-weight: 700;
+}
+body[data-topic="markowska-prometeusz"] .viz,
+body[data-topic="markowska-prometeusz"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="markowska-prometeusz"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="markowska-prometeusz"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+body[data-topic="markowska-prometeusz"] .vocab-table {
+  width: 100%;
+  table-layout: fixed;
+}
+body[data-topic="markowska-prometeusz"] .vocab-table td,
+body[data-topic="markowska-prometeusz"] .vocab-table th {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+body[data-topic="rzeczownik-podzial"] .tx-pl,
+body[data-topic="rzeczownik-podzial"] .tx-ua,
+body[data-topic="rzeczownik-podzial"] .prompt,
+body[data-topic="rzeczownik-podzial"] .task-opt,
+body[data-topic="rzeczownik-podzial"] .math-line,
+body[data-topic="rzeczownik-konkretne"] .tx-pl,
+body[data-topic="rzeczownik-konkretne"] .tx-ua,
+body[data-topic="rzeczownik-konkretne"] .prompt,
+body[data-topic="rzeczownik-konkretne"] .task-opt,
+body[data-topic="rzeczownik-konkretne"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="rzeczownik-podzial"] .lesson-block .block-body > p.tx-pl,
+body[data-topic="rzeczownik-konkretne"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body[data-topic="rzeczownik-podzial"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="rzeczownik-konkretne"] .lesson-block[data-type="observe"] .block-body > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body[data-topic="rzeczownik-podzial"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="rzeczownik-konkretne"] .lesson-block[data-type="observe"] .block-body > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body[data-topic="rzeczownik-podzial"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="rzeczownik-podzial"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7),
+body[data-topic="rzeczownik-konkretne"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="rzeczownik-konkretne"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body[data-topic="rzeczownik-podzial"] .lesson-block[data-type="observe"] .task-card,
+body[data-topic="rzeczownik-konkretne"] .lesson-block[data-type="observe"] .task-card {
+  margin-top: 1.15rem;
+}
+body[data-topic="rzeczownik-podzial"] .tx-mark,
+body[data-topic="rzeczownik-konkretne"] .tx-mark {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+  font-weight: 700;
+}
+body[data-topic="rzeczownik-podzial"] .viz,
+body[data-topic="rzeczownik-podzial"] .viz-img,
+body[data-topic="rzeczownik-konkretne"] .viz,
+body[data-topic="rzeczownik-konkretne"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="rzeczownik-podzial"] .block-list li,
+body[data-topic="rzeczownik-konkretne"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="rzeczownik-podzial"] .reveal-step,
+body[data-topic="rzeczownik-konkretne"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+body[data-topic="rzeczownik-podzial"] .vocab-table,
+body[data-topic="rzeczownik-konkretne"] .vocab-table {
+  width: 100%;
+  table-layout: fixed;
+}
+body[data-topic="rzeczownik-podzial"] .vocab-table td,
+body[data-topic="rzeczownik-podzial"] .vocab-table th,
+body[data-topic="rzeczownik-konkretne"] .vocab-table td,
+body[data-topic="rzeczownik-konkretne"] .vocab-table th {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+body[data-topic="krolestwo-morza"] .tx-pl,
+body[data-topic="krolestwo-morza"] .tx-ua,
+body[data-topic="krolestwo-morza"] .prompt,
+body[data-topic="krolestwo-morza"] .task-opt,
+body[data-topic="krolestwo-morza"] .math-line,
+body[data-topic="list-amfitryty"] .tx-pl,
+body[data-topic="list-amfitryty"] .tx-ua,
+body[data-topic="list-amfitryty"] .prompt,
+body[data-topic="list-amfitryty"] .task-opt,
+body[data-topic="list-amfitryty"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="krolestwo-morza"] .lesson-block .block-body > p.tx-pl,
+body[data-topic="list-amfitryty"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body[data-topic="krolestwo-morza"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="list-amfitryty"] .lesson-block[data-type="observe"] .block-body > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body[data-topic="krolestwo-morza"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="list-amfitryty"] .lesson-block[data-type="observe"] .block-body > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body[data-topic="krolestwo-morza"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="krolestwo-morza"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7),
+body[data-topic="list-amfitryty"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="list-amfitryty"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body[data-topic="krolestwo-morza"] .lesson-block[data-type="observe"] .task-card,
+body[data-topic="list-amfitryty"] .lesson-block[data-type="observe"] .task-card {
+  margin-top: 1.15rem;
+}
+body[data-topic="krolestwo-morza"] .tx-mark,
+body[data-topic="list-amfitryty"] .tx-mark {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+  font-weight: 700;
+}
+body[data-topic="krolestwo-morza"] .viz,
+body[data-topic="krolestwo-morza"] .viz-img,
+body[data-topic="list-amfitryty"] .viz,
+body[data-topic="list-amfitryty"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="krolestwo-morza"] .block-list li,
+body[data-topic="list-amfitryty"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="krolestwo-morza"] .reveal-step,
+body[data-topic="list-amfitryty"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+body[data-topic="krolestwo-morza"] .vocab-table,
+body[data-topic="list-amfitryty"] .vocab-table {
+  width: 100%;
+  table-layout: fixed;
+}
+body[data-topic="krolestwo-morza"] .vocab-table td,
+body[data-topic="krolestwo-morza"] .vocab-table th,
+body[data-topic="list-amfitryty"] .vocab-table td,
+body[data-topic="list-amfitryty"] .vocab-table th {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+body[data-topic="slownik-synonimow"] .tx-pl,
+body[data-topic="slownik-synonimow"] .tx-ua,
+body[data-topic="slownik-synonimow"] .prompt,
+body[data-topic="slownik-synonimow"] .task-opt,
+body[data-topic="slownik-synonimow"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="slownik-synonimow"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body[data-topic="slownik-synonimow"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="slownik-synonimow"] .lesson-block[data-type="summary"] .block-body > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body[data-topic="slownik-synonimow"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="slownik-synonimow"] .lesson-block[data-type="summary"] .block-body > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body[data-topic="slownik-synonimow"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="slownik-synonimow"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body[data-topic="slownik-synonimow"] .lesson-block[data-type="observe"] .task-card,
+body[data-topic="slownik-synonimow"] .lesson-block[data-type="summary"] .task-card {
+  margin-top: 1.15rem;
+}
+body[data-topic="slownik-synonimow"] .tx-mark {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+  font-weight: 700;
+}
+body[data-topic="slownik-synonimow"] .viz,
+body[data-topic="slownik-synonimow"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="slownik-synonimow"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="slownik-synonimow"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+
+body[data-topic="helios-faeton"] .tx-pl,
+body[data-topic="helios-faeton"] .tx-ua,
+body[data-topic="helios-faeton"] .prompt,
+body[data-topic="helios-faeton"] .task-opt,
+body[data-topic="komiks-faeton"] .tx-pl,
+body[data-topic="komiks-faeton"] .tx-ua,
+body[data-topic="komiks-faeton"] .prompt,
+body[data-topic="komiks-faeton"] .task-opt {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="helios-faeton"] .lesson-block .block-body > p.tx-pl,
+body[data-topic="komiks-faeton"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body[data-topic="helios-faeton"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="helios-faeton"] .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body[data-topic="komiks-faeton"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="komiks-faeton"] .lesson-block[data-type="summary"] .block-body > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body[data-topic="helios-faeton"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="helios-faeton"] .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body[data-topic="komiks-faeton"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="komiks-faeton"] .lesson-block[data-type="summary"] .block-body > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body[data-topic="helios-faeton"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="helios-faeton"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7),
+body[data-topic="komiks-faeton"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="komiks-faeton"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body[data-topic="helios-faeton"] .lesson-block .task-card,
+body[data-topic="komiks-faeton"] .lesson-block .task-card {
+  margin-top: 1.15rem;
+}
+body[data-topic="helios-faeton"] .tx-mark,
+body[data-topic="komiks-faeton"] .tx-mark {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+  font-weight: 700;
+}
+body[data-topic="helios-faeton"] .viz,
+body[data-topic="helios-faeton"] .viz-img,
+body[data-topic="komiks-faeton"] .viz,
+body[data-topic="komiks-faeton"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="helios-faeton"] .block-list li,
+body[data-topic="komiks-faeton"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="helios-faeton"] .reveal-step,
+body[data-topic="komiks-faeton"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+body[data-topic="helios-faeton"] .vocab-table,
+body[data-topic="komiks-faeton"] .vocab-table {
+  width: 100%;
+  table-layout: fixed;
+}
+body[data-topic="helios-faeton"] .vocab-table td,
+body[data-topic="helios-faeton"] .vocab-table th {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+body[data-topic="przypadki-rzeczownika"] .tx-pl,
+body[data-topic="przypadki-rzeczownika"] .tx-ua,
+body[data-topic="przypadki-rzeczownika"] .prompt,
+body[data-topic="przypadki-rzeczownika"] .task-opt,
+body[data-topic="odmiana-cwiczenia"] .tx-pl,
+body[data-topic="odmiana-cwiczenia"] .tx-ua,
+body[data-topic="odmiana-cwiczenia"] .prompt,
+body[data-topic="odmiana-cwiczenia"] .task-opt,
+body[data-topic="temat-nie-rzeczownik"] .tx-pl,
+body[data-topic="temat-nie-rzeczownik"] .tx-ua,
+body[data-topic="temat-nie-rzeczownik"] .prompt,
+body[data-topic="temat-nie-rzeczownik"] .task-opt {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="przypadki-rzeczownika"] .lesson-block .block-body > p.tx-pl,
+body[data-topic="odmiana-cwiczenia"] .lesson-block .block-body > p.tx-pl,
+body[data-topic="temat-nie-rzeczownik"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body[data-topic="przypadki-rzeczownika"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="przypadki-rzeczownika"] .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body[data-topic="odmiana-cwiczenia"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="odmiana-cwiczenia"] .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body[data-topic="temat-nie-rzeczownik"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="temat-nie-rzeczownik"] .lesson-block[data-type="summary"] .block-body > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body[data-topic="przypadki-rzeczownika"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="przypadki-rzeczownika"] .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body[data-topic="odmiana-cwiczenia"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="odmiana-cwiczenia"] .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body[data-topic="temat-nie-rzeczownik"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="temat-nie-rzeczownik"] .lesson-block[data-type="summary"] .block-body > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body[data-topic="przypadki-rzeczownika"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="przypadki-rzeczownika"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7),
+body[data-topic="odmiana-cwiczenia"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="odmiana-cwiczenia"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7),
+body[data-topic="temat-nie-rzeczownik"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="temat-nie-rzeczownik"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body[data-topic="przypadki-rzeczownika"] .lesson-block .task-card,
+body[data-topic="odmiana-cwiczenia"] .lesson-block .task-card,
+body[data-topic="temat-nie-rzeczownik"] .lesson-block .task-card {
+  margin-top: 1.15rem;
+}
+body[data-topic="przypadki-rzeczownika"] .tx-mark,
+body[data-topic="odmiana-cwiczenia"] .tx-mark,
+body[data-topic="temat-nie-rzeczownik"] .tx-mark {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+  font-weight: 700;
+}
+body[data-topic="przypadki-rzeczownika"] .viz,
+body[data-topic="przypadki-rzeczownika"] .viz-img,
+body[data-topic="odmiana-cwiczenia"] .viz,
+body[data-topic="odmiana-cwiczenia"] .viz-img,
+body[data-topic="temat-nie-rzeczownik"] .viz,
+body[data-topic="temat-nie-rzeczownik"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="przypadki-rzeczownika"] .block-list li,
+body[data-topic="odmiana-cwiczenia"] .block-list li,
+body[data-topic="temat-nie-rzeczownik"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="przypadki-rzeczownika"] .reveal-step,
+body[data-topic="odmiana-cwiczenia"] .reveal-step,
+body[data-topic="temat-nie-rzeczownik"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+body[data-topic="przypadki-rzeczownika"] .vocab-table,
+body[data-topic="odmiana-cwiczenia"] .vocab-table,
+body[data-topic="temat-nie-rzeczownik"] .vocab-table {
+  width: 100%;
+  table-layout: fixed;
+}
+body[data-topic="przypadki-rzeczownika"] .vocab-table td,
+body[data-topic="przypadki-rzeczownika"] .vocab-table th,
+body[data-topic="odmiana-cwiczenia"] .vocab-table td,
+body[data-topic="odmiana-cwiczenia"] .vocab-table th,
+body[data-topic="temat-nie-rzeczownik"] .vocab-table td,
+body[data-topic="temat-nie-rzeczownik"] .vocab-table th {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+body[data-topic="dwa-wiatry"] .tx-pl,
+body[data-topic="dwa-wiatry"] .tx-ua,
+body[data-topic="dwa-wiatry"] .prompt,
+body[data-topic="dwa-wiatry"] .task-opt,
+body[data-topic="dwa-wiatry"] .math-line,
+body[data-topic="dwa-wiatry-recytacja"] .tx-pl,
+body[data-topic="dwa-wiatry-recytacja"] .tx-ua,
+body[data-topic="dwa-wiatry-recytacja"] .prompt,
+body[data-topic="dwa-wiatry-recytacja"] .task-opt,
+body[data-topic="dwa-wiatry-recytacja"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="dwa-wiatry"] .lesson-block .block-body > p.tx-pl,
+body[data-topic="dwa-wiatry-recytacja"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body[data-topic="dwa-wiatry"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="dwa-wiatry"] .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body[data-topic="dwa-wiatry"] .lesson-block[data-type="practice"] .block-body > p.tx-pl,
+body[data-topic="dwa-wiatry-recytacja"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="dwa-wiatry-recytacja"] .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body[data-topic="dwa-wiatry-recytacja"] .lesson-block[data-type="practice"] .block-body > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body[data-topic="dwa-wiatry"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="dwa-wiatry"] .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body[data-topic="dwa-wiatry"] .lesson-block[data-type="practice"] .block-body > p.tx-ua,
+body[data-topic="dwa-wiatry-recytacja"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="dwa-wiatry-recytacja"] .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body[data-topic="dwa-wiatry-recytacja"] .lesson-block[data-type="practice"] .block-body > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body[data-topic="dwa-wiatry"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="dwa-wiatry"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7),
+body[data-topic="dwa-wiatry-recytacja"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="dwa-wiatry-recytacja"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body[data-topic="dwa-wiatry"] .lesson-block .task-card,
+body[data-topic="dwa-wiatry-recytacja"] .lesson-block .task-card {
+  margin-top: 1.15rem;
+}
+body[data-topic="dwa-wiatry"] .tx-mark,
+body[data-topic="dwa-wiatry-recytacja"] .tx-mark {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+  font-weight: 700;
+}
+body[data-topic="dwa-wiatry"] .viz,
+body[data-topic="dwa-wiatry"] .viz-img,
+body[data-topic="dwa-wiatry-recytacja"] .viz,
+body[data-topic="dwa-wiatry-recytacja"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="dwa-wiatry"] .block-list li,
+body[data-topic="dwa-wiatry-recytacja"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="dwa-wiatry"] .reveal-step,
+body[data-topic="dwa-wiatry-recytacja"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+body[data-topic="dwa-wiatry"] .vocab-table,
+body[data-topic="dwa-wiatry-recytacja"] .vocab-table {
+  width: 100%;
+  table-layout: fixed;
+}
+body[data-topic="dwa-wiatry"] .vocab-table td,
+body[data-topic="dwa-wiatry"] .vocab-table th,
+body[data-topic="dwa-wiatry-recytacja"] .vocab-table td,
+body[data-topic="dwa-wiatry-recytacja"] .vocab-table th {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="dwa-wiatry"] .em-audio,
+body[data-topic="dwa-wiatry-recytacja"] .em-audio {
+  margin: .35rem 0 1rem;
+  padding: .75rem .9rem;
+  background: #f0fdfa;
+  border: 1px solid #99f6e4;
+  border-radius: 12px;
+}
+body[data-topic="dwa-wiatry"] .em-audio-label,
+body[data-topic="dwa-wiatry-recytacja"] .em-audio-label {
+  margin: 0 0 .45rem;
+  font-weight: 700;
+  font-size: .95rem;
+}
+body[data-topic="dwa-wiatry"] .em-audio audio,
+body[data-topic="dwa-wiatry-recytacja"] .em-audio audio {
+  width: 100%;
+  display: block;
+}
+
+body[data-topic="studio-pogoda"] .tx-pl,
+body[data-topic="studio-pogoda"] .tx-ua,
+body[data-topic="studio-pogoda"] .prompt,
+body[data-topic="studio-pogoda"] .task-opt,
+body[data-topic="studio-pogoda"] .math-line,
+body[data-topic="prognoza-planeta"] .tx-pl,
+body[data-topic="prognoza-planeta"] .tx-ua,
+body[data-topic="prognoza-planeta"] .prompt,
+body[data-topic="prognoza-planeta"] .task-opt,
+body[data-topic="prognoza-planeta"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="studio-pogoda"] .lesson-block .block-body > p.tx-pl,
+body[data-topic="prognoza-planeta"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body[data-topic="studio-pogoda"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="studio-pogoda"] .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body[data-topic="studio-pogoda"] .lesson-block[data-type="practice"] .block-body > p.tx-pl,
+body[data-topic="prognoza-planeta"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="prognoza-planeta"] .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body[data-topic="prognoza-planeta"] .lesson-block[data-type="practice"] .block-body > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body[data-topic="studio-pogoda"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="studio-pogoda"] .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body[data-topic="studio-pogoda"] .lesson-block[data-type="practice"] .block-body > p.tx-ua,
+body[data-topic="prognoza-planeta"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="prognoza-planeta"] .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body[data-topic="prognoza-planeta"] .lesson-block[data-type="practice"] .block-body > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body[data-topic="studio-pogoda"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="studio-pogoda"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7),
+body[data-topic="prognoza-planeta"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="prognoza-planeta"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body[data-topic="studio-pogoda"] .lesson-block .task-card,
+body[data-topic="prognoza-planeta"] .lesson-block .task-card {
+  margin-top: 1.15rem;
+}
+body[data-topic="studio-pogoda"] .tx-mark,
+body[data-topic="prognoza-planeta"] .tx-mark {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+  font-weight: 700;
+}
+body[data-topic="studio-pogoda"] .viz,
+body[data-topic="studio-pogoda"] .viz-img,
+body[data-topic="prognoza-planeta"] .viz,
+body[data-topic="prognoza-planeta"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="studio-pogoda"] .block-list li,
+body[data-topic="prognoza-planeta"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="studio-pogoda"] .reveal-step,
+body[data-topic="prognoza-planeta"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+body[data-topic="studio-pogoda"] .vocab-table,
+body[data-topic="prognoza-planeta"] .vocab-table {
+  width: 100%;
+  table-layout: fixed;
+}
+body[data-topic="studio-pogoda"] .vocab-table td,
+body[data-topic="studio-pogoda"] .vocab-table th,
+body[data-topic="prognoza-planeta"] .vocab-table td,
+body[data-topic="prognoza-planeta"] .vocab-table th {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+

@@ -1,0 +1,32 @@
+# Lekcja 09 — Samożywność i fotosynteza
+# Folder GitHub:
+# Biologia/L09_Samozywnosc_i_fotosynteza/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l09-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9. Zielona roślina doniczkowa albo młode drzewko w jasnym słońcu, liście wyraźnie zielone. Bez twarzy, bez angielskiego, bez logotypów, bez wzorów chemicznych.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L09_Samozywnosc_i_fotosynteza/images/l09-zacznijmy.png?raw=true
+
+l09-samozywnosc.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. LEWA: pies przy misce — etykieta PL: cudzożywność (szczegóły na następnej lekcji). PRAWA: zielona roślina, strzałka „sama wytwarza pokarm”, etykieta: samożywność. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L09_Samozywnosc_i_fotosynteza/images/l09-samozywnosc.png?raw=true
+
+l09-gdzie.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Liść → zbliżenie komórki roślinnej → zielone owalne chloroplasty. Etykiety PL: liść; chloroplast; chlorofil — zielony barwnik, pochłania światło. Bez równania, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L09_Samozywnosc_i_fotosynteza/images/l09-gdzie.png?raw=true
+
+l09-substraty.png
+IMAGE PROMPT: Edukacyjny schemat 16:9, liść w środku. Trzy strzałki DO liścia z etykietami PL: światło (słońce); woda (z korzenia); dwutlenek węgla (z powietrza, przez szparki). Chlorofil jako warunek w chloroplaście. Bez wzoru chemicznego, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L09_Samozywnosc_i_fotosynteza/images/l09-substraty.png?raw=true
+
+l09-rownanie.png
+IMAGE PROMPT: Czysty edukacyjny schemat 16:9. Duże polskie równanie: dwutlenek węgla + woda → glukoza (cukier) + tlen. Nad strzałką: światło i chlorofil. Dwie strzałki WYJŚCIA z liścia: cukier (do rośliny), tlen (do powietrza). Bez wzoru chemicznego jako wymagania. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L09_Samozywnosc_i_fotosynteza/images/l09-rownanie.png?raw=true
+
+l09-swiatlo.png
+IMAGE PROMPT: Fotorealistyczny kolaż 16:9. LEWA: ta sama roślina w jasnym słońcu, liście żywo zielone. PRAWA: ta sama roślina w ciemnej szafie lub ciemni, etykieta PL: bez światła nie ma fotosyntezy. Bez twarzy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L09_Samozywnosc_i_fotosynteza/images/l09-swiatlo.png?raw=true
+
+l09-znaczenie.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Zielona łąka, słońce. Strzałka 1: liść → cukier/skrobia w roślinie → zając je trawę. Strzałka 2: tlen z liścia do powietrza → dziecko lub ptak oddycha. Polskie etykiety. Bez łańcucha pokarmowego z 10 ogniwami, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L09_Samozywnosc_i_fotosynteza/images/l09-znaczenie.png?raw=true

@@ -1,0 +1,192 @@
+/* Osobny styl druku / Zapisz jako PDF — A4 jak Canva (HTML bloki) */
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+html,
+body {
+  background: #fff !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+
+.no-print,
+.back-top,
+.site-header,
+.toolbar,
+.toc,
+.site-footer,
+.to-top,
+.sheet-meta,
+.page-header {
+  display: none !important;
+}
+
+.dictionary {
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Strony Canva HTML (1–13) */
+.canva-page {
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  break-after: page;
+  page-break-after: always;
+}
+
+.canva-sheet {
+  width: 210mm !important;
+  height: 297mm !important;
+  max-width: none !important;
+  aspect-ratio: auto !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  border-width: 4px !important;
+  overflow: hidden !important;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.lesson-block,
+.cs-block,
+.life-question,
+.life-item,
+.cs-zap {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.life-block {
+  padding: 0.55rem 0.45rem 0.4rem !important;
+}
+
+.life-question p,
+.life-question li,
+.life-item p,
+.life-item li {
+  font-size: 0.6rem !important;
+  line-height: 1.28 !important;
+}
+
+.life-closing {
+  font-size: 0.62rem !important;
+  margin-top: 0.25rem !important;
+}
+
+.cs-body {
+  gap: 0.38rem !important;
+}
+
+.cs-body.has-hero {
+  gap: 0.28rem !important;
+}
+
+.hero-visual img,
+.visual-card img,
+.life-scene img,
+.compare-visual img,
+.geometry-diagram.hero img,
+.shape-scene img {
+  max-height: 132px !important;
+}
+
+.hero-visual.hero-lg img,
+.life-scene.hero-lg img {
+  max-height: 148px !important;
+}
+
+.hero-visual.hero-sm img {
+  max-height: 108px !important;
+}
+
+.owl-helper {
+  padding: 0.25rem 0.4rem !important;
+}
+
+.owl-helper p {
+  font-size: 0.58rem !important;
+}
+
+.mission-hero {
+  margin-bottom: 0.25rem !important;
+  padding: 0.25rem 0.4rem !important;
+}
+
+.shape-explain img {
+  max-height: 96px !important;
+}
+
+.example-photo img {
+  height: 88px !important;
+}
+
+.detective-scene img {
+  height: 150px !important;
+}
+
+.detective-owl > img {
+  width: 78px !important;
+}
+
+.repeat-strip img {
+  max-height: 64px !important;
+}
+
+.practice-memory-row {
+  gap: 0.3rem !important;
+}
+
+/* Stare pełne PNG (jeśli zostaną) */
+.sheet-page {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: #fff !important;
+  break-after: page;
+  page-break-after: always;
+}
+
+.a4-sheet {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  padding: 0;
+  box-shadow: none !important;
+  border: none !important;
+  background: #fff;
+  overflow: hidden;
+}
+
+.sheet-art {
+  display: block;
+  width: 210mm;
+  height: 297mm;
+  object-fit: fill;
+  margin: 0;
+}
+
+/* Strony 14+ (HTML edukacyjny) */
+.dictionary-page:not(.canva-page):not(.sheet-page) {
+  break-after: page;
+  page-break-after: always;
+  box-shadow: none !important;
+  border: 1px solid #ddd !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  min-height: 297mm;
+  padding: 12mm !important;
+  max-width: none !important;
+}
+
+.canva-page:last-of-type,
+.dictionary-page:last-of-type {
+  break-after: auto;
+  page-break-after: auto;
+}

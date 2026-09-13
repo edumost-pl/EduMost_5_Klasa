@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" role="img" aria-label="Duży kąt z łukiem">
+  <rect width="640" height="220" rx="18" fill="#FFF8E1"/>
+  <line x1="180" y1="180" x2="520" y2="180" stroke="#1565C0" stroke-width="6" stroke-linecap="round"/>
+  <line x1="180" y1="180" x2="420" y2="40" stroke="#1565C0" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="180" cy="180" r="8" fill="#6A32A0"/>
+  <path d="M280 180 A100 100 0 0 1 300 95" fill="none" stroke="#FF9800" stroke-width="4"/>
+  <text x="310" y="145" font-family="Segoe UI,sans-serif" font-size="22" font-weight="900" fill="#EF6C00">∠</text>
+  <path d="M180 150 H210 V180" fill="none" stroke="#43A047" stroke-width="4"/>
+  <rect x="500" y="40" width="110" height="90" rx="12" fill="#E8F5E9" stroke="#43A047" stroke-width="2"/>
+  <text x="555" y="75" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="14" font-weight="800" fill="#2E7D32">kąt prosty</text>
+  <text x="555" y="100" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="20" font-weight="900" fill="#6A32A0">90°</text>
+  <text x="555" y="118" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="12" fill="#546E7A">znak ∟</text>
+  <text x="320" y="210" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="13" font-weight="700" fill="#37474F">kąt = dwie półproste ze wspólnym początkiem</text>
+</svg>

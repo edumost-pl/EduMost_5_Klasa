@@ -1,0 +1,28 @@
+# Lekcja 26 — Paprociowe
+# Folder GitHub:
+# Biologia/L26_Paprociowe/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l26-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9 dużej paproci w cienistym, wilgotnym lesie, dzień. Etykieta PL: paproć. Bez mchu jako jedynego motywu, bez kwiatu, bez szyszki, bez nasion. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L26_Paprociowe/images/l26-zacznijmy.png?raw=true
+
+l26-srodowisko.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, trzy kadry, etykiety PL. 1 paprocie w runie leśnym. 2 wąwóz / brzeg potoku. 3 doniczkowa paproć w mieszkaniu (cień). Napis: środowisko paproci. Bez kwiatów, bez szyszek. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L26_Paprociowe/images/l26-srodowisko.png?raw=true
+
+l26-budowa.png
+IMAGE PROMPT: Edukacyjny schemat 16:9 paproci. Etykiety PL: liście; młody liść (pastorał, zwinięty); kłącze (pęd pod ziemią); korzenie. Napis: kłącze = łodyga z lekcji 23, pod glebą. Bez kupek zarodni na tym kadrze. Bez chwytników mchu jako „to samo”. Bez kwiatu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L26_Paprociowe/images/l26-budowa.png?raw=true
+
+l26-kupki.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. LEWA: spód liścia paproci, etykieta PL: kupki zarodni. PRAWA: powiększenie kupki — zarodnie, zarodniki (drobny proszek, nie groza). Napis: zarodniki, nie nasiona. Bez kwiatu. Bez puszki mchu na tym kadrze. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L26_Paprociowe/images/l26-kupki.png?raw=true
+
+l26-przedrosle.png
+IMAGE PROMPT: Edukacyjny schemat 16:9, cztery kroki, etykiety PL: zarodnik; przedrośle (mała sercowata zielona płytka); młoda paproć na przedroślu; dorosła paproć z kupkami. Napis: nie nasiono. Bez kwiatu, bez szyszki. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L26_Paprociowe/images/l26-przedrosle.png?raw=true
+
+l26-paprotniki.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, trzy kadry, etykiety PL. 1 paproć — duże liście, kłącze. 2 skrzyp — pęd członowany, kłos zarodnionośny (nie kwiat). 3 widłak — płożące pędy, kłosy. Napis: paprotniki. Bez zrywania widłaka. Bez szyszki sosny. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L26_Paprociowe/images/l26-paprotniki.png?raw=true

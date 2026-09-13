@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 200" role="img" aria-label="Pole na kratce">
+  <rect width="280" height="200" fill="#fff"/>
+
+  <g stroke="#CFD8DC" stroke-width="1"><line x1="20" y1="20" x2="20" y2="170"/><line x1="50" y1="20" x2="50" y2="170"/><line x1="80" y1="20" x2="80" y2="170"/><line x1="110" y1="20" x2="110" y2="170"/><line x1="140" y1="20" x2="140" y2="170"/><line x1="170" y1="20" x2="170" y2="170"/><line x1="200" y1="20" x2="200" y2="170"/><line x1="230" y1="20" x2="230" y2="170"/><line x1="260" y1="20" x2="260" y2="170"/><line x1="20" y1="20" x2="260" y2="20"/><line x1="20" y1="50" x2="260" y2="50"/><line x1="20" y1="80" x2="260" y2="80"/><line x1="20" y1="110" x2="260" y2="110"/><line x1="20" y1="140" x2="260" y2="140"/><line x1="20" y1="170" x2="260" y2="170"/></g>
+  <rect x="50" y="50" width="120" height="90" fill="rgba(106,50,160,0.25)" stroke="#6A32A0" stroke-width="2"/>
+  <text x="140" y="190" text-anchor="middle" font-size="13" font-family="Segoe UI,sans-serif" fill="#263238">4 × 3 = 12 j²</text>
+
+</svg>

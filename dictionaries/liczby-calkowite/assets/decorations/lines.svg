@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="48"
+     height="48"
+     viewBox="0 0 48 48"
+     fill="none">
+
+    <g stroke="#2BB24C"
+       stroke-width="4"
+       stroke-linecap="round">
+
+        <line x1="14" y1="12" x2="30" y2="4"/>
+        <line x1="18" y1="24" x2="34" y2="16"/>
+        <line x1="22" y1="36" x2="38" y2="28"/>
+
+    </g>
+
+</svg>

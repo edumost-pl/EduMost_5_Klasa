@@ -1,0 +1,32 @@
+# Lekcja 13 — Doświadczenie: fermentacja
+# Folder GitHub:
+# Biologia/L13_Doswiadczenie_fermentacja/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l13-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9. Przezroczysta butelka z mętną cieczą, na szyjce nadmuchany beżowy balon. Etykieta PL: drożdże + cukier + ciepła woda. Szkolny stół. Bez twarzy, bez alkoholu do picia, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L13_Doswiadczenie_fermentacja/images/l13-zacznijmy.png?raw=true
+
+l13-hipoteza.png
+IMAGE PROMPT: Szkolna tablica 16:9, polskie napisy. Problem: Czy drożdże w cieple, z cukrem, wytwarzają gaz (CO₂) przy fermentacji? Hipoteza: Tak — balon na butelce z żywymi drożdżami i cukrem się nadmie. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L13_Doswiadczenie_fermentacja/images/l13-hipoteza.png?raw=true
+
+l13-proby.png
+IMAGE PROMPT: Edukacyjne zdjęcie 16:9. Dwie identyczne butelki z balonami. LEWA: drożdże + cukier + ciepła woda, balon duży — próba badawcza. PRAWA: drożdże + ciepła woda BEZ cukru, balon wiotki — próba kontrolna. Polskie etykiety. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L13_Doswiadczenie_fermentacja/images/l13-proby.png?raw=true
+
+l13-balon.png
+IMAGE PROMPT: Zbliżenie 16:9 na nadmuchany balon na butelce, strzałka PL: dwutlenek węgla (CO₂). Bez twarzy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L13_Doswiadczenie_fermentacja/images/l13-balon.png?raw=true
+
+l13-warunki.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, trzy karty PL: 1 żywe drożdże (nie przegotowane); 2 cukier jako pokarm; 3 ciepła woda, nie wrzątek. Krzyżyk przy lodówce i przy wrzątku. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L13_Doswiadczenie_fermentacja/images/l13-warunki.png?raw=true
+
+l13-wynik.png
+IMAGE PROMPT: To samo porównanie dwóch butelek z etykietą wniosku PL: drożdże + cukier → CO₂ (fermentacja). Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L13_Doswiadczenie_fermentacja/images/l13-wynik.png?raw=true
+
+l13-szkola.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9 szkolnej pracowni, butelki z balonami na tacy, kartka NIE PIĆ. Bez twarzy zbliżeniem, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L13_Doswiadczenie_fermentacja/images/l13-szkola.png?raw=true

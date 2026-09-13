@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 240" role="img" aria-label="Pole trójkąta">
+  <rect width="340" height="240" fill="#fff"/>
+
+  <rect x="40" y="50" width="200" height="140" fill="#ECEFF1" stroke="#90A4AE" stroke-width="2" stroke-dasharray="4 3"/>
+  <polygon points="40,190 240,190 40,50" fill="#BBDEFB" stroke="#1565C0" stroke-width="3"/>
+  <line x1="40" y1="50" x2="40" y2="190" stroke="#FF9800" stroke-width="2"/>
+  <text x="55" y="120" font-size="14" font-weight="700" font-family="Segoe UI,sans-serif" fill="#FF9800">h</text>
+  <text x="140" y="210" text-anchor="middle" font-size="14" font-family="Segoe UI,sans-serif" fill="#263238">a</text>
+  <text x="170" y="30" text-anchor="middle" font-size="14" font-weight="700" font-family="Segoe UI,sans-serif" fill="#1565C0">P = ½ · a · h</text>
+
+</svg>

@@ -1,0 +1,13 @@
+# Powtórzenie działu I — obrazy z lekcji 1–3 (te same pliki GitHub).
+
+L01 l01-czynnosci-7.png
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L01_Biologia_jako_nauka/images/l01-czynnosci-7.png?raw=true
+
+L01 l01-poziomy-budowy.png
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L01_Biologia_jako_nauka/images/l01-poziomy-budowy.png?raw=true
+
+L02 l02-proby-banany.png
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L02_Jak_poznawac_biologie/images/l02-proby-banany.png?raw=true
+
+L03 l03-powiekszenie.png
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L03_Obserwacje_mikroskopowe/images/l03-powiekszenie.png?raw=true

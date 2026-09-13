@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Koło">
+  <circle cx="100" cy="95" r="70" fill="#B2EBF2" stroke="#00BCD4" stroke-width="5"/>
+  <circle cx="100" cy="95" r="5" fill="#00838F"/>
+  <text x="100" y="185" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="13" font-weight="800" fill="#00838F">bez prostych boków</text>
+</svg>

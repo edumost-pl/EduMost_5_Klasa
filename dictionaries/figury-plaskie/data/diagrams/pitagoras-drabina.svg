@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 260" role="img" aria-label="Pitagoras — drabina">
+  <rect width="280" height="260" fill="#fff"/>
+
+  <line x1="40" y1="220" x2="40" y2="40" stroke="#78909C" stroke-width="6"/>
+  <line x1="40" y1="220" x2="160" y2="220" stroke="#A1887F" stroke-width="4"/>
+  <line x1="160" y1="220" x2="40" y2="60" stroke="#FF9800" stroke-width="4"/>
+  <path d="M40,220 L40,200 L60,200" fill="none" stroke="#6A32A0" stroke-width="2"/>
+  <text x="100" y="140" font-size="14" font-family="Segoe UI,sans-serif" fill="#FF9800">5 m</text>
+  <text x="90" y="240" font-size="13" font-family="Segoe UI,sans-serif" fill="#263238">3 m</text>
+  <text x="15" y="140" font-size="13" font-family="Segoe UI,sans-serif" fill="#6A32A0">h</text>
+  <text x="140" y="40" font-size="13" font-family="Segoe UI,sans-serif" fill="#263238">3² + h² = 5² → h = 4</text>
+
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" role="img" aria-label="Prostokąt">
+  <rect width="240" height="160" fill="#fff"/>
+
+  <rect x="30" y="35" width="180" height="90" fill="#C8E6C9" stroke="#43A047" stroke-width="4"/>
+  <text x="120" y="88" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="16" font-weight="700" fill="#263238">prostokąt</text>
+
+</svg>

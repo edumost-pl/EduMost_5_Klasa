@@ -1,0 +1,14 @@
+# Lekcja 13 — Imperium Rzymskie
+# Wrzuć pliki do GitHub: Historia/099.png … 105.png
+# https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Historia/
+# Obrazy: bez grozy, bez bitew morskich, bez szarży legionów, bez dziesiątkowania,
+# bez splądrowania Rzymu, bez zdejmowania korony z cesarza.
+# Nie kopiować kadrów filmu Krótkich Lekcji — atlas, rekonstrukcja, popiersie muzealne.
+
+099.png  MAPA: podboje — Kartagina, Mare Nostrum, lista ziem, Ren i Dunaj
+100.png  BUDOWLA: limes — Saalburg, Porta Praetoria (rekonstrukcja)
+101.png  SCHEMAT: legionista (stoi, podpisy ekwipunku) + katapulta
+102.png  MAPA: cesarstwo z prowincjami, Pax Romana, romanizacja
+103.png  POSTAĆ: Konstantyn Wielki — popiersie (kto · skąd · lata · wsławił się)
+104.png  MAPA: podział 395 — zachód (Rzym) i wschód (Konstantynopol)
+105.png  MAPA: wielka wędrówka ludów — strzałki plemion, bez walki

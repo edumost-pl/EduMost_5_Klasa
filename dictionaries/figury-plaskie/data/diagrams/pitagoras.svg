@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 300" role="img" aria-label="Twierdzenie Pitagorasa: kwadraty na bokach trójkąta 3-4-5">
+  <rect width="380" height="300" fill="#fff"/>
+  <text x="190" y="28" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="16" font-weight="800" fill="#1E2A36">a² + b² = c²</text>
+  <text x="190" y="48" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="12" fill="#546E7A">3² + 4² = 5² · 9 + 16 = 25</text>
+
+  <!-- square on a (3): blue, left -->
+  <rect x="52" y="127" width="48" height="48" fill="#BBDEFB" stroke="#1565C0" stroke-width="2"/>
+  <text x="76" y="156" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="14" font-weight="800" fill="#1565C0">a²</text>
+
+  <!-- square on b (4): green, below -->
+  <rect x="100" y="175" width="64" height="64" fill="#C8E6C9" stroke="#43A047" stroke-width="2"/>
+  <text x="132" y="212" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="14" font-weight="800" fill="#2E7D32">b²</text>
+
+  <!-- square on c (5): red, outward on hypotenuse -->
+  <polygon points="100,127 164,175 212,111 148,63" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+  <text x="156" y="118" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="14" font-weight="800" fill="#C62828">c²</text>
+
+  <!-- triangle -->
+  <polygon points="100,175 100,127 164,175" fill="#FFF3E0" stroke="#FF9800" stroke-width="3"/>
+  <path d="M100,175 L100,163 L112,163" fill="none" stroke="#6A32A0" stroke-width="2"/>
+
+  <text x="88" y="154" text-anchor="end" font-family="Segoe UI,sans-serif" font-size="13" font-weight="800" fill="#1565C0">a</text>
+  <text x="130" y="190" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="13" font-weight="800" fill="#2E7D32">b</text>
+  <text x="140" y="158" font-family="Segoe UI,sans-serif" font-size="13" font-weight="800" fill="#C62828">c</text>
+
+  <text x="100" y="122" text-anchor="middle" font-size="11" font-weight="700" font-family="Segoe UI,sans-serif" fill="#546E7A">A</text>
+  <text x="172" y="180" font-size="11" font-weight="700" font-family="Segoe UI,sans-serif" fill="#546E7A">B</text>
+  <text x="92" y="192" text-anchor="end" font-size="11" font-weight="700" font-family="Segoe UI,sans-serif" fill="#546E7A">C</text>
+</svg>

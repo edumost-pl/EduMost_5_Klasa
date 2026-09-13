@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 280" role="img" aria-label="Obwód kwadratu">
+  <rect width="320" height="280" fill="#fff"/>
+
+  <rect x="70" y="40" width="160" height="160" fill="#E0F7FA" stroke="#00BCD4" stroke-width="3"/>
+  <path d="M70,40 H230 V200 H70 Z" fill="none" stroke="#FF9800" stroke-width="5" stroke-dasharray="10 6"/>
+  <text x="150" y="30" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="14" fill="#FF9800">5 cm</text>
+  <text x="245" y="125" font-family="Segoe UI,sans-serif" font-size="14" fill="#FF9800">5 cm</text>
+  <text x="150" y="225" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="14" fill="#FF9800">5 cm</text>
+  <text x="35" y="125" font-family="Segoe UI,sans-serif" font-size="14" fill="#FF9800">5 cm</text>
+  <text x="160" y="255" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="15" font-weight="700" fill="#263238">O = 4 · 5 = 20 cm</text>
+
+</svg>

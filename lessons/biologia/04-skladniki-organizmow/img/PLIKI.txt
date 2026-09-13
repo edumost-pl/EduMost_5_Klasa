@@ -1,0 +1,32 @@
+# Lekcja 04 — Składniki chemiczne organizmów
+# Folder GitHub:
+# Biologia/L04_Skladniki_chemiczne_organizmow/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l04-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9 jak prawdziwa fotografia. Kilka przeźroczystych niebieskich meduz w ciemnej wodzie. W rogu duża czytelna etykieta po polsku: 98% woda. Bez angielskiego, bez logotypów, bez twarzy ludzi.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L04_Skladniki_chemiczne_organizmow/images/l04-zacznijmy.png?raw=true
+
+l04-pierwiastki.png
+IMAGE PROMPT: Edukacyjna plansza 16:9, fotorealistyczne tło. Sześć dużych polskich etykiet: węgiel, wodór, tlen, azot, siarka, fosfor. Napis: blisko 98% masy organizmu. Bez wzorów chemicznych, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L04_Skladniki_chemiczne_organizmow/images/l04-pierwiastki.png?raw=true
+
+l04-sklad-czlowieka.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, sylwetka człowieka, polskie etykiety: 65% woda, 18% białka, 10% tłuszcze, 4% sole mineralne, 1% cukry, 2% kwasy nukleinowe i inne związki. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L04_Skladniki_chemiczne_organizmow/images/l04-sklad-czlowieka.png?raw=true
+
+l04-sole.png
+IMAGE PROMPT: Fotorealistyczny kolaż 16:9. LEWA: muszla i kości — etykieta wapń. PRAWA: zielone liście — magnez w chlorofilu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L04_Skladniki_chemiczne_organizmow/images/l04-sole.png?raw=true
+
+l04-cukry.png
+IMAGE PROMPT: Fotorealistyczny kolaż 16:9, trzy kadry z etykietami PL: pszczoła i miód — energia; ziemniaki — zapas (skrobia); bawełna — budowa (celuloza). Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L04_Skladniki_chemiczne_organizmow/images/l04-cukry.png?raw=true
+
+l04-bialka-tluszcze.png
+IMAGE PROMPT: Fotorealistyczny kolaż 16:9: mleko; strąk grochu; foka na lodzie; słonecznik z nasionami. Etykiety PL. Słupek: tłuszcze ≈ 2× energia cukrów. Bez twarzy dzieci, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L04_Skladniki_chemiczne_organizmow/images/l04-bialka-tluszcze.png?raw=true
+
+l04-dna-pingwiny.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9. Trzy pingwiny cesarskie na śniegu z pisklętami przy stopach. Bez helisy DNA, bez napisów, bez logotypów, bez angielskiego.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L04_Skladniki_chemiczne_organizmow/images/l04-dna-pingwiny.png?raw=true

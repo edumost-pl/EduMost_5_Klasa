@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 280" role="img" aria-label="Promień, średnica, wzory">
+  <rect width="300" height="280" fill="#fff"/>
+
+  <circle cx="150" cy="130" r="90" fill="#E0F7FA" stroke="#00BCD4" stroke-width="3"/>
+  <circle cx="150" cy="130" r="4" fill="#263238"/>
+  <line x1="150" y1="130" x2="240" y2="130" stroke="#FF9800" stroke-width="3"/>
+  <line x1="60" y1="130" x2="240" y2="130" stroke="#6A32A0" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="195" y="120" font-size="14" font-weight="700" font-family="Segoe UI,sans-serif" fill="#FF9800">r</text>
+  <text x="150" y="155" text-anchor="middle" font-size="12" font-family="Segoe UI,sans-serif" fill="#6A32A0">d = 2r</text>
+  <text x="150" y="245" text-anchor="middle" font-size="12" font-family="Segoe UI,sans-serif" fill="#263238">O okręgu = 2πr</text>
+  <text x="150" y="265" text-anchor="middle" font-size="12" font-family="Segoe UI,sans-serif" fill="#263238">P koła = πr²</text>
+
+</svg>

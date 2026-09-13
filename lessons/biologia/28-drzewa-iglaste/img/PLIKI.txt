@@ -1,0 +1,32 @@
+# Lekcja 28 — Drzewa iglaste
+# Folder GitHub:
+# Biologia/L28_Drzewa_iglaste/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l28-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9 lasu iglastego, dzień. Etykieta PL: drzewa iglaste. Bez kwiatów, bez owoców liściastych, bez tablicy dąb/lipa. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L28_Drzewa_iglaste/images/l28-zacznijmy.png?raw=true
+
+l28-sosna.png
+IMAGE PROMPT: Edukacyjna infografika 16:9 sosny zwyczajnej. Etykiety PL: dwie igły w pęczku; szyszka zwisa; kora w łuskach. Napis: sosna. Bez świerka i jodły na tym kadrze. Bez kwiatu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L28_Drzewa_iglaste/images/l28-sosna.png?raw=true
+
+l28-swierk.png
+IMAGE PROMPT: Edukacyjna infografika 16:9 świerka. Etykiety PL: igły pojedynczo, kłujące, dookoła pędu; szyszki zwisają. Korona stożkowata. Napis: świerk. Bez dwóch igieł sosny. Bez stojących szyszek jodły. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L28_Drzewa_iglaste/images/l28-swierk.png?raw=true
+
+l28-jodla.png
+IMAGE PROMPT: Edukacyjna infografika 16:9 jodły. Etykiety PL: igły miękkie, spłaszczone, dwa jasne paski od spodu; szyszki stoją, rozpadają się na drzewie. Napis: jodła. Bez zwisających szyszek świerka. Bez pęczka sosny. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L28_Drzewa_iglaste/images/l28-jodla.png?raw=true
+
+l28-modrzew.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, dwa kadry. LEWA: wiosna/lato — pęczki miękkich jasnozielonych igieł, etykieta PL: modrzew. PRAWA: jesień — złote igły opadają. Napis: zrzuca igły. Bez dębu i lipy. Bez kwiatu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L28_Drzewa_iglaste/images/l28-modrzew.png?raw=true
+
+l28-jalowiec-cis.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, dwa kadry, etykiety PL. LEWA: jałowiec — igły lub łuski, niebieskawe szyszkojagody, napis: to szyszka, nie owoc. PRAWA: cis — czerwona osnówka, napis: trujący, nie zrywać. Bez namawiania do jedzenia. Bez kwiatu jabłoni. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L28_Drzewa_iglaste/images/l28-jalowiec-cis.png?raw=true
+
+l28-znaczenie.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, trzy kadry, etykiety PL. 1 belki / deski — drewno. 2 krople żywicy na pniu. 3 las iglasty — schronienie, gleba, powietrze. Bez wycinki jako grozy. Bez kwiatu. Bez dębu jako głównego motywu (L33). Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L28_Drzewa_iglaste/images/l28-znaczenie.png?raw=true

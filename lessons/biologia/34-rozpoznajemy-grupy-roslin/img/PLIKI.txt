@@ -1,0 +1,28 @@
+# Lekcja 34 — Rozpoznajemy grupy roślin
+# Folder GitHub:
+# Biologia/L34_Rozpoznajemy_grupy_roslin/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l34-zacznijmy.png
+IMAGE PROMPT: Edukacyjny kolaż 16:9, cztery kadry, etykiety PL: mech; paproć; drzewo z szyszką; drzewo z kwiatami / owocami. Napis: cztery grupy roślin. Bez szczegółów pręcików. Bez kiełkującej fasoli. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L34_Rozpoznajemy_grupy_roslin/images/l34-zacznijmy.png?raw=true
+
+l34-mech.png
+IMAGE PROMPT: Edukacyjny schemat 16:9 mchu. Etykiety PL: chwytniki; łodyżka; listki; puszka (zarodniki). Napis: mech. Bez korzeni paproci. Bez kwiatu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L34_Rozpoznajemy_grupy_roslin/images/l34-mech.png?raw=true
+
+l34-paproc.png
+IMAGE PROMPT: Edukacyjny schemat 16:9 paproci. Etykiety PL: korzenie; kłącze; liść; kupki zarodni (spód). Napis: paproć. Bez puszki mchu. Bez szyszki. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L34_Rozpoznajemy_grupy_roslin/images/l34-paproc.png?raw=true
+
+l34-nagonasienne.png
+IMAGE PROMPT: Edukacyjny schemat 16:9. Szyszka, etykiety PL: łuska; nasiono (nago). Napis: nagonasienne. Przekreślone jabłko. Bez klucza sosna vs świerk. Bez kupek. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L34_Rozpoznajemy_grupy_roslin/images/l34-nagonasienne.png?raw=true
+
+l34-okrytonasienne.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, dwa kadry, etykiety PL. LEWA: kwiat (bez podpisów kielicha i pręcików). PRAWA: przekrój owocu, nasiona w środku. Napis: okrytonasienne. Bez szyszki. Bez haczyków rozsiewu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L34_Rozpoznajemy_grupy_roslin/images/l34-okrytonasienne.png?raw=true
+
+l34-porownanie.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, dwa rzędy, etykiety PL. GÓRA: mech (chwytniki, puszka) vs paproć (korzenie, kupki). DÓŁ: szyszka z nagim nasionem vs jabłko z nasionami. Napis: porównaj dwie grupy. Bez klucza dąb/buk. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L34_Rozpoznajemy_grupy_roslin/images/l34-porownanie.png?raw=true

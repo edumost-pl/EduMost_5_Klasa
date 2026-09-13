@@ -1,0 +1,28 @@
+# Lekcja 05 — Hierarchiczna budowa organizmów
+# Folder GitHub:
+# Biologia/L05_Hierarchiczna_budowa_organizmow/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l05-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9. Dwie dłonie dorosłego trzymają duże białe jajo strusia obok dużo mniejszego brązowego jaja kury. Jasne tło, bez twarzy, bez angielskiego, bez logotypów. Etykiety PL: jajo strusia ≈ 15 cm; jajo kury.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L05_Hierarchiczna_budowa_organizmow/images/l05-zacznijmy.png?raw=true
+
+l05-jednostka.png
+IMAGE PROMPT: Edukacyjna infografika 16:9 dla klasy 5. Po lewej jedna prosta komórka zwierzęca bez nazw organelli (tylko obrys i jądro jako plamka). Po prawej strzałki do ikon: odżywianie, oddychanie, wzrost. Duży polski napis: komórka — podstawowa jednostka życia. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L05_Hierarchiczna_budowa_organizmow/images/l05-jednostka.png?raw=true
+
+l05-jedno-wielo.png
+IMAGE PROMPT: Edukacyjny kolaż 16:9. LEWA: fotorealistyczna bakteria pod mikroskopem, etykieta PL: organizm jednokomórkowy — bakterie. PRAWA: pies lub drzewo, etykieta PL: organizm wielokomórkowy — zwierzęta, rośliny, grzyby. Bez angielskiego, bez logotypów, bez grozy.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L05_Hierarchiczna_budowa_organizmow/images/l05-jedno-wielo.png?raw=true
+
+l05-wielkosc.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Po lewej skupisko bardzo drobnych bakterii z etykietą PL: bakterie — najmniejsze komórki. Po prawej jajo strusia z etykietą: komórka jajowa strusia — największa znana komórka zwierzęca, jajo ok. 15 cm, około 3 razy większe niż jajo kury. Bez organelli, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L05_Hierarchiczna_budowa_organizmow/images/l05-wielkosc.png?raw=true
+
+l05-poziomy.png
+IMAGE PROMPT: Edukacyjny schemat 16:9, pięć poziomów ze strzałkami, polskie etykiety: 1 KOMÓRKA — komórka nerwowa z wypustkami. 2 TKANKA — tkanka nerwowa. 3 NARZĄD — mózgowie. 4 UKŁAD NARZĄDÓW — układ nerwowy. 5 ORGANIZM — sylwetka człowieka. Jasne tło, płaski styl, bez organelli wewnątrz, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L05_Hierarchiczna_budowa_organizmow/images/l05-poziomy.png?raw=true
+
+l05-ksztalty.png
+IMAGE PROMPT: Edukacyjna plansza 16:9, cztery równe kadry, polskie etykiety, schematy komórek. 1 plemnik — główka i długa wić. 2 komórka jajowa — duża kula. 3 komórka nerwowa — wypustki. 4 komórka nabłonka — kształt kostki. Jasne tło, bez angielskiego, bez logotypów, bez nagości.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L05_Hierarchiczna_budowa_organizmow/images/l05-ksztalty.png?raw=true

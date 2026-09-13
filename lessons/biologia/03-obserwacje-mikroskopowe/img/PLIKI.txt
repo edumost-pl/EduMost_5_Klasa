@@ -1,0 +1,32 @@
+# Lekcja 03 — Obserwacje mikroskopowe
+# Folder GitHub na zdjęcia:
+# Biologia/L03_Obserwacje_mikroskopowe/images/
+# Wrzucaj pliki PNG o DOKŁADNYCH nazwach poniżej (nie .jpg).
+
+l03-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9 jak prawdziwa fotografia, nie rysunek. Na jasnym stole szkiełko podstawowe z dużą kroplą przezroczystej wody ze stawu; w tle rozmyte zielone liście i lupa. Bez napisów, bez logotypów, bez twarzy, bez angielskiego, bez komórek w zbliżeniu.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L03_Obserwacje_mikroskopowe/images/l03-zacznijmy.png?raw=true
+
+l03-obserwacja.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9 jak prawdziwa fotografia. Uczeń ok. 11 lat w jasnej sali szkolnej patrzy w biały mikroskop optyczny, dłoń na śrubie ostrości; twarz częściowo zasłonięta okularem lub ujęcie z boku, bez zbliżenia. Na stoliku szkiełko. Bez napisów, bez logotypów, bez angielskiego.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L03_Obserwacje_mikroskopowe/images/l03-obserwacja.png?raw=true
+
+l03-mikroskop-czesci.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9 szkolnego mikroskopu optycznego jak prawdziwa fotografia, nie rysunek. Czyste jasne tło. Duże czytelne polskie etykiety ze strzałkami, bez angielskiego, bez logotypów: okular, tubus, rewolwer, obiektyw, stolik, źródło światła, śruba makrometryczna, śruba mikrometryczna. Etykiety nie zasłaniają części.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L03_Obserwacje_mikroskopowe/images/l03-mikroskop-czesci.png?raw=true
+
+l03-preparat-cebula.png
+IMAGE PROMPT: Fotorealistyczny kolaż 16:9, pięć kadrów jak prawdziwe zdjęcia, nie kreskówka. Duże polskie etykiety 1–5, bez angielskiego, bez logotypów: 1) zakraplacz kładzie kroplę wody na szkiełku podstawowym, 2) pęseta i igła preparacyjna zdejmują cienką skórkę z łuski cebuli, 3) skórka w kropli, 4) szkiełko nakrywkowe opuszczane pod kątem, 5) gotowy preparat. Obok: pęseta, zakraplacz, igła, zlewka z wodą, pudełko szkiełek nakrywkowych. Bez twarzy.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L03_Obserwacje_mikroskopowe/images/l03-preparat-cebula.png?raw=true
+
+l03-komorki-cebuli.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9, dwa równe kadry mikroskopowe skórki cebuli, jak prawdziwe mikrofotografie. LEWA etykieta po polsku: preparat niebarwiony — jasna, słabo widoczna siatka komórek. PRAWA: preparat barwiony — fioletowe ściany i wyraźniejsze jądra. Bez angielskiego, bez logotypów, bez nazw organelli.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L03_Obserwacje_mikroskopowe/images/l03-komorki-cebuli.png?raw=true
+
+l03-powiekszenie.png
+IMAGE PROMPT: Fotorealistyczna plansza 16:9: zbliżenie okularu z liczbą 10× i obiektywu z liczbą 40× na szkolnym mikroskopie, jak prawdziwe zdjęcie. Na dole duży polski napis: powiększenie okularu × powiększenie obiektywu = powiększenie obrazu. Przykład: 10 × 40 = 400. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L03_Obserwacje_mikroskopowe/images/l03-powiekszenie.png?raw=true
+
+l03-elektronowy.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9 jak prawdziwa fotografia. Duży, wysoki mikroskop elektronowy w czystym laboratorium, pionowa kolumna, monitory, bez ludzi na pierwszym planie. Bez napisów po angielsku, bez logotypów, bez wirusów w zbliżeniu.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L03_Obserwacje_mikroskopowe/images/l03-elektronowy.png?raw=true

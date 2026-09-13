@@ -1,0 +1,28 @@
+# Lekcja 11 — Cudzożywność
+# Folder GitHub:
+# Biologia/L11_Cudzozywnosc/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l11-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9. Zając na łące je trawę, dzień. Bez krwi, bez grozy, bez angielskiego, bez logotypów, bez twarzy ludzi.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L11_Cudzozywnosc/images/l11-zacznijmy.png?raw=true
+
+l11-cudzo.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. LEWA: liść, fotosynteza, samożywność. PRAWA: zając, lis, grzyb na pniu — strzałka „pobierają gotowy pokarm”, etykieta PL: cudzożywność. Bez krwi, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L11_Cudzozywnosc/images/l11-cudzo.png?raw=true
+
+l11-diety.png
+IMAGE PROMPT: Edukacyjny kolaż 16:9, trzy fotorealistyczne kadry, polskie etykiety, bez polowań w zbliżeniu, bez krwi. 1 zając / sarna — roślinożerca. 2 lis — mięsożerca. 3 dzik lub niedźwiedź przy jagodach i dżdżownicy — wszystkożerca. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L11_Cudzozywnosc/images/l11-diety.png?raw=true
+
+l11-saprobiont.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9. Kapeluszowe grzyby na spróchniałym pniu w lesie, dzień, mech. Etykieta PL: saprobiont — odżywia się martwymi szczątkami. Bez trujących znaków, bez angielskiego, bez logotypów, bez grozy.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L11_Cudzozywnosc/images/l11-saprobiont.png?raw=true
+
+l11-pasozyt.png
+IMAGE PROMPT: Spokojne edukacyjne zdjęcie 16:9. Kleszcz na źdźble trawy, makro, dzień. Etykieta PL: pasożyt — pobiera pokarm z żywego organizmu-gospodarza. Absolutnie bez krwi, bez ran, bez grozy, bez twarzy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L11_Cudzozywnosc/images/l11-pasozyt.png?raw=true
+
+l11-lancuch.png
+IMAGE PROMPT: Prosty edukacyjny schemat 16:9, trzy ogniwa, polskie etykiety: trawa (samożywna) → zając (roślinożerca) → lis (mięsożerca). Bez długich sieci, bez angielskiego, bez logotypów, bez krwi.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L11_Cudzozywnosc/images/l11-lancuch.png?raw=true

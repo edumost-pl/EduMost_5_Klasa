@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260" role="img" aria-label="Punkt, prosta, odcinek, półprosta">
+  <rect width="520" height="260" fill="#fff"/>
+
+  <circle cx="60" cy="50" r="6" fill="#FF9800"/>
+  <text x="80" y="55" font-family="Segoe UI,sans-serif" font-size="14" fill="#263238">punkt ·</text>
+  <line x1="40" y1="110" x2="220" y2="110" stroke="#6A32A0" stroke-width="3"/>
+  <circle cx="40" cy="110" r="5" fill="#263238"/>
+  <circle cx="220" cy="110" r="5" fill="#263238"/>
+  <text x="30" y="100" font-size="14" font-family="Segoe UI,sans-serif" fill="#263238">A</text>
+  <text x="220" y="100" font-size="14" font-family="Segoe UI,sans-serif" fill="#263238">B</text>
+  <text x="240" y="115" font-family="Segoe UI,sans-serif" font-size="14" fill="#263238">odcinek AB</text>
+  <line x1="40" y1="170" x2="280" y2="170" stroke="#00BCD4" stroke-width="3"/>
+  <polygon points="280,170 265,163 265,177" fill="#00BCD4"/>
+  <polygon points="40,170 55,163 55,177" fill="#00BCD4"/>
+  <text x="300" y="175" font-family="Segoe UI,sans-serif" font-size="14" fill="#263238">prosta</text>
+  <line x1="40" y1="220" x2="220" y2="220" stroke="#FF9800" stroke-width="3"/>
+  <circle cx="40" cy="220" r="5" fill="#263238"/>
+  <polygon points="220,220 205,213 205,227" fill="#FF9800"/>
+  <text x="240" y="225" font-family="Segoe UI,sans-serif" font-size="14" fill="#263238">półprosta</text>
+
+</svg>

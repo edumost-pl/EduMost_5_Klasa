@@ -1,0 +1,15 @@
+# Lekcja 29 — Polska Bolesława Chrobrego
+# Wrzuć pliki do GitHub: Historia/240.png … 247.png
+# https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Historia/
+# Obrazy: szkolne SCHEMATY i mapy, dzień.
+# BEZ Matejki (portret, koronacja, zjazd), BEZ zdjęcia Drzwi Gnieźnieńskich z Wiki,
+# BEZ sceny męczeństwa Wojciecha (krew, ścięcie), BEZ rzezi wojen, BEZ grobowca w Złotej Kaplicy (lekcja 30).
+
+240.png  KARTA Bolesława: kto · skąd · lata 992–1025 · przydomek Chrobry; spokojny książę z koroną, NIE Matejko
+241.png  KARTA Wojciecha: Czechy, 997, misja do Prusów z tłumaczem; ubrany biskup, BEZ śmierci
+242.png  DRZWI gnieźnieńskie: schemat dwóch skrzydeł z polami (łódź, nauka); NIE foto katedry, BEZ panelu zabójstwa
+243.png  ZJAZD 1000: Otton III i Bolesław przy grobie (krzyż, nie ciało); podpisy PL: Gniezno, pielgrzymka, sojusz
+244.png  PODARUNKI: rysunek włóczni i gwoździa + 4 skutki (arcybiskupstwo); NIE złote zdjęcie relikwii
+245.png  MAPA diecezji ok. 1000: Gniezno, Kraków, Wrocław, Kołobrzeg; tylko papież nad arcybiskupem
+246.png  MAPA podbojów: Milsko, Łużyce, Morawy, Grody Czerwieńskie; strzałki, NIE bitwy
+247.png  KORONACJA 1025: szkolny rysunek korony w Gnieźnie, ubrane postacie; BEZ Matejki, BEZ grobowca

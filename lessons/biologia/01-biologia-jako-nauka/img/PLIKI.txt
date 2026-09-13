@@ -1,0 +1,30 @@
+# Lekcja 01 — Biologia jako nauka
+# W projekcie tylko nazwa, IMAGE PROMPT i link GitHub.
+
+l01-park.jpg
+IMAGE PROMPT: Edukacyjna fotografia 16:9 dla ucznia klasy 5. Słoneczny dzień w polskim parku: drzewa, trawnik, pies, drewniana ławka, rower, kamienie. Fotorealistyczna, jasne światło, bez napisów, bez logotypów, bez zbliżenia na twarze dzieci.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L01_Biologia_jako_nauka/images/l01-park.jpg?raw=true
+
+l01-zakres-biologii.png
+IMAGE PROMPT: Edukacyjna infografika 16:9 dla klasy 5, jasne tło, płaski styl, duże ikony, bez logotypów. Na środku napis BIOLOGIA. Wokół cztery piktogramy z etykietami PL: budowa; czynności życiowe; zależności; środowisko. Bez wzorów chemicznych, bez angielskiego.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L01_Biologia_jako_nauka/images/l01-zakres-biologii.png?raw=true
+
+l01-rozne-organizmy.jpg
+IMAGE PROMPT: Edukacyjna ilustracja 16:9, fotorealistyczny kolaż czterech kadrów bez napisów: kot, liściaste drzewo, kępa trawy, pieczarka. Naturalne światło, bez ludzi, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L01_Biologia_jako_nauka/images/l01-rozne-organizmy.jpg?raw=true
+
+l01-czynnosci-7.png
+IMAGE PROMPT: Edukacyjna infografika 16:9 dla klasy 5. Siedem piktogramów z etykietami PL: odżywianie się; oddychanie; wydalanie; ruch; wzrost i rozwój; rozmnażanie się; reakcja na bodźce. Jasne tło, duże ikony, bez wzorów chemicznych, bez logotypów, bez angielskiego.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L01_Biologia_jako_nauka/images/l01-czynnosci-7.png?raw=true
+
+l01-poziomy-budowy.png
+IMAGE PROMPT: Edukacyjny schemat 16:9, pięć poziomów ze strzałkami i etykietami PL: KOMÓRKA, TKANKA, NARZĄD, UKŁAD NARZĄDÓW, ORGANIZM. Proste ikony, bez organelli, bez nazw tkanek, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L01_Biologia_jako_nauka/images/l01-poziomy-budowy.png?raw=true
+
+l01-dziedziny.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, sześć kafelków z nazwami PL: zoologia, botanika, mikrobiologia, anatomia, fizjologia, ekologia. Proste ikony, bez wirusów, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L01_Biologia_jako_nauka/images/l01-dziedziny.png?raw=true
+
+l01-zestaw8.jpg
+IMAGE PROMPT: Edukacyjna plansza 16:9, osiem kadrów bez napisów: słonecznik, łyżka, pszczoła, zegar, pieczarka, cegła, wróbel, kałuża.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L01_Biologia_jako_nauka/images/l01-zestaw8.jpg?raw=true

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 220" role="img" aria-label="Pola: równoległobok, romb, trapez">
+  <rect width="560" height="220" fill="#fff"/>
+
+  <polygon points="40,40 180,40 150,150 10,150" fill="#BBDEFB" stroke="#1565C0" stroke-width="2"/>
+  <line x1="150" y1="40" x2="150" y2="150" stroke="#FF9800" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="95" y="180" text-anchor="middle" font-size="11" font-family="Segoe UI,sans-serif" fill="#263238">P = a · h</text>
+  <polygon points="260,30 340,100 260,170 180,100" fill="#F8BBD0" stroke="#C2185B" stroke-width="2"/>
+  <line x1="180" y1="100" x2="340" y2="100" stroke="#00BCD4" stroke-width="2"/>
+  <line x1="260" y1="30" x2="260" y2="170" stroke="#00BCD4" stroke-width="2"/>
+  <text x="260" y="200" text-anchor="middle" font-size="11" font-family="Segoe UI,sans-serif" fill="#263238">P = ½ d₁ d₂</text>
+  <polygon points="400,50 500,50 540,150 380,150" fill="#D1C4E9" stroke="#6A32A0" stroke-width="2"/>
+  <line x1="450" y1="50" x2="450" y2="150" stroke="#FF9800" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="460" y="180" text-anchor="middle" font-size="11" font-family="Segoe UI,sans-serif" fill="#263238">P = ½(a+b)h</text>
+
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 260" role="img" aria-label="Wysokość trójkąta">
+  <rect width="320" height="260" fill="#fff"/>
+
+  <polygon points="160,30 280,210 40,210" fill="#E3F2FD" stroke="#1565C0" stroke-width="3"/>
+  <line x1="160" y1="30" x2="160" y2="210" stroke="#FF9800" stroke-width="3" stroke-dasharray="6 4"/>
+  <path d="M160,210 L160,190 L180,190" fill="none" stroke="#FF9800" stroke-width="2"/>
+  <text x="175" y="120" font-family="Segoe UI,sans-serif" font-size="16" font-weight="700" fill="#FF9800">h</text>
+  <text x="160" y="240" text-anchor="middle" font-size="13" font-family="Segoe UI,sans-serif" fill="#263238">wysokość ⊥ do podstawy</text>
+
+</svg>

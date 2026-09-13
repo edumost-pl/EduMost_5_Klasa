@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Koło — linia + wnętrze">
+  <rect width="200" height="200" fill="#fff"/>
+
+  <circle cx="100" cy="100" r="70" fill="#B2EBF2" stroke="#00BCD4" stroke-width="4"/>
+  <circle cx="100" cy="100" r="3" fill="#263238"/>
+  <text x="100" y="108" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="18" font-weight="700" fill="#263238">koło</text>
+
+</svg>

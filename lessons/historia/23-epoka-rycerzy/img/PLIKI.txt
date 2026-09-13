@@ -1,0 +1,16 @@
+# Lekcja 23 — Epoka rycerzy
+# Wrzuć pliki do GitHub: Historia/192.png … 199.png
+# https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Historia/
+# Obrazy: rycerz STOI, BEZ rzezi, BEZ Matejki (Grunwald), BEZ śmierci Rolanda,
+# BEZ kopii kadru filmu, BEZ polowania ze zdjęciem rannego jelenia.
+# Turniej = dwa jeźdźcy z kopiami, nikt nie leży w krwi.
+# Zawisza = karta portretowa, nie bitwa. Malbork nie jako państwo krzyżackie (to Polska później).
+
+192.png  RYCERZ stoi (zbroja, koń w tle); lista kodeksu: odwaga, słowo, wiara, pomoc słabszym
+193.png  ZAMEK kamienny (typ Będzin): mieszkać + bronić; w dole pole, chłopi orzą; BEZ oblężenia
+194.png  TURNIEJ: dwaj jeźdźcy z kopiami, trybuny, dzień; nikt nie spada w krwi
+195.png  DWA POLA: paź (7 lat, służba przy stole) | giermek (14 lat, koń i zbroja); spokój
+196.png  PASOWANIE: władca zapina pas z mieczem, ostrogi; noc modlitwy jako ikona; BEZ ciosu w twarz
+197.png  SCHEMAT herbu: tarcza+godło, hełm, klejnot, labry; podpis „dziedziczony”; NIE kopia Jastrzębca z Wiki
+198.png  FIGURKA: miecz, hełm/przyłbica, rękawica, tarcza, zbroja, ostrogi; koń; podpisy PL
+199.png  KARTA Zawiszy Czarnego: kto · Polska · XV w. · słowo/wierność; portret, BEZ Matejki

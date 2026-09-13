@@ -1,0 +1,32 @@
+# Lekcja 08 — Porównujemy komórki
+# Folder GitHub:
+# Biologia/L08_Porownujemy_komorki/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l08-zacznijmy.png
+IMAGE PROMPT: Edukacyjna plansza 16:9, cztery równe modele komórek z polskimi etykietami: zwierzęca, roślinna, grzybowa, bakteryjna. Roślinna zielona ze ścianą i chloroplastami. Bakteryjna bez jądra, z nicią DNA. Bez wirusów, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L08_Porownujemy_komorki/images/l08-zacznijmy.png?raw=true
+
+l08-jadrowe.png
+IMAGE PROMPT: Edukacyjne porównanie 16:9. LEWA: komórka z fioletowym jądrem, etykieta PL: komórki jądrowe — zwierzęce, roślinne, grzybowe. PRAWA: bakteria z nicią DNA w cytozolu, etykieta: komórki bezjądrowe — bakteryjne. Bez wirusów, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L08_Porownujemy_komorki/images/l08-jadrowe.png?raw=true
+
+l08-bakteria.png
+IMAGE PROMPT: Edukacyjny schemat 16:9, pałeczkowata bakteria w przekroju, polskie etykiety: błona komórkowa, cytozol, rybosomy, nić DNA, ściana komórkowa, otoczka śluzowa, rzęska. Bez jądra, bez mitochondriów, bez chloroplastów, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L08_Porownujemy_komorki/images/l08-bakteria.png?raw=true
+
+l08-grzyb.png
+IMAGE PROMPT: Edukacyjny schemat 16:9, okrągła komórka grzybowa. Polskie etykiety: błona komórkowa, cytozol, jądro komórkowe, mitochondrium, wakuola, ściana komórkowa (chityna). Bez chloroplastów, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L08_Porownujemy_komorki/images/l08-grzyb.png?raw=true
+
+l08-zwierze-roslina.png
+IMAGE PROMPT: Edukacyjna tabela-infografika 16:9, dwie kolumny. Komórka zwierzęca vs roślinna. Wiersze: błona, cytozol, jądro, wakuole, mitochondria, rybosomy — obie TAK. Chloroplasty i ściana — tylko roślina. Wakuole: zwierzę — wiele drobnych; roślina — zwykle jedna duża. Polskie etykiety, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L08_Porownujemy_komorki/images/l08-zwierze-roslina.png?raw=true
+
+l08-tabela.png
+IMAGE PROMPT: Czysta edukacyjna tabela 16:9, polskie nagłówki: zwierzęca, roślinna, grzybowa, bakteryjna. Wiersze: błona, cytozol, jądro, mitochondria, wakuola, rybosomy, chloroplasty, ściana. Zielony ptaszek / czerwony krzyżyk. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L08_Porownujemy_komorki/images/l08-tabela.png?raw=true
+
+l08-wspolne.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Trzy duże polskie karty: błona komórkowa, cytozol, rybosomy. Pod spodem: we wszystkich typach komórek z tej lekcji. Bez wirusów, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L08_Porownujemy_komorki/images/l08-wspolne.png?raw=true

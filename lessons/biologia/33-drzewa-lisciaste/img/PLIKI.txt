@@ -1,0 +1,28 @@
+# Lekcja 33 — Drzewa liściaste i znaczenie roślin
+# Folder GitHub:
+# Biologia/L33_Drzewa_lisciaste/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l33-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9 lasu liściastego latem lub wczesną jesienią. Etykieta PL: drzewa liściaste. Bez szyszek sosny jako głównego motywu. Bez kiełkującej fasoli. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L33_Drzewa_lisciaste/images/l33-zacznijmy.png?raw=true
+
+l33-dab.png
+IMAGE PROMPT: Edukacyjna infografika 16:9 dębu. Etykiety PL: liść klapowany (zaokrąglone zatoki); żołądź w miseczce; spękana kora. Napis: dąb. Bez skrzydełek klonu na tym kadrze. Bez szyszki. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L33_Drzewa_lisciaste/images/l33-dab.png?raw=true
+
+l33-buk.png
+IMAGE PROMPT: Edukacyjna infografika 16:9 buka. Etykiety PL: gładka szara kora; jajowaty liść. Napis: buk. Bez białej kory brzozy. Bez żołędzi. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L33_Drzewa_lisciaste/images/l33-buk.png?raw=true
+
+l33-brzoza.png
+IMAGE PROMPT: Edukacyjna infografika 16:9 brzozy brodawkowatej. Etykiety PL: biała kora; czarne kreski; drobny liść. Napis: brzoza. Bez gładkiej szarej kory buka. Bez igieł. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L33_Drzewa_lisciaste/images/l33-brzoza.png?raw=true
+
+l33-klon-lipa.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, dwa kadry, etykiety PL. LEWA: liść klonu z ząbkowanym brzegiem i para skrzydełek, napis: klon. PRAWA: sercowaty liść lipy, napis: lipa. Bez żołędzia. Bez pszczoły jako tematu zapylenia. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L33_Drzewa_lisciaste/images/l33-klon-lipa.png?raw=true
+
+l33-znaczenie.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, trzy kadry, etykiety PL. 1 jabłko / kłos / warzywo — pokarm. 2 las liściasty — tlen. 3 deski / belki — drewno. Napis: znaczenie okrytonasiennych. Bez wycinki jako grozy. Bez szyszki sosny. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L33_Drzewa_lisciaste/images/l33-znaczenie.png?raw=true

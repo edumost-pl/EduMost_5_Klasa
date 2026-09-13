@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Trójkąt">
+  <polygon points="100,30 170,160 30,160" fill="#FFE0B2" stroke="#FF9800" stroke-width="5"/>
+  <circle cx="100" cy="30" r="7" fill="#6A32A0"/>
+  <circle cx="170" cy="160" r="7" fill="#6A32A0"/>
+  <circle cx="30" cy="160" r="7" fill="#6A32A0"/>
+  <text x="100" y="22" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="14" font-weight="800" fill="#6A32A0">A</text>
+  <text x="178" y="168" font-family="Segoe UI,sans-serif" font-size="14" font-weight="800" fill="#6A32A0">B</text>
+  <text x="18" y="168" font-family="Segoe UI,sans-serif" font-size="14" font-weight="800" fill="#6A32A0">C</text>
+  <text x="100" y="190" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="13" font-weight="800" fill="#EF6C00">3 wierzchołki</text>
+</svg>

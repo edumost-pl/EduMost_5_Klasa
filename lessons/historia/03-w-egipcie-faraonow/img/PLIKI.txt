@@ -1,0 +1,15 @@
+# Lekcja 03 — W Egipcie faraonów
+# Wrzuć pliki do GitHub: Historia/018.png … 028.png
+# https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Historia/
+
+018.png  MAPA: Nil, Egipt Górny i Dolny, Memfis, Teby, Abu Simbel, dwa morza
+019.png  Żuraw (szaduf), kanały, palmy
+020.png  Trzy korony: biała, czerwona, podwójna
+021.png  Piramida społeczeństwa (7 warstw)
+022.png  Ra — bóg-słońce
+023.png  Cztery kroki mumifikacji
+024.png  Budowa piramidy: pomiar, dźwignie, rampa
+025.png  Przekrój piramidy (komnaty, korytarze)
+026.png  Grobowiec Tutenchamona + Carter
+027.png  Dokonania: hieroglify, medycyna, matematyka, astronomia
+028.png  Abu Simbel — świątynia i przeniesienie

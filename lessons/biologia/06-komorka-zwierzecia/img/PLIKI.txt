@@ -1,0 +1,28 @@
+# Lekcja 06 — Komórka zwierzęca
+# Folder GitHub:
+# Biologia/L06_Komorka_zwierzecia/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l06-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczna mikrofotografia 16:9. Komórki nabłonka jamy ustnej pod mikroskopem optycznym, jasny fiolet, ciemniejsze jądra. Polskie etykiety ze strzałkami: błona komórkowa, cytoplazma, jądro komórkowe. Bez angielskiego, bez logotypów, bez twarzy.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L06_Komorka_zwierzecia/images/l06-zacznijmy.png?raw=true
+
+l06-schemat.png
+IMAGE PROMPT: Edukacyjny schemat 16:9, przekrój okrągłej komórki zwierzęcej, numerowane polskie etykiety: 1 błona komórkowa, 2 cytozol, 3 jądro komórkowe, 4 wakuola (wodniczka), 5 mitochondrium, 6 rybosomy. Jasne tło, płaski styl podręcznikowy, bez angielskiego, bez logotypów, bez ściany komórkowej i chloroplastów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L06_Komorka_zwierzecia/images/l06-schemat.png?raw=true
+
+l06-blona.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Zbliżenie na obrzeże komórki zwierzęcej: cienka błona komórkowa ze strzałkami „do środka / na zewnątrz”. Wewnątrz jasny cytozol. Polskie etykiety. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L06_Komorka_zwierzecia/images/l06-blona.png?raw=true
+
+l06-jadro.png
+IMAGE PROMPT: Edukacyjny schemat 16:9. Duże fioletowe kuliste jądro komórkowe z porami, w centrum komórki zwierzęcej. Etykiety PL: jądro komórkowe; DNA — informacja o cechach; kieruje procesami w komórce. Bez helisy w zbliżeniu, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L06_Komorka_zwierzecia/images/l06-jadro.png?raw=true
+
+l06-organelle.png
+IMAGE PROMPT: Edukacyjna plansza 16:9, trzy kadry z polskimi etykietami. 1 mitochondrium — owal z wewnętrznymi fałdami, centrum energetyczne. 2 rybosomy — drobne ziarenka, produkcja białek. 3 wakuola (wodniczka) — mały pęcherzyk. Bez chloroplastów, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L06_Komorka_zwierzecia/images/l06-organelle.png?raw=true
+
+l06-preparat.png
+IMAGE PROMPT: Fotorealistyczna mikrofotografia 16:9, zielonkawy odcień. Jedna nieregularna, okrągława komórka nabłonka jamy ustnej, widoczne jądro. Czyste tło preparatu. Bez twarzy, bez patyczków przy ustach dziecka, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L06_Komorka_zwierzecia/images/l06-preparat.png?raw=true

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduMost — Клас 5a</title>
+  <link rel="stylesheet" href="css/edumost.css">
+</head>
+<body>
+<div class="page">
+  <div class="topbar">
+    <span></span>
+    <div class="lang-toggle">
+      <button data-lang="pl">🇵🇱 Polski</button>
+      <button data-lang="ua">🇺🇦 Українська</button>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="hero-badge" data-i18n="badge">🇵🇱 🇺🇦 · Клас 5a · SP nr 3 Познань · 2026/2027</div>
+    <h1>Edu<span>Most</span></h1>
+    <p class="subtitle" data-i18n="heroSub">Навчальний міст між українською дитиною і польською школою</p>
+    <div class="hero-btns">
+      <a href="schedule.html" class="btn btn-primary" data-i18n="schedule">📅 Розклад уроків</a>
+    </div>
+  </div>
+
+  <div class="section-label" data-i18n="learn">📚 Навчання</div>
+  <div class="section-label" data-i18n="subjects" style="margin-top:0">Предмети · 5 клас</div>
+  <div class="subjects-grid" id="subjects-grid"></div>
+
+  <div class="parent-block">
+    <div class="section-label" data-i18n="parentBlock">Для батьків</div>
+    <a href="master-plan.html">
+      <div class="mp-title" data-i18n="masterPlanTitle">📋 Master Plan</div>
+      <div class="mp-desc" data-i18n="masterPlanDesc">Робочий план EduMost · для батьків</div>
+    </a>
+    <a href="etap-1-5.html" style="margin-top:.5rem">
+      <div class="mp-title" data-i18n="etap15Title">🔎 ЕТАП 1.5 — оглавлення підручників</div>
+      <div class="mp-desc" data-i18n="etap15Desc">Що вже перевірено, що ще треба підтвердити</div>
+    </a>
+  </div>
+
+  <footer class="page-footer">
+    <span data-i18n="footer">EduMost · SP nr 3 Познань · 2026/2027</span>
+    · <a href="schedule.html" data-i18n="schedule">📅 Розклад уроків</a>
+  </footer>
+</div>
+<script src="js/i18n.js"></script>
+<script src="js/curriculum.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

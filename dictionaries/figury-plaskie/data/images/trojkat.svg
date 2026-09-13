@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" role="img" aria-label="Trójkąt">
+  <rect width="200" height="180" fill="#fff"/>
+
+  <polygon points="100,25 175,150 25,150" fill="#FFE0B2" stroke="#FF9800" stroke-width="4"/>
+  <text x="100" y="120" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="16" font-weight="700" fill="#263238">trójkąt</text>
+
+</svg>

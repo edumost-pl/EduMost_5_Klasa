@@ -1,0 +1,32 @@
+# Lekcja 21 — Tkanki roślinne
+# Folder GitHub:
+# Biologia/L21_Tkanki_roslinne/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l21-zacznijmy.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Sadzonka fasoli: korzeń, łodyga, liście. Etykiety PL: organy rośliny. Mały napis: tkanki poznasz dziś; korzeń, łodyga, liść — kolejne lekcje. Bez kwiatu, owocu i nasion. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L21_Tkanki_roslinne/images/l21-zacznijmy.png?raw=true
+
+l21-tkanka.png
+IMAGE PROMPT: Edukacyjny schemat 16:9. Kilkanaście prostokątnych komórek roślinnych obok siebie, cienkie ściany, duże wakuole. Etykieta PL: tkanka = zespół podobnych komórek o wspólnej funkcji. Bez chloroplastów jako jedynego tematu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L21_Tkanki_roslinne/images/l21-tkanka.png?raw=true
+
+l21-tworcza.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. LEWA: wierzchołek pędu z etykietą PL: stożek wzrostu pędu — tkanka twórcza. PRAWA: czubek korzenia, etykieta: stożek wzrostu korzenia. Małe gęste komórki. Napis: tu komórki się dzielą. Bez czepca korzeniowego jako lekcji, bez słojów drewna, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L21_Tkanki_roslinne/images/l21-tworcza.png?raw=true
+
+l21-okrywajaca.png
+IMAGE PROMPT: Edukacyjna plansza 16:9, trzy kadry, etykiety PL. 1 skórka liścia z cienką kutykulą. 2 aparat szparkowy (dwie komórki jak fasolki) — gazy. 3 włośnik na korzeniu — woda i sole. Napis: tkanka okrywająca. Bez warstw miękiszu liścia, bez pełnego przekroju korzenia. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L21_Tkanki_roslinne/images/l21-okrywajaca.png?raw=true
+
+l21-miekisz.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Przekrój łodygi z jasnym wypełnieniem, etykieta PL: tkanka miękiszowa. Małe ikony: skrobia (ziarna), woda. W kadrze liścia kilka zielonych komórek z chloroplastami i napis: fotosynteza — szczegóły liścia na lekcji 24. Bez palisadowego i gąbczastego jako nazw do wykuć. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L21_Tkanki_roslinne/images/l21-miekisz.png?raw=true
+
+l21-wzmacniajaca.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Młoda łodyga i ogonek liścia. Etykieta PL: tkanka wzmacniająca — sztywność i wytrzymałość. Komórki z grubszymi ścianami wzdłuż łodygi. Bez słojów rocznych, bez przekroju wiązek jak na lekcji 23. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L21_Tkanki_roslinne/images/l21-wzmacniajaca.png?raw=true
+
+l21-przewodzaca.png
+IMAGE PROMPT: Edukacyjny schemat 16:9 rośliny. Niebieskie strzałki w górę korzeń→liść, etykieta PL: drewno — woda i sole. Pomarańczowe strzałki z liścia w dół i na boki, etykieta: łyko — cukry z fotosyntezy. Napis: tkanka przewodząca. Bez przekroju wiązki w łodydze, bez słojów. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L21_Tkanki_roslinne/images/l21-przewodzaca.png?raw=true

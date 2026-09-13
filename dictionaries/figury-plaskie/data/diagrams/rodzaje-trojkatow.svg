@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 200" role="img" aria-label="Rodzaje trójkątów">
+  <rect width="560" height="200" fill="#fff"/>
+
+  <polygon points="80,20 130,150 30,150" fill="#E1BEE7" stroke="#6A32A0" stroke-width="2"/>
+  <text x="80" y="180" text-anchor="middle" font-size="11" font-family="Segoe UI,sans-serif" fill="#263238">równoboczny</text>
+  <polygon points="250,30 310,150 160,150" fill="#B2EBF2" stroke="#00BCD4" stroke-width="2"/>
+  <text x="240" y="180" text-anchor="middle" font-size="11" font-family="Segoe UI,sans-serif" fill="#263238">równoramienny</text>
+  <polygon points="420,40 500,150 340,130" fill="#FFE0B2" stroke="#FF9800" stroke-width="2"/>
+  <path d="M340,130 L355,130 L355,115" fill="none" stroke="#6A32A0" stroke-width="2"/>
+  <text x="420" y="180" text-anchor="middle" font-size="11" font-family="Segoe UI,sans-serif" fill="#263238">prostokątny</text>
+
+</svg>

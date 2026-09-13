@@ -1,0 +1,32 @@
+# Lekcja 16 — Wirusy
+# Folder GitHub:
+# Biologia/L16_Wirusy/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l16-zacznijmy.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. LEWA: spokojny, schematyczny model wirusa (osłonka + wnętrze), nie groźny, nie 3D GWO. PRAWA: komórka z jądrem. Etykiety PL: wirus — nie komórka; komórka — organizm z królestw. Bez choroby w zbliżeniu, bez grozy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L16_Wirusy/images/l16-zacznijmy.png?raw=true
+
+l16-nie-komorka.png
+IMAGE PROMPT: Edukacyjne porównanie 16:9. LEWA: komórka zwierzęca z etykietami PL: błona, cytozol, jądro. PRAWA: wirus — tylko osłonka i kwas nukleinowy. Nagłówek: wirus nie jest komórką. Bez grozy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L16_Wirusy/images/l16-nie-komorka.png?raw=true
+
+l16-budowa.png
+IMAGE PROMPT: Edukacyjny przekrój 16:9, prosty schemat (nie kradzież GWO 3D). Etykiety PL: kwas nukleinowy (DNA albo RNA) — przepis; kapsyd — osłonka białkowa. Opcjonalnie cienka osłonka lipidowa u niektórych wirusów — drobnym drukiem, nie MUST. Jasne tło, bez grozy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L16_Wirusy/images/l16-budowa.png?raw=true
+
+l16-gospodarz.png
+IMAGE PROMPT: Edukacyjny schemat 16:9, trzy kroki z etykietami PL: 1 wirus na zewnątrz komórki — nieczynny; 2 wnika do komórki gospodarza; 3 komórka wytwarza kopie wirusa. Bez krwi, bez grozy, bez twarzy chorych, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L16_Wirusy/images/l16-gospodarz.png?raw=true
+
+l16-mikroskop.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Skala wielkości: komórka zwierzęca (duża) → bakteria (mała) → wirus (najmniejszy). Etykiety PL: szkolny mikroskop (komórki, bakterie); mikroskop elektronowy (wirusy). Nawiązanie do lekcji 3. Bez grozy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L16_Wirusy/images/l16-mikroskop.png?raw=true
+
+l16-choroby.png
+IMAGE PROMPT: Edukacyjna plansza 16:9, trzy spokojne ikony z etykietami PL: grypa (chusteczka, termometr); ospa wietrzna (dziecko w domu, bez wysypki w zbliżeniu); odra (kalendarz szczepień). Nagłówek: choroby wirusowe. Bez krwi, bez HIV, bez grozy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L16_Wirusy/images/l16-choroby.png?raw=true
+
+l16-profilaktyka.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, trzy kafelki PL: myj ręce / chusteczka; szczepienia chronią; antybiotyki NIE na wirusy (przekreślone pudełko przy ikonie wirusa, zielone OK przy bakterii). Bez marek leków, bez grozy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L16_Wirusy/images/l16-profilaktyka.png?raw=true

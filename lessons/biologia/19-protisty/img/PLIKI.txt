@@ -1,0 +1,32 @@
+# Lekcja 19 — Protisty
+# Folder GitHub:
+# Biologia/L19_Protisty/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l19-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczny / edukacyjny kadr 16:9. Kropla stawu, w powiększeniu trzy protisty: zielona euglena, pantofelek, pełzak. Etykieta PL: protisty. Bez bakterii jako głównego tematu, bez grzybów, bez grozy, bez malarii w zbliżeniu, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L19_Protisty/images/l19-zacznijmy.png?raw=true
+
+l19-jadrowe.png
+IMAGE PROMPT: Edukacyjne porównanie 16:9. LEWA: protist (pantofelek) z jądrem, etykieta PL: komórka jądrowa — protisty. PRAWA: bakteria z nicią DNA, etykieta: bezjądrowa. Bez wirusów, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L19_Protisty/images/l19-jadrowe.png?raw=true
+
+l19-euglena.png
+IMAGE PROMPT: Edukacyjny model 16:9 eugleny z etykietami PL: wić (ruch); chloroplasty (zielone); jądro; plamka oczna. Nagłówek: odżywianie mieszane. Bez grozy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L19_Protisty/images/l19-euglena.png?raw=true
+
+l19-pantofelek.png
+IMAGE PROMPT: Edukacyjny model 16:9 pantofelka (kształt pantofla) z etykietami PL: rzęski; otwór gębowy; jądro; wodniczki. Nagłówek: cudzożywny. Bez grozy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L19_Protisty/images/l19-pantofelek.png?raw=true
+
+l19-pelzak.png
+IMAGE PROMPT: Edukacyjny model 16:9 pełzaka (ameby) z etykietami PL: nibynóżki; jądro; wodniczka pokarmowa. Nagłówek: cudzożywny, zmienia kształt. Bez malarii, bez grozy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L19_Protisty/images/l19-pelzak.png?raw=true
+
+l19-odzywianie.png
+IMAGE PROMPT: Edukacyjna plansza 16:9, trzy kolumny PL: samożywne (glon nitkowaty); cudzożywne (pantofelek, pełzak); mieszane (euglena). Bez królestwa roślin jako etykiety glonu. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L19_Protisty/images/l19-odzywianie.png?raw=true
+
+l19-glony.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie / infografika 16:9. Staw, nitkowate glony, mała rybka. Etykiety PL: glony; tlen; pokarm. Bez zakwitu toksycznego jako groza, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L19_Protisty/images/l19-glony.png?raw=true

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" role="img" aria-label="Równoległe i prostopadłe">
+  <rect width="640" height="220" rx="18" fill="#E0F7FA"/>
+  <line x1="40" y1="60" x2="280" y2="60" stroke="#00BCD4" stroke-width="6"/>
+  <line x1="40" y1="110" x2="280" y2="110" stroke="#00BCD4" stroke-width="6"/>
+  <text x="160" y="40" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="14" font-weight="800" fill="#00838F">równoległe ‖</text>
+  <text x="160" y="145" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="12" fill="#546E7A">nigdy się nie spotykają</text>
+  <polygon points="150,54 160,60 150,66" fill="#00838F"/>
+  <polygon points="150,104 160,110 150,116" fill="#00838F"/>
+  <line x1="360" y1="160" x2="580" y2="160" stroke="#FF9800" stroke-width="6"/>
+  <line x1="470" y1="160" x2="470" y2="40" stroke="#FF9800" stroke-width="6"/>
+  <path d="M470 140 H490 V160" fill="none" stroke="#6A32A0" stroke-width="3"/>
+  <text x="470" y="30" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="14" font-weight="800" fill="#EF6C00">prostopadłe ⊥</text>
+  <text x="470" y="195" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="12" fill="#546E7A">kąt 90° — jak róg pokoju</text>
+</svg>

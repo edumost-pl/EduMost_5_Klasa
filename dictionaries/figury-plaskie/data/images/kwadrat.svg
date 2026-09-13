@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Kwadrat">
+  <rect width="200" height="200" fill="#fff"/>
+
+  <rect x="45" y="45" width="110" height="110" fill="#E1BEE7" stroke="#6A32A0" stroke-width="4"/>
+  <text x="100" y="108" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="16" font-weight="700" fill="#263238">kwadrat</text>
+
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 180" role="img" aria-label="Prostokąt">
+  <rect x="20" y="40" width="180" height="100" fill="#BBDEFB" stroke="#1565C0" stroke-width="5" rx="2"/>
+  <!-- opposite sides same color -->
+  <line x1="40" y1="32" x2="180" y2="32" stroke="#43A047" stroke-width="4"/>
+  <line x1="40" y1="148" x2="180" y2="148" stroke="#43A047" stroke-width="4"/>
+  <line x1="12" y1="55" x2="12" y2="125" stroke="#FF9800" stroke-width="4"/>
+  <line x1="208" y1="55" x2="208" y2="125" stroke="#FF9800" stroke-width="4"/>
+  <path d="M20 55 H35 V40" fill="none" stroke="#6A32A0" stroke-width="3"/>
+  <text x="110" y="170" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="12" font-weight="800" fill="#1565C0">naprzeciwległe równe</text>
+</svg>

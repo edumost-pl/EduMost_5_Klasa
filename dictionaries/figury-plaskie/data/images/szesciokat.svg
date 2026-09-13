@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Sześciokąt foremny">
+  <rect width="200" height="200" fill="#fff"/>
+
+  <polygon points="100,20 165,55 165,125 100,160 35,125 35,55" fill="#FFF9C4" stroke="#F9A825" stroke-width="4"/>
+  <text x="100" y="108" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="13" font-weight="700" fill="#263238">sześciokąt</text>
+
+</svg>

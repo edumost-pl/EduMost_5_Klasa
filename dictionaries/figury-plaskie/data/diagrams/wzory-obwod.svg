@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 240" role="img" aria-label="Wzory na obwód">
+  <rect width="520" height="240" fill="#fff"/>
+
+  <rect x="40" y="40" width="140" height="140" fill="#F3E5F5" stroke="#6A32A0" stroke-width="3"/>
+  <text x="110" y="30" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="14" fill="#263238">a</text>
+  <text x="195" y="115" font-family="Segoe UI,sans-serif" font-size="14" fill="#263238">a</text>
+  <text x="110" y="210" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="14" font-weight="700" fill="#6A32A0">O = 4a</text>
+  <rect x="280" y="55" width="180" height="110" fill="#E8F5E9" stroke="#43A047" stroke-width="3"/>
+  <text x="370" y="45" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="14" fill="#263238">a</text>
+  <text x="475" y="115" font-family="Segoe UI,sans-serif" font-size="14" fill="#263238">b</text>
+  <text x="370" y="210" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="14" font-weight="700" fill="#2E7D32">O = 2(a + b)</text>
+
+</svg>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plan lekcji — 5a / Розклад уроків — 5a</title>
+  <link rel="stylesheet" href="css/schedule.css?v=times1">
+</head>
+<body>
+<div class="hub">
+  <a href="index.html" class="back-link" id="backLink">← EduMost · Головна</a>
+
+  <header class="hub-header">
+    <h1 id="mainTitle">Plan lekcji — klasa 5a</h1>
+    <p class="sub" id="mainSub">Szkoła Podstawowa nr 3, Poznań · sala 27</p>
+  </header>
+
+  <div class="lang-toggle">
+    <button id="btnPL" class="active" onclick="setLang('pl')">🇵🇱 Polski</button>
+    <button id="btnUA" onclick="setLang('ua')">🇺🇦 Українська</button>
+  </div>
+
+  <nav class="tabs" id="dayTabs"></nav>
+
+  <table class="schedule-table">
+    <thead>
+      <tr>
+        <th class="nr">#</th>
+        <th class="time" id="thTime">Godziny</th>
+        <th id="thSubj">Przedmiot</th>
+        <th class="room" id="thRoom">Sala</th>
+      </tr>
+    </thead>
+    <tbody id="scheduleBody"></tbody>
+  </table>
+
+  <div class="info-panel" id="infoPanel">
+    <button class="close-btn" onclick="closeInfo()">✕</button>
+    <h2 id="infoPanelTitle"></h2>
+    <dl class="book-info" id="bookInfo"></dl>
+    <div class="nav-links" id="navLinks"></div>
+  </div>
+
+  <footer class="hub-footer">
+    <p><a href="index.html" id="footerHome">← EduMost · Головна</a></p>
+    <p style="margin-top:.3rem">SP3 Poznań · 2026/2027</p>
+  </footer>
+</div>
+
+<script>
+const TIMES = [
+  "08:00–08:45","08:55–09:40","09:50–10:35","10:50–11:35",
+  "11:45–12:30","12:50–13:35","13:40–14:25","14:30–15:15"
+];
+
+const DAYS = {
+  pl: ["Poniedziałek","Wtorek","Środa","Czwartek","Piątek"],
+  ua: ["Понеділок","Вівторок","Середа","Четвер","Пʼятниця"]
+};
+
+const SUBJ = {
+  "j.polski":      {pl:"Język polski",        ua:"Польська мова",        icon:"📖"},
+  "historia":      {pl:"Historia",             ua:"Історія",              icon:"🏛️"},
+  "plastyka":      {pl:"Plastyka",             ua:"Образотворче мист.",   icon:"🎨"},
+  "j.ang":         {pl:"Język angielski",      ua:"Англійська мова",      icon:"🇬🇧"},
+  "matematyka":    {pl:"Matematyka",           ua:"Математика",           icon:"🔢"},
+  "wych-fiz":      {pl:"Wychowanie fizyczne",  ua:"Фізкультура",          icon:"⚽"},
+  "informatyka":   {pl:"Informatyka",          ua:"Інформатика",          icon:"💻"},
+  "technika":      {pl:"Technika",             ua:"Трудове навчання",     icon:"🔧"},
+  "muzyka":        {pl:"Muzyka",               ua:"Музика",               icon:"🎵"},
+  "geografia":     {pl:"Geografia",            ua:"Географія",            icon:"🌍"},
+  "godz.wych":     {pl:"Godzina wychowawcza",  ua:"Виховна година",      icon:"👥"},
+  "biologia":      {pl:"Biologia",             ua:"Біологія",             icon:"🧬"},
+  "religia":       {pl:"Religia",              ua:"Релігія",              icon:"⛪"},
+  "ed.zdrowotna":  {pl:"Edukacja zdrowotna",   ua:"Здоров'я",            icon:"❤️"},
+  "psycholog":     {pl:"Psycholog",            ua:"Психолог",            icon:"💬"}
+};
+
+const BOOKS = {
+  "j.polski": {
+    title: "Między nami",
+    author: "Anna Murdzek, Agnieszka Łuczak",
+    publisher: "GWO", nr: "867/2/2018",
+    ua_desc: "Підручник з польської мови. Тексти для читання, граматика, правопис. Багато нових слів — записуй і вчи!"
+  },
+  "j.ang": {
+    title: "Flash",
+    author: "Jenny Dooley",
+    publisher: "Express Publishing", nr: "866/2/2018",
+    ua_desc: "Підручник з англійської. Якщо щось не зрозуміло польською — подивись англійський переклад, часто легше."
+  },
+  "muzyka": {
+    title: "Lekcja muzyki",
+    author: "Monika Gromek, Grażyna Kilbach",
+    publisher: "Nowa Era", nr: "852/2/2018",
+    ua_desc: "Музика: інструменти, композитори, нотна грамота."
+  },
+  "plastyka": {
+    title: "Do dzieła!",
+    author: "Jadwiga Lukas, Krystyna Onak",
+    publisher: "Nowa Era", nr: "903/2/2018",
+    ua_desc: "Образотворче мистецтво: техніки малювання, історія мистецтва.",
+  },
+  "historia": {
+    title: "Wczoraj i dziś",
+    author: "Grzegorz Wojciechowski",
+    publisher: "Nowa Era", nr: "877/2/2018",
+    ua_desc: "Історія: стародавній світ, Єгипет, Греція, Рим. Багато дат і термінів — вчи словник!"
+  },
+  "geografia": {
+    title: "Planeta Nowa",
+    author: "F. Szlajfer, Z. Zaniewicz, T. Rachwał, R. Malarz",
+    publisher: "Nowa Era", nr: "906/1/2018",
+    ua_desc: "Географія: карти, клімат, материки. Вивчай терміни з карт!"
+  },
+  "biologia": {
+    title: "Puls życia",
+    author: "Marian Sęktas, Joanna Stowarz",
+    publisher: "Nowa Era", nr: "844/1/2018",
+    ua_desc: "Біологія: клітина, рослини, тварини. Багато латинських термінів."
+  },
+  "matematyka": {
+    title: "Matematyka z kluczem (cz. 1 i 2)",
+    author: "M. Braun, A. Mańkowska, M. Paszyńska",
+    publisher: "Nowa Era", nr: "875/2/2018",
+    ua_desc: "Математика: дроби, відсотки, геометрія. Використовуй словники на цьому сайті!",
+    links: [{url:"index.html", label_pl:"Słowniki matematyczne", label_ua:"Математичні словники"}]
+  },
+  "informatyka": {
+    title: "Lubię to!",
+    author: "Michał Kęska",
+    publisher: "Nowa Era", nr: "847/2/2021/z1",
+    ua_desc: "Інформатика: робота за комп'ютером, програмування."
+  },
+  "technika": {
+    title: "Jak to działa?",
+    author: "Lech Łabecki, Marta Łabecka",
+    publisher: "Nowa Era", nr: "295/2/2018",
+    ua_desc: "Техніка: конструювання, електрика, безпека."
+  }
+};
+
+const SUBJECT_PAGE = {
+  "j.polski": "subjects/polski.html",
+  "j.ang": "subjects/angielski.html",
+  "historia": "subjects/historia.html",
+  "geografia": "subjects/geografia.html",
+  "biologia": "subjects/biologia.html",
+  "matematyka": "subjects/matematyka.html",
+  "informatyka": "subjects/informatyka.html",
+  "technika": "subjects/technika.html",
+  "muzyka": "subjects/muzyka.html",
+  "plastyka": "subjects/plastyka.html"
+};
+
+const ANG_ROOM = "1–18 / 2–19";
+const SCHEDULE = [
+  // Poniedziałek — dzwonki 1–7
+  [
+    {s:"psycholog",r:""},{s:"j.polski",r:19},{s:"historia",r:24},{s:"plastyka",r:28},
+    {s:"j.ang",r:ANG_ROOM},{s:"matematyka",r:27},{s:"wych-fiz",r:""}, null
+  ],
+  // Wtorek — dzwonki 1–6
+  [
+    {s:"informatyka",r:2},{s:"technika",r:28},{s:"matematyka",r:27},
+    {s:"muzyka",r:19},{s:"j.polski",r:27},{s:"wych-fiz",r:""}, null, null
+  ],
+  // Środa — bez 1. lekcji
+  [
+    null, {s:"geografia",r:16},{s:"j.polski",r:19},{s:"godz.wych",r:27},
+    {s:"matematyka",r:27},{s:"j.ang",r:ANG_ROOM},{s:"informatyka",r:1}, null
+  ],
+  // Czwartek — bez 1. i 6. lekcji; psycholog na 7.
+  [
+    null, {s:"j.ang",r:ANG_ROOM},{s:"biologia",r:16},{s:"j.polski",r:19},
+    {s:"wych-fiz",r:""}, null, {s:"psycholog",r:""}, null
+  ],
+  // Piątek — dzwonki 1–6
+  [
+    {s:"religia",r:27},{s:"j.polski",r:24},{s:"matematyka",r:27},
+    {s:"historia",r:24},{s:"ed.zdrowotna",r:28},{s:"wych-fiz",r:""}, null, null
+  ]
+];
+
+let lang = localStorage.getItem("edumost-lang") === "pl" ? "pl" : "ua";
+let currentDay = new Date().getDay(); // 0=Sun
+if (currentDay === 0 || currentDay === 6) currentDay = 1;
+else currentDay = currentDay; // 1=Mon
+
+function setLang(l) {
+  lang = l;
+  localStorage.setItem("edumost-lang", l);
+  document.getElementById("btnPL").classList.toggle("active", l==="pl");
+  document.getElementById("btnUA").classList.toggle("active", l==="ua");
+  document.getElementById("mainTitle").textContent =
+    l==="pl" ? "Plan lekcji — klasa 5a" : "Розклад уроків — 5a клас";
+  document.getElementById("mainSub").textContent =
+    l==="pl" ? "Szkoła Podstawowa nr 3, Poznań · sala 27"
+             : "Школа Основна № 3, Познань · кабінет 27";
+  document.getElementById("thTime").textContent = l==="pl" ? "Godziny" : "Час";
+  document.getElementById("thSubj").textContent = l==="pl" ? "Przedmiot" : "Предмет";
+  document.getElementById("thRoom").textContent = l==="pl" ? "Sala" : "Каб.";
+  document.getElementById("backLink").textContent =
+    l==="pl" ? "← EduMost · Strona główna" : "← EduMost · Головна";
+  document.getElementById("footerHome").textContent =
+    l==="pl" ? "← EduMost · Strona główna" : "← EduMost · Головна";
+  renderTabs();
+  renderDay(currentDay - 1);
+  closeInfo();
+}
+
+function renderTabs() {
+  const c = document.getElementById("dayTabs");
+  const jsDay = new Date().getDay();
+  c.innerHTML = DAYS[lang].map((name, i) => {
+    const isActive = (i + 1) === currentDay;
+    const isToday = (i + 1) === jsDay;
+    return `<button class="${isActive?"active":""} ${isToday?"today":""}"
+      onclick="currentDay=${i+1};renderTabs();renderDay(${i});closeInfo()">${name}</button>`;
+  }).join("");
+}
+
+function renderDay(di) {
+  const lessons = SCHEDULE[di];
+  let last = -1;
+  lessons.forEach(function (l, i) { if (l) last = i; });
+  const tbody = document.getElementById("scheduleBody");
+  const emptyLabel = lang === "pl" ? "—" : "—";
+  tbody.innerHTML = lessons.slice(0, last + 1).map((l, i) => {
+    if (!l) {
+      return `<tr class="slot-empty">
+        <td class="nr">${i + 1}</td>
+        <td class="time">${TIMES[i] || ""}</td>
+        <td class="subj">${emptyLabel}</td>
+        <td class="room"></td>
+      </tr>`;
+    }
+    const s = SUBJ[l.s];
+    const name = s ? (s.icon + " " + s[lang]) : l.s;
+    const hasBook = !!BOOKS[l.s];
+    const cell = hasBook
+      ? `<a href="#" onclick="showInfo('${l.s}');return false">${name}</a>`
+      : name;
+    return `<tr>
+      <td class="nr">${i + 1}</td>
+      <td class="time">${TIMES[i] || ""}</td>
+      <td class="subj">${cell}</td>
+      <td class="room">${l.r || ""}</td>
+    </tr>`;
+  }).join("");
+}
+
+function showInfo(key) {
+  const b = BOOKS[key];
+  const s = SUBJ[key];
+  if (!b) return;
+  const p = document.getElementById("infoPanel");
+  document.getElementById("infoPanelTitle").textContent =
+    s.icon + " " + s[lang] + (lang==="ua" ? " / "+s.pl : " / "+s.ua);
+
+  const items = [
+    [lang==="pl"?"Podręcznik":"Підручник", `«${b.title}»`],
+    [lang==="pl"?"Autor":"Автор", b.author],
+    [lang==="pl"?"Wydawnictwo":"Видавництво", b.publisher],
+    [lang==="pl"?"Numer dopuszczenia":"Номер допуску", b.nr]
+  ];
+  if (b.ua_desc) {
+    items.push(["🇺🇦 Підказка", b.ua_desc]);
+  }
+  document.getElementById("bookInfo").innerHTML = items.map(([dt,dd]) =>
+    `<dt>${dt}:</dt><dd${dt.includes("Підказка")?' class="ua"':''}>${dd}</dd>`
+  ).join("");
+
+  const nl = document.getElementById("navLinks");
+  const page = SUBJECT_PAGE[key];
+  nl.innerHTML = page
+    ? `<a href="${page}">${lang==="pl"?"Otwórz przedmiot →":"Відкрити предмет →"}</a>`
+    : "";
+  p.classList.add("open");
+  p.scrollIntoView({behavior:"smooth", block:"nearest"});
+}
+
+function closeInfo() {
+  document.getElementById("infoPanel").classList.remove("open");
+}
+
+// init
+setLang(lang);
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" role="img" aria-label="Przystawanie i wielokąt foremny">
+  <rect width="480" height="200" fill="#fff"/>
+
+  <polygon points="80,30 140,150 20,150" fill="#E1BEE7" stroke="#6A32A0" stroke-width="2"/>
+  <polygon points="220,30 280,150 160,150" fill="#E1BEE7" stroke="#6A32A0" stroke-width="2"/>
+  <text x="150" y="180" text-anchor="middle" font-size="12" font-family="Segoe UI,sans-serif" fill="#263238">SSS / SAS / ASA</text>
+  <polygon points="380,40 450,70 450,140 380,170 310,140 310,70" fill="#FFF9C4" stroke="#F9A825" stroke-width="2"/>
+  <text x="380" y="190" text-anchor="middle" font-size="12" font-family="Segoe UI,sans-serif" fill="#263238">sześciokąt foremny</text>
+
+</svg>

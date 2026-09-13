@@ -1,0 +1,14 @@
+# Lekcja 26 — Sztuka średniowiecza
+# Wrzuć pliki do GitHub: Historia/216.png … 223.png
+# https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Historia/
+# Obrazy: szkolne SCHEMATY, dzień. BEZ zdjęć Notre Dame / Tumu / ołtarza Wita Stwosza z Wiki,
+# BEZ kopii kadru filmu, BEZ Sądu Ostatecznego z torturami, BEZ nagości świętych.
+
+216.png  WNĘTRZE kościoła: ludzie patrzą na malowidła i rzeźby; podpis „Biblia pauperum — uczy tych, co nie czytają”
+217.png  KOŚCIÓŁ romański (typ Tum): grube mury, małe okna, apsyda, wieża, portal półokrągły; podpisy PL
+218.png  KATEDRA gotycka (schemat, nie foto): strzelista, witraże, rozeta, łuki oporowe, portal ostry; podpisy PL
+219.png  DWA PRZEKROJE obok siebie: romański (kolebka, małe okno) | gotyk (żebra, duże okno); tabela cech
+220.png  SŁOWNIK bryły: portal, sklepienie, witraż, rozeta, łuk oporowy, przypora — proste rysunki, nie Wiki
+221.png  MINIATURA + INICJAŁ szkolny (własny rysunek, nie foto kodeksu); podpis „malarstwo w księdze”
+222.png  OŁTARZ szafiasty szkolny (skrzydła, złote tło, ubrane postacie); podpis „rzeźba / ołtarz”, BEZ kopii Stwosza
+223.png  DWA ZABYTKI PL: rotunda (romańska, okrągła) | ceglany kościół gotycki; podpisy „np. rotunda św. Prokopa”, „gotyk ceglany”

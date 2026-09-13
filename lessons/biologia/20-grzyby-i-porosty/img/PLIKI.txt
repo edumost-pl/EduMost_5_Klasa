@@ -1,0 +1,32 @@
+# Lekcja 20 — Grzyby i porosty
+# Folder GitHub:
+# Biologia/L20_Grzyby_i_porosty/images/
+# Wrzucaj PNG o DOKŁADNYCH nazwach.
+
+l20-zacznijmy.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9. Borowik (lub podobny jadalny wygląd, bez namawiania do zbierania) w mchu. Etykieta PL: owocnik. Strzałka w dół: grzybnia w glebie. Bez trujących znaków grozy, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L20_Grzyby_i_porosty/images/l20-zacznijmy.png?raw=true
+
+l20-grzybnia.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. Przekrój gleby: biała sieć nitek z etykietą PL: strzępki / grzybnia. Nad ziemią mały owocnik. Bez korzeni roślin jako „to samo co strzępki”. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L20_Grzyby_i_porosty/images/l20-grzybnia.png?raw=true
+
+l20-owocnik.png
+IMAGE PROMPT: Edukacyjny przekrój 16:9 grzyba kapeluszowego z etykietami PL: kapelusz; trzon; blaszki; zarodniki (drobny proszek, nie groza). Napis: owocnik. Nie muchomor jako jedyny przykład jeśli groźnie — lepiej borowik / pieczarka. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L20_Grzyby_i_porosty/images/l20-owocnik.png?raw=true
+
+l20-drozdz.png
+IMAGE PROMPT: Edukacyjna infografika 16:9. LEWA: kostka / granulki drożdży piekarskich. PRAWA: kilka owalnych komórek pod mikroskopem, etykieta PL: drożdże — jednokomórkowe grzyby. Nawiązanie: fermentacja, CO₂. Bez alkoholu do picia, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L20_Grzyby_i_porosty/images/l20-drozdz.png?raw=true
+
+l20-odzywianie.png
+IMAGE PROMPT: Edukacyjna plansza 16:9, trzy kafelki PL: saprobiont — grzyby na pniu; pasożyt — hubiak / rdza na liściu bez grozy i bez ran człowieka; mikoryza — strzępki oplecione wokół korzenia drzewa, strzałki: woda i sole ↔ cukry. Bez krwi, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L20_Grzyby_i_porosty/images/l20-odzywianie.png?raw=true
+
+l20-porost.png
+IMAGE PROMPT: Fotorealistyczne zdjęcie 16:9. Porost listkowaty lub krzaczkowaty na korze, dzień. Etykiety PL: porost = grzyb + glon. Mały schemat: grzyb daje wodę i ochronę; glon — cukry z fotosyntezy. Bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L20_Grzyby_i_porosty/images/l20-porost.png?raw=true
+
+l20-bioindykator.png
+IMAGE PROMPT: Edukacyjna infografika 16:9, dwa kafelki. LEWA: drzewo z porostami, etykieta PL: bioindykator — czyste powietrze. PRAWA: przekreślony talerz z nieznanym grzybem, etykieta: nie jedz nieznanych grzybów — tylko z dorosłym, który zna gatunki. Bez muchomora w grozie, bez trupiej czaszki, bez angielskiego, bez logotypów.
+https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Biologia/L20_Grzyby_i_porosty/images/l20-bioindykator.png?raw=true

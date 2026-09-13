@@ -133,7 +133,7 @@ window.EduMostLessonContent = { blocks: [
     promptPlace: "before",
     prompt: {
       pl: "Podręcznik (s. 70): *Przymiotnik to część mowy nazywająca cechy i właściwości (na przykład kształt, wielkość, kolor) ludzi, rzeczy lub zjawisk. Najczęściej określa rzeczownik i odpowiada na pytania jaki? jaka? jakie?* Zapisz pigułkę. Pytania *który? czyj?* też bywają — dziś w centrum *jaki?*",
-      ua: "Підручник (с. 70): прикметник називає *ознаки і властивості* (форма, розмір, колір) людей, речей або явищ. Найчастіше означає іменник і відповідає на *який? яка? яке?* Запиши пігулку. Питання *который? чий?* теж бувають — сьогодні в центрі *jaki?*"
+      ua: "Підручник (с. 70): прикметник називає *ознаки і властивості* (форма, розмір, колір) людей, речей або явищ. Найчастіше означає іменник і відповідає на *який? яка? яке?* Запиши пігулку. Питання *który? czyj?* теж бувають — сьогодні в центрі *jaki?*"
     },
     rows: [
       { pl: "jaki? — ciekawy (dzień)", ua: "який? — ciekawy (dzień)" },

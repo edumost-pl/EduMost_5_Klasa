@@ -755,6 +755,18 @@ window.EduMostLessons = {
     topicId: "prognoza-planeta",
     folder: "35-prognoza-planeta"
   },
+  "polski/przymiotnik-rozpoznanie": {
+    id: "pol-36-przymiotnik-rozpoznanie",
+    subject: "polski",
+    topicId: "przymiotnik-rozpoznanie",
+    folder: "36-przymiotnik-rozpoznanie"
+  },
+  "polski/przymiotnik-odmiana": {
+    id: "pol-37-przymiotnik-odmiana",
+    subject: "polski",
+    topicId: "przymiotnik-odmiana",
+    folder: "37-przymiotnik-odmiana"
+  },
   "polski/mit": {
     id: "pol-09-mit",
     subject: "polski",

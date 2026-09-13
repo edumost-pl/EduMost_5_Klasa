@@ -41,7 +41,9 @@
     T32: "../lessons/polski/32-dwa-wiatry/index.html",
     T33: "../lessons/polski/33-dwa-wiatry-recytacja/index.html",
     T34: "../lessons/polski/34-studio-pogoda/index.html",
-    T35: "../lessons/polski/35-prognoza-planeta/index.html"
+    T35: "../lessons/polski/35-prognoza-planeta/index.html",
+    T36: "../lessons/polski/36-przymiotnik-rozpoznanie/index.html",
+    T37: "../lessons/polski/37-przymiotnik-odmiana/index.html"
   };
   let pageQueryRaw = "";
   let topScrollBound = false;

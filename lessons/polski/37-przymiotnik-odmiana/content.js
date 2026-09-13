@@ -25,7 +25,7 @@ window.EduMostLessonContent = { blocks: [
     items: [
       { pl: "odmienię przymiotnik przez przypadki, liczby i rodzaje;", ua: "відміню прикметник за відмінками, числами і родами;" },
       { pl: "rozróżnię mnogą *męskoosobową* i *niemęskoosobową*;", ua: "розрізню множину *чоловічоособну* і *нечоловічоособну*;" },
-      { pl: "dobiorę formę przymiotnika do rzeczownika (zgoda);", ua: "доберy форму прикметника до іменника (узгодження);" },
+      { pl: "dobiorę formę przymiotnika do rzeczownika (zgoda);", ua: "узгоджу форму прикметника з іменником;" },
       { pl: "określę formę wyróżnionego przymiotnika (zad. 4);", ua: "визначу форму виділеного прикметника (завд. 4);" },
       { pl: "poprawię błędne formy (zad. 5) i zaplanuję zaproszenie na Bal.", ua: "виправлю помилкові форми (завд. 5) і спланую запрошення на бал." }
     ],
@@ -237,7 +237,7 @@ window.EduMostLessonContent = { blocks: [
       options: [
         { id: "a", label: { pl: "(z) wielką ucztą", ua: "(z) wielką ucztą" } },
         { id: "b", label: { pl: "(z) wielkiej uczcie", ua: "(z) wielkiej uczcie" } },
-        { pl: "(z) wielkimi ucztami", ua: "(z) wielkimi ucztami", id: "c" }
+        { id: "c", label: { pl: "(z) wielkimi ucztami", ua: "(z) wielkimi ucztami" } }
       ],
       answer: "a",
       hint: {

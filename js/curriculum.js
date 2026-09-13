@@ -204,6 +204,8 @@ window.EduMostCurriculum = {
               { id: "dwa-wiatry-recytacja", page: 65, lesson: "33-dwa-wiatry-recytacja", title: { pl: "Obrazy sadu, przysłowie i recytacja", ua: "Образи саду, прислів’я і декламація" } },
               { id: "studio-pogoda", page: 67, lesson: "34-studio-pogoda", title: { pl: "Studio. Oglądamy prognozę pogody", ua: "Студія. Дивимось прогноз погоди" } },
               { id: "prognoza-planeta", page: 68, lesson: "35-prognoza-planeta", title: { pl: "Prognoza na planecie. Mapa i prezenter", ua: "Прогноз на планеті. Мапа і ведучий" } },
+              { id: "przymiotnik-rozpoznanie", page: 69, lesson: "36-przymiotnik-rozpoznanie", title: { pl: "Przymiotnik. Rozpoznajemy i związek zgody", ua: "Прикметник. Розпізнаємо і зв’язок узгодження" } },
+              { id: "przymiotnik-odmiana", page: 70, lesson: "37-przymiotnik-odmiana", title: { pl: "Odmiana przymiotnika. Formy i zaproszenie", ua: "Відміна прикметника. Форми і запрошення" } },
               { id: "przymiotnik-i-uosobienie", page: 72, lesson: "16-przymiotnik-i-uosobienie", title: { pl: "Julian Tuwim, Dwa wiatry", ua: "Юліан Тувім, Два вітри" } }
             ]
           },

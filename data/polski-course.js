@@ -628,13 +628,13 @@ window.EduMostPolskiCourse = {
       "part": "I",
       "chapter": "R3",
       "category": "GRAMATYKA",
-      "title": "Przymiotnik (odmiana, związek z rzeczownikiem).",
+      "title": "Przymiotnik. Rozpoznajemy i związek zgody.",
       "page": "69",
       "skills": [
         "przymiotnik",
         "zgoda-przymiotnik"
       ],
-      "outcome": "Uczeń potrafi rozpoznać przymiotnik i uzgodnić jego formę z rzeczownikiem."
+      "outcome": "Uczeń rozpoznaje przymiotnik, wskazuje wyraz określany i rozumie związek zgody."
     },
     {
       "id": "T37",
@@ -642,13 +642,14 @@ window.EduMostPolskiCourse = {
       "part": "I",
       "chapter": "R3",
       "category": "GRAMATYKA",
-      "title": "Przymiotnik (odmiana, związek z rzeczownikiem).",
-      "page": "69",
+      "title": "Odmiana przymiotnika. Formy i zaproszenie.",
+      "page": "70–71",
       "skills": [
-        "przymiotnik",
-        "zgoda-przymiotnik"
+        "odmiana-przymiotnik",
+        "zgoda-przymiotnik",
+        "zaproszenie"
       ],
-      "outcome": "Uczeń potrafi rozpoznać przymiotnik i uzgodnić jego formę z rzeczownikiem."
+      "outcome": "Uczeń odmienia przymiotnik, uzgadnia formy, poprawia błędy i redaguje zaproszenie na Bal z Przymiotnikiem."
     },
     {
       "id": "T38",

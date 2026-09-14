@@ -1,7 +1,3 @@
-function em(text) {
-  return { text: text, emphasis: true };
-}
-
 var POL_IMG = "https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/polska/";
 
 function vizGh(file, spec) {
@@ -31,55 +27,41 @@ window.EduMostLessonContent = {
       ]
     },
     {
-      type: "practice",
-      heading: { pl: "Zadanie wstępne · cechy przypowieści", ua: "Вступне · риси притчі" },
-      formula: "s. 26  ·  ZESZYT",
+      type: "concept",
+      heading: { pl: "Co to jest przypowieść?", ua: "Що таке притча?" },
+      formula: "s. 26  ·  gatunek  ·  Zapamiętaj",
       promptPlace: "before",
       prompt: {
-        pl: "Podręcznik: na podstawie wypowiedzi przedstawionych osób zapisz w zeszycie cechy przypowieści. Najpierw sam. Potem klucz.",
-        ua: "Підручник: на основі висловлювань осіб запиши в зошит риси притчі. Спочатку сам, потім ключ."
+        pl: "Zanim przeczytasz wiersz Miłosza: najpierw *reguła gatunku*. Potem cechy z rysunku — w zeszycie.",
+        ua: "Перш ніж читати вірш Мілоша: спочатку *правило жанру*. Потім риси з малюнка — у зошиті."
       },
-      reveal: true,
-      steps: [
-        {
-          visual: vizGh("t10-zad-wstepne.png", {
-            alt: {
-              pl: "Dwoje osób na kocu z dymkami o krótkiej historii i pouczeniu; schemat: przypowieść",
-              ua: "Двоє на пледі з хмарками про коротку історію; схема: przypowieść"
-            },
-            title: { pl: "Slajd · zadanie wstępne", ua: "Слайд · вступне завдання" },
-            prompt: {
-              pl: "Wstaw kadr ze s. 26: dwoje na kocu, popcorn, dymki, schemat «przypowieść» z trzema znakami zapytania. PNG, kadr szeroki. Przytnij znak wodny.",
-              ua: "Встав малюнок зі с. 26: двоє на пледі, хмарки, схема przypowieść."
-            }
-          }),
-          text: {
-            pl: "Przeczytaj dymki na rysunku. W zeszycie: 2–3 cechy. Nie zgaduj z pamięci — z tego, co mówią osoby.",
-            ua: "Прочитай хмарки. У зошит: 2–3 риси з того, що кажуть особи."
-          }
+      visual: vizGh("t10-zad-wstepne.png", {
+        alt: {
+          pl: "Dwoje osób na kocu z dymkami o krótkiej historii i pouczeniu; schemat: przypowieść",
+          ua: "Двоє на пледі з хмарками про коротку історію; схема: przypowieść"
         },
-        {
-          formula: "KLUCZ  ·  z dymków na s. 26",
-          text: {
-            pl: [
-              "Utwór nie jest zbyt długi — krótka historia.",
-              "Kto chce powiedzieć coś ważnego, opowiada historię; z niej wynika pouczenie albo uniwersalna prawda o życiu.",
-              "Takie historie nazywamy przypowieściami."
-            ],
-            ua: [
-              "Твір не надто довгий — коротка історія.",
-              "Хто хоче сказати щось важливе, розповідає історію; з неї випливає повчання або універсальна правда про життя.",
-              "Такі історії називаємо притчами (przypowieści)."
-            ]
-          }
+        title: { pl: "Slajd · zadanie wstępne", ua: "Слайд · вступне завдання" },
+        prompt: {
+          pl: "Kadr ze s. 26: dwoje na kocu, dymki, schemat «przypowieść».",
+          ua: "Кадр зі с. 26: двоє на пледі, хмарки, схема przypowieść."
         }
+      }),
+      text: {
+        pl: "**Przypowieść** to **krótka historia**, z której wynika **pouczenie** albo **uniwersalna prawda o życiu**. Nie jest to powieść-cegła ani przepis kuchenny — opowiada się historię, żeby powiedzieć coś ważnego.",
+        ua: "**Притча (przypowieść)** — це **коротка історія**, з якої випливає **повчання** або **універсальна правда про життя**. Це не роман-цегла і не кулінарний рецепт — розповідають історію, щоб сказати щось важливе."
+      },
+      items: [
+        { pl: "Utwór *nie jest zbyt długi* — krótka historia.", ua: "Твір *не надто довгий* — коротка історія." },
+        { pl: "Z historii wynika *pouczenie* albo *uniwersalna prawda o życiu*.", ua: "З історії випливає *повчання* або *універсальна правда про життя*." },
+        { pl: "Takie historie nazywamy *przypowieściami* (притчами).", ua: "Такі історії називаємо *przypowieściami* (притчами)." },
+        { pl: "Dziś: wiersz Czesława Miłosza *Przypowieść o maku* — czytamy jak przypowieść (treść + sens).", ua: "Сьогодні: вірш Чеслава Мілоша *Przypowieść o maku* — читаємо як притчу (зміст + сенс)." }
       ],
       task: {
         id: "t10-s02-cechy",
         type: "multiple-choice",
         question: {
-          pl: "Które cechy NA PEWNO pasują do przypowieści z tego rysunku? Zaznacz wszystkie pewne.",
-          ua: "Які риси НАПЕВНО пасують до притчі з цього малюнка? Познач усі певні."
+          pl: "Które cechy NA PEWNO pasują do przypowieści? Zaznacz wszystkie pewne.",
+          ua: "Які риси НАПЕВНО пасують до притчі? Познач усі певні."
         },
         options: [
           { id: "a", label: { pl: "Krótka historia.", ua: "Коротка історія." } },
@@ -89,12 +71,12 @@ window.EduMostLessonContent = {
         ],
         answer: ["a", "b"],
         hint: {
-          pl: "Co osoby lubią w utworze? Co wynika z historii?",
-          ua: "Що особи люблять у творі? Що випливає з історії?"
+          pl: "Spójrz na ramkę Zapamiętaj i na dymki na rysunku.",
+          ua: "Подивись на рамку Zapamiętaj і на хмарки на малюнку."
         },
         explanation: {
-          pl: "Z dymków: krótki utwór i pouczenie / uniwersalna prawda. Nie powieść-cegła i nie przepis kuchenny.",
-          ua: "З хмарок: короткий твір і повчання / правда про життя."
+          pl: "Przypowieść = krótka historia + pouczenie / uniwersalna prawda. Nie powieść-cegła i nie przepis kuchenny.",
+          ua: "Притча = коротка історія + повчання / правда про життя. Не роман і не рецепт."
         }
       }
     },
@@ -104,7 +86,7 @@ window.EduMostLessonContent = {
       formula: "Czesław Miłosz  ·  Przypowieść o maku",
       visual: {
         kind: "youtube",
-        id: "CnHYwRzfd-I",
+        id: "Nody3LlwVP0",
         title: {
           pl: "Posłuchaj: Czesław Miłosz „Przypowieść o maku”",
           ua: "Послухай: Czesław Miłosz «Przypowieść o maku»"
@@ -211,17 +193,14 @@ window.EduMostLessonContent = {
         ua: "Ці три слова в програмі. Не вгадуй — полічи у вірші."
       },
       text: {
-        pl: [
-          ["", em("Wers"), " — jeden wierszowy wiersz, jedna linijka. Pierwszy wers: „Na ziarnku maku stoi mały dom,”"],
-          ["", em("Strofa"), " — grupa wersów oddzielona pustą linią. Tu są trzy strofy, każda ma cztery wersy."],
-          ["", em("Rym"), " — podobne brzmienie końcówek. W 1. strofie: *dom* — *psom*; *makowy* — *głowy*."]
-        ],
-        ua: [
-          [em("Wers"), " — один рядок вірша."],
-          [em("Strofa"), " — група рядків. Тут три строфи по чотири рядки."],
-          [em("Rym"), " — схожі закінчення: dom — psom; makowy — głowy."]
-        ]
+        pl: "W wierszu liczymy **wersy** (linijki), **strofy** (grupy wersów) i **rym** (podobne brzmienie końcówek).",
+        ua: "У вірші рахуємо **рядки (wersy)**, **строфи** (групи рядків) і **риму** (схожі закінчення)."
       },
+      items: [
+        { pl: "*Wers* — jedna linijka. Pierwszy wers: „Na ziarnku maku stoi mały dom,”", ua: "*Wers* — один рядок. Перший: «Na ziarnku maku stoi mały dom»." },
+        { pl: "*Strofa* — grupa wersów oddzielona pustą linią. Tu trzy strofy, każda ma cztery wersy.", ua: "*Strofa* — група рядків. Тут три строфи по чотири рядки." },
+        { pl: "*Rym* — w 1. strofie: *dom* — *psom*; *makowy* — *głowy*.", ua: "*Rym* — у 1. строфі: *dom* — *psom*; *makowy* — *głowy*." }
+      ],
       task: {
         id: "t10-s05-terminy",
         type: "single-choice",
@@ -432,15 +411,13 @@ window.EduMostLessonContent = {
         ua: "Програма: вкажи відомі стилістичні засоби. Лише те, що видно в тексті."
       },
       text: {
-        pl: [
-          ["", em("Zdrobnienie"), " — *pieski*, *domek*: świat wygląda jak zabawka, bliski dziecku."],
-          ["", em("Porównanie / utożsamienie"), " — *Ziemia to ziarnko*: kosmos jak mak."]
-        ],
-        ua: [
-          [em("Зменшувальна форма"), " — pieski, domek."],
-          [em("Порівняння"), " — Ziemia to ziarnko: космос як мак."]
-        ]
+        pl: "W tym wierszu widać **zdrobnienie** (*pieski*, *domek*) i **porównanie**: *Ziemia to ziarnko* — kosmos jak mak.",
+        ua: "У цьому вірші видно **зменшувальну форму** (*pieski*, *domek*) і **порівняння**: *Ziemia to ziarnko* — космос як мак."
       },
+      items: [
+        { pl: "*Zdrobnienie* — *pieski*, *domek*: świat wygląda jak zabawka, bliski dziecku.", ua: "*Зменшувальна форма* — *pieski*, *domek*." },
+        { pl: "*Porównanie / utożsamienie* — *Ziemia to ziarnko*: kosmos jak mak.", ua: "*Порівняння* — *Ziemia to ziarnko*: космос як мак." }
+      ],
       task: {
         id: "t10-s10-srodki",
         type: "multiple-choice",

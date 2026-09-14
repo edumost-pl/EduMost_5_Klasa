@@ -112,8 +112,8 @@
       polskiKartkowkaOne: "Kartkówka",
       polskiKartkowkaDate: "Termin szkolny",
       polskiSprawdziany: "Sprawdziany rozdziałowe",
-      polskiFindPage: "Znajdź temat po stronie podręcznika",
-      polskiFindPagePh: "np. 167 lub 40-41",
+      polskiFindPage: "Znajdź temat po stronie podręcznika lub numerze lekcji",
+      polskiFindPagePh: "np. 69, T36 lub 36-37",
       polskiFindNone: "Nie znaleziono tematów na tej stronie.",
       polskiClear: "Wyczyść",
       polskiToTop: "↑ Do góry"
@@ -228,8 +228,8 @@
       polskiKartkowkaOne: "Картатка",
       polskiKartkowkaDate: "Шкільний термін",
       polskiSprawdziany: "Контрольні з розділів",
-      polskiFindPage: "Знайди тему за сторінкою підручника",
-      polskiFindPagePh: "напр. 167 або 40-41",
+      polskiFindPage: "Знайди тему за сторінкою підручника або номером уроку",
+      polskiFindPagePh: "напр. 69, T36 або 36-37",
       polskiFindNone: "Не знайдено тем на цій сторінці.",
       polskiClear: "Очистити",
       polskiToTop: "↑ Вгору"

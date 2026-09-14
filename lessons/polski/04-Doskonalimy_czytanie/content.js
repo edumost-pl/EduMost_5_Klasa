@@ -1,1080 +1,514 @@
-function em(text) {
+function emT4(text) {
   return { text: text, emphasis: true };
 }
 
-var POL_IMG = "https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/polska/";
+var POL_IMG_T4 = "https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/polska/";
 
-function vizGh(file, spec) {
+function vizGhT4(file, spec) {
   spec = spec || {};
   spec.kind = "image-placeholder";
-  spec.file = file;
-  spec.url = POL_IMG + file + "?raw=true";
+  spec.file = "./" + file;
+  spec.url = POL_IMG_T4 + file + "?raw=true";
   return spec;
 }
 
-window.EduMostLessonContent = {
-  blocks: [
-    // S01
-    {
-      type: "goal",
-      heading: { pl: "Doskonalimy czytanie", ua: "Вдосконалюємо читання" },
-      formula: "czytanie ze zrozumieniem  ·  tekst popularnonaukowy  ·  s. 14–15",
-      promptPlace: "before",
-      prompt: {
-        pl: "To lekcja czytania, nie astronomii. Kosmos jest tematem tekstu. Dziś uczysz się czytać i znajdować informacje.",
-        ua: "Це урок читання, не астрономії. Космос — тема тексту. Сьогодні вчишся читати і знаходити інформацію."
-      },
-      items: [
-        { pl: "rozumieć trudniejsze słowa;", ua: "розуміти складніші слова;" },
-        { pl: "znaleźć informację w tekście;", ua: "знайти інформацію в тексті;" },
-        { pl: "odróżnić ważną informację od szczegółu;", ua: "відрізнити важливу інформацію від деталі;" },
-        { pl: "odpowiedzieć na pytanie na podstawie tekstu;", ua: "відповісти на питання на основі тексту;" },
-        { pl: "wskazać dowód w tekście.", ua: "вказати доказ у тексті." }
-      ]
+window.EduMostLessonContent = { blocks: [
+  // 1
+  {
+    type: "goal",
+    heading: { pl: "Po tej lekcji umiem", ua: "Після цього уроку вмію" },
+    formula: "s. 14  ·  Lekcja 4  ·  czytanie",
+    promptPlace: "before",
+    prompt: {
+      pl: "Dział *Zachwycający kosmos*. Wczoraj opisywaliśmy zdjęcia i zadawaliśmy pytania. Dziś *czytamy* tekst *Ziemia we Wszechświecie*. To lekcja *czytania ze zrozumieniem*, nie astronomii. Fakty bierz z *tekstu*. Polski pierwszy. Włącz 🇺🇦.",
+      ua: "Розділ *Zachwycający kosmos*. Учора описували світлини і ставили питання. Сьогодні *читаємо* текст *Ziemia we Wszechświecie*. Це урок *читання з розумінням*, не астрономії. Факти бери з *тексту*. Польська перша. Увімкни 🇺🇦."
     },
-    // S02
-    {
-      type: "concept",
-      heading: { pl: "Zanim zaczniesz czytać", ua: "Перш ніж читати" },
-      formula: "Ziemia we Wszechświecie",
-      visual: vizGh("t4-obserwatorzy.png", {
-        alt: {
-          pl: "Dawni obserwatorzy nieba z lunetą",
-          ua: "Давні спостерігачі неба з підзорною трубою"
-        },
-        title: { pl: "Ludzie obserwują niebo", ua: "Люди спостерігають небо" },
-        prompt: {
-          pl: "Edukacyjna ilustracja 16:9, klasa 5. Dwóch dawnych obserwatorów nieba przy lunecie, noc, gwiazdy, spokojna akwarela. Bez logotypów, bez angielskiego, bez napisów, bez grozy.",
-          ua: "Освітня ілюстрація 16:9: давні спостерігачі неба, акварель, без логотипів."
-        }
-      }),
-      promptPlace: "before",
-      prompt: {
-        pl: "Najpierw tytuł. Jeszcze nie czytasz całego tekstu. Zastanów się, czego się spodziewasz.",
-        ua: "Спочатку заголовок. Ще не читай увесь текст. Подумай, чого очікуєш."
+    items: [
+      { pl: "wyjaśnię glosy: *astronom, starożytny, nawigacja, kosmologia, sfery, kres*;", ua: "поясню глоси: *astronom, starożytny, nawigacja, kosmologia, sfery, kres*;" },
+      { pl: "znajdę w tekście informację i wskażę *prawdę / fałsz* z dowodem;", ua: "знайду в тексті інформацію і вкажу *правду / хибу* з доказом;" },
+      { pl: "dopasuję podpisy do wyobrażeń świata (pierwotne, Eratostenes, Kopernik);", ua: "підберу підписи до уявлень світу (первісне, Ератостен, Коперник);" },
+      { pl: "przygotuję *głośne czytanie* fragmentu;", ua: "підготую *голосне читання* уривка;" },
+      { pl: "zapiszę krótką *notatkę*.", ua: "запишу коротку *нотатку*." }
+    ],
+    task: {
+      id: "t4-s01-umiem",
+      type: "multiple-choice",
+      question: {
+        pl: "Co po tej lekcji musisz umieć NA PEWNO? Zaznacz wszystkie pewne.",
+        ua: "Що після уроку маєш вміти НАПЕВНО? Познач усі певні."
       },
-      text: {
-        pl: [
-          "Tytuł: „Ziemia we Wszechświecie”.",
-          ["Tekst ", em("popularnonaukowy"), " przekazuje informacje o świecie, nauce lub zjawiskach. Nie jest wierszem ani bajką."]
-        ],
-        ua: [
-          "Заголовок: «Ziemia we Wszechświecie».",
-          "Науково-популярний текст передає інформацію про світ або науку. Це не вірш і не казка."
-        ]
-      },
-      task: {
-        id: "t4-s02-gatunek",
-        type: "single-choice",
-        question: {
-          pl: "O czym, twoim zdaniem, będzie ten tekst — i jakiego to gatunku?",
-          ua: "Про що, на твою думку, буде текст — і якого він жанру?"
-        },
-        options: [
-          {
-            id: "a",
-            label: {
-              pl: "O Ziemi i Wszechświecie — tekst popularnonaukowy (informacje, nie wiersz).",
-              ua: "Про Землю і Всесвіт — науково-популярний текст (інформація, не вірш)."
-            }
-          },
-          {
-            id: "b",
-            label: {
-              pl: "O przygodach smoka — bajka.",
-              ua: "Про пригоди дракона — казка."
-            }
-          },
-          {
-            id: "c",
-            label: {
-              pl: "O uczuciach osoby mówiącej w wierszu — liryka.",
-              ua: "Про почуття особи у вірші — лірика."
-            }
-          }
-        ],
-        answer: "a",
-        hint: {
-          pl: "Spójrz na tytuł. Czy brzmi jak opowieść ze smokiem, czy jak informacja o świecie?",
-          ua: "Подивись на заголовок. Це схоже на казку чи на інформацію про світ?"
-        },
-        mistakes: [
-          {
-            answer: "b",
-            feedback: {
-              pl: "Tytuł mówi o Ziemi i Wszechświecie, nie o smoku. To zapowiedź informacji, nie bajki.",
-              ua: "Заголовок про Землю і Всесвіт, не про дракона. Це інформація, не казка."
-            }
-          },
-          {
-            answer: "c",
-            feedback: {
-              pl: "Wiersz ma osobę mówiącą i nastrój. Tytuł zapowiada informacje o świecie — tekst popularnonaukowy.",
-              ua: "Вірш має особу, яка говорить, і настрій. Тут заголовок обіцяє інформацію про світ."
-            }
-          }
-        ],
-        explanation: {
-          pl: "Z tytułu wnioskujesz temat. Gatunek: tekst popularnonaukowy. Potem sprawdzisz to w lekturze — na razie to przewidywanie.",
-          ua: "Із заголовка здогадуєшся тему. Жанр: науково-популярний текст. Потім перевіриш це в читанні."
-        }
-      }
-    },
-    // S03
-    {
-      type: "observe",
-      heading: { pl: "Przeczytaj tekst", ua: "Прочитай текст" },
-      formula: "Ziemia we Wszechświecie  ·  s. 14",
-      visual: vizGh("t4-obserwatorzy.png", {
-        place: "after",
-        alt: {
-          pl: "Obserwatorzy nieba i kula ziemska",
-          ua: "Спостерігачі неба і земна куля"
-        },
-        title: { pl: "Przy tekście", ua: "До тексту" },
-        prompt: {
-          pl: "Edukacyjna ilustracja 16:9: dawni obserwatorzy nieba, luneta, w tle kula ziemska i gwiazdy. Akwarela, klasa 5, bez logotypów, bez napisów.",
-          ua: "Освітня ілюстрація: спостерігачі неба, земна куля, акварель."
-        }
-      }),
-      promptPlace: "before",
-      prompt: {
-        pl: "Przeczytaj spokojnie. Nie musisz zapamiętać wszystkiego za pierwszym razem. Do tekstu możesz wrócić (Wstecz albo kropki u góry).",
-        ua: "Читай спокійно. Не треба запам’ятати все з першого разу. До тексту можна повернутися (Назад або крапки вгорі)."
-      },
-      text: {
-        pl: [
-          "Od niepamiętnych czasów ludzie uważnie obserwowali niebo. Pierwsi astronomowie pomagali w nawigacji, układali kalendarze, objaśniali wolę bogów.",
-          "Filozofowie i astronomowie starożytnej Grecji na podstawie obserwacji nieba starali się wyjaśnić budowę i historię kosmosu. Tak narodziła się kosmologia – jedna z najstarszych nauk.",
-          "Pierwotnie myślano, że mieszkamy na tarczy pływającej pośrodku olbrzymiego oceanu. Jednak już 2500 lat temu stwierdzono, że Ziemia jest kulą. Grecki uczony żyjący na przełomie III i II w. p.n.e. – Eratostenes – określił, że obwód naszej planety wynosi 39690 kilometrów. Wynik, który podał, niewiele się różni od obliczeń współczesnych naukowców.",
-          "Dla Eratostenesa, podobnie jak dla większości ówczesnych i późniejszych kosmologów, Ziemia stanowiła środek Wszechświata. Wokół niej po różnych sferach miały się poruszać planety. Zaliczano do nich też Słońce i Księżyc. Wszystko razem otaczała sfera zewnętrzna, do której były przymocowane gwiazdy stałe.",
-          "Wierzono, że sfera ta jest kresem Wszechświata. Za nią znajdował się obszar niedostępny dla ludzi. Zamieszkiwali go bogowie.",
-          "Takie wyobrażenie świata zburzył w XVI w. Mikołaj Kopernik. W roku śmierci astronoma opublikowano dzieło „O obrotach sfer niebieskich”, w którym polski odkrywca stwierdza, że to Słońce jest w centrum Wszechświata, a Ziemia krąży wokół tej gwiazdy.",
-          "Na podstawie książki Ericha Überlackera Kosmos. U granic przestrzeni i czasu, tłumaczenie: Joachim Mader"
-        ],
-        ua: [
-          "Прочитай польською. Весь текст не перекладаємо — допомога буде при словах і завданнях."
-        ]
-      },
-      task: {
-        id: "t4-s03-temat",
-        type: "single-choice",
-        question: {
-          pl: "O czym jest ten tekst? (Nie zgaduj — spójrz na cały przebieg.)",
-          ua: "Про що цей текст? (Не здогадуйся — подивись на весь хід думки.)"
-        },
-        options: [
-          {
-            id: "a",
-            label: {
-              pl: "O tym, jak zmieniało się wyobrażenie ludzi o Ziemi i Wszechświecie.",
-              ua: "Про те, як змінювалося уявлення людей про Землю і Всесвіт."
-            }
-          },
-          {
-            id: "b",
-            label: {
-              pl: "O tym, jak zbudować rakietę w domu.",
-              ua: "Про те, як збудувати ракету вдома."
-            }
-          },
-          {
-            id: "c",
-            label: {
-              pl: "O przepisie na ciasto.",
-              ua: "Про рецепт тістечка."
-            }
-          }
-        ],
-        answer: "a",
-        hint: {
-          pl: "Zobacz początek (obserwacja nieba) i koniec (Kopernik). Co się zmienia?",
-          ua: "Подивись початок (спостереження неба) і кінець (Коперник). Що змінюється?"
-        },
-        mistakes: [
-          {
-            answer: "b",
-            feedback: {
-              pl: "W tekście nie ma rakiety. Są astronomowie, Eratostenes i Kopernik.",
-              ua: "У тексті немає ракети. Є астрономи, Ератосфен і Коперник."
-            }
-          },
-          {
-            answer: "c",
-            feedback: {
-              pl: "To nie przepis. To informacje o nauce i wyobrażeniach świata.",
-              ua: "Це не рецепт. Це інформація про науку і уявлення про світ."
-            }
-          }
-        ],
-        explanation: {
-          pl: "Tekst opowiada, jak ludzie wyobrażali sobie Ziemię i Wszechświat — od tarczy na oceanie, przez kulę w środku, aż do Kopernika. Szczegóły (liczby, daty) służą tej historii.",
-          ua: "Текст розповідає, як люди уявляли Землю і Всесвіт. Деталі (числа, дати) служать цій історії."
-        }
-      }
-    },
-    // S04
-    {
-      type: "concept",
-      heading: { pl: "Słowa z marginesu", ua: "Слова з поля сторінки" },
-      promptPlace: "before",
-      prompt: {
-        pl: "Słowniczek ze s. 14. Klikaj „Pokaż następny krok”. Po każdym słowie: znaczenie → UA → przykład.",
-        ua: "Словничок зі с. 14. Натискай «Показати наступний крок». Після кожного слова: значення → UA → приклад."
-      },
-      reveal: true,
-      steps: [
-        {
-          text: {
-            pl: [
-              [em("astronom"), " — naukowiec, który bada ciała niebieskie (gwiazdy, planety) i to, co dzieje się w kosmosie."],
-              "Przykład: Astronom obserwuje gwiazdy."
-            ],
-            ua: [
-              "Астроном — науковець, який досліджує небесні тіла та явища в космосі.",
-              "Приклад: Astronom obserwuje gwiazdy."
-            ]
-          }
-        },
-        {
-          text: {
-            pl: [
-              [em("nawigacja"), " — pomaga ustalić, gdzie jesteśmy i dokąd mamy się udać (np. na morzu)."],
-              "Przykład: Dawniej obserwacja gwiazd pomagała ludziom w nawigacji."
-            ],
-            ua: [
-              "Навігація допомагає визначити, де ми є і куди маємо рухатися.",
-              "Приклад: Dawniej obserwacja gwiazd pomagała ludziom w nawigacji."
-            ]
-          }
-        },
-        {
-          text: {
-            pl: [
-              [em("kosmologia"), " — nauka o budowie i historii Wszechświata."],
-              "Przykład z tekstu: Tak narodziła się kosmologia – jedna z najstarszych nauk."
-            ],
-            ua: [
-              "Космологія — наука про будову і історію Всесвіту.",
-              "У тексті: Так narodziła się kosmologia."
-            ]
-          }
-        },
-        {
-          text: {
-            pl: [
-              [em("sfery"), " — w tym tekście: wyobrażone kuliste obszary / sklepienia, po których miały poruszać się ciała niebieskie."],
-              "Przykład: Wokół Ziemi po różnych sferach miały się poruszać planety."
-            ],
-            ua: [
-              "Сфери тут — уявні кулясті оболонки, якими мали рухатися небесні тіла.",
-              "Не плутай із «сферою» як «галуззю» (sfera nauki)."
-            ]
-          }
-        },
-        {
-          text: {
-            pl: [
-              [em("kres"), " — koniec, granica."],
-              "Przykład: Wierzono, że sfera jest kresem Wszechświata."
-            ],
-            ua: [
-              "Кінець, межа.",
-              "Приклад: Wierzono, że sfera jest kresem Wszechświata."
-            ]
-          }
-        }
+      options: [
+        { id: "a", label: { pl: "Znaleźć informację w tekście i odróżnić prawdę od fałszu.", ua: "Знайти інформацію в тексті і відрізнити правду від хиби." } },
+        { id: "b", label: { pl: "Zrobić krótką notatkę i przygotować głośne czytanie.", ua: "Зробити коротку нотатку і підготувати голосне читання." } },
+        { id: "c", label: { pl: "Samemu zmierzyć obwód Ziemi w kilometrach.", ua: "Самому виміряти окружність Землі в кілометрах." } },
+        { id: "d", label: { pl: "Dopasować ilustracje: wyobrażenie pierwotne, Eratostenesa i Kopernika.", ua: "Підібрати ілюстрації: первісне уявлення, Ератостена і Коперника." } }
       ],
-      task: {
-        id: "t4-s04-astronom",
-        type: "single-choice",
-        question: {
-          pl: "Kto bada gwiazdy i planety?",
-          ua: "Хто досліджує зірки і планети?"
-        },
-        options: [
-          { id: "a", label: { pl: "astronom", ua: "astronom" } },
-          { id: "b", label: { pl: "kres", ua: "kres" } },
-          { id: "c", label: { pl: "nawigacja", ua: "nawigacja" } }
-        ],
-        answer: "a",
-        hint: {
-          pl: "Szukaj słowa na naukowca, nie na „koniec” i nie na „określanie drogi”.",
-          ua: "Шукай слово на науковця, не на «кінець» і не на «визначення шляху»."
-        },
-        mistakes: [
-          {
-            answer: "b",
-            feedback: {
-              pl: "Kres to koniec. Astronom to naukowiec, który bada gwiazdy i planety.",
-              ua: "Kres — кінець. Astronom — науковець, який досліджує зірки і планети."
-            }
-          },
-          {
-            answer: "c",
-            feedback: {
-              pl: "Nawigacja to określanie drogi. Osoba, która bada gwiazdy, to astronom.",
-              ua: "Nawigacja — визначення шляху. Той, хто досліджує зірки — astronom."
-            }
-          }
-        ],
-        explanation: {
-          pl: "Astronom bada ciała niebieskie. Nawigacja = droga. Kosmologia = nauka o Wszechświecie. Sfery (tu) = wyobrażone kule. Kres = koniec.",
-          ua: "Astronom досліджує небесні тіла. Nawigacja = шлях. Kosmologia = наука про Всесвіт. Sfery (тут) = уявні кулі. Kres = кінець."
-        }
-      }
-    },
-    // S05
-    {
-      type: "concept",
-      heading: { pl: "Trudne słowa w zdaniach", ua: "Складні слова в реченнях" },
-      promptPlace: "before",
-      prompt: {
-        pl: "Nie ucz się listy na pamięć. Zobacz słowo W ZDANIU z tekstu.",
-        ua: "Не вчи список напам’ять. Подивись слово В РЕЧЕННІ з тексту."
+      answer: ["a", "b", "d"],
+      hint: {
+        pl: "To język polski: czytanie, podpisy, głos, notatka. Czego nie robimy na lekcji?",
+        ua: "Це польська мова: читання, підписи, голос, нотатка. Чого не робимо на уроці?"
       },
-      items: [
-        {
-          pl: "*od niepamiętnych czasów* — od bardzo dawna, tak dawno, że nikt nie pamięta początku. Zdanie: „Od niepamiętnych czasów ludzie uważnie obserwowali niebo.”",
-          ua: "від незапам’ятних часів — дуже давно."
-        },
-        {
-          pl: "*objaśniali wolę bogów* — tłumaczyli, czego (jak wierzono) chcą bogowie. Zdanie: astronomowie „objaśniali wolę bogów”.",
-          ua: "пояснювали волю богів."
-        },
-        {
-          pl: "*stwierdzono* — uznano, powiedziano na podstawie obserwacji. Zdanie: „już 2500 lat temu stwierdzono, że Ziemia jest kulą.”",
-          ua: "стверджено, визнано."
-        },
-        {
-          pl: "*przełom III i II w. p.n.e.* — granica między tymi wiekami przed naszą erą. Eratostenes żył wtedy.",
-          ua: "перехід III і II ст. до н. е."
-        },
-        {
-          pl: "*zburzył wyobrażenie* — obalił dawny obraz świata, pokazał, że było inaczej. Zdanie: „Takie wyobrażenie świata zburzył w XVI w. Mikołaj Kopernik.”",
-          ua: "зруйнував уявлення — показав, що було інакше."
-        },
-        {
-          pl: "*krąży wokół* — porusza się dookoła. Zdanie: „Ziemia krąży wokół tej gwiazdy” (Słońca).",
-          ua: "обертається навколо."
-        }
-      ],
-      task: {
-        id: "t4-s05-zburzyl",
-        type: "single-choice",
-        question: {
-          pl: "Co znaczy w tekście: „Takie wyobrażenie świata zburzył Kopernik”?",
-          ua: "Що означає в тексті: «Takie wyobrażenie świata zburzył Kopernik»?"
-        },
-        options: [
-          {
-            id: "a",
-            label: {
-              pl: "Kopernik obalił dawny obraz świata i podał inny.",
-              ua: "Коперник спростував давню картину світу і дав іншу."
-            }
-          },
-          {
-            id: "b",
-            label: {
-              pl: "Kopernik zniszczył teleskop.",
-              ua: "Коперник знищив телескоп."
-            }
-          },
-          {
-            id: "c",
-            label: {
-              pl: "Kopernik zbudował kulę ziemską z gliny.",
-              ua: "Коперник зліпив земну кулю з глини."
-            }
-          }
-        ],
-        answer: "a",
-        hint: {
-          pl: "Wróć do ostatniego akapitu. Co Kopernik stwierdza zamiast dawnego obrazu?",
-          ua: "Повернись до останнього абзацу. Що стверджує Коперник замість давньої картини?"
-        },
-        mistakes: [
-          {
-            answer: "b",
-            feedback: {
-              pl: "W tekście nie ma teleskopu Kopernika. „Zburzył wyobrażenie” = obalił dawny obraz świata.",
-              ua: "У тексті немає телескопа Коперника. «Zburzył wyobrażenie» = спростував давну картину світу."
-            }
-          },
-          {
-            answer: "c",
-            feedback: {
-              pl: "To nie o lepieniu kuli. Kopernik zmienił sposób myślenia: Słońce w centrum, Ziemia krąży.",
-              ua: "Це не про ліплення кулі. Коперник змінив думку: Сонце в центрі, Земля обертається."
-            }
-          }
-        ],
-        explanation: {
-          pl: "Zburzyć wyobrażenie = pokazać, że dawny obraz był błędny. Dowód w ostatnim akapicie: Słońce w centrum, Ziemia krąży wokół tej gwiazdy.",
-          ua: "Зруйнувати уявлення = показати, що давня картина була хибна. Доказ в останньому абзаці."
-        }
-      }
-    },
-    // S06
-    {
-      type: "guided-practice",
-      heading: { pl: "Akapit 1 · co wiemy?", ua: "Абзац 1 · що знаємо?" },
-      promptPlace: "before",
-      prompt: {
-        pl: "Pracujesz TYLKO na pierwszym akapicie. Jeśli nie pamiętasz — wróć do tekstu (Wstecz).",
-        ua: "Працюєш ЛИШЕ з першим абзацом. Якщо не пам’ятаєш — повернись до тексту (Назад)."
-      },
-      text: {
-        pl: "Od niepamiętnych czasów ludzie uważnie obserwowali niebo. Pierwsi astronomowie pomagali w nawigacji, układali kalendarze, objaśniali wolę bogów.",
-        ua: "Це перший абзац. Відповідь шукай ТУТ, не в голові."
-      },
-      task: {
-        id: "t4-s06-pomagali",
-        type: "multiple-choice",
-        question: {
-          pl: "W czym — według tego akapitu — pomagali pierwsi astronomowie? Zaznacz wszystkie odpowiedzi z tekstu.",
-          ua: "У чому — за цим абзацом — допомагали перші астрономи? Познач усі відповіді з тексту."
-        },
-        options: [
-          { id: "a", label: { pl: "w nawigacji", ua: "в навігації" } },
-          { id: "b", label: { pl: "układali kalendarze", ua: "складали календарі" } },
-          { id: "c", label: { pl: "objaśniali wolę bogów", ua: "пояснювали волю богів" } },
-          { id: "d", label: { pl: "budowali rakiety", ua: "будували ракети" } }
-        ],
-        answer: ["a", "b", "c"],
-        hint: {
-          pl: "Wróć do pierwszego akapitu. Znajdź zdanie: „Pierwsi astronomowie pomagali…”",
-          ua: "Повернись до першого абзацу. Знайди речення: «Pierwsi astronomowie pomagali…»"
-        },
-        explanation: {
-          pl: "W tekście: pomagali w nawigacji, układali kalendarze, objaśniali wolę bogów. Rakiet w tym akapicie nie ma.",
-          ua: "У тексті: nawigacja, kalendarze, wola bogów. Ракет у цьому абзаці немає."
-        }
-      }
-    },
-    // S07
-    {
-      type: "practice",
-      heading: { pl: "Akapity 2–3 · znajdź informację", ua: "Абзаци 2–3 · знайди інформацію" },
-      promptPlace: "before",
-      prompt: {
-        pl: "Odpowiedź ma być W TEKŚCIE. Nie dopisuj wiedzy z filmu czy z lekcji przyrody.",
-        ua: "Відповідь має бути В ТЕКСТІ. Не додавай знань із фільму чи з уроку природознавства."
-      },
-      text: {
-        pl: [
-          "Filozofowie i astronomowie starożytnej Grecji na podstawie obserwacji nieba starali się wyjaśnić budowę i historię kosmosu. Tak narodziła się kosmologia – jedna z najstarszych nauk.",
-          "Pierwotnie myślano, że mieszkamy na tarczy pływającej pośrodku olbrzymiego oceanu. Jednak już 2500 lat temu stwierdzono, że Ziemia jest kulą. Grecki uczony żyjący na przełomie III i II w. p.n.e. – Eratostenes – określił, że obwód naszej planety wynosi 39690 kilometrów. Wynik, który podał, niewiele się różni od obliczeń współczesnych naukowców."
-        ],
-        ua: [
-          "Абзаци 2–3. Шукай у фрагменті, не з пам’яті."
-        ]
-      },
-      task: {
-        id: "t4-s07-ksztalt",
-        type: "single-choice",
-        question: {
-          pl: "Co początkowo sądzono o kształcie Ziemi — i co stwierdzono później (w tych akapitach)?",
-          ua: "Що спочатку думали про форму Землі — і що ствердили пізніше (в цих абзацах)?"
-        },
-        options: [
-          {
-            id: "a",
-            label: {
-              pl: "Najpierw: tarcza na oceanie. Potem (już 2500 lat temu): Ziemia jest kulą. Eratostenes obliczył obwód.",
-              ua: "Спочатку: щит на океані. Потім (уже 2500 років тому): Земля — куля. Ератосфен обчислив обвід."
-            }
-          },
-          {
-            id: "b",
-            label: {
-              pl: "Od zawsze wiedziano, że Ziemia jest kulą, a Eratostenes tego nie badał.",
-              ua: "Завжди знали, що Земля — куля, а Ератосфен цього не досліджував."
-            }
-          },
-          {
-            id: "c",
-            label: {
-              pl: "Myślano, że Ziemia jest kwadratowa.",
-              ua: "Думали, що Земля квадратна."
-            }
-          }
-        ],
-        answer: "a",
-        hint: {
-          pl: "Znajdź słowa: „Pierwotnie myślano” i „stwierdzono, że Ziemia jest kulą”. Potem nazwisko i liczbę kilometrów.",
-          ua: "Знайди: «Pierwotnie myślano» і «Ziemia jest kulą». Потім прізвище і число кілометрів."
-        },
-        mistakes: [
-          {
-            answer: "b",
-            feedback: {
-              pl: "Tekst mówi: pierwotnie tarcza, potem kula. Eratostenes określił obwód: 39690 kilometrów.",
-              ua: "Текст каже: спочатку щит, потім куля. Ератосфен визначив обвід: 39690 кілометрів."
-            }
-          },
-          {
-            answer: "c",
-            feedback: {
-              pl: "W tekście jest tarcza pływająca po oceanie — nie kwadrat.",
-              ua: "У тексті щит, що плаває в океані — не квадрат."
-            }
-          }
-        ],
-        explanation: {
-          pl: "Grecy chcieli wyjaśnić budowę i historię kosmosu → kosmologia. Kształt: tarcza → kula. Eratostenes, przełom III i II w. p.n.e., obwód 39690 km.",
-          ua: "Греки хотіли пояснити будову космосу → kosmologia. Форма: щит → куля. Ератосфен, 39690 км."
-        }
-      }
-    },
-    // S08
-    {
-      type: "practice",
-      heading: { pl: "Liczby, daty, nazwiska", ua: "Числа, дати, прізвища" },
-      promptPlace: "before",
-      prompt: {
-        pl: "Strategia: gdy w tekście są liczby, daty albo nazwiska — zatrzymaj się i sprawdź, DO CZEGO należą.",
-        ua: "Стратегія: коли в тексті є числа, дати чи прізвища — зупинись і перевір, ДО ЧОГО вони належать."
-      },
-      items: [
-        { pl: "2500 lat temu — stwierdzono, że Ziemia jest kulą.", ua: "2500 років тому — стверджено, що Земля — куля." },
-        { pl: "przełom III i II w. p.n.e. — wtedy żył Eratostenes.", ua: "III–II ст. до н. е. — тоді жив Ератосфен." },
-        { pl: "39690 kilometrów — obwód Ziemi według Eratostenesa.", ua: "39690 км — обвід Землі за Ератосфеном." },
-        { pl: "XVI w. — Kopernik zburzył dawne wyobrażenie.", ua: "XVI ст. — Коперник зруйнував давнє уявлення." }
-      ],
-      task: {
-        id: "t4-s08-liczba",
-        type: "single-choice",
-        question: {
-          pl: "Do czego w tekście należy liczba 39690 kilometrów?",
-          ua: "До чого в тексті належить число 39690 кілометрів?"
-        },
-        options: [
-          {
-            id: "a",
-            label: {
-              pl: "do obwodu Ziemi obliczonego przez Eratostenesa",
-              ua: "до обводу Землі, обчисленого Ератосфеном"
-            }
-          },
-          {
-            id: "b",
-            label: {
-              pl: "do roku wydania dzieła Kopernika",
-              ua: "до року видання твору Коперника"
-            }
-          },
-          {
-            id: "c",
-            label: {
-              pl: "do liczby gwiazd na sferze",
-              ua: "до кількості зірок на сфері"
-            }
-          }
-        ],
-        answer: "a",
-        hint: {
-          pl: "Znajdź w akapicie 3 słowa „obwód naszej planety wynosi…”.",
-          ua: "Знайди в абзаці 3 слова «obwód naszej planety wynosi…»."
-        },
-        mistakes: [
-          {
-            answer: "b",
-            feedback: {
-              pl: "Kopernik to XVI wiek, nie 39690. Ta liczba to obwód Ziemi (Eratostenes).",
-              ua: "Коперник — XVI століття, не 39690. Це число — обвід Землі (Ератосфен)."
-            }
-          },
-          {
-            answer: "c",
-            feedback: {
-              pl: "Tekst nie podaje liczby gwiazd. 39690 km = obwód planety.",
-              ua: "Текст не дає числа зірок. 39690 км = обвід планети."
-            }
-          }
-        ],
-        explanation: {
-          pl: "Eratostenes → 39690 km (obwód). 2500 lat temu → kula. III/II w. p.n.e. → życie Eratostenesa. XVI w. → Kopernik. XVII w. w tekście nie ma.",
-          ua: "Ератосфен → 39690 км. 2500 років тому → куля. XVI ст. → Коперник. XVII ст. у тексті немає."
-        }
-      }
-    },
-    // S09
-    {
-      type: "classification",
-      heading: { pl: "Jak zmieniało się wyobrażenie?", ua: "Як змінювалося уявлення?" },
-      visual: vizGh("t4-modele-swiata.png", {
-        alt: {
-          pl: "Trzy wyobrażenia świata: tarcza, Ziemia w środku, Słońce w centrum",
-          ua: "Три уявлення світу: щит, Земля в центрі, Сонце в центрі"
-        },
-        title: { pl: "Trzy obrazy Wszechświata z tekstu", ua: "Три картини Всесвіту з тексту" },
-        prompt: {
-          pl: "Edukacyjna ilustracja 16:9, klasa 5. Trzy proste schematy obok siebie, podpisane tylko numerami 1 2 3 (bez angielskiego): 1) płaska tarcza na oceanie; 2) kula Ziemi w środku, wokół kręgi planet i Słońce; 3) Słońce w środku, Ziemia na orbicie. Czysta akwarela, bez logotypów, bez watermarków podręcznika.",
-          ua: "Три схеми: щит; Земля в центрі; Сонце в центрі. Акварель, без логотипів."
-        }
-      }),
-      promptPlace: "before",
-      prompt: {
-        pl: "Kolejność TYLKO z tekstu: dawne wyobrażenie → Eratostenes / sfery → Kopernik. Nie dodawaj wiedzy spoza lektury.",
-        ua: "Порядок ЛИШЕ з тексту: давнє уявлення → Ератосфен / сфери → Коперник."
-      },
-      items: [
-        { pl: "1. Tarcza pływająca na oceanie.", ua: "1. Щит на океані." },
-        { pl: "2. Ziemia-kula w środku; planety (też Słońce i Księżyc) na sferach.", ua: "2. Земля-куля в центрі; планети на сферах." },
-        { pl: "3. Słońce w centrum; Ziemia krąży wokół tej gwiazdy (Kopernik, XVI w.).", ua: "3. Сонце в центрі; Земля обертається (Коперник, XVI ст.)." }
-      ],
-      task: {
-        id: "t4-s09-kolejnosc",
-        type: "single-choice",
-        question: {
-          pl: "Która kolejność jest zgodna z tekstem?",
-          ua: "Який порядок відповідає тексту?"
-        },
-        options: [
-          {
-            id: "a",
-            label: {
-              pl: "tarcza na oceanie → Ziemia w środku Wszechświata (sfery) → Kopernik: Słońce w centrum",
-              ua: "щит на океані → Земля в центрі (сфери) → Коперник: Сонце в центрі"
-            }
-          },
-          {
-            id: "b",
-            label: {
-              pl: "Kopernik → tarcza → Eratostenes",
-              ua: "Коперник → щит → Ератосфен"
-            }
-          },
-          {
-            id: "c",
-            label: {
-              pl: "od początku Słońce w centrum, potem tarcza",
-              ua: "від початку Сонце в центрі, потім щит"
-            }
-          }
-        ],
-        answer: "a",
-        hint: {
-          pl: "Czytaj od „Pierwotnie…” do ostatniego akapitu. Co jest NAJPIERW, co PÓŹNIEJ, co w XVI wieku?",
-          ua: "Читай від «Pierwotnie…» до останнього абзацу. Що СПОЧАТКУ, що ПОТІМ, що в XVI столітті?"
-        },
-        mistakes: [
-          {
-            answer: "b",
-            feedback: {
-              pl: "Kopernik jest na końcu tekstu (XVI w.), nie na początku. Najpierw tarcza, potem sfery i środek Ziemi.",
-              ua: "Коперник в кінці тексту (XVI ст.), не на початку. Спочатку щит, потім сфери."
-            }
-          },
-          {
-            answer: "c",
-            feedback: {
-              pl: "Słońce w centrum to dopiero Kopernik. Na początku była tarcza, potem Ziemia jako środek.",
-              ua: "Сонце в центрі — це щойно Коперник. На початку був щит, потім Земля як середина."
-            }
-          }
-        ],
-        explanation: {
-          pl: "Z tekstu: tarcza → kula i Ziemia jako środek (Eratostenes, sfery) → Kopernik zburzył ten obraz. Ilustracje z podręcznika (zad. 2) to te trzy wyobrażenia.",
-          ua: "З тексту: щит → куля і Земля в центрі → Коперник зруйнував цей образ."
-        }
-      }
-    },
-    // S10
-    {
-      type: "check",
-      heading: { pl: "Czy rozumiesz tekst?", ua: "Чи розумієш текст?" },
-      promptPlace: "before",
-      prompt: {
-        pl: "Nie sprawdzamy pamięci na siłę. Jeśli wahasz się — wróć do tekstu. Zaznacz wszystkie zdania ZGODNE z lekturą.",
-        ua: "Це не перевірка пам’яті. Якщо вагаєшся — повернись до тексту. Познач усі речення, ЗГІДНІ з текстом."
-      },
-      task: {
-        id: "t4-s10-prawda",
-        type: "multiple-choice",
-        question: {
-          pl: "Które zdania są prawdziwe według tekstu?",
-          ua: "Які речення правдиві за текстом?"
-        },
-        options: [
-          {
-            id: "a",
-            label: {
-              pl: "Obserwacja nieba pomagała w nawigacji (dotarciu do celu).",
-              ua: "Спостереження неба допомагало в навігації."
-            }
-          },
-          {
-            id: "b",
-            label: {
-              pl: "Eratostenes — jak wielu kosmologów — uważał, że Ziemia jest środkiem Wszechświata.",
-              ua: "Ератосфен — як багато космологів — вважав, що Земля є серединою Всесвіту."
-            }
-          },
-          {
-            id: "c",
-            label: {
-              pl: "Kopernik stwierdził, że Słońce jest w centrum, a Ziemia krąży wokół tej gwiazdy.",
-              ua: "Коперник ствердив, що Сонце в центрі, а Земля обертається навколо цієї зірки."
-            }
-          },
-          {
-            id: "d",
-            label: {
-              pl: "Według tekstu wszyscy starożytni uczeni uważali, że Ziemia jest płaska.",
-              ua: "За текстом усі давні вчені вважали, що Земля плоска."
-            }
-          },
-          {
-            id: "e",
-            label: {
-              pl: "Eratostenes żył w III w. n.e.",
-              ua: "Ератосфен жив у III ст. н. е."
-            }
-          }
-        ],
-        answer: ["a", "b", "c"],
-        hint: {
-          pl: "Odrzuć to, czego tekst NIE mówi albo mówi inaczej: „wszyscy = płaska”; „n.e.” zamiast p.n.e.",
-          ua: "Відкинь те, чого текст НЕ каже або каже інакше: «всі = плоска»; «н. е.» замість до н. е."
-        },
-        explanation: {
-          pl: "Prawda: nawigacja; Ziemia-środek u Eratostenesa; Kopernik i Słońce. Fałsz: nie wszyscy starożytni (już 2500 lat temu kula); Eratostenes: III i II w. p.n.e., nie n.e. W tekście jest XVI w. (Kopernik), nie XVII.",
-          ua: "Правда: навігація; Земля-центр в Ератосфена; Коперник і Сонце. Неправда: не всі давні (уже 2500 років тому куля); Ератосфен — до н. е., не н. е."
-        }
-      }
-    },
-    // S11
-    {
-      type: "practice",
-      heading: { pl: "Znajdź dowód w tekście", ua: "Знайди доказ у тексті" },
-      promptPlace: "before",
-      prompt: {
-        pl: "Nie wystarczy powiedzieć „Kopernik zmienił wyobrażenie”. Trzeba pokazać, SKĄD to wiemy.",
-        ua: "Недостатньо сказати «Коперник змінив уявлення». Треба показати, ЗВІДКИ ми це знаємо."
-      },
-      text: {
-        pl: [
-          "Odpowiedź: Kopernik zmienił wyobrażenie o miejscu Ziemi we Wszechświecie.",
-          "Teraz wybierz DOWÓD — zdanie, które to potwierdza."
-        ],
-        ua: [
-          "Відповідь: Коперник змінив уявлення про місце Землі у Всесвіті.",
-          "Тепер вибери ДОКАЗ — речення, яке це підтверджує."
-        ]
-      },
-      task: {
-        id: "t4-s11-dowod",
-        type: "single-choice",
-        question: {
-          pl: "Który fragment jest dowodem?",
-          ua: "Який уривок є доказом?"
-        },
-        options: [
-          {
-            id: "a",
-            label: {
-              pl: "„…polski odkrywca stwierdza, że to Słońce jest w centrum Wszechświata, a Ziemia krąży wokół tej gwiazdy.”",
-              ua: "«…польський відкривач стверджує, що Сонце в центрі Всесвіту, а Земля обертається навколо цієї зірки.»"
-            }
-          },
-          {
-            id: "b",
-            label: {
-              pl: "„Pierwsi astronomowie pomagali w nawigacji, układali kalendarze…”",
-              ua: "«Перші астрономи допомагали в навігації, складали календарі…»"
-            }
-          },
-          {
-            id: "c",
-            label: {
-              pl: "„…obwód naszej planety wynosi 39690 kilometrów.”",
-              ua: "«…обвід нашої планети становить 39690 кілометрів.»"
-            }
-          }
-        ],
-        answer: "a",
-        hint: {
-          pl: "Dowód musi mówić o NOWYM obrazie świata, nie o nawigacji i nie o obwodzie.",
-          ua: "Доказ має говорити про НОВУ картину світу, не про навігацію і не про обвід."
-        },
-        mistakes: [
-          {
-            answer: "b",
-            feedback: {
-              pl: "To dowód na pracę pierwszych astronomów, nie na zmianę obrazu świata przez Kopernika. Szukaj ostatniego akapitu.",
-              ua: "Це доказ про роботу перших астрономів, не про зміну картини світу Коперником. Шукай останній абзац."
-            }
-          },
-          {
-            answer: "c",
-            feedback: {
-              pl: "To dowód na obliczenie Eratostenesa. Kopernik: ostatni akapit — Słońce w centrum, Ziemia krąży.",
-              ua: "Це доказ про обчислення Ератосфена. Коперник: останній абзац."
-            }
-          }
-        ],
-        explanation: {
-          pl: "Zasada: odpowiedź + dowód. Tu dowód to ostatni akapit (dzieło, Słońce w centrum, Ziemia krąży). Obwód i nawigacja są ważne, ale odpowiadają na inne pytania.",
-          ua: "Правило: відповідь + доказ. Тут доказ — останній абзац. Обвід і навігація — на інші питання."
-        }
-      }
-    },
-    // S12
-    {
-      type: "guided-practice",
-      heading: { pl: "Przeczytaj jak lektor", ua: "Прочитай як диктор" },
-      promptPlace: "before",
-      prompt: {
-        pl: "W podręczniku (zad. 3): wyobraź sobie, że tekst jest częścią programu telewizyjnego. Czytaj na głos — silnik nie oceni wymowy, ale ty możesz sprawdzić listę.",
-        ua: "У підручнику (завд. 3): уяви, що текст — частина телепрограми. Читай уголос — програма не оцінить вимову, але ти можеш перевірити список."
-      },
-      items: [
-        { pl: "Czytam wyraźnie.", ua: "Читаю виразно." },
-        { pl: "Nie spieszę się; robię pauzy.", ua: "Не поспішаю; роблю паузи." },
-        { pl: "Zwracam uwagę na sens zdania.", ua: "Звертаю увагу на зміст речення." },
-        { pl: "Głosem podkreślam ważne informacje (nazwiska, liczby, daty).", ua: "Голосом підкреслюю важливу інформацію." }
-      ],
-      text: {
-        pl: "W zespołach: jeden czyta, drugi słucha, czy tempo i pauzy pomagają zrozumieć.",
-        ua: "У парах: один читає, другий слухає, чи темп і паузи допомагають зрозуміти."
-      },
-      task: {
-        id: "t4-s12-glosno",
-        type: "multiple-choice",
-        question: {
-          pl: "Co naprawdę pomaga przy głośnym czytaniu tego tekstu? Zaznacz wszystkie dobre zasady.",
-          ua: "Що справді допомагає при голосному читанні? Познач усі добрі правила."
-        },
-        options: [
-          {
-            id: "a",
-            label: { pl: "czytam wyraźnie i nie za szybko", ua: "читаю виразно і не надто швидко" }
-          },
-          {
-            id: "b",
-            label: { pl: "robię pauzy, żeby słuchacz złapał myśl", ua: "роблю паузи, щоб слухач зловив думку" }
-          },
-          {
-            id: "c",
-            label: {
-              pl: "głosem zaznaczam liczby i nazwiska (Eratostenes, 39690, Kopernik)",
-              ua: "голосом позначаю числа і прізвища"
-            }
-          },
-          {
-            id: "d",
-            label: {
-              pl: "czytam jak najszybciej, żeby skończyć pierwszy",
-              ua: "читаю якомога швидше, щоб закінчити першим"
-            }
-          }
-        ],
-        answer: ["a", "b", "c"],
-        hint: {
-          pl: "Lektor w telewizji ma być zrozumiały. Szybkość na rekord nie pomaga.",
-          ua: "Диктор на телебаченні має бути зрозумілим. Швидкість на рекорд не допомагає."
-        },
-        explanation: {
-          pl: "Wyraźnie, tempo, pauzy, sens, podkreślenie liczb i nazwisk. Nie wyścig. W zeszycie możesz zaznaczyć ołówkiem miejsca pauz.",
-          ua: "Виразно, темп, паузи, зміст, наголос на числах і прізвищах. Не перегони."
-        }
-      }
-    },
-    // S13
-    {
-      type: "challenge",
-      heading: { pl: "Własna krótka informacja", ua: "Власна коротка інформація" },
-      promptPlace: "before",
-      prompt: {
-        pl: "Na podstawie tekstu powiedz lub napisz 3–4 zdania. Najpierw tu jedno zdanie o Koperniku. Resztę — według planu — w zeszycie.",
-        ua: "На основі тексту скажи або напиши 3–4 речення. Спочатку тут одне речення про Коперника. Решту — за планом — у зошиті."
-      },
-      items: [
-        { pl: "Najpierw… (tarcza / ocean)", ua: "Спочатку…" },
-        { pl: "Później… (kula, Eratostenes)", ua: "Пізніше…" },
-        { pl: "Następnie… (Ziemia w środku, sfery)", ua: "Далі…" },
-        { pl: "W XVI wieku… (Kopernik)", ua: "У XVI столітті…" }
-      ],
-      task: {
-        id: "t4-s13-kopernik",
-        type: "input-text",
-        question: {
-          pl: "Dokończ jednym zdaniem: W XVI wieku Kopernik stwierdził, że ______.",
-          ua: "Доповни одним реченням: W XVI wieku Kopernik stwierdził, że ______."
-        },
-        answer: [
-          "Słońce jest w centrum Wszechświata",
-          "Słońce jest w centrum Wszechświata.",
-          "to Słońce jest w centrum Wszechświata",
-          "to Słońce jest w centrum Wszechświata.",
-          "Słońce jest w centrum Wszechświata, a Ziemia krąży wokół tej gwiazdy",
-          "Słońce jest w centrum Wszechświata, a Ziemia krąży wokół tej gwiazdy.",
-          "Ziemia krąży wokół Słońca",
-          "Ziemia krąży wokół Słońca.",
-          "to Słońce jest w centrum, a Ziemia krąży wokół tej gwiazdy",
-          "to Słońce jest w centrum, a Ziemia krąży wokół tej gwiazdy."
-        ],
-        hint: {
-          pl: "Ostatni akapit: kto jest w centrum? Co robi Ziemia?",
-          ua: "Останній абзац: хто в центрі? Що робить Земля?"
-        },
-        explanation: {
-          pl: "Model z tekstu: Słońce jest w centrum, a Ziemia krąży wokół tej gwiazdy. W zeszycie złóż całość: Najpierw tarcza. Później kula i obwód (Eratostenes). Następnie Ziemia jako środek i sfery. W XVI wieku Kopernik…",
-          ua: "Зразок: Сонце в центрі, Земля обертається. У зошиті склади ціле за планом."
-        }
-      }
-    },
-    // S14
-    {
-      type: "check",
-      heading: { pl: "Mini-sprawdzenie · nowy fragment", ua: "Міні-перевірка · новий уривок" },
-      promptPlace: "before",
-      prompt: {
-        pl: "Nowy, krótki tekst (EduMost). Strategia ta sama: czytaj → znajdź → odpowiedz → wskaż dowód.",
-        ua: "Новий короткий текст (EduMost). Та сама стратегія: читай → знайди → відповідай → вкажи доказ."
-      },
-      text: {
-        pl: [
-          "W 1990 roku wyniesiono na orbitę teleskop Hubble’a. Dzięki niemu astronomowie zobaczyli dalekie galaktyki wyraźniej niż wcześniej.",
-          "Teleskop nie leci na inną planetę — krąży wokół Ziemi i obserwuje kosmos."
-        ],
-        ua: [
-          "Новий фрагмент. Читай польською. Відповідь шукай у цих двох реченнях."
-        ]
-      },
-      task: {
-        id: "t4-s14-hubble",
-        type: "single-choice",
-        question: {
-          pl: "Gdzie — według tego fragmentu — znajduje się teleskop Hubble’a, gdy obserwuje kosmos? Wskaż też dowód.",
-          ua: "Де — за цим уривком — перебуває телескоп Габбла, коли спостерігає космос? Вкажи також доказ."
-        },
-        options: [
-          {
-            id: "a",
-            label: {
-              pl: "Krąży wokół Ziemi. Dowód: „krąży wokół Ziemi i obserwuje kosmos.”",
-              ua: "Обертається навколо Землі. Доказ: «krąży wokół Ziemi i obserwuje kosmos.»"
-            }
-          },
-          {
-            id: "b",
-            label: {
-              pl: "Leci na Marsa. Dowód: w tekście jest słowo planeta.",
-              ua: "Летить на Марс. Доказ: у тексті є слово planeta."
-            }
-          },
-          {
-            id: "c",
-            label: {
-              pl: "Stoi w Grecji obok Eratostenesa. Dowód: z poprzedniego tekstu.",
-              ua: "Стоїть у Греції біля Ератосфена. Доказ: з попереднього тексту."
-            }
-          }
-        ],
-        answer: "a",
-        hint: {
-          pl: "Szukaj w DRUGIM zdaniu. Co teleskop robi zamiast lotu na inną planetę?",
-          ua: "Шукай у ДРУГОМУ реченні. Що телескоп робить замість польоту на іншу планету?"
-        },
-        mistakes: [
-          {
-            answer: "b",
-            feedback: {
-              pl: "Tekst mówi wprost: „nie leci na inną planetę”. Słowo „planeta” jest w przeczeniu. Dowód: krąży wokół Ziemi.",
-              ua: "Текст каже прямо: «nie leci na inną planetę». Слово «planeta» у запереченні. Доказ: krąży wokół Ziemi."
-            }
-          },
-          {
-            answer: "c",
-            feedback: {
-              pl: "To inny tekst. Tu nie ma Eratostenesa. Informacji szukasz w TYM fragmencie: krąży wokół Ziemi.",
-              ua: "Це інший текст. Тут немає Ератосфена. Інформацію шукаєш У ЦЬОМУ уривку."
-            }
-          }
-        ],
-        explanation: {
-          pl: "Rok 1990 i Hubble to nowa informacja. Strategia zadziałała: znalazłeś miejsce teleskopu i zdanie-dowód. Nie przenosisz Eratostenesa do nowego tekstu.",
-          ua: "1990 і Габбл — нова інформація. Стратегія спрацювала: місце телескопа + речення-доказ."
-        }
-      }
-    },
-    // S15
-    {
-      type: "summary",
-      heading: { pl: "Jak czytać tekst informacyjny?", ua: "Як читати інформаційний текст?" },
-      items: [
-        { pl: "Najpierw przeczytaj całość.", ua: "Спочатку прочитай ціле." },
-        { pl: "Zwróć uwagę na tytuł.", ua: "Зверни увагу на заголовок." },
-        { pl: "Wyjaśnij trudne słowa.", ua: "Поясни складні слова." },
-        { pl: "Szukaj informacji w konkretnych akapitach.", ua: "Шукай інформацію в конкретних абзацах." },
-        { pl: "Zwracaj uwagę na nazwiska, liczby i daty.", ua: "Звертай увагу на прізвища, числа і дати." },
-        { pl: "Odpowiadaj na podstawie tekstu i — gdy możesz — pokaż dowód.", ua: "Відповідай на основі тексту і — коли можеш — покажи доказ." }
-      ],
-      promptPlace: "after",
-      prompt: {
-        pl: "Zeszyt (krótko, nie cały tekst): temat „Ziemia we Wszechświecie”; dawne wyobrażenia; Eratostenes i obwód; Kopernik — Słońce w centrum, Ziemia krąży. Zad. 4 z podręcznika (nowe odkrycia w astronomii) możesz zrobić w domu: jedna krótka notatka.",
-        ua: "Зошит (коротко, не весь текст): тема; давні уявлення; Ератосфен і обвід; Коперник. Завд. 4 з підручника можна вдома: одна коротка нотатка."
-      },
-      task: {
-        id: "t4-s15-strategia",
-        type: "single-choice",
-        question: {
-          pl: "Co robić, gdy nie pamiętasz odpowiedzi?",
-          ua: "Що робити, коли не пам’ятаєш відповіді?"
-        },
-        options: [
-          {
-            id: "a",
-            label: {
-              pl: "Wracam do tekstu, znajduję zdanie, rozumiem je i wtedy odpowiadam.",
-              ua: "Повертаюся до тексту, знаходжу речення, розумію його і тоді відповідаю."
-            }
-          },
-          {
-            id: "b",
-            label: {
-              pl: "Zgaduję, bo tekstu nie wolno oglądać drugi raz.",
-              ua: "Здогадуюсь, бо текст не можна дивитися вдруге."
-            }
-          },
-          {
-            id: "c",
-            label: {
-              pl: "Wymyślam odpowiedź z lekcji astronomii, nawet jeśli jej nie ma w tekście.",
-              ua: "Вигадую відповідь з уроку астрономії, навіть якщо її немає в тексті."
-            }
-          }
-        ],
-        answer: "a",
-        hint: {
-          pl: "Cel lekcji: czytanie, nie pamięć. Gdzie jest informacja?",
-          ua: "Мета уроку: читання, не пам’ять. Де інформація?"
-        },
-        mistakes: [
-          {
-            answer: "b",
-            feedback: {
-              pl: "Wolno wracać do tekstu. Właśnie po to jest czytanie ze zrozumieniem.",
-              ua: "Можна повертатися до тексту. Саме для цього є читання з розумінням."
-            }
-          },
-          {
-            answer: "c",
-            feedback: {
-              pl: "Na tej lekcji odpowiada się na podstawie TEKSTU, nie z innej wiedzy.",
-              ua: "На цьому уроці відповідають на основі ТЕКСТУ, не з інших знань."
-            }
-          }
-        ],
-        explanation: {
-          pl: "Nie musisz znać odpowiedzi z pamięci. Możesz wrócić do tekstu, znaleźć zdanie, zrozumieć je i dopiero wtedy odpowiedzieć. To jest „Doskonalimy czytanie”.",
-          ua: "Не треба знати відповідь з пам’яті. Можна повернутися до тексту, знайти речення, зрозуміти і тоді відповісти."
-        }
+      explanation: {
+        pl: "Dziś: glosy, fakty z tekstu, trzy wyobrażenia świata, głośne czytanie, notatka. Obwodu Ziemi nie mierzymy.",
+        ua: "Сьогодні: глоси, факти з тексту, три уявлення світу, голосне читання, нотатка. Окружність Землі не вимірюємо."
       }
     }
-  ]
-};
+  },
+  // 2
+  {
+    type: "example",
+    heading: { pl: "Słowa z pól", ua: "Слова з полів" },
+    formula: "s. 14  ·  glosy  ·  ramka",
+    promptPlace: "before",
+    prompt: {
+      pl: "Sześć glos z pomarańczowego pola. Najpierw ramka, potem rozbiór. Te słowa zaraz usłyszysz w tekście.",
+      ua: "Шість глос із помаранчевого поля. Спочатку рамка, потім розбір. Ці слова зараз почуєш у тексті."
+    },
+    text: {
+      pl: "astronom  ·  starożytny  ·  nawigacja  ·  kosmologia  ·  sfery  ·  kres",
+      ua: "astronom — астроном  ·  starożytny — давній, античний  ·  nawigacja — навігація  ·  kosmologia — космологія  ·  sfery — сфери  ·  kres — кінець, межа"
+    },
+    items: [
+      { pl: "*astronom* — naukowiec zajmujący się *astronomią*: nauką o ciałach niebieskich, ich budowie i ruchach.", ua: "*astronom* — астроном: науковець, який займається *астрономією* — наукою про небесні тіла, їхню будову і рухи." },
+      { pl: "*starożytny* — odnoszący się do czasów od około 4000 r. *p.n.e.* (przed naszą erą). *p.n.e.* ≠ *n.e.*", ua: "*starożytny* — давній / античний: стосується часів від близько 4000 р. *до н.е.* Увага: *p.n.e.* — до н.е.; *n.e.* — н.е." },
+      { pl: "*nawigacja* — dział wiedzy o prowadzeniu statków morskich lub powietrznych do wyznaczonego celu oraz o określaniu ich położenia na mapie.", ua: "*nawigacja* — навігація: як вести корабель чи літак до мети і визначити місце на мапі." },
+      { pl: "*kosmologia* — nauka badająca historię i budowę Wszechświata.", ua: "*kosmologia* — космологія: наука, що досліджує історію і будову Всесвіту." },
+      { pl: "*sfery* — tu: wyobrażone sklepienia niebieskie, kuliste powierzchnie okalające Ziemię.", ua: "*sfery* — тут: уявні небесні склепіння, кулясті поверхні навколо Землі (не «сфера» як м’яч на уроці гімнастики)." },
+      { pl: "*kres* — koniec. W tekście: kres Wszechświata = tu Wszechświat się kończy.", ua: "*kres* — кінець, межа. У тексті: kres Wszechświata = тут Всесвіт закінчується." }
+    ],
+    task: {
+      id: "t4-s02-glosy",
+      type: "single-choice",
+      question: {
+        pl: "Która para NA PEWNO zgadza się z glosą?",
+        ua: "Яка пара НАПЕВНО збігається з глосою?"
+      },
+      options: [
+        { id: "a", label: { pl: "nawigacja — prowadzenie statku do celu; kres — koniec", ua: "nawigacja — вести корабель до мети; kres — кінець" } },
+        { id: "b", label: { pl: "astronom — poeta, który pisze o gwiazdach", ua: "астроном — поет, який пише про зірки" } },
+        { id: "c", label: { pl: "starożytny — to, co zdarzyło się wczoraj w szkole", ua: "starożytny — те, що було вчора в школі" } }
+      ],
+      answer: "a",
+      hint: {
+        pl: "Glosa *nawigacja* mówi o statkach i mapie. *Kres* = koniec. Astronom to naukowiec, nie poeta z lekcji 2.",
+        ua: "Глоса *nawigacja* — про кораблі і мапу. *Kres* = кінець. Астроном — науковець, не поет з уроку 2."
+      },
+      explanation: {
+        pl: "Nawigacja i kres zgadzają się z polem. Astronom bada ciała niebieskie. Starożytny to czasy około 4000 r. p.n.e., nie wczoraj.",
+        ua: "Навігація і kres збігаються з полем. Астроном досліджує небесні тіла. Starożytny — часи близько 4000 р. до н.е., не вчора."
+      }
+    }
+  },
+  // 3
+  {
+    type: "concept",
+    heading: { pl: "Zanim przeczytasz", ua: "Перш ніж читати" },
+    formula: "s. 14  ·  tytuł  ·  ilustracja",
+    promptPlace: "before",
+    prompt: {
+      pl: "Tytuł: *Ziemia we Wszechświecie*. Ilustracja: dawny obserwator nieba. Jeszcze nie czytasz całości — najpierw gatunek i oczekiwanie.",
+      ua: "Заголовок: *Ziemia we Wszechświecie*. Ілюстрація: давній спостерігач неба. Ще не читай усе — спочатку жанр і очікування."
+    },
+    visual: vizGhT4("t4-astronom.jpg", {
+      prompt: "Obserwator nieba i Kosmos.",
+      alt: {
+        pl: "Dawny uczony z lunetą patrzy w Kosmos: planety i gwiazdy.",
+        ua: "Давній учений із підзорною трубою дивиться в космос: планети і зірки."
+      }
+    }),
+    text: {
+      pl: "Tekst **popularnonaukowy** przekazuje **informacje** o świecie i nauce. Czytamy, żeby znaleźć **fakty** — nie zgadujemy z tytułu i nie szukamy nastroju jak w *Preludium*.",
+      ua: "**Науково-популярний** текст передає **інформацію** про світ і науку. Читаємо, щоб знайти **факти** — не вгадуємо із заголовка і не шукаємо настрій, як у *Preludium*."
+    },
+    items: [
+      { pl: "*Fakt* — informacja z tekstu, którą można sprawdzić (data, liczba, kto, co).", ua: "*Fakt* — факт: інформація з тексту, яку можна перевірити (дата, число, хто, що)." },
+      { pl: "*Opinia* — twoje zdanie (*ciekawe, piękne*). W zadaniu 1 pytamy o fakty, nie o opinię.", ua: "*Opinia* — думка (*цікаво, гарно*). У завданні 1 питаємо про факти, не про думку." }
+    ],
+    task: {
+      id: "t4-s03-gatunek",
+      type: "single-choice",
+      question: {
+        pl: "Czym NA PEWNO jest ten tekst?",
+        ua: "Чим НАПЕВНО є цей текст?"
+      },
+      options: [
+        { id: "a", label: { pl: "Tekstem popularnonaukowym: informacje o Ziemi i Wszechświecie.", ua: "Науково-популярним текстом: інформація про Землю і Всесвіт." } },
+        { id: "b", label: { pl: "Wierszem z apostrofą do kasztanów.", ua: "Віршем з апострофою до каштанів." } },
+        { id: "c", label: { pl: "Bajką o smoku na tarczy w oceanie.", ua: "Казкою про дракона на щиті в океані." } }
+      ],
+      answer: "a",
+      hint: {
+        pl: "Tytuł i ilustracja zapowiadają wiedzę, nie recytację wiersza z lekcji 2.",
+        ua: "Заголовок і ілюстрація обіцяють знання, не декламацію вірша з уроку 2."
+      },
+      explanation: {
+        pl: "Popularnonaukowy = fakty o świecie. Preludium było wierszem. Tarcza w oceanie pojawi się w tekście jako dawne *wyobrażenie*, nie jako bajka.",
+        ua: "Науково-популярний = факти про світ. Preludium був віршем. Щит в океані з’явиться в тексті як давнє *уявлення*, не як казка."
+      }
+    }
+  },
+  // 4
+  {
+    type: "observe",
+    heading: { pl: "Czytamy (1)", ua: "Читаємо (1)" },
+    formula: "s. 14  ·  Ziemia we Wszechświecie",
+    promptPlace: "before",
+    prompt: {
+      pl: "Tekstu nie tłumaczymy linijka w linijkę — czytasz *po polsku*. Ukraiński pod spodem to *pomoc*. Odsłoń dwa kroki. Pytaj: *kto*? *kiedy*? *co stwierdzono*?",
+      ua: "Текст не перекладаємо рядок у рядок — читаєш *польською*. Українська знизу — *допомога*. Відкрий два кроки. Питай: *хто*? *коли*? *що стверджено*?"
+    },
+    reveal: true,
+    steps: [
+      {
+        formula: "niebo i kosmologia",
+        text: {
+          pl: [
+            "Od niepamiętnych czasów ludzie uważnie obserwowali niebo. Pierwsi astronomowie pomagali w nawigacji, układali kalendarze, objaśniali wolę bogów.",
+            "Filozofowie i astronomowie starożytnej Grecji na podstawie obserwacji nieba starali się wyjaśnić budowę i historię Kosmosu. Tak narodziła się kosmologia – jedna z najstarszych nauk."
+          ],
+          ua: [
+            "Від давніх-давен люди уважно дивились у небо. Перші астрономи допомагали в навігації, складали календарі, пояснювали волю богів.",
+            "Філософи й астрономи давньої Греції з спостережень неба хотіли пояснити будову й історію Космосу. Так народилася космологія — одна з найдавніших наук."
+          ]
+        }
+      },
+      {
+        formula: "tarcza, kula, Eratostenes",
+        text: {
+          pl: [
+            "Pierwotnie myślano, że mieszkamy na tarczy pływającej pośrodku olbrzymiego oceanu. Jednak już 2500 lat temu stwierdzono, że Ziemia jest kulą.",
+            "Grecki uczony żyjący na przełomie III i II w. p.n.e. – Eratostenes – określił, że obwód naszej planety wynosi 39690 kilometrów. Wynik, który podał, niewiele się różni od obliczeń współczesnych naukowców."
+          ],
+          ua: [
+            "Спочатку думали, що живемо на щиті (диску), який пливе посеред величезного океану. Але вже 2500 років тому ствердили: Земля — куля.",
+            "Грецький учений на межі III і II ст. *до н.е.* — Ератостен — визначив окружність планети: 39690 км. Це майже як у сучасних науковців."
+          ]
+        }
+      }
+    ],
+    task: {
+      id: "t4-s04-kula",
+      type: "single-choice",
+      question: {
+        pl: "Co NA PEWNO wynika z tej części tekstu?",
+        ua: "Що НАПЕВНО випливає з цієї частини тексту?"
+      },
+      options: [
+        { id: "a", label: { pl: "Najpierw myślano o tarczy w oceanie; już 2500 lat temu stwierdzono, że Ziemia jest kulą.", ua: "Спочатку думали про щит в океані; уже 2500 років тому ствердили, що Земля — куля." } },
+        { id: "b", label: { pl: "Wszyscy starożytni uczeni do końca uważali, że Ziemia jest płaska.", ua: "Усі давні вчені до кінця вважали, що Земля плоска." } },
+        { id: "c", label: { pl: "Eratostenes żył w III wieku naszej ery (n.e.).", ua: "Ератостен жив у III столітті нашої ери (н.е.)." } }
+      ],
+      answer: "a",
+      hint: {
+        pl: "Szukaj *pierwotnie* i *jednak już 2500 lat temu*. Potem: *p.n.e.* czy *n.e.*?",
+        ua: "Шукай *pierwotnie* і *jednak już 2500 lat temu*. Потім: *p.n.e.* чи *n.e.*?"
+      },
+      explanation: {
+        pl: "Tarcza = dawne wyobrażenie. Potem kula. Eratostenes: przełom III i II w. *p.n.e.*, nie n.e. Nie wszyscy starożytni trzymali się płaskiej Ziemi.",
+        ua: "Щит = давнє уявлення. Потім куля. Ератостен: межа III і II ст. *до н.е.*, не н.е. Не всі давні тримались плоскої Землі."
+      }
+    }
+  },
+  // 5
+  {
+    type: "observe",
+    heading: { pl: "Czytamy (2)", ua: "Читаємо (2)" },
+    formula: "s. 14  ·  środek i Kopernik",
+    promptPlace: "before",
+    prompt: {
+      pl: "Druga kolumna. Kto stoi w środku Wszechświata? Kto to *zburzył*? Odsłoń dwa kroki. Na końcu — źródło (skąd tekst).",
+      ua: "Друга колонка. Хто в центрі Всесвіту? Хто це *зруйнував*? Відкрий два кроки. Наприкінці — джерело (звідки текст)."
+    },
+    reveal: true,
+    steps: [
+      {
+        formula: "Ziemia w środku",
+        text: {
+          pl: [
+            "Dla Eratostenesa, podobnie jak dla większości ówczesnych i późniejszych kosmologów, Ziemia stanowiła środek Wszechświata. Wokół niej po różnych sferach miały się poruszać planety. Zaliczono do nich też Słońce i Księżyc. Wszystko razem otaczała sfera zewnętrzna, do której były przymocowane gwiazdy stałe.",
+            "Wierzono, że sfera ta jest kresem Wszechświata. Za nią znajdował się obszar niedostępny dla ludzi. Zamieszkiwali go bogowie."
+          ],
+          ua: [
+            "Для Ератостена — і для більшості тодішніх і пізніших космологів — Земля була центром Всесвіту. Навколо неї по сферах мали рухатись планети. До них зараховували також Сонце і Місяць. Усе оточувала зовнішня сфера з нерухомими зірками.",
+            "Вірили, що ця сфера — *kres* (кінець) Всесвіту. За нею — місце, недоступне людям. Там жили боги."
+          ]
+        }
+      },
+      {
+        formula: "Kopernik",
+        text: {
+          pl: [
+            "Takie wyobrażenie świata zburzył w XVI w. Mikołaj Kopernik. W roku śmierci astronoma opublikowano dzieło „O obrotach sfer niebieskich”, w którym polski odkrywca stwierdza, że to Słońce jest w centrum Wszechświata, a Ziemia krąży wokół tej gwiazdy.",
+            "Na podstawie książki Ericha Überlackera (czyt. Iberlakera) Kosmos. U granic przestrzeni i czasu, tłumaczenie: Joachim Mader."
+          ],
+          ua: [
+            "Таке уявлення зруйнував у XVI ст. Миколай Коперник. У рік смерті астронома видали твір «Про обертання небесних сфер»: у центрі Сонце, а Земля кружляє навколо цієї зірки.",
+            "Джерело: книжка Еріха Іберлакера *Kosmos. U granic przestrzeni i czasu*, переклад Йоахіма Мадера."
+          ]
+        }
+      }
+    ],
+    task: {
+      id: "t4-s05-kopernik",
+      type: "single-choice",
+      question: {
+        pl: "Kto NA PEWNO zburzył wyobrażenie, że Ziemia jest środkiem Wszechświata?",
+        ua: "Хто НАПЕВНО зруйнував уявлення, що Земля є центром Всесвіту?"
+      },
+      options: [
+        { id: "a", label: { pl: "Mikołaj Kopernik w XVI wieku: Słońce w centrum, Ziemia krąży wokół gwiazdy.", ua: "Миколай Коперник у XVI столітті: Сонце в центрі, Земля кружляє навколо зірки." } },
+        { id: "b", label: { pl: "Eratostenes w XVIII wieku.", ua: "Ератостен у XVIII столітті." } },
+        { id: "c", label: { pl: "Jan Lechoń w wierszu Preludium.", ua: "Ян Лехонь у вірші Preludium." } }
+      ],
+      answer: "a",
+      hint: {
+        pl: "Szukaj *zburzył w XVI w.* i nazwiska. XVIII i Preludium nie ma w tej kolumnie.",
+        ua: "Шукай *zburzył w XVI w.* і прізвище. XVIII і Preludium у цій колонці немає."
+      },
+      explanation: {
+        pl: "Kopernik, XVI w., Słońce w centrum. Eratostenes był wcześniej i stawiał Ziemię w środku. To nie wiersz z lekcji 2.",
+        ua: "Коперник, XVI ст., Сонце в центрі. Ератостен був раніше і ставив Землю в центрі. Це не вірш з уроку 2."
+      }
+    }
+  },
+  // 6
+  {
+    type: "practice",
+    heading: { pl: "Prawda czy fałsz", ua: "Правда чи хиба" },
+    formula: "s. 14  ·  zad. 1",
+    promptPlace: "before",
+    prompt: {
+      pl: "Podręcznik: na podstawie *tekstu* ustal, które zdania są prawdziwe, a które fałszywe. Dowód = cytat albo parafraza, nie pamięć z T3.",
+      ua: "Підручник: на основі *тексту* визнач, які речення правдиві, а які хибні. Доказ = цитата або переказ, не пам’ять з T3."
+    },
+    items: [
+      { pl: "Szukaj w tekście: *nawigacja* / marynarze; obwód *39690 km*; *kula* i *2500 lat*.", ua: "Шукай у тексті: *nawigacja* / моряки; окружність *39690 км*; *куля* і *2500 років*." },
+      { pl: "Uważaj na pułapki: *wszyscy*; *poprzednicy* Eratostenesa; *p.n.e.* czy *n.e.*; *XVI* czy *XVIII*.", ua: "Увага на пастки: *усі*; *попередники* Ератостена; *до н.е.* чи *н.е.*; *XVI* чи *XVIII*." }
+    ],
+    task: {
+      id: "t4-s06-pf",
+      type: "multiple-choice",
+      question: {
+        pl: "Które zdania NA PEWNO są prawdziwe według tekstu? Zaznacz wszystkie pewne.",
+        ua: "Які речення НАПЕВНО правдиві за текстом? Познач усі певні."
+      },
+      options: [
+        { id: "a", label: { pl: "Wyniki obserwacji nieba pomagały marynarzom w dotarciu do celu.", ua: "Результати спостережень неба допомагали морякам дістатися мети." } },
+        { id: "b", label: { pl: "Współczesne obliczenia obwodu Ziemi niewiele różnią się od wyniku Eratostenesa.", ua: "Сучасні обчислення окружності Землі мало відрізняються від результату Ератостена." } },
+        { id: "c", label: { pl: "Zarówno Eratostenes, jak i jego poprzednicy uważali, że Ziemia jest centrum Kosmosu.", ua: "І Ератостен, і його попередники вважали, що Земля — центр Космосу." } },
+        { id: "d", label: { pl: "Według wszystkich starożytnych uczonych Ziemia jest płaska.", ua: "За всіма давніми вченими Земля плоска." } },
+        { id: "e", label: { pl: "Już ponad 1000 lat temu stwierdzono, że Ziemia jest kulą.", ua: "Уже понад 1000 років тому ствердили, що Земля — куля." } },
+        { id: "f", label: { pl: "Eratostenes żył w III w. n.e.", ua: "Ератостен жив у III ст. н.е." } },
+        { id: "g", label: { pl: "W XVIII w. potwierdzono, że Ziemia krąży wokół Słońca.", ua: "У XVIII ст. підтвердили, що Земля кружляє навколо Сонця." } }
+      ],
+      answer: ["a", "b", "e"],
+      hint: {
+        pl: "Trzy prawdy: nawigacja; 39690 km ≈ dziś; 2500 lat > 1000. Reszta myli p.n.e. / n.e., XVI / XVIII albo «wszyscy».",
+        ua: "Три правди: навігація; 39690 км ≈ сьогодні; 2500 років > 1000. Решта плутає до н.е. / н.е., XVI / XVIII або «всі»."
+      },
+      explanation: {
+        pl: "a, b, e — w tekście. c: poprzednicy = tarcza, nie centrum sfer. d: nie wszyscy (już kula). f: p.n.e., nie n.e. g: XVI w. Kopernik, nie XVIII.",
+        ua: "a, b, e — в тексті. c: попередники = щит, не центр сфер. d: не всі (вже куля). f: до н.е., не н.е. g: XVI ст. Коперник, не XVIII."
+      }
+    }
+  },
+  // 7
+  {
+    type: "observe",
+    heading: { pl: "Trzy wyobrażenia świata", ua: "Три уявлення світу" },
+    formula: "s. 14  ·  zad. 2",
+    promptPlace: "before",
+    prompt: {
+      pl: "Podręcznik: do ilustracji dopasuj podpisy. *A* wyobrażenie pierwotne. *B* wyobrażenie Eratostenesa. *C* wyobrażenie Kopernika. Patrz: *co jest w środku*?",
+      ua: "Підручник: до ілюстрацій добери підписи. *A* первісне уявлення. *B* уявлення Ератостена. *C* уявлення Коперника. Дивись: *що в центрі*?"
+    },
+    visual: vizGhT4("t4-modele.png", {
+      prompt: "Trzy modele świata: 1 Słońce, 2 Ziemia, 3 tarcza.",
+      alt: {
+        pl: "Trzy rysunki: (1) Słońce w środku i planety, (2) Ziemia w środku i sfery, (3) wyspa-tarcza w oceanie.",
+        ua: "Три рисунки: (1) Сонце в центрі і планети, (2) Земля в центрі і сфери, (3) острів-щит в океані."
+      }
+    }),
+    items: [
+      { pl: "*A* wyobrażenie pierwotne — szukaj tarczy / wyspy w oceanie.", ua: "*A* первісне уявлення — шукай щит / острів в океані." },
+      { pl: "*B* wyobrażenie Eratostenesa — *Ziemia* w środku, wokół sfery.", ua: "*B* уявлення Ератостена — *Земля* в центрі, навколо сфери." },
+      { pl: "*C* wyobrażenie Kopernika — *Słońce* w środku, Ziemia na orbicie.", ua: "*C* уявлення Коперника — *Сонце* в центрі, Земля на орбіті." }
+    ],
+    task: {
+      id: "t4-s07-modele",
+      type: "single-choice",
+      question: {
+        pl: "Które dopasowanie NA PEWNO jest poprawne?",
+        ua: "Яка відповідність НАПЕВНО правильна?"
+      },
+      options: [
+        { id: "a", label: { pl: "1 = C Kopernik; 2 = B Eratostenes; 3 = A pierwotne.", ua: "1 = C Коперник; 2 = B Ератостен; 3 = A первісне." } },
+        { id: "b", label: { pl: "1 = A pierwotne, bo widać Słońce.", ua: "1 = A первісне, бо видно Сонце." } },
+        { id: "c", label: { pl: "3 = C Kopernik, bo to mapa Polski.", ua: "3 = C Коперник, бо це мапа Польщі." } }
+      ],
+      answer: "a",
+      hint: {
+        pl: "Środek rysunku: Słońce = Kopernik. Ziemia = Eratostenes. Wyspa w wodzie = pierwotne.",
+        ua: "Центр рисунка: Сонце = Коперник. Земля = Ератостен. Острів у воді = первісне."
+      },
+      explanation: {
+        pl: "1 Słońce → Kopernik. 2 Ziemia i sfery → Eratostenes. 3 tarcza w oceanie → pierwotne. W zeszycie zapisz: 1–C, 2–B, 3–A.",
+        ua: "1 Сонце → Коперник. 2 Земля і сфери → Ератостен. 3 щит в океані → первісне. У зошиті: 1–C, 2–B, 3–A."
+      }
+    }
+  },
+  // 8
+  {
+    type: "practice",
+    heading: { pl: "Głośne czytanie", ua: "Голосне читання" },
+    formula: "s. 14  ·  zad. 3",
+    promptPlace: "before",
+    prompt: {
+      pl: "Podręcznik: wyobraźcie sobie, że tekst jest częścią *programu telewizyjnego* o Kosmosie. W zespołach przygotujcie *głośne czytanie*.",
+      ua: "Підручник: уявіть, що текст — частина *телепрограми* про космос. У командах підготуйте *голосне читання*."
+    },
+    items: [
+      { pl: "Przydzielcie każdemu *fragment*.", ua: "Розподіліть кожному *уривок*." },
+      { pl: "Wskażcie, co *wyróżnić głosem* (liczba, nazwisko, *jednak*, *zburzył*).", ua: "Вкажіть, що *виділити голосом* (число, прізвище, *jednak*, *zburzył*)." },
+      { pl: "Ćwiczcie: *wymowa*, *tempo*, *głośność* — jak komunikat, nie jak wiersz z lekcji 2.", ua: "Вправа: *вимова*, *темп*, *гучність* — як комунікат, не як вірш з уроку 2." },
+      { pl: "Potem krótka prezentacja przed klasą (w szkole) / w domu — rodzicowi.", ua: "Потім коротка презентація перед класом (у школі) / вдома — батькам." }
+    ],
+    task: {
+      id: "t4-s08-glos",
+      type: "single-choice",
+      question: {
+        pl: "Jaki jest cel głośnego czytania tego tekstu?",
+        ua: "Яка мета голосного читання цього тексту?"
+      },
+      options: [
+        { id: "a", label: { pl: "Przekazać informacje jasno: tempo, wymowa, głos na faktach (liczby, nazwiska).", ua: "Передати інформацію ясно: темп, вимова, голос на фактах (числа, прізвища)." } },
+        { id: "b", label: { pl: "Czytać jak wiersz Preludium: dużo zachwytu, apostrofa do kasztanów.", ua: "Читати як вірш Preludium: багато захвату, апострофа до каштанів." } },
+        { id: "c", label: { pl: "Czytać jak najciszej, żeby nikt nie usłyszał liczb.", ua: "Читати якомога тихіше, щоб ніхто не почув чисел." } }
+      ],
+      answer: "a",
+      hint: {
+        pl: "To program o Kosmosie, nie recytacja liryki. Co ma usłyszeć widz?",
+        ua: "Це програма про космос, не декламація лірики. Що має почути глядач?"
+      },
+      explanation: {
+        pl: "Głośne czytanie = komunikat. W zeszycie zaznacz swój fragment i 2–3 słowa do podkreślenia głosem.",
+        ua: "Голосне читання = комунікат. У зошиті познач свій уривок і 2–3 слова, які виділиш голосом."
+      }
+    }
+  },
+  // 9
+  {
+    type: "practice",
+    heading: { pl: "Krótka notatka", ua: "Коротка нотатка" },
+    formula: "s. 14  ·  zad. 4",
+    promptPlace: "before",
+    prompt: {
+      pl: "Podręcznik: wyszukaj informacje o *najnowszych odkryciach* z astronomii. Wybierz jedno i napisz *kilkuzdaniową notatkę*. Notatka ≠ opinia «jest super».",
+      ua: "Підручник: знайди інформацію про *найновіші відкриття* з астрономії. Вибери одне і напиши *нотатку з кількох речень*. Нотатка ≠ думка «це супер»."
+    },
+    items: [
+      { pl: "Wzór notatki: *Kto / co? Gdzie? Kiedy? Co z tego wynika?* Trzy zdania, fakty.", ua: "Зразок нотатки: *Хто / що? Де? Коли? Що з цього випливає?* Три речення, факти." },
+      { pl: "Przykład (możesz użyć innego odkrycia): *W 2019 r. opublikowano pierwsze zdjęcie czarnej dziury. Zrobił je zespół Event Horizon Telescope. Zdjęcie pokazuje cień czarnej dziury w galaktyce M87.*", ua: "Приклад (можеш узяти інше відкриття): *У 2019 р. оприлюднили першу світлину чорної діри. Зробила її команда Event Horizon Telescope. Світлина показує тінь чорної діри в галактиці M87.*" },
+      { pl: "W zeszycie: własne 2–3 zdania. Możesz wziąć news z wiarygodnej strony (np. nauka) — nie z żartu.", ua: "У зошиті: свої 2–3 речення. Можеш узяти новину з надійної сторінки (наука) — не з жарту." }
+    ],
+    task: {
+      id: "t4-s09-notatka",
+      type: "single-choice",
+      question: {
+        pl: "Który zapis NA PEWNO jest notatką (fakty, krótko)?",
+        ua: "Який запис НАПЕВНО є нотаткою (факти, коротко)?"
+      },
+      options: [
+        { id: "a", label: { pl: "W 2019 r. opublikowano pierwsze zdjęcie czarnej dziury (zespół Event Horizon Telescope, galaktyka M87).", ua: "У 2019 р. оприлюднили першу світлину чорної діри (команда Event Horizon Telescope, галактика M87)." } },
+        { id: "b", label: { pl: "Kosmos jest super i wszyscy powinni lubić gwiazdy, bo tak uważam.", ua: "Космос супер і всі мають любити зірки, бо я так вважаю." } },
+        { id: "c", label: { pl: "Ach! dzień dobry wam, kasztany — to nowa wiadomość z Kosmosu.", ua: "Ах! день добрий вам, каштани — це нова звістка з космосу." } }
+      ],
+      answer: "a",
+      hint: {
+        pl: "Notatka ma kto/co, kiedy, fakt. Opinia i cytat z wiersza odpadają.",
+        ua: "Нотатка має хто/що, коли, факт. Думка і цитата з вірша відпадають."
+      },
+      explanation: {
+        pl: "Notatka = fakty w kilku zdaniach. W zeszycie napisz własną (inne odkrycie też jest dobrze). Opinia i Preludium to nie zadanie 4.",
+        ua: "Нотатка = факти в кількох реченнях. У зошиті напиши свою (інше відкриття теж добре). Думка і Preludium — не завдання 4."
+      }
+    }
+  },
+  // 10
+  {
+    type: "practice",
+    heading: { pl: "Napisz notatkę", ua: "Напиши нотатку" },
+    formula: "s. 14  ·  zad. 4  ·  zeszyt",
+    promptPlace: "before",
+    prompt: {
+      pl: "Tu wpisz *jedno* zdanie-start po polsku. Resztę (2–3 zdania) dokończ w zeszycie. Możesz użyć wzoru z poprzedniego ekranu albo własnego odkrycia.",
+      ua: "Тут впиши *одне* речення-початок польською. Решту (2–3 речення) докінчи в зошиті. Можеш узяти зразок з попереднього екрана або власне відкриття."
+    },
+    items: [
+      { pl: "Startery: *W roku … opublikowano…* / *Naukowcy odkryli…* / *Nowe zdjęcie pokazuje…*", ua: "Початки: *W roku … opublikowano…* / *Naukowcy odkryli…* / *Nowe zdjęcie pokazuje…*" }
+    ],
+    task: {
+      id: "t4-s10-zdanie",
+      type: "open-answer",
+      question: {
+        pl: "Napisz po polsku pierwsze zdanie notatki (fakt: kto/co + kiedy albo gdzie).",
+        ua: "Напиши польською перше речення нотатки (факт: хто/що + коли або де)."
+      },
+      answer: [
+        "W 2019 r. opublikowano pierwsze zdjęcie czarnej dziury.",
+        "W 2019 roku opublikowano pierwsze zdjęcie czarnej dziury.",
+        "Naukowcy opublikowali pierwsze zdjęcie czarnej dziury.",
+        "Naukowcy odkryli nowy księżyc Saturna.",
+        "Nowe zdjęcie pokazuje czarną dziurę.",
+        "W roku 2019 opublikowano zdjęcie czarnej dziury."
+      ],
+      hint: {
+        pl: "Zacznij od roku albo od *Naukowcy…* Potem fakt, nie «jest super».",
+        ua: "Почни з року або від *Naukowcy…* Потім факт, не «це супер»."
+      },
+      explanation: {
+        pl: "Silnik zna kilka wzorów. Sprawdź: polski, fakt, bez samej opinii. W zeszycie dopisz 1–2 zdania: kto zrobił i co z tego wynika.",
+        ua: "Рушій знає кілька зразків. Сам: польська, факт, не сама думка. У зошиті допиши 1–2 речення: хто зробив і що з цього випливає."
+      }
+    }
+  },
+  // 11
+  {
+    type: "summary",
+    heading: { pl: "Karta na dziś", ua: "Картка на сьогодні" },
+    formula: "s. 14  ·  lekcja 4",
+    promptPlace: "before",
+    prompt: {
+      pl: "Do zeszytu: 3 zdania prawda/fałsz z dowodem (zad. 1) + podpisy 1–C, 2–B, 3–A (zad. 2) + notatka (zad. 4). Głośne czytanie — w klasie / w domu. Jutro: pisownia *ó, rz, ż, ch* wymienna s. 16.",
+      ua: "У зошит: 3 речення правда/хиба з доказом (завд. 1) + підписи 1–C, 2–B, 3–A (завд. 2) + нотатка (завд. 4). Голосне читання — у класі / вдома. Завтра: правопис *ó, rz, ż, ch* змінний с. 16."
+    },
+    items: [
+      { pl: "Tekst popularnonaukowy = fakty. *p.n.e.* ≠ *n.e.* XVI ≠ XVIII.", ua: "Науково-популярний текст = факти. *до н.е.* ≠ *н.е.* XVI ≠ XVIII." },
+      { pl: "Kula już 2500 lat temu; Eratostenes ≈ 39690 km; Kopernik: Słońce w centrum.", ua: "Куля вже 2500 років тому; Ератостен ≈ 39690 км; Коперник: Сонце в центрі." },
+      { pl: "Modele: tarcza → pierwotne; Ziemia w środku → Eratostenes; Słońce w środku → Kopernik.", ua: "Моделі: щит → первісне; Земля в центрі → Ератостен; Сонце в центрі → Коперник." },
+      { pl: "Notatka: kto, co, kiedy — nie opinia.", ua: "Нотатка: хто, що, коли — не думка." }
+    ],
+    task: {
+      id: "t4-s11-karta",
+      type: "single-choice",
+      question: {
+        pl: "Co jest pewnym podsumowaniem tej lekcji?",
+        ua: "Що є певним підсумком цього уроку?"
+      },
+      options: [
+        { id: "a", label: { pl: "Umiem znaleźć fakty w tekście, podpisać trzy wyobrażenia świata i napisać krótką notatkę.", ua: "Умію знайти факти в тексті, підписати три уявлення світу і написати коротку нотатку." } },
+        { id: "b", label: { pl: "Opisałem trzy zdjęcia mgławicy, galaktyki i kuli ziemskiej ze s. 12.", ua: "Описав три світлини туманності, галактики і земної кулі зі с. 12." } },
+        { id: "c", label: { pl: "Uzasadniłem już pisownię przez wymianę w rodzinie wyrazów.", ua: "Уже обґрунтував правопис через чергування в сім’ї слів." } }
+      ],
+      answer: "a",
+      hint: {
+        pl: "Zdjęcia = lekcja 3. Wymiana ó/rz = lekcja 5. Co było dziś na s. 14?",
+        ua: "Світлини = урок 3. Чергування ó/rz = урок 5. Що було сьогодні на с. 14?"
+      },
+      explanation: {
+        pl: "Lekcja 4 = czytanie, prawda/fałsz, modele, głos, notatka. Opis zdjęć był wczoraj. Ortografia wymienna — jutro.",
+        ua: "Урок 4 = читання, правда/хиба, моделі, голос, нотатка. Опис світлин був учора. Правопис змінний — завтра."
+      }
+    }
+  }
+] };

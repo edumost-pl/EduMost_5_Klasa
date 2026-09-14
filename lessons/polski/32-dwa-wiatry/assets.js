@@ -1,6 +1,5 @@
 (function () {
-  var SRC = "./dwa-wiatry.mp3";
-  var FALLBACK = "https://audios.genially.com/5ea17d391f18b00fbf286ebc/a8fc3e56-b216-44dd-807f-4e63646b917f.mp3";
+  var SRC = "./str64.mp3";
   var KEY = "nagranie";
 
   function formulaHasKey() {
@@ -25,7 +24,6 @@
       "<p class=\"em-audio-label\">Posłuchaj wiersza · Послухай вірш</p>" +
       "<audio controls preload=\"metadata\">" +
       "<source src=\"" + SRC + "\" type=\"audio/mpeg\">" +
-      "<source src=\"" + FALLBACK + "\" type=\"audio/mpeg\">" +
       "</audio>";
     var formula = body.querySelector(".math-line");
     if (formula) formula.insertAdjacentElement("afterend", box);

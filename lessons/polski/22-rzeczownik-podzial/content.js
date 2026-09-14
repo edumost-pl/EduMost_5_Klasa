@@ -243,7 +243,7 @@ window.EduMostLessonContent = {
       }
     },
     {
-      type: "observe",
+      type: "concept",
       heading: { pl: "Ramka · co to rzeczownik", ua: "Рамка · що таке іменник" },
       formula: "s. 51  ·  kto? co?",
       visual: vizGh("t22-kto-co.png", {
@@ -263,19 +263,13 @@ window.EduMostLessonContent = {
         ua: "Це рамка з підручника. *Називний* = форма зі словника (хто? що?). Повного відмінювання сьогодні не вчимо — лише це питання."
       },
       text: {
-        pl: [
-          "*Rzeczownik* to część mowy nazywająca osoby, zwierzęta, rośliny, przedmioty, zjawiska i pojęcia.",
-          "W *mianowniku* odpowiada na pytania *kto? co?*",
-          "kto? *sąsiad, Ozyrys*",
-          "co? *pies, kaktus, stół, burza, biel, zdrowie, pisanie, ból*"
-        ],
-        ua: [
-          "*Іменник* — частина мови, що називає осіб, тварин, рослини, предмети, явища і поняття.",
-          "У *називному відмінку* відповідає на питання *хто? що?*",
-          "хто? *сусід, Осіріс*",
-          "що? *пес, кактус, стіл, буря, білизна, здоров’я, писання, біль*"
-        ]
+        pl: "**Rzeczownik** to część mowy nazywająca osoby, zwierzęta, rośliny, przedmioty, zjawiska i pojęcia. W mianowniku odpowiada na pytania **kto? co?**",
+        ua: "**Іменник** — частина мови, що називає осіб, тварин, рослини, предмети, явища і поняття. У називному відмінку відповідає на питання **хто? що?**"
       },
+      items: [
+        { pl: "**kto?** — *sąsiad, Ozyrys*.", ua: "**хто?** — *sąsiad, Ozyrys*." },
+        { pl: "**co?** — *pies, kaktus, stół, burza, biel, zdrowie, pisanie, ból*.", ua: "**що?** — *pies, kaktus, stół, burza, biel, zdrowie, pisanie, ból*." }
+      ],
       task: {
         id: "t22-s06-definicja",
         type: "single-choice",

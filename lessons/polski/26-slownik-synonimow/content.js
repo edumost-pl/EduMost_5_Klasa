@@ -265,7 +265,7 @@ window.EduMostLessonContent = {
       }
     },
     {
-      type: "observe",
+      type: "concept",
       heading: { pl: "Co to są wyrazy bliskoznaczne?", ua: "Що таке близькі за значенням слова?" },
       formula: "s. 57  ·  ramka",
       promptPlace: "before",
@@ -274,19 +274,14 @@ window.EduMostLessonContent = {
         ua: "Рамка з знаком оклику. Це означення *з підручника*."
       },
       text: {
-        pl: [
-          "*Wyrazy bliskoznaczne (synonimy)* mają te same lub podobne znaczenia, na przykład *podróż, wyjazd, wycieczka, wyprawa*.",
-          "Różnią się *zapisem i brzmieniem*. Nie są tym samym wyrazem powtórzonym.",
-          "Więcej przykładów (do zeszytu): *dom – budynek, gmach, lokum, cztery kąty*; *mówić – powiadać, rzec, bąkać, przemawiać*; *ładny – piękny, urodziwy, śliczny, estetyczny*.",
-          "W komiksie bliskoznaczne są m.in. *skwar · upał · spiekota* oraz *plucha · chlapa*."
-        ],
-        ua: [
-          "*Близькі за значенням слова (синоніми)* мають те саме або подібне значення, наприклад *podróż, wyjazd, wycieczka, wyprawa*.",
-          "Відрізняються *записом і звучанням*. Це не те саме слово, повторене двічі.",
-          "Ще приклади: *dom – budynek, gmach…*; *mówić – powiadać, rzec…*; *ładny – piękny, śliczny…*.",
-          "У коміксі синоніми: *skwar · upał · spiekota* і *plucha · chlapa*."
-        ]
+        pl: "**Wyrazy bliskoznaczne (synonimy)** mają te same lub podobne znaczenia, na przykład *podróż, wyjazd, wycieczka, wyprawa*. Różnią się zapisem i brzmieniem.",
+        ua: "**Близькі за значенням слова (синоніми)** мають те саме або подібне значення, наприклад *podróż, wyjazd, wycieczka, wyprawa*. Відрізняються записом і звучанням."
       },
+      items: [
+        { pl: "Nie są tym samym wyrazem powtórzonym.", ua: "Це не те саме слово, повторене двічі." },
+        { pl: "Do zeszytu: *dom – budynek, gmach, lokum*; *mówić – powiadać, rzec*; *ładny – piękny, śliczny*.", ua: "До зошита: *dom – budynek, gmach*; *mówić – powiadać, rzec*; *ładny – piękny, śliczny*." },
+        { pl: "W komiksie: *skwar · upał · spiekota* oraz *plucha · chlapa*.", ua: "У коміксі: *skwar · upał · spiekota* і *plucha · chlapa*." }
+      ],
       task: {
         id: "t26-s06-definicja",
         type: "multiple-choice",

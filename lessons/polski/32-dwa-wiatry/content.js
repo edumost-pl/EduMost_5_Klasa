@@ -96,61 +96,43 @@ window.EduMostLessonContent = { blocks: [
     formula: "s. 64–65  ·  nagranie  ·  Julian Tuwim",
     promptPlace: "before",
     prompt: {
-      pl: "Najpierw *posłuchaj* nagrania. Potem odsłoń trzy części tekstu. Wiersza nie tłumaczymy. Pytania w głowie: ilu jest wiatrów? gdzie który? co się zmienia na końcu?",
-      ua: "Спочатку *послухай* запис. Потім відкрий три частини тексту. Вірш не перекладаємо. Питання: скільки вітрів? де який? що змінюється в кінці?"
+      pl: "Najpierw *posłuchaj* nagrania. Potem przeczytaj cały wiersz. Wiersza nie tłumaczymy. Pytania w głowie: ilu jest wiatrów? gdzie który? co się zmienia na końcu?",
+      ua: "Спочатку *послухай* запис. Потім прочитай увесь вірш. Вірш не перекладаємо. Питання: скільки вітрів? де який? що змінюється в кінці?"
     },
-    reveal: true,
-    steps: [
-      {
-        formula: "część 1",
-        text: {
-          pl: [
-            "Julian Tuwim",
-            "Dwa wiatry",
-            " ",
-            "Jeden wiatr – w polu wiał,",
-            "Drugi wiatr – w sadzie grał:",
-            "Cichuteńko, leciuteńko,",
-            "Liście pieścił i szeleścił,",
-            "Mdlał…"
-          ]
-        }
-      },
-      {
-        formula: "część 2",
-        text: {
-          pl: [
-            "Jeden wiatr – pędziwiatr!",
-            "Piknął kozła, płackiem spadł,",
-            "Skoczył, zawiał, zaszybował,",
-            "Świdrem w górę zakołował",
-            "I przewrócił się, i wpadł",
-            "Na szumiący senny sad,",
-            "Gdzie cichutko i leciutko",
-            "Liście pieścił i szeleścił",
-            "Drugi wiatr…"
-          ]
-        }
-      },
-      {
-        formula: "część 3",
-        text: {
-          pl: [
-            "Sfrunął śniegiem z wiśni kwiat,",
-            "Parsknął śmiechem cały sad,",
-            "Wziął wiatr brata za kamrata,",
-            "Teraz z nim po polu lata,",
-            "Gonią obaj chmury, ptaki,",
-            "Mkną, wplątują się w wiatraki,",
-            "Głupkowate mylą śmigi,",
-            "W prawo, w lewo, świst, podrygi,",
-            "Dmą płucami ile sił,",
-            "Łobuzują, pal je licho!…",
-            "A w sadzie cicho, cicho…"
-          ]
-        }
-      }
-    ],
+    text: {
+      pl: [
+        "Julian Tuwim",
+        "Dwa wiatry",
+        " ",
+        "Jeden wiatr – w polu wiał,",
+        "Drugi wiatr – w sadzie grał:",
+        "Cichuteńko, leciuteńko,",
+        "Liście pieścił i szeleścił,",
+        "Mdlał…",
+        " ",
+        "Jeden wiatr – pędziwiatr!",
+        "Piknął kozła, płackiem spadł,",
+        "Skoczył, zawiał, zaszybował,",
+        "Świdrem w górę zakołował",
+        "I przewrócił się, i wpadł",
+        "Na szumiący senny sad,",
+        "Gdzie cichutko i leciutko",
+        "Liście pieścił i szeleścił",
+        "Drugi wiatr…",
+        " ",
+        "Sfrunął śniegiem z wiśni kwiat,",
+        "Parsknął śmiechem cały sad,",
+        "Wziął wiatr brata za kamrata,",
+        "Teraz z nim po polu lata,",
+        "Gonią obaj chmury, ptaki,",
+        "Mkną, wplątują się w wiatraki,",
+        "Głupkowate mylą śmigi,",
+        "W prawo, w lewo, świst, podrygi,",
+        "Dmą płucami ile sił,",
+        "Łobuzują, pal je licho!…",
+        "A w sadzie cicho, cicho…"
+      ]
+    },
     task: {
       id: "t32-s03-w-wierszu",
       type: "multiple-choice",
@@ -166,8 +148,8 @@ window.EduMostLessonContent = { blocks: [
       ],
       answer: ["a", "b", "d"],
       hint: {
-        pl: "Czytaj trzy części. Czy w tekście jest Helios?",
-        ua: "Читай три частини. Чи є в тексті Геліос?"
+        pl: "Czytaj cały tekst. Czy w wierszu jest Helios?",
+        ua: "Читай увесь текст. Чи є у вірші Геліос?"
       },
       explanation: {
         pl: "Dwa wiatry, pole i sad, potem wspólna zabawa w polu, sad znowu cichy. Helios — inne lekcje.",
@@ -176,18 +158,22 @@ window.EduMostLessonContent = { blocks: [
     }
   },
   {
-    type: "vocabulary",
+    type: "example",
     heading: { pl: "Słowa z pól", ua: "Слова з полів" },
     promptPlace: "before",
     prompt: {
-      pl: "Cztery glosy z pól s. 65. Znaczenie *w tym wierszu*. Najpierw tabela, potem zadanie.",
-      ua: "Чотири глоси з полів с. 65. Значення *в цьому вірші*. Спочатку таблиця, потім завдання."
+      pl: "Cztery glosy z pól s. 65. Najpierw ramka, potem rozbiór: znaczenie *w tym wierszu*.",
+      ua: "Чотири глоси з полів с. 65. Спочатку рамка, потім розбір: значення *в цьому вірші*."
     },
-    rows: [
-      { pl: "parsknąć śmiechem — niespodziewanie zacząć się śmiać", ua: "parsknąć śmiechem — раптом почати сміятися" },
-      { pl: "kamrat — przyjaciel, towarzysz", ua: "kamrat — друг, товариш" },
-      { pl: "śmiga — skrzydło wiatraka", ua: "śmiga — крило вітряка" },
-      { pl: "pal je licho — mniejsza o nie, niech tam, wszystko jedno", ua: "pal je licho — хай там, байдуже, менша з тим" }
+    text: {
+      pl: "parsknąć śmiechem  ·  kamrat  ·  śmiga  ·  pal je licho",
+      ua: "parsknąć śmiechem  ·  kamrat  ·  śmiga  ·  pal je licho"
+    },
+    items: [
+      { pl: "**parsknąć śmiechem** — niespodziewanie zacząć się śmiać.", ua: "**parsknąć śmiechem** — раптом почати сміятися." },
+      { pl: "**kamrat** — przyjaciel, towarzysz.", ua: "**kamrat** — друг, товариш." },
+      { pl: "**śmiga** — skrzydło wiatraka.", ua: "**śmiga** — крило вітряка." },
+      { pl: "**pal je licho** — mniejsza o nie, niech tam, wszystko jedno.", ua: "**pal je licho** — хай там, байдуже, менша з тим." }
     ],
     task: {
       id: "t32-s04-glosy",
@@ -259,13 +245,17 @@ window.EduMostLessonContent = { blocks: [
     }
   },
   {
-    type: "observe",
+    type: "concept",
     heading: { pl: "Bohater wiersza", ua: "Герой вірша" },
     formula: "s. 65  ·  ramka podręcznika",
     promptPlace: "before",
     prompt: {
-      pl: "Ramka: *bohater wiersza* to postać w utworze lirycznym, najczęściej *różna* od osoby mówiącej (*podmiotu lirycznego*). Most z lekcji 6: podmiot liryczny = kto mówi w wierszu. Tu ktoś *opowiada* o wiatrach. Tuwim *napisał* tekst. Bohaterowie *w środku* utworu to wiatry.",
-      ua: "Рамка: *герой вірша* — постать у ліричному творі, найчастіше *інша*, ніж особа, що говорить (*ліричний суб’єкт*). Міст з уроку 6: ліричний суб’єкт = хто говорить у вірші. Тут хтось *розповідає* про вітри. Тувім *написав* текст. Герої *всередині* твору — вітри."
+      pl: "Zapisz ramkę. Most z lekcji 6: podmiot liryczny = kto mówi w wierszu. Tu ktoś *opowiada* o wiatrach.",
+      ua: "Запиши рамку. Міст з уроку 6: ліричний суб’єкт = хто говорить у вірші. Тут хтось *розповідає* про вітри."
+    },
+    text: {
+      pl: "**Bohater wiersza** to postać w utworze lirycznym, najczęściej **różna** od osoby mówiącej (podmiotu lirycznego).",
+      ua: "**Герой вірша** — постать у ліричному творі, найчастіше **інша**, ніж особа, що говорить (ліричний суб’єкт)."
     },
     items: [
       { pl: "Autor: *Julian Tuwim*. To człowiek z okładki / podręcznika, nie postać w sadzie.", ua: "Автор: *Julian Tuwim*. Це людина з підручника, не постать у саду." },

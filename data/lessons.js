@@ -767,6 +767,84 @@ window.EduMostLessons = {
     topicId: "przymiotnik-odmiana",
     folder: "37-przymiotnik-odmiana"
   },
+  "polski/dwa-slonca": {
+    id: "pol-38-dwa-slonca",
+    subject: "polski",
+    topicId: "dwa-slonca",
+    folder: "38-dwa-slonca"
+  },
+  "polski/sloneczniki": {
+    id: "pol-39-sloneczniki",
+    subject: "polski",
+    topicId: "sloneczniki",
+    folder: "39-sloneczniki"
+  },
+  "polski/deszczyk": {
+    id: "pol-40-deszczyk",
+    subject: "polski",
+    topicId: "deszczyk",
+    folder: "40-deszczyk"
+  },
+  "polski/deszczyk-uosobienie": {
+    id: "pol-41-deszczyk-uosobienie",
+    subject: "polski",
+    topicId: "deszczyk-uosobienie",
+    folder: "41-deszczyk-uosobienie"
+  },
+  "polski/stopniowanie-przymiotnika": {
+    id: "pol-42-stopniowanie-przymiotnika",
+    subject: "polski",
+    topicId: "stopniowanie-przymiotnika",
+    folder: "42-stopniowanie-przymiotnika"
+  },
+  "polski/nie-z-przymiotnikiem": {
+    id: "pol-43-nie-z-przymiotnikiem",
+    subject: "polski",
+    topicId: "nie-z-przymiotnikiem",
+    folder: "43-nie-z-przymiotnikiem"
+  },
+  "polski/podniebna-kanonada": {
+    id: "pol-44-podniebna-kanonada",
+    subject: "polski",
+    topicId: "podniebna-kanonada",
+    folder: "44-podniebna-kanonada"
+  },
+  "polski/ortografia-zakonczenia": {
+    id: "pol-45-ortografia-zakonczenia",
+    subject: "polski",
+    topicId: "ortografia-zakonczenia",
+    folder: "45-ortografia-zakonczenia"
+  },
+  "polski/ortografia-zakonczenia-cwiczenia": {
+    id: "pol-46-ortografia-zakonczenia-cwiczenia",
+    subject: "polski",
+    topicId: "ortografia-zakonczenia-cwiczenia",
+    folder: "46-ortografia-zakonczenia-cwiczenia"
+  },
+  "polski/pan-tadeusz-burza": {
+    id: "pol-47-pan-tadeusz-burza",
+    subject: "polski",
+    topicId: "pan-tadeusz-burza",
+    folder: "47-pan-tadeusz-burza"
+  },
+  "polski/pan-tadeusz-srodki": {
+    id: "pol-48-pan-tadeusz-srodki",
+    subject: "polski",
+    topicId: "pan-tadeusz-srodki",
+    folder: "48-pan-tadeusz-srodki"
+  },
+  "polski/sprawdze-sie-parasol": {
+    id: "pol-49-sprawdze-sie-parasol",
+    subject: "polski",
+    topicId: "sprawdze-sie-parasol",
+    folder: "49-sprawdze-sie-parasol"
+  },
+  "polski/sprawdze-sie-jezyk": {
+    id: "pol-50-sprawdze-sie-jezyk",
+    subject: "polski",
+    topicId: "sprawdze-sie-jezyk",
+    folder: "50-sprawdze-sie-jezyk"
+  },
   "polski/mit": {
     id: "pol-09-mit",
     subject: "polski",
@@ -816,10 +894,10 @@ window.EduMostLessons = {
     folder: "16-przymiotnik-i-uosobienie"
   },
   "polski/precyzyjna-informacja": {
-    id: "pol-17-precyzyjna-informacja",
+    id: "pol-51-precyzyjna-informacja",
     subject: "polski",
     topicId: "precyzyjna-informacja",
-    folder: "17-precyzyjna-informacja"
+    folder: "51-precyzyjna-informacja"
   },
   "polski/liczebnik": {
     id: "pol-18-liczebnik",

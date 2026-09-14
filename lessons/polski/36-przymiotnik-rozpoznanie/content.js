@@ -13,6 +13,7 @@ function vizGhT36(file, spec) {
 }
 
 window.EduMostLessonContent = { blocks: [
+  // 1
   {
     type: "goal",
     heading: { pl: "Po tej lekcji umiem", ua: "Після цього уроку вмію" },
@@ -53,6 +54,7 @@ window.EduMostLessonContent = { blocks: [
       }
     }
   },
+  // 2
   {
     type: "observe",
     heading: { pl: "Rozgrzewka · Dzisiejszy dzień jest…", ua: "Розминка · Сьогоднішній день є…" },
@@ -89,6 +91,7 @@ window.EduMostLessonContent = { blocks: [
       }
     }
   },
+  // 3
   {
     type: "observe",
     heading: { pl: "Co już wiem · co jest nowe", ua: "Що вже знаю · що нове" },
@@ -126,21 +129,26 @@ window.EduMostLessonContent = { blocks: [
       }
     }
   },
+  // 4
   {
-    type: "vocabulary",
+    type: "concept",
     heading: { pl: "Pigułka · definicja", ua: "Пігулка · означення" },
     formula: "s. 70  ·  ramka podręcznika",
     promptPlace: "before",
     prompt: {
-      pl: "Podręcznik (s. 70): *Przymiotnik to część mowy nazywająca cechy i właściwości (na przykład kształt, wielkość, kolor) ludzi, rzeczy lub zjawisk. Najczęściej określa rzeczownik i odpowiada na pytania jaki? jaka? jakie?* Zapisz pigułkę. Pytania *który? czyj?* też bywają — dziś w centrum *jaki?*",
-      ua: "Підручник (с. 70): прикметник називає *ознаки і властивості* (форма, розмір, колір) людей, речей або явищ. Найчастіше означає іменник і відповідає на *який? яка? яке?* Запиши пігулку. Питання *który? czyj?* теж бувають — сьогодні в центрі *jaki?*"
+      pl: "To *ramka z podręcznika* — zapisz do zeszytu. Pytania *który? czyj?* też bywają — dziś w centrum *jaki?*",
+      ua: "Це *рамка з підручника* — запиши в зошит. Питання *który? czyj?* теж бувають — сьогодні в центрі *jaki?*"
     },
-    rows: [
-      { pl: "jaki? — ciekawy (dzień)", ua: "який? — ciekawy (dzień)" },
-      { pl: "jaka? — ciekawa (historia)", ua: "яка? — ciekawa (historia)" },
-      { pl: "jakie? — ciekawe (zakończenie / zakończenia)", ua: "яке? / які? — ciekawe (zakończenie / zakończenia)" },
-      { pl: "Odmienna część mowy: przypadki, liczby, rodzaje", ua: "Змінна частина мови: відмінки, числа, роди" },
-      { pl: "Określa najczęściej rzeczownik (nie czasownik)", ua: "Означає найчастіше іменник (не дієслово)" }
+    text: {
+      pl: "**Przymiotnik** to część mowy nazywająca cechy i właściwości (na przykład kształt, wielkość, kolor) ludzi, rzeczy lub zjawisk. Najczęściej określa rzeczownik i odpowiada na pytania **jaki? jaka? jakie?**",
+      ua: "**Прикметник** — частина мови, що називає ознаки і властивості (форму, розмір, колір) людей, речей або явищ. Найчастіше означає іменник і відповідає на питання **jaki? jaka? jakie?**"
+    },
+    items: [
+      { pl: "**jaki?** — *ciekawy* (dzień).", ua: "**який?** — *ciekawy* (dzień)." },
+      { pl: "**jaka?** — *ciekawa* (historia).", ua: "**яка?** — *ciekawa* (historia)." },
+      { pl: "**jakie?** — *ciekawe* (zakończenie / zakończenia).", ua: "**яке? / які?** — *ciekawe* (zakończenie / zakończenia)." },
+      { pl: "Odmienna część mowy: przypadki, liczby, rodzaje.", ua: "Змінна частина мови: відмінки, числа, роди." },
+      { pl: "Określa najczęściej *rzeczownik* — nie czasownik.", ua: "Означає найчастіше *іменник* — не дієслово." }
     ],
     task: {
       id: "t36-s04-definicja",
@@ -160,6 +168,7 @@ window.EduMostLessonContent = { blocks: [
       }
     }
   },
+  // 5
   {
     type: "observe",
     heading: { pl: "E-mail Wiktora · Giza", ua: "E-mail Віктора · Гіза" },
@@ -243,6 +252,7 @@ window.EduMostLessonContent = { blocks: [
       }
     }
   },
+  // 6
   {
     type: "vocabulary",
     heading: { pl: "Zad. 1a · przymiotnik i wyraz określany", ua: "Завд. 1а · прикметник і означуване слово" },
@@ -283,13 +293,19 @@ window.EduMostLessonContent = { blocks: [
       }
     }
   },
+  // 7
   {
     type: "observe",
     heading: { pl: "Zad. 1b · po co przymiotnik?", ua: "Завд. 1б · навіщо прикметник?" },
     formula: "s. 69",
     promptPlace: "before",
     prompt: {
-      pl: "Dwa pytania podręcznika. 1. *Którą część mowy określa przymiotnik?* 2. *Jakich informacji dostarczają przymiotniki znajdujące się w tekście?* Odpowiedź krótka: określa *rzeczownik*; daje cechy (jaki jest człowiek, rzecz, zjawisko).",
+      pl: [
+        "Dwa pytania podręcznika. ",
+        "1. *Którą część mowy określa przymiotnik?* ",
+        "2. *Jakich informacji dostarczają przymiotniki znajdujące się w tekście?* Odpowiedź krótka: określa *rzeczownik*; daje cechy (jaki jest człowiek, rzecz, zjawisko).",
+
+      ],
       ua: "Два питання підручника. 1. *Яку частину мови означає прикметник?* 2. *Яку інформацію дають прикметники в тексті?* Коротка відповідь: означає *іменник*; дає ознаки (яка людина, річ, явище)."
     },
     items: [
@@ -319,6 +335,7 @@ window.EduMostLessonContent = { blocks: [
       }
     }
   },
+  // 8
   {
     type: "observe",
     heading: { pl: "Zad. 2 · Ozyrys, Izyda, uczta", ua: "Завд. 2 · Осіріс, Ісіда, учта" },
@@ -357,13 +374,17 @@ window.EduMostLessonContent = { blocks: [
       }
     }
   },
+  // 9
   {
     type: "observe",
     heading: { pl: "Związek zgody", ua: "Зв’язок узгодження" },
     formula: "nowe w kl. 5",
     promptPlace: "before",
     prompt: {
-      pl: "Przymiotnik *dostosowuje się* do rzeczownika: ten sam *rodzaj*, ta sama *liczba*, ten sam *przypadek*. To *związek zgody*. Most: українська *узгодження*. Przykład z tabeli s. 70: *wielka uczta*. Celownik, liczba pojedyncza → *wielkiej uczcie* (komu? czemu?). Jutro odmienisz całą siódemkę. Dziś czujesz zasadę.",
+      pl: [
+        "Przymiotnik *dostosowuje się* do rzeczownika: ten sam *rodzaj*, ta sama *liczba*, ten sam *przypadek*. To *związek zgody*. ",
+        "Most: українська *узгодження*. Przykład z tabeli s. 70: *wielka uczta*. Celownik, liczba pojedyncza → *wielkiej uczcie* (komu? czemu?). Jutro odmienisz całą siódemkę. Dziś czujesz zasadę.",
+      ],
       ua: "Прикметник *підлаштовується* під іменник: той самий *рід*, те саме *число*, той самий *відмінок*. Це *зв’язок узгодження*. Міст: українська *узгодження*. Приклад з таблиці с. 70: *wielka uczta*. Давальний, однина → *wielkiej uczcie* (кому? чому?). Завтра відміниш усю сімку. Сьогодні ловиш принцип."
     },
     items: [
@@ -394,6 +415,7 @@ window.EduMostLessonContent = { blocks: [
       }
     }
   },
+  // 10
   {
     type: "observe",
     heading: { pl: "Mała litera · pułapka", ua: "Мала літера · пастка" },
@@ -425,6 +447,7 @@ window.EduMostLessonContent = { blocks: [
       }
     }
   },
+  // 11
   {
     type: "summary",
     heading: { pl: "Karta na dziś", ua: "Картка на сьогодні" },

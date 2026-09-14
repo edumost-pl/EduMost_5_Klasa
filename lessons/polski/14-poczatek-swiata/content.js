@@ -612,22 +612,24 @@ window.EduMostLessonContent = {
       }
     },
     {
-      type: "observe",
+      type: "concept",
       heading: { pl: "Co to jest mit?", ua: "Що таке міф?" },
-      formula: "s. 33  ·  ramka",
+      formula: "s. 33  ·  ramka  ·  Zapamiętaj",
       promptPlace: "before",
       prompt: {
         pl: "To definicja z podręcznika. Po lekcji musisz umieć powiedzieć ją swoimi słowami i podać przykład z *Początku świata*.",
         ua: "Це означення з підручника. Після уроку маєш уміти сказати його своїми словами і дати приклад з *Початку світу*."
       },
       text: {
-        pl: [
-          "Mity to dawno powstałe opowieści (pierwotnie przekazywane ustnie), wyrażające wierzenia danej społeczności, na przykład starożytnych Greków, Rzymian, Egipcjan, Słowian. Opowiadają o powstaniu świata, stworzeniu człowieka, pochodzeniu i czynach bogów oraz wielkich bohaterów. Podobnie jak baśnie czy legendy, mity zawierają elementy fantastyczne (i nieprawdopodobne zdarzenia, bohaterów o niezwykłych właściwościach). Zbiór mitów nazywamy mitologią."
-        ],
-        ua: [
-          "Міфи — це давні оповіді (спочатку усні), що виражають вірування спільноти, наприклад давніх греків, римлян, єгиптян, слов’ян. Вони розповідають про постання світу, створення людини, походження і вчинки богів та великих героїв. Подібно до казок чи легенд, міфи містять фантастичні елементи (і неймовірні події, героїв із надзвичайними властивостями). Збір міфів називаємо міфологією."
-        ]
+        pl: "**Mity** to dawno powstałe opowieści (pierwotnie przekazywane ustnie), **wyrażające wierzenia danej społeczności**, na przykład starożytnych Greków, Rzymian, Egipcjan, Słowian. Opowiadają o **powstaniu świata**, **stworzeniu człowieka**, **pochodzeniu** i **czynach bogów** oraz **wielkich bohaterów**. Podobnie jak baśnie czy legendy, mity zawierają **elementy fantastyczne** (nieprawdopodobne zdarzenia, bohaterowie o niezwykłych właściwościach). Zbiór mitów nazywamy **mitologią**.",
+        ua: "**Міфи** — давні оповіді (спочатку усні), що **виражають вірування спільноти** (греки, римляни, єгиптяни, слов’яни). Про **походження світу**, **створення людини**, **богів** і **героїв**. Є **фантастичні елементи**. Збір міфів = **міфологія**."
       },
+      items: [
+        { pl: "*Mit* — dawna opowieść (kiedyś ustna), która wyraża *wierzenia* społeczności.", ua: "*Міф* — давня оповідь (колись усна), що виражає *вірування* спільноти." },
+        { pl: "Tematy: powstanie świata, człowiek, bogowie, bohaterowie.", ua: "Теми: початок світу, людина, боги, герої." },
+        { pl: "*Elementy fantastyczne* — jak w baśni lub legendzie (niezwykłe zdarzenia i bohaterowie).", ua: "*Фантастичні елементи* — як у казці чи легенді (незвичайні події й герої)." },
+        { pl: "*Mitologia* = zbiór mitów. *Początek świata* to mit o początku według Greków.", ua: "*Міфологія* = збір міфів. *Початок світу* — міф про початок за греками." }
+      ],
       task: {
         id: "t14-s14-mit",
         type: "multiple-choice",
@@ -643,8 +645,8 @@ window.EduMostLessonContent = {
         ],
         answer: ["a", "b", "d"],
         hint: {
-          pl: "Trzy zdania ramki + ostatnie zdanie o mitologii.",
-          ua: "Три речення рамки + останнє речення про міфологію."
+          pl: "Trzy zdania ramki Zapamiętaj + ostatnie zdanie o mitologii.",
+          ua: "Три речення рамки Zapamiętaj + останнє речення про міфологію."
         },
         explanation: {
           pl: "Ramka: ustna opowieść, wierzenia, temat bogów/świata, fantastyka, mitologia = zbiór mitów. Nie dyktando.",

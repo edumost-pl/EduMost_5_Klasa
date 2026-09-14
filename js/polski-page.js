@@ -43,7 +43,21 @@
     T34: "../lessons/polski/34-studio-pogoda/index.html",
     T35: "../lessons/polski/35-prognoza-planeta/index.html",
     T36: "../lessons/polski/36-przymiotnik-rozpoznanie/index.html",
-    T37: "../lessons/polski/37-przymiotnik-odmiana/index.html"
+    T37: "../lessons/polski/37-przymiotnik-odmiana/index.html",
+    T38: "../lessons/polski/38-dwa-slonca/index.html",
+    T39: "../lessons/polski/39-sloneczniki/index.html",
+    T40: "../lessons/polski/40-deszczyk/index.html",
+    T41: "../lessons/polski/41-deszczyk-uosobienie/index.html",
+    T42: "../lessons/polski/42-stopniowanie-przymiotnika/index.html",
+    T43: "../lessons/polski/43-nie-z-przymiotnikiem/index.html",
+    T44: "../lessons/polski/44-podniebna-kanonada/index.html",
+    T45: "../lessons/polski/45-ortografia-zakonczenia/index.html",
+    T46: "../lessons/polski/46-ortografia-zakonczenia-cwiczenia/index.html",
+    T47: "../lessons/polski/47-pan-tadeusz-burza/index.html",
+    T48: "../lessons/polski/48-pan-tadeusz-srodki/index.html",
+    T49: "../lessons/polski/49-sprawdze-sie-parasol/index.html",
+    T50: "../lessons/polski/50-sprawdze-sie-jezyk/index.html",
+    T51: "../lessons/polski/51-precyzyjna-informacja/index.html"
   };
   let pageQueryRaw = "";
   let topScrollBound = false;
@@ -98,7 +112,8 @@
   function parsePageRange(raw) {
     const s = String(raw == null ? "" : raw).trim().replace(/\s/g, "").replace(/[–—−]/g, "-");
     if (!s) return null;
-    const m = s.match(/^(\d+)(?:-(\d+))?$/);
+    const t = s.replace(/[tT]/g, "");
+    const m = t.match(/^(\d+)(?:-(\d+))?$/);
     if (!m) return { invalid: true };
     let from = parseInt(m[1], 10);
     let to = m[2] ? parseInt(m[2], 10) : from;
@@ -114,8 +129,13 @@
     if (!query) return true;
     if (query.invalid) return false;
     const page = parsePageRange(topic.page);
-    if (!page || page.invalid) return false;
-    return page.from <= query.to && query.from <= page.to;
+    if (page && !page.invalid && page.from <= query.to && query.from <= page.to) return true;
+    const idNum = String(topic.id || "").match(/^T(\d+)$/i);
+    if (idNum) {
+      const n = parseInt(idNum[1], 10);
+      if (n >= query.from && n <= query.to) return true;
+    }
+    return false;
   }
 
   function filteredTopics(topics, raw) {

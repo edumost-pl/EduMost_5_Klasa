@@ -1,850 +1,503 @@
-function em(text) {
+function emT2(text) {
   return { text: text, emphasis: true };
 }
 
-function mark(pl, plMarks, ua, uaMarks) {
-  return {
-    pl: { t: pl, mark: plMarks },
-    ua: { t: ua, mark: uaMarks }
-  };
-}
+var POL_IMG_T2 = "https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/polska/";
 
-var POL_IMG = "https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/polska/";
-
-function vizGh(file, spec) {
+function vizGhT2(file, spec) {
   spec = spec || {};
   spec.kind = "image-placeholder";
-  spec.file = file;
-  spec.url = POL_IMG + file + "?raw=true";
+  spec.file = "./" + file;
+  spec.url = POL_IMG_T2 + file + "?raw=true";
   return spec;
 }
 
-window.EduMostLessonContent = {
-  blocks: [
-    {
-      type: "goal",
-      heading: { pl: "Dzisiaj pracujemy z wierszem", ua: "Сьогодні працюємо з віршем" },
-      promptPlace: "before",
-      prompt: {
-        pl: "Jan Lechoń · „Preludium” · podręcznik s. 10–11. Najpierw przeczytamy wiersz, potem nauczymy się trzech rzeczy.",
-        ua: "Сьогодні ти навчишся знаходити того, хто говорить у вірші, описувати настрій і розпізнавати апострофу."
-      },
-      items: [
-        {
-          pl: "dowiem się, kto mówi w wierszu;",
-          ua: "дізнаюся, хто говорить у вірші;"
-        },
-        {
-          pl: "nauczę się opisywać sytuację i nastrój;",
-          ua: "навчуся описувати ситуацію і настрій;"
-        },
-        {
-          pl: "nauczę się rozpoznawać apostrofę.",
-          ua: "навчуся розпізнавати апострофу."
-        }
-      ]
+window.EduMostLessonContent = { blocks: [
+  // 1
+  {
+    type: "goal",
+    heading: { pl: "Po tej lekcji umiem", ua: "Після цього уроку вмію" },
+    formula: "s. 10–11  ·  Lekcja 2  ·  Preludium",
+    promptPlace: "before",
+    prompt: {
+      pl: "Dział *Zachwycający kosmos*. Temat: *Na dobry początek*. Wczoraj w lekcji 1 pytaliśmy: kto mówi, do kogo, gdzie i po co. Dziś ten sam trop — ale w *wierszu* Jana Lechonia *Preludium*. Polski pierwszy. Włącz 🇺🇦. Wiersza nie tłumaczymy.",
+      ua: "Розділ *Zachwycający kosmos*. Тема: *Na dobry początek*. Учора в уроці 1 ми питали: хто говорить, до кого, де і навіщо. Сьогодні той самий слід — але у *вірші* Яна Лехоня *Preludium*. Польська перша. Увімкни 🇺🇦. Вірш не перекладаємо."
     },
-    // 2
-    {
-      type: "observe",
-      heading: { pl: "Przeczytaj wiersz", ua: "Прочитай вірш" },
-      formula: "Jan Lechoń  ·  Preludium",
-      text: {
-        pl: [
-          "Za oknami świt czerwony,",
-          "Jeszcze sennych szelest drzew,",
-          "Słońce wraca z drugiej strony,",
-          "Ptak zbudzony zaczął śpiew.",
-          " ",
-          " ",
-          "Ach! dzień dobry wam, kasztany,",
-          "Wodo pełna srebrnych lśnień!",
-          "Jeszcze jeden darowany",
-          "Cudownego życia dzień!"
-        ]
+    items: [
+      { pl: "zrelacjonuję treść wiersza *Preludium*;", ua: "перекажу зміст вірша *Preludium*;" },
+      { pl: "określę *nastrój* wypowiedzi i wskażę dowód w tekście;", ua: "визначу *настрій* висловлювання і вкажу доказ у тексті;" },
+      { pl: "zbiorę *sytuację* osoby mówiącej: gdzie, kiedy, co widzi, co słyszy;", ua: "зберу *ситуацію* особи, яка говорить: де, коли, що бачить, що чує;" },
+      { pl: "rozpoznam *apostrofę* i powiem, do kogo jest zwrot;", ua: "розпізнаю *апострофу* і скажу, до кого звертання;" },
+      { pl: "wyjaśnię tytuł *Preludium* ze słownika.", ua: "поясню назву *Preludium* зі словника." }
+    ],
+    task: {
+      id: "t2-s01-umiem",
+      type: "multiple-choice",
+      question: {
+        pl: "Co po tej lekcji musisz umieć NA PEWNO? Zaznacz wszystkie pewne.",
+        ua: "Що після уроку маєш вміти НАПЕВНО? Познач усі певні."
       },
-      promptPlace: "after",
-      prompt: {
-        pl: "💡 Słowo z wiersza: świt = początek ranka, światło widoczne przed pojawieniem się słońca. Przeczytaj jeszcze raz. Potem posłuchaj nagrania.",
-        ua: "світанок — початок ранку. Прочитай вірш уважно. Якщо якесь слово незрозуміле, скористайся поясненням нижче."
-      },
-      visual: {
-        kind: "youtube",
-        place: "after",
-        id: "k-UCIU4xkSM",
-        title: {
-          pl: "Posłuchaj: Jan Lechoń „Preludium”",
-          ua: "Послухай: Jan Lechoń «Preludium»"
-        }
-      },
-      task: {
-        id: "t2-s02-relacja",
-        type: "single-choice",
-        question: {
-          pl: "Co dzieje się w wierszu?",
-          ua: "Що відбувається у вірші?"
-        },
-        options: [
-          {
-            id: "a",
-            label: {
-              pl: "Zaczyna się poranek: świt, słońce, szelest drzew, śpiew ptaka — i radość z kolejnego dnia.",
-              ua: "Починається ранок: світанок, сонце, шелест дерев, спів птаха — і радість з нового дня."
-            }
-          },
-          {
-            id: "b",
-            label: {
-              pl: "Zapada noc: księżyc, cisza i strach przed ciemnością.",
-              ua: "Настає ніч: місяць, тиша і страх перед темрявою."
-            }
-          },
-          {
-            id: "c",
-            label: {
-              pl: "Ktoś idzie do szkoły i martwi się o sprawdzian.",
-              ua: "Хтось іде до школи і хвилюється за контрольну."
-            }
-          }
-        ],
-        answer: "a",
-        hint: {
-          pl: "Spójrz na pierwsze słowa: „Za oknami świt…” i na koniec: „darowany / Cudownego życia dzień”.",
-          ua: "Подивись на початок: «Za oknami świt…» і на кінець: «darowany / Cudownego życia dzień»."
-        },
-        mistakes: [
-          {
-            answer: "b",
-            feedback: {
-              pl: "W wierszu jest świt i słońce, które wraca — to początek dnia, nie noc.",
-              ua: "У вірші світанок і сонце, яке повертається — це початок дня, не ніч."
-            }
-          },
-          {
-            answer: "c",
-            feedback: {
-              pl: "W tym wierszu nie ma szkoły. Jest okno, świt, drzewa, ptak, kasztany i woda.",
-              ua: "У цьому вірші немає школи. Є вікно, світанок, каштани і вода."
-            }
-          }
-        ],
-        explanation: {
-          pl: "W wierszu pojawia się poranek: świt, słońce, szelest drzew, śpiew ptaka. Osoba mówiąca zauważa piękno świata i cieszy się kolejnym dniem. (Wyjaśnienie EduMost — parafraza treści, nie cytat z kryteriów GWO.)",
-          ua: "У вірші ранок: світанок, сонце, шелест, спів. Особа, яка говорить, радіє новому дню. (Пояснення EduMost.)"
-        }
-      }
-    },
-    // 3
-    {
-      type: "vocabulary",
-      heading: { pl: "Słowa, które pomogą zrozumieć wiersz", ua: "Слова, які допоможуть зрозуміти вірш" },
-      promptPlace: "before",
-      prompt: {
-        pl: "Nie ucz się ich na pamięć. Wystarczy, że zrozumiesz je w tym wierszu.",
-        ua: "Це не словник напам’ять — лише те, що треба до «Preludium»."
-      },
-      rows: [
-        { pl: "świt — początek ranka; światło przed pojawieniem się słońca", ua: "світанок — початок ранку" },
-        { pl: "preludium — wstęp, zapowiedź czegoś; też krótki utwór muzyczny na początek", ua: "прелюдія — вступ; короткий музичний твір на початок" },
-        { pl: "kasztany — drzewa (tu: te, które osoba wita)", ua: "каштани — дерева, яких вітають у вірші" },
-        { pl: "srebrne lśnienia — błyszczące, jasne odbicia na wodzie", ua: "сріблясті відблиски — блиск на воді" },
-        { pl: "darowany dzień — dzień, który można przeżyć i potraktować jak dar", ua: "подарований день — день як дар" }
+      options: [
+        { id: "a", label: { pl: "Opowiedzieć, o czym jest wiersz, i określić nastrój z dowodem.", ua: "Розповісти, про що вірш, і визначити настрій з доказом." } },
+        { id: "b", label: { pl: "Wskazać apostrofę i powiedzieć, do kogo osoba się zwraca.", ua: "Вказати апострофу і сказати, до кого особа звертається." } },
+        { id: "c", label: { pl: "Już dziś nazwać osobę mówiącą podmiotem lirycznym i odmienić rzeczownik.", ua: "Уже сьогодні назвати особу, яка говорить, ліричним суб’єктом і відмінити іменник." } },
+        { id: "d", label: { pl: "Zebrać sytuację: gdzie, kiedy, co widzi i słyszy osoba mówiąca.", ua: "Зібрати ситуацію: де, коли, що бачить і чує особа, яка говорить." } }
       ],
-      task: {
-        id: "t2-s03-slowo",
-        type: "single-choice",
-        question: {
-          pl: "Które znaczenie słowa preludium łączy się z treścią tego wiersza?",
-          ua: "Яке значення слова preludium пасує до змісту цього вірша?"
-        },
-        options: [
-          {
-            id: "a",
-            label: {
-              pl: "wstęp / zapowiedź czegoś — tu jak początek dnia; też krótki utwór na początek",
-              ua: "вступ / початок чогось — тут як початок дня; також короткий твір на початок"
-            }
-          },
-          {
-            id: "b",
-            label: { pl: "koniec dnia, zmierzch", ua: "кінець дня, смеркання" }
-          },
-          {
-            id: "c",
-            label: { pl: "nazwa ptaka za oknem", ua: "назва птаха за вікном" }
-          }
-        ],
-        answer: "a",
-        hint: {
-          pl: "W słowniku (s. 11): preludium to krótki utwór albo wstęp / zapowiedź. Wiersz jest jak wejście w nowy dzień.",
-          ua: "У словнику (с. 11): прелюдія — короткий твір або вступ. Тут — початок дня."
-        },
-        mistakes: [
-          {
-            answer: "b",
-            feedback: {
-              pl: "Preludium to początek, nie koniec. W wierszu świt i nowy dzień — nie zmierzch.",
-              ua: "Preludium — початок, не кінець дня."
-            }
-          },
-          {
-            answer: "c",
-            feedback: {
-              pl: "Ptak śpiewa w wierszu, ale preludium to nie nazwa ptaka. To wstęp / krótki utwór.",
-              ua: "Preludium — не назва птаха."
-            }
-          }
-        ],
-        explanation: {
-          pl: "Tytuł pasuje do wiersza jako wstęp: świt, budzenie się świata, pierwszy śpiew. To jak krótkie preludium dnia. (Wyjaśnienie tytułu — EduMost, na podstawie haseł ze s. 11.)",
-          ua: "Preludium тут — вступ до дня: світанок і перший спів. (Пояснення EduMost.)"
-        }
-      }
-    },
-    // 4
-    {
-      type: "concept",
-      heading: { pl: "Kto mówi w wierszu?", ua: "Хто говорить у вірші?" },
-      visual: vizGh("t2-okno-swit.png", {
-        alt: {
-          pl: "Poranek za oknem: czerwony świt, drzewa, ptak",
-          ua: "Ранок за вікном: червоний світанок, дерева, птах"
-        },
-        title: { pl: "Osoba mówiąca patrzy za okno", ua: "Особа, яка говорить, дивиться у вікно" },
-        prompt: {
-          pl: "Edukacyjna ilustracja 16:9, klasa 5. Widok z okna o świcie: czerwono-pomarańczowe niebo, ciche drzewa, mały ptak. Ciepły akwarelowy styl jak w podręczniku, bez grozy, bez logotypów, bez angielskiego.",
-          ua: "Освітня ілюстрація 16:9: світанок за вікном, дерева, птах, акварель, без логотипів."
-        }
-      }),
-      text: {
-        pl: [
-          ["Kiedy czytasz wiersz, słyszysz czyjś głos. Ta osoba mówi o tym, co ", em("widzi"), ", ", em("słyszy"), " albo ", em("przeżywa"), "."],
-          ["Nazywamy ją ", em("osobą mówiącą"), "."],
-          ["Jan Lechoń ", em("napisał"), " wiersz. Ale to nie znaczy, że wszystkie słowa wypowiada Jan Lechoń jako prywatna osoba."],
-          "My pytamy: kto mówi W TEKŚCIE? (Słowo „podmiot liryczny” zostawiamy na inną lekcję.)"
-        ],
-        ua: [
-          "У вірші хтось говорить про те, що бачить і відчуває. Це — osoba mówiąca, тобто особа, яка говорить у творі.",
-          "Ян Лехонь написав вірш. Питаємо, хто говорить У ТЕКСТІ — не «хто автор на обкладинці»."
-        ]
+      answer: ["a", "b", "d"],
+      hint: {
+        pl: "*Podmiot liryczny* jest w lekcji 6. Odmiana rzeczownika — dużo później. Co zostaje na dziś ze s. 10–11?",
+        ua: "*Ліричний суб’єкт* — урок 6. Відміна іменника — набагато пізніше. Що лишається на сьогодні зі с. 10–11?"
       },
-      task: {
-        id: "t2-s04-kto",
-        type: "single-choice",
-        question: {
-          pl: "Co możemy powiedzieć o osobie mówiącej — i który fragment to pokazuje?",
-          ua: "Що можна сказати про особу, яка говорить — і який уривок це показує?"
-        },
-        options: [
-          {
-            id: "a",
-            label: {
-              pl: "Patrzy za okno o świcie i wita kasztany oraz wodę — np. „Za oknami świt czerwony” / „Ach! dzień dobry wam, kasztany”.",
-              ua: "Дивиться у вікно на світанку і вітає каштани та воду."
-            }
-          },
-          {
-            id: "b",
-            label: {
-              pl: "To Jan Lechoń, bo on napisał wiersz — nie trzeba szukać w tekście.",
-              ua: "Це Ян Лехонь, бо він написав вірш — шукати в тексті не треба."
-            }
-          },
-          {
-            id: "c",
-            label: {
-              pl: "To ptak, bo „Ptak zbudzony zaczął śpiew”.",
-              ua: "Це птах, бо «Ptak zbudzony zaczął śpiew»."
-            }
-          }
-        ],
-        answer: "a",
-        hint: {
-          pl: "Nie pytamy, kto napisał wiersz. Pytamy, czyj głos słychać w utworze — co ta osoba widzi i do kogo się zwraca.",
-          ua: "Не питаємо, хто написав вірш. Питаємо, чий голос чути в тексті."
-        },
-        mistakes: [
-          {
-            answer: "b",
-            feedback: {
-              pl: "Autor napisał wiersz. Osoba mówiąca to głos W TEKŚCIE: ktoś patrzy za okno i mówi „dzień dobry” kasztanom.",
-              ua: "Автор написав вірш. Особа, яка говорить — голос У ТЕКСТІ."
-            }
-          },
-          {
-            answer: "c",
-            feedback: {
-              pl: "Ptak śpiewa — osoba mówiąca go SŁYSZY. To nie ptak jest osobą mówiącą.",
-              ua: "Птах співає — особа, яка говорить, його ЧУЄ."
-            }
-          }
-        ],
-        explanation: {
-          pl: "Osoba mówiąca patrzy za okno, widzi świt i kasztany, słyszy drzewa i ptaka, cieszy się dniem. Autora (Lechonia) znamy z podpisu pod tytułem; głos czytamy w wierszu.",
-          ua: "Особа, яка говорить, дивиться у вікно і вітає світ. Автор — на підписі; голос — у тексті."
-        }
-      }
-    },
-    // 5
-    {
-      type: "concept",
-      heading: { pl: "Co to znaczy „sytuacja”?", ua: "Що означає «sytuacja»?" },
-      visual: vizGh("t2-sytuacja-poranek.png", {
-        alt: {
-          pl: "Poranek: okno, drzewa, ptak, woda",
-          ua: "Ранок: вікно, дерева, птах, вода"
-        },
-        title: { pl: "Gdzie, kiedy, co widzi, co słyszy", ua: "Де, коли, що бачить, що чує" },
-        prompt: {
-          pl: "Edukacyjna infografika 16:9, cztery małe kadry z etykietami PL: GDZIE — przy oknie; KIEDY — świt; WIDZI — świt, kasztany, wodę; SŁYSZY — szelest drzew, śpiew ptaka. Ciepły poranek, bez grozy, bez angielskiego, bez logotypów.",
-          ua: "Інфографіка 16:9: де / коли / бачить / чує. Ранок, без логотипів."
-        }
-      }),
-      text: {
-        pl: [
-          "Chcemy ustalić, co dzieje się wokół osoby mówiącej. Z tekstu zbieramy:",
-          "• gdzie prawdopodobnie jest;",
-          "• kiedy to się dzieje;",
-          "• co widzi;",
-          "• co słyszy;",
-          "• co przeżywa."
-        ],
-        ua: [
-          "Щоб зрозуміти ситуацію, шукаємо в тексті: де, коли, що бачить, що чує і що відчуває osoba mówiąca."
-        ]
-      },
-      task: {
-        id: "t2-s05-sytuacja",
-        type: "multiple-choice",
-        question: {
-          pl: "Zaznacz wszystko, co naprawdę wynika z wiersza (może być kilka odpowiedzi).",
-          ua: "Познач усе, що справді випливає з вірша (може бути кілька)."
-        },
-        options: [
-          {
-            id: "a",
-            label: {
-              pl: "Kiedy: o świcie — „Za oknami świt czerwony”, „Słońce wraca”, „Ptak zbudzony”.",
-              ua: "Коли: на світанку — świt, słońce wraca, ptak zbudzony."
-            }
-          },
-          {
-            id: "b",
-            label: {
-              pl: "Widzi: świt za oknami, kasztany, wodę pełną srebrnych lśnień.",
-              ua: "Бачить: світанок за вікнами, каштани, воду."
-            }
-          },
-          {
-            id: "c",
-            label: {
-              pl: "Jest noc i osoba boi się burzy.",
-              ua: "Ніч, і особа боїться бурі."
-            }
-          },
-          {
-            id: "d",
-            label: {
-              pl: "Słyszy: senny szelest drzew i śpiew ptaka.",
-              ua: "Чує: шелест дерев і спів птаха."
-            }
-          },
-          {
-            id: "e",
-            label: {
-              pl: "Gdzie: prawdopodobnie przy oknie — „Za oknami świt czerwony”.",
-              ua: "Де: ймовірно біля вікна — «Za oknami»."
-            }
-          }
-        ],
-        answer: ["a", "b", "d", "e"],
-        hint: {
-          pl: "Szukaj w tekście: świt, okno, szelest, ptak, kasztany, woda. Nie zgaduj „ładnej” historii spoza wiersza.",
-          ua: "Шукай у тексті: świt, okno, szelest, ptak, kasztany, woda."
-        },
-        mistakes: [
-          {
-            answer: "c",
-            feedback: {
-              pl: "Nocy i burzy w tym wierszu nie ma. Jest świt i budzący się dzień.",
-              ua: "Ночі й бурі немає. Є світанок."
-            }
-          }
-        ],
-        explanation: {
-          pl: "Sytuacja (EduMost): poranek, budzący się świat, obserwowanie przyrody zza okna, przeżywanie piękna dnia. Osoba jest przy oknie; widzi świt, kasztany i wodę; słyszy drzewa i ptaka.",
-          ua: "Ситуація (EduMost): ранок, світ прокидається, погляд з вікна, радість дня."
-        }
-      }
-    },
-    // 6
-    {
-      type: "practice",
-      heading: { pl: "Jaki jest nastrój?", ua: "Який настрій?" },
-      formula: "nastrój  →  ponieważ  →  fragment z wiersza",
-      promptPlace: "before",
-      prompt: {
-        pl: "Nastrój to ogólne wrażenie i uczucia, które pojawiają się podczas czytania wypowiedzi. Najpierw przeczytaj jeszcze raz drugą strofę: „Ach! dzień dobry wam, kasztany…”.",
-        ua: "Настрій — це загальне відчуття, яке виникає під час читання."
-      },
-      items: [
-        {
-          pl: "Słowa z podręcznika (s. 11): smutny · pogodny · spokojny · radosny · wesoły · ponury · żartobliwy · pełen niepokoju · mroczny · tajemniczy · posępny",
-          ua: "сумний · світлий, життєрадісний · спокійний · радісний · веселий · похмурий · жартівливий · сповнений тривоги · похмурий, темний · загадковий · похмурий"
-        },
-        {
-          pl: "Twój nastrój po przeczytaniu może być inny — to Twoja reakcja. Teraz pytamy o nastrój WYPOWIEDZI w wierszu.",
-          ua: "Твій настрій може бути інший. Це нормально. Зараз — настрій висловлювання у вірші."
-        }
-      ],
-      task: {
-        id: "t2-s06-nastroj",
-        type: "single-choice",
-        question: {
-          pl: "Wybierz parę: nastrój wypowiedzi + fragment, który to potwierdza.",
-          ua: "Вибери пару: настрій + уривок, який це підтверджує."
-        },
-        options: [
-          {
-            id: "a",
-            label: {
-              pl: "pogodny, radosny, wesoły  →  ponieważ  →  „Jeszcze jeden darowany / Cudownego życia dzień!”",
-              ua: "погідний, радісний, веселий  →  бо  →  «darowany / Cudownego życia dzień»"
-            }
-          },
-          {
-            id: "b",
-            label: {
-              pl: "smutny, ponury, posępny  →  ponieważ  →  „Jeszcze sennych szelest drzew”",
-              ua: "сумний, похмурий  →  бо  →  шелест дерев"
-            }
-          },
-          {
-            id: "c",
-            label: {
-              pl: "mroczny, pełen niepokoju  →  ponieważ  →  „Za oknami świt czerwony”",
-              ua: "морочний, сповнений тривоги  →  бо  →  червоний світанок"
-            }
-          }
-        ],
-        answer: "a",
-        hint: {
-          pl: "Wróć do drugiej strofy. Osoba mówi „dzień dobry” i cieszy się „darowanym” dniem. Które słowa z ramki to opisują: pogodny, radosny… czy smutny?",
-          ua: "Друга строфа: «dzień dobry» і «darowany dzień». Це радість, не сум."
-        },
-        mistakes: [
-          {
-            answer: "b",
-            feedback: {
-              pl: "Szelest drzew jest cichy, ale cały wiersz wita dzień i nazywa go darem. To nie smutek.",
-              ua: "Шелест тихий, але вірш вітає день як дар. Це не сум."
-            }
-          },
-          {
-            answer: "c",
-            feedback: {
-              pl: "Czerwony świt to kolor poranka, nie groza. Osoba cieszy się dniem, nie boi się.",
-              ua: "Червоний світанок — колір ранку, не жах."
-            }
-          }
-        ],
-        explanation: {
-          pl: "Nastrój wypowiedzi jest pogodny i radosny, bo osoba wita kasztany i wodę oraz nazywa dzień darem. Słowa ze szkolnej ramki, które pasują: pogodny, spokojny, radosny, wesoły. (Można wybrać kilka — nie tylko jedno.) Smutny, ponury, mroczny — nie pasują do tego głosu.",
-          ua: "Настрій погідний і радісний: день як дар. Сумний / похмурий — не пасує."
-        }
-      }
-    },
-    // 7
-    {
-      type: "example",
-      heading: { pl: "Zobacz ten zwrot", ua: "Подивись на це звертання" },
-      formula: "Ach! dzień dobry wam, kasztany, / Wodo pełna srebrnych lśnień!",
-      visual: vizGh("t2-apostrofa-zwrot.png", {
-        alt: {
-          pl: "Zwrot do kasztanów i wody",
-          ua: "Звертання до каштанів і води"
-        },
-        title: { pl: "Czy ktoś tu do kogoś mówi?", ua: "Чи хтось тут до когось каже?" },
-        prompt: {
-          pl: "Edukacyjna ilustracja 16:9: ciepły poranek, kasztany i tafla wody ze srebrnymi błyskami. Ktoś z okna jakby wita drzewa i wodę. Napis PL: dzień dobry wam. Bez definicji na rysunku, bez logotypów, bez angielskiego.",
-          ua: "Ілюстрація: каштани і вода, вітання з вікна. Без логотипів."
-        }
-      }),
-      text: {
-        pl: [
-          "Najpierw zobacz. Jeszcze nie nazywamy tego trudnym słowem.",
-          "Czy osoba mówiąca tylko opisuje świat? Czy może ZWRACA SIĘ do kogoś lub czegoś?"
-        ],
-        ua: [
-          "Спочатку подивись. Чи особа лише описує світ, чи звертається до когось / чогось?"
-        ]
-      },
-      task: {
-        id: "t2-s07-zwrot",
-        type: "single-choice",
-        question: {
-          pl: "Czy w tych dwóch liniach osoba mówiąca zwraca się bezpośrednio do kogoś lub czegoś?",
-          ua: "Чи в цих двох рядках особа звертається безпосередньо до когось або чогось?"
-        },
-        options: [
-          { id: "a", label: { pl: "Tak — mówi do kasztanów i do wody", ua: "Так — говорить до каштанів і до води" } },
-          { id: "b", label: { pl: "Nie — tylko opowiada o poranku", ua: "Ні — лише розповідає про ранок" } }
-        ],
-        answer: "a",
-        hint: {
-          pl: "Szukaj słów jak „dzień dobry wam” i „Wodo” (jak wołanie). To nie jest tylko opis „kasztany stoją”.",
-          ua: "Шукай «dzień dobry wam» і «Wodo» — це вітання, не лише опис."
-        },
-        mistakes: [
-          {
-            answer: "b",
-            feedback: {
-              pl: "Gdyby tylko opisywała, usłyszelibyśmy np. „kasztany stoją przy wodzie”. Tu mówi: dzień dobry WAM, kasztany; WODO!",
-              ua: "Тут не лише опис: «dzień dobry wam» і «Wodo»."
-            }
-          }
-        ],
-        explanation: {
-          pl: "Tak. To bezpośrednie zwrócenie się. W podręczniku (s. 11) zapamiętaj definicję: Apostrofa to bezpośrednie zwrócenie się do jakiegoś odbiorcy, na przykład osoby, bóstwa czy przedmiotu. Stosuje się ją w tekstach poetyckich pełnych emocji, utrzymanych w podniosłym, uroczystym nastroju, a także w przemówieniach. Jak rozpoznać: 1) ktoś mówi 2) zwraca się bezpośrednio 3) zwrot ma odbiorcę (tu: kasztany i woda).",
-          ua: "Апострофа — це безпосереднє звертання до когось або чогось. У «Preludium» — до каштанів і води."
-        }
-      }
-    },
-    // 8
-    {
-      type: "practice",
-      heading: { pl: "Rozpoznaj apostrofę", ua: "Розпізнай апострофу" },
-      promptPlace: "before",
-      prompt: {
-        pl: "Najpierw dwa przykłady EduMost (nie z Lechonia). A: „Dzień dobry, przyjacielu!” — zwrot do kogoś. B: „Słońce pojawiło się nad horyzontem.” — tylko opis, bez zwrotu. Niżej wiersz — potem nowe zdania.",
-        ua: "Спочатку приклад: А — звертання, B — лише опис. Нижче вірш, потім нові речення."
-      },
-      text: {
-        pl: [
-          "Za oknami świt czerwony,",
-          "Jeszcze sennych szelest drzew,",
-          "Słońce wraca z drugiej strony,",
-          "Ptak zbudzony zaczął śpiew.",
-          " ",
-          " ",
-          "Ach! dzień dobry wam, kasztany,",
-          "Wodo pełna srebrnych lśnień!",
-          "Jeszcze jeden darowany",
-          "Cudownego życia dzień!"
-        ]
-      },
-      task: {
-        id: "t2-s08-rozpoznaj",
-        type: "single-choice",
-        question: {
-          pl: "W którym zdaniu jest apostrofa?",
-          ua: "У якому реченні є апострофа?"
-        },
-        options: [
-          {
-            id: "a",
-            label: { pl: "Noc była cicha i długa.", ua: "Ніч була тиха і довга." }
-          },
-          {
-            id: "b",
-            label: { pl: "O nocy, zostań jeszcze chwilę!", ua: "О ноче, залишся ще на мить!" }
-          },
-          {
-            id: "c",
-            label: { pl: "Dzieci bały się ciemności.", ua: "Діти боялися темряви." }
-          }
-        ],
-        answer: "b",
-        hint: {
-          pl: "Czy osoba mówi DO kogoś / czegoś, czy tylko O kimś / o czymś?",
-          ua: "Говорить ДО когось чи лише ПРО когось?"
-        },
-        mistakes: [
-          {
-            answer: "a",
-            feedback: {
-              pl: "Tu ktoś opowiada O nocy, nie mówi DO nocy. Brak bezpośredniego zwrotu.",
-              ua: "Розповідь ПРО ніч, не звертання ДО ночі."
-            }
-          },
-          {
-            answer: "c",
-            feedback: {
-              pl: "Tu opowieść o dzieciach. Nikt nie zwraca się do ciemności ani do dzieci.",
-              ua: "Розповідь про дітей, без звертання."
-            }
-          }
-        ],
-        explanation: {
-          pl: "„O nocy, zostań jeszcze chwilę!” to zwrot do nocy — apostrofa. „Dzień dobry, przyjacielu!” też byłoby apostrofą. Opis bez zwrotu (słońce wzeszło / noc była cicha) — nie.",
-          ua: "«О ноче…» — звертання, отже апострофа."
-        }
-      }
-    },
-    // 9
-    {
-      type: "observe",
-      heading: { pl: "Apostrofa w „Preludium”", ua: "Апострофа в «Preludium»" },
-      visual: vizGh("t2-kasztany-woda.png", {
-        alt: {
-          pl: "Kasztany i woda o świcie",
-          ua: "Каштани і вода на світанку"
-        },
-        title: { pl: "Do kogo zwraca się osoba mówiąca?", ua: "До кого звертається особа?" },
-        prompt: {
-          pl: "Edukacyjna ilustracja 16:9: kasztan o świcie i woda ze srebrnymi lśnieniami. Ciepły akwarelowy poranek, etykiety PL: kasztany, woda. Bez całego wiersza na rysunku, bez logotypów, bez angielskiego.",
-          ua: "Ілюстрація: каштани і вода, світанок. Без логотипів."
-        }
-      }),
-      promptPlace: "before",
-      prompt: {
-        pl: "Wróć do wiersza. Znajdź apostrofę — bezpośredni zwrot. Potem powiedz, do kogo lub do czego.",
-        ua: "Знайди звертання в «Preludium». До кого / до чого воно?"
-      },
-      task: {
-        id: "t2-s09-w-wierszu",
-        type: "single-choice",
-        question: {
-          pl: "Który fragment jest apostrofą — i do kogo (czego) jest ten zwrot?",
-          ua: "Який уривок є апострофою і до кого (чого) звертання?"
-        },
-        options: [
-          {
-            id: "a",
-            label: {
-              pl: "„Za oknami świt czerwony, / Jeszcze sennych szelest drzew” — opis poranka, nie zwrot.",
-              ua: "Опис ранку, не звертання."
-            }
-          },
-          {
-            id: "b",
-            label: {
-              pl: "„Słońce wraca z drugiej strony, / Ptak zbudzony zaczął śpiew.” — opis, nie zwrot.",
-              ua: "Опис сонця і птаха, не звертання."
-            }
-          },
-          {
-            id: "c",
-            label: {
-              pl: "„Ach! dzień dobry wam, kasztany, / Wodo pełna srebrnych lśnień!” — zwrot do kasztanów i do wody.",
-              ua: "Звертання до каштанів і до води."
-            }
-          },
-          {
-            id: "d",
-            label: {
-              pl: "„Jeszcze jeden darowany / Cudownego życia dzień!” — radość, ale bez „do kogo”.",
-              ua: "Радість, але без «до кого»."
-            }
-          }
-        ],
-        answer: "c",
-        hint: {
-          pl: "Apostrofa to zwrot. Gdzie ktoś mówi „dzień dobry wam” i woła „Wodo”?",
-          ua: "Де є «dzień dobry wam» і «Wodo»?"
-        },
-        mistakes: [
-          {
-            answer: "a",
-            feedback: {
-              pl: "Tu osoba opisuje, co widzi i słyszy. Nie mówi DO świtu ani DO drzew.",
-              ua: "Опис, не звертання."
-            }
-          },
-          {
-            answer: "b",
-            feedback: {
-              pl: "Słońce i ptak są opisane. Nikt nie mówi „słońce, wróć” — to nie apostrofa.",
-              ua: "Опис, не звертання до сонця."
-            }
-          },
-          {
-            answer: "d",
-            feedback: {
-              pl: "To radość z dnia, ale bez bezpośredniego zwrotu do odbiorcy. Apostrofa jest wers wyżej: kasztany i woda.",
-              ua: "Радість без звертання. Апострофа — рядком вище."
-            }
-          }
-        ],
-        explanation: {
-          pl: "Właśnie dlatego ten fragment jest apostrofą: osoba mówiąca nie tylko opisuje kasztany i wodę. Zwraca się do nich bezpośrednio („dzień dobry wam, kasztany”, „Wodo”). Odbiorcy zwrotu: kasztany i woda.",
-          ua: "Це апострофа, бо є безпосереднє звертання до каштанів і води — не лише опис."
-        }
-      }
-    },
-    // 10
-    {
-      type: "task",
-      heading: { pl: "Teraz mówisz głosem osoby z wiersza", ua: "Тепер говориш голосом особи з вірша" },
-      promptPlace: "before",
-      prompt: {
-        pl: "Wyobraź sobie, że jesteś osobą mówiącą w „Preludium”. Dokończ wypowiedź po polsku. W podręczniku (s. 11) startery: „Każdy dzień mojego życia…” albo „Moje życie…”. Pomyśl, co ta osoba widzi, słyszy i czuje.",
-        ua: "Уяви, що ти — osoba mówiąca у вірші. Продовж думку польською."
-      },
-      text: {
-        pl: [
-          "Nie oceniamy, czy to ładna poezja. Napisz 1–3 zdania. Potem sam sprawdź listę pod spodem.",
-          "Gdy mówisz o nastroju ludzi, w ramce s. 11 są też: mieć dobry/zły wpływ · patrzeć na świat przez różowe okulary · popadać w depresję · widzieć świat w ciemnych barwach · być optymistą/pesymistą · dzielić się radością · zarażać smutkiem · zachowywać pogodę ducha."
-        ],
-        ua: [
-          "Стиль не оцінюємо. Напиши 1–3 речення польською.",
-          "З рамки с. 11 (настрій людей): мати добрий/поганий вплив · дивитися на світ крізь рожеві окуляри · бути оптимістом/песимістом · ділитися радістю · зберігати гарний настрій."
-        ]
-      },
-      task: {
-        id: "t2-s10-ja",
-        type: "open-answer",
-        question: {
-          pl: "Dokończ: „Każdy dzień mojego życia…” albo „Moje życie…”",
-          ua: "Продовж: «Każdy dzień mojego życia…» або «Moje życie…»"
-        },
-        answer: [
-          "Każdy dzień mojego życia jest darem.",
-          "Każdy dzień mojego życia jest cudowny.",
-          "Każdy dzień mojego życia jest darowany.",
-          "Moje życie jest darem.",
-          "Moje życie jest cudowne."
-        ],
-        hint: {
-          pl: "Zacznij jak w książce. Możesz napisać np.: „Każdy dzień mojego życia jest darem.” Potem sam sprawdź: czy po polsku? czy jak osoba mówiąca (ja)? czy jest świt, radość, dar dnia?",
-          ua: "Почни як у книжці. Потім сам: польською? як особа з вірша? чи є ранок / радість / дар дня?"
-        },
-        explanation: {
-          pl: "Sprawdź sam: 1) napisałem po polsku; 2) pisałem jak osoba mówiąca (nie jak recenzent o wierszu); 3) nawiązałem do sytuacji lub nastroju (świt, kasztany, darowany dzień). Silnik nie ocenia poezji — jeśli napisałeś własne zdanie, i tak przeczytaj tę listę.",
-          ua: "Самоперевірка: польською? як особа з вірша? чи є зв’язок із ранком і радістю дня?"
-        }
-      }
-    },
-    // 11
-    {
-      type: "check",
-      heading: { pl: "Sprawdź się", ua: "Перевір себе" },
-      promptPlace: "before",
-      prompt: {
-        pl: "Trzy rzeczy z dzisiejszej lekcji. Możesz wrócić wzrokiem do wiersza. Zaznacz wszystkie prawdziwe zdania.",
-        ua: "Можна дивитися у вірш. Познач усі правдиві речення."
-      },
-      task: {
-        id: "t2-s11-sprawdz",
-        type: "multiple-choice",
-        question: {
-          pl: "Zaznacz trzy zdania, które są prawdziwe po tej lekcji.",
-          ua: "Познач три речення, які правдиві після цього уроку."
-        },
-        options: [
-          {
-            id: "a",
-            label: {
-              pl: "W wierszu mówi osoba mówiąca (głos w tekście). Nie wystarczy: „Lechoń, bo autor”.",
-              ua: "У вірші говорить osoba mówiąca. Не досить: «Лехонь, бо автор»."
-            }
-          },
-          {
-            id: "b",
-            label: {
-              pl: "Nastrój można zgadnąć z tytułu, bez fragmentu.",
-              ua: "Настрій можна вгадати з назви, без уривка."
-            }
-          },
-          {
-            id: "c",
-            label: {
-              pl: "Nastrój wypowiedzi jest pogodny i radosny, bo dzień jest „darowany” / „cudownego życia”.",
-              ua: "Настрій погідний і радісний, бо день «darowany»."
-            }
-          },
-          {
-            id: "d",
-            label: {
-              pl: "Apostrofa to znak «’» w nazwisku.",
-              ua: "Апострофа — знак «’» у прізвищі."
-            }
-          },
-          {
-            id: "e",
-            label: {
-              pl: "Apostrofa w „Preludium” to zwrot: „Ach! dzień dobry wam, kasztany, / Wodo pełna srebrnych lśnień!”",
-              ua: "Апострофа — звертання до каштанів і води в другій строфі."
-            }
-          }
-        ],
-        answer: ["a", "c", "e"],
-        hint: {
-          pl: "Trzy cele: kto mówi; nastrój + dowód w tekście; apostrofa w drugiej strofie (kasztany i woda).",
-          ua: "Три цілі: хто говорить; настрій + доказ; апострофа до каштанів і води."
-        },
-        explanation: {
-          pl: "Gotowe. Potrafisz już: znaleźć osobę mówiącą; opisać sytuację; określić nastrój i znaleźć dowód; rozpoznać apostrofę. Błędne były: zgadywanie nastroju bez fragmentu oraz mylenie apostrofy ze znakiem w nazwisku.",
-          ua: "Готово: особа мовця · ситуація · настрій + доказ · апострофа."
-        }
-      }
-    },
-    // 12
-    {
-      type: "summary",
-      heading: { pl: "Zapamiętaj", ua: "Запам’ятай" },
-      items: [
-        mark(
-          "W wierszu mówi osoba mówiąca — głos w tekście, nie automatycznie autor.",
-          ["osoba mówiąca"],
-          "У вірші говорить особа мовця — голос у тексті, не автоматично автор.",
-          ["особа мовця"]
-        ),
-        mark(
-          "Nastrój określamy na podstawie tekstu.",
-          ["Nastrój", "tekstu"],
-          "Настрій визначаємо на основі тексту.",
-          ["Настрій", "тексту"]
-        ),
-        mark(
-          "Swoją odpowiedź warto poprzeć fragmentem.",
-          ["fragmentem"],
-          "Відповідь варто підкріпити уривком.",
-          ["уривком"]
-        ),
-        mark(
-          "Apostrofa to bezpośredni zwrot do odbiorcy.",
-          ["Apostrofa", "zwrot"],
-          "Апострофа — безпосереднє звертання до адресата.",
-          ["Апострофа"]
-        )
-      ],
-      task: {
-        id: "t2-s12-zeszyt",
-        type: "single-choice",
-        question: {
-          pl: "Do zeszytu (nie cały wiersz): 1) Apostrofa to bezpośrednie zwrócenie się do jakiegoś odbiorcy, na przykład osoby, bóstwa czy przedmiotu. (podręcznik s. 11)  2) Przykład z „Preludium”: „Ach! dzień dobry wam, kasztany, / Wodo pełna srebrnych lśnień!”  Czy zapisałeś definicję i ten jeden zwrot?",
-          ua: "У зошит: означення апострофи з підручника + один звертальний уривок. Записав?"
-        },
-        options: [
-          {
-            id: "a",
-            label: { pl: "Tak — zapisałem w zeszycie", ua: "Так — записав у зошит" }
-          },
-          {
-            id: "b",
-            label: { pl: "Jeszcze nie", ua: "Ще ні" }
-          }
-        ],
-        answer: "a",
-        hint: {
-          pl: "Krótko: definicja z ramki s. 11 + dwie linie do kasztanów i wody. Nie przepisuj całego „Preludium”.",
-          ua: "Коротко: дефініція + два рядки до каштанів і води."
-        },
-        mistakes: [
-          {
-            answer: "b",
-            feedback: {
-              pl: "To jeden krótki zapis. Definicja + zwrot do kasztanów i wody. Potem zaznacz „Tak”.",
-              ua: "Короткий запис. Потім познач «Так»."
-            }
-          }
-        ],
-        explanation: {
-          pl: "Koniec lekcji. Później będzie lekcja o podmiocie lirycznym. Wróć do języka polskiego strzałką u góry.",
-          ua: "Кінець уроку. Пізніше — ліричний суб’єкт. Повернись стрілкою вгорі."
-        }
+      explanation: {
+        pl: "Dziś: treść, nastrój, sytuacja, apostrofa, tytuł. Podmiot liryczny — lekcja 6. Nie mieszamy z gramatyką przypadków.",
+        ua: "Сьогодні: зміст, настрій, ситуація, апострофа, назва. Ліричний суб’єкт — урок 6. Не змішуємо з відмінками."
       }
     }
-  ]
-};
+  },
+  // 2
+  {
+    type: "example",
+    heading: { pl: "Słowo z pól", ua: "Слово з полів" },
+    promptPlace: "before",
+    prompt: {
+      pl: "Jedna glosa z pomarańczowego pola s. 10. Najpierw ramka, potem rozbiór. Usłyszysz to słowo zaraz w pierwszej linii wiersza.",
+      ua: "Одна глоса з помаранчевого поля с. 10. Спочатку рамка, потім розбір. Це слово почуєш одразу в першому рядку вірша."
+    },
+    text: {
+      pl: "świt",
+      ua: "świt — світанок"
+    },
+    items: [
+      { pl: "**świt** — początek ranka; światło widoczne *przed* pojawieniem się słońca.", ua: "**świt** — початок ранку; світло, яке видно *перед* появою сонця." },
+      { pl: "To nie południe i nie zmierzch. Świt = jeszcze prawie noc, ale już się jasno robi.", ua: "Це не полудень і не смеркання. Świt = іще майже ніч, але вже світлішає." },
+      { pl: "W wierszu: *Za oknami świt czerwony* — czerwone światło poranka za szybą.", ua: "У вірші: *Za oknami świt czerwony* — червоне світло ранку за шибкою." }
+    ],
+    task: {
+      id: "t2-s02-swit",
+      type: "single-choice",
+      question: {
+        pl: "«Za oknami świt czerwony». Świt to:",
+        ua: "«Za oknami świt czerwony». Świt — це:"
+      },
+      options: [
+        { id: "a", label: { pl: "początek ranka, światło przed wschodem słońca", ua: "початок ранку, світло перед сходом сонця" } },
+        { id: "b", label: { pl: "środek nocy, gdy jest fest ciemno", ua: "середина ночі, коли зовсім темно" } },
+        { id: "c", label: { pl: "nazwa ptaka za oknem", ua: "назва птаха за вікном" } }
+      ],
+      answer: "a",
+      hint: {
+        pl: "Glosa z pola: początek ranka, światło *przed* pojawieniem się słońca.",
+        ua: "Глоса з поля: початок ранку, світло *перед* появою сонця."
+      },
+      explanation: {
+        pl: "Świt = wczesny poranek, jeszcze przed pełnym słońcem. Dlatego w wierszu słońce dopiero *wraca*. To nie noc i nie ptak.",
+        ua: "Świt = ранній ранок, ще перед повним сонцем. Тому в вірші сонце щойно *wraca*. Це не ніч і не птах."
+      }
+    }
+  },
+  // 3
+  {
+    type: "observe",
+    heading: { pl: "Czytamy wiersz", ua: "Читаємо вірш" },
+    formula: "s. 10  ·  nagranie  ·  Jan Lechoń",
+    promptPlace: "before",
+    prompt: {
+      pl: "Najpierw *posłuchaj* nagrania strony 10 (głos po polsku). Potem odsłoń dwie strofy. Wiersza nie tłumaczymy. Pytania w głowie: *gdzie* jest osoba? *kiedy*? *co* widzi i słyszy? czy tylko opisuje, czy do kogoś *mówi*?",
+      ua: "Спочатку *послухай* запис сторінки 10 (голос польською). Потім відкрий дві строфи. Вірш не перекладаємо. Питання: *де* особа? *коли*? *що* бачить і чує? чи лише описує, чи до когось *говорить*?"
+    },
+    reveal: true,
+    steps: [
+      {
+        formula: "strofa 1",
+        visual: vizGhT2("t2-preludium.png", {
+          prompt: "Ptak i świt.",
+          alt: {
+            pl: "Ptak wita pomarańczowy świt z drzewami w chmurze światła.",
+            ua: "Птах вітає помаранчевий світанок із деревами в хмарі світла."
+          }
+        }),
+        text: {
+          pl: [
+            "Jan Lechoń",
+            "Preludium",
+            " ",
+            "Za oknami świt czerwony,",
+            "Jeszcze sennych szelest drzew,",
+            "Słońce wraca z drugiej strony,",
+            "Ptak zbudzony zaczął śpiew."
+          ]
+        }
+      },
+      {
+        formula: "strofa 2",
+        text: {
+          pl: [
+            "Ach! dzień dobry wam, kasztany,",
+            "Wodo pełna srebrnych lśnień!",
+            "Jeszcze jeden darowany",
+            "Cudownego życia dzień!"
+          ]
+        }
+      }
+    ],
+    task: {
+      id: "t2-s03-relacja",
+      type: "single-choice",
+      question: {
+        pl: "Co NA PEWNO dzieje się w tym wierszu?",
+        ua: "Що НАПЕВНО діється в цьому вірші?"
+      },
+      options: [
+        { id: "a", label: { pl: "Zaczyna się poranek: świt, słońce, szelest drzew, śpiew ptaka — i radość z dnia.", ua: "Починається ранок: світанок, сонце, шелест дерев, спів птаха — і радість дня." } },
+        { id: "b", label: { pl: "Zapada noc: księżyc, cisza i strach przed ciemnością.", ua: "Настає ніч: місяць, тиша і страх перед темрявою." } },
+        { id: "c", label: { pl: "Ktoś idzie do szkoły i martwi się o sprawdzian.", ua: "Хтось іде до школи і хвилюється за контрольну." } }
+      ],
+      answer: "a",
+      hint: {
+        pl: "Pierwsze słowa: *Za oknami świt…* Koniec: *darowany / Cudownego życia dzień*.",
+        ua: "Перші слова: *Za oknami świt…* Кінець: *darowany / Cudownego życia dzień*."
+      },
+      explanation: {
+        pl: "Poranek: świt, słońce wraca, drzewa, ptak. Potem powitanie kasztanów i wody oraz radość z darowanego dnia. To nie noc i nie szkoła.",
+        ua: "Ранок: світанок, сонце повертається, дерева, птах. Потім вітання каштанів і води та радість подарованого дня. Це не ніч і не школа."
+      }
+    }
+  },
+  // 4
+  {
+    type: "example",
+    heading: { pl: "Jaki jest nastrój", ua: "Який настрій" },
+    formula: "s. 11  ·  zad. 1  ·  ramka",
+    promptPlace: "before",
+    prompt: {
+      pl: "Podręcznik: określ nastrój wypowiedzi poetyckiej. Zapisz w zeszycie *pasujące* sformułowania z ramki. Nastrój to ogólne wrażenie z głosu w wierszu — nie zgadujemy z tytułu. Dowód szukaj w strofie 2.",
+      ua: "Підручник: визнач настрій поетичного висловлювання. Запиши в зошит *ті* слова з рамки, що пасують. Настрій — загальне враження від голосу у вірші. Доказ шукай у строфі 2."
+    },
+    text: {
+      pl: "smutny  ·  pogodny  ·  spokojny  ·  radosny  ·  wesoły  ·  ponury  ·  żartobliwy  ·  pełen niepokoju  ·  mroczny  ·  tajemniczy  ·  posępny",
+      ua: "smutny — сумний  ·  pogodny — погідний  ·  spokojny — спокійний  ·  radosny — радісний  ·  wesoły — веселий  ·  ponury — похмурий  ·  żartobliwy — жартівливий  ·  pełen niepokoju — сповнений тривоги  ·  mroczny — морочний  ·  tajemniczy — таємничий  ·  posępny — понурий"
+    },
+    items: [
+      { pl: "*smutny* — pełen smutku. *ponury* — jak ciemne chmury, bez światła. *posępny* — poważny, bez uśmiechu.", ua: "*smutny* — сумний. *ponury* — похмурий, як темні хмари без сонця. *posępny* — понурий, сумовитий, наче без усмішки." },
+      { pl: "*pogodny* — jasny, łagodny (jak pogodne niebo). *spokojny* — bez krzyku i strachu. *radosny* — pełen radości. *wesoły* — z uśmiechem, lekki.", ua: "*pogodny* — погідний, ясний (як ясне небо). *spokojny* — спокійний, без крику і страху. *radosny* — радісний. *wesoły* — веселий, з усмішкою." },
+      { pl: "*żartobliwy* — z żartem, do śmiechu. *tajemniczy* — jak zagadka, coś ukryte. *mroczny* — ciemny i groźny. *pełen niepokoju* — ktoś się boi, nie może uspokoić.", ua: "*żartobliwy* — жартівливий. *tajemniczy* — таємничий, загадковий. *mroczny* — морочний, зловісний (темний і страшний). *pełen niepokoju* — сповнений тривоги, неспокою." },
+      { pl: "Do *Preludium* pasują: *pogodny, spokojny, radosny, wesoły* — bo *dzień dobry*, *darowany*, *cudownego życia dzień*.", ua: "До *Preludium* пасують: *pogodny, spokojny, radosny, wesoły* (погідний, спокійний, радісний, веселий) — бо *dzień dobry*, *darowany*, *cudownego życia dzień*." },
+      { pl: "Nie pasują: *smutny, ponury, posępny, mroczny, pełen niepokoju*. *Żartobliwy / tajemniczy* — ten głos jest uroczysty, pełen zachwytu, nie żart i nie zagadka.", ua: "Не пасують: *smutny, ponury, posępny, mroczny, pełen niepokoju* (сумний, похмурий, понурий, морочний, сповнений тривоги). *Żartobliwy / tajemniczy* — цей голос урочистий, повний захвату, не жарт і не загадка." }
+    ],
+    task: {
+      id: "t2-s04-nastroj",
+      type: "multiple-choice",
+      question: {
+        pl: "Które sformułowania NA PEWNO pasują do nastroju Preludium? Zaznacz wszystkie pewne.",
+        ua: "Які формулювання НАПЕВНО пасують до настрою Preludium? Познач усі певні."
+      },
+      options: [
+        { id: "a", label: { pl: "pogodny, radosny, wesoły", ua: "pogodny, radosny, wesoły — погідний, радісний, веселий" } },
+        { id: "b", label: { pl: "smutny, ponury, posępny", ua: "smutny, ponury, posępny — сумний, похмурий, понурий" } },
+        { id: "c", label: { pl: "spokojny", ua: "spokojny — спокійний" } },
+        { id: "d", label: { pl: "mroczny, pełen niepokoju", ua: "mroczny, pełen niepokoju — морочний, сповнений тривоги" } }
+      ],
+      answer: ["a", "c"],
+      hint: {
+        pl: "Strofa 2: Ach! dzień dobry… darowany / Cudownego życia dzień. Czy to smutek?",
+        ua: "Строфа 2: Ach! dzień dobry… darowany / Cudownego życia dzień. Чи це сум?"
+      },
+      explanation: {
+        pl: "Pogodny, spokojny, radosny, wesoły. Smutny / ponury / mroczny odpadają: osoba wita dzień jak dar.",
+        ua: "Погідний, спокійний, радісний, веселий. Сумний / похмурий / морочний відпадають: особа вітає день як дар."
+      }
+    }
+  },
+  // 5
+  {
+    type: "observe",
+    heading: { pl: "Sytuacja osoby mówiącej", ua: "Ситуація особи, яка говорить" },
+    formula: "s. 11  ·  zad. 2a",
+    promptPlace: "before",
+    prompt: {
+      pl: "Most z lekcji 1: kto mówi, *gdzie*, *kiedy*. Dziś dokładamy: co *widzi* i co *słyszy*. Odpowiedzi bierz z *fragmentów* wiersza, nie z wyobraźni. Osoba mówiąca = głos *w tekście*. Jan Lechoń *napisał* wiersz — to nie to samo pytanie.",
+      ua: "Міст з уроку 1: хто говорить, *де*, *коли*. Сьогодні додаємо: що *бачить* і що *чує*. Відповіді бери з *уривків* вірша, не з уяви. Особа, яка говорить = голос *у тексті*. Ян Лехонь *написав* вірш — це інше питання."
+    },
+    visual: vizGhT2("t2-preludium.png", {
+      prompt: "Ptak i świt.",
+      alt: {
+        pl: "Ptak i pomarańczowy świt.",
+        ua: "Птах і помаранчевий світанок."
+      }
+    }),
+    items: [
+      { pl: "*Gdzie?* Prawdopodobnie przy oknie — *Za oknami świt czerwony*.", ua: "*Де?* Ймовірно біля вікна — *Za oknami świt czerwony*." },
+      { pl: "*Kiedy?* O świcie: słońce wraca, ptak *zbudzony* zaczął śpiew.", ua: "*Коли?* На світанку: сонце повертається, птах *збуджений* почав спів." },
+      { pl: "*Widzi:* świt, kasztany, wodę pełną srebrnych lśnień.", ua: "*Бачить:* світанок, каштани, воду повну сріблястих відблисків." },
+      { pl: "*Słyszy:* senny szelest drzew i śpiew ptaka.", ua: "*Чує:* сонний шелест дерев і спів птаха." }
+    ],
+    task: {
+      id: "t2-s05-sytuacja",
+      type: "multiple-choice",
+      question: {
+        pl: "Co NA PEWNO wynika z wiersza? Zaznacz wszystkie pewne.",
+        ua: "Що НАПЕВНО випливає з вірша? Познач усі певні."
+      },
+      options: [
+        { id: "a", label: { pl: "Przy oknie, o świcie; widzi świt, kasztany, wodę; słyszy drzewa i ptaka.", ua: "Біля вікна, на світанку; бачить світанок, каштани, воду; чує дерева і птаха." } },
+        { id: "b", label: { pl: "To Jan Lechoń osobiście stoi w ogrodzie — bo on jest autorem, szukać w tekście nie trzeba.", ua: "Це особисто Ян Лехонь стоїть у саду — бо він автор, у тексті шукати не треба." } },
+        { id: "c", label: { pl: "Jest noc i osoba boi się burzy.", ua: "Ніч, і особа боїться бурі." } },
+        { id: "d", label: { pl: "Osoba mówiąca to głos w tekście, nie automatycznie podpis pod tytułem.", ua: "Особа, яка говорить — голос у тексті, не автоматично підпис під назвою." } }
+      ],
+      answer: ["a", "d"],
+      hint: {
+        pl: "Szukaj cytatów: okno, świt, szelest, ptak, kasztany, woda. Autor ≠ osoba mówiąca.",
+        ua: "Шукай цитати: вікно, світанок, шелест, птах, каштани, вода. Автор ≠ особа, яка говорить."
+      },
+      explanation: {
+        pl: "Sytuacja z tekstu: okno, świt, kasztany, woda, szelest, ptak. Autor jest na podpisie. Nocy i burzy nie ma.",
+        ua: "Ситуація з тексту: вікно, світанок, каштани, вода, шелест, птах. Автор — на підписі. Ночі й бурі немає."
+      }
+    }
+  },
+  // 6
+  {
+    type: "concept",
+    heading: { pl: "Apostrofa", ua: "Апострофа" },
+    formula: "s. 11  ·  nagranie  ·  zad. 2b",
+    promptPlace: "before",
+    prompt: {
+      pl: "To *ramka z podręcznika* — definicja do zeszytu. Zapisz ją. Potem odpowiedz: *do kogo* zwraca się osoba mówiąca. Nagranie s. 11 pomoże usłyszeć polski głos ramki. Most: українське *звертання* (апострофа). Uwaga: to *nie* znak «’» w nazwisku.",
+      ua: "Це *рамка з підручника* — означення до зошита. Запиши. Потім відповіси: *до кого* звертається особа, яка говорить. Запис с. 11 допоможе почути польський голос рамки. Міст: українське *звертання* (апострофа). Увага: це *не* знак «’» у прізвищі."
+    },
+    text: {
+      pl: "**Apostrofa** to **bezpośrednie zwrócenie się** do jakiegoś odbiorcy, na przykład osoby, bóstwa czy przedmiotu. Stosuje się ją w tekstach poetyckich pełnych emocji, utrzymanych w podniosłym, uroczystym nastroju, a także w przemówieniach.",
+      ua: "**Апострофа** — це **безпосереднє звертання** до якогось адресата, наприклад особи, божества чи предмета. Її вживають у поетичних текстах, повних емоцій, у піднесеному, урочистому настрої, а також у промовах."
+    },
+    items: [
+      { pl: "Trzy kroki: 1) ktoś mówi, 2) zwraca się *bezpośrednio*, 3) ma *odbiorcę*.", ua: "Три кроки: 1) хтось говорить, 2) звертається *безпосередньо*, 3) є *адресат*." },
+      { pl: "W *Preludium* odbiorcy: *kasztany* i *woda* (*Wodo!*).", ua: "У *Preludium* адресати: *каштани* і *вода* (*Wodo!*)." },
+      { pl: "Sygnały: *dzień dobry wam*, wołacz *Wodo*, wykrzyknik *Ach!*", ua: "Сигнали: *dzień dobry wam*, кличний *Wodo*, вигук *Ach!*" },
+      { pl: "Strofa 1 tylko *opisuje* świt i ptaka — to jeszcze nie apostrofa.", ua: "Строфа 1 лише *описує* світанок і птаха — це ще не апострофа." }
+    ],
+    task: {
+      id: "t2-s06-apostrofa",
+      type: "single-choice",
+      question: {
+        pl: "Do kogo (czego) zwraca się osoba mówiąca w wierszu?",
+        ua: "До кого (чого) звертається особа, яка говорить у вірші?"
+      },
+      options: [
+        { id: "a", label: { pl: "Do kasztanów i do wody.", ua: "До каштанів і до води." } },
+        { id: "b", label: { pl: "Do Jana Lechonia (autora).", ua: "До Яна Лехоня (автора)." } },
+        { id: "c", label: { pl: "Do ptaka i do słońca.", ua: "До птаха і до сонця." } }
+      ],
+      answer: "a",
+      hint: {
+        pl: "Szukaj *dzień dobry wam, kasztany* i *Wodo pełna srebrnych lśnień*.",
+        ua: "Шукай *dzień dobry wam, kasztany* і *Wodo pełna srebrnych lśnień*."
+      },
+      explanation: {
+        pl: "Zwrot idzie do kasztanów i wody. Ptak i słońce są tylko opisane. Autor nie jest odbiorcą apostrofy.",
+        ua: "Звертання йде до каштанів і води. Птах і сонце лише описані. Автор не є адресатом апострофи."
+      }
+    }
+  },
+  // 7
+  {
+    type: "practice",
+    heading: { pl: "Przeżycia w apostrofie", ua: "Переживання в апострофі" },
+    formula: "s. 11  ·  zad. 2c",
+    promptPlace: "before",
+    prompt: {
+      pl: "Nazwij przeżycia osoby mówiącej i wyjaśnij, *jak* zostały wyrażone w tym fragmencie. Cytat z podręcznika:",
+      ua: "Назви переживання особи, яка говорить, і поясни, *як* вони виражені в цьому уривку. Цитата з підручника:"
+    },
+    items: [
+      { pl: "*Ach! dzień dobry wam, kasztany, / Wodo pełna srebrnych lśnień!*", ua: "Вірш не перекладаємо. Слова: *Ach!* — вигук «ах!»; *dzień dobry wam* — «добрий день вам»; *kasztany* — каштани; *Wodo* — кличний від *woda* (водо!); *srebrnych lśnień* — срібних відблисків." },
+      { pl: "Przeżycia: *radość* — jest mi dobrze; *zachwyt* — coś mnie zachwyca; *wdzięczność* — dziękuję za dar; *ciepło* — łagodne uczucie do świata. Dzień jest darem.", ua: "Переживання: *radość* — радість (мені добре); *zachwyt* — захват (щось мене захоплює); *wdzięczność* — вдячність (дякую за дар); *ciepło* — тепло, сердечність. День є даром." },
+      { pl: "Jak to widać: wykrzyknik *Ach!*, powitanie *dzień dobry wam*, wołacz *Wodo*, później *darowany* (dany w darze) / *cudownego życia dzień* (dzień cudownego życia).", ua: "Як це видно: вигук *Ach!*; вітання *dzień dobry wam*; кличний відмінок *Wodo*; далі *darowany* — подарований; *cudownego życia dzień* — день чудового життя." }
+    ],
+    task: {
+      id: "t2-s07-przezycia",
+      type: "true-false",
+      question: {
+        pl: "Czy w tym fragmencie osoba mówiąca wyraża strach i smutek — bo świt jest czerwony, a drzewa jeszcze senne?",
+        ua: "Чи в цьому уривку особа, яка говорить, виражає страх і сум — бо світанок червоний, а дерева ще сонні?"
+      },
+      answer: false,
+      hint: {
+        pl: "Czytaj *Ach!* i *dzień dobry*. Czy tak wita się ktoś przestraszony?",
+        ua: "Читай *Ach!* і *dzień dobry*. Чи так вітається хтось наляканий?"
+      },
+      explanation: {
+        pl: "Fałsz. Czerwony świt i senne drzewa to opis poranka, nie groza. Apostrofa niesie radość i zachwyt.",
+        ua: "Хиба. Червоний світанок і сонні дерева — опис ранку, не жах. Апострофа несе радість і захват."
+      }
+    }
+  },
+  // 8
+  {
+    type: "practice",
+    heading: { pl: "Co znaczy Preludium", ua: "Що означає Preludium" },
+    formula: "s. 11  ·  zad. 3a  ·  PWN",
+    promptPlace: "before",
+    prompt: {
+      pl: "Przeczytaj definicje ze *Uniwersalnego słownika języka polskiego* (s. 11). Wybierz znaczenie, które łączy się z *treścią* utworu. Potem krótko: jak rozumiesz tytuł.",
+      ua: "Прочитай означення з *Uniwersalnego słownika języka polskiego* (с. 11). Вибери значення, яке пасує до *змісту* твору. Потім коротко: як розумієш назву."
+    },
+    items: [
+      { pl: "*preludium* 1. *muz.* a) wstęp instrumentalny do większego utworu (np. suity, fugi); b) samodzielny krótki utwór instrumentalny.", ua: "*preludium* 1. *муз.* а) інструментальний вступ до більшого твору; б) самостійний короткий інструментальний твір." },
+      { pl: "2. *książk. przen.* zapowiedź czegoś, wstęp do czegoś.", ua: "2. *книжн. перен.* передвістя чогось, вступ до чогось." },
+      { pl: "Ten wiersz jest jak *wstęp do dnia*: świt, pierwszy śpiew, pierwsze *dzień dobry*. Dlatego tytuł pasuje do znaczenia *przenośnego*.", ua: "Цей вірш як *вступ до дня*: світанок, перший спів, перше *dzień dobry*. Тому назва пасує до *переносного* значення." }
+    ],
+    task: {
+      id: "t2-s08-preludium",
+      type: "single-choice",
+      question: {
+        pl: "Które znaczenie *preludium* NA PEWNO łączy się z treścią tego wiersza?",
+        ua: "Яке значення *preludium* НАПЕВНО пасує до змісту цього вірша?"
+      },
+      options: [
+        { id: "a", label: { pl: "zapowiedź / wstęp do czegoś — tu: początek darowanego dnia", ua: "передвістя / вступ до чогось — тут: початок подарованого дня" } },
+        { id: "b", label: { pl: "koniec dnia, zmierzch", ua: "кінець дня, смеркання" } },
+        { id: "c", label: { pl: "nazwa ptaka za oknem", ua: "назва птаха за вікном" } }
+      ],
+      answer: "a",
+      hint: {
+        pl: "Hasło 2: *zapowiedź czegoś, wstęp do czegoś*. Co się zaczyna w wierszu?",
+        ua: "Гніздо 2: *передвістя чогось, вступ до чогось*. Що починається у вірші?"
+      },
+      explanation: {
+        pl: "Pasuje przenośnia: wstęp do dnia. Sens muzyczny (krótki utwór na początek) też jest bliski, ale treść wiersza to świt, nie koncert. Zmierzch i ptak odpadają.",
+        ua: "Пасує переносне: вступ до дня. Музичний сенс (короткий твір на початок) теж близький, але зміст вірша — світанок, не концерт. Смеркання і птах відпадають."
+      }
+    }
+  },
+  // 9
+  {
+    type: "practice",
+    heading: { pl: "Głosem osoby mówiącej", ua: "Голосом особи, яка говорить" },
+    formula: "s. 11  ·  zad. 3b",
+    promptPlace: "before",
+    prompt: {
+      pl: "W imieniu osoby mówiącej dokończ wypowiedź. Startery z podręcznika: *Każdy dzień mojego życia…* albo *Moje życie…* Piszesz *ja*, po polsku, w nastroju wiersza (dar, radość, świt) — nie recenzję «wiersz jest ładny».",
+      ua: "Від імені особи, яка говорить, докінчи висловлювання. Початки з підручника: *Każdy dzień mojego życia…* або *Moje życie…* Пишеш *я*, польською, у настрої вірша (дар, радість, світанок) — не рецензію «вірш гарний»."
+    },
+    reveal: true,
+    steps: [
+      {
+        formula: "wzór",
+        text: {
+          pl: [
+            "Każdy dzień mojego życia jest darem.",
+            "Moje życie zaczyna się od świtu za oknem — i ja witam kasztany."
+          ],
+          ua: [
+            "Кожен день мого життя є даром.",
+            "Моє життя починається зі світанку за вікном — і я вітаю каштани."
+          ]
+        }
+      }
+    ],
+    task: {
+      id: "t2-s09-ja",
+      type: "open-answer",
+      question: {
+        pl: "Dokończ po polsku: «Każdy dzień mojego życia…» albo «Moje życie…» (1–3 zdania).",
+        ua: "Докінчи польською: «Każdy dzień mojego życia…» або «Moje życie…» (1–3 речення)."
+      },
+      answer: [
+        "Każdy dzień mojego życia jest darem.",
+        "Każdy dzień mojego życia jest cudowny.",
+        "Moje życie jest darem."
+      ],
+      hint: {
+        pl: "Zacznij jak w książce. Potem: polski; ja; świt / radość / dar dnia.",
+        ua: "Почни як у книжці. Потім: польська; я; світанок / радість / дар дня."
+      },
+      explanation: {
+        pl: "Silnik nie ocenia poezji. Sprawdź sam: 1) po polsku; 2) jak osoba mówiąca (ja); 3) nastrój daru i poranka. Wzór jest jedną z możliwości.",
+        ua: "Рушій не оцінює поезію. Сам: 1) польською; 2) як особа з вірша (я); 3) настрій дару і ранку. Зразок — одна з можливостей."
+      }
+    }
+  },
+  // 10
+  {
+    type: "example",
+    heading: { pl: "Czy warto spędzać czas…", ua: "Чи варто проводити час…" },
+    formula: "s. 11  ·  zad. 4  ·  ramka",
+    promptPlace: "before",
+    prompt: {
+      pl: "Jak sądzisz: czy warto spędzać czas z kimś będącym w *podobnym nastroju* jak osoba z *Preludium*? Uzasadnij. Zastosuj wybrane słownictwo z ramki — to gotowe związki, których uczy polska szkoła.",
+      ua: "Як вважаєш: чи варто проводити час із кимось у *подібному настрої*, як особа з *Preludium*? Обґрунтуй. Уживи вибрані вислови з рамки — це готові сполуки, яких учить польська школа."
+    },
+    text: {
+      pl: "mieć dobry/zły wpływ  ·  patrzeć na świat przez różowe okulary  ·  popadać w depresję  ·  widzieć świat w ciemnych barwach  ·  być optymistą/pesymistą  ·  dzielić się radością  ·  zarażać smutkiem  ·  zachowywać pogodę ducha",
+      ua: "mieć dobry/zły wpływ — мати добрий/поганий вплив  ·  patrzeć na świat przez różowe okulary — дивитися на світ крізь рожеві окуляри  ·  popadać w depresję — впадати в депресію  ·  widzieć świat w ciemnych barwach — бачити все похмуро  ·  być optymistą/pesymistą — бути оптимістом/песимістом  ·  dzielić się radością — ділитися радістю  ·  zarażać smutkiem — заражати сумом  ·  zachowywać pogodę ducha — зберігати гарний настрій"
+    },
+    items: [
+      { pl: "*mieć dobry / zły wpływ* — działać na kogoś dobrze albo źle. *dzielić się radością* — dawać innym swoją radość. *zarażać smutkiem* — sprawiać, że inni też się smucą.", ua: "*mieć dobry / zły wpływ* — мати добрий / поганий вплив (діяти на когось добре або погано). *dzielić się radością* — ділитися радістю. *zarażać smutkiem* — заражати сумом (інші теж починають сумувати)." },
+      { pl: "*patrzeć na świat przez różowe okulary* — widzieć wszystko zbyt pozytywnie. *zachowywać pogodę ducha* — nie tracić dobrego nastroju, nawet gdy jest trudno.", ua: "*patrzeć na świat przez różowe okulary* — дивитися на світ крізь рожеві окуляри (бачити все кращим, ніж є). *zachowywać pogodę ducha* — зберігати гарний настрій, бадьорість, навіть коли важко." },
+      { pl: "*widzieć świat w ciemnych barwach* — wszystko wydaje się złe. *popadać w depresję* — wpadać w bardzo głęboki smutek. *być optymistą* — wierzyć, że będzie dobrze; *pesymistą* — spodziewać się złego.", ua: "*widzieć świat w ciemnych barwach* — бачити все похмуро, ніби світ без світла. *popadać w depresję* — впадати в депресію, у дуже глибокий сум. *być optymistą* — бути оптимістом (вірити, що буде добре); *pesymistą* — песимістом (чекати поганого)." },
+      { pl: "Do kogoś jak w *Preludium* pasują: *dzielić się radością*, *mieć dobry wpływ*, *zachowywać pogodę ducha*.", ua: "До когось як у *Preludium* пасують: *dzielić się radością*, *mieć dobry wpływ*, *zachowywać pogodę ducha* (ділитися радістю, мати добрий вплив, зберігати гарний настрій)." },
+      { pl: "*zarażać smutkiem*, *widzieć świat w ciemnych barwach*, *popadać w depresję* — to *inny* nastrój niż w tym wierszu.", ua: "*zarażać smutkiem*, *widzieć świat w ciemnych barwach*, *popadać w depresję* — це *інший* настрій, ніж у цьому вірші (зараження сумом, усе здається поганим, глибокий сум)." }
+    ],
+    task: {
+      id: "t2-s10-czas",
+      type: "single-choice",
+      question: {
+        pl: "Które zdanie NA PEWNO zgadza się z nastrojem *Preludium* i ramką?",
+        ua: "Яке речення НАПЕВНО узгоджується з настроєм *Preludium* і рамкою?"
+      },
+      options: [
+        { id: "a", label: { pl: "Warto: taka osoba dzieli się radością, ma dobry wpływ i zachowuje pogodę ducha.", ua: "Варто: така людина ділиться радістю, має добрий вплив і зберігає гарний настрій (pogodę ducha)." } },
+        { id: "b", label: { pl: "Nie warto: osoba z wiersza zaraża smutkiem i widzi świat w ciemnych barwach.", ua: "Не варто: особа з вірша заражає сумом і бачить усе похмуро (w ciemnych barwach)." } },
+        { id: "c", label: { pl: "Nastrój wiersza nie ma nic wspólnego z tym, z kim spędzamy czas.", ua: "Настрій вірша не має нічого спільного з тим, з ким проводимо час." } }
+      ],
+      answer: "a",
+      hint: {
+        pl: "Osoba wita kasztany i nazywa dzień darem. Które związki z ramki to opisują?",
+        ua: "Особа вітає каштани і називає день даром. Які сполуки з рамки це описують?"
+      },
+      explanation: {
+        pl: "Głos z wiersza jest pogodny: dobry wpływ, radość, pogoda ducha. Ciemne barwy i zarażanie smutkiem to przeciwieństwo ramki do *tego* nastroju. W zeszycie dopisz 2–3 zdania własnym zdaniem.",
+        ua: "Голос із вірша погідний: добрий вплив, радість, гарний настрій. Темні барви і зараження сумом — протилежність рамки до *цього* настрою. У зошиті допиши 2–3 речення своїми словами."
+      }
+    }
+  },
+  // 11
+  {
+    type: "summary",
+    heading: { pl: "Karta na dziś", ua: "Картка на сьогодні" },
+    formula: "s. 10–11  ·  lekcja 2",
+    promptPlace: "before",
+    prompt: {
+      pl: "Do zeszytu: definicja apostrofy z ramki + cytat *Ach! dzień dobry wam, kasztany, / Wodo pełna srebrnych lśnień!* Praca domowa: *Zeszyt ćwiczeń, część 1 — Apostrofa s. 5*. Podmiot liryczny — lekcja 6, nie dziś.",
+      ua: "У зошит: означення апострофи з рамки + цитата *Ach! dzień dobry wam, kasztany, / Wodo pełna srebrnych lśnień!* Домашня: *Зошит вправ, частина 1 — Apostrofa с. 5*. Ліричний суб’єкт — урок 6, не сьогодні."
+    },
+    items: [
+      { pl: "Osoba mówiąca = głos w tekście (okno, świt), nie automatycznie Lechoń.", ua: "Особа, яка говорить = голос у тексті (вікно, світанок), не автоматично Лехонь." },
+      { pl: "Nastrój: pogodny, radosny — dowód w strofie 2.", ua: "Настрій: погідний, радісний — доказ у строфі 2." },
+      { pl: "Apostrofa = bezpośredni zwrot; tu do kasztanów i wody.", ua: "Апострофа = безпосереднє звертання; тут до каштанів і води." },
+      { pl: "Tytuł *Preludium* = wstęp / zapowiedź dnia.", ua: "Назва *Preludium* = вступ / передвістя дня." }
+    ],
+    task: {
+      id: "t2-s11-karta",
+      type: "single-choice",
+      question: {
+        pl: "Co jest pewnym podsumowaniem *tej* lekcji?",
+        ua: "Що є певним підсумком *цього* уроку?"
+      },
+      options: [
+        { id: "a", label: { pl: "Znam treść, nastrój z dowodem, sytuację osoby mówiącej i apostrofę do kasztanów i wody.", ua: "Знаю зміст, настрій з доказом, ситуацію особи, яка говорить, і апострофу до каштанів і води." } },
+        { id: "b", label: { pl: "Nazwałem już podmiot liryczny i odmieniłem rzeczownik kasztan.", ua: "Уже назвав ліричний суб’єкт і відмінив іменник kasztan." } },
+        { id: "c", label: { pl: "Apostrofa to znak «’» w nazwisku Lechoń.", ua: "Апострофа — знак «’» у прізвищі Lechoń." } }
+      ],
+      answer: "a",
+      hint: {
+        pl: "Podmiot = lekcja 6. Apostrofa ≠ apostrof w pisowni.",
+        ua: "Суб’єкт = урок 6. Апострофа ≠ апостроф у правописі."
+      },
+      explanation: {
+        pl: "Lekcja 2 = wiersz + nastrój + sytuacja + apostrofa + tytuł. Ćwiczenia s. 5 — w zeszycie ćwiczeń. Podmiot liryczny — później.",
+        ua: "Урок 2 = вірш + настрій + ситуація + апострофа + назва. Вправи с. 5 — у зошиті вправ. Ліричний суб’єкт — пізніше."
+      }
+    }
+  }
+] };

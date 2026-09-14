@@ -91,22 +91,26 @@ window.EduMostLessonContent = { blocks: [
     }
   },
   {
-    type: "vocabulary",
+    type: "concept",
     heading: { pl: "Odmiana · rodzaj męski", ua: "Відміна · чоловічий рід" },
     formula: "s. 70  ·  podstępny (brat)",
     promptPlace: "before",
     prompt: {
-      pl: "Ramka: *Przymiotnik odmienia się przez przypadki, liczby i rodzaje.* Wzorzec męski: *podstępny brat*. Końcówki idą *w parze* z rzeczownikiem. Biernik osób męskich = dopełniacz: *widzę podstępnego brata*.",
-      ua: "Рамка: *Прикметник відмінюється за відмінками, числами і родами.* Зразок чоловічого: *podstępny brat*. Закінчення йдуть *парою* з іменником. Знахідний чоловічих осіб = родовий: *widzę podstępnego brata*."
+      pl: "Najpierw zdanie z ramki. Potem wzorzec męski: *podstępny brat*. Końcówki idą *w parze* z rzeczownikiem. Biernik osób męskich = dopełniacz: *widzę podstępnego brata*.",
+      ua: "Спочатку речення з рамки. Потім зразок чоловічого: *podstępny brat*. Закінчення йдуть *парою* з іменником. Знахідний чоловічих осіб = родовий: *widzę podstępnego brata*."
     },
-    rows: [
-      { pl: "M. podstępny (brat)", ua: "Н. підступний (брат)" },
-      { pl: "D. podstępnego (brata)", ua: "Р. підступного (брата)" },
-      { pl: "C. podstępnemu (bratu)", ua: "Д. підступному (братові)" },
-      { pl: "B. podstępnego (brata)", ua: "Зн. підступного (брата) — як родовий" },
-      { pl: "N. (z) podstępnym (bratem)", ua: "Ор. (з) підступним (братом)" },
-      { pl: "Ms. (o) podstępnym (bracie)", ua: "М. (про) підступному (братові)" },
-      { pl: "W. podstępny! (bracie!)", ua: "Кл. підступний! (брате!)" }
+    text: {
+      pl: "**Przymiotnik odmienia się przez przypadki, liczby i rodzaje.**",
+      ua: "**Прикметник відмінюється за відмінками, числами і родами.**"
+    },
+    items: [
+      { pl: "M. *podstępny* (brat)", ua: "Н. *podstępny* (брат)" },
+      { pl: "D. *podstępnego* (brata)", ua: "Р. *podstępnego* (брата)" },
+      { pl: "C. *podstępnemu* (bratu)", ua: "Д. *podstępnemu* (братові)" },
+      { pl: "B. *podstępnego* (brata) — jak dopełniacz przy osobie", ua: "Зн. *podstępnego* (брата) — як родовий при особі" },
+      { pl: "N. (z) *podstępnym* (bratem)", ua: "Ор. (з) *podstępnym* (братом)" },
+      { pl: "Ms. (o) *podstępnym* (bracie)", ua: "М. (про) *podstępnym* (братові)" },
+      { pl: "W. *podstępny!* (bracie!)", ua: "Кл. *podstępny!* (брате!)" }
     ],
     task: {
       id: "t37-s03-meski",

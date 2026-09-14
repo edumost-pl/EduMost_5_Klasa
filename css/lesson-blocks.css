@@ -162,21 +162,24 @@
   inset: 0;
   z-index: 4000;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 1rem;
   background: rgba(12, 10, 9, .88);
   cursor: zoom-out;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .viz-lightbox[hidden] { display: none; }
 .viz-lightbox-img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: min(960px, 100%);
+  max-height: none;
   width: auto;
   height: auto;
   object-fit: contain;
   border-radius: 8px;
   cursor: zoom-out;
+  margin: 0 auto 1.5rem;
 }
 body.viz-lightbox-open { overflow: hidden; }
 
@@ -400,6 +403,10 @@ body[data-topic="Jakie_tajemnice_kosmosu"] .math-line {
   overflow-wrap: anywhere;
   word-break: break-word;
 }
+body[data-topic="Jakie_tajemnice_kosmosu"] .lesson-block .block-body > p.tx-pl {
+  overflow: visible;
+  height: auto;
+}
 body[data-topic="Jakie_tajemnice_kosmosu"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
 body[data-topic="Jakie_tajemnice_kosmosu"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
   height: auto;
@@ -411,6 +418,57 @@ body[data-topic="Jakie_tajemnice_kosmosu"] .lesson-block[data-type="observe"] .b
 body[data-topic="Jakie_tajemnice_kosmosu"] .block-list li {
   overflow-wrap: anywhere;
   word-break: break-word;
+}
+body[data-topic="Jakie_tajemnice_kosmosu"] .em-foto-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .55rem;
+  margin: .55rem 0 1rem;
+}
+body[data-topic="Jakie_tajemnice_kosmosu"] .em-foto {
+  margin: 0;
+  background: #fafaf9;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+body[data-topic="Jakie_tajemnice_kosmosu"] .em-foto .viz-img {
+  display: block;
+  width: 100%;
+  height: 11rem;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+body[data-topic="Jakie_tajemnice_kosmosu"] .em-foto figcaption {
+  padding: .4rem .5rem .55rem;
+}
+body[data-topic="Jakie_tajemnice_kosmosu"] .em-foto figcaption .tx-pl {
+  display: block;
+  font-size: .88rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0;
+}
+body[data-topic="Jakie_tajemnice_kosmosu"] .em-foto figcaption .tx-ua {
+  display: block;
+  font-size: .78rem;
+  margin: .12rem 0 0;
+  line-height: 1.3;
+}
+body[data-topic="Jakie_tajemnice_kosmosu"] .viz,
+body[data-topic="Jakie_tajemnice_kosmosu"] .viz-img {
+  max-width: 100%;
+}
+body[data-topic="Jakie_tajemnice_kosmosu"] .viz-img {
+  height: auto;
+}
+@media (max-width: 720px) {
+  body[data-topic="Jakie_tajemnice_kosmosu"] .em-foto-grid {
+    grid-template-columns: 1fr;
+  }
+  body[data-topic="Jakie_tajemnice_kosmosu"] .em-foto .viz-img {
+    height: 14rem;
+  }
 }
 
 body[data-topic="Doskonalimy_czytanie"] .tx-pl,
@@ -443,6 +501,18 @@ body[data-topic="Doskonalimy_czytanie"] .block-list li {
 }
 body[data-topic="Doskonalimy_czytanie"] .task-card {
   margin-top: 1.1rem;
+}
+body[data-topic="Doskonalimy_czytanie"] .viz,
+body[data-topic="Doskonalimy_czytanie"] .viz-img {
+  max-width: 100%;
+  height: auto;
+}
+body[data-topic="Doskonalimy_czytanie"] .reveal-step {
+  overflow: visible;
+}
+body[data-topic="Doskonalimy_czytanie"] .lesson-block .block-body > p.tx-pl {
+  overflow: visible;
+  height: auto;
 }
 
 body[data-topic="pisownia-wymienna"] .tx-pl,
@@ -489,6 +559,7 @@ body[data-topic="pisownia-wymienna"] .viz {
 body[data-topic="pisownia-wymienna"] .viz-img {
   width: 100%;
   max-width: 100%;
+  height: auto;
 }
 body[data-topic="pisownia-wymienna"] .block-list li {
   overflow-wrap: anywhere;
@@ -1825,6 +1896,1110 @@ body[data-topic="prognoza-planeta"] .vocab-table td,
 body[data-topic="prognoza-planeta"] .vocab-table th {
   overflow-wrap: anywhere;
   word-break: break-word;
+}
+
+body[data-topic="przymiotnik-rozpoznanie"] .tx-pl,
+body[data-topic="przymiotnik-rozpoznanie"] .tx-ua,
+body[data-topic="przymiotnik-rozpoznanie"] .prompt,
+body[data-topic="przymiotnik-rozpoznanie"] .task-opt,
+body[data-topic="przymiotnik-rozpoznanie"] .math-line,
+body[data-topic="przymiotnik-odmiana"] .tx-pl,
+body[data-topic="przymiotnik-odmiana"] .tx-ua,
+body[data-topic="przymiotnik-odmiana"] .prompt,
+body[data-topic="przymiotnik-odmiana"] .task-opt,
+body[data-topic="przymiotnik-odmiana"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="przymiotnik-rozpoznanie"] .lesson-block .block-body > p.tx-pl,
+body[data-topic="przymiotnik-odmiana"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body[data-topic="przymiotnik-rozpoznanie"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="przymiotnik-rozpoznanie"] .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body[data-topic="przymiotnik-rozpoznanie"] .lesson-block[data-type="practice"] .block-body > p.tx-pl,
+body[data-topic="przymiotnik-odmiana"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="przymiotnik-odmiana"] .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body[data-topic="przymiotnik-odmiana"] .lesson-block[data-type="practice"] .block-body > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body[data-topic="przymiotnik-rozpoznanie"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="przymiotnik-rozpoznanie"] .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body[data-topic="przymiotnik-rozpoznanie"] .lesson-block[data-type="practice"] .block-body > p.tx-ua,
+body[data-topic="przymiotnik-odmiana"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="przymiotnik-odmiana"] .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body[data-topic="przymiotnik-odmiana"] .lesson-block[data-type="practice"] .block-body > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body[data-topic="przymiotnik-rozpoznanie"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="przymiotnik-rozpoznanie"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7),
+body[data-topic="przymiotnik-odmiana"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="przymiotnik-odmiana"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body[data-topic="przymiotnik-rozpoznanie"] .lesson-block .task-card,
+body[data-topic="przymiotnik-odmiana"] .lesson-block .task-card {
+  margin-top: 1.15rem;
+}
+body[data-topic="przymiotnik-rozpoznanie"] .tx-mark,
+body[data-topic="przymiotnik-odmiana"] .tx-mark {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+  font-weight: 700;
+}
+body[data-topic="przymiotnik-rozpoznanie"] .viz,
+body[data-topic="przymiotnik-rozpoznanie"] .viz-img,
+body[data-topic="przymiotnik-odmiana"] .viz,
+body[data-topic="przymiotnik-odmiana"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="przymiotnik-rozpoznanie"] .block-list li,
+body[data-topic="przymiotnik-odmiana"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="przymiotnik-rozpoznanie"] .reveal-step,
+body[data-topic="przymiotnik-odmiana"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+body[data-topic="przymiotnik-rozpoznanie"] .vocab-table,
+body[data-topic="przymiotnik-odmiana"] .vocab-table {
+  width: 100%;
+  table-layout: fixed;
+}
+body[data-topic="przymiotnik-rozpoznanie"] .vocab-table td,
+body[data-topic="przymiotnik-rozpoznanie"] .vocab-table th,
+body[data-topic="przymiotnik-odmiana"] .vocab-table td,
+body[data-topic="przymiotnik-odmiana"] .vocab-table th {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+body[data-topic="dwa-slonca"] .tx-pl,
+body[data-topic="dwa-slonca"] .tx-ua,
+body[data-topic="dwa-slonca"] .prompt,
+body[data-topic="dwa-slonca"] .task-opt,
+body[data-topic="dwa-slonca"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="dwa-slonca"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body[data-topic="dwa-slonca"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="dwa-slonca"] .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body[data-topic="dwa-slonca"] .lesson-block[data-type="practice"] .block-body > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body[data-topic="dwa-slonca"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="dwa-slonca"] .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body[data-topic="dwa-slonca"] .lesson-block[data-type="practice"] .block-body > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body[data-topic="dwa-slonca"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="dwa-slonca"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body[data-topic="dwa-slonca"] .lesson-block .task-card {
+  margin-top: 1.15rem;
+}
+body[data-topic="dwa-slonca"] .viz,
+body[data-topic="dwa-slonca"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="dwa-slonca"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="dwa-slonca"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+body[data-topic="dwa-slonca"] .vocab-table {
+  width: 100%;
+  table-layout: fixed;
+}
+body[data-topic="dwa-slonca"] .vocab-table td,
+body[data-topic="dwa-slonca"] .vocab-table th {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+body[data-topic="sloneczniki"] .tx-pl,
+body[data-topic="sloneczniki"] .tx-ua,
+body[data-topic="sloneczniki"] .prompt,
+body[data-topic="sloneczniki"] .task-opt,
+body[data-topic="sloneczniki"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="sloneczniki"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body[data-topic="sloneczniki"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="sloneczniki"] .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body[data-topic="sloneczniki"] .lesson-block[data-type="practice"] .block-body > p.tx-pl,
+body[data-topic="sloneczniki"] .lesson-block[data-type="concept"] .prompt > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body[data-topic="sloneczniki"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="sloneczniki"] .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body[data-topic="sloneczniki"] .lesson-block[data-type="practice"] .block-body > p.tx-ua,
+body[data-topic="sloneczniki"] .lesson-block[data-type="concept"] .prompt > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body[data-topic="sloneczniki"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="sloneczniki"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body[data-topic="sloneczniki"] .lesson-block .task-card {
+  margin-top: 1.15rem;
+}
+body[data-topic="sloneczniki"] .viz,
+body[data-topic="sloneczniki"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="sloneczniki"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="sloneczniki"] .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+body[data-topic="sloneczniki"] .vocab-table {
+  width: 100%;
+  table-layout: fixed;
+}
+body[data-topic="sloneczniki"] .vocab-table td,
+body[data-topic="sloneczniki"] .vocab-table th {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .tx-pl,
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .tx-ua,
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .prompt,
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .task-opt,
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .lesson-block[data-type="practice"] .block-body > p.tx-pl,
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .lesson-block[data-type="concept"] .prompt > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .lesson-block[data-type="practice"] .block-body > p.tx-ua,
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .lesson-block[data-type="concept"] .prompt > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .12rem 0;
+  font-size: 1.14rem;
+  line-height: 1.55;
+  overflow: visible;
+}
+/* Deszczyk s. 76: autor + tytuł + odstępy między strofami jak w podręczniku */
+body[data-topic="deszczyk"] .lesson-block[data-type="observe"] .block-body > p.tx-pl {
+  margin: .12rem 0;
+  line-height: 1.55;
+}
+body[data-topic="deszczyk"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(2) {
+  margin-top: .95rem;
+  margin-bottom: .15rem;
+  font-size: 1.08rem;
+  letter-spacing: .01em;
+}
+body[data-topic="deszczyk"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(3) {
+  margin-top: .1rem;
+  margin-bottom: .25rem;
+  font-size: 1.32rem;
+  line-height: 1.35;
+}
+body[data-topic="deszczyk"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(4),
+body[data-topic="deszczyk"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(9),
+body[data-topic="deszczyk"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(14),
+body[data-topic="deszczyk"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(19) {
+  height: 1rem;
+  margin: .65rem 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .lesson-block .task-card {
+  margin-top: 1.15rem;
+}
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .viz,
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .reveal-step {
+  margin: .85rem 0 1.1rem;
+}
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .em-audio {
+  margin: .35rem 0 1rem;
+  padding: .75rem .9rem;
+  background: #f0fdfa;
+  border: 1px solid #99f6e4;
+  border-radius: 12px;
+}
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .em-audio-label {
+  margin: 0 0 .45rem;
+  font-weight: 700;
+  font-size: .95rem;
+}
+body:is([data-topic="deszczyk"], [data-topic="deszczyk-uosobienie"], [data-topic="apostrofa"]) .em-audio audio {
+  width: 100%;
+  display: block;
+}
+
+body:is([data-topic="stopniowanie-przymiotnika"], [data-topic="nie-z-przymiotnikiem"]) .tx-pl,
+body:is([data-topic="stopniowanie-przymiotnika"], [data-topic="nie-z-przymiotnikiem"]) .tx-ua,
+body:is([data-topic="stopniowanie-przymiotnika"], [data-topic="nie-z-przymiotnikiem"]) .prompt,
+body:is([data-topic="stopniowanie-przymiotnika"], [data-topic="nie-z-przymiotnikiem"]) .task-opt,
+body:is([data-topic="stopniowanie-przymiotnika"], [data-topic="nie-z-przymiotnikiem"]) .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body:is([data-topic="stopniowanie-przymiotnika"], [data-topic="nie-z-przymiotnikiem"]) .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body:is([data-topic="stopniowanie-przymiotnika"], [data-topic="nie-z-przymiotnikiem"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body:is([data-topic="stopniowanie-przymiotnika"], [data-topic="nie-z-przymiotnikiem"]) .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body:is([data-topic="stopniowanie-przymiotnika"], [data-topic="nie-z-przymiotnikiem"]) .lesson-block[data-type="practice"] .block-body > p.tx-pl,
+body:is([data-topic="stopniowanie-przymiotnika"], [data-topic="nie-z-przymiotnikiem"]) .lesson-block[data-type="concept"] .prompt > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body:is([data-topic="stopniowanie-przymiotnika"], [data-topic="nie-z-przymiotnikiem"]) .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body:is([data-topic="stopniowanie-przymiotnika"], [data-topic="nie-z-przymiotnikiem"]) .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body:is([data-topic="stopniowanie-przymiotnika"], [data-topic="nie-z-przymiotnikiem"]) .lesson-block[data-type="practice"] .block-body > p.tx-ua,
+body:is([data-topic="stopniowanie-przymiotnika"], [data-topic="nie-z-przymiotnikiem"]) .lesson-block[data-type="concept"] .prompt > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body:is([data-topic="stopniowanie-przymiotnika"], [data-topic="nie-z-przymiotnikiem"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body:is([data-topic="stopniowanie-przymiotnika"], [data-topic="nie-z-przymiotnikiem"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body:is([data-topic="stopniowanie-przymiotnika"], [data-topic="nie-z-przymiotnikiem"]) .lesson-block .task-card {
+  margin-top: 1.15rem;
+}
+body:is([data-topic="stopniowanie-przymiotnika"], [data-topic="nie-z-przymiotnikiem"]) .viz,
+body:is([data-topic="stopniowanie-przymiotnika"], [data-topic="nie-z-przymiotnikiem"]) .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body:is([data-topic="stopniowanie-przymiotnika"], [data-topic="nie-z-przymiotnikiem"]) .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+
+body[data-topic="podniebna-kanonada"] .tx-pl,
+body[data-topic="podniebna-kanonada"] .tx-ua,
+body[data-topic="podniebna-kanonada"] .prompt,
+body[data-topic="podniebna-kanonada"] .task-opt,
+body[data-topic="podniebna-kanonada"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="podniebna-kanonada"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body[data-topic="podniebna-kanonada"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="podniebna-kanonada"] .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body[data-topic="podniebna-kanonada"] .lesson-block[data-type="practice"] .block-body > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body[data-topic="podniebna-kanonada"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="podniebna-kanonada"] .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body[data-topic="podniebna-kanonada"] .lesson-block[data-type="practice"] .block-body > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body[data-topic="podniebna-kanonada"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="podniebna-kanonada"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body[data-topic="podniebna-kanonada"] .lesson-block .task-card {
+  margin-top: 1.15rem;
+}
+body[data-topic="podniebna-kanonada"] .viz,
+body[data-topic="podniebna-kanonada"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="podniebna-kanonada"] .viz-img {
+  max-height: 70vh;
+  object-fit: contain;
+  object-position: top center;
+  background: #fafaf9;
+}
+body[data-topic="podniebna-kanonada"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+
+body:is([data-topic="ortografia-zakonczenia"], [data-topic="ortografia-zakonczenia-cwiczenia"]) .tx-pl,
+body:is([data-topic="ortografia-zakonczenia"], [data-topic="ortografia-zakonczenia-cwiczenia"]) .tx-ua,
+body:is([data-topic="ortografia-zakonczenia"], [data-topic="ortografia-zakonczenia-cwiczenia"]) .prompt,
+body:is([data-topic="ortografia-zakonczenia"], [data-topic="ortografia-zakonczenia-cwiczenia"]) .task-opt,
+body:is([data-topic="ortografia-zakonczenia"], [data-topic="ortografia-zakonczenia-cwiczenia"]) .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body:is([data-topic="ortografia-zakonczenia"], [data-topic="ortografia-zakonczenia-cwiczenia"]) .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body:is([data-topic="ortografia-zakonczenia"], [data-topic="ortografia-zakonczenia-cwiczenia"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body:is([data-topic="ortografia-zakonczenia"], [data-topic="ortografia-zakonczenia-cwiczenia"]) .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body:is([data-topic="ortografia-zakonczenia"], [data-topic="ortografia-zakonczenia-cwiczenia"]) .lesson-block[data-type="practice"] .block-body > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body:is([data-topic="ortografia-zakonczenia"], [data-topic="ortografia-zakonczenia-cwiczenia"]) .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body:is([data-topic="ortografia-zakonczenia"], [data-topic="ortografia-zakonczenia-cwiczenia"]) .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body:is([data-topic="ortografia-zakonczenia"], [data-topic="ortografia-zakonczenia-cwiczenia"]) .lesson-block[data-type="practice"] .block-body > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body:is([data-topic="ortografia-zakonczenia"], [data-topic="ortografia-zakonczenia-cwiczenia"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body:is([data-topic="ortografia-zakonczenia"], [data-topic="ortografia-zakonczenia-cwiczenia"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body:is([data-topic="ortografia-zakonczenia"], [data-topic="ortografia-zakonczenia-cwiczenia"]) .lesson-block .task-card {
+  margin-top: 1.15rem;
+}
+body:is([data-topic="ortografia-zakonczenia"], [data-topic="ortografia-zakonczenia-cwiczenia"]) .viz,
+body:is([data-topic="ortografia-zakonczenia"], [data-topic="ortografia-zakonczenia-cwiczenia"]) .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body:is([data-topic="ortografia-zakonczenia"], [data-topic="ortografia-zakonczenia-cwiczenia"]) .viz-img {
+  max-height: 70vh;
+  object-fit: contain;
+  object-position: top center;
+  background: #fafaf9;
+}
+body:is([data-topic="ortografia-zakonczenia"], [data-topic="ortografia-zakonczenia-cwiczenia"]) .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .tx-pl,
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .tx-ua,
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .prompt,
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .task-opt,
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .lesson-block[data-type="practice"] .block-body > p.tx-pl,
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .lesson-block[data-type="concept"] .prompt > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .lesson-block[data-type="practice"] .block-body > p.tx-ua,
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .lesson-block[data-type="concept"] .prompt > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+/* Pan Tadeusz burza: autor + tytuł wyróżnione */
+body[data-topic="pan-tadeusz-burza"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(2) {
+  margin-top: .95rem;
+  margin-bottom: .15rem;
+  font-size: 1.08rem;
+  letter-spacing: .01em;
+}
+body[data-topic="pan-tadeusz-burza"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(3) {
+  margin-top: .1rem;
+  margin-bottom: .45rem;
+  font-size: 1.28rem;
+  line-height: 1.35;
+}
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .lesson-block .task-card {
+  margin-top: 1.15rem;
+}
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .viz,
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .viz-img {
+  max-height: 70vh;
+  object-fit: contain;
+  object-position: top center;
+  background: #fafaf9;
+}
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .em-audio {
+  margin: .35rem 0 1rem;
+  padding: .75rem .9rem;
+  background: #f0fdfa;
+  border: 1px solid #99f6e4;
+  border-radius: 12px;
+}
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .em-audio-label {
+  margin: 0 0 .45rem;
+  font-weight: 700;
+  font-size: .95rem;
+}
+body:is([data-topic="pan-tadeusz-burza"], [data-topic="pan-tadeusz-srodki"]) .em-audio audio {
+  width: 100%;
+  display: block;
+}
+
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .tx-pl,
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .tx-ua,
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .prompt,
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .task-opt,
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .lesson-block[data-type="practice"] .block-body > p.tx-pl,
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .lesson-block[data-type="concept"] .prompt > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .lesson-block[data-type="practice"] .block-body > p.tx-ua,
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .lesson-block[data-type="concept"] .prompt > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body[data-topic="sprawdze-sie-parasol"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(2) {
+  margin-top: .95rem;
+  margin-bottom: .15rem;
+  font-size: 1.08rem;
+}
+body[data-topic="sprawdze-sie-parasol"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(3) {
+  margin-top: .1rem;
+  margin-bottom: .45rem;
+  font-size: 1.32rem;
+  line-height: 1.35;
+}
+body[data-topic="sprawdze-sie-parasol"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(12) {
+  height: 1rem;
+  margin: .65rem 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .lesson-block .task-card {
+  margin-top: 1.15rem;
+}
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .viz,
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .viz-img {
+  max-height: 70vh;
+  object-fit: contain;
+  object-position: top center;
+  background: #fafaf9;
+}
+body:is([data-topic="sprawdze-sie-parasol"], [data-topic="sprawdze-sie-jezyk"]) .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="sprawdze-sie-parasol"] .em-audio {
+  margin: .35rem 0 1rem;
+  padding: .75rem .9rem;
+  background: #f0fdfa;
+  border: 1px solid #99f6e4;
+  border-radius: 12px;
+}
+body[data-topic="sprawdze-sie-parasol"] .em-audio-label {
+  margin: 0 0 .45rem;
+  font-weight: 700;
+  font-size: .95rem;
+}
+body[data-topic="sprawdze-sie-parasol"] .em-audio audio {
+  width: 100%;
+  display: block;
+}
+
+/* Ramka podręcznika: concept.text = Zapamiętaj; example.text = słownictwo + items = rozbiór.
+   Nie globalnie na cały polski: T7 / kartkówka trzymają w concept.text inny materiał. */
+body:is(
+  [data-topic="podmiot-liryczny"],
+  [data-topic="przypowiesc-cwiczenia"],
+  [data-topic="przypowiesc-o-maku"],
+  [data-topic="komiks-tytul"],
+  [data-topic="poczatek-swiata"],
+  [data-topic="swiat-stworzony"],
+  [data-topic="rzeczownik-podzial"],
+  [data-topic="slownik-synonimow"],
+  [data-topic="dwa-wiatry"],
+  [data-topic="dwa-slonca"],
+  [data-topic="przymiotnik-rozpoznanie"],
+  [data-topic="przymiotnik-odmiana"],
+  [data-topic="sloneczniki"],
+  [data-topic="deszczyk"],
+  [data-topic="deszczyk-uosobienie"],
+  [data-topic="stopniowanie-przymiotnika"],
+  [data-topic="nie-z-przymiotnikiem"],
+  [data-topic="podniebna-kanonada"],
+  [data-topic="ortografia-zakonczenia"],
+  [data-topic="ortografia-zakonczenia-cwiczenia"],
+  [data-topic="pan-tadeusz-burza"],
+  [data-topic="pan-tadeusz-srodki"],
+  [data-topic="sprawdze-sie-parasol"],
+  [data-topic="sprawdze-sie-jezyk"],
+  [data-topic="precyzyjna-informacja"],
+  [data-topic="apostrofa"],
+  [data-topic="Doskonalimy_czytanie"],
+  [data-topic="pisownia-wymienna"]
+) .lesson-block[data-type="concept"] .block-body > p.tx-pl,
+body:is(
+  [data-topic="podmiot-liryczny"],
+  [data-topic="przypowiesc-cwiczenia"],
+  [data-topic="przypowiesc-o-maku"],
+  [data-topic="komiks-tytul"],
+  [data-topic="poczatek-swiata"],
+  [data-topic="swiat-stworzony"],
+  [data-topic="rzeczownik-podzial"],
+  [data-topic="slownik-synonimow"],
+  [data-topic="dwa-wiatry"],
+  [data-topic="dwa-slonca"],
+  [data-topic="przymiotnik-rozpoznanie"],
+  [data-topic="przymiotnik-odmiana"],
+  [data-topic="sloneczniki"],
+  [data-topic="deszczyk"],
+  [data-topic="deszczyk-uosobienie"],
+  [data-topic="stopniowanie-przymiotnika"],
+  [data-topic="nie-z-przymiotnikiem"],
+  [data-topic="podniebna-kanonada"],
+  [data-topic="ortografia-zakonczenia"],
+  [data-topic="ortografia-zakonczenia-cwiczenia"],
+  [data-topic="pan-tadeusz-burza"],
+  [data-topic="pan-tadeusz-srodki"],
+  [data-topic="sprawdze-sie-parasol"],
+  [data-topic="sprawdze-sie-jezyk"],
+  [data-topic="precyzyjna-informacja"],
+  [data-topic="apostrofa"],
+  [data-topic="Doskonalimy_czytanie"],
+  [data-topic="pisownia-wymienna"]
+) .lesson-block[data-type="concept"] .block-body > p.tx-ua {
+  background: #fff6d8;
+  padding: .72rem 1rem;
+  margin: 0;
+}
+body:is(
+  [data-topic="podmiot-liryczny"],
+  [data-topic="przypowiesc-cwiczenia"],
+  [data-topic="przypowiesc-o-maku"],
+  [data-topic="komiks-tytul"],
+  [data-topic="poczatek-swiata"],
+  [data-topic="swiat-stworzony"],
+  [data-topic="rzeczownik-podzial"],
+  [data-topic="slownik-synonimow"],
+  [data-topic="dwa-wiatry"],
+  [data-topic="dwa-slonca"],
+  [data-topic="przymiotnik-rozpoznanie"],
+  [data-topic="przymiotnik-odmiana"],
+  [data-topic="sloneczniki"],
+  [data-topic="deszczyk"],
+  [data-topic="deszczyk-uosobienie"],
+  [data-topic="stopniowanie-przymiotnika"],
+  [data-topic="nie-z-przymiotnikiem"],
+  [data-topic="podniebna-kanonada"],
+  [data-topic="ortografia-zakonczenia"],
+  [data-topic="ortografia-zakonczenia-cwiczenia"],
+  [data-topic="pan-tadeusz-burza"],
+  [data-topic="pan-tadeusz-srodki"],
+  [data-topic="sprawdze-sie-parasol"],
+  [data-topic="sprawdze-sie-jezyk"],
+  [data-topic="precyzyjna-informacja"],
+  [data-topic="apostrofa"],
+  [data-topic="Doskonalimy_czytanie"],
+  [data-topic="pisownia-wymienna"]
+) .lesson-block[data-type="concept"] .block-body > p.tx-pl {
+  border: 2px solid #e3a008;
+  border-radius: 12px;
+  font-size: 1.16rem;
+  line-height: 1.62;
+  color: #1c1917;
+  margin-top: .35rem;
+}
+body:is(
+  [data-topic="podmiot-liryczny"],
+  [data-topic="przypowiesc-cwiczenia"],
+  [data-topic="przypowiesc-o-maku"],
+  [data-topic="komiks-tytul"],
+  [data-topic="poczatek-swiata"],
+  [data-topic="swiat-stworzony"],
+  [data-topic="rzeczownik-podzial"],
+  [data-topic="slownik-synonimow"],
+  [data-topic="dwa-wiatry"],
+  [data-topic="dwa-slonca"],
+  [data-topic="przymiotnik-rozpoznanie"],
+  [data-topic="przymiotnik-odmiana"],
+  [data-topic="sloneczniki"],
+  [data-topic="deszczyk"],
+  [data-topic="deszczyk-uosobienie"],
+  [data-topic="stopniowanie-przymiotnika"],
+  [data-topic="nie-z-przymiotnikiem"],
+  [data-topic="podniebna-kanonada"],
+  [data-topic="ortografia-zakonczenia"],
+  [data-topic="ortografia-zakonczenia-cwiczenia"],
+  [data-topic="pan-tadeusz-burza"],
+  [data-topic="pan-tadeusz-srodki"],
+  [data-topic="sprawdze-sie-parasol"],
+  [data-topic="sprawdze-sie-jezyk"],
+  [data-topic="precyzyjna-informacja"],
+  [data-topic="apostrofa"],
+  [data-topic="Doskonalimy_czytanie"],
+  [data-topic="pisownia-wymienna"]
+) .lesson-block[data-type="concept"] .block-body > p.tx-pl:has(+ p.tx-ua) {
+  border-radius: 12px 12px 0 0;
+  border-bottom: none;
+  padding-bottom: .28rem;
+}
+body:is(
+  [data-topic="podmiot-liryczny"],
+  [data-topic="przypowiesc-cwiczenia"],
+  [data-topic="przypowiesc-o-maku"],
+  [data-topic="komiks-tytul"],
+  [data-topic="poczatek-swiata"],
+  [data-topic="swiat-stworzony"],
+  [data-topic="rzeczownik-podzial"],
+  [data-topic="slownik-synonimow"],
+  [data-topic="dwa-wiatry"],
+  [data-topic="dwa-slonca"],
+  [data-topic="przymiotnik-rozpoznanie"],
+  [data-topic="przymiotnik-odmiana"],
+  [data-topic="sloneczniki"],
+  [data-topic="deszczyk"],
+  [data-topic="deszczyk-uosobienie"],
+  [data-topic="stopniowanie-przymiotnika"],
+  [data-topic="nie-z-przymiotnikiem"],
+  [data-topic="podniebna-kanonada"],
+  [data-topic="ortografia-zakonczenia"],
+  [data-topic="ortografia-zakonczenia-cwiczenia"],
+  [data-topic="pan-tadeusz-burza"],
+  [data-topic="pan-tadeusz-srodki"],
+  [data-topic="sprawdze-sie-parasol"],
+  [data-topic="sprawdze-sie-jezyk"],
+  [data-topic="precyzyjna-informacja"],
+  [data-topic="apostrofa"],
+  [data-topic="Doskonalimy_czytanie"],
+  [data-topic="pisownia-wymienna"]
+) .lesson-block[data-type="concept"] .block-body > p.tx-ua {
+  border: 2px solid #e3a008;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  font-size: .92rem;
+  line-height: 1.5;
+  color: #9a3412;
+  margin-bottom: 1rem;
+  padding-top: .2rem;
+}
+body:is(
+  [data-topic="podmiot-liryczny"],
+  [data-topic="przypowiesc-cwiczenia"],
+  [data-topic="przypowiesc-o-maku"],
+  [data-topic="komiks-tytul"],
+  [data-topic="poczatek-swiata"],
+  [data-topic="swiat-stworzony"],
+  [data-topic="rzeczownik-podzial"],
+  [data-topic="slownik-synonimow"],
+  [data-topic="dwa-wiatry"],
+  [data-topic="dwa-slonca"],
+  [data-topic="przymiotnik-rozpoznanie"],
+  [data-topic="przymiotnik-odmiana"],
+  [data-topic="sloneczniki"],
+  [data-topic="deszczyk"],
+  [data-topic="deszczyk-uosobienie"],
+  [data-topic="stopniowanie-przymiotnika"],
+  [data-topic="nie-z-przymiotnikiem"],
+  [data-topic="podniebna-kanonada"],
+  [data-topic="ortografia-zakonczenia"],
+  [data-topic="ortografia-zakonczenia-cwiczenia"],
+  [data-topic="pan-tadeusz-burza"],
+  [data-topic="pan-tadeusz-srodki"],
+  [data-topic="sprawdze-sie-parasol"],
+  [data-topic="sprawdze-sie-jezyk"],
+  [data-topic="precyzyjna-informacja"],
+  [data-topic="apostrofa"],
+  [data-topic="Doskonalimy_czytanie"],
+  [data-topic="pisownia-wymienna"]
+) .lesson-block[data-type="concept"] .block-body > p.tx-pl::before {
+  content: "↩  Zapamiętaj";
+  display: block;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #c2410c;
+  margin-bottom: .4rem;
+}
+body:is(
+  [data-topic="podmiot-liryczny"],
+  [data-topic="przypowiesc-cwiczenia"],
+  [data-topic="przypowiesc-o-maku"],
+  [data-topic="komiks-tytul"],
+  [data-topic="poczatek-swiata"],
+  [data-topic="swiat-stworzony"],
+  [data-topic="rzeczownik-podzial"],
+  [data-topic="slownik-synonimow"],
+  [data-topic="dwa-wiatry"],
+  [data-topic="dwa-slonca"],
+  [data-topic="przymiotnik-rozpoznanie"],
+  [data-topic="przymiotnik-odmiana"],
+  [data-topic="sloneczniki"],
+  [data-topic="deszczyk"],
+  [data-topic="deszczyk-uosobienie"],
+  [data-topic="stopniowanie-przymiotnika"],
+  [data-topic="nie-z-przymiotnikiem"],
+  [data-topic="podniebna-kanonada"],
+  [data-topic="ortografia-zakonczenia"],
+  [data-topic="ortografia-zakonczenia-cwiczenia"],
+  [data-topic="pan-tadeusz-burza"],
+  [data-topic="pan-tadeusz-srodki"],
+  [data-topic="sprawdze-sie-parasol"],
+  [data-topic="sprawdze-sie-jezyk"],
+  [data-topic="precyzyjna-informacja"],
+  [data-topic="apostrofa"],
+  [data-topic="Doskonalimy_czytanie"],
+  [data-topic="pisownia-wymienna"]
+) .lesson-block[data-type="concept"] .block-body > p.tx-pl .tx-mark {
+  color: #c2410c;
+  background: transparent;
+  font-weight: 800;
+}
+body:is(
+  [data-topic="podmiot-liryczny"],
+  [data-topic="przypowiesc-cwiczenia"],
+  [data-topic="przypowiesc-o-maku"],
+  [data-topic="komiks-tytul"],
+  [data-topic="poczatek-swiata"],
+  [data-topic="swiat-stworzony"],
+  [data-topic="rzeczownik-podzial"],
+  [data-topic="slownik-synonimow"],
+  [data-topic="dwa-wiatry"],
+  [data-topic="dwa-slonca"],
+  [data-topic="przymiotnik-rozpoznanie"],
+  [data-topic="przymiotnik-odmiana"],
+  [data-topic="sloneczniki"],
+  [data-topic="deszczyk"],
+  [data-topic="deszczyk-uosobienie"],
+  [data-topic="stopniowanie-przymiotnika"],
+  [data-topic="nie-z-przymiotnikiem"],
+  [data-topic="podniebna-kanonada"],
+  [data-topic="ortografia-zakonczenia"],
+  [data-topic="ortografia-zakonczenia-cwiczenia"],
+  [data-topic="pan-tadeusz-burza"],
+  [data-topic="pan-tadeusz-srodki"],
+  [data-topic="sprawdze-sie-parasol"],
+  [data-topic="sprawdze-sie-jezyk"],
+  [data-topic="precyzyjna-informacja"],
+  [data-topic="apostrofa"],
+  [data-topic="Doskonalimy_czytanie"],
+  [data-topic="pisownia-wymienna"]
+) .lesson-block[data-type="concept"] .block-list {
+  margin-top: .35rem;
+}
+
+body:is(
+  [data-topic="dwa-wiatry"],
+  [data-topic="studio-pogoda"],
+  [data-topic="prognoza-planeta"],
+  [data-topic="sloneczniki"],
+  [data-topic="deszczyk"],
+  [data-topic="deszczyk-uosobienie"],
+  [data-topic="stopniowanie-przymiotnika"],
+  [data-topic="nie-z-przymiotnikiem"],
+  [data-topic="podniebna-kanonada"],
+  [data-topic="ortografia-zakonczenia"],
+  [data-topic="ortografia-zakonczenia-cwiczenia"],
+  [data-topic="pan-tadeusz-burza"],
+  [data-topic="pan-tadeusz-srodki"],
+  [data-topic="sprawdze-sie-parasol"],
+  [data-topic="sprawdze-sie-jezyk"],
+  [data-topic="precyzyjna-informacja"],
+  [data-topic="apostrofa"],
+  [data-topic="Jakie_tajemnice_kosmosu"],
+  [data-topic="Doskonalimy_czytanie"],
+  [data-topic="pisownia-wymienna"],
+  [data-topic="komiks-tytul"]
+) .lesson-block[data-type="example"] .block-body > p.tx-pl,
+body:is(
+  [data-topic="dwa-wiatry"],
+  [data-topic="studio-pogoda"],
+  [data-topic="prognoza-planeta"],
+  [data-topic="sloneczniki"],
+  [data-topic="deszczyk"],
+  [data-topic="deszczyk-uosobienie"],
+  [data-topic="stopniowanie-przymiotnika"],
+  [data-topic="nie-z-przymiotnikiem"],
+  [data-topic="podniebna-kanonada"],
+  [data-topic="ortografia-zakonczenia"],
+  [data-topic="ortografia-zakonczenia-cwiczenia"],
+  [data-topic="pan-tadeusz-burza"],
+  [data-topic="pan-tadeusz-srodki"],
+  [data-topic="sprawdze-sie-parasol"],
+  [data-topic="sprawdze-sie-jezyk"],
+  [data-topic="precyzyjna-informacja"],
+  [data-topic="apostrofa"],
+  [data-topic="Jakie_tajemnice_kosmosu"],
+  [data-topic="Doskonalimy_czytanie"],
+  [data-topic="pisownia-wymienna"],
+  [data-topic="komiks-tytul"]
+) .lesson-block[data-type="example"] .block-body > p.tx-ua {
+  background: #fff6d8;
+  padding: .72rem 1rem;
+  margin: 0;
+  text-align: center;
+}
+body:is(
+  [data-topic="dwa-wiatry"],
+  [data-topic="studio-pogoda"],
+  [data-topic="prognoza-planeta"],
+  [data-topic="sloneczniki"],
+  [data-topic="deszczyk"],
+  [data-topic="deszczyk-uosobienie"],
+  [data-topic="stopniowanie-przymiotnika"],
+  [data-topic="nie-z-przymiotnikiem"],
+  [data-topic="podniebna-kanonada"],
+  [data-topic="ortografia-zakonczenia"],
+  [data-topic="ortografia-zakonczenia-cwiczenia"],
+  [data-topic="pan-tadeusz-burza"],
+  [data-topic="pan-tadeusz-srodki"],
+  [data-topic="sprawdze-sie-parasol"],
+  [data-topic="sprawdze-sie-jezyk"],
+  [data-topic="precyzyjna-informacja"],
+  [data-topic="apostrofa"],
+  [data-topic="Jakie_tajemnice_kosmosu"],
+  [data-topic="Doskonalimy_czytanie"],
+  [data-topic="pisownia-wymienna"],
+  [data-topic="komiks-tytul"]
+) .lesson-block[data-type="example"] .block-body > p.tx-pl {
+  border: 2px solid #e3a008;
+  border-radius: 12px;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: #1c1917;
+  margin-top: .35rem;
+}
+body:is(
+  [data-topic="dwa-wiatry"],
+  [data-topic="studio-pogoda"],
+  [data-topic="prognoza-planeta"],
+  [data-topic="sloneczniki"],
+  [data-topic="deszczyk"],
+  [data-topic="deszczyk-uosobienie"],
+  [data-topic="stopniowanie-przymiotnika"],
+  [data-topic="nie-z-przymiotnikiem"],
+  [data-topic="podniebna-kanonada"],
+  [data-topic="ortografia-zakonczenia"],
+  [data-topic="ortografia-zakonczenia-cwiczenia"],
+  [data-topic="pan-tadeusz-burza"],
+  [data-topic="pan-tadeusz-srodki"],
+  [data-topic="sprawdze-sie-parasol"],
+  [data-topic="sprawdze-sie-jezyk"],
+  [data-topic="precyzyjna-informacja"],
+  [data-topic="apostrofa"],
+  [data-topic="Jakie_tajemnice_kosmosu"],
+  [data-topic="Doskonalimy_czytanie"],
+  [data-topic="pisownia-wymienna"],
+  [data-topic="komiks-tytul"]
+) .lesson-block[data-type="example"] .block-body > p.tx-pl:has(+ p.tx-ua) {
+  border-radius: 12px 12px 0 0;
+  border-bottom: none;
+  padding-bottom: .28rem;
+}
+body:is(
+  [data-topic="dwa-wiatry"],
+  [data-topic="studio-pogoda"],
+  [data-topic="prognoza-planeta"],
+  [data-topic="sloneczniki"],
+  [data-topic="deszczyk"],
+  [data-topic="deszczyk-uosobienie"],
+  [data-topic="stopniowanie-przymiotnika"],
+  [data-topic="nie-z-przymiotnikiem"],
+  [data-topic="podniebna-kanonada"],
+  [data-topic="ortografia-zakonczenia"],
+  [data-topic="ortografia-zakonczenia-cwiczenia"],
+  [data-topic="pan-tadeusz-burza"],
+  [data-topic="pan-tadeusz-srodki"],
+  [data-topic="sprawdze-sie-parasol"],
+  [data-topic="sprawdze-sie-jezyk"],
+  [data-topic="precyzyjna-informacja"],
+  [data-topic="apostrofa"],
+  [data-topic="Jakie_tajemnice_kosmosu"],
+  [data-topic="Doskonalimy_czytanie"],
+  [data-topic="pisownia-wymienna"],
+  [data-topic="komiks-tytul"]
+) .lesson-block[data-type="example"] .block-body > p.tx-ua {
+  border: 2px solid #e3a008;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  font-size: .88rem;
+  line-height: 1.55;
+  color: #9a3412;
+  margin-bottom: 1rem;
+  padding-top: .2rem;
+}
+body:is(
+  [data-topic="dwa-wiatry"],
+  [data-topic="studio-pogoda"],
+  [data-topic="prognoza-planeta"],
+  [data-topic="sloneczniki"],
+  [data-topic="deszczyk"],
+  [data-topic="deszczyk-uosobienie"],
+  [data-topic="stopniowanie-przymiotnika"],
+  [data-topic="nie-z-przymiotnikiem"],
+  [data-topic="podniebna-kanonada"],
+  [data-topic="ortografia-zakonczenia"],
+  [data-topic="ortografia-zakonczenia-cwiczenia"],
+  [data-topic="pan-tadeusz-burza"],
+  [data-topic="pan-tadeusz-srodki"],
+  [data-topic="sprawdze-sie-parasol"],
+  [data-topic="sprawdze-sie-jezyk"],
+  [data-topic="precyzyjna-informacja"],
+  [data-topic="apostrofa"],
+  [data-topic="Jakie_tajemnice_kosmosu"],
+  [data-topic="Doskonalimy_czytanie"],
+  [data-topic="pisownia-wymienna"],
+  [data-topic="komiks-tytul"]
+) .lesson-block[data-type="example"] .block-body > p.tx-pl::before {
+  content: "↩  Słownictwo z ramki";
+  display: block;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #c2410c;
+  margin-bottom: .45rem;
+  text-align: left;
 }
 
 

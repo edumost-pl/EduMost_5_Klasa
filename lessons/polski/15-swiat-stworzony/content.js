@@ -58,7 +58,7 @@ window.EduMostLessonContent = {
     },
     // 2
     {
-      type: "observe",
+      type: "concept",
       heading: { pl: "Jak oznaczamy Biblię?", ua: "Як позначаємо Біблію?" },
       formula: "s. 34  ·  księga · rozdział · werset",
       promptPlace: "before",
@@ -67,17 +67,13 @@ window.EduMostLessonContent = {
         ua: "Рамка з підручника. Запам’ятай три слова: книга, розділ, вірш. Велика цифра — *розділ*. Мала цифра біля речення — *вірш*."
       },
       text: {
-        pl: [
-          "Poniższy fragment pochodzi z Biblii, z pierwszej księgi Starego Testamentu – Księgi Rodzaju. Opowiada ona o początkach świata i człowieka.",
-          "Biblijny tekst jest podzielony na księgi, które składają się z rozdziałów. W rozdziałach wyodrębniono wersety.",
-          "Przykład z tej strony: *1* (duża cyfra) = rozdział pierwszy. *3* (mała cyfra) = werset trzeci: «Niechaj się stanie światłość!»"
-        ],
-        ua: [
-          "Цей уривок походить з Біблії, з першої книги Старого Завіту — Книги Буття. Вона розповідає про початки світу і людини.",
-          "Біблійний текст поділено на книги, які складаються з розділів. У розділах виокремлено вірші.",
-          "Приклад з цієї сторінки: *1* (велика цифра) = розділ перший. *3* (мала цифра) = вірш третій: «Нехай станеться світло!»"
-        ]
+        pl: "Biblijny tekst jest podzielony na **księgi**, które składają się z **rozdziałów**. W rozdziałach wyodrębniono **wersety**.",
+        ua: "Біблійний текст поділено на **книги** (*księgi*), які складаються з **розділів**. У розділах виокремлено **вірші** (*wersety*)."
       },
+      items: [
+        { pl: "Ten fragment: pierwsza księga Starego Testamentu — *Księga Rodzaju* (początki świata i człowieka).", ua: "Цей уривок: перша книга Старого Завіту — *Księga Rodzaju* (початки світу і людини)." },
+        { pl: "Duża cyfra *1* = rozdział pierwszy. Mała cyfra *3* = werset trzeci: «Niechaj się stanie światłość!»", ua: "Велика цифра *1* = розділ перший. Мала цифра *3* = вірш третій: «Нехай станеться світло!»" }
+      ],
       task: {
         id: "t15-s02-oznaczenia",
         type: "single-choice",

@@ -170,20 +170,24 @@ window.EduMostLessonContent = { blocks: [
     }
   },
   {
-    type: "vocabulary",
+    type: "example",
     heading: { pl: "Ramka czasowników", ua: "Рамка дієслів" },
     promptPlace: "before",
     prompt: {
-      pl: "Zad. 1c: sformułowania charakterystyczne. Spisz te, które przydadzą się na prezentacji. Ramka s. 68 — *nie* glosy Tuwima.",
-      ua: "Завд. 1c: характерні формулювання. Спиши ті, що знадобляться на презентації. Рамка с. 68 — *не* глоси Тувіма."
+      pl: "Zad. 1c: sformułowania charakterystyczne. Najpierw ramka s. 68, potem rozbiór — *nie* glosy Tuwima.",
+      ua: "Завд. 1c: характерні формулювання. Спочатку рамка с. 68, потім розбір — *не* глоси Тувіма."
     },
-    rows: [
-      { pl: "przewidywać / zapowiadać się / spodziewać się — co będzie", ua: "przewidywać / zapowiadać się / spodziewać się — що буде" },
-      { pl: "wiać, padać, przygrzewać — co robi aura", ua: "wiać, padać, przygrzewać — що робить погода" },
-      { pl: "słabnąć, nasilać się, ustąpić, ustać — zmiana siły", ua: "słabnąć, nasilać się, ustąpić, ustać — зміна сили" },
-      { pl: "rozpogodzić się / zachmurzyć się — niebo", ua: "rozpogodzić się / zachmurzyć się — небо" },
-      { pl: "trwać, pojawić się, przejść, zmienić się — przebieg", ua: "trwać, pojawić się, przejść, zmienić się — перебіг" },
-      { pl: "życzyć — koniec komunikatu", ua: "życzyć — кінець комунікату" }
+    text: {
+      pl: "przewidywać  ·  zapowiadać się  ·  spodziewać się  ·  wiać  ·  padać  ·  przygrzewać  ·  słabnąć  ·  nasilać się  ·  ustąpić  ·  ustać  ·  rozpogodzić się  ·  zachmurzyć się  ·  trwać  ·  pojawić się  ·  przejść  ·  zmienić się  ·  życzyć",
+      ua: "przewidywać  ·  zapowiadać się  ·  spodziewać się  ·  wiać  ·  padać  ·  przygrzewać  ·  słabnąć  ·  nasilać się  ·  ustąpić  ·  ustać  ·  rozpogodzić się  ·  zachmurzyć się  ·  trwać  ·  pojawić się  ·  przejść  ·  zmienić się  ·  życzyć"
+    },
+    items: [
+      { pl: "**przewidywać / zapowiadać się / spodziewać się** — co będzie.", ua: "**przewidywać / zapowiadać się / spodziewać się** — що буде." },
+      { pl: "**wiać, padać, przygrzewać** — co robi aura.", ua: "**wiać, padać, przygrzewać** — що робить погода." },
+      { pl: "**słabnąć, nasilać się, ustąpić, ustać** — zmiana siły.", ua: "**słabnąć, nasilać się, ustąpić, ustać** — зміна сили." },
+      { pl: "**rozpogodzić się / zachmurzyć się** — niebo.", ua: "**rozpogodzić się / zachmurzyć się** — небо." },
+      { pl: "**trwać, pojawić się, przejść, zmienić się** — przebieg.", ua: "**trwać, pojawić się, przejść, zmienić się** — перебіг." },
+      { pl: "**życzyć** — koniec komunikatu.", ua: "**życzyć** — кінець комунікату." }
     ],
     task: {
       id: "t35-s05-ramka",

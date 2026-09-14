@@ -657,14 +657,14 @@ window.EduMostPolskiCourse = {
       "part": "I",
       "chapter": "R3",
       "category": "LITERATURA",
-      "title": "Ratajczak, Dwa słońca.",
-      "page": "72",
+      "title": "Ratajczak · Dwa słońca. Koncept i dwa obrazy.",
+      "page": "72–73",
       "skills": [
         "obraz-poetycki",
         "ozywienie",
         "uosobienie"
       ],
-      "outcome": "Uczeń potrafi analizować obrazy poetyckie i rozpoznać ożywienie."
+      "outcome": "Uczeń analizuje dwa obrazy poetyckie, rozpoznaje ożywienie i uosobienie oraz układa dialog słońca ze słonecznikiem."
     },
     {
       "id": "T39",
@@ -672,13 +672,13 @@ window.EduMostPolskiCourse = {
       "part": "I",
       "chapter": "R3",
       "category": "KULTURA_MEDIA",
-      "title": "van Gogh, Słoneczniki.",
-      "page": "74",
+      "title": "van Gogh · Słoneczniki. Opis obrazu.",
+      "page": "74–75",
       "skills": [
         "opis-dziela",
         "nastroj"
       ],
-      "outcome": "Uczeń potrafi opisać kompozycję, barwy i nastrój; nie zmyśla biografii."
+      "outcome": "Uczeń opisuje kompozycję, barwy ciepłe i nastrój Słoneczników według wstępu, rozwinięcia i zakończenia; nie zmyśla biografii."
     },
     {
       "id": "T40",
@@ -686,14 +686,14 @@ window.EduMostPolskiCourse = {
       "part": "I",
       "chapter": "R3",
       "category": "LITERATURA",
-      "title": "Tuwim, Deszczyk; uosobienie.",
+      "title": "Tuwim · Deszczyk. Bohater i marzenia.",
       "page": "76",
       "skills": [
         "epitet",
         "porownanie",
-        "uosobienie"
+        "bohater-wiersza"
       ],
-      "outcome": "Uczeń potrafi wskazać epitet, porównanie i uosobienie oraz powiedzieć, po co zostały użyte."
+      "outcome": "Uczeń relacjonuje treść, przedstawia bohatera (kapuśniaczka), wskazuje epitety i porównania oraz mówi, co deszczyk robi teraz i czego pragnie."
     },
     {
       "id": "T41",
@@ -701,14 +701,14 @@ window.EduMostPolskiCourse = {
       "part": "I",
       "chapter": "R3",
       "category": "LITERATURA",
-      "title": "Tuwim, Deszczyk; uosobienie.",
-      "page": "76",
+      "title": "Tuwim · Deszczyk. Uosobienie.",
+      "page": "76–77",
       "skills": [
-        "epitet",
-        "porownanie",
-        "uosobienie"
+        "uosobienie",
+        "dialog",
+        "przenosnia"
       ],
-      "outcome": "Uczeń potrafi wskazać epitet, porównanie i uosobienie oraz powiedzieć, po co zostały użyte."
+      "outcome": "Uczeń rozumie zasadę uosobienia, redaguje tekst o marzeniach deszczu w 1. os. lp., zapisuje dialog kropli i rozpoznaje cechy ludzkie w innych fragmentach."
     },
     {
       "id": "T42",
@@ -716,13 +716,12 @@ window.EduMostPolskiCourse = {
       "part": "I",
       "chapter": "R3",
       "category": "GRAMATYKA",
-      "title": "Stopniowanie przymiotnika; nie z przymiotnikiem.",
+      "title": "Na czym polega stopniowanie przymiotników?",
       "page": "78",
       "skills": [
-        "stopniowanie-przymiotnik",
-        "ort-nie-przymiotnik"
+        "stopniowanie-przymiotnik"
       ],
-      "outcome": "Uczeń potrafi tworzyć stopnie przymiotnika i napisać nie z przymiotnikiem."
+      "outcome": "Uczeń tworzy i rozpoznaje stopnie przymiotnika (proste, opisowe, nieregularne), wie, które przymiotniki się nie stopniują, i opisuje ilustrację formami stopni."
     },
     {
       "id": "T43",
@@ -730,13 +729,12 @@ window.EduMostPolskiCourse = {
       "part": "I",
       "chapter": "R3",
       "category": "GRAMATYKA",
-      "title": "Stopniowanie przymiotnika; nie z przymiotnikiem.",
+      "title": "Niewygodna i nienajbezpieczniejsza podróż. Pisownia „nie” z przymiotnikami.",
       "page": "78",
       "skills": [
-        "stopniowanie-przymiotnik",
         "ort-nie-przymiotnik"
       ],
-      "outcome": "Uczeń potrafi tworzyć stopnie przymiotnika i napisać nie z przymiotnikiem."
+      "outcome": "Uczeń pisze nie z przymiotnikami łącznie, zna wyjątki (wcale, bynajmniej, przeciwstawienie) i stosuje regułę w tekście oraz komiksie."
     },
     {
       "id": "T44",
@@ -744,14 +742,14 @@ window.EduMostPolskiCourse = {
       "part": "I",
       "chapter": "R3",
       "category": "PISANIE",
-      "title": "Artykuł / relacja (Szczygielski, Podniebna kanonada).",
+      "title": "Redagujemy tekst do gazety codziennej. Podniebna kanonada.",
       "page": "81",
       "skills": [
         "relacja",
         "sprawozdanie",
         "swiat-przedstawiony"
       ],
-      "outcome": "Uczeń potrafi zredagować relację według schematu następstwa czasu."
+      "outcome": "Uczeń opisuje świat przedstawiony, porządkuje przebieg burzy i redaguje relację do gazety według schematu: tytuł – zapowiedź – treść."
     },
     {
       "id": "T45",
@@ -759,12 +757,12 @@ window.EduMostPolskiCourse = {
       "part": "I",
       "chapter": "R3",
       "category": "ORTOGRAFIA",
-      "title": "ó, u, rz, ż, ch w zakończeniach.",
+      "title": "Pisownia ó, rz, ch w zakończeniach (Newton).",
       "page": "85",
       "skills": [
         "ort-zakonczenia"
       ],
-      "outcome": "Uczeń potrafi stosować reguły zakończeń."
+      "outcome": "Uczeń zna reguły zakończeń z ó, rz, ch (oraz wyjątki), wskazuje przykłady w komiksie i poprawnie uzupełnia formy rzeczowników."
     },
     {
       "id": "T46",
@@ -772,12 +770,12 @@ window.EduMostPolskiCourse = {
       "part": "I",
       "chapter": "R3",
       "category": "ORTOGRAFIA",
-      "title": "ó, u, rz, ż, ch w zakończeniach.",
+      "title": "Pisownia ż, u w zakończeniach. Ćwiczenia i dyktando.",
       "page": "85",
       "skills": [
         "ort-zakonczenia"
       ],
-      "outcome": "Uczeń potrafi stosować reguły zakończeń."
+      "outcome": "Uczeń stosuje reguły ż i u w zakończeniach, uzupełnia tekst mieszany i układa krótkie dyktando z omawianymi zakończeniami."
     },
     {
       "id": "T47",
@@ -785,14 +783,14 @@ window.EduMostPolskiCourse = {
       "part": "I",
       "chapter": "R3",
       "category": "LITERATURA",
-      "title": "Pan Tadeusz — burza.",
+      "title": "Pan Tadeusz – burza. Przebieg zdarzeń.",
       "page": "87",
       "skills": [
-        "srodki-stylistyczne",
         "obraz-poetycki",
-        "wers-strofa-rym"
+        "wers-strofa-rym",
+        "relacja"
       ],
-      "outcome": "Uczeń potrafi opowiedzieć przebieg zdarzeń i wskazać środki stylistyczne."
+      "outcome": "Uczeń rozumie fragment burzy, układa plan zdarzeń i opowiada przebieg burzy ze słownictwem z ramki."
     },
     {
       "id": "T48",
@@ -800,52 +798,44 @@ window.EduMostPolskiCourse = {
       "part": "I",
       "chapter": "R3",
       "category": "LITERATURA",
-      "title": "Pan Tadeusz — burza.",
+      "title": "Pan Tadeusz – burza. Środki stylistyczne i interpretacja.",
       "page": "87",
       "skills": [
         "srodki-stylistyczne",
         "obraz-poetycki",
-        "wers-strofa-rym"
+        "recytacja"
       ],
-      "outcome": "Uczeń potrafi opowiedzieć przebieg zdarzeń i wskazać środki stylistyczne."
+      "outcome": "Uczeń wskazuje obrazy zmysłowe i środki stylistyczne, przygotowuje głosową interpretację fragmentu i proponuje adaptację."
     },
     {
       "id": "T49",
       "hours": 1,
       "part": "I",
       "chapter": "R3",
-      "category": "NEUTRAL",
-      "title": "Sprawdzę się!",
+      "category": "POWTORZENIE",
+      "title": "Sprawdzę się! · Parasol — wiersz.",
       "page": "89",
       "skills": [
-        "komunikacja",
         "wiersz",
-        "mit",
-        "rzeczownik",
-        "przymiotnik",
         "srodki-stylistyczne",
-        "ortografia"
+        "komunikacja"
       ],
-      "outcome": "Uczeń potrafi samodzielnie używać poznanych terminów."
+      "outcome": "Uczeń relacjonuje sytuację w wierszu, wskazuje bohatera, osobę mówiącą i autora oraz rozpoznaje epitety i porównania."
     },
     {
       "id": "T50",
       "hours": 1,
       "part": "I",
       "chapter": "R3",
-      "category": "NEUTRAL",
-      "title": "Sprawdzę się!",
+      "category": "POWTORZENIE",
+      "title": "Sprawdzę się! · język, dyktando, opowiadanie.",
       "page": "89",
       "skills": [
-        "komunikacja",
-        "wiersz",
-        "mit",
+        "ortografia",
         "rzeczownik",
-        "przymiotnik",
-        "srodki-stylistyczne",
-        "ortografia"
+        "komunikacja"
       ],
-      "outcome": "Uczeń potrafi samodzielnie używać poznanych terminów."
+      "outcome": "Uczeń stosuje nie z rzeczownikami, synonimy, odmianę rzeczownika, ortografię ó/u, rz/ż, ch/h i pisze krótkie opowiadanie fantastyczne."
     },
     {
       "id": "T51",
@@ -853,13 +843,13 @@ window.EduMostPolskiCourse = {
       "part": "II",
       "chapter": "R4",
       "category": "CZYTANIE",
-      "title": "Precyzyjna informacja / szlaki.",
+      "title": "Precyzyjna informacja · szlaki turystyczne.",
       "page": "92",
       "skills": [
         "sytuacja-komunikacyjna",
         "informacja-precyzyjna"
       ],
-      "outcome": "Uczeń potrafi wskazać, co pomaga i co psuje komunikat."
+      "outcome": "Uczeń opisuje sytuację na planszy, czyta znaki szlaków, wskazuje, co pomaga i psuje komunikat, oraz buduje precyzyjną wypowiedź ze słownictwem z ramki."
     },
     {
       "id": "T52",

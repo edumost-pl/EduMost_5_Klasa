@@ -1,7 +1,3 @@
-function em(text) {
-  return { text: text, emphasis: true };
-}
-
 var POL_IMG = "https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/polska/";
 
 function vizGh(file, spec) {
@@ -20,14 +16,14 @@ window.EduMostLessonContent = {
       formula: "s. 28–29  ·  lekcja 12 z 13",
       promptPlace: "before",
       prompt: {
-        pl: "Dwa tematy, jeden rozdział. Dziś czytamy komiksy i nazywamy: wydarzenia, uczucia, cechy komiksu. Pisanie (przybysz, dalszy ciąg) — następna lekcja, s. 30.",
-        ua: "Два уроки, один розділ. Сьогодні читаємо комікси: події, почуття, риси коміксу. Писання — наступний урок, с. 30."
+        pl: "Dwa tematy, jeden rozdział. Dziś czytamy komiksy, zapamiętujemy definicję i słownictwo z ramki. Pisanie wypowiedzi przybysza — jutro, s. 30.",
+        ua: "Два уроки, один розділ. Сьогодні читаємо комікси, запам’ятовуємо визначення і словник з рамки. Писання висловлювання прибульця — завтра, с. 30."
       },
       items: [
         { pl: "opowiem, co się dzieje w komiksie *Tytuł?*;", ua: "розкажу, що діється в коміксі *Tytuł?*;" },
         { pl: "nazwę przeżycia bohaterów;", ua: "назву пережиття героїв;" },
-        { pl: "wskażę cechy komiksu (obrazki, dymki, PYK!);", ua: "вкажу риси коміксу (кадри, хмарки, PYK!);" },
-        { pl: "powiem, co pomaga odczytać uczucia.", ua: "скажу, що допомагає зчитати почуття." }
+        { pl: "zapamiętam definicję *komiksu* (obrazki, dymki, PYK!);", ua: "запам’ятаю визначення *коміксу* (кадри, хмарки, PYK!);" },
+        { pl: "poznam słownictwo z ramki do opisu planety (jutro — wypowiedź).", ua: "пізнаю словник з рамки для опису планети (завтра — висловлювання)." }
       ]
     },
     {
@@ -389,22 +385,23 @@ window.EduMostLessonContent = {
       }
     },
     {
-      type: "observe",
+      type: "concept",
       heading: { pl: "Co to jest komiks?", ua: "Що таке комікс?" },
-      formula: "s. 30  ·  ramka",
+      formula: "s. 30  ·  ramka  ·  Zapamiętaj",
       promptPlace: "before",
       prompt: {
-        pl: "Ramka z podręcznika. Znajdź w *Tytuł?* przykłady: dymki i PYK!",
-        ua: "Рамка з підручника. Знайди в *Tytuł?* приклади: хмарки і PYK!"
+        pl: "Po przeczytaniu *Tytuł?* i Asteriksa — reguła z podręcznika. Znajdź w kadrach: *dymki* i *PYK!*",
+        ua: "Після *Tytuł?* і Астерікса — правило з підручника. Знайди в кадрах: *хмарки* і *PYK!*"
       },
       text: {
-        pl: [
-          "Komiks to historia opowiedziana za pomocą serii obrazków. Wypowiedzi bohaterów czy narratora są umieszczone w dymkach. Ponadto w komiksach pojawiają się informacje wyróżnione graficznie, na przykład o dźwiękach, ruchu, emocjach bohaterów."
-        ],
-        ua: [
-          "Комікс — історія серією малюнків. Репліки — в хмарках. Окремо графічно виділяють звук, рух, емоції."
-        ]
+        pl: "**Komiks** to historia opowiedziana za pomocą **serii obrazków**. Wypowiedzi bohaterów czy narratora są umieszczone w **dymkach**. Ponadto w komiksach pojawiają się **informacje wyróżnione graficznie**, na przykład o dźwiękach, ruchu, emocjach bohaterów.",
+        ua: "**Комікс** — історія, розказана **серією малюнків**. Репліки героїв чи оповідача — у **хмарах (dymki)**. Окремо з’являються **графічно виділені знаки**: звук, рух, емоції (наприклад *PYK!*)."
       },
+      items: [
+        { pl: "*Seria obrazków* — historia idzie kadrami, nie samym wypracowaniem.", ua: "*Серія малюнків* — історія кадрами, не самим твором." },
+        { pl: "*Dymki* — tu są słowa bohaterów lub narratora.", ua: "*Хмарки (dymki)* — тут слова героїв або оповідача." },
+        { pl: "*Informacje graficzne* — dźwięk, ruch, emocje poza zdaniem w dymku (np. *PYK!*, kolor kadru, wielkie litery).", ua: "*Графічні знаки* — звук, рух, емоції поза реченням у хмарці (напр. *PYK!*, колір кадру)." }
+      ],
       task: {
         id: "t12-s09-definicja",
         type: "multiple-choice",
@@ -420,8 +417,8 @@ window.EduMostLessonContent = {
         ],
         answer: ["a", "b", "d"],
         hint: {
-          pl: "Trzy zdania ramki. Czy komiks to samo wypracowanie?",
-          ua: "Три речення рамки. Чи комікс — це сам твір?"
+          pl: "Trzy zdania ramki Zapamiętaj. Czy komiks to samo wypracowanie?",
+          ua: "Три речення рамки Zapamiętaj. Чи комікс — це сам твір?"
         },
         explanation: {
           pl: "Ramka: obrazki + dymki + informacje graficzne (dźwięk, ruch, emocje). Nie samo wypracowanie.",
@@ -430,13 +427,55 @@ window.EduMostLessonContent = {
       }
     },
     {
+      type: "example",
+      heading: { pl: "Słownictwo z ramki", ua: "Словник з рамки" },
+      formula: "s. 30  ·  opis planety  ·  jutro wypowiedź",
+      promptPlace: "before",
+      prompt: {
+        pl: "Ramka do opisu planety przybysza. Dziś *czytamy i rozumiemy* zwroty. Jutro (lekcja 13) napiszesz wypowiedź Łodislanina.",
+        ua: "Рамка для опису планети прибульця. Сьогодні *читаємо і розуміємо* звороти. Завтра (урок 13) напишеш висловлювання Łodislanina."
+      },
+      text: {
+        pl: "planeta  ·  tam, skąd przybyłem  ·  mój dom / moja ojczyzna  ·  krąży wokół  ·  kształtem przypomina  ·  od waszej planety różni ją",
+        ua: "planeta — планета  ·  tam, skąd przybyłem — звідти, звідки я прибув  ·  mój dom / moja ojczyzna — мій дім / батьківщина  ·  krąży wokół — кружляє навколо  ·  kształtem przypomina — формою нагадує  ·  od waszej planety różni ją — від вашої планети відрізняє її"
+      },
+      items: [
+        { pl: "*planeta* · *tam, skąd przybyłem* · *miejsce, z którego wyruszyłem* · *mój dom* · *moja ojczyzna* — skąd jest przybysz (pierwsza osoba).", ua: "*planeta* — планета · *tam, skąd przybyłem* — звідти, звідки я прибув · *miejsce, z którego wyruszyłem* — місце, з якого вирушив · *mój dom* — мій дім · *moja ojczyzna* — моя батьківщина. Усе від «я» прибульця." },
+        { pl: "*leży* · *znajduje się* · *wyłania się* · *ukazuje się* · *pojawia się* · *obraca się* · *krąży wokół* — gdzie jest planeta i jak się porusza.", ua: "*leży / znajduje się* — лежить / розташована · *wyłania się / ukazuje się / pojawia się* — з’являється / показується · *obraca się* — обертається · *krąży wokół* — кружляє навколо (орбіта)." },
+        { pl: "*kształtem przypomina* · *wygląda jak* · *jest niewiele mniejsza od* · *ma wielkość podobną do* · *jej powierzchnia jest* — jak wygląda.", ua: "*kształtem przypomina / wygląda jak* — формою нагадує / виглядає як · *jest niewiele mniejsza od / ma wielkość podobną do* — трохи менша / подібна за розміром · *jej powierzchnia jest* — її поверхня є…" },
+        { pl: "*gdy się na nią patrzy, można mieć wrażenie, że* · *wydaje się podobna / niepodobna do* · *od waszej planety różni ją* — porównanie z Ziemią.", ua: "*gdy się na nią patrzy…* — коли дивишся, можна мати враження, що… · *wydaje się podobna / niepodobna do* — здається схожою / несхожою на… · *od waszej planety różni ją* — від вашої планети відрізняє її…" }
+      ],
+      task: {
+        id: "t12-s10-ramka",
+        type: "single-choice",
+        question: {
+          pl: "Która grupa zwrotów NA PEWNO nazywa miejsce, z którego przybył bohater?",
+          ua: "Яка група зворотів НАПЕВНО називає місце, звідки прибув герой?"
+        },
+        options: [
+          { id: "a", label: { pl: "tam, skąd przybyłem · mój dom · moja ojczyzna", ua: "tam, skąd przybyłem · mój dom · moja ojczyzna" } },
+          { id: "b", label: { pl: "PYK! · O jejku! · daj spokój", ua: "PYK! · O jejku! · daj spokój" } },
+          { id: "c", label: { pl: "tylko rz niewymienne w Rzeszowie", ua: "лише rz незмінне в Жешуві" } }
+        ],
+        answer: "a",
+        hint: {
+          pl: "Szukaj w ramce: *przybyłem*, *dom*, *ojczyzna*. Nie dźwięków z komiksu.",
+          ua: "Шукай у рамці: *przybyłem*, *dom*, *ojczyzna*. Не звуків із коміксу."
+        },
+        explanation: {
+          pl: "Ramka do opisu planety: skąd jestem. PYK! i «O jejku!» to język komiksu, nie ta ramka. Pisanie — jutro.",
+          ua: "Рамка для опису планети: звідки я. PYK! і «O jejku!» — мова коміксу. Писання — завтра."
+        }
+      }
+    },
+    {
       type: "practice",
-      heading: { pl: "Zad. 2 · co pokazuje uczucia?", ua: "Завд. 2 · що показує почуття?" },
+      heading: { pl: "Zad. 3 · co pokazuje uczucia?", ua: "Завд. 3 · що показує почуття?" },
       formula: "s. 30",
       promptPlace: "before",
       prompt: {
-        pl: "Powiedz, które elementy komiksu pomagają odczytać uczucia bohaterów. Najpierw wskaż w *Tytuł?* i u Asteriksa.",
-        ua: "Скажи, які елементи коміксу допомагають зчитати почуття. Спочатку вкажи в *Tytuł?* і в Астерікса."
+        pl: "Podręcznik: powiedzcie, które elementy komiksu pomagają odczytać uczucia bohaterów. Najpierw wskaż w *Tytuł?* i u Asteriksa. Potem ramka *Komiks*.",
+        ua: "Підручник: скажіть, які елементи коміксу допомагають зчитати почуття. Спочатку вкажи в *Tytuł?* і в Астерікса. Потім рамка *Komiks*."
       },
       reveal: true,
       steps: [
@@ -467,7 +506,7 @@ window.EduMostLessonContent = {
         }
       ],
       task: {
-        id: "t12-s10-elementy",
+        id: "t12-s11-elementy",
         type: "multiple-choice",
         question: {
           pl: "Które elementy NA PEWNO pomagają odczytać uczucia w tych komiksach? Zaznacz wszystkie pewne.",
@@ -481,8 +520,8 @@ window.EduMostLessonContent = {
         ],
         answer: ["a", "b", "d"],
         hint: {
-          pl: "Ramka mówi o dymkach i informacjach graficznych. Czy numer strony pokazuje strach?",
-          ua: "Рамка: хмарки і графіка. Чи номер сторінки показує страх?"
+          pl: "Ramka *Komiks* mówi o dymkach i informacjach graficznych. Czy numer strony pokazuje strach?",
+          ua: "Рамка *Komiks*: хмарки і графіка. Чи номер сторінки показує страх?"
         },
         explanation: {
           pl: "Uczucia: twarz, gest, dymek, kolor, PYK! Numer strony niczego nie opowiada.",
@@ -495,16 +534,16 @@ window.EduMostLessonContent = {
       heading: { pl: "Notatka do zeszytu", ua: "Нотатка до зошита" },
       promptPlace: "after",
       prompt: {
-        pl: "Komiks = historia obrazkami + dymki + znaki dźwięku/ruchu/emocji. *Tytuł?*: Proxima B, spór o lot, PYK! Asteriks: uczucia przed lądowaniem i w sprzeczce. Jutro: wypowiedź przybysza i dalszy ciąg (s. 30).",
-        ua: "Комікс = історія малюнками + хмарки + звук/рух. *Tytuł?*: Proxima B, PYK! Завтра: висловлювання прибульця (с. 30)."
+        pl: "Komiks = historia obrazkami + dymki + znaki dźwięku/ruchu/emocji. *Tytuł?*: Proxima B, spór o lot, PYK! Asteriks: uczucia przed lądowaniem i w sprzeczce. Ramka słownictwa (planeta, ojczyzna, krąży wokół…) — jutro wypowiedź przybysza (s. 30).",
+        ua: "Комікс = історія малюнками + хмарки + звук/рух. *Tytuł?*: Proxima B, PYK! Рамка словника — завтра висловлювання прибульця (с. 30)."
       },
       items: [
         { pl: "Komiks: seria obrazków, dymki, PYK! i mimika.", ua: "Комікс: серія кадрів, хмарки, PYK! і міміка." },
         { pl: "Tytuł?: rozmowa o planecie → stwór z monitora.", ua: "Tytuł?: розмова про планету → істота з монітора." },
-        { pl: "Uczucia czytamy z twarzy, dymka i grafiki.", ua: "Почуття читаємо з обличчя, хмарки і графіки." }
+        { pl: "Ramka: skąd przybyłem / jak wygląda planeta / czym różni się od Ziemi.", ua: "Рамка: звідки прибув / як виглядає планета / чим відрізняється від Землі." }
       ],
       task: {
-        id: "t12-s11-notatka",
+        id: "t12-s12-notatka",
         type: "single-choice",
         question: {
           pl: "Jaką notatkę zostawiasz po lekcji 12?",
@@ -514,8 +553,8 @@ window.EduMostLessonContent = {
           {
             id: "a",
             label: {
-              pl: "Komiks opowiada obrazkami i dymkami. W Tytuł? stwór wychodzi z ekranu. Uczucia widać na twarzy i w PYK!",
-              ua: "Комікс розповідає малюнками й хмарками. У Tytuł? істота виходить з екрана. Почуття — на обличчі і в PYK!"
+              pl: "Komiks opowiada obrazkami i dymkami. Znam ramkę o planecie. Jutro napiszę wypowiedź przybysza.",
+              ua: "Комікс розповідає малюнками й хмарками. Знаю рамку про планету. Завтра напишу висловлювання прибульця."
             }
           },
           { id: "b", label: { pl: "To była tylko lekcja o rz niewymiennym.", ua: "Це був лише урок про rz незмінне." } },
@@ -523,12 +562,12 @@ window.EduMostLessonContent = {
         ],
         answer: "a",
         hint: {
-          pl: "Kto narysował *Tytuł?*? Co było tematem?",
-          ua: "Хто намалював *Tytuł?*? Яка була тема?"
+          pl: "Kto narysował *Tytuł?*? Co było w ramce na s. 30?",
+          ua: "Хто намалював *Tytuł?*? Що було в рамці на с. 30?"
         },
         explanation: {
-          pl: "Dziś: komiks Kaczkowskiego i cechy komiksu. Miłosz i rz — inne lekcje.",
-          ua: "Сьогодні: комікс Качковського. Мілош і rz — інші уроки."
+          pl: "Dziś: komiks Kaczkowskiego, definicja, słownictwo. Pisanie — lekcja 13. Miłosz i rz — inne lekcje.",
+          ua: "Сьогодні: комікс Качковського, визначення, словник. Писання — урок 13."
         }
       }
     }

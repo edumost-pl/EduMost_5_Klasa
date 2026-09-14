@@ -207,3 +207,30 @@ body[data-subject="historia"] {
   opacity: .4;
   cursor: default;
 }
+
+.lesson-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem .65rem;
+  align-items: center;
+  margin: .15rem 0 .35rem;
+  font-size: .86rem;
+  font-weight: 700;
+}
+.lesson-jump a,
+.lesson-jump span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: .15rem .65rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  text-decoration: none;
+  color: var(--ink);
+}
+.lesson-jump a:hover { border-color: var(--accent); color: var(--accent); }
+.lesson-jump .is-now {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}

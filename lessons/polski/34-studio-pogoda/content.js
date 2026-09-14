@@ -249,19 +249,23 @@ window.EduMostLessonContent = { blocks: [
     }
   },
   {
-    type: "vocabulary",
+    type: "example",
     heading: { pl: "Słownictwo prognozy", ua: "Словник прогнозу" },
     promptPlace: "before",
     prompt: {
-      pl: "Zad. wstępne b: wypisz słownictwo charakterystyczne. To słowa, bez których komunikat *nie brzmi* jak pogoda. Jutro na planecie dostaniesz dłuższą ramkę — dziś krótka lista z modelu.",
-      ua: "Вступне b: випиши характерну лексику. Це слова, без яких комунікат *не звучить* як погода. Завтра на планеті буде довша рамка — сьогодні короткий список із моделі."
+      pl: "Zad. wstępne b: wypisz słownictwo charakterystyczne. Najpierw ramka, potem rozbiór. Jutro na planecie — dłuższa ramka.",
+      ua: "Вступне b: випиши характерну лексику. Спочатку рамка, потім розбір. Завтра на планеті — довша рамка."
     },
-    rows: [
-      { pl: "zachmurzenie — ile nieba chronią chmury", ua: "zachmurzenie — скільки неба закривають хмари" },
-      { pl: "opady — deszcz albo śnieg, które padają", ua: "opady — дощ або сніг, які падають" },
-      { pl: "rozpogodzić się — chmury ustępują, wychodzi słońce", ua: "rozpogodzić się — хмари відступають, виходить сонце" },
-      { pl: "ustąpić — przestanie (o deszczu, wietrze)", ua: "ustąpić — припиниться (про дощ, вітер)" },
-      { pl: "spodziewać się — oczekiwać, że coś będzie", ua: "spodziewać się — очікувати, що щось буде" }
+    text: {
+      pl: "zachmurzenie  ·  opady  ·  rozpogodzić się  ·  ustąpić  ·  spodziewać się",
+      ua: "zachmurzenie  ·  opady  ·  rozpogodzić się  ·  ustąpić  ·  spodziewać się"
+    },
+    items: [
+      { pl: "**zachmurzenie** — ile nieba chronią chmury.", ua: "**zachmurzenie** — скільки неба закривають хмари." },
+      { pl: "**opady** — deszcz albo śnieg, które padają.", ua: "**opady** — дощ або сніг, які падають." },
+      { pl: "**rozpogodzić się** — chmury ustępują, wychodzi słońce.", ua: "**rozpogodzić się** — хмари відступають, виходить сонце." },
+      { pl: "**ustąpić** — przestanie (o deszczu, wietrze).", ua: "**ustąpić** — припиниться (про дощ, вітер)." },
+      { pl: "**spodziewać się** — oczekiwać, że coś będzie.", ua: "**spodziewać się** — очікувати, що щось буде." }
     ],
     task: {
       id: "t34-s07-slownik",

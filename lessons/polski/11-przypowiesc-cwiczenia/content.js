@@ -32,7 +32,7 @@ window.EduMostLessonContent = {
     },
     // 2
     {
-      type: "observe",
+      type: "concept",
       heading: { pl: "Zad. 1a · obrazy poetyckie", ua: "Завд. 1а · поетичні образи" },
       formula: "s. 27  ·  ramka podręcznika",
       visual: vizGh("t11-obraz-poetycki1.png", {
@@ -52,17 +52,13 @@ window.EduMostLessonContent = {
         ua: "Завд. 1а: які поетичні образи можна виділити у вірші. Спочатку рамка з підручника."
       },
       text: {
-        pl: [
-          "Ze słów i ich znaczeń poeci tworzą obrazy poetyckie, czyli rodzaj obrazów namalowanych słowem.",
-          "Obraz poetycki to taki opis zawarty w utworze, na podstawie którego czytelnik może, wykorzystując wyobraźnię, stworzyć w myślach wyrazisty, plastyczny obraz świata przedstawionego.",
-          "Przykład z ramki (Stanisław Grochowiak) — nie tłumaczymy: „Czasem dobrze usiąść w oknie, / złożyć głowę swą na piąstkach – / i popłynąć liścia łódką / po liliowych bzu gałązkach.”"
-        ],
-        ua: [
-          "Зі слів поети творять obrazy poetyckie — картини, намальовані словом.",
-          "Читач уявляє виразний, пластичний образ світу з опису в творі.",
-          "Приклад Grochowiaka в рамці — польською, без перекладу вірша."
-        ]
+        pl: "**Obraz poetycki** to rodzaj obrazu namalowanego słowem: opis w utworze, na podstawie którego czytelnik może, wykorzystując wyobraźnię, stworzyć w myślach wyrazisty, plastyczny obraz świata przedstawionego.",
+        ua: "**Поетичний образ** — картина, намальована словом: опис у творі, з якого читач може в думках створити виразний, пластичний образ зображеного світу."
       },
+      items: [
+        { pl: "Ze słów i ich znaczeń poeci *tworzą* takie obrazy — nie z fotografii.", ua: "Зі слів і їхніх значень поети *творять* такі образи — не з фотографії." },
+        { pl: "Przykład z ramki (Stanisław Grochowiak) — wiersza nie tłumaczymy: „Czasem dobrze usiąść w oknie, / złożyć głowę swą na piąstkach – / i popłynąć liścia łódką / po liliowych bzu gałązkach.”", ua: "Приклад з рамки (Stanisław Grochowiak) — вірш не перекладаємо." }
+      ],
       task: {
         id: "t11-s02-definicja",
         type: "single-choice",

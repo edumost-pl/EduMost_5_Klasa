@@ -400,16 +400,13 @@ window.EduMostLessonContent = {
         ua: "Щойно ТЕПЕР назва. У T2 вже було «хто говорить?»."
       },
       text: {
-        pl: [
-          "W poezji (liryce) nadawcę wypowiedzi poetyckiej — osobę, która wyraża przeżycia, doznania, przemyślenia, poglądy albo opisuje świat — nazywamy OSOBĄ MÓWIĄCĄ albo PODMIOTEM LIRYCZNYM.",
-          "Prościej: podmiot liryczny to osoba / postać / głos, który mówi w wierszu.",
-          "Nie mówimy, że podmiot liryczny to zawsze autor. Wręcz przeciwnie — zaraz to rozdzielimy."
-        ],
-        ua: [
-          "Особа, яка говорить у вірші, називається osobą mówiącą або podmiotem lirycznym.",
-          "Це не завжди автор."
-        ]
+        pl: "W poezji (liryce) nadawcę wypowiedzi poetyckiej — osobę, która wyraża przeżycia, doznania, przemyślenia, poglądy albo opisuje świat — nazywamy **osobą mówiącą** albo **podmiotem lirycznym**.",
+        ua: "У поезії (ліриці) того, хто говорить у вірші — хто висловлює переживання, думки або описує світ — називаємо **особою, яка говорить**, або **підметом ліричним** (*podmiot liryczny*)."
       },
+      items: [
+        { pl: "Prościej: podmiot liryczny to osoba / postać / głos, który *mówi w wierszu*.", ua: "Простіше: ліричний суб’єкт — особа / постать / голос, який *говорить у вірші*." },
+        { pl: "To *nie* zawsze autor. Zaraz rozdzielimy głos w tekście i człowieka z okładki.", ua: "Це *не* завжди автор. Зараз розділяємо голос у тексті і людину з обкладинки." }
+      ],
       task: {
         id: "t6-s06-termin",
         type: "single-choice",

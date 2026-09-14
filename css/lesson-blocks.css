@@ -2546,6 +2546,148 @@ body[data-topic="sprawdze-sie-parasol"] .em-audio audio {
   display: block;
 }
 
+body[data-topic="precyzyjna-informacja"] .tx-pl,
+body[data-topic="precyzyjna-informacja"] .tx-ua,
+body[data-topic="precyzyjna-informacja"] .prompt,
+body[data-topic="precyzyjna-informacja"] .task-opt,
+body[data-topic="precyzyjna-informacja"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="precyzyjna-informacja"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body[data-topic="precyzyjna-informacja"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="precyzyjna-informacja"] .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body[data-topic="precyzyjna-informacja"] .lesson-block[data-type="practice"] .block-body > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body[data-topic="precyzyjna-informacja"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="precyzyjna-informacja"] .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body[data-topic="precyzyjna-informacja"] .lesson-block[data-type="practice"] .block-body > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body[data-topic="precyzyjna-informacja"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="precyzyjna-informacja"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .38rem 0;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+body[data-topic="precyzyjna-informacja"] .lesson-block .task-card { margin-top: 1.15rem; }
+body[data-topic="precyzyjna-informacja"] .viz,
+body[data-topic="precyzyjna-informacja"] .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body[data-topic="precyzyjna-informacja"] .viz-img {
+  max-height: 70vh;
+  object-fit: contain;
+  object-position: top center;
+  background: #fafaf9;
+}
+body[data-topic="precyzyjna-informacja"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+
+body[data-topic="mamy-wspolne-cele"] .tx-pl,
+body[data-topic="mamy-wspolne-cele"] .tx-ua,
+body[data-topic="mamy-wspolne-cele"] .prompt,
+body[data-topic="mamy-wspolne-cele"] .task-opt,
+body[data-topic="mamy-wspolne-cele"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="mamy-wspolne-cele"] .lesson-block .block-body > p.tx-pl {
+  line-height: 1.62;
+  margin: .48rem 0;
+}
+body[data-topic="mamy-wspolne-cele"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="mamy-wspolne-cele"] .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body[data-topic="mamy-wspolne-cele"] .lesson-block[data-type="practice"] .block-body > p.tx-pl,
+body[data-topic="mamy-wspolne-cele"] .lesson-block[data-type="concept"] .prompt > p.tx-pl {
+  font-size: 1.14rem;
+  line-height: 1.6;
+  margin: .38rem 0;
+}
+body[data-topic="mamy-wspolne-cele"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="mamy-wspolne-cele"] .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body[data-topic="mamy-wspolne-cele"] .lesson-block[data-type="practice"] .block-body > p.tx-ua,
+body[data-topic="mamy-wspolne-cele"] .lesson-block[data-type="concept"] .prompt > p.tx-ua {
+  font-size: .92rem;
+  line-height: 1.5;
+  margin: .08rem 0 .55rem;
+  color: var(--accent2);
+}
+body[data-topic="mamy-wspolne-cele"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="mamy-wspolne-cele"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .12rem 0;
+  font-size: 1.14rem;
+  line-height: 1.55;
+  overflow: visible;
+}
+body[data-topic="mamy-wspolne-cele"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(2) {
+  margin-top: .95rem;
+  margin-bottom: .15rem;
+  font-size: 1.08rem;
+}
+body[data-topic="mamy-wspolne-cele"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(3) {
+  margin-top: .1rem;
+  margin-bottom: .45rem;
+  font-size: 1.28rem;
+  line-height: 1.35;
+}
+body[data-topic="mamy-wspolne-cele"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(8),
+body[data-topic="mamy-wspolne-cele"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(13) {
+  height: 1rem;
+  margin: .55rem 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+body[data-topic="mamy-wspolne-cele"] .lesson-block .task-card { margin-top: 1.15rem; }
+body[data-topic="mamy-wspolne-cele"] .viz,
+body[data-topic="mamy-wspolne-cele"] .viz-img { width: 100%; max-width: 100%; }
+body[data-topic="mamy-wspolne-cele"] .viz-img {
+  max-height: 70vh;
+  object-fit: contain;
+  object-position: top center;
+  background: #fafaf9;
+}
+body[data-topic="mamy-wspolne-cele"] .block-list li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin: .45rem 0;
+}
+body[data-topic="mamy-wspolne-cele"] .em-audio {
+  margin: .35rem 0 1rem;
+  padding: .75rem .9rem;
+  background: #f0fdfa;
+  border: 1px solid #99f6e4;
+  border-radius: 12px;
+}
+body[data-topic="mamy-wspolne-cele"] .em-audio-label {
+  margin: 0 0 .45rem;
+  font-weight: 700;
+  font-size: .95rem;
+}
+body[data-topic="mamy-wspolne-cele"] .em-audio audio {
+  width: 100%;
+  display: block;
+}
+
+
+
 /* Ramka podręcznika: concept.text = Zapamiętaj; example.text = słownictwo + items = rozbiór.
    Nie globalnie na cały polski: T7 / kartkówka trzymają w concept.text inny materiał. */
 body:is(
@@ -2574,6 +2716,17 @@ body:is(
   [data-topic="sprawdze-sie-parasol"],
   [data-topic="sprawdze-sie-jezyk"],
   [data-topic="precyzyjna-informacja"],
+  [data-topic="mamy-wspolne-cele"],
+  [data-topic="liczebnik-rodzaje"],
+  [data-topic="liczebnik-cwiczenia"],
+  [data-topic="nie-z-liczebnikiem"],
+  [data-topic="fileas-fogg-czytanie"],
+  [data-topic="fileas-fogg-dziennik"],
+  [data-topic="slownik-poprawnej"],
+  [data-topic="pamietnik-robert"],
+  [data-topic="czasownik-formy"],
+  [data-topic="nie-czasownik-noto"],
+  [data-topic="sienkiewicz-narrator"],
   [data-topic="apostrofa"],
   [data-topic="Doskonalimy_czytanie"],
   [data-topic="pisownia-wymienna"]
@@ -2604,6 +2757,17 @@ body:is(
   [data-topic="sprawdze-sie-parasol"],
   [data-topic="sprawdze-sie-jezyk"],
   [data-topic="precyzyjna-informacja"],
+  [data-topic="mamy-wspolne-cele"],
+  [data-topic="liczebnik-rodzaje"],
+  [data-topic="liczebnik-cwiczenia"],
+  [data-topic="nie-z-liczebnikiem"],
+  [data-topic="fileas-fogg-czytanie"],
+  [data-topic="fileas-fogg-dziennik"],
+  [data-topic="slownik-poprawnej"],
+  [data-topic="pamietnik-robert"],
+  [data-topic="czasownik-formy"],
+  [data-topic="nie-czasownik-noto"],
+  [data-topic="sienkiewicz-narrator"],
   [data-topic="apostrofa"],
   [data-topic="Doskonalimy_czytanie"],
   [data-topic="pisownia-wymienna"]
@@ -2638,6 +2802,17 @@ body:is(
   [data-topic="sprawdze-sie-parasol"],
   [data-topic="sprawdze-sie-jezyk"],
   [data-topic="precyzyjna-informacja"],
+  [data-topic="mamy-wspolne-cele"],
+  [data-topic="liczebnik-rodzaje"],
+  [data-topic="liczebnik-cwiczenia"],
+  [data-topic="nie-z-liczebnikiem"],
+  [data-topic="fileas-fogg-czytanie"],
+  [data-topic="fileas-fogg-dziennik"],
+  [data-topic="slownik-poprawnej"],
+  [data-topic="pamietnik-robert"],
+  [data-topic="czasownik-formy"],
+  [data-topic="nie-czasownik-noto"],
+  [data-topic="sienkiewicz-narrator"],
   [data-topic="apostrofa"],
   [data-topic="Doskonalimy_czytanie"],
   [data-topic="pisownia-wymienna"]
@@ -2675,6 +2850,17 @@ body:is(
   [data-topic="sprawdze-sie-parasol"],
   [data-topic="sprawdze-sie-jezyk"],
   [data-topic="precyzyjna-informacja"],
+  [data-topic="mamy-wspolne-cele"],
+  [data-topic="liczebnik-rodzaje"],
+  [data-topic="liczebnik-cwiczenia"],
+  [data-topic="nie-z-liczebnikiem"],
+  [data-topic="fileas-fogg-czytanie"],
+  [data-topic="fileas-fogg-dziennik"],
+  [data-topic="slownik-poprawnej"],
+  [data-topic="pamietnik-robert"],
+  [data-topic="czasownik-formy"],
+  [data-topic="nie-czasownik-noto"],
+  [data-topic="sienkiewicz-narrator"],
   [data-topic="apostrofa"],
   [data-topic="Doskonalimy_czytanie"],
   [data-topic="pisownia-wymienna"]
@@ -2709,6 +2895,17 @@ body:is(
   [data-topic="sprawdze-sie-parasol"],
   [data-topic="sprawdze-sie-jezyk"],
   [data-topic="precyzyjna-informacja"],
+  [data-topic="mamy-wspolne-cele"],
+  [data-topic="liczebnik-rodzaje"],
+  [data-topic="liczebnik-cwiczenia"],
+  [data-topic="nie-z-liczebnikiem"],
+  [data-topic="fileas-fogg-czytanie"],
+  [data-topic="fileas-fogg-dziennik"],
+  [data-topic="slownik-poprawnej"],
+  [data-topic="pamietnik-robert"],
+  [data-topic="czasownik-formy"],
+  [data-topic="nie-czasownik-noto"],
+  [data-topic="sienkiewicz-narrator"],
   [data-topic="apostrofa"],
   [data-topic="Doskonalimy_czytanie"],
   [data-topic="pisownia-wymienna"]
@@ -2748,6 +2945,17 @@ body:is(
   [data-topic="sprawdze-sie-parasol"],
   [data-topic="sprawdze-sie-jezyk"],
   [data-topic="precyzyjna-informacja"],
+  [data-topic="mamy-wspolne-cele"],
+  [data-topic="liczebnik-rodzaje"],
+  [data-topic="liczebnik-cwiczenia"],
+  [data-topic="nie-z-liczebnikiem"],
+  [data-topic="fileas-fogg-czytanie"],
+  [data-topic="fileas-fogg-dziennik"],
+  [data-topic="slownik-poprawnej"],
+  [data-topic="pamietnik-robert"],
+  [data-topic="czasownik-formy"],
+  [data-topic="nie-czasownik-noto"],
+  [data-topic="sienkiewicz-narrator"],
   [data-topic="apostrofa"],
   [data-topic="Doskonalimy_czytanie"],
   [data-topic="pisownia-wymienna"]
@@ -2787,6 +2995,17 @@ body:is(
   [data-topic="sprawdze-sie-parasol"],
   [data-topic="sprawdze-sie-jezyk"],
   [data-topic="precyzyjna-informacja"],
+  [data-topic="mamy-wspolne-cele"],
+  [data-topic="liczebnik-rodzaje"],
+  [data-topic="liczebnik-cwiczenia"],
+  [data-topic="nie-z-liczebnikiem"],
+  [data-topic="fileas-fogg-czytanie"],
+  [data-topic="fileas-fogg-dziennik"],
+  [data-topic="slownik-poprawnej"],
+  [data-topic="pamietnik-robert"],
+  [data-topic="czasownik-formy"],
+  [data-topic="nie-czasownik-noto"],
+  [data-topic="sienkiewicz-narrator"],
   [data-topic="apostrofa"],
   [data-topic="Doskonalimy_czytanie"],
   [data-topic="pisownia-wymienna"]
@@ -2821,6 +3040,17 @@ body:is(
   [data-topic="sprawdze-sie-parasol"],
   [data-topic="sprawdze-sie-jezyk"],
   [data-topic="precyzyjna-informacja"],
+  [data-topic="mamy-wspolne-cele"],
+  [data-topic="liczebnik-rodzaje"],
+  [data-topic="liczebnik-cwiczenia"],
+  [data-topic="nie-z-liczebnikiem"],
+  [data-topic="fileas-fogg-czytanie"],
+  [data-topic="fileas-fogg-dziennik"],
+  [data-topic="slownik-poprawnej"],
+  [data-topic="pamietnik-robert"],
+  [data-topic="czasownik-formy"],
+  [data-topic="nie-czasownik-noto"],
+  [data-topic="sienkiewicz-narrator"],
   [data-topic="apostrofa"],
   [data-topic="Doskonalimy_czytanie"],
   [data-topic="pisownia-wymienna"]
@@ -2845,6 +3075,17 @@ body:is(
   [data-topic="sprawdze-sie-parasol"],
   [data-topic="sprawdze-sie-jezyk"],
   [data-topic="precyzyjna-informacja"],
+  [data-topic="mamy-wspolne-cele"],
+  [data-topic="liczebnik-rodzaje"],
+  [data-topic="liczebnik-cwiczenia"],
+  [data-topic="nie-z-liczebnikiem"],
+  [data-topic="fileas-fogg-czytanie"],
+  [data-topic="fileas-fogg-dziennik"],
+  [data-topic="slownik-poprawnej"],
+  [data-topic="pamietnik-robert"],
+  [data-topic="czasownik-formy"],
+  [data-topic="nie-czasownik-noto"],
+  [data-topic="sienkiewicz-narrator"],
   [data-topic="apostrofa"],
   [data-topic="Jakie_tajemnice_kosmosu"],
   [data-topic="Doskonalimy_czytanie"],
@@ -2868,6 +3109,17 @@ body:is(
   [data-topic="sprawdze-sie-parasol"],
   [data-topic="sprawdze-sie-jezyk"],
   [data-topic="precyzyjna-informacja"],
+  [data-topic="mamy-wspolne-cele"],
+  [data-topic="liczebnik-rodzaje"],
+  [data-topic="liczebnik-cwiczenia"],
+  [data-topic="nie-z-liczebnikiem"],
+  [data-topic="fileas-fogg-czytanie"],
+  [data-topic="fileas-fogg-dziennik"],
+  [data-topic="slownik-poprawnej"],
+  [data-topic="pamietnik-robert"],
+  [data-topic="czasownik-formy"],
+  [data-topic="nie-czasownik-noto"],
+  [data-topic="sienkiewicz-narrator"],
   [data-topic="apostrofa"],
   [data-topic="Jakie_tajemnice_kosmosu"],
   [data-topic="Doskonalimy_czytanie"],
@@ -2896,6 +3148,17 @@ body:is(
   [data-topic="sprawdze-sie-parasol"],
   [data-topic="sprawdze-sie-jezyk"],
   [data-topic="precyzyjna-informacja"],
+  [data-topic="mamy-wspolne-cele"],
+  [data-topic="liczebnik-rodzaje"],
+  [data-topic="liczebnik-cwiczenia"],
+  [data-topic="nie-z-liczebnikiem"],
+  [data-topic="fileas-fogg-czytanie"],
+  [data-topic="fileas-fogg-dziennik"],
+  [data-topic="slownik-poprawnej"],
+  [data-topic="pamietnik-robert"],
+  [data-topic="czasownik-formy"],
+  [data-topic="nie-czasownik-noto"],
+  [data-topic="sienkiewicz-narrator"],
   [data-topic="apostrofa"],
   [data-topic="Jakie_tajemnice_kosmosu"],
   [data-topic="Doskonalimy_czytanie"],
@@ -2926,6 +3189,17 @@ body:is(
   [data-topic="sprawdze-sie-parasol"],
   [data-topic="sprawdze-sie-jezyk"],
   [data-topic="precyzyjna-informacja"],
+  [data-topic="mamy-wspolne-cele"],
+  [data-topic="liczebnik-rodzaje"],
+  [data-topic="liczebnik-cwiczenia"],
+  [data-topic="nie-z-liczebnikiem"],
+  [data-topic="fileas-fogg-czytanie"],
+  [data-topic="fileas-fogg-dziennik"],
+  [data-topic="slownik-poprawnej"],
+  [data-topic="pamietnik-robert"],
+  [data-topic="czasownik-formy"],
+  [data-topic="nie-czasownik-noto"],
+  [data-topic="sienkiewicz-narrator"],
   [data-topic="apostrofa"],
   [data-topic="Jakie_tajemnice_kosmosu"],
   [data-topic="Doskonalimy_czytanie"],
@@ -2953,6 +3227,17 @@ body:is(
   [data-topic="sprawdze-sie-parasol"],
   [data-topic="sprawdze-sie-jezyk"],
   [data-topic="precyzyjna-informacja"],
+  [data-topic="mamy-wspolne-cele"],
+  [data-topic="liczebnik-rodzaje"],
+  [data-topic="liczebnik-cwiczenia"],
+  [data-topic="nie-z-liczebnikiem"],
+  [data-topic="fileas-fogg-czytanie"],
+  [data-topic="fileas-fogg-dziennik"],
+  [data-topic="slownik-poprawnej"],
+  [data-topic="pamietnik-robert"],
+  [data-topic="czasownik-formy"],
+  [data-topic="nie-czasownik-noto"],
+  [data-topic="sienkiewicz-narrator"],
   [data-topic="apostrofa"],
   [data-topic="Jakie_tajemnice_kosmosu"],
   [data-topic="Doskonalimy_czytanie"],
@@ -2985,6 +3270,17 @@ body:is(
   [data-topic="sprawdze-sie-parasol"],
   [data-topic="sprawdze-sie-jezyk"],
   [data-topic="precyzyjna-informacja"],
+  [data-topic="mamy-wspolne-cele"],
+  [data-topic="liczebnik-rodzaje"],
+  [data-topic="liczebnik-cwiczenia"],
+  [data-topic="nie-z-liczebnikiem"],
+  [data-topic="fileas-fogg-czytanie"],
+  [data-topic="fileas-fogg-dziennik"],
+  [data-topic="slownik-poprawnej"],
+  [data-topic="pamietnik-robert"],
+  [data-topic="czasownik-formy"],
+  [data-topic="nie-czasownik-noto"],
+  [data-topic="sienkiewicz-narrator"],
   [data-topic="apostrofa"],
   [data-topic="Jakie_tajemnice_kosmosu"],
   [data-topic="Doskonalimy_czytanie"],
@@ -3002,4 +3298,354 @@ body:is(
   text-align: left;
 }
 
+/* === TOPIC CSS T53–T55 liczebnik === */
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .tx-pl,
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .tx-ua,
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .prompt,
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .task-opt,
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .math-line {
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .lesson-block .block-body > p.tx-pl {
+  margin: 0.35rem 0 0.15rem;
+}
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .lesson-block[data-type="practice"] .block-body > p.tx-pl,
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .lesson-block[data-type="concept"] .prompt > p.tx-pl {
+  display: block !important;
+}
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .lesson-block[data-type="practice"] .block-body > p.tx-ua,
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .lesson-block[data-type="concept"] .prompt > p.tx-ua {
+  display: block;
+  margin-top: 0.2rem;
+  opacity: 0.92;
+}
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  display: block !important;
+}
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .lesson-block .task-card { margin-top: 1.15rem; }
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .viz,
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .viz-img {
+  border-radius: 10px;
+  cursor: zoom-in;
+}
+body:is([data-topic="liczebnik-rodzaje"], [data-topic="liczebnik-cwiczenia"], [data-topic="nie-z-liczebnikiem"]) .block-list li {
+  margin: 0.35rem 0;
+  line-height: 1.5;
+}
 
+/* === TOPIC CSS T56–T57 Fileas Fogg === */
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .tx-pl,
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .tx-ua,
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .prompt,
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .task-opt,
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .math-line {
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .lesson-block .block-body > p.tx-pl {
+  margin: 0.35rem 0 0.15rem;
+}
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .lesson-block[data-type="practice"] .block-body > p.tx-pl,
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .lesson-block[data-type="concept"] .prompt > p.tx-pl,
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .lesson-block[data-type="example"] .prompt > p.tx-pl {
+  display: block !important;
+}
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .lesson-block[data-type="practice"] .block-body > p.tx-ua,
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .lesson-block[data-type="concept"] .prompt > p.tx-ua,
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .lesson-block[data-type="example"] .prompt > p.tx-ua {
+  display: block;
+  margin-top: 0.2rem;
+  opacity: 0.92;
+}
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  display: block !important;
+}
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .lesson-block .task-card { margin-top: 1.15rem; }
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .viz,
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .viz-img {
+  width: 100%;
+  max-width: 100%;
+}
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .viz-img {
+  border-radius: 10px;
+  cursor: zoom-in;
+}
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .block-list li {
+  margin: 0.35rem 0;
+  line-height: 1.5;
+}
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .em-audio {
+  margin: 0.85rem 0 1rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 12px;
+  background: #eef6f4;
+  border: 1px solid #c5ddd6;
+}
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .em-audio-label {
+  margin: 0 0 0.45rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+body:is([data-topic="fileas-fogg-czytanie"], [data-topic="fileas-fogg-dziennik"]) .em-audio audio {
+  width: 100%;
+  display: block;
+}
+body[data-topic="fileas-fogg-czytanie"] .em-scan-gallery {
+  display: grid;
+  gap: 0.85rem;
+  margin: 0.5rem 0 1.1rem;
+}
+body[data-topic="fileas-fogg-czytanie"] .em-scan-card {
+  margin: 0;
+  padding: 0;
+}
+body[data-topic="fileas-fogg-czytanie"] .em-scan-cap {
+  margin: 0 0 0.35rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #1f5c52;
+}
+body[data-topic="fileas-fogg-czytanie"] .em-scan-card .viz-img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: zoom-in;
+  box-shadow: 0 1px 4px rgba(20, 40, 35, 0.12);
+}
+@media (min-width: 900px) {
+  body[data-topic="fileas-fogg-czytanie"] .em-scan-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === TOPIC CSS T58 słownik poprawnej === */
+body[data-topic="slownik-poprawnej"] .tx-pl,
+body[data-topic="slownik-poprawnej"] .tx-ua,
+body[data-topic="slownik-poprawnej"] .prompt,
+body[data-topic="slownik-poprawnej"] .task-opt,
+body[data-topic="slownik-poprawnej"] .math-line {
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+body[data-topic="slownik-poprawnej"] .lesson-block .block-body > p.tx-pl { margin: 0.35rem 0 0.15rem; }
+body[data-topic="slownik-poprawnej"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="slownik-poprawnej"] .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body[data-topic="slownik-poprawnej"] .lesson-block[data-type="practice"] .block-body > p.tx-pl,
+body[data-topic="slownik-poprawnej"] .lesson-block[data-type="concept"] .prompt > p.tx-pl,
+body[data-topic="slownik-poprawnej"] .lesson-block[data-type="example"] .prompt > p.tx-pl {
+  display: block !important;
+}
+body[data-topic="slownik-poprawnej"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="slownik-poprawnej"] .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body[data-topic="slownik-poprawnej"] .lesson-block[data-type="practice"] .block-body > p.tx-ua,
+body[data-topic="slownik-poprawnej"] .lesson-block[data-type="concept"] .prompt > p.tx-ua,
+body[data-topic="slownik-poprawnej"] .lesson-block[data-type="example"] .prompt > p.tx-ua {
+  display: block;
+  margin-top: 0.2rem;
+  opacity: 0.92;
+}
+body[data-topic="slownik-poprawnej"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="slownik-poprawnej"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  display: block !important;
+}
+body[data-topic="slownik-poprawnej"] .lesson-block .task-card { margin-top: 1.15rem; }
+body[data-topic="slownik-poprawnej"] .viz,
+body[data-topic="slownik-poprawnej"] .viz-img { width: 100%; max-width: 100%; }
+body[data-topic="slownik-poprawnej"] .viz-img {
+  border-radius: 10px;
+  cursor: zoom-in;
+}
+body[data-topic="slownik-poprawnej"] .block-list li {
+  margin: 0.35rem 0;
+  line-height: 1.5;
+}
+
+/* === TOPIC CSS T59 pamiętnik Robert === */
+body[data-topic="pamietnik-robert"] .tx-pl,
+body[data-topic="pamietnik-robert"] .tx-ua,
+body[data-topic="pamietnik-robert"] .prompt,
+body[data-topic="pamietnik-robert"] .task-opt,
+body[data-topic="pamietnik-robert"] .math-line {
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+body[data-topic="pamietnik-robert"] .lesson-block .block-body > p.tx-pl { margin: 0.35rem 0 0.15rem; }
+body[data-topic="pamietnik-robert"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="pamietnik-robert"] .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body[data-topic="pamietnik-robert"] .lesson-block[data-type="practice"] .block-body > p.tx-pl,
+body[data-topic="pamietnik-robert"] .lesson-block[data-type="concept"] .prompt > p.tx-pl,
+body[data-topic="pamietnik-robert"] .lesson-block[data-type="example"] .prompt > p.tx-pl {
+  display: block !important;
+}
+body[data-topic="pamietnik-robert"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="pamietnik-robert"] .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body[data-topic="pamietnik-robert"] .lesson-block[data-type="practice"] .block-body > p.tx-ua,
+body[data-topic="pamietnik-robert"] .lesson-block[data-type="concept"] .prompt > p.tx-ua,
+body[data-topic="pamietnik-robert"] .lesson-block[data-type="example"] .prompt > p.tx-ua {
+  display: block;
+  margin-top: 0.2rem;
+  opacity: 0.92;
+}
+body[data-topic="pamietnik-robert"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="pamietnik-robert"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  display: block !important;
+}
+body[data-topic="pamietnik-robert"] .lesson-block .task-card { margin-top: 1.15rem; }
+body[data-topic="pamietnik-robert"] .viz,
+body[data-topic="pamietnik-robert"] .viz-img { width: 100%; max-width: 100%; }
+body[data-topic="pamietnik-robert"] .viz-img {
+  border-radius: 10px;
+  cursor: zoom-in;
+}
+body[data-topic="pamietnik-robert"] .block-list li { margin: 0.35rem 0; line-height: 1.5; }
+body[data-topic="pamietnik-robert"] .em-scan-gallery {
+  display: grid;
+  gap: 0.85rem;
+  margin: 0.5rem 0 1.1rem;
+}
+body[data-topic="pamietnik-robert"] .em-scan-card { margin: 0; }
+body[data-topic="pamietnik-robert"] .em-scan-cap {
+  margin: 0 0 0.35rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #1f5c52;
+}
+body[data-topic="pamietnik-robert"] .em-scan-card .viz-img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: zoom-in;
+  box-shadow: 0 1px 4px rgba(20, 40, 35, 0.12);
+}
+
+/* === TOPIC CSS T60/T61 czasownik · nie/-no/-to === */
+body[data-topic="czasownik-formy"] .tx-pl,
+body[data-topic="czasownik-formy"] .tx-ua,
+body[data-topic="czasownik-formy"] .prompt,
+body[data-topic="czasownik-formy"] .task-opt,
+body[data-topic="czasownik-formy"] .math-line,
+body[data-topic="nie-czasownik-noto"] .tx-pl,
+body[data-topic="nie-czasownik-noto"] .tx-ua,
+body[data-topic="nie-czasownik-noto"] .prompt,
+body[data-topic="nie-czasownik-noto"] .task-opt,
+body[data-topic="nie-czasownik-noto"] .math-line {
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+body[data-topic="czasownik-formy"] .lesson-block .block-body > p.tx-pl,
+body[data-topic="nie-czasownik-noto"] .lesson-block .block-body > p.tx-pl { margin: 0.35rem 0 0.15rem; }
+body[data-topic="czasownik-formy"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="czasownik-formy"] .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body[data-topic="czasownik-formy"] .lesson-block[data-type="practice"] .block-body > p.tx-pl,
+body[data-topic="czasownik-formy"] .lesson-block[data-type="concept"] .prompt > p.tx-pl,
+body[data-topic="czasownik-formy"] .lesson-block[data-type="example"] .prompt > p.tx-pl,
+body[data-topic="nie-czasownik-noto"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="nie-czasownik-noto"] .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body[data-topic="nie-czasownik-noto"] .lesson-block[data-type="practice"] .block-body > p.tx-pl,
+body[data-topic="nie-czasownik-noto"] .lesson-block[data-type="concept"] .prompt > p.tx-pl,
+body[data-topic="nie-czasownik-noto"] .lesson-block[data-type="example"] .prompt > p.tx-pl {
+  display: block !important;
+}
+body[data-topic="czasownik-formy"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="czasownik-formy"] .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body[data-topic="czasownik-formy"] .lesson-block[data-type="practice"] .block-body > p.tx-ua,
+body[data-topic="czasownik-formy"] .lesson-block[data-type="concept"] .prompt > p.tx-ua,
+body[data-topic="czasownik-formy"] .lesson-block[data-type="example"] .prompt > p.tx-ua,
+body[data-topic="nie-czasownik-noto"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="nie-czasownik-noto"] .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body[data-topic="nie-czasownik-noto"] .lesson-block[data-type="practice"] .block-body > p.tx-ua,
+body[data-topic="nie-czasownik-noto"] .lesson-block[data-type="concept"] .prompt > p.tx-ua,
+body[data-topic="nie-czasownik-noto"] .lesson-block[data-type="example"] .prompt > p.tx-ua {
+  display: block;
+  margin-top: 0.2rem;
+  opacity: 0.92;
+}
+body[data-topic="czasownik-formy"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="czasownik-formy"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7),
+body[data-topic="nie-czasownik-noto"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="nie-czasownik-noto"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  display: block !important;
+}
+body[data-topic="czasownik-formy"] .lesson-block .task-card,
+body[data-topic="nie-czasownik-noto"] .lesson-block .task-card { margin-top: 1.15rem; }
+body[data-topic="czasownik-formy"] .viz,
+body[data-topic="czasownik-formy"] .viz-img,
+body[data-topic="nie-czasownik-noto"] .viz,
+body[data-topic="nie-czasownik-noto"] .viz-img { width: 100%; max-width: 100%; }
+body[data-topic="czasownik-formy"] .viz-img,
+body[data-topic="nie-czasownik-noto"] .viz-img {
+  border-radius: 10px;
+  cursor: zoom-in;
+}
+body[data-topic="czasownik-formy"] .block-list li,
+body[data-topic="nie-czasownik-noto"] .block-list li { margin: 0.35rem 0; line-height: 1.5; }
+
+/* === TOPIC CSS T62 Sienkiewicz narrator === */
+body[data-topic="sienkiewicz-narrator"] .tx-pl,
+body[data-topic="sienkiewicz-narrator"] .tx-ua,
+body[data-topic="sienkiewicz-narrator"] .prompt,
+body[data-topic="sienkiewicz-narrator"] .task-opt,
+body[data-topic="sienkiewicz-narrator"] .math-line {
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+body[data-topic="sienkiewicz-narrator"] .lesson-block .block-body > p.tx-pl { margin: 0.35rem 0 0.15rem; }
+body[data-topic="sienkiewicz-narrator"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="sienkiewicz-narrator"] .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body[data-topic="sienkiewicz-narrator"] .lesson-block[data-type="practice"] .block-body > p.tx-pl,
+body[data-topic="sienkiewicz-narrator"] .lesson-block[data-type="concept"] .prompt > p.tx-pl,
+body[data-topic="sienkiewicz-narrator"] .lesson-block[data-type="example"] .prompt > p.tx-pl {
+  display: block !important;
+}
+body[data-topic="sienkiewicz-narrator"] .lesson-block[data-type="observe"] .block-body > p.tx-ua,
+body[data-topic="sienkiewicz-narrator"] .lesson-block[data-type="summary"] .block-body > p.tx-ua,
+body[data-topic="sienkiewicz-narrator"] .lesson-block[data-type="practice"] .block-body > p.tx-ua,
+body[data-topic="sienkiewicz-narrator"] .lesson-block[data-type="concept"] .prompt > p.tx-ua,
+body[data-topic="sienkiewicz-narrator"] .lesson-block[data-type="example"] .prompt > p.tx-ua {
+  display: block;
+  margin-top: 0.2rem;
+  opacity: 0.92;
+}
+body[data-topic="sienkiewicz-narrator"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="sienkiewicz-narrator"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7) {
+  display: block !important;
+}
+body[data-topic="sienkiewicz-narrator"] .lesson-block .task-card { margin-top: 1.15rem; }
+body[data-topic="sienkiewicz-narrator"] .viz,
+body[data-topic="sienkiewicz-narrator"] .viz-img { width: 100%; max-width: 100%; }
+body[data-topic="sienkiewicz-narrator"] .viz-img {
+  border-radius: 10px;
+  cursor: zoom-in;
+}
+body[data-topic="sienkiewicz-narrator"] .block-list li { margin: 0.35rem 0; line-height: 1.5; }
+body[data-topic="sienkiewicz-narrator"] .em-scan-gallery {
+  display: grid;
+  gap: 0.85rem;
+  margin: 0.5rem 0 1.1rem;
+}
+body[data-topic="sienkiewicz-narrator"] .em-scan-card { margin: 0; }
+body[data-topic="sienkiewicz-narrator"] .em-scan-cap {
+  margin: 0 0 0.35rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #1f5c52;
+}
+body[data-topic="sienkiewicz-narrator"] .em-scan-card .viz-img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: zoom-in;
+  box-shadow: 0 1px 4px rgba(20, 40, 35, 0.12);
+}

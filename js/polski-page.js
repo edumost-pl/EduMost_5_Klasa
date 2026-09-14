@@ -57,7 +57,18 @@
     T48: "../lessons/polski/48-pan-tadeusz-srodki/index.html",
     T49: "../lessons/polski/49-sprawdze-sie-parasol/index.html",
     T50: "../lessons/polski/50-sprawdze-sie-jezyk/index.html",
-    T51: "../lessons/polski/51-precyzyjna-informacja/index.html"
+    T51: "../lessons/polski/51-precyzyjna-informacja/index.html",
+    T52: "../lessons/polski/52-mamy-wspolne-cele/index.html",
+    T53: "../lessons/polski/53-liczebnik-rodzaje/index.html",
+    T54: "../lessons/polski/54-liczebnik-cwiczenia/index.html",
+    T55: "../lessons/polski/55-nie-z-liczebnikiem/index.html",
+    T56: "../lessons/polski/56-fileas-fogg-czytanie/index.html",
+    T57: "../lessons/polski/57-fileas-fogg-dziennik/index.html",
+    T58: "../lessons/polski/58-slownik-poprawnej/index.html",
+    T59: "../lessons/polski/59-pamietnik-robert/index.html",
+    T60: "../lessons/polski/60-czasownik/index.html",
+    T61: "../lessons/polski/61-nie-czasownik-noto/index.html",
+    T62: "../lessons/polski/62-sienkiewicz-narrator/index.html"
   };
   let pageQueryRaw = "";
   let topScrollBound = false;

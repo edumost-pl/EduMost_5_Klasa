@@ -857,13 +857,13 @@ window.EduMostPolskiCourse = {
       "part": "II",
       "chapter": "R4",
       "category": "LITERATURA",
-      "title": "Mamy wspólne cele…",
+      "title": "Mamy wspólne cele… Podmiot zbiorowy.",
       "page": "94",
       "skills": [
         "podmiot-zbiorowy",
         "osoba-mowiaca"
       ],
-      "outcome": "Uczeń potrafi rozpoznać podmiot zbiorowy."
+      "outcome": "Uczeń wskazuje czasowniki z -my, wyjaśnia podmiot zbiorowy i tworzy krótką wypowiedź w 1. os. l.mn."
     },
     {
       "id": "T53",
@@ -871,14 +871,13 @@ window.EduMostPolskiCourse = {
       "part": "II",
       "chapter": "R4",
       "category": "GRAMATYKA",
-      "title": "Liczebnik; nie z liczebnikiem.",
+      "title": "Liczebnik · ile? który z kolei?",
       "page": "97",
       "skills": [
         "liczebnik",
-        "liczebnik-glowny-porzadkowy",
-        "ort-nie-liczebnik"
+        "liczebnik-glowny-porzadkowy"
       ],
-      "outcome": "Uczeń potrafi rozpoznać liczebnik, odmienić go w zakresie klasy 5 i napisać nie z liczebnikiem."
+      "outcome": "Uczeń rozpoznaje liczebnik, rozróżnia główne i porządkowe oraz uzupełnia wniosek z e-maila Wiktora."
     },
     {
       "id": "T54",
@@ -886,14 +885,13 @@ window.EduMostPolskiCourse = {
       "part": "II",
       "chapter": "R4",
       "category": "GRAMATYKA",
-      "title": "Liczebnik; nie z liczebnikiem.",
+      "title": "Liczebnik · ćwiczenia i odmiana.",
       "page": "97",
       "skills": [
         "liczebnik",
-        "liczebnik-glowny-porzadkowy",
-        "ort-nie-liczebnik"
+        "liczebnik-glowny-porzadkowy"
       ],
-      "outcome": "Uczeń potrafi rozpoznać liczebnik, odmienić go w zakresie klasy 5 i napisać nie z liczebnikiem."
+      "outcome": "Uczeń tworzy związki liczebnik + rzeczownik, przekształca główne w porządkowe, zapisuje liczebniki słownie i ćwiczy odmianę."
     },
     {
       "id": "T55",
@@ -901,14 +899,13 @@ window.EduMostPolskiCourse = {
       "part": "II",
       "chapter": "R4",
       "category": "GRAMATYKA",
-      "title": "Liczebnik; nie z liczebnikiem.",
+      "title": "Nie z liczebnikiem.",
       "page": "97",
       "skills": [
-        "liczebnik",
-        "liczebnik-glowny-porzadkowy",
-        "ort-nie-liczebnik"
+        "ort-nie-liczebnik",
+        "liczebnik"
       ],
-      "outcome": "Uczeń potrafi rozpoznać liczebnik, odmienić go w zakresie klasy 5 i napisać nie z liczebnikiem."
+      "outcome": "Uczeń stosuje rozdzielną pisownię nie z liczebnikami, zna wyjątki (niejeden, niewiele, nieraz/nie raz) i poprawia tekst."
     },
     {
       "id": "T56",
@@ -916,14 +913,13 @@ window.EduMostPolskiCourse = {
       "part": "II",
       "chapter": "R4",
       "category": "LEKTURY",
-      "title": "Fileas Fogg / Verne.",
+      "title": "Fileas Fogg · czytanie (Verne).",
       "page": "100",
       "skills": [
         "swiat-przedstawiony",
-        "dziennik",
-        "plan-wydarzen"
+        "slownictwo"
       ],
-      "outcome": "Uczeń potrafi nazwać elementy świata przedstawionego i napisać fragment dziennika bohatera."
+      "outcome": "Uczeń czyta fragment Verne’a, rozumie glosy, wskazuje miejsca, bohaterów i przedmioty ze świata przedstawionego."
     },
     {
       "id": "T57",
@@ -931,14 +927,14 @@ window.EduMostPolskiCourse = {
       "part": "II",
       "chapter": "R4",
       "category": "LEKTURY",
-      "title": "Fileas Fogg / Verne.",
+      "title": "Fileas Fogg · dziennik i plan.",
       "page": "100",
       "skills": [
-        "swiat-przedstawiony",
         "dziennik",
-        "plan-wydarzen"
+        "plan-wydarzen",
+        "swiat-przedstawiony"
       ],
-      "outcome": "Uczeń potrafi nazwać elementy świata przedstawionego i napisać fragment dziennika bohatera."
+      "outcome": "Uczeń ocenia reakcję Obieżyświata, układa plan wydarzeń i pisze fragment dziennika bohatera."
     },
     {
       "id": "T58",
@@ -960,13 +956,14 @@ window.EduMostPolskiCourse = {
       "part": "II",
       "chapter": "R4",
       "category": "PISANIE",
-      "title": "Pamiętnik (Robert / Na przykład Małgośka).",
+      "title": "Pamiętnik · Robert (Na przykład Małgośka).",
       "page": "109",
       "skills": [
         "pamietnik",
-        "dziennik"
+        "dziennik",
+        "plan-wydarzen"
       ],
-      "outcome": "Uczeń potrafi zredagować kartkę pamiętnika (ja, przeżycia)."
+      "outcome": "Uczeń układa plan wydarzeń, nazywa uczucia bohatera i redaguje fragment pamiętnika Roberta."
     },
     {
       "id": "T60",
@@ -974,15 +971,13 @@ window.EduMostPolskiCourse = {
       "part": "II",
       "chapter": "R4",
       "category": "GRAMATYKA",
-      "title": "Czasownik; nie z czasownikiem; formy -no/-to.",
+      "title": "Czasownik · rozpoznanie i formy.",
       "page": "114",
       "skills": [
         "czasownik",
-        "osoba-czas",
-        "formy-nieosobowe",
-        "ort-nie-czasownik"
+        "osoba-czas"
       ],
-      "outcome": "Uczeń potrafi rozpoznać i odmienić czasownik, napisać nie osobno oraz użyć formy -no/-to."
+      "outcome": "Uczeń rozpoznaje czasownik, określa osobę, liczbę, rodzaj i czas oraz uzupełnia poprawne formy."
     },
     {
       "id": "T61",
@@ -990,15 +985,13 @@ window.EduMostPolskiCourse = {
       "part": "II",
       "chapter": "R4",
       "category": "GRAMATYKA",
-      "title": "Czasownik; nie z czasownikiem; formy -no/-to.",
+      "title": "Formy -no/-to; nie z czasownikiem.",
       "page": "114",
       "skills": [
-        "czasownik",
-        "osoba-czas",
         "formy-nieosobowe",
         "ort-nie-czasownik"
       ],
-      "outcome": "Uczeń potrafi rozpoznać i odmienić czasownik, napisać nie osobno oraz użyć formy -no/-to."
+      "outcome": "Uczeń stosuje formy -no/-to, rozróżnia formy osobowe i nieosobowe oraz pisze nie z czasownikiem rozdzielnie."
     },
     {
       "id": "T62",

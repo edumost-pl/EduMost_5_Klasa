@@ -899,35 +899,71 @@ window.EduMostLessons = {
     topicId: "precyzyjna-informacja",
     folder: "51-precyzyjna-informacja"
   },
-  "polski/liczebnik": {
-    id: "pol-18-liczebnik",
+  "polski/mamy-wspolne-cele": {
+    id: "pol-52-mamy-wspolne-cele",
     subject: "polski",
-    topicId: "liczebnik",
-    folder: "18-liczebnik"
+    topicId: "mamy-wspolne-cele",
+    folder: "52-mamy-wspolne-cele"
   },
-  "polski/dziennik": {
-    id: "pol-19-dziennik",
+  "polski/liczebnik-rodzaje": {
+    id: "pol-53-liczebnik-rodzaje",
     subject: "polski",
-    topicId: "dziennik",
-    folder: "19-dziennik"
+    topicId: "liczebnik-rodzaje",
+    folder: "53-liczebnik-rodzaje"
   },
-  "polski/pamietnik": {
-    id: "pol-20-pamietnik",
+  "polski/liczebnik-cwiczenia": {
+    id: "pol-54-liczebnik-cwiczenia",
     subject: "polski",
-    topicId: "pamietnik",
-    folder: "20-pamietnik"
+    topicId: "liczebnik-cwiczenia",
+    folder: "54-liczebnik-cwiczenia"
   },
-  "polski/czasownik": {
-    id: "pol-21-czasownik",
+  "polski/nie-z-liczebnikiem": {
+    id: "pol-55-nie-z-liczebnikiem",
     subject: "polski",
-    topicId: "czasownik",
-    folder: "21-czasownik"
+    topicId: "nie-z-liczebnikiem",
+    folder: "55-nie-z-liczebnikiem"
   },
-  "polski/narracja-sienkiewicz": {
-    id: "pol-22-narracja-sienkiewicz",
+  "polski/fileas-fogg-czytanie": {
+    id: "pol-56-fileas-fogg-czytanie",
     subject: "polski",
-    topicId: "narracja-sienkiewicz",
-    folder: "22-narracja-sienkiewicz"
+    topicId: "fileas-fogg-czytanie",
+    folder: "56-fileas-fogg-czytanie"
+  },
+  "polski/fileas-fogg-dziennik": {
+    id: "pol-57-fileas-fogg-dziennik",
+    subject: "polski",
+    topicId: "fileas-fogg-dziennik",
+    folder: "57-fileas-fogg-dziennik"
+  },
+  "polski/slownik-poprawnej": {
+    id: "pol-58-slownik-poprawnej",
+    subject: "polski",
+    topicId: "slownik-poprawnej",
+    folder: "58-slownik-poprawnej"
+  },
+  "polski/pamietnik-robert": {
+    id: "pol-59-pamietnik-robert",
+    subject: "polski",
+    topicId: "pamietnik-robert",
+    folder: "59-pamietnik-robert"
+  },
+  "polski/czasownik-formy": {
+    id: "pol-60-czasownik",
+    subject: "polski",
+    topicId: "czasownik-formy",
+    folder: "60-czasownik"
+  },
+  "polski/nie-czasownik-noto": {
+    id: "pol-61-nie-czasownik-noto",
+    subject: "polski",
+    topicId: "nie-czasownik-noto",
+    folder: "61-nie-czasownik-noto"
+  },
+  "polski/sienkiewicz-narrator": {
+    id: "pol-62-sienkiewicz-narrator",
+    subject: "polski",
+    topicId: "sienkiewicz-narrator",
+    folder: "62-sienkiewicz-narrator"
   },
   "polski/herakles": {
     id: "pol-23-herakles",

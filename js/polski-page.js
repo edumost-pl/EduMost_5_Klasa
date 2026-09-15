@@ -68,7 +68,17 @@
     T59: "../lessons/polski/59-pamietnik-robert/index.html",
     T60: "../lessons/polski/60-czasownik/index.html",
     T61: "../lessons/polski/61-nie-czasownik-noto/index.html",
-    T62: "../lessons/polski/62-sienkiewicz-narrator/index.html"
+    T62: "../lessons/polski/62-sienkiewicz-narrator/index.html",
+    T63: "../lessons/polski/63-herakles-mit/index.html",
+    T64: "../lessons/polski/64-herakles-prace/index.html",
+    T65: "../lessons/polski/65-tryby-czasownika/index.html",
+    T66: "../lessons/polski/66-pisownia-by/index.html",
+    T67: "../lessons/polski/67-razem-na-bieguny/index.html",
+    T68: "../lessons/polski/68-beszczynska-podroze/index.html",
+    T69: "../lessons/polski/69-marjanska-slonce/index.html",
+    T70: "../lessons/polski/70-ceram-schliemann/index.html",
+    T71: "../lessons/polski/71-tulaczka-odyseusza/index.html",
+    T72: "../lessons/polski/72-tulaczka-odyseusza-akcja/index.html"
   };
   let pageQueryRaw = "";
   let topScrollBound = false;

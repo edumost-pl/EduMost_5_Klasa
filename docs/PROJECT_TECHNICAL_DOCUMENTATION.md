@@ -2,14 +2,15 @@
 
 Документ для программиста. Описывает **фактическое** устройство репозитория `EduMost_5_Klasa` после завершения курса математики 01–50 и появления интерактивных истории и биологии. Не проектирует новую архитектуру.
 
-Источник правды — код в `js/`, `data/`, `lessons/matematyka/`, `lessons/historia/`, `lessons/biologia/`, `lessons/angielski/`, `css/`.
+Источник правды — код в `js/`, `data/`, `lessons/matematyka/`, `lessons/historia/`, `lessons/biologia/`, `lessons/angielski/`, `lessons/polski/`, `css/`.
 
 Содержание уроков:
 
 - математика — `docs/MATH_CONTENT_DOCUMENTATION.md`;
 - история — `docs/HISTORIA_CONTENT_DOCUMENTATION.md` (тот же плеер, другая педагогика и картинки GitHub);
 - биология — `docs/BIOLOGIA_CONTENT_DOCUMENTATION.md` (тот же плеер; 34 нумерованных урока + 5 повторений działów; картинки GitHub `Biologia/`);
-- английский — `docs/ANGIELSKI_CONTENT_DOCUMENTATION.md` (тот же плеер; *Flash* 5; модуль I открыт).
+- английский — `docs/ANGIELSKI_CONTENT_DOCUMENTATION.md` (тот же плеер; *Flash* 5; модуль I открыт);
+- польский — `docs/POLSKI_CONTENT_DOCUMENTATION.md` (тот же плеер; *Między nami* 5, каталог T1–T177).
 
 ---
 
@@ -17,7 +18,7 @@
 
 EduMost — статический учебный хаб для класса **5a** (SP nr 3, Poznań). Интерфейс двуязычный: польский (язык школы) и украинский (помощь ребёнку).
 
-На главной (`index.html`) есть карточки предметов. **Интерактивные уроки с плеером есть у математики (50 тем), истории (38 тем), биологии (34 + 5 повторений) и английского (модуль I *Flash*: 8 уроков + Progress Check 1; модули II–VI в TOC без ссылки).** Остальные предметы в `js/curriculum.js` имеют `tocStatus: "pending"` и пустой `parts` — на странице предмета заглушка «Wkrótce».
+На главной (`index.html`) есть карточки предметов. **Интерактивные уроки с плеером есть у математики (50 тем), истории (38 тем), биологии (34 + 5 повторений), английского (модуль I *Flash*: 8 уроков + Progress Check 1; модули II–VI в TOC без ссылки) и польского (*Między nami* 5, каталог T1–T177; интерактивные папки наращиваются по мере сборки).** Остальные предметы в `js/curriculum.js` имеют `tocStatus: "pending"` и пустой `parts` — на странице предмета заглушка «Wkrótce».
 
 Курс математики следует *Matematyka z kluczem* (Nowa Era, Braun / Mańkowska / Paszyńska, nr 875/2/2018): Część 1 и Część 2, разделы I–VII, **50 тем**.
 
@@ -27,9 +28,11 @@ EduMost — статический учебный хаб для класса **5
 
 Курс английского следует *Flash* (Jenny Dooley, Express Publishing, nr 866/2/2018): шесть модулей Student's Book. В плеере открыт **My World** (уроки 1–8 + Progress Check 1). Модули II–VI и Festivities стоят в каталоге без поля `lesson`. Как писать `content.js` — `docs/ANGIELSKI_CONTENT_DOCUMENTATION.md`.
 
+Курс польского следует *Między nami 5* (Agnieszka Łuczak / Anna Murdzek, GWO, nr 867/2/2018): каталог **T1–T177**. Как писать `content.js` — `docs/POLSKI_CONTENT_DOCUMENTATION.md`.
+
 Как ребёнок проходит урок:
 
-1. Главная → `subjects/matematyka.html`, `subjects/historia.html`, `subjects/biologia.html` или `subjects/angielski.html`.
+1. Главная → `subjects/matematyka.html`, `subjects/historia.html`, `subjects/biologia.html`, `subjects/angielski.html` или `subjects/polski.html`.
 2. Тема с полем `lesson` открывается как ссылка на `lessons/{subject}/{folder}/index.html`.
 3. Урок — последовательность **экранов** (`blocks[]`). На экране один блок: теория, схема или задание.
 4. Навигация: «Wstecz» / «Dalej» и точки прогресса. Вперёд можно только на уже посещённый экран или на **следующий** (`index + 1`).

@@ -1,4 +1,4 @@
-/* Katalog T1–T177. Źródło: docs/POLSKI_FULL_COURSE_ARCHITECTURE.md. Nie pokazywać U001–U121. */
+/* Katalog T1–T177 (GWO *Między nami* 5). Nie pokazywać U001–U121. Autorowanie: docs/POLSKI_CONTENT_DOCUMENTATION.md */
 window.EduMostPolskiCourse = {
   "version": 1,
   "total": 177,
@@ -1014,14 +1014,14 @@ window.EduMostPolskiCourse = {
       "part": "II",
       "chapter": "R4",
       "category": "LITERATURA",
-      "title": "Mit o Heraklesie.",
+      "title": "Mit o Heraklesie · heros.",
       "page": "122",
       "skills": [
         "mit",
         "bohater",
         "charakterystyka"
       ],
-      "outcome": "Uczeń potrafi podać kolejność prac i cechy herosa."
+      "outcome": "Uczeń zna mit, wyjaśnia pojęcie herosa i zbiera cechy Heraklesa."
     },
     {
       "id": "T64",
@@ -1029,14 +1029,14 @@ window.EduMostPolskiCourse = {
       "part": "II",
       "chapter": "R4",
       "category": "LITERATURA",
-      "title": "Mit o Heraklesie.",
+      "title": "Mit o Heraklesie · 12 prac.",
       "page": "122",
       "skills": [
         "mit",
         "bohater",
         "charakterystyka"
       ],
-      "outcome": "Uczeń potrafi podać kolejność prac i cechy herosa."
+      "outcome": "Uczeń podaje kolejność prac, uzasadnia nagrodę na Olimpie i tworzy własny tekst."
     },
     {
       "id": "T65",
@@ -1044,13 +1044,12 @@ window.EduMostPolskiCourse = {
       "part": "II",
       "chapter": "R4",
       "category": "GRAMATYKA",
-      "title": "Tryby czasownika; pisownia -bym, -byś, -by.",
+      "title": "Tryby czasownika · trzy tryby.",
       "page": "131",
       "skills": [
-        "tryb",
-        "ort-by"
+        "tryb"
       ],
-      "outcome": "Uczeń potrafi nazwać tryby, użyć ich w dialogu i napisać cząstkę by."
+      "outcome": "Uczeń rozpoznaje tryb oznajmujący, rozkazujący i przypuszczający oraz używa ich w dialogu."
     },
     {
       "id": "T66",
@@ -1058,13 +1057,13 @@ window.EduMostPolskiCourse = {
       "part": "II",
       "chapter": "R4",
       "category": "GRAMATYKA",
-      "title": "Tryby czasownika; pisownia -bym, -byś, -by.",
+      "title": "Pisownia cząstek -bym, -byś, -by.",
       "page": "131",
       "skills": [
-        "tryb",
-        "ort-by"
+        "ort-by",
+        "tryb"
       ],
-      "outcome": "Uczeń potrafi nazwać tryby, użyć ich w dialogu i napisać cząstkę by."
+      "outcome": "Uczeń poprawnie zapisuje ruchome cząstki trybu przypuszczającego łącznie lub rozdzielnie."
     },
     {
       "id": "T67",
@@ -1072,14 +1071,14 @@ window.EduMostPolskiCourse = {
       "part": "II",
       "chapter": "R5",
       "category": "CZYTANIE",
-      "title": "Kamiński, Razem na bieguny.",
+      "title": "Kamiński, Razem na bieguny · dziennik.",
       "page": "134",
       "skills": [
         "relacja",
         "dziennik",
         "ocena-bohatera"
       ],
-      "outcome": "Uczeń potrafi zrelacjonować wyprawę i napisać fragment dziennika."
+      "outcome": "Uczeń relacjonuje wyprawę, ocenia bohaterów i pisze fragment dziennika."
     },
     {
       "id": "T68",
@@ -1087,7 +1086,7 @@ window.EduMostPolskiCourse = {
       "part": "II",
       "chapter": "R5",
       "category": "LITERATURA",
-      "title": "Beszczyńska, podróże.",
+      "title": "Beszczyńska, podróże · wers i strofa.",
       "page": "138",
       "skills": [
         "wers",
@@ -1096,7 +1095,7 @@ window.EduMostPolskiCourse = {
         "rytm",
         "osoba-mowiaca"
       ],
-      "outcome": "Uczeń potrafi analizować budowę wiersza."
+      "outcome": "Uczeń analizuje budowę wiersza, osobę mówiącą i temat podróży w wyobraźni."
     },
     {
       "id": "T69",
@@ -1104,14 +1103,14 @@ window.EduMostPolskiCourse = {
       "part": "II",
       "chapter": "R5",
       "category": "LITERATURA",
-      "title": "Marjańska, Słońce – gorąca gwiazda.",
+      "title": "Marjańska, Słońce – gorąca gwiazda · obraz.",
       "page": "140",
       "skills": [
         "obraz-poetycki",
         "zwrotka",
         "interpretacja-wiersza"
       ],
-      "outcome": "Uczeń potrafi wyjaśnić tytuł w kontekście treści."
+      "outcome": "Uczeń wyjaśnia tytuł w kontekście treści i opisuje obrazy poetyckie."
     },
     {
       "id": "T70",
@@ -1119,13 +1118,13 @@ window.EduMostPolskiCourse = {
       "part": "II",
       "chapter": "R5",
       "category": "CZYTANIE",
-      "title": "Ceram — Schliemann / skarb Priama.",
+      "title": "Ceram — Schliemann / notatka biograficzna.",
       "page": "143",
       "skills": [
         "notatka-biograficzna",
         "fakt-opinia"
       ],
-      "outcome": "Uczeń potrafi ułożyć notatkę na osi czasu."
+      "outcome": "Uczeń układa notatkę biograficzną i oś czasu życia Schliemanna."
     },
     {
       "id": "T71",
@@ -1133,7 +1132,7 @@ window.EduMostPolskiCourse = {
       "part": "II",
       "chapter": "R5",
       "category": "LITERATURA",
-      "title": "Tułaczka Odyseusza.",
+      "title": "Tułaczka Odyseusza · mit, mapa.",
       "page": "148",
       "skills": [
         "akcja",
@@ -1141,7 +1140,7 @@ window.EduMostPolskiCourse = {
         "mit",
         "przyczyna-skutek"
       ],
-      "outcome": "Uczeń potrafi ułożyć mapę wędrówki i posłużyć się terminami akcja / wątek."
+      "outcome": "Uczeń relacjonuje mit i układa mapę wędrówki Odyseusza."
     },
     {
       "id": "T72",
@@ -1149,7 +1148,7 @@ window.EduMostPolskiCourse = {
       "part": "II",
       "chapter": "R5",
       "category": "LITERATURA",
-      "title": "Tułaczka Odyseusza.",
+      "title": "Tułaczka Odyseusza · akcja / wątek.",
       "page": "148",
       "skills": [
         "akcja",
@@ -1157,7 +1156,7 @@ window.EduMostPolskiCourse = {
         "mit",
         "przyczyna-skutek"
       ],
-      "outcome": "Uczeń potrafi ułożyć mapę wędrówki i posłużyć się terminami akcja / wątek."
+      "outcome": "Uczeń posługuje się terminami akcja / wątek i pisze list Odyseusza."
     },
     {
       "id": "T73",

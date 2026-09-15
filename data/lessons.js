@@ -965,23 +965,65 @@ window.EduMostLessons = {
     topicId: "sienkiewicz-narrator",
     folder: "62-sienkiewicz-narrator"
   },
-  "polski/herakles": {
-    id: "pol-23-herakles",
+  "polski/herakles-mit": {
+    id: "pol-63-herakles-mit",
     subject: "polski",
-    topicId: "herakles",
-    folder: "23-herakles"
+    topicId: "herakles-mit",
+    folder: "63-herakles-mit"
+  },
+  "polski/herakles-prace": {
+    id: "pol-64-herakles-prace",
+    subject: "polski",
+    topicId: "herakles-prace",
+    folder: "64-herakles-prace"
   },
   "polski/tryby-czasownika": {
-    id: "pol-24-tryby-czasownika",
+    id: "pol-65-tryby-czasownika",
     subject: "polski",
     topicId: "tryby-czasownika",
-    folder: "24-tryby-czasownika"
+    folder: "65-tryby-czasownika"
   },
-  "polski/relacja-i-notatka": {
-    id: "pol-25-relacja-i-notatka",
+  "polski/pisownia-by": {
+    id: "pol-66-pisownia-by",
     subject: "polski",
-    topicId: "relacja-i-notatka",
-    folder: "25-relacja-i-notatka"
+    topicId: "pisownia-by",
+    folder: "66-pisownia-by"
+  },
+  "polski/razem-na-bieguny": {
+    id: "pol-67-razem-na-bieguny",
+    subject: "polski",
+    topicId: "razem-na-bieguny",
+    folder: "67-razem-na-bieguny"
+  },
+  "polski/beszczynska-podroze": {
+    id: "pol-68-beszczynska-podroze",
+    subject: "polski",
+    topicId: "beszczynska-podroze",
+    folder: "68-beszczynska-podroze"
+  },
+  "polski/marjanska-slonce": {
+    id: "pol-69-marjanska-slonce",
+    subject: "polski",
+    topicId: "marjanska-slonce",
+    folder: "69-marjanska-slonce"
+  },
+  "polski/ceram-schliemann": {
+    id: "pol-70-ceram-schliemann",
+    subject: "polski",
+    topicId: "ceram-schliemann",
+    folder: "70-ceram-schliemann"
+  },
+  "polski/tulaczka-odyseusza": {
+    id: "pol-71-tulaczka-odyseusza",
+    subject: "polski",
+    topicId: "tulaczka-odyseusza",
+    folder: "71-tulaczka-odyseusza"
+  },
+  "polski/tulaczka-odyseusza-akcja": {
+    id: "pol-72-tulaczka-odyseusza-akcja",
+    subject: "polski",
+    topicId: "tulaczka-odyseusza-akcja",
+    folder: "72-tulaczka-odyseusza-akcja"
   },
   "polski/akcja-watek-fabula": {
     id: "pol-26-akcja-watek-fabula",

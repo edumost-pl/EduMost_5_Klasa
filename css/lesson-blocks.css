@@ -206,6 +206,104 @@ body.viz-lightbox-open { overflow: hidden; }
   letter-spacing: .02em;
 color: var(--math);
 }
+
+/* Math parts: rule / Zapamiętaj callout */
+body[data-subject="matematyka"] .math-rule {
+  margin: 1rem 0 0.35rem;
+  padding: 0.85rem 1rem;
+  border-left: 4px solid #b91c1c;
+  background: #fef2f2;
+  border-radius: 10px;
+}
+body[data-subject="matematyka"] .math-rule-label {
+  margin: 0 0 0.45rem;
+}
+body[data-subject="matematyka"] .math-rule-label .tx-pl,
+body[data-subject="matematyka"] .math-rule-label .tx-ua {
+  margin: 0.1rem 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #b91c1c;
+  line-height: 1.35;
+}
+body[data-subject="matematyka"] .math-rule-formula {
+  margin: 0.35rem 0 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #1c1917;
+}
+body[data-subject="matematyka"] .math-rule-formula.tx-ua {
+  color: #9a3412;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+body[data-subject="matematyka"] .math-part-hr {
+  border: 0;
+  border-top: 1px solid #d6d3d1;
+  margin: 1.1rem 0;
+}
+
+/* Polish long-division board — fixed digit columns */
+body[data-subject="matematyka"] .polish-board {
+  display: inline-grid;
+  gap: 0.12rem 0;
+  background: #fffef7;
+  border: 1px solid #e7e0d2;
+  border-radius: 12px;
+  padding: 0.85rem 1.1rem;
+  margin: 0.75rem 0;
+  font-family: "Courier New", ui-monospace, Menlo, Monaco, monospace;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #1c1917;
+  max-width: 100%;
+  overflow-x: auto;
+}
+body[data-subject="matematyka"] .polish-board .pd-row {
+  display: grid;
+  grid-template-columns: 1.1em repeat(var(--pd-n), 1.25em) 0.85em 1.25em;
+  justify-items: center;
+  align-items: center;
+  column-gap: 0;
+}
+body[data-subject="matematyka"] .polish-board .pd-cell {
+  display: inline-flex;
+  min-width: 1.25em;
+  justify-content: center;
+  font-variant-numeric: tabular-nums;
+}
+body[data-subject="matematyka"] .polish-board .pd-op {
+  min-width: 1.1em;
+  justify-self: end;
+  padding-right: 0.05em;
+}
+body[data-subject="matematyka"] .polish-board .pd-mark {
+  color: #b45309;
+  background: #fef3c7;
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px #fef3c7;
+}
+body[data-subject="matematyka"] .polish-board .pd-rule {
+  grid-column: 2 / span var(--pd-n);
+  height: 0;
+  border-top: 2px solid #1c1917;
+  width: 100%;
+  margin: 0.15rem 0;
+}
+body[data-subject="matematyka"] .polish-board .pd-rule-full {
+  grid-column: 2 / -1;
+  height: 0;
+  border-top: 2px solid #1c1917;
+  width: 100%;
+  margin: 0.2rem 0 0.35rem;
+}
+body[data-subject="matematyka"] .polish-board .pd-colon {
+  opacity: 0.9;
+}
+
 .prompt {
   background: #ecfdf5;
   border-radius: 8px;

@@ -1,5 +1,100 @@
-L03_Present_Simple
+# Lekcja 03 — Present Simple (1b) · Flash 5 pp. 8–9
+# Własne infografiki EduMost — NIE zrzuty Flash.
+#
+# BASE (github blob + ?raw=true — jak w content.js):
+https://github.com/edumost-pl/EduMost_5_Klasa/blob/main/blob/main/Angielski/L03_Present_Simple/images/
+#
+# Reguły wizualne:
+# - semi-flat educational illustration, age 10–11, friendly, NOT baby/cartoon
+# - infografiki wyjaśniają MECHANIZM reguły — nie dekoracja
+# - no Flash page copy, no watermark, no logos
+# - tekst EN na grafice tylko gdy mapa tego wymaga (np. EVERY DAY → HABIT)
+
+---
+
+l03-timeline.png
+BLOCK: 1 · Present Simple · Goal
+ROLE: spokojny start — cykl dnia (rano → szkoła → popołudnie → wieczór → następny dzień)
+URL: https://github.com/edumost-pl/EduMost_5_Klasa/blob/main/blob/main/Angielski/L03_Present_Simple/images/l03-timeline.png?raw=true
+IMAGE PROMPT: Create a clean educational infographic for an English lesson about habits and routines for 10–11-year-olds. Show a circular day cycle: morning (getting up) → school → afternoon (activities) → evening (homework, TV) → arrow back to next morning. One friendly school-aged child in semi-flat educational style. Warm colours, clear progression, loop arrow suggesting repetition. No written text, no labels, no numbers, no logos, no watermark, no Flash page copy.
+
+---
+
+l03-recycle-habit.png
+BLOCK: 2 · Flash · Recycle · Discovery
+ROLE: znane czynności + łańcuch EVERY DAY → again and again → HABIT (BEZ Present Simple)
+URL: https://github.com/edumost-pl/EduMost_5_Klasa/blob/main/blob/main/Angielski/L03_Present_Simple/images/l03-recycle-habit.png?raw=true
+IMAGE PROMPT: Create a clean educational infographic for an English lesson (age 10–11) showing familiar daily actions as simple icon scenes: get up, go to school, play football. Below, a visual arrow chain with ONLY these English labels: EVERY DAY → again and again → HABIT. Do NOT include Present Simple or any grammar table. Semi-flat educational style, friendly, uncluttered. No Flash page copy, no watermark, no logos.
+
+---
+
+l03-meaning-bridge.png
+BLOCK: 3 · Present Simple · What does it mean?
+ROLE: most znaczenia HABIT → PRESENT SIMPLE (bez tabeli odmiany)
+URL: https://github.com/edumost-pl/EduMost_5_Klasa/blob/main/blob/main/Angielski/L03_Present_Simple/images/l03-meaning-bridge.png?raw=true
+IMAGE PROMPT: Create a clean educational infographic for 10–11-year-old English learners showing the meaning bridge from habit to Present Simple. Top row: three connected pills EVERY DAY → AGAIN AND AGAIN → HABIT. Below, a large arrow down to two boxes: HABIT / REGULAR ACTION → PRESENT SIMPLE. Optional small day-cycle loop (morning to evening) suggesting repetition. Semi-flat educational style, warm colours, uncluttered. English labels only as listed. No grammar table, no verb conjugation, no he/she/it, no logos, no watermark, no Flash page copy.
+
+---
+
+l03-i-they-base.png
+BLOCK: 4 · Present Simple · The base verb
+ROLE: I / YOU / WE / THEY → BASE VERB (PLAY)
+URL: https://github.com/edumost-pl/EduMost_5_Klasa/blob/main/blob/main/Angielski/L03_Present_Simple/images/l03-i-they-base.png?raw=true
+IMAGE PROMPT: Create a clean educational infographic for 10–11-year-old English learners teaching the Present Simple base verb with I, YOU, WE, THEY. Show four clearly separated subject blocks I, YOU, WE, THEY pointing with arrows toward one central BASE VERB block. Use PLAY as the main example. Include small supporting verb examples READ, LISTEN, WATCH. The visual message must be: I / YOU / WE / THEY → BASE VERB. Friendly semi-flat educational style, clear hierarchy, white/light background, blue and teal accents, highly readable, no Polish, no Ukrainian, no grammar tables, no he/she/it, no -s, no logos, no watermark.
+
+---
+
+l03-he-she-s.png
+BLOCK: 5 · Present Simple · He, She, It
+ROLE: kontrast I PLAY → HE PLAYS; I READ → SHE READS; WE WATCH → IT WATCHES
+URL: https://github.com/edumost-pl/EduMost_5_Klasa/blob/main/blob/main/Angielski/L03_Present_Simple/images/l03-he-she-s.png?raw=true
+IMAGE PROMPT: Create a clear educational infographic for 10–11-year-old English learners showing the Present Simple contrast between I/You/We/They and He/She/It. Use three large visual comparison rows: I PLAY → HE PLAYS; I READ → SHE READS; WE WATCH → IT WATCHES. Highlight the change at the end of the verb visually, especially the added S/ES. Central message: HE / SHE / IT → VERB + S. Friendly semi-flat school illustration style, clean layout, high readability, no Polish, no Ukrainian, no long grammar table, no logos, no watermark.
+
+---
+
+l03-why-s-transform.png
+BLOCK: 6 · Why does the verb change?
+ROLE: transformacje I PLAY → HE PLAY + S → HE PLAYS (i analogiczne)
+URL: https://github.com/edumost-pl/EduMost_5_Klasa/blob/main/blob/main/Angielski/L03_Present_Simple/images/l03-why-s-transform.png?raw=true
+IMAGE PROMPT: Create a step-by-step educational infographic for 10–11-year-old English learners showing how a Present Simple verb changes with HE, SHE and IT. Show three horizontal transformations: I PLAY → HE PLAY + S → HE PLAYS; I READ → SHE READ + S → SHE READS; I WATCH → IT WATCH + ES → IT WATCHES. Use arrows and a clear visual emphasis on the added ending. The learner should immediately understand that HE/SHE/IT causes an ending to be added to the verb in affirmative Present Simple sentences. Friendly semi-flat educational style, clean white/light background, blue/teal/orange accents, English labels only, no Polish, no Ukrainian, no negative forms, no questions, no logos, no watermark.
+
+---
+
+l03-spelling-cards.png
+BLOCK: 7 · How do we add the ending?
+ROLE: trzy karty +S / +ES / Y→IES + BUT vowel+Y → +S
+URL: https://github.com/edumost-pl/EduMost_5_Klasa/blob/main/blob/main/Angielski/L03_Present_Simple/images/l03-spelling-cards.png?raw=true
+IMAGE PROMPT: Create a polished educational infographic for 10–11-year-old English learners explaining Present Simple third-person singular spelling. Create three clearly separated cards: 1) MOST VERBS → +S with PLAY → PLAYS, READ → READS, LIKE → LIKES; 2) verbs ending in S, SH, CH, X, O → +ES with WATCH → WATCHES, WASH → WASHES, GO → GOES; 3) consonant + Y → IES with STUDY → STUDIES, CRY → CRIES. Add a small clearly marked BUT section: vowel + Y → +S with PLAY → PLAYS and ENJOY → ENJOYS. English labels only, no Polish, no Ukrainian, no long sentences, no logos, no watermark. Friendly semi-flat educational classroom style, highly readable.
+
+---
+
+l03-frequency-meter.png
+BLOCK: 8 · How often?
+ROLE: skala always 100% → never 0% (znaczenie, nie matematyka)
+URL: https://github.com/edumost-pl/EduMost_5_Klasa/blob/main/blob/main/Angielski/L03_Present_Simple/images/l03-frequency-meter.png?raw=true
+IMAGE PROMPT: Create a clean educational frequency meter for 10–11-year-old English learners. Show a horizontal scale from 100% to 0% with the words ALWAYS, USUALLY, OFTEN, SOMETIMES, HARDLY EVER, NEVER in descending frequency. Use simple visual repetition cues such as multiple stars/check marks for always and zero marks for never. The main idea is HOW OFTEN an action happens. Friendly semi-flat educational style, clear typography, English labels only, no Polish, no Ukrainian, no grammar table, no logos, no watermark.
+
+---
+
+l03-word-order.png
+BLOCK: 9 · Where does the frequency word go?
+ROLE: SUBJECT + FREQUENCY WORD + VERB
+URL: https://github.com/edumost-pl/EduMost_5_Klasa/blob/main/blob/main/Angielski/L03_Present_Simple/images/l03-word-order.png?raw=true
+IMAGE PROMPT: Create a simple educational word-order infographic for 10–11-year-old English learners. Show the Present Simple pattern SUBJECT + FREQUENCY WORD + VERB. Use large connected blocks: I → usually → play, with labels SUBJECT → FREQUENCY → VERB. Add three smaller examples: I often listen to music; I sometimes read books; I never watch TV late. Clearly show that the frequency word normally comes before the main verb. Friendly semi-flat educational style, clean layout, English labels only, no Polish, no Ukrainian, no BE grammar table, no logos, no watermark.
+
+---
+
+# PENDING — Screens 10–17 (do not generate until next implementation phase)
+
+l03-negative-transform.png       — BLOCK 10 · -s moves to DOES
+l03-question-transform.png       — BLOCK 11 · Do/Does questions
+l03-short-answers.png            — BLOCK 12 · short answer pairs
+l03-once-twice.png               — BLOCK 13 · once / twice / times
+l03-remember-card.png            — BLOCK 17 · POSITIVE / NEGATIVE / QUESTIONS summary
+
+# Legacy placeholders (superseded — keep for reference)
 l03-habits.png
 l03-s-es.png
 l03-frequency.png
 l03-do-does.png
+l03-meaning-cycle.png

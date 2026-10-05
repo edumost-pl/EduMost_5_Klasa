@@ -1,4 +1,52 @@
-L02_Teen_World
+L02_Teen_World · image placeholders for EduMost 1a Teen World
+Style (all images): modern semi-flat educational illustration; friendly; age 10–11;
+clear silhouettes; soft rounded shapes; warm natural light; moderate detail;
+consistent character design across the set; uncluttered composition.
+NO text, NO labels, NO numbers, NO logos, NO watermark, NO textbook reproduction,
+NO Flash page screenshots, NO stock-photo collage look.
+
+GitHub base (placeholder until uploaded):
+https://github.com/edumost-pl/EduMost_5_Klasa/blob/main/blob/main/Angielski/L02_Teen_World/images/
+
+---
+
+l02-teen-world.png
+BLOCK: 2 · Meet Ross & Dure
+ROLE: visual context Ross (USA) → Dure (Sweden / Sámi) for a forum / Teen World intro
+URL: https://github.com/edumost-pl/EduMost_5_Klasa/blob/main/blob/main/Angielski/L02_Teen_World/images/l02-teen-world.png?raw=true
+RAW: https://raw.githubusercontent.com/edumost-pl/EduMost_5_Klasa/main/blob/main/Angielski/L02_Teen_World/images/l02-teen-world.png
+IMAGE PROMPT: Create a clean educational illustration for 10–11-year-old English learners about a teen online project called Teen World. Show two friendly school-aged boys in a balanced split composition: on the left, a boy at a desk with a laptop suggesting Michigan / USA; on the right, a 12-year-old Sámi boy in a Nordic Sweden setting with soft northern light and a small distant reindeer as a contextual element. Show a clear visual connection Ross → Dure without any written text. No speech bubbles with readable text, no character names inside the image, no labels, no textbook UI chrome, no Flash page copy, no screenshots. Modern semi-flat educational style, warm and friendly everyday teens (not adult, not dramatic), natural proportions, uncluttered background, no logos, no watermark.
+
+---
+
+l02-dure-world.png
+BLOCK: 4–5 · Flash Listening / Find information (Dure context)
+ROLE: support reading/listening about Dure’s life without copying Flash art
+URL: https://github.com/edumost-pl/EduMost_5_Klasa/blob/main/blob/main/Angielski/L02_Teen_World/images/l02-dure-world.png?raw=true
+RAW: https://raw.githubusercontent.com/edumost-pl/EduMost_5_Klasa/main/blob/main/Angielski/L02_Teen_World/images/l02-dure-world.png
+IMAGE PROMPT: Create a clean educational infographic-style illustration for 10–11-year-old learners about a Sámi boy’s everyday life in Sweden. Show connected scenes without written labels: family with reindeer, a modest school building, walking to school, afternoon football, evening at home with a board game / soft screen light suggesting free time. Keep one consistent boy character across scenes. Atmosphere: northern but friendly, not gloomy. Semi-flat educational illustration, clear actions, uncluttered composition, soft colors. No text, no maps with country names written out, no logos, no watermark, no textbook reproduction, no photo collage.
+
+---
+
 l02-free-time.png
+BLOCK: 9 · Picture practice
+ROLE: original free-time activity grid for recognition (Flash Ex. 4b pedagogy, original art)
+URL: https://github.com/edumost-pl/EduMost_5_Klasa/blob/main/blob/main/Angielski/L02_Teen_World/images/l02-free-time.png?raw=true
+RAW: https://raw.githubusercontent.com/edumost-pl/EduMost_5_Klasa/main/blob/main/Angielski/L02_Teen_World/images/l02-free-time.png
+IMAGE PROMPT: Create a clean educational activity grid for 10–11-year-old English learners showing seven distinct free-time scenes in one balanced composition: (1) family/friends playing a board game, (2) a child playing sports with a racket or ball, (3) a child listening to music with headphones, (4) a child playing with a small pet dog, (5) teens with shopping bags, (6) teens at the cinema with popcorn/3D glasses vibe, (7) a child painting at an easel. Scenes must be visually separate but stylistically consistent. No written labels, no numbers, no arrows required. Modern semi-flat educational illustration, friendly, clear actions, bright but restrained colors, uncluttered. No logos, no watermark, no textbook photos, no screenshots of Flash.
+
+---
+
 l02-like-ing.png
-l02-maks.png
+BLOCK: 10 · I like / I don’t mind / I dislike
+ROLE: visual pattern for preference + activity-ing (NOT a grammar table image)
+URL: https://github.com/edumost-pl/EduMost_5_Klasa/blob/main/blob/main/Angielski/L02_Teen_World/images/l02-like-ing.png?raw=true
+RAW: https://raw.githubusercontent.com/edumost-pl/EduMost_5_Klasa/main/blob/main/Angielski/L02_Teen_World/images/l02-like-ing.png
+IMAGE PROMPT: Create a clean educational illustration for 10–11-year-old learners showing three emotional preference moments for free-time activities, without written grammar tables. Left: a happy child chatting/playing online with friends. Middle: a calm neutral child drawing. Right: a mildly unhappy child with a board game they do not enjoy. Use clear facial expressions (happy / neutral / dislike) and simple activity props. Composition should feel like three connected speech-bubble moments, but NO readable text inside bubbles, NO English words, NO conjugation charts. Semi-flat educational style, friendly, uncluttered, consistent character design. No logos, no watermark, no textbook copy.
+
+---
+
+AUDIO STATUS (lesson-local)
+Flash p. 6 Reading/Listening · Dure → PENDING (no file in repo)
+Flash p. 7 Ex. 4a Listen & repeat → PENDING (no file in repo)
+Do NOT invent filenames. TTS via EduMostSpeak.en is separate and never replaces Flash CD audio.

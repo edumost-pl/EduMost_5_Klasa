@@ -1,7 +1,73 @@
-L01_Typical_day
-GitHub: https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Angielski/L01_Typical_day/images/
+# Lekcja 01 — What's your typical day?
+# UWAGA (2026-09-15): pliki PNG są teraz w repozytorium KODU pod ścieżką
+#   EduMost_5_Klasa / blob/main / Angielski / L01_Typical_day / images /
+# (folder „blob/main” powstał przy uploadzie — to nie Images-repo).
+# Docelowo przenieść do:
+#   EduMost-szkola_5-klasa-Images / Angielski / L01_Typical_day / images /
+# i wtedy zmienić tylko ENG_IMG / BASE poniżej.
+#
+# Reguły wizualne (EduMost English · Flash 5 · s. 4–5):
+# - własne ilustracje edukacyjne, NIE zrzuty Flash, NIE stock z Google
+# - semi-flat educational illustration, friendly, age 10–11, NOT baby/cartoon, NOT photorealism
+# - no text / no labels / no watermarks / no logos (zegary: tylko cyfry 1–12 na tarczy)
+# - jeden asset = jedno użycie wielokrotne (bez duplikatów plików)
+
+BASE (github blob + ?raw=true — jak w content.js):
+https://github.com/edumost-pl/EduMost_5_Klasa/blob/main/blob/main/Angielski/L01_Typical_day/images/
+
+RAW (bezpośredni PNG — do sprawdzenia w przeglądarce):
+https://raw.githubusercontent.com/edumost-pl/EduMost_5_Klasa/main/blob/main/Angielski/L01_Typical_day/images/
+
+---
 
 l01-typical-day.png
+BLOCK: 2 · Flash intro (What's your typical day?)
+ROLE: pokazać cały typowy dzień jako ciąg morning → school → afternoon → evening
+URL: https://github.com/edumost-pl/EduMost_5_Klasa/blob/main/blob/main/Angielski/L01_Typical_day/images/l01-typical-day.png?raw=true
+RAW: https://raw.githubusercontent.com/edumost-pl/EduMost_5_Klasa/main/blob/main/Angielski/L01_Typical_day/images/l01-typical-day.png
+IMAGE PROMPT: Create a clean educational illustration for an English lesson about a 10–11-year-old student's typical day. Show one school-aged child through a sequence of everyday routine moments from morning to evening: getting up, getting dressed, having breakfast, going to school, having lessons, spending time with friends, doing homework, having dinner, and going to sleep. Organize the scenes naturally from left/top to right/bottom so the progression of the day is immediately understandable. Modern semi-flat educational illustration, friendly and age-appropriate for a 10–11-year-old child, clear silhouettes, soft rounded shapes, warm natural atmosphere, moderate detail, visually clean composition. No written text, no labels, no numbers, no logos, no watermark, no textbook reproduction.
+
+---
+
+l01-morning-predict.png
+BLOCK: 4 · Before listening (predict — bez kolejności)
+ROLE: 5 osobnych scen poranka BEZ strzałek / cyfr / kierunku; uczeń sam przewiduje kolejność przed listening
+URL: https://github.com/edumost-pl/EduMost_5_Klasa/blob/main/blob/main/Angielski/L01_Typical_day/images/l01-morning-predict.png?raw=true
+RAW: https://raw.githubusercontent.com/edumost-pl/EduMost_5_Klasa/main/blob/main/Angielski/L01_Typical_day/images/l01-morning-predict.png
+LOCAL: lessons/angielski/01-typical-day/img/l01-morning-predict.png
+  (wygenerowany plik lokalnie → przenieś na GitHub pod URL wyżej; w content.js jest tylko link GitHub)
+IMAGE PROMPT: Create a clean educational infographic for an English lesson about a 10–11-year-old student's morning routine. Show five separate visual scenes: getting up in bed, getting dressed, having breakfast, catching a school bus, and having lessons at school. The five scenes must be visually distinct but must NOT indicate any sequence or order. Arrange them in a balanced infographic composition without arrows, numbers, labels or directional cues. Use a modern semi-flat educational illustration style, friendly and age-appropriate for 10–11-year-old learners, natural proportions, clear actions, soft rounded shapes, bright but restrained colors, simple clean backgrounds and consistent character design. No written text, no labels, no numbers, no arrows, no logos, no watermark.
+
+AUDIO:
+  Before listening (predict Q): browser Web Speech API (EduMostSpeak.en)
+  After listening: HTML5 player → ./02_Flash_kl5_M1_ex1_p4.mp3 (Flash Ex.1 only here)
+  Question 🔊 on After listening: also EduMostSpeak.en (not Flash mp3)
+
+FLOW:
+  Core vocab (15) → Before listening (predict) → After listening (Flash + comprehension)
+  Old “Flash audio · Listen and repeat” screen removed from sequence.
+
+---
+
 l01-morning.png
-l01-clock.png
+BLOCK: 5 · Flash audio (+ reuse) — kolejność JEST widoczna
+ROLE: tylko poranna kolejność get up → get dressed → have breakfast → catch the bus → have lessons
+URL: https://github.com/edumost-pl/EduMost_5_Klasa/blob/main/blob/main/Angielski/L01_Typical_day/images/l01-morning.png?raw=true
+RAW: https://raw.githubusercontent.com/edumost-pl/EduMost_5_Klasa/main/blob/main/Angielski/L01_Typical_day/images/l01-morning.png
+IMAGE PROMPT: Create a clean educational illustration showing the morning routine of a 10–11-year-old school child in five visually distinct but connected moments: getting up, getting dressed, having breakfast, catching a school bus, and arriving at school for lessons. The order must be visually obvious even without labels. Use a modern semi-flat educational illustration style, friendly but not childish, clear actions, simple backgrounds, natural proportions, warm morning light, uncluttered composition. No text, no labels, no numbers, no logos, no watermark.
+
+---
+
+(Block 6 · at + time — BEZ pliku PNG)
+ROLE: jeden prosty clock visual w pronounce.js (SVG): 7:15 → I get up at 7:15.
+CEL: CLOCK → TIME → SENTENCE. Bez quarter past / half past / quarter to.
+UWAGA: stary l01-clock.png (trzy zegary) NIE jest używany na tym ekranie.
+
+---
+
 l01-evening.png
+BLOCK: 9 · Core afternoon/evening (ONE file; block 10 bez obrazka)
+ROLE: przejście afternoon → evening
+URL: https://github.com/edumost-pl/EduMost_5_Klasa/blob/main/blob/main/Angielski/L01_Typical_day/images/l01-evening.png?raw=true
+RAW: https://raw.githubusercontent.com/edumost-pl/EduMost_5_Klasa/main/blob/main/Angielski/L01_Typical_day/images/l01-evening.png
+IMAGE PROMPT: Create a modern educational illustration for a 10–11-year-old English learner showing the transition from afternoon to evening in a school child's daily routine. Include recognizable moments such as having lunch, hanging out with friends, coming back home, having a snack, doing homework, swimming practice, taking a shower, having dinner, chatting with friends, and going to sleep. Arrange the scenes as a natural progression through the afternoon and evening. Clear actions, friendly semi-flat educational style, moderate detail, uncluttered composition, age-appropriate but not babyish. No written labels, no captions, no logos, no watermark, no textbook reproduction.

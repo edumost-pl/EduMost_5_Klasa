@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+  <rect width="900" height="420" fill="#f5efe3"/>
+  <rect x="24" y="20" width="852" height="380" rx="18" fill="#fffef7" stroke="#e7e0d2" stroke-width="2"/>
+  <text x="450" y="58" text-anchor="middle" font-family="Georgia, serif" font-size="26" font-weight="700" fill="#1c1917">MIERZĘ KĄT</text>
+  <g font-family="Georgia, serif">
+    <rect x="50" y="90" width="150" height="120" rx="12" fill="#ecfdf5" stroke="#0f766e" stroke-width="2"/>
+    <text x="125" y="125" text-anchor="middle" font-size="15" font-weight="700" fill="#0f766e">1. ŚRODEK</text>
+    <text x="125" y="155" text-anchor="middle" font-size="13" fill="#57534e">kątomierz</text>
+    <text x="125" y="175" text-anchor="middle" font-size="13" fill="#57534e">→ wierzchołek</text>
+
+    <rect x="220" y="90" width="150" height="120" rx="12" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+    <text x="295" y="125" text-anchor="middle" font-size="15" font-weight="700" fill="#ea580c">2. ZERO</text>
+    <text x="295" y="155" text-anchor="middle" font-size="13" fill="#57534e">0° → jedno</text>
+    <text x="295" y="175" text-anchor="middle" font-size="13" fill="#57534e">ramię</text>
+
+    <rect x="390" y="90" width="150" height="120" rx="12" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+    <text x="465" y="125" text-anchor="middle" font-size="15" font-weight="700" fill="#dc2626">3. SKALA</text>
+    <text x="465" y="155" text-anchor="middle" font-size="13" fill="#57534e">czytam właściwą</text>
+    <text x="465" y="175" text-anchor="middle" font-size="13" fill="#57534e">skalę od 0°</text>
+
+    <rect x="560" y="90" width="150" height="120" rx="12" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+    <text x="635" y="125" text-anchor="middle" font-size="15" font-weight="700" fill="#a16207">4. ODCZYT</text>
+    <text x="635" y="155" text-anchor="middle" font-size="13" fill="#57534e">drugie ramię</text>
+    <text x="635" y="175" text-anchor="middle" font-size="13" fill="#57534e">→ miara</text>
+
+    <rect x="730" y="90" width="140" height="120" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+    <text x="800" y="125" text-anchor="middle" font-size="15" font-weight="700" fill="#7c3aed">5. RODZAJ</text>
+    <text x="800" y="155" text-anchor="middle" font-size="13" fill="#57534e">porównaj z</text>
+    <text x="800" y="175" text-anchor="middle" font-size="13" fill="#57534e">90° i 180°</text>
+  </g>
+  <text x="450" y="270" text-anchor="middle" font-size="16" fill="#1c1917">0° &lt; ostry &lt; 90° = prosty &lt; rozwarty &lt; 180° = półpełny</text>
+  <text x="450" y="320" text-anchor="middle" font-size="18" font-weight="700" fill="#0f766e">ZAWSZE ZACZYNAJ OD 0°!</text>
+  <text x="450" y="360" text-anchor="middle" font-size="14" fill="#78716c">Matematyka nie każe zgadywać. Matematyka pozwala sprawdzać.</text>
+</svg>

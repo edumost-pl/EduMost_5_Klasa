@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#f5efe3"/>
+  <rect x="28" y="24" width="904" height="492" rx="22" fill="#fffef7" stroke="#e7e0d2" stroke-width="2"/>
+
+  <text x="480" y="64" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#1c1917">KĄT SKŁADA SIĘ Z…</text>
+
+  <!-- vertex box -->
+  <rect x="80" y="100" width="280" height="110" rx="16" fill="#ecfdf5" stroke="#0f766e" stroke-width="2"/>
+  <text x="220" y="132" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#0f766e">WIERZCHOŁEK</text>
+  <circle cx="220" cy="168" r="10" fill="#0f766e"/>
+  <text x="220" y="198" text-anchor="middle" font-size="14" fill="#57534e">wspólny początek</text>
+
+  <!-- arms box -->
+  <rect x="520" y="100" width="360" height="110" rx="16" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+  <text x="700" y="132" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#ea580c">DWA RAMIONA</text>
+  <line x1="620" y1="185" x2="780" y2="185" stroke="#1c1917" stroke-width="3"/>
+  <polygon points="780,185 766,179 766,191" fill="#1c1917"/>
+  <line x1="620" y1="185" x2="720" y2="130" stroke="#1c1917" stroke-width="3"/>
+  <polygon points="720,130 706,136 714,146" fill="#1c1917"/>
+  <circle cx="620" cy="185" r="8" fill="#0f766e"/>
+  <path d="M 670 185 A 50 50 0 0 0 655 152" fill="none" stroke="#f59e0b" stroke-width="4"/>
+
+  <!-- five panels -->
+  <!-- 1 ostry -->
+  <rect x="40" y="250" width="165" height="210" rx="14" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+  <text x="122" y="280" text-anchor="middle" font-size="16" font-weight="700" fill="#dc2626">1. OSTRY</text>
+  <line x1="70" y1="360" x2="160" y2="360" stroke="#1c1917" stroke-width="2.5"/>
+  <line x1="70" y1="360" x2="130" y2="290" stroke="#1c1917" stroke-width="2.5"/>
+  <circle cx="70" cy="360" r="5" fill="#0f766e"/>
+  <text x="122" y="400" text-anchor="middle" font-size="13" fill="#57534e">&lt; prosty</text>
+  <text x="122" y="422" text-anchor="middle" font-size="13" fill="#57534e">&lt; 90°</text>
+
+  <!-- 2 prosty -->
+  <rect x="220" y="250" width="165" height="210" rx="14" fill="#ecfdf5" stroke="#0f766e" stroke-width="2"/>
+  <text x="302" y="280" text-anchor="middle" font-size="16" font-weight="700" fill="#0f766e">2. PROSTY</text>
+  <line x1="250" y1="360" x2="350" y2="360" stroke="#1c1917" stroke-width="2.5"/>
+  <line x1="250" y1="360" x2="250" y2="290" stroke="#1c1917" stroke-width="2.5"/>
+  <rect x="250" y="340" width="18" height="18" fill="none" stroke="#0f766e" stroke-width="2"/>
+  <circle cx="250" cy="360" r="5" fill="#0f766e"/>
+  <text x="302" y="400" text-anchor="middle" font-size="13" fill="#57534e">wzorzec</text>
+  <text x="302" y="422" text-anchor="middle" font-size="13" fill="#57534e">= 90°</text>
+
+  <!-- 3 rozwarty -->
+  <rect x="400" y="250" width="165" height="210" rx="14" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+  <text x="482" y="280" text-anchor="middle" font-size="16" font-weight="700" fill="#ea580c">3. ROZWARTY</text>
+  <line x1="430" y1="360" x2="540" y2="360" stroke="#1c1917" stroke-width="2.5"/>
+  <line x1="430" y1="360" x2="400" y2="300" stroke="#1c1917" stroke-width="2.5"/>
+  <circle cx="430" cy="360" r="5" fill="#0f766e"/>
+  <text x="482" y="400" text-anchor="middle" font-size="13" fill="#57534e">&gt; prosty</text>
+  <text x="482" y="422" text-anchor="middle" font-size="13" fill="#57534e">&lt; 180°</text>
+
+  <!-- 4 półpełny -->
+  <rect x="580" y="250" width="165" height="210" rx="14" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+  <text x="662" y="280" text-anchor="middle" font-size="15" font-weight="700" fill="#a16207">4. PÓŁPEŁNY</text>
+  <line x1="600" y1="340" x2="725" y2="340" stroke="#1c1917" stroke-width="2.5"/>
+  <circle cx="662" cy="340" r="5" fill="#0f766e"/>
+  <path d="M 612 340 A 50 50 0 0 1 712 340" fill="none" stroke="#ca8a04" stroke-width="2.5"/>
+  <text x="662" y="400" text-anchor="middle" font-size="13" fill="#57534e">jak prosta</text>
+  <text x="662" y="422" text-anchor="middle" font-size="13" fill="#57534e">= 180°</text>
+
+  <!-- 5 pełny -->
+  <rect x="760" y="250" width="160" height="210" rx="14" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+  <text x="840" y="280" text-anchor="middle" font-size="16" font-weight="700" fill="#7c3aed">5. PEŁNY</text>
+  <circle cx="840" cy="340" r="38" fill="none" stroke="#7c3aed" stroke-width="2.5"/>
+  <line x1="840" y1="340" x2="900" y2="340" stroke="#1c1917" stroke-width="2.5"/>
+  <circle cx="840" cy="340" r="5" fill="#0f766e"/>
+  <text x="840" y="400" text-anchor="middle" font-size="13" fill="#57534e">pełne koło</text>
+  <text x="840" y="422" text-anchor="middle" font-size="13" fill="#57534e">= 360°</text>
+
+  <text x="480" y="500" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#78716c">Porównaj zawsze z kątem prostym — to twój wzorzec.</text>
+</svg>

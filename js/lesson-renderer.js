@@ -305,7 +305,12 @@
     const task = taskNode(block, ctx);
     if (task) slot.appendChild(task);
 
-    if (!slot.childNodes.length) {
+    // Skip empty placeholder when content is filled later by lesson-local hooks
+    // (e.g. enPrompt / taskSequence / flashAudio / speakItems).
+    const deferred = !!(block.taskSequence || block.enPrompt || block.flashAudio ||
+      block.speakItems || block.speakBoard || block.speak || block.atTimeTeach ||
+      block.thenTeach || block.phraseDive || block.speakingPrep || block.lessonClose);
+    if (!slot.childNodes.length && !deferred) {
       appendHtml(slot, '<div class="block-empty">' + esc(EduMostI18n.t("placeholder")) + "</div>");
     }
 

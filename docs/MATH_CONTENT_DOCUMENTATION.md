@@ -63,14 +63,14 @@
 |---|---|---|---|---|---|
 | 11 | II Figury geometryczne | Płaszczyzna, proste i półproste | punkt, prosta, półprosta, odcinek, ∥ | A, B, C | SVG `geo-lines`. Не сводить к арифметике. |
 | 12 | II Figury geometryczne | Kąty. Rodzaje kątów | wierzchołek, ramiona, ostry/prosty/rozwarty, kąty przyległe 180° | A, B, C | SVG `angle`. |
-| 13 | II Figury geometryczne | Mierzenie kątów | odczyt do 1°, kąty < 180°, skala kątomierza | A, B, C | |
-| 14 | II Figury geometryczne | Rodzaje i własności trójkątów | klasyfikacja wg kątów i boków, suma 180° | A, B, C | SVG `triangle`. Есть блок `classification`. |
-| 15 | II Figury geometryczne | Własności niektórych trójkątów | równoramienny, równoboczny (60°) | A, B, C | |
-| 16 | II Figury geometryczne | Wysokość trójkąta | prostopadła z wierzchołka, trzy wysokości, wysokość na zewnątrz | A, B, C | |
-| 17 | II Figury geometryczne | Równoległoboki | boki równoległe, kąty naprzeciwległe, prostokąt/romb/kwadrat | A, B, C | SVG `quad`. Есть блок `classification`. |
-| 18 | II Figury geometryczne | Wysokość równoległoboku | wysokość do wybranego boku, para bok–wysokość | A, B, C | Ещё без формулы pola (она в 36). |
-| 19 | II Figury geometryczne | Trapezy | jedna para równoległych, podstawy, ramiona | A, B, C | |
-| 20 | II Figury geometryczne | Klasyfikacja czworokątów | diagram włączeń, «każdy A jest B», osie symetrii | A, B, C | Есть блок `classification`. |
+| 13 | II Figury geometryczne | Mierzenie kątów | stopień (°), kątomierz (2 skale), środek→wierzchołek, 0°→ramię, odczyt, rysowanie 30°/90°/120°, miara→rodzaj | A, B, C | SVG `ang` + `t13-*.jpg/svg`. Bez kąta pełnego 360°. |
+| 14 | II Figury geometryczne | Rodzaje i własności trójkątów | rozpoznawanie: ostro-/prosto-/rozwartokątny + równo-/równoramienny/różnoboczny; suma 180°; nierówność | A, B, C | SVG `tri` + JPG. Bez ramion/podstawy/pełnej podwójnej nazwy → L15. |
+| 15 | II Figury geometryczne | Własności niektórych trójkątów | ramiona/podstawa; kąty przy podstawie; równoboczny = 60°; obwód i brakujące boki; nierówność w kontekście | A, B, C | SVG `tri` + `t15-*.jpg`. Klasyfikacja ogólna → L14. |
+| 16 | II Figury geometryczne | Wysokość trójkąta | definicja, podstawa↔wysokość, spodek, 3 wysokości, poza rozwartokątnym, przyprostokątna = wysokość; **bez** P=ah/2 | A, B, C | SVG `fig` + `t16-*.jpg`. Nie mieszać z L17 równoległoboki; pole → L37. |
+| 17 | II Figury geometryczne | Równoległoboki | definicja (2 pary ∥), przeciwległe/sąsiednie, boki=, kąty= + sąsiednie 180°, przekątne ÷2; prostokąt⊂równoległoboki; **bez** pola | A, B, C | SVG `fig` + `t17-*.jpg`. Wysokość → L18; pole → L36. |
+| 18 | II Figury geometryczne | Wysokość równoległoboku | podstawa↔h, ⟂ 90°, **BOK ≠ WYSOKOŚĆ**, różne podstawy → różne h; kratki; kontrast z L16; **bez** pola | A, B, C | SVG `fig` + `t18-*.jpg`. Pole → L36; trapezy → L19. |
+| 19 | II Figury geometryczne | Trapezy | ≥1 para ∥ (EduMost), podstawy/ramiona, h ⟂, prostokątny, równoramienny; **bez** pola i pełnej klasyfikacji | A, B, C | SVG `fig` + `t19-*.jpg`. Klasyfikacja → L20; pole → L38. |
+| 20 | II Figury geometryczne | Klasyfikacja czworokątów | własności≠wygląd; trapez≥1∥; włączenia prostokąt/romb/kwadrat; jedna figura = kilka nazw; koniec działu II | A, B, C | SVG `fig` + `t20-*.jpg`. Bez powtórki przekątnych/pól; ułamki → L21. |
 
 ### Część 1 · III. Ułamki zwykłe
 
@@ -238,6 +238,40 @@
 Не выделять жирным целую инструкцию («Oblicz i wpisz wynik»).
 
 В теории то же: формула часто в `block.formula` (класс `.math-line`) **и** повтор ключевых кусков через `em()` внутри абзаца.
+
+### Чередование formula / text (`parts`)
+
+Во всех `lessons/matematyka/*/index.html` после общего плеера подключён `js/math-lesson-renderer.js`.  
+Общий `lesson-renderer.js` **не** меняется. Без поля `parts` урок рисуется как раньше.
+
+Чтобы на **одном экране** чередовать крупные формулы и абзацы:
+
+```js
+parts: [
+  { formula: "12 : 3 = 4" },
+  { text: { pl: ["…", "…"], ua: ["…", "…"] } },
+  { formula: "3 · 4 = 12" },
+  { text: { pl: ["…"], ua: ["…"] } }
+]
+```
+
+Допустимо в элементе `parts`: `formula`, `text`, `items`, `rule`, `visual`, `prompt`.  
+Не пишите два ключа `formula` / `text` в корне блока — используйте `parts`.  
+`type` экрана — обычный (`concept`, `intro`, …), **не** `type: "parts"`.
+
+Блок-правило (крупное красное «Zapamiętaj!»):
+
+```js
+{ rule: {
+  label: { pl: "Zapamiętaj!", ua: "Запам'ятай!" },
+  lines: {
+    pl: "DZIELNA : DZIELNIK = ILORAZ",
+    ua: "ДІЛЕНЕ : ДІЛЬНИК = ЧАСТКА"
+  }
+}}
+```
+
+Пример: урок 08, экраны 1–2.
 
 | Объект | Как писать в тексте урока |
 |---|---|

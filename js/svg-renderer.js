@@ -515,19 +515,21 @@
 
   function mediaCandidates(spec) {
     const raw = spec.url || (spec.key ? window.EduMostAssetUrl(spec.key) : "") || "";
-    if (!raw) return [];
-    const out = [];
-    const gh = githubRawUrl(raw);
-    if (gh) out.push(gh);
-    if (raw && raw !== gh) out.push(raw);
-    // 1drv.ms?width=&height= is already an embed thumbnail — use it as-is.
-    if (isSharePageUrl(raw) && !/[?&]width=/i.test(raw)) {
-      const converted = oneDriveContentUrl(raw);
-      if (converted) out.push(converted);
-    }
     const local = spec.file && /^\.\.?\/./.test(String(spec.file))
       ? String(spec.file)
       : "";
+    if (!raw && !local) return [];
+    const out = [];
+    if (raw) {
+      const gh = githubRawUrl(raw);
+      if (gh) out.push(gh);
+      if (raw && raw !== gh) out.push(raw);
+      // 1drv.ms?width=&height= is already an embed thumbnail — use it as-is.
+      if (isSharePageUrl(raw) && !/[?&]width=/i.test(raw)) {
+        const converted = oneDriveContentUrl(raw);
+        if (converted) out.push(converted);
+      }
+    }
     if (local && out.indexOf(local) < 0 && local !== raw) out.push(local);
     return out.filter(function (u, i, arr) { return u && arr.indexOf(u) === i; });
   }

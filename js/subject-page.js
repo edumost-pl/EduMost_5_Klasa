@@ -84,16 +84,29 @@
               : folderLessonNum(topic);
             const numSep = num && /^\d/.test(num) ? ". " : (num ? " · " : "");
             const numHtml = num ? '<span class="topic-num">' + escapeHtml(num) + numSep + "</span>" : "";
+            const aboutText = topic.about
+              ? (lang === "ua" && topic.about.ua ? topic.about.ua : topic.about.pl || "")
+              : "";
+            const outcomeText = topic.outcome
+              ? (lang === "ua" && topic.outcome.ua ? topic.outcome.ua : topic.outcome.pl || "")
+              : "";
+            const notes =
+              (aboutText ? '<span class="topic-note"><strong>' + escapeHtml(t("topicAbout")) + ":</strong> " + escapeHtml(aboutText) + "</span>" : "") +
+              (outcomeText ? '<span class="topic-note"><strong>' + escapeHtml(t("topicOutcome")) + ":</strong> " + escapeHtml(outcomeText) + "</span>" : "");
             const titles = '<span class="topic-main"><i class="dot"></i>' +
               '<span class="topic-titles"><span class="topic-pl">' + numHtml +
               escapeHtml(plName(topic)) + "</span>" +
               (lang === "ua" && topic.title && topic.title.ua
                 ? '<span class="name-ua">' + escapeHtml(topic.title.ua) + "</span>"
                 : "") +
+              notes +
               "</span></span>";
+            const statusKey = topic.lesson
+              ? "openLesson"
+              : (topic.status === "planned" ? "statusPlanned" : "openSoon");
             const meta = '<span class="topic-meta">' + page +
               '<span class="topic-soon' + (topic.lesson ? " topic-open" : "") + '">' +
-              t("statusLabel") + (topic.lesson ? t("openLesson") : t("openSoon")) +
+              t("statusLabel") + t(statusKey) +
               "</span></span>";
             if (topic.lesson) {
               const href = typeof window.EduMostLessonHref === "function"
@@ -123,11 +136,25 @@
         "<span>" + t("pathReview") + "</span>" +
       "</div>";
 
+    const glossaryHtml = subjectId === "biologia"
+      ? '<a class="glossary-banner" href="../lessons/biologia/slownik/index.html">' +
+          '<span class="glossary-banner-kicker">s. 165–167</span>' +
+          '<span class="glossary-banner-title">Słownik' +
+            (lang === "ua" ? '<span class="name-ua">Словник</span>' : "") +
+          "</span>" +
+          '<span class="glossary-banner-note">' +
+            (lang === "ua"
+              ? "Повтори важливі терміни. Усі слова підручника на одній сторінці: пошук і літери."
+              : "Powtórz ważne terminy. Cały słownik podręcznika na jednej stronie: szukaj albo skocz do litery.") +
+          "</span></a>"
+      : "";
+
     root.innerHTML =
       '<header class="subject-header">' +
         "<h1>" + subject.icon + " " + name + "</h1>" +
         '<p class="book-line">«' + escapeHtml(book.title) + "» · " + escapeHtml(book.parts) + "</p>" +
       "</header>" +
+      glossaryHtml +
       '<dl class="book-meta">' +
         "<dt>" + t("textbook") + "</dt><dd>«" + escapeHtml(book.title) + "»</dd>" +
         "<dt>" + t("author") + "</dt><dd>" + escapeHtml(book.author) + "</dd>" +

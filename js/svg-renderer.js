@@ -615,6 +615,24 @@
       "</div>";
   }
 
+  function wordwallEmbed(spec) {
+    const raw = String((spec && (spec.url || spec.src)) || "").trim();
+    let parsed;
+    try { parsed = new URL(raw); } catch (e) { return ""; }
+    if (parsed.protocol !== "https:") return "";
+    if (parsed.hostname !== "wordwall.net" && parsed.hostname !== "www.wordwall.net") return "";
+    if (!/^\/(?:[a-z]{2}\/)?embed\/[a-f0-9]{32}$/i.test(parsed.pathname)) return "";
+    const title = vizText(spec.title) || vizText(spec.alt) || "Wordwall";
+    const width = Math.min(960, Math.max(280, Number(spec.width) || 500));
+    const height = Math.min(800, Math.max(240, Number(spec.height) || 380));
+    return '<div class="viz-wordwall" style="width:min(100%,' + width + 'px)">' +
+      '<iframe src="' + vizEsc(parsed.href).replace(/"/g, "&quot;") +
+      '" title="' + vizEsc(title).replace(/"/g, "&quot;") +
+      '" width="' + width + '" height="' + height +
+      '" style="max-width:100%;height:' + height + 'px" allowfullscreen loading="lazy"></iframe>' +
+      "</div>";
+  }
+
   function wrapLabel(s, max) {
     s = String(s || "").trim();
     if (!s) return [""];
@@ -796,6 +814,7 @@
     if (spec.kind === "quad") return quadFig(spec);
     if (spec.kind === "net") return netBoxes(spec);
     if (spec.kind === "youtube") return youtubeEmbed(spec);
+    if (spec.kind === "wordwall") return wordwallEmbed(spec);
     if (spec.kind === "class-tree" || spec.kind === "tree") return classTree(spec);
     if (spec.kind === "map-placeholder" || spec.kind === "image-placeholder") {
       return mediaPlaceholder(spec);

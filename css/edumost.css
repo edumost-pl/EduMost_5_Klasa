@@ -300,6 +300,15 @@ body {
 .topic-main .dot { flex-shrink: 0; margin-top: .38rem; }
 .topic-titles { min-width: 0; }
 .topic-pl { display: block; }
+.topic-note {
+  display: block;
+  margin-top: .22rem;
+  font-size: .78rem;
+  line-height: 1.35;
+  color: var(--muted);
+  font-weight: 500;
+}
+.topic-note strong { font-weight: 700; color: #57534e; }
 .topic-num { color: var(--muted); font-weight: 600; }
 .topic-meta {
   display: flex;

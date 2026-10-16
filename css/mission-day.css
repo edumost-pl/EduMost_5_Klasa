@@ -147,3 +147,19 @@ textarea {
 a.day.is-mission {
   border-color: #e2a322;
 }
+
+.school-day { padding-left: 1.2rem; }
+.probe { margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(28, 36, 51, 0.08); }
+.probe h3 { margin-top: 0; }
+.task {
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #f6f1e7;
+  font-weight: 700;
+}
+.answer {
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #fff4d6;
+}
+.hint { color: #5c6778; }

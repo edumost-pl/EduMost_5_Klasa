@@ -1505,6 +1505,12 @@ window.EduMostLessons = {
     topicId: "powtorzenie-my-world",
     folder: "powtorzenie-my-world"
   },
+  "geografia/mapa-elementy-znaki": {
+    id: "geo-02-mapa-elementy-znaki",
+    subject: "geografia",
+    topicId: "mapa-elementy-znaki",
+    folder: "02-mapa-elementy-znaki"
+  },
 };
 window.EduMostLessonHref = function (subjectId, topic) {
   if (!topic || !topic.lesson) return "";

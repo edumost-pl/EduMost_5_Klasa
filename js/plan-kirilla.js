@@ -578,6 +578,10 @@
       window.EduMostMissionDay.render(app, { iso: iso, child: child });
       return;
     }
+    if (iso && window.EduMostDiagDay && window.EduMostDiagDay.get(iso)) {
+      window.EduMostDiagDay.render(app, { iso: iso, child: child });
+      return;
+    }
     if (iso && iso.slice(0, 7) === MONTH) {
       app.innerHTML = child ? renderChildDay(iso) : renderParentDay(iso);
       if (!child) bindReport(iso);

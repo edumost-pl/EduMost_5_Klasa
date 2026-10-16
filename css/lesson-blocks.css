@@ -149,6 +149,17 @@
   height: 100%;
   border: 0;
 }
+.viz:has(.viz-wordwall) {
+  overflow: visible;
+}
+.viz-wordwall {
+  margin: 0 auto;
+}
+.viz-wordwall iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+}
 .viz-img {
   display: block;
   max-width: 100%;

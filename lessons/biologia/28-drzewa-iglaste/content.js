@@ -16,500 +16,1154 @@ function vizGh(file, spec) {
   return spec;
 }
 
-function tree(spec) {
-  spec.kind = "class-tree";
-  return spec;
-}
-
 window.EduMostLessonContent = {
   blocks: [
     {
-      type: "goal",
-      heading: { pl: "Paszport lekcji", ua: "Паспорт уроку" },
-      items: [
-        { pl: "Rozpoznasz sosnę: dwie igły w pęczku.", ua: "Розпізнаєш сосну: дві хвоїнки в пучку." },
-        { pl: "Rozpoznasz świerk: igły kłujące, szyszki zwisają.", ua: "Розпізнаєш ялину: хвоя колюча, шишки звисають." },
-        { pl: "Rozpoznasz jodłę: igły miękkie, szyszki stoją.", ua: "Розпізнаєш ялицю: хвоя м’яка, шишки стоять." },
-        { pl: "Powiesz, że modrzew zrzuca igły jesienią.", ua: "Скажеш, що модрина скидає хвою восени." },
-        { pl: "Podasz znaczenie drzew iglastych: drewno, żywica, las.", ua: "Назвеш значення хвойних дерев: деревина, живиця, ліс." }
-      ]
-    },
-    {
-      type: "vocabulary",
-      heading: { pl: "Najważniejsze pojęcia", ua: "Найважливіші поняття" },
-      rows: [
-        { pl: "sosna", ua: "сосна" },
-        { pl: "świerk", ua: "ялина" },
-        { pl: "jodła", ua: "ялиця" },
-        { pl: "modrzew", ua: "модрина" },
-        { pl: "pęczek igieł", ua: "пучок хвої" },
-        { pl: "żywica", ua: "живиця" },
-        { pl: "jałowiec", ua: "ялівець" },
-        { pl: "cis", ua: "тис" }
-      ]
-    },
-    {
       type: "intro",
-      heading: { pl: "Zacznijmy", ua: "Почнімо" },
+      heading: { pl: "Misja: które drzewo", ua: "Місія: яке дерево" },
       visual: vizGh("l28-zacznijmy.png", {
         alt: { pl: "Las iglasty z różnymi koronami drzew", ua: "Хвойний ліс із різними кронами дерев" },
-        title: { pl: "Lekcja 27: grupa. Dziś: które drzewo jest które.", ua: "Урок 27: група. Сьогодні: яке дерево яке." },
-        prompt: { pl: "Fotorealistyczne zdjęcie 16:9 lasu iglastego, dzień. Etykieta PL: drzewa iglaste. Bez kwiatów, bez owoców liściastych, bez tablicy dąb/lipa. Bez angielskiego, bez logotypów." }
+        title: { pl: "Grupa była wczoraj. Dziś klucz.", ua: "Група була вчора. Сьогодні ключ." },
+        prompt: { pl: "Plansza lekcji 28: las iglasty." }
       }),
       text: {
         pl: [
-          "Nagonasienne, nagie nasiona, szyszki i wiatr — lekcja 27. Dziś klucz: sosna, świerk, jodła, modrzew.",
-          "Nie rozbieramy kwiatu ani owocu (lekcje 29–30). Drzewa liściaste — lekcja 33."
+          "To lekcja 28. Nagie nasiona, szyszki i wiatr znasz z lekcji 27. Dziś rozpoznajesz sosnę, świerk, jodłę i modrzew.",
+          "Kwiatu i owocu nie rozbieramy. Drzewa liściaste są później.",
+          "W każdej części kolejność jest ta sama: trudne słowo, przykład, krótkie pytanie, typowy błąd, zadanie samodzielne. Na końcu jest sprawdzian bez podpowiedzi."
         ],
         ua: [
-          "Голонасінні, голе насіння, шишки і вітер — урок 27. Сьогодні ключ: сосна, ялина, ялиця, модрина.",
-          "Не розбираємо квітку і плід (уроки 29–30). Листяні дерева — урок 33."
+          "Це урок 28. Голе насіння, шишки і вітер знаєш з уроку 27. Сьогодні розпізнаєш сосну, ялину, ялицю і модрину.",
+          "Квітку і плід не розбираємо. Листяні дерева є пізніше.",
+          "У кожній частині один порядок: складне слово, приклад, коротке питання, типова помилка, самостійне завдання. Наприкінці — перевірка без підказок."
         ]
       }
     },
     {
+      type: "vocabulary",
+      heading: { pl: "Słowa, które łatwo pomylić", ua: "Слова, які легко сплутати" },
+      rows: [
+        { pl: "sosna", ua: "сосна — дві хвоїнки в пучку" },
+        { pl: "świerk", ua: "ялина — колюча хвоя по одній, шишки звисають" },
+        { pl: "jodła", ua: "ялиця — м’яка хвоя, шишки стоять" },
+        { pl: "modrzew", ua: "модрина — восени скидає хвою" },
+        { pl: "pęczek igieł", ua: "пучок хвої" },
+        { pl: "jałowiec — szyszkojagoda", ua: "ялівець — шишкоягода, не слива" },
+        { pl: "cis — osnówka", ua: "тис — червона шишечка, отруйний, не зриваємо" },
+        { pl: "żywica", ua: "живиця — заліплює рану стовбура" }
+      ]
+    },
+
+    {
       type: "concept",
-      heading: { pl: "Sosna", ua: "Сосна" },
+      heading: { pl: "Pojęcie. Dwie igły", ua: "Поняття. Дві хвоїнки" },
       visual: vizGh("l28-sosna.png", {
-        alt: { pl: "Dwie igły w pęczku i zwisająca szyszka sosny", ua: "Дві хвоїнки в пучку і звисла шишка сосни" },
-        title: { pl: "Dwie igły razem. Pień często krzywy, kora łuszczy się.", ua: "Дві хвоїнки разом. Стовбур часто кривий, кора лущиться." },
-        prompt: { pl: "Edukacyjna infografika 16:9 sosny zwyczajnej. Etykiety PL: dwie igły w pęczku; szyszka zwisa; kora w łuskach. Napis: sosna. Bez świerka i jodły na tym kadrze. Bez kwiatu. Bez angielskiego, bez logotypów." }
+        alt: { pl: "Dwie igły sosny w pęczku i zwisająca szyszka", ua: "Дві хвоїнки сосни в пучку і звисла шишка" },
+        title: { pl: "Dwie razem. To klucz sosny.", ua: "Дві разом. Це ключ сосни." },
+        prompt: { pl: "Plansza lekcji 28: sosna." }
       }),
       text: {
         pl: [
           ["U ", em("sosny"), " igły siedzą po ", em("dwie w pęczku"), ". Są długie i trochę twarde."],
-          "Szyszki zwisają. Pień bywa krzywy, kora odchodzi płatami. Sosna lubi piaszczyste, jaśniejsze lasy.",
-          "Nie licz dziś igieł świerka — u niego każda igła osobno. To następny ekran."
+          "Szyszki sosny zwisają. Pień bywa krzywy, a kora odchodzi płatami. Sosna lubi piaszczyste, jaśniejsze lasy.",
+          "Sama zwisająca szyszka jeszcze nie nazywa drzewa. U świerka każda igła rośnie osobno. To następna część."
         ],
         ua: [
           ["У ", em("сосни"), " хвоя сидить по ", em("дві в пучку"), ". Довга і трохи тверда."],
-          "Шишки звисають. Стовбур буває кривий, кора відходить пластами. Сосна любить піщані, світліші ліси.",
-          "Не рахуй сьогодні хвою ялини — в неї кожна хвоїнка окремо. Це наступний екран."
+          "Шишки сосни звисають. Стовбур буває кривий, а кора відходить пластами. Сосна любить піщані, світліші ліси.",
+          "Сама звисла шишка ще не називає дерево. У ялини кожна хвоїнка росте окремо. Це наступна частина."
         ]
-      },
+      }
+    },
+    {
+      type: "example",
+      heading: { pl: "Przykład. Pęczek na gałązce", ua: "Приклад. Пучок на гілці" },
+      reveal: true,
+      steps: [
+        {
+          text: {
+            pl: ["Patrzysz na krótki pęd. Igły są spięte po dwie."],
+            ua: ["Дивишся на короткий пагін. Хвоїнки зчеплені по дві."]
+          }
+        },
+        {
+          text: {
+            pl: ["Są długie. Palec czuje, że są trochę twarde."],
+            ua: ["Вони довгі. Палець відчуває, що вони трохи тверді."]
+          }
+        },
+        {
+          text: {
+            pl: ["Szyszka wisi. Do nazwy sosny wystarczą dwie igły w pęczku."],
+            ua: ["Шишка висить. Для назви сосни достатньо двох хвоїнок у пучку."]
+          }
+        }
+      ]
+    },
+    {
+      type: "guided-practice",
+      heading: { pl: "Krótkie pytanie. Pęczek", ua: "Коротке питання. Пучок" },
       task: {
-        id: "l28-e1",
+        id: "l28-g1",
         type: "single-choice",
-        question: { pl: "Po czym poznasz sosnę?", ua: "По чому впізнаєш сосну?" },
+        question: {
+          pl: "Po czym poznasz sosnę?",
+          ua: "По чому впізнаєш сосну?"
+        },
         options: [
-          { id: "a", label: { pl: "dwie igły w pęczku", ua: "дві хвоїнки в пучку" } },
-          { id: "b", label: { pl: "szyszki stoją i rozpadają się na drzewie", ua: "шишки стоять і розпадаються на дереві" } },
-          { id: "c", label: { pl: "zrzuca wszystkie igły co jesień jak modrzew", ua: "скидає всю хвою щоосені як модрина" } }
+          { id: "a", label: { pl: "po dwóch igłach w pęczku", ua: "по двох хвоїнках у пучку" } },
+          { id: "b", label: { pl: "po szyszkach, które stoją i rozpadają się na drzewie", ua: "по шишках, які стоять і розпадаються на дереві" } },
+          { id: "c", label: { pl: "po tym, że zrzuca wszystkie igły co jesień", ua: "по тому, що скидає всю хвою щоосені" } }
         ],
         answer: "a",
-        explanation: { pl: "Klucz sosny: pęczek po dwie. Stojące szyszki = jodła. Zrzucanie = modrzew.", ua: "Ключ сосни: пучок по дві." }
+        hint: {
+          pl: "Policz igły w jednym pęczku.",
+          ua: "Полічи хвоїнки в одному пучку."
+        },
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Stojące szyszki, które rozpadają się na drzewie, należą do jodły. Sosnę poznajesz po dwóch igłach w pęczku.",
+              ua: "Стоячі шишки, які розпадаються на дереві, належать ялиці. Сосну впізнаєш по двох хвоїнках у пучку."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Igły co jesień zrzuca modrzew. Sosna zostaje zielona, a jej klucz to dwie igły w pęczku.",
+              ua: "Хвою щоосені скидає модрина. Сосна лишається зеленою, а її ключ — дві хвоїнки в пучку."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Sosna ma dwie igły w pęczku.",
+          ua: "Сосна має дві хвоїнки в пучку."
+        }
       }
     },
     {
-      type: "classification",
-      heading: { pl: "Igły: pęczek czy pojedynczo", ua: "Хвоя: пучок чи по одній" },
-      visual: tree({
-        layout: "fork",
-        root: { pl: "igły", ua: "хвоя" },
-        items: [
-          { pl: "pęczek — sosna", ua: "пучок — сосна" },
-          { pl: "pojedynczo — świerk, jodła", ua: "по одній — ялина, ялиця" }
-        ]
-      }),
-      items: [
-        { pl: "sosna — dwie w pęczku", ua: "сосна — дві в пучку" },
-        { pl: "świerk i jodła — każda igła osobno", ua: "ялина і ялиця — кожна хвоїнка окремо" }
-      ]
-    },
-    {
-      type: "concept",
-      heading: { pl: "Świerk", ua: "Ялина" },
-      visual: vizGh("l28-swierk.png", {
-        alt: { pl: "Kłujące igły świerka i zwisające szyszki", ua: "Колюча хвоя ялини і звислі шишки" },
-        title: { pl: "Igły kłują. Szyszki wiszą jak ozdoby.", ua: "Хвоя коле. Шишки висять як прикраси." },
-        prompt: { pl: "Edukacyjna infografika 16:9 świerka. Etykiety PL: igły pojedynczo, kłujące, dookoła pędu; szyszki zwisają. Korona stożkowata. Napis: świerk. Bez dwóch igieł sosny. Bez stojących szyszek jodły. Bez angielskiego, bez logotypów." }
-      }),
-      text: {
-        pl: [
-          ["U ", em("świerka"), " igły wyrastają ", em("pojedynczo"), ", dookoła pędu. Są krótkie i kłujące — łatwo się ukłuć."],
-          "Szyszki zwisają i spadają w całości. Korona często stożkowata, gałęzie w piętrach. Świerk lubi chłodniej i wilgotniej niż sosna.",
-          "Nie myl z jodłą: u jodły igły są miękkie, a szyszki stoją."
-        ],
-        ua: [
-          ["У ", em("ялини"), " хвоя росте ", em("по одній"), ", довкола пагона. Коротка і колюча — легко вколотися."],
-          "Шишки звисають і падають цілими. Крона часто конусоподібна, гілки ярусами. Ялина любить прохолодніше і вологіше, ніж сосна.",
-          "Не плутати з ялицею: в ялиці хвоя м’яка, а шишки стоять."
-        ]
+      type: "mistake",
+      heading: { pl: "Typowy błąd. Jedna igła", ua: "Типова помилка. Одна хвоїнка" },
+      claim: {
+        pl: "„Wszystkie iglaki mają igły pojedynczo, więc sosna też.”",
+        ua: "«Усі хвойні мають хвою по одній, тож сосна теж.»"
       },
-      task: {
-        id: "l28-e2",
-        type: "true-false",
-        question: { pl: "Świerk ma kłujące igły pojedynczo i szyszki, które zwisają.", ua: "Ялина має колючу хвою по одній і шишки, що звисають." },
-        answer: true,
-        explanation: { pl: "Kłuje + zwisa. Jodła: miękko + stoi.", ua: "Коле + звисає. Ялиця: м’яко + стоїть." }
-      }
-    },
-    {
-      type: "concept",
-      heading: { pl: "Jodła", ua: "Ялиця" },
-      visual: vizGh("l28-jodla.png", {
-        alt: { pl: "Miękkie igły jodły i szyszki stojące na wierzchołku", ua: "М’яка хвоя ялиці і шишки, що стоять на верхівці" },
-        title: { pl: "Igły miękkie. Szyszki sterczą i rozpadają się na drzewie.", ua: "Хвоя м’яка. Шишки стирчать і розпадаються на дереві." },
-        prompt: { pl: "Edukacyjna infografika 16:9 jodły. Etykiety PL: igły miękkie, spłaszczone, dwa jasne paski od spodu; szyszki stoją, rozpadają się na drzewie. Napis: jodła. Bez zwisających szyszek świerka. Bez pęczka sosny. Bez angielskiego, bez logotypów." }
-      }),
       text: {
         pl: [
-          ["U ", em("jodły"), " igły są ", em("miękkie"), ", spłaszczone. Od spodu często dwa jasne paski. Nie kłują jak świerk."],
-          "Szyszki ", em("stoją"), " na gałęzi i rozpadają się na drzewie — na ziemi rzadko znajdziesz całą szyszkę jodły.",
-          "To nie kwiat i nie owoc. Szyszka z lekcji 27, tylko inny sposób trzymania się gałęzi."
+          "Pojedynczo, dookoła pędu, rosną igły świerka.",
+          "U sosny liczysz pęczek: zawsze dwie igły razem."
         ],
         ua: [
-          ["У ", em("ялиці"), " хвоя ", em("м’яка"), ", сплющена. Зі споду часто дві світлі смужки. Не коле як ялина."],
-          "Шишки ", em("стоять"), " на гілці і розпадаються на дереві — на землі рідко знайдеш цілу шишку ялиці.",
-          "Це не квітка і не плід. Шишка з уроку 27, лише інший спосіб триматися гілки."
-        ]
-      },
-      task: {
-        id: "l28-e3",
-        type: "single-choice",
-        question: { pl: "Po czym odróżnisz jodłę od świerka?", ua: "По чому відрізниш ялицю від ялини?" },
-        options: [
-          { id: "a", label: { pl: "jodła — igły miękkie, szyszki stoją; świerk — kłuje, szyszki zwisają", ua: "ялиця — хвоя м’яка, шишки стоять; ялина — коле, шишки звисають" } },
-          { id: "b", label: { pl: "jodła ma zawsze dwie igły w pęczku", ua: "ялиця завжди має дві хвоїнки в пучку" } },
-          { id: "c", label: { pl: "świerk zrzuca igły co jesień, jodła nie", ua: "ялина скидає хвою щоосені, ялиця ні" } }
-        ],
-        answer: "a",
-        explanation: { pl: "Miękko i stoi vs kłuje i zwisa. Pęczek = sosna. Zrzucanie = modrzew.", ua: "М’яко і стоїть проти коле і звисає." }
-      }
-    },
-    {
-      type: "classification",
-      heading: { pl: "Szyszki: zwisają albo stoją", ua: "Шишки: звисають або стоять" },
-      visual: tree({
-        layout: "fork",
-        root: { pl: "szyszki", ua: "шишки" },
-        items: [
-          { pl: "zwisają — sosna, świerk", ua: "звисають — сосна, ялина" },
-          { pl: "stoją — jodła", ua: "стоять — ялиця" }
-        ]
-      }),
-      items: [
-        { pl: "sosna i świerk — szyszki zwisają", ua: "сосна і ялина — шишки звисають" },
-        { pl: "jodła — szyszki stoją i rozpadają się", ua: "ялиця — шишки стоять і розпадаються" }
-      ]
-    },
-    {
-      type: "concept",
-      heading: { pl: "Modrzew", ua: "Модрина" },
-      visual: vizGh("l28-modrzew.png", {
-        alt: { pl: "Pęczki miękkich igieł modrzewia i jesienne złote igły", ua: "Пучки м’якої хвої модрини і осіння золота хвоя" },
-        title: { pl: "Jedyny z tej czwórki, który zrzuca igły.", ua: "Єдиний із цієї четвірки, що скидає хвою." },
-        prompt: { pl: "Edukacyjna infografika 16:9, dwa kadry. LEWA: wiosna/lato — pęczki miękkich jasnozielonych igieł, etykieta PL: modrzew. PRAWA: jesień — złote igły opadają. Napis: zrzuca igły. Bez dębu i lipy. Bez kwiatu. Bez angielskiego, bez logotypów." }
-      }),
-      text: {
-        pl: [
-          ["", em("Modrzew"), " ma miękkie igły w pęczkach (więcej niż dwie). Jesienią żółkną i ", em("opadają"), "."],
-          "Sosna, świerk i jodła zimą zostają zielone. Modrzew zimą jest „goły” jak drzewo liściaste — ale to nadal drzewo iglaste z szyszkami, nie dąb.",
-          "Nie myl opadających igieł z liśćmi klonu (lekcja 33)."
-        ],
-        ua: [
-          ["", em("Модрина"), " має м’яку хвою в пучках (більше ніж дві). Восени жовтіє і ", em("опадає"), "."],
-          "Сосна, ялина і ялиця взимку лишаються зеленими. Модрина взимку «гола» як листяне дерево — але це все одно хвойне дерево з шишками, не дуб.",
-          "Не плутати опалу хвою з листками клена (урок 33)."
-        ]
-      },
-      task: {
-        id: "l28-e4",
-        type: "true-false",
-        question: { pl: "Modrzew zrzuca igły jesienią. Sosna, świerk i jodła zimą zostają zielone.", ua: "Модрина скидає хвою восени. Сосна, ялина і ялиця взимку лишаються зеленими." },
-        answer: true,
-        explanation: { pl: "Modrzew = jedyny z czwórki, który gubi igły.", ua: "Модрина = єдина з четвірки, що губить хвою." }
-      }
-    },
-    {
-      type: "classification",
-      heading: { pl: "Cztery drzewa", ua: "Чотири дерева" },
-      visual: tree({
-        layout: "fork",
-        root: { pl: "iglaste", ua: "хвойні" },
-        items: [
-          { pl: "sosna", ua: "сосна" },
-          { pl: "świerk", ua: "ялина" },
-          { pl: "jodła", ua: "ялиця" },
-          { pl: "modrzew", ua: "модрина" }
-        ]
-      }),
-      items: [
-        { pl: "sosna — dwie igły w pęczku", ua: "сосна — дві хвоїнки в пучку" },
-        { pl: "świerk — kłuje, szyszki zwisają", ua: "ялина — коле, шишки звисають" },
-        { pl: "jodła — miękka, szyszki stoją", ua: "ялиця — м’яка, шишки стоять" },
-        { pl: "modrzew — zrzuca igły", ua: "модрина — скидає хвою" }
-      ]
-    },
-    {
-      type: "concept",
-      heading: { pl: "Jałowiec i cis", ua: "Ялівець і тис" },
-      visual: vizGh("l28-jalowiec-cis.png", {
-        alt: { pl: "Jałowiec z niebieskawymi szyszkojagodami i cis z czerwoną osnówką", ua: "Ялівець із синюватими шишкоягодами і тис із червоною шишечкою" },
-        title: { pl: "Też iglaste. Cis jest trujący — nie zrywamy.", ua: "Теж хвойні. Тис отруйний — не зриваємо." },
-        prompt: { pl: "Edukacyjna infografika 16:9, dwa kadry, etykiety PL. LEWA: jałowiec — igły lub łuski, niebieskawe szyszkojagody, napis: to szyszka, nie owoc. PRAWA: cis — czerwona osnówka, napis: trujący, nie zrywać. Bez namawiania do jedzenia. Bez kwiatu jabłoni. Bez angielskiego, bez logotypów." }
-      }),
-      text: {
-        pl: [
-          ["", em("Jałowiec"), " bywa krzewem. Ma igły albo łuski. Niebieskawe kulki to ", em("szyszkojagody"), " — przekształcone szyszki, nie śliwki (owoc później)."],
-          ["", em("Cis"), " ma czerwoną osnówkę. Prawie całe ciało cisa jest ", em("trujące"), " — nie zrywamy, nie jemy."],
-          "To nadal nagonasienne z lekcji 27, tylko inny wygląd niż sosna."
-        ],
-        ua: [
-          ["", em("Ялівець"), " буває кущем. Має хвою або луски. Синюваті кульки — ", em("шишкоягоди"), " — видозмінені шишки, не сливи (плід пізніше)."],
-          ["", em("Тис"), " має червону шишечку. Майже все тіло тиса ", em("отруйне"), " — не зриваємо, не їмо."],
-          "Це все одно голонасінні з уроку 27, лише інший вигляд, ніж сосна."
-        ]
-      },
-      task: {
-        id: "l28-e5",
-        type: "multiple-choice",
-        question: { pl: "Zaznacz zdania prawdziwe.", ua: "Познач правдиві речення." },
-        options: [
-          { id: "a", label: { pl: "szyszkojagoda jałowca to nie owoc śliwy", ua: "шишкоягода ялівцю — не плід сливи" } },
-          { id: "b", label: { pl: "cis jest trujący — nie zrywamy", ua: "тис отруйний — не зриваємо" } },
-          { id: "c", label: { pl: "cis to mech z puszki", ua: "тис — мох із коробочкою" } }
-        ],
-        answer: ["a", "b"],
-        explanation: { pl: "Szyszka, nie owoc. Cis trujący. Nie mech.", ua: "Шишка, не плід. Тис отруйний." }
-      }
-    },
-    {
-      type: "concept",
-      heading: { pl: "Drewno, żywica, las", ua: "Деревина, живиця, ліс" },
-      visual: vizGh("l28-znaczenie.png", {
-        alt: { pl: "Pień, krople żywicy i las iglasty", ua: "Стовбур, краплі живиці і хвойний ліс" },
-        title: { pl: "Budulec, żywica, schronienie. Nie zrywamy kory dla zabawy.", ua: "Будівельний матеріал, живиця, сховок. Кору для забави не зриваємо." },
-        prompt: { pl: "Edukacyjna infografika 16:9, trzy kadry, etykiety PL. 1 belki / deski — drewno. 2 krople żywicy na pniu. 3 las iglasty — schronienie, gleba, powietrze. Bez wycinki jako grozy. Bez kwiatu. Bez dębu jako głównego motywu (L33). Bez angielskiego, bez logotypów." }
-      }),
-      text: {
-        pl: [
-          "Drewno iglaste idzie na belki, deski, papier. Z pnia sączy się ", em("żywica"), " — klei rany drzewa (i pachnie lasem).",
-          "Las iglasty trzyma glebę na stoku, daje schronienie zwierzętom i tlen z fotosyntezy (lekcja 9).",
-          "Nie myl tego z przeglądem drzew liściastych (lekcja 33). Dziś tylko iglaki."
-        ],
-        ua: [
-          "Хвойна деревина йде на балки, дошки, папір. Зі стовбура сочиться ", em("живиця"), " — заліплює рани дерева (і пахне лісом).",
-          "Хвойний ліс тримає ґрунт на схилі, дає сховок тваринам і кисень із фотосинтезу (урок 9).",
-          "Не плутати це з оглядом листяних дерев (урок 33). Сьогодні лише хвойні."
+          "По одній, довкола пагона, росте хвоя ялини.",
+          "У сосни рахуєш пучок: завжди дві хвоїнки разом."
         ]
       }
-    },
-    {
-      type: "classification",
-      heading: { pl: "Po co iglaki", ua: "Навіщо хвойні" },
-      visual: tree({
-        layout: "fork",
-        root: { pl: "iglaste", ua: "хвойні" },
-        items: [
-          { pl: "drewno", ua: "деревина" },
-          { pl: "żywica", ua: "живиця" },
-          { pl: "las", ua: "ліс" }
-        ]
-      }),
-      items: [
-        { pl: "drewno — belki, papier", ua: "деревина — балки, папір" },
-        { pl: "żywica — chroni ranę pnia", ua: "живиця — захищає рану стовбура" },
-        { pl: "las — gleba, schronienie, tlen", ua: "ліс — ґрунт, сховок, кисень" }
-      ]
     },
     {
       type: "practice",
-      heading: { pl: "Praktyka. Sosna", ua: "Практика. Сосна" },
+      heading: { pl: "Sam. Piasek i kora", ua: "Сам. Пісок і кора" },
       task: {
         id: "l28-p1",
         type: "single-choice",
-        question: { pl: "Dwie igły w pęczku to cecha:", ua: "Дві хвоїнки в пучку — ознака:" },
+        question: {
+          pl: "Na piaszczystej polanie gałązka ma długie igły, zawsze po dwie. Kora pnia odchodzi płatami. Uczeń podpisuje ją „jodła”, bo obok leży szyszka. Co poprawić?",
+          ua: "На піщаній галявині гілка має довгі хвоїнки, завжди по дві. Кора стовбура відходить пластами. Учень підписує її «ялиця», бо поруч лежить шишка. Що виправити?"
+        },
         options: [
-          { id: "a", label: { pl: "sosny", ua: "сосни" } },
-          { id: "b", label: { pl: "świerka", ua: "ялини" } },
-          { id: "c", label: { pl: "jodły", ua: "ялиці" } }
+          { id: "a", label: { pl: "dwie igły w pęczku to sosna; stojące szyszki, które się rozpadają, to jodła", ua: "дві хвоїнки в пучку — це сосна; стоячі шишки, які розпадаються, — це ялиця" } },
+          { id: "b", label: { pl: "tak — każda szyszka na ziemi zamienia sosnę w jodłę", ua: "так — кожна шишка на землі перетворює сосну на ялицю" } },
+          { id: "c", label: { pl: "tak — pęczek po dwie znaczy, że drzewo zrzuca igły jak modrzew", ua: "так — пучок по дві означає, що дерево скидає хвою як модрина" } }
         ],
         answer: "a",
-        explanation: { pl: "Sosna = pęczek po dwie. Świerk i jodła — pojedynczo.", ua: "Сосна = пучок по дві." }
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Szyszka na ziemi nie zmienia klucza. Sosnę trzymaj przy dwóch igłach w pęczku. Jodła ma miękkie igły i szyszki, które stoją.",
+              ua: "Шишка на землі не змінює ключ. Сосну тримай при двох хвоїнках у пучку. Ялиця має м’яку хвою і шишки, які стоять."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Modrzew żółknie i gubi igły jesienią. Dwie igły, które zostają na gałązce, to klucz sosny.",
+              ua: "Модрина жовтіє і губить хвою восени. Дві хвоїнки, які лишаються на гілці, — це ключ сосни."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Dwie igły w pęczku nazywają sosnę. Szyszka obok tego nie zmienia.",
+          ua: "Дві хвоїнки в пучку називають сосну. Шишка поруч цього не змінює."
+        }
+      }
+    },
+
+    {
+      type: "concept",
+      heading: { pl: "Pojęcie. Kłuje i zwisa", ua: "Поняття. Коле і звисає" },
+      visual: vizGh("l28-swierk.png", {
+        alt: { pl: "Kłujące igły świerka i zwisające szyszki", ua: "Колюча хвоя ялини і звислі шишки" },
+        title: { pl: "Osobno i kłują. Szyszka spada cała.", ua: "Окремо і колють. Шишка падає ціла." },
+        prompt: { pl: "Plansza lekcji 28: świerk." }
+      }),
+      text: {
+        pl: [
+          ["U ", em("świerka"), " igły wyrastają ", em("pojedynczo"), ", dookoła pędu. Są krótkie i kłujące."],
+          "Szyszki zwisają i spadają w całości. Korona często jest stożkowata, a gałęzie układają się piętrami. Świerk lubi chłodniej i wilgotniej niż sosna.",
+          "Stożek korony nie jest kluczem. U jodły igły są miękkie, a szyszki stoją."
+        ],
+        ua: [
+          ["У ", em("ялини"), " хвоя виростає ", em("по одній"), ", довкола пагона. Коротка і колюча."],
+          "Шишки звисають і падають цілими. Крона часто конусоподібна, а гілки лягають ярусами. Ялина любить прохолодніше і вологіше, ніж сосна.",
+          "Конус крони не є ключем. У ялиці хвоя м’яка, а шишки стоять."
+        ]
+      }
+    },
+    {
+      type: "example",
+      heading: { pl: "Przykład. Palec i szyszka", ua: "Приклад. Палець і шишка" },
+      reveal: true,
+      steps: [
+        {
+          text: {
+            pl: ["Każda igła siedzi osobno, dookoła pędu."],
+            ua: ["Кожна хвоїнка сидить окремо, довкола пагона."]
+          }
+        },
+        {
+          text: {
+            pl: ["Igła kłuje. Szyszka wisi i na ziemi leży cała."],
+            ua: ["Хвоя коле. Шишка висить і на землі лежить ціла."]
+          }
+        },
+        {
+          text: {
+            pl: ["Miękka igła i szyszka, która stoi, to jodła, nie świerk."],
+            ua: ["М’яка хвоя і шишка, яка стоїть, — це ялиця, не ялина."]
+          }
+        }
+      ]
+    },
+    {
+      type: "guided-practice",
+      heading: { pl: "Krótkie pytanie. Ukłucie", ua: "Коротке питання. Укол" },
+      task: {
+        id: "l28-g2",
+        type: "single-choice",
+        question: {
+          pl: "Jak rozpoznasz świerk?",
+          ua: "Як розпізнаєш ялину?"
+        },
+        options: [
+          { id: "a", label: { pl: "igły pojedynczo i kłujące, szyszki zwisają i spadają w całości", ua: "хвоя по одній і колюча, шишки звисають і падають цілими" } },
+          { id: "b", label: { pl: "zawsze dwie igły w pęczku", ua: "завжди дві хвоїнки в пучку" } },
+          { id: "c", label: { pl: "igły miękkie, a szyszki stoją", ua: "хвоя м’яка, а шишки стоять" } }
+        ],
+        answer: "a",
+        hint: {
+          pl: "Sprawdź, czy igła kłuje i czy szyszka wisi.",
+          ua: "Перевір, чи хвоя коле і чи шишка висить."
+        },
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Dwie igły w pęczku to klucz sosny. Świerk ma igły pojedynczo. Są kłujące, a szyszki zwisają.",
+              ua: "Дві хвоїнки в пучку — це ключ сосни. Ялина має хвою по одній. Вона колюча, а шишки звисають."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Miękkie igły i stojące szyszki należą do jodły. Świerk kłuje, a jego szyszki zwisają.",
+              ua: "М’яка хвоя і стоячі шишки належать ялиці. Ялина коле, а її шишки звисають."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Świerk kłuje. Igły rosną pojedynczo, a szyszki zwisają.",
+          ua: "Ялина коле. Хвоя росте по одній, а шишки звисають."
+        }
+      }
+    },
+    {
+      type: "mistake",
+      heading: { pl: "Typowy błąd. Zielone zimą", ua: "Типова помилка. Зелені взимку" },
+      claim: {
+        pl: "„Świerk i jodła to to samo drzewo, bo oba są zielone zimą.”",
+        ua: "«Ялина і ялиця — це те саме дерево, бо обидва зелені взимку.»"
+      },
+      text: {
+        pl: [
+          "Zimą zielone zostają sosna, świerk i jodła. To za mało na nazwę.",
+          "Świerk kłuje, a szyszki zwisają. Jodła jest miękka, a szyszki stoją."
+        ],
+        ua: [
+          "Взимку зеленими лишаються сосна, ялина і ялиця. Цього замало для назви.",
+          "Ялина коле, а шишки звисають. Ялиця м’яка, а шишки стоять."
+        ]
       }
     },
     {
       type: "practice",
-      heading: { pl: "Świerk", ua: "Ялина" },
+      heading: { pl: "Sam. Chłodny las", ua: "Сам. Прохолодний ліс" },
       task: {
         id: "l28-p2",
         type: "single-choice",
-        question: { pl: "Kłujące igły pojedynczo i zwisające szyszki to:", ua: "Колюча хвоя по одній і звислі шишки — це:" },
+        question: {
+          pl: "W chłodnym wilgotnym lesie gałązka kłuje palec. Igły siedzą pojedynczo, a na mchu leży cała zwisająca szyszka. Uczeń mówi, że to sosna, bo szyszka wisiała. Co poprawić?",
+          ua: "У прохолодному вологому лісі гілка коле палець. Хвоїнки сидять по одній, а на моху лежить ціла звисла шишка. Учень каже, що це сосна, бо шишка висіла. Що виправити?"
+        },
         options: [
-          { id: "a", label: { pl: "świerk", ua: "ялина" } },
-          { id: "b", label: { pl: "jodła", ua: "ялиця" } },
-          { id: "c", label: { pl: "modrzew, bo zrzuca igły", ua: "модрина, бо скидає хвою" } }
+          { id: "a", label: { pl: "kłujące igły pojedynczo i cała zwisająca szyszka to świerk; sosna ma dwie igły w pęczku", ua: "колюча хвоя по одній і ціла звисла шишка — це ялина; сосна має дві хвоїнки в пучку" } },
+          { id: "b", label: { pl: "tak — każde ukłucie znaczy dwie igły sosny", ua: "так — кожен укол означає дві хвоїнки сосни" } },
+          { id: "c", label: { pl: "tak — cała szyszka na mchu to stojąca szyszka jodły", ua: "так — ціла шишка на моху це стояча шишка ялиці" } }
         ],
         answer: "a",
-        explanation: { pl: "Świerk kłuje i zwisa. Jodła miękka i stoi.", ua: "Ялина коле і звисає." }
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Ukłucie nie składa dwóch igieł w pęczek. Sosna ma dwie igły razem. Tu igły są pojedynczo i kłują, a szyszka zwisa: to świerk.",
+              ua: "Укол не складає дві хвоїнки в пучок. Сосна має дві хвоїнки разом. Тут хвоя по одній і коле, а шишка звисає: це ялина."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Jodła rzadko zostawia całą szyszkę na ziemi: jej szyszki stoją i rozpadają się na drzewie. Cała zwisająca szyszka i kłujące igły to świerk.",
+              ua: "Ялиця рідко лишає цілу шишку на землі: її шишки стоять і розпадаються на дереві. Ціла звисла шишка і колюча хвоя — це ялина."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Pojedyncze kłujące igły i cała zwisająca szyszka należą do świerka.",
+          ua: "Окремі колючі хвоїнки і ціла звисла шишка належать ялині."
+        }
+      }
+    },
+
+    {
+      type: "concept",
+      heading: { pl: "Pojęcie. Miękko i stoi", ua: "Поняття. М’яко і стоїть" },
+      visual: vizGh("l28-jodla.png", {
+        alt: { pl: "Miękkie igły jodły i szyszki stojące na gałęzi", ua: "М’яка хвоя ялиці і шишки, що стоять на гілці" },
+        title: { pl: "Nie kłuje. Szyszka rozpada się na drzewie.", ua: "Не коле. Шишка розпадається на дереві." },
+        prompt: { pl: "Plansza lekcji 28: jodła." }
+      }),
+      text: {
+        pl: [
+          ["U ", em("jodły"), " igły są ", em("miękkie"), " i spłaszczone. Od spodu często widać dwa jasne paski. Nie kłują jak u świerka."],
+          ["Szyszki ", em("stoją"), " na gałęzi i rozpadają się na drzewie. Całej szyszki jodły na ziemi prawie nie znajdziesz."],
+          "To nadal szyszka z lekcji 27, nie kwiat i nie owoc. Inaczej trzyma się gałęzi niż u świerka."
+        ],
+        ua: [
+          ["У ", em("ялиці"), " хвоя ", em("м’яка"), " і сплющена. Зі споду часто видно дві світлі смужки. Не коле, як у ялини."],
+          ["Шишки ", em("стоять"), " на гілці і розпадаються на дереві. Цілу шишку ялиці на землі майже не знайдеш."],
+          "Це все ще шишка з уроку 27, не квітка і не плід. Інакше тримається гілки, ніж у ялини."
+        ]
+      }
+    },
+    {
+      type: "example",
+      heading: { pl: "Przykład. Paski i łuski", ua: "Приклад. Смужки і луски" },
+      reveal: true,
+      steps: [
+        {
+          text: {
+            pl: ["Igła jest płaska i miękka. Od spodu ma dwa jasne paski."],
+            ua: ["Хвоя пласка і м’яка. Зі споду має дві світлі смужки."]
+          }
+        },
+        {
+          text: {
+            pl: ["Szyszka stoi. Na drzewie rozpada się, więc na ziemi zostają łuski."],
+            ua: ["Шишка стоїть. На дереві розпадається, тож на землі лишаються луски."]
+          }
+        },
+        {
+          text: {
+            pl: ["Igły, które kłują, i szyszka, która wisi i spada cała, to świerk."],
+            ua: ["Хвоя, яка коле, і шишка, яка висить і падає ціла, — це ялина."]
+          }
+        }
+      ]
+    },
+    {
+      type: "guided-practice",
+      heading: { pl: "Krótkie pytanie. Dwa drzewa", ua: "Коротке питання. Два дерева" },
+      task: {
+        id: "l28-g3",
+        type: "single-choice",
+        question: {
+          pl: "Po czym odróżnisz jodłę od świerka?",
+          ua: "По чому відрізниш ялицю від ялини?"
+        },
+        options: [
+          { id: "a", label: { pl: "jodła ma igły miękkie i szyszki, które stoją; świerk kłuje, a szyszki zwisają", ua: "ялиця має м’яку хвою і шишки, які стоять; ялина коле, а шишки звисають" } },
+          { id: "b", label: { pl: "jodła ma zawsze dwie igły w pęczku", ua: "ялиця завжди має дві хвоїнки в пучку" } },
+          { id: "c", label: { pl: "świerk zrzuca igły co jesień, a jodła nie", ua: "ялина скидає хвою щоосені, а ялиця ні" } }
+        ],
+        answer: "a",
+        hint: {
+          pl: "Szukaj miękkiej igły i szyszki, która stoi.",
+          ua: "Шукай м’яку хвою і шишку, яка стоїть."
+        },
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Dwie igły w pęczku to sosna. Jodła ma igły miękkie, pojedynczo, a szyszki stoją. Świerk kłuje i ma szyszki zwisające.",
+              ua: "Дві хвоїнки в пучку — це сосна. Ялиця має м’яку хвою, по одній, а шишки стоять. Ялина коле і має звислі шишки."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Igły zrzuca modrzew, nie świerk. Świerk zostaje zielony, kłuje, a szyszki zwisają. Jodła jest miękka, a szyszki stoją.",
+              ua: "Хвою скидає модрина, не ялина. Ялина лишається зеленою, коле, а шишки звисають. Ялиця м’яка, а шишки стоять."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Jodła jest miękka, a szyszki stoją. Świerk kłuje, a szyszki zwisają.",
+          ua: "Ялиця м’яка, а шишки стоять. Ялина коле, а шишки звисають."
+        }
+      }
+    },
+    {
+      type: "mistake",
+      heading: { pl: "Typowy błąd. Pusta ziemia", ua: "Типова помилка. Порожня земля" },
+      claim: {
+        pl: "„Na ziemi nie ma całej szyszki, więc to drzewo w ogóle nie ma szyszek.”",
+        ua: "«На землі немає цілої шишки, тож це дерево взагалі не має шишок.»"
+      },
+      text: {
+        pl: [
+          "U jodły szyszki stoją i rozpadają się na gałęzi.",
+          "Na ziemi zostają łuski. Szyszka była. To nie kwiat i nie zgubione igły modrzewia."
+        ],
+        ua: [
+          "У ялиці шишки стоять і розпадаються на гілці.",
+          "На землі лишаються луски. Шишка була. Це не квітка і не загублені хвоїнки модрини."
+        ]
       }
     },
     {
       type: "practice",
-      heading: { pl: "Jodła", ua: "Ялиця" },
+      heading: { pl: "Sam. Jasne paski", ua: "Сам. Світлі смужки" },
       task: {
         id: "l28-p3",
-        type: "true-false",
-        question: { pl: "Jodła ma miękkie igły. Jej szyszki stoją i rozpadają się na drzewie.", ua: "Ялиця має м’яку хвою. Її шишки стоять і розпадаються на дереві." },
-        answer: true,
-        explanation: { pl: "Miękko + stoi. Świerk: kłuje + zwisa.", ua: "М’яко + стоїть." }
+        type: "single-choice",
+        question: {
+          pl: "Igły są płaskie i miękkie, od spodu mają dwa jasne paski. Na górze gałęzi szyszki stoją, a na gałęzi leżą łuski. Uczeń mówi, że to świerk, a stojąca szyszka jest kwiatem. Co poprawić?",
+          ua: "Хвоїнки пласкі і м’які, зі споду мають дві світлі смужки. Нагорі гілки шишки стоять, а на гілці лежать луски. Учень каже, що це ялина, а шишка, що стоїть, є квіткою. Що виправити?"
+        },
+        options: [
+          { id: "a", label: { pl: "miękkie igły i stojące szyszki, które się rozpadają, to jodła; to nie kwiat i nie świerk", ua: "м’яка хвоя і стоячі шишки, які розпадаються, — це ялиця; це не квітка і не ялина" } },
+          { id: "b", label: { pl: "tak — jasne paski zamieniają igłę w pyłek świerka", ua: "так — світлі смужки перетворюють хвою на пилок ялини" } },
+          { id: "c", label: { pl: "tak — stojąca szyszka jest kłosem skrzypu", ua: "так — стояча шишка є колоском хвоща" } }
+        ],
+        answer: "a",
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Jasne paski są pod miękką igłą jodły. Pyłek pochodzi z szyszki męskiej, z lekcji 27. Świerk kłuje, a jego szyszki zwisają.",
+              ua: "Світлі смужки є під м’якою хвоєю ялиці. Пилок походить із чоловічої шишки, з уроку 27. Ялина коле, а її шишки звисають."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Kłos skrzypu znasz z lekcji 26. Tu szyszka stoi na jodle i rozpada się na drzewie. Igły są miękkie. To nie kwiat.",
+              ua: "Колосок хвоща знаєш з уроку 26. Тут шишка стоїть на ялиці і розпадається на дереві. Хвоя м’яка. Це не квітка."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Miękkie igły i stojące szyszki nazywają jodłę. To nie kwiat.",
+          ua: "М’яка хвоя і стоячі шишки називають ялицю. Це не квітка."
+        }
+      }
+    },
+
+    {
+      type: "concept",
+      heading: { pl: "Pojęcie. Złote igły", ua: "Поняття. Золота хвоя" },
+      visual: vizGh("l28-modrzew.png", {
+        alt: { pl: "Zielone pęczki modrzewia i złote igły, które opadają", ua: "Зелені пучки модрини і золота хвоя, що опадає" },
+        title: { pl: "Z tej czwórki tylko modrzew gubi igły.", ua: "З цієї четвірки лише модрина губить хвою." },
+        prompt: { pl: "Plansza lekcji 28: modrzew." }
+      }),
+      text: {
+        pl: [
+          ["", em("Modrzew"), " ma miękkie igły w pęczkach, więcej niż dwie. Jesienią żółkną i ", em("opadają"), "."],
+          "Sosna, świerk i jodła zimą zostają zielone. Modrzew jest wtedy goły, ale na gałęziach zostają szyszki. To nadal drzewo iglaste, nie dąb.",
+          "Opadających igieł nie bierz za liście klonu. Klon jest później."
+        ],
+        ua: [
+          ["", em("Модрина"), " має м’яку хвою в пучках, більше ніж дві. Восени жовтіє і ", em("опадає"), "."],
+          "Сосна, ялина і ялиця взимку лишаються зеленими. Модрина тоді гола, але на гілках лишаються шишки. Це все ще хвойне дерево, не дуб.",
+          "Опалу хвою не бери за листки клена. Клен є пізніше."
+        ]
+      }
+    },
+    {
+      type: "example",
+      heading: { pl: "Przykład. Trzy pory", ua: "Приклад. Три пори" },
+      reveal: true,
+      steps: [
+        {
+          text: {
+            pl: ["Latem igły są miękkie i siedzą w pęczkach, więcej niż dwie."],
+            ua: ["Улітку хвоя м’яка і сидить у пучках, більше ніж дві."]
+          }
+        },
+        {
+          text: {
+            pl: ["Jesienią żółkną i leżą pod drzewem."],
+            ua: ["Восени жовтіють і лежать під деревом."]
+          }
+        },
+        {
+          text: {
+            pl: ["Zimą gałązka jest goła, a szyszki zostają. To nie dąb."],
+            ua: ["Взимку гілка гола, а шишки лишаються. Це не дуб."]
+          }
+        }
+      ]
+    },
+    {
+      type: "guided-practice",
+      heading: { pl: "Krótkie pytanie. Jesień", ua: "Коротке питання. Осінь" },
+      task: {
+        id: "l28-g4",
+        type: "single-choice",
+        question: {
+          pl: "Co z tej czwórki robi jesienią tylko modrzew?",
+          ua: "Що з цієї четвірки восени робить лише модрина?"
+        },
+        options: [
+          { id: "a", label: { pl: "żółknie i zrzuca igły, a szyszki zostają", ua: "жовтіє і скидає хвою, а шишки лишаються" } },
+          { id: "b", label: { pl: "zostaje zielony i kłuje jak świerk", ua: "лишається зеленою і коле як ялина" } },
+          { id: "c", label: { pl: "zamienia szyszki w jabłka", ua: "перетворює шишки на яблука" } }
+        ],
+        answer: "a",
+        hint: {
+          pl: "Szukaj drzewa, które żółknie i gubi igły.",
+          ua: "Шукай дерево, яке жовтіє і губить хвою."
+        },
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Zielony i kłujący zimą zostaje świerk. Modrzew z tej czwórki żółknie i zrzuca igły. Szyszki na nim zostają.",
+              ua: "Зеленою і колючою взимку лишається ялина. Модрина з цієї четвірки жовтіє і скидає хвою. Шишки на ній лишаються."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Jabłko jest owocem z późniejszej lekcji. Modrzew zostaje drzewem iglastym: gubi igły, a szyszki trzyma.",
+              ua: "Яблуко є плодом із пізнішого уроку. Модрина лишається хвойним деревом: губить хвою, а шишки тримає."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Modrzew żółknie i zrzuca igły. Szyszki zostają, więc to nadal iglak.",
+          ua: "Модрина жовтіє і скидає хвою. Шишки лишаються, тож це все ще хвойне дерево."
+        }
+      }
+    },
+    {
+      type: "mistake",
+      heading: { pl: "Typowy błąd. Goły dąb", ua: "Типова помилка. Голий дуб" },
+      claim: {
+        pl: "„Skoro gubi igły, to nie jest drzewo iglaste, tylko dąb.”",
+        ua: "«Щойно губить хвою, то це не хвойне дерево, лише дуб.»"
+      },
+      text: {
+        pl: [
+          "Dąb i klon poznasz później. One nie mają szyszek.",
+          "Modrzew gubi igły, ale zostaje iglakiem. Sosna, świerk i jodła zimą są zielone."
+        ],
+        ua: [
+          "Дуб і клен пізнаєш пізніше. Вони не мають шишок.",
+          "Модрина губить хвою, але лишається хвойним деревом. Сосна, ялина і ялиця взимку зелені."
+        ]
       }
     },
     {
       type: "practice",
-      heading: { pl: "Modrzew", ua: "Модрина" },
+      heading: { pl: "Sam. Listopad w parku", ua: "Сам. Листопад у парку" },
       task: {
         id: "l28-p4",
         type: "single-choice",
-        question: { pl: "Które drzewo iglaste zrzuca igły jesienią?", ua: "Яке хвойне дерево скидає хвою восени?" },
+        question: {
+          pl: "W listopadzie drzewo w parku ma gołe gałązki i małe szyszki. Na ziemi leżą złote igły w pęczkach. Uczeń mówi, że świerk zachorował i zgubił igły, więc trzeba go wyciąć. Co poprawić?",
+          ua: "У листопаді дерево в парку має голі гілки і малі шишки. На землі лежать золоті хвоїнки в пучках. Учень каже, що ялина захворіла і загубила хвою, тож її треба спиляти. Що виправити?"
+        },
         options: [
-          { id: "a", label: { pl: "modrzew", ua: "модрина" } },
-          { id: "b", label: { pl: "świerk", ua: "ялина" } },
-          { id: "c", label: { pl: "jodła", ua: "ялиця" } }
+          { id: "a", label: { pl: "to modrzew: co jesień zrzuca igły i zostaje iglakiem z szyszkami; świerk zostaje zielony", ua: "це модрина: щоосені скидає хвою і лишається хвойним деревом із шишками; ялина лишається зеленою" } },
+          { id: "b", label: { pl: "tak — każda goła gałązka z szyszką to chory świerk", ua: "так — кожна гола гілка з шишкою це хвора ялина" } },
+          { id: "c", label: { pl: "tak — złote igły na ziemi to liście klonu", ua: "так — золоті хвоїнки на землі це листки клена" } }
         ],
         answer: "a",
-        explanation: { pl: "Tylko modrzew z tej czwórki gubi igły zimą.", ua: "Лише модрина з цієї четвірки губить хвою." }
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Świerk zimą zostaje zielony, a igły ma pojedynczo i kłujące. Gołe gałązki, złote igły w pęczkach i szyszki to modrzew. Nie jest chory tylko dlatego, że zgubił igły.",
+              ua: "Ялина взимку лишається зеленою, а хвою має по одній і колючу. Голі гілки, золоті хвоїнки в пучках і шишки — це модрина. Вона не хвора лише тому, що загубила хвою."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Liście klonu są później. Tu na ziemi leżą igły w pęczkach, a na gałązce są szyszki. To modrzew.",
+              ua: "Листки клена є пізніше. Тут на землі лежать хвоїнки в пучках, а на гілці є шишки. Це модрина."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Modrzew co jesień zrzuca igły. Szyszki zostają. Świerk zostaje zielony.",
+          ua: "Модрина щоосені скидає хвою. Шишки лишаються. Ялина лишається зеленою."
+        }
+      }
+    },
+
+    {
+      type: "concept",
+      heading: { pl: "Pojęcie. Kulka i czerwień", ua: "Поняття. Кулька і червоне" },
+      visual: vizGh("l28-jalowiec-cis.png", {
+        alt: { pl: "Jałowiec z niebieskawymi szyszkojagodami i cis z czerwoną osnówką", ua: "Ялівець із синюватими шишкоягодами і тис із червоною шишечкою" },
+        title: { pl: "To nie śliwka. Cisa nie zrywamy.", ua: "Це не слива. Тис не зриваємо." },
+        prompt: { pl: "Plansza lekcji 28: jałowiec i cis." }
+      }),
+      text: {
+        pl: [
+          ["", em("Jałowiec"), " bywa krzewem. Ma igły albo łuski. Niebieskawe kulki to ", em("szyszkojagody"), ": przekształcone szyszki, nie śliwki."],
+          ["", em("Cis"), " ma czerwoną ", em("osnówkę"), ". Prawie całe ciało cisa jest trujące. Nie zrywamy i nie jemy. Jeśli ktoś już zerwał, mówisz dorosłemu."],
+          "Oba są nagonasienne, jak sosna z lekcji 27. Wygląd jest inny. Czerwonej osnówki nie bierzesz za owoc."
+        ],
+        ua: [
+          ["", em("Ялівець"), " буває кущем. Має хвою або луски. Синюваті кульки — це ", em("шишкоягоди"), ": видозмінені шишки, не сливи."],
+          ["", em("Тис"), " має червону ", em("шишечку"), ". Майже все тіло тиса отруйне. Не зриваємо і не їмо. Якщо хтось уже зірвав, кажеш дорослому."],
+          "Обидва голонасінні, як сосна з уроку 27. Вигляд інший. Червону шишечку не береш за плід."
+        ]
+      }
+    },
+    {
+      type: "example",
+      heading: { pl: "Przykład. Dwa krzewy", ua: "Приклад. Два кущі" },
+      reveal: true,
+      steps: [
+        {
+          text: {
+            pl: ["Niebieskawa kulka jałowca jest szyszką, nie miąższem śliwki."],
+            ua: ["Синювата кулька ялівцю є шишкою, не м’якоттю сливи."]
+          }
+        },
+        {
+          text: {
+            pl: ["Czerwona osnówka cisa zostaje na gałęzi. Nie zrywasz jej."],
+            ua: ["Червона шишечка тиса лишається на гілці. Не зриваєш її."]
+          }
+        },
+        {
+          text: {
+            pl: ["To nie kwiat jabłoni i nie puszka mchu."],
+            ua: ["Це не квітка яблуні і не коробочка моху."]
+          }
+        }
+      ]
+    },
+    {
+      type: "guided-practice",
+      heading: { pl: "Krótkie pytanie. Niebieska kulka", ua: "Коротке питання. Синювата кулька" },
+      task: {
+        id: "l28-g5",
+        type: "single-choice",
+        question: {
+          pl: "Czym jest niebieskawa kulka na jałowcu?",
+          ua: "Чим є синювата кулька на ялівці?"
+        },
+        options: [
+          { id: "a", label: { pl: "szyszkojagodą, czyli przekształconą szyszką, nie śliwką", ua: "шишкоягодою, тобто видозміненою шишкою, не сливою" } },
+          { id: "b", label: { pl: "owocem jabłoni", ua: "плодом яблуні" } },
+          { id: "c", label: { pl: "puszką zarodnioną mchu", ua: "коробочкою зі спорами моху" } }
+        ],
+        answer: "a",
+        hint: {
+          pl: "Kulka jest szyszką. Śliwka jest później.",
+          ua: "Кулька є шишкою. Слива є пізніше."
+        },
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Owoc jabłoni jest później i osłania nasiona. Niebieskawa kulka jałowca jest szyszkojagodą: przekształconą szyszką.",
+              ua: "Плід яблуні є пізніше і вкриває насіння. Синювата кулька ялівцю є шишкоягодою: видозміненою шишкою."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Puszka z zarodnikami należy do mchu. Na jałowcu kulka jest szyszkojagodą, nie owocem.",
+              ua: "Коробочка зі спорами належить моху. На ялівці кулька є шишкоягодою, не плодом."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Szyszkojagoda jałowca jest przekształconą szyszką, nie śliwką.",
+          ua: "Шишкоягода ялівцю є видозміненою шишкою, не сливою."
+        }
+      }
+    },
+    {
+      type: "mistake",
+      heading: { pl: "Typowy błąd. Czerwony owoc", ua: "Типова помилка. Червоний плід" },
+      claim: {
+        pl: "„Czerwona osnówka wygląda jak owoc, więc cisa można zerwać i zjeść.”",
+        ua: "«Червона шишечка виглядає як плід, тож тис можна зірвати і з’їсти.»"
+      },
+      text: {
+        pl: [
+          "Wygląd nie robi z osnówki jabłka.",
+          "Prawie całe ciało cisa jest trujące. Nie zrywasz i nie jesz. Jeśli ktoś już zerwał, mówisz dorosłemu."
+        ],
+        ua: [
+          "Вигляд не робить із шишечки яблуко.",
+          "Майже все тіло тиса отруйне. Не зриваєш і не їси. Зірване кажеш дорослому."
+        ]
       }
     },
     {
       type: "practice",
-      heading: { pl: "Znaczenie", ua: "Значення" },
+      heading: { pl: "Sam. Parkowa alejka", ua: "Сам. Паркова доріжка" },
       task: {
         id: "l28-p5",
-        type: "multiple-choice",
-        question: { pl: "Zaznacz znaczenie drzew iglastych z tej lekcji.", ua: "Познач значення хвойних дерев з цього уроку." },
+        type: "single-choice",
+        question: {
+          pl: "Przy alejce krzew ma niebieskawe kulki, a obok drzewo ma czerwone osnówki. Uczeń chce zebrać czerwone „jak jagody” i mówi, że niebieskie to śliwki. Co poprawić?",
+          ua: "Біля доріжки кущ має синюваті кульки, а поруч дерево має червоні шишечки. Учень хоче зібрати червоні «як ягоди» і каже, що сині — це сливи. Що виправити?"
+        },
         options: [
-          { id: "a", label: { pl: "drewno (belki, papier)", ua: "деревина (балки, папір)" } },
-          { id: "b", label: { pl: "żywica", ua: "живиця" } },
-          { id: "c", label: { pl: "las (gleba, schronienie)", ua: "ліс (ґрунт, сховок)" } },
-          { id: "d", label: { pl: "kwiat jabłoni", ua: "квітка яблуні" } }
+          { id: "a", label: { pl: "niebieskie to szyszkojagody jałowca, nie śliwki; czerwonej osnówki cisa nie zrywamy, bo cis jest trujący", ua: "сині — це шишкоягоди ялівцю, не сливи; червону шишечку тиса не зриваємо, бо тис отруйний" } },
+          { id: "b", label: { pl: "tak — czerwone zawsze jest jabłkiem do jedzenia", ua: "так — червоне завжди є яблуком для їжі" } },
+          { id: "c", label: { pl: "tak — cis to mech, a czerwone to puszka z zarodnikami", ua: "так — тис це мох, а червоне це коробочка зі спорами" } }
         ],
-        answer: ["a", "b", "c"],
-        explanation: { pl: "Drewno, żywica, las. Kwiat = L30.", ua: "Деревина, живиця, ліс." }
+        answer: "a",
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Jabłko jest owocem z późniejszej lekcji. Czerwona osnówka należy do cisa. Prawie całe ciało cisa jest trujące: nie zrywasz i nie jesz.",
+              ua: "Яблуко є плодом із пізнішого уроку. Червона шишечка належить тису. Майже все тіло тиса отруйне: не зриваєш і не їси."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Puszka z zarodnikami należy do mchu. Cis jest drzewem iglastym z czerwoną osnówką. Niebieskie kulki jałowca są szyszkojagodami, nie śliwkami.",
+              ua: "Коробочка зі спорами належить моху. Тис є хвойним деревом із червоною шишечкою. Синюваті кульки ялівцю є шишкоягодами, не сливами."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Szyszkojagoda nie jest śliwką. Cisa nie zrywasz, bo jest trujący.",
+          ua: "Шишкоягода не є сливою. Тис не зриваєш, бо він отруйний."
+        }
       }
     },
+
     {
-      type: "check",
-      heading: { pl: "Sprawdzenie 1. Sosna", ua: "Перевірка 1. Сосна" },
+      type: "concept",
+      heading: { pl: "Pojęcie. Deska, kropla, las", ua: "Поняття. Дошка, крапля, ліс" },
+      visual: vizGh("l28-znaczenie.png", {
+        alt: { pl: "Deski, krople żywicy na pniu i las iglasty", ua: "Дошки, краплі живиці на стовбурі і хвойний ліс" },
+        title: { pl: "Drewno, żywica, las. Kory nie zdzieramy.", ua: "Деревина, живиця, ліс. Кору не здираємо." },
+        prompt: { pl: "Plansza lekcji 28: drewno, żywica, las." }
+      }),
       text: {
-        pl: ["To sprawdzenie Paszportu."],
-        ua: ["Це перевірка Паспорта."]
+        pl: [
+          ["Drewno iglaste idzie na belki, deski i papier. Z pnia sączy się ", em("żywica"), ". Zakleja ranę drzewa."],
+          "Las iglasty trzyma glebę na stoku, daje zwierzętom schronienie i tlen z fotosyntezy, jak na lekcji 9.",
+          "Kory nie zdzierasz dla zabawy. Dębu i lipy dziś nie przeglądasz. One są później."
+        ],
+        ua: [
+          ["Хвойна деревина йде на балки, дошки і папір. Зі стовбура сочиться ", em("живиця"), ". Заліплює рану дерева."],
+          "Хвойний ліс тримає ґрунт на схилі, дає тваринам сховок і кисень із фотосинтезу, як на уроці 9.",
+          "Кору не здираєш для забави. Дуб і липу сьогодні не оглядаєш. Вони є пізніше."
+        ]
+      }
+    },
+    {
+      type: "example",
+      heading: { pl: "Przykład. Trzy kadry", ua: "Приклад. Три кадри" },
+      reveal: true,
+      steps: [
+        {
+          text: {
+            pl: ["Z pnia powstają deski i papier."],
+            ua: ["Зі стовбура виходять дошки і папір."]
+          }
+        },
+        {
+          text: {
+            pl: ["Na ranie widać kroplę żywicy. Kora zostaje na drzewie."],
+            ua: ["На рані видно краплю живиці. Кора лишається на дереві."]
+          }
+        },
+        {
+          text: {
+            pl: ["Las na stoku trzyma glebę i daje schronienie."],
+            ua: ["Ліс на схилі тримає ґрунт і дає сховок."]
+          }
+        }
+      ]
+    },
+    {
+      type: "guided-practice",
+      heading: { pl: "Krótkie pytanie. Trzy słowa", ua: "Коротке питання. Три слова" },
+      task: {
+        id: "l28-g6",
+        type: "single-choice",
+        question: {
+          pl: "Które znaczenie drzew iglastych jest z tej lekcji?",
+          ua: "Яке значення хвойних дерев є з цього уроку?"
+        },
+        options: [
+          { id: "a", label: { pl: "drewno, żywica i las", ua: "деревина, живиця і ліс" } },
+          { id: "b", label: { pl: "kwiat jabłoni", ua: "квітка яблуні" } },
+          { id: "c", label: { pl: "puszka zarodniona mchu", ua: "коробочка моху зі спорами" } }
+        ],
+        answer: "a",
+        hint: {
+          pl: "Szukaj deski, kropli na pniu i lasu na stoku.",
+          ua: "Шукай дошку, краплю на стовбурі і ліс на схилі."
+        },
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Kwiat jabłoni jest później. Z tej lekcji drzewa iglaste dają drewno, żywicę i las.",
+              ua: "Квітка яблуні є пізніше. З цього уроку хвойні дерева дають деревину, живицю і ліс."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Puszka z zarodnikami należy do mchu. Drewno, żywica i las to znaczenie drzew iglastych.",
+              ua: "Коробочка зі спорами належить моху. Деревина, живиця і ліс — це значення хвойних дерев."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Drzewa iglaste dają drewno, żywicę i las.",
+          ua: "Хвойні дерева дають деревину, живицю і ліс."
+        }
+      }
+    },
+    {
+      type: "mistake",
+      heading: { pl: "Typowy błąd. Kora dla zabawy", ua: "Типова помилка. Кора для забави" },
+      claim: {
+        pl: "„Korę można zdzierać dla zabawy, bo żywica to tylko lepki brud.”",
+        ua: "«Кору можна здирати для забави, бо живиця — це лише липкий бруд.»"
       },
+      text: {
+        pl: [
+          "Żywica zakleja ranę pnia. Kora zostaje na drzewie.",
+          "Drewno idzie na deski i papier. Las trzyma glebę i daje schronienie."
+        ],
+        ua: [
+          "Живиця заліплює рану стовбура. Кора лишається на дереві.",
+          "Деревина йде на дошки і папір. Ліс тримає ґрунт і дає сховок."
+        ]
+      }
+    },
+    {
+      type: "practice",
+      heading: { pl: "Sam. Po wichurze", ua: "Сам. Після бурі" },
       task: {
-        id: "l28-s1",
+        id: "l28-p6",
         type: "single-choice",
-        question: { pl: "Jak rozpoznasz sosnę?", ua: "Як розпізнаєш сосну?" },
+        question: {
+          pl: "Po wichurze na złamanej gałęzi wisi lepka kropla, a stolarz bierze z takich pni deski. Uczeń mówi, że kropla to sok z liścia dębu, a deski to torf. Co poprawić?",
+          ua: "Після бурі на зламаній гілці висить липка крапля, а столяр бере з таких стовбурів дошки. Учень каже, що крапля — це сік із листка дуба, а дошки — це торф. Що виправити?"
+        },
         options: [
-          { id: "a", label: { pl: "dwie igły w pęczku", ua: "дві хвоїнки в пучку" } },
-          { id: "b", label: { pl: "szyszki wyłącznie stojące jak u jodły", ua: "шишки лише стоячі як у ялиці" } },
-          { id: "c", label: { pl: "zrzuca igły co jesień", ua: "скидає хвою щоосені" } }
+          { id: "a", label: { pl: "kropla to żywica i zakleja ranę; deski to drewno; torf powstaje z mchów", ua: "крапля — це живиця і заліплює рану; дошки — це деревина; торф виникає з мохів" } },
+          { id: "b", label: { pl: "tak — każda lepka kropla na iglaku jest pyłkiem", ua: "так — кожна липка крапля на хвойному є пилком" } },
+          { id: "c", label: { pl: "tak — deski powstają z szyszkojagód jałowca", ua: "так — дошки виникають із шишкоягід ялівцю" } }
         ],
         answer: "a",
-        explanation: { pl: "Pęczek po dwie.", ua: "Пучок по дві." }
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Pyłek jest żółtym proszkiem z szyszki męskiej. Lepka kropla na ranie pnia to żywica. Deski są z drewna, nie z torfu.",
+              ua: "Пилок є жовтим порошком із чоловічої шишки. Липка крапля на рані стовбура — це живиця. Дошки є з деревини, не з торфу."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Szyszkojagoda jest przekształconą szyszką jałowca, nie deską. Deski są z drewna. Kropla na ranie to żywica. Torf powstaje z mchów.",
+              ua: "Шишкоягода є видозміненою шишкою ялівцю, не дошкою. Дошки є з деревини. Крапля на рані — це живиця. Торф виникає з мохів."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Żywica zakleja ranę. Deski są z drewna. Torf powstaje z mchów.",
+          ua: "Живиця заліплює рану. Дошки є з деревини. Торф виникає з мохів."
+        }
+      }
+    },
+
+    {
+      type: "goal",
+      heading: { pl: "Sprawdzian bez podpowiedzi", ua: "Перевірка без підказок" },
+      text: {
+        pl: [
+          "Pięć pytań jak w szkole. Przycisku podpowiedzi nie ma.",
+          "Jeśli odpowiedź będzie nietrafiona, zobaczysz, który krok sprawdziłeś nie tym słowem."
+        ],
+        ua: [
+          "П’ять питань як у школі. Кнопки підказки немає.",
+          "Якщо відповідь не підійде, побачиш, який крок ти перевірив не тим словом."
+        ]
       }
     },
     {
       type: "check",
-      heading: { pl: "Sprawdzenie 2. Świerk", ua: "Перевірка 2. Ялина" },
+      heading: { pl: "Sprawdzian 1. Zielnik", ua: "Перевірка 1. Гербарій" },
       task: {
-        id: "l28-s2",
-        type: "true-false",
-        question: { pl: "Świerk rozpoznasz po kłujących igłach (pojedynczo) i zwisających szyszkach.", ua: "Ялину впізнаєш по колючій хвої (по одній) і звислих шишках." },
-        answer: true,
-        explanation: { pl: "Kłuje i zwisa.", ua: "Коле і звисає." }
-      }
-    },
-    {
-      type: "check",
-      heading: { pl: "Sprawdzenie 3. Jodła", ua: "Перевірка 3. Ялиця" },
-      task: {
-        id: "l28-s3",
+        id: "l28-t1",
         type: "single-choice",
-        question: { pl: "Jak rozpoznasz jodłę?", ua: "Як розпізнаєш ялицю?" },
+        question: {
+          pl: "W szkolnym zielniku gałązka ma dwie długie igły spięte razem. Obok leżą płaty kory. Uczeń podpisuje kartkę „jodła”, bo igły są zielone. Co pasuje do lekcji?",
+          ua: "У шкільному гербарії гілка має дві довгі хвоїнки, зчеплені разом. Поруч лежать пласти кори. Учень підписує картку «ялиця», бо хвоя зелена. Що пасує до уроку?"
+        },
         options: [
-          { id: "a", label: { pl: "igły miękkie; szyszki stoją i rozpadają się na drzewie", ua: "хвоя м’яка; шишки стоять і розпадаються на дереві" } },
-          { id: "b", label: { pl: "zawsze dwie igły w pęczku", ua: "завжди дві хвоїнки в пучку" } },
-          { id: "c", label: { pl: "kłuje jak świerk i ma tylko zwisające szyszki", ua: "коле як ялина і має лише звислі шишки" } }
+          { id: "a", label: { pl: "dwie igły w pęczku to sosna; zielona barwa nie wybiera jodły", ua: "дві хвоїнки в пучку — це сосна; зелений колір не вибирає ялицю" } },
+          { id: "b", label: { pl: "tak — zielona igła zawsze jest miękką igłą jodły", ua: "так — зелена хвоя завжди є м’якою хвоєю ялиці" } },
+          { id: "c", label: { pl: "tak — pęczek znaczy, że to modrzew, który już zrzucił igły", ua: "так — пучок означає, що це модрина, яка вже скинула хвою" } }
         ],
         answer: "a",
-        explanation: { pl: "Miękko i stoi.", ua: "М’яко і стоїть." }
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Zielone zimą są sosna, świerk i jodła. Jodła ma igły miękkie, a szyszki stoją. Dwie igły w pęczku to sosna.",
+              ua: "Зеленими взимку є сосна, ялина і ялиця. Ялиця має м’яку хвою, а шишки стоять. Дві хвоїнки в пучку — це сосна."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Modrzew igły zrzuca, więc w zielniku nie zostałyby spięte po dwie na gałązce. Dwie igły razem to sosna.",
+              ua: "Модрина хвою скидає, тож у гербарії вона не лишилася б зчепленою по дві на гілці. Дві хвоїнки разом — це сосна."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Dwie igły w pęczku nazywają sosnę.",
+          ua: "Дві хвоїнки в пучку називають сосну."
+        }
       }
     },
     {
       type: "check",
-      heading: { pl: "Sprawdzenie 4. Modrzew", ua: "Перевірка 4. Модрина" },
+      heading: { pl: "Sprawdzian 2. Drzewko w klasie", ua: "Перевірка 2. Деревце в класі" },
       task: {
-        id: "l28-s4",
+        id: "l28-t2",
         type: "single-choice",
-        question: { pl: "Co powiesz o modrzewiu?", ua: "Що скажеш про модрину?" },
+        question: {
+          pl: "Na drzewku w klasie igły kłują palec i siedzą pojedynczo, a szyszki wiszą. Uczeń mówi, że to jodła, bo korona jest stożkiem. Co pasuje do lekcji?",
+          ua: "На деревці в класі хвоя коле палець і сидить по одній, а шишки висять. Учень каже, що це ялиця, бо крона є конусом. Що пасує до уроку?"
+        },
         options: [
-          { id: "a", label: { pl: "zrzuca igły jesienią; zimą jest „goły”, ale to nadal iglak z szyszkami", ua: "скидає хвою восени; взимку «гола», але це все одно хвойне дерево з шишками" } },
-          { id: "b", label: { pl: "to dąb z lekcji 33", ua: "це дуб з уроку 33" } },
-          { id: "c", label: { pl: "nigdy nie ma szyszek, tylko kwiaty", ua: "ніколи не має шишок, лише квітки" } }
+          { id: "a", label: { pl: "kłujące igły pojedynczo i zwisające szyszki to świerk; stożek korony nie jest kluczem", ua: "колюча хвоя по одній і звислі шишки — це ялина; конус крони не є ключем" } },
+          { id: "b", label: { pl: "tak — każdy stożek korony ma miękkie igły jodły", ua: "так — кожен конус крони має м’яку хвою ялиці" } },
+          { id: "c", label: { pl: "tak — wisząca szyszka jest owocem jabłoni", ua: "так — висяча шишка є плодом яблуні" } }
         ],
         answer: "a",
-        explanation: { pl: "Jedyny z czwórki gubi igły. Nie dąb i nie kwiat.", ua: "Єдина з четвірки губить хвою." }
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Stożek korony bywa u świerka i nie nazywa jodły. Jodła ma igły miękkie, a szyszki stoją. Tu igły kłują i wiszą szyszki: to świerk.",
+              ua: "Конус крони буває в ялини і не називає ялицю. Ялиця має м’яку хвою, а шишки стоять. Тут хвоя коле і висять шишки: це ялина."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Owoc jabłoni jest później. Wisząca szyszka świerka nie osłania nasion jak jabłko. Igły kłują i rosną pojedynczo.",
+              ua: "Плід яблуні є пізніше. Звисла шишка ялини не вкриває насіння, як яблуко. Хвоя коле і росте по одній."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Świerk kłuje, igły ma pojedynczo, a szyszki zwisają.",
+          ua: "Ялина коле, хвою має по одній, а шишки звисають."
+        }
       }
     },
     {
       type: "check",
-      heading: { pl: "Sprawdzenie 5. Znaczenie", ua: "Перевірка 5. Значення" },
+      heading: { pl: "Sprawdzian 3. Łuski pod drzewem", ua: "Перевірка 3. Луски під деревом" },
       task: {
-        id: "l28-s5",
-        type: "multiple-choice",
-        question: { pl: "Które znaczenie mają drzewa iglaste?", ua: "Яке значення мають хвойні дерева?" },
+        id: "l28-t3",
+        type: "single-choice",
+        question: {
+          pl: "Pod górskim drzewem nie ma całych szyszek, tylko łuski. Na gałęzi igły są miękkie, a szyszki stoją. Uczeń mówi, że drzewo zachorowało, bo zgubiło szyszki jak modrzew igły. Co pasuje do lekcji?",
+          ua: "Під гірським деревом немає цілих шишок, лише луски. На гілці хвоя м’яка, а шишки стоять. Учень каже, що дерево захворіло, бо загубило шишки, як модрина хвою. Що пасує до уроку?"
+        },
         options: [
-          { id: "a", label: { pl: "drewno", ua: "деревина" } },
-          { id: "b", label: { pl: "żywica", ua: "живиця" } },
-          { id: "c", label: { pl: "las (gleba, schronienie)", ua: "ліс (ґрунт, сховок)" } },
-          { id: "d", label: { pl: "puszka zarodniona mchu", ua: "коробочка моху" } }
+          { id: "a", label: { pl: "to jodła: szyszki stoją i rozpadają się na drzewie, a igły zostają miękkie", ua: "це ялиця: шишки стоять і розпадаються на дереві, а хвоя лишається м’якою" } },
+          { id: "b", label: { pl: "tak — łuski na ziemi znaczą, że modrzew zgubił igły", ua: "так — луски на землі означають, що модрина загубила хвою" } },
+          { id: "c", label: { pl: "tak — miękkie igły to zawsze dwie igły sosny w pęczku", ua: "так — м’яка хвоя це завжди дві хвоїнки сосни в пучку" } }
         ],
-        answer: ["a", "b", "c"],
-        explanation: { pl: "Drewno, żywica, las. Puszka = mech.", ua: "Деревина, живиця, ліс." }
+        answer: "a",
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Modrzew gubi igły, a szyszki zostają na gałęzi. Tu igły są miękkie i zostały, a szyszki stoją i rozpadają się. To jodła, nie choroba.",
+              ua: "Модрина губить хвою, а шишки лишаються на гілці. Тут хвоя м’яка і лишилася, а шишки стоять і розпадаються. Це ялиця, не хвороба."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Dwie igły w pęczku to sosna. Miękka igła i stojąca szyszka, która rozpada się na drzewie, to jodła.",
+              ua: "Дві хвоїнки в пучку — це сосна. М’яка хвоя і стояча шишка, яка розпадається на дереві, — це ялиця."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Jodła ma miękkie igły. Szyszki stoją i rozpadają się na drzewie.",
+          ua: "Ялиця має м’яку хвою. Шишки стоять і розпадаються на дереві."
+        }
+      }
+    },
+    {
+      type: "check",
+      heading: { pl: "Sprawdzian 4. Styczeń", ua: "Перевірка 4. Січень" },
+      task: {
+        id: "l28-t4",
+        type: "single-choice",
+        question: {
+          pl: "W styczniu drzewo jest gołe, ale na gałęziach są małe szyszki. Latem miało miękkie igły w pęczkach. Uczeń podpisuje je „dąb”. Co pasuje do lekcji?",
+          ua: "У січні дерево голе, але на гілках є малі шишки. Улітку мало м’яку хвою в пучках. Учень підписує його «дуб». Що пасує до уроку?"
+        },
+        options: [
+          { id: "a", label: { pl: "to modrzew: zrzuca igły, zostaje iglakiem z szyszkami; dąb jest później", ua: "це модрина: скидає хвою, лишається хвойним деревом із шишками; дуб є пізніше" } },
+          { id: "b", label: { pl: "tak — gołe zimą zawsze jest dębem", ua: "так — голе взимку завжди є дубом" } },
+          { id: "c", label: { pl: "tak — szyszki na gołym drzewie to kwiaty jabłoni", ua: "так — шишки на голому дереві це квітки яблуні" } }
+        ],
+        answer: "a",
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Gołe gałęzie z szyszkami to modrzew, nie dąb. Dąb poznasz później i nie ma on szyszek. Sosna, świerk i jodła zimą są zielone.",
+              ua: "Голі гілки з шишками — це модрина, не дуб. Дуб пізнаєш пізніше, і шишок він не має. Сосна, ялина і ялиця взимку зелені."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Kwiat jabłoni jest później. Na gołych gałązkach zostały szyszki modrzewia. Igły opadły jesienią, a drzewo zostało iglakiem.",
+              ua: "Квітка яблуні є пізніше. На голих гілках лишилися шишки модрини. Хвоя опала восени, а дерево лишилося хвойним."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Modrzew zrzuca igły i zostaje drzewem iglastym z szyszkami.",
+          ua: "Модрина скидає хвою і лишається хвойним деревом із шишками."
+        }
+      }
+    },
+    {
+      type: "check",
+      heading: { pl: "Sprawdzian 5. Stok", ua: "Перевірка 5. Схил" },
+      task: {
+        id: "l28-t5",
+        type: "single-choice",
+        question: {
+          pl: "Z iglastego pnia zrobiono deski, na ranie widać żywicę, a las na stoku trzyma glebę. Uczeń mówi, że to znaczenie mchu, bo z mchu jest torf. Co pasuje do lekcji?",
+          ua: "З хвойного стовбура зробили дошки, на рані видно живицю, а ліс на схилі тримає ґрунт. Учень каже, що це значення моху, бо з моху є торф. Що пасує до уроку?"
+        },
+        options: [
+          { id: "a", label: { pl: "drewno, żywica i las to znaczenie drzew iglastych; torf powstaje z mchów", ua: "деревина, живиця і ліс — це значення хвойних дерев; торф виникає з мохів" } },
+          { id: "b", label: { pl: "tak — deski powstają z puszki mchu", ua: "так — дошки виникають із коробочки моху" } },
+          { id: "c", label: { pl: "tak — żywica na ranie jest kwiatem", ua: "так — живиця на рані є квіткою" } }
+        ],
+        answer: "a",
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Puszka mchu ma zarodniki, nie deski. Deski są z drewna iglastego. Żywica zakleja ranę, a las trzyma glebę. Torf powstaje z mchów.",
+              ua: "Коробочка моху має спори, не дошки. Дошки є з хвойної деревини. Живиця заліплює рану, а ліс тримає ґрунт. Торф виникає з мохів."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Kwiat jest później. Kropla na ranie pnia to żywica: zakleja drzewo. Deski są z drewna, a las na stoku trzyma glebę.",
+              ua: "Квітка є пізніше. Крапля на рані стовбура — це живиця: заліплює дерево. Дошки є з деревини, а ліс на схилі тримає ґрунт."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Drewno, żywica i las to znaczenie drzew iglastych. Torf powstaje z mchów.",
+          ua: "Деревина, живиця і ліс — це значення хвойних дерев. Торф виникає з мохів."
+        }
       }
     },
     {
       type: "summary",
       heading: { pl: "Zapamiętaj", ua: "Запам’ятай" },
-      visual: tree({
-        layout: "fork",
-        root: { pl: "iglaste", ua: "хвойні" },
-        items: [
-          { pl: "sosna", ua: "сосна" },
-          { pl: "świerk", ua: "ялина" },
-          { pl: "jodła", ua: "ялиця" },
-          { pl: "modrzew", ua: "модрина" }
-        ]
+      visual: vizGh("l28-znaczenie.png", {
+        alt: { pl: "Deski, żywica i las iglasty", ua: "Дошки, живиця і хвойний ліс" },
+        title: { pl: "Cztery klucze. I las.", ua: "Чотири ключі. І ліс." },
+        prompt: { pl: "Ta sama plansza drewna, żywicy i lasu." }
       }),
       text: {
         pl: [
           "Sosna — dwie igły w pęczku.",
-          "Świerk — kłuje, szyszki zwisają.",
-          "Jodła — miękka, szyszki stoją.",
-          "Modrzew — zrzuca igły.",
-          "Drewno, żywica, las. Cis trujący.",
-          "Kwiat, owoc, drzewa liściaste — później."
+          "Świerk — igły kłujące, pojedynczo, szyszki zwisają.",
+          "Jodła — igły miękkie, szyszki stoją i rozpadają się na drzewie.",
+          "Modrzew — zrzuca igły, zostaje iglakiem z szyszkami.",
+          "Szyszkojagoda jałowca nie jest śliwką. Cisa nie zrywasz. Drewno, żywica, las."
         ],
         ua: [
           "Сосна — дві хвоїнки в пучку.",
-          "Ялина — коле, шишки звисають.",
-          "Ялиця — м’яка, шишки стоять.",
-          "Модрина — скидає хвою.",
-          "Деревина, живиця, ліс. Тис отруйний.",
-          "Квітка, плід, листяні дерева — пізніше."
+          "Ялина — хвоя колюча, по одній, шишки звисають.",
+          "Ялиця — хвоя м’яка, шишки стоять і розпадаються на дереві.",
+          "Модрина — скидає хвою, лишається хвойним деревом із шишками.",
+          "Шишкоягода ялівцю не є сливою. Тис не зриваєш. Деревина, живиця, ліс."
         ]
       }
     },
     {
       type: "review",
-      heading: { pl: "Paszport zaliczony", ua: "Паспорт зараховано" },
+      heading: { pl: "Co już umiem", ua: "Що я вже вмію" },
       items: [
-        { pl: "Potrafię rozpoznać sosnę po dwóch igłach w pęczku.", ua: "Можу розпізнати сосну по двох хвоїнках у пучку." },
-        { pl: "Potrafię rozpoznać świerk (kłuje, szyszki zwisają).", ua: "Можу розпізнати ялину (коле, шишки звисають)." },
-        { pl: "Potrafię rozpoznać jodłę (miękka, szyszki stoją).", ua: "Можу розпізнати ялицю (м’яка, шишки стоять)." },
-        { pl: "Wiem, że modrzew zrzuca igły jesienią.", ua: "Знаю, що модрина скидає хвою восени." },
-        { pl: "Potrafię podać znaczenie: drewno, żywica, las.", ua: "Можу назвати значення: деревина, живиця, ліс." }
+        { pl: "Rozpoznam sosnę po dwóch igłach w pęczku.", ua: "Розпізнаю сосну по двох хвоїнках у пучку." },
+        { pl: "Rozpoznam świerk: igły kłujące pojedynczo, szyszki zwisają.", ua: "Розпізнаю ялину: хвоя колюча по одній, шишки звисають." },
+        { pl: "Rozpoznam jodłę: igły miękkie, szyszki stoją.", ua: "Розпізнаю ялицю: хвоя м’яка, шишки стоять." },
+        { pl: "Powiem, że modrzew zrzuca igły jesienią i zostaje iglakiem.", ua: "Скажу, що модрина скидає хвою восени і лишається хвойним деревом." },
+        { pl: "Podam znaczenie: drewno, żywica, las.", ua: "Назву значення: деревина, живиця, ліс." },
+        { pl: "Nie nazwę szyszkojagody śliwką i nie zerwę cisa.", ua: "Не назву шишкоягоду сливою і не зірву тис." },
+        { pl: "Jeśli któraś odpowiedź nie siadła, wracam do tej części, a nie do całej lekcji.", ua: "Якщо якась відповідь не сіла, повертаюся до тієї частини, а не до всього уроку." }
       ]
     }
   ]

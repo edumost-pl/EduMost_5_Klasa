@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Słownik — EduMost</title>
+  <link rel="stylesheet" href="../../../css/edumost.css">
+  <link rel="stylesheet" href="../../../css/slownik.css">
+</head>
+<body data-subject="biologia">
+  <div class="page">
+    <div class="topbar">
+      <a href="../../../subjects/biologia.html" class="back-link">← Biologia</a>
+      <div class="lang-toggle">
+        <button data-lang="pl">🇵🇱 Polski</button>
+        <button data-lang="ua">🇺🇦 Українська</button>
+      </div>
+    </div>
+    <header class="sl-head" id="sl-title-wrap">
+      <h1 id="sl-title">Słownik</h1>
+      <div id="sl-lead"></div>
+    </header>
+    <div class="sl-tools">
+      <input class="sl-search" id="sl-q" type="search" autocomplete="off" placeholder="Szukaj / Шукай — mitochondrium, мітохондрія">
+      <p class="sl-meta" id="sl-count"></p>
+      <nav class="sl-letters" id="sl-letters" aria-label="Litery"></nav>
+    </div>
+    <div id="sl-list"></div>
+    <p class="sl-empty" id="sl-empty" hidden></p>
+  </div>
+  <script src="../../../js/i18n.js"></script>
+  <script src="./terms.js"></script>
+  <script src="./slownik.js"></script>
+</body>
+</html>

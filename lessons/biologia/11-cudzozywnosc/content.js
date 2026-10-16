@@ -16,464 +16,1012 @@ function vizGh(file, spec) {
   return spec;
 }
 
-
-function tree(spec) {
-  spec.kind = "class-tree";
-  return spec;
-}
-
-
 window.EduMostLessonContent = {
   blocks: [
     {
-      type: "goal",
-      heading: { pl: "Paszport lekcji", ua: "Паспорт уроку" },
-      items: [
-        { pl: "Wyjaśnisz, czym jest cudzożywność — w odróżnieniu od samożywności.", ua: "Поясниш, що таке гетеротрофне живлення — на відміну від саможивлення." },
-        { pl: "Podasz przykłady roślinożercy, mięsożercy i wszystkożercy.", ua: "Наведеш приклади рослиноїдного, м’ясоїдного і всеїдного." },
-        { pl: "Powiesz, czym jest odżywianie saprobiontyczne.", ua: "Скажеш, що таке сапробіонтне живлення." },
-        { pl: "Powiesz, czym jest pasożytnictwo.", ua: "Скажеш, що таке паразитизм." },
-        { pl: "Wyjaśnisz, skąd cudzożywne organizmy biorą pokarm.", ua: "Поясниш, звідки гетеротрофні організми беруть поживу." }
-      ]
+      type: "intro",
+      heading: { pl: "Misja: gotowy pokarm", ua: "Місія: готова пожива" },
+      visual: vizGh("l11-zacznijmy.png", {
+        alt: { pl: "Zając je trawę", ua: "Заєць їсть траву" },
+        title: { pl: "Trawa robi pokarm. Zając musi go zjeść.", ua: "Трава робить поживу. Заєць мусить її з’їсти." },
+        prompt: { pl: "Zdjęcie lekcji 11: zając je trawę." }
+      }),
+      text: {
+        pl: [
+          "To lekcja 11: cudzożywność. Zielona trawa sama robi pokarm w chloroplastach. Zając chloroplastów nie ma, więc zjada roślinę.",
+          "Dziś zobaczysz główne sposoby pobierania gotowego pokarmu. Katalogu królestw nie robimy — to lekcja 15.",
+          "W każdej części kolejność jest ta sama: trudne słowo, przykład, krótkie pytanie, typowy błąd, zadanie samodzielne.",
+          "Na końcu jest sprawdzian bez podpowiedzi."
+        ],
+        ua: [
+          "Це урок 11: гетеротрофне живлення. Зелена трава сама робить поживу в хлоропластах. Заєць хлоропластів не має, тож з’їдає рослину.",
+          "Сьогодні побачиш головні способи брати готову поживу. Каталогу царств не робимо — це урок 15.",
+          "У кожній частині один порядок: складне слово, приклад, коротке питання, типова помилка, самостійне завдання.",
+          "Наприкінці — перевірка без підказок."
+        ]
+      }
     },
     {
       type: "vocabulary",
-      heading: { pl: "Najważniejsze pojęcia", ua: "Найважливіші поняття" },
+      heading: { pl: "Słowa, które łatwo pomylić", ua: "Слова, які легко сплутати" },
       rows: [
-        { pl: "cudzożywność", ua: "гетеротрофне живлення" },
-        { pl: "roślinożerca", ua: "рослиноїдний" },
-        { pl: "mięsożerca", ua: "м’ясоїдний" },
-        { pl: "wszystkożerca", ua: "всеїдний" },
-        { pl: "saprobiont", ua: "сапробіонт" },
-        { pl: "pasożyt", ua: "паразит" },
-        { pl: "pokarm", ua: "пожива" }
+        { pl: "cudzożywność", ua: "гетеротрофне живлення — готова пожива від інших" },
+        { pl: "samożywność", ua: "саможивлення — організм сам виробляє поживу" },
+        { pl: "roślinożerca", ua: "рослиноїдний — їсть рослини" },
+        { pl: "mięsożerca", ua: "м’ясоїдний — їсть інших тварин" },
+        { pl: "wszystkożerca", ua: "всеїдний — їсть і рослини, і тварин" },
+        { pl: "saprobiont", ua: "сапробіонт — живиться мертвими рештками" },
+        { pl: "pasożyt", ua: "паразит — бере поживу з живого хазяїна" },
+        { pl: "gospodarz", ua: "хазяїн — живий організм, на якому живе паразит" }
       ]
     },
+
     {
-      type: "intro",
-      heading: { pl: "Zacznijmy", ua: "Почнімо" },
-      visual: vizGh("l11-zacznijmy.png", {
-        alt: { pl: "Zając je trawę", ua: "Заєць їсть траву" },
-        title: { pl: "Ten organizm nie ma chloroplastów. Musi jeść.", ua: "Цей організм не має хлоропластів. Мусить їсти." },
-        prompt: { pl: "Fotorealistyczne zdjęcie 16:9. Zając na łące je trawę, dzień. Bez krwi, bez grozy, bez angielskiego, bez logotypów, bez twarzy ludzi." }
+      type: "concept",
+      heading: { pl: "Pojęcie. Cudzożywność", ua: "Поняття. Гетеротрофне живлення" },
+      visual: vizGh("l11-cudzo.png", {
+        alt: { pl: "Roślina wytwarza pokarm, zwierzęta i grzyb go pobierają", ua: "Рослина виробляє поживу, тварини і гриб її беруть" },
+        title: { pl: "Pokarm jest gotowy. Pochodzi od innych organizmów.", ua: "Пожива готова. Походить від інших організмів." },
+        prompt: { pl: "Plansza lekcji 11: samożywność i cudzożywność." }
       }),
       text: {
         pl: [
-          "Zielona trawa sama robi pokarm w chloroplastach. Zając chloroplastów nie ma.",
-          "Żeby żyć, musi pobrać gotowe substancje odżywcze — zjeść roślinę. To cudzożywność. Na tej lekcji zobaczysz jej główne warianty — bez katalogu królestw (to lekcja 15)."
+          [em("Cudzożywność"), " to odżywianie się gotowymi substancjami odżywczymi, które wytworzyły inne organizmy albo które zostały w ich szczątkach."],
+          "Cudzożywne są zwierzęta, grzyby i wiele bakterii. Człowiek też.",
+          "Samożywna roślina sama wytwarza pokarm, na przykład w fotosyntezie. Bez takich organizmów cudzożywne nie miałyby źródła pokarmu na dłuższą metę."
         ],
         ua: [
-          "Зелена трава сама робить поживу в хлоропластах. Заєць хлоропластів не має.",
-          "Щоб жити, мусить взяти готові поживні речовини — з’їсти рослину. Це гетеротрофне живлення. На цьому уроці побачиш його головні варіанти."
+          [em("Гетеротрофне живлення"), " — це живлення готовими поживними речовинами, які виробили інші організми або які лишилися в їхніх рештках."],
+          "Гетеротрофні — тварини, гриби і багато бактерій. Людина теж.",
+          "Саможивна рослина сама виробляє поживу, наприклад у фотосинтезі. Без таких організмів гетеротрофам бракувало б джерела поживи надовго."
         ]
       }
     },
     {
-      type: "concept",
-      heading: { pl: "Cudzożywność", ua: "Гетеротрофне живлення" },
-      visual: vizGh("l11-cudzo.png", {
-        alt: { pl: "Porównanie: roślina wytwarza, zwierzę zjada", ua: "Порівняння: рослина виробляє, тварина з’їдає" },
-        title: { pl: "Pokarm jest gotowy — pochodzi z innych organizmów.", ua: "Пожива готова — походить з інших організмів." },
-        prompt: { pl: "Edukacyjna infografika 16:9. LEWA: liść, fotosynteza, samożywność. PRAWA: zając, lis, grzyb na pniu — strzałka „pobierają gotowy pokarm”, etykieta PL: cudzożywność. Bez krwi, bez angielskiego, bez logotypów." }
-      }),
-      text: {
-        pl: [
-          ["", em("Cudzożywność"), " to odżywianie się gotowymi substancjami odżywczymi, wytworzonymi przez inne organizmy (albo pochodzącymi z ich szczątków)."],
-          "Cudzożywne są zwierzęta, grzyby i wiele bakterii. Człowiek też.",
-          "Bez samożywnych roślin (i innych organizmów fotosyntetyzujących) cudzożywne nie miałyby źródła pokarmu na dłuższą metę."
-        ],
-        ua: [
-          ["", em("Гетеротрофне живлення"), " — живлення готовими поживними речовинами, виробленими іншими організмами (або з їхніх решток)."],
-          "Гетеротрофні — тварини, гриби і багато бактерій. Людина теж.",
-          "Без саможивних рослин гетеротрофам бракувало б джерела поживи на довгу мету."
-        ]
-      },
+      type: "example",
+      heading: { pl: "Przykład. Trawa i zając", ua: "Приклад. Трава і заєць" },
+      reveal: true,
+      steps: [
+        {
+          text: {
+            pl: ["Trawa ma chloroplasty. Sama robi pokarm. Jest samożywna."],
+            ua: ["Трава має хлоропласти. Сама робить поживу. Вона саможивна."]
+          }
+        },
+        {
+          text: {
+            pl: ["Zając zjada trawę. Bierze gotowe substancje. Jest cudzożywny."],
+            ua: ["Заєць з’їдає траву. Бере готові речовини. Він гетеротрофний."]
+          }
+        },
+        {
+          text: {
+            pl: ["Zjedzenie trawy nie zamienia zająca w roślinę i nie daje mu chloroplastów."],
+            ua: ["З’їдання трави не перетворює зайця на рослину і не дає йому хлоропластів."]
+          }
+        }
+      ]
+    },
+    {
+      type: "guided-practice",
+      heading: { pl: "Krótkie pytanie. Jaka różnica?", ua: "Коротке питання. Яка різниця?" },
       task: {
-        id: "l11-e1",
+        id: "l11-g1",
         type: "single-choice",
-        question: { pl: "Czym cudzożywność różni się od samożywności?", ua: "Чим гетеротрофне живлення відрізняється від саможивлення?" },
+        question: {
+          pl: "Czym cudzożywność różni się od samożywności?",
+          ua: "Чим гетеротрофне живлення відрізняється від саможивлення?"
+        },
         options: [
-          { id: "a", label: { pl: "cudzożywny pobiera gotowy pokarm; samożywny sam go wytwarza (np. fotosynteza)", ua: "гетеротроф бере готову поживу; автотроф сам її виробляє (напр. фотосинтез)" } },
-          { id: "b", label: { pl: "cudzożywny ma chloroplasty, samożywny nie", ua: "гетеротроф має хлоропласти, автотроф ні" } },
+          { id: "a", label: { pl: "cudzożywny pobiera gotowy pokarm; samożywny sam go wytwarza", ua: "гетеротроф бере готову поживу; саможивний сам її виробляє" } },
+          { id: "b", label: { pl: "cudzożywny ma chloroplasty, samożywny ich nie ma", ua: "гетеротроф має хлоропласти, саможивний їх не має" } },
           { id: "c", label: { pl: "to dwa słowa na tę samą fotosyntezę", ua: "це два слова на той самий фотосинтез" } }
         ],
         answer: "a",
-        explanation: { pl: "Kierunek jest odwrotny niż w b. Chloroplasty = samożywne rośliny.", ua: "Напрям протилежний до b." }
+        hint: {
+          pl: "Szukaj gotowego pokarmu po jednej stronie i wytwarzania po drugiej.",
+          ua: "Шукай готову поживу з одного боку і вироблення з другого."
+        },
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Chloroplasty są u samożywnej rośliny. Cudzożywny ich nie używa do wytwarzania pokarmu.",
+              ua: "Хлоропласти є в саможивної рослини. Гетеротроф не використовує їх, щоб виробляти поживу."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Fotosynteza to samożywność. Cudzożywność zaczyna się od gotowego pokarmu, nie od chloroplastu.",
+              ua: "Фотосинтез — це саможивлення. Гетеротрофне живлення починається з готової поживи, не з хлоропласта."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Cudzożywny pobiera gotowy pokarm. Samożywny sam go wytwarza.",
+          ua: "Гетеротроф бере готову поживу. Саможивний сам її виробляє."
+        }
       }
     },
     {
-      type: "classification",
-      heading: { pl: "Co jedzą zwierzęta?", ua: "Що їдять тварини?" },
-      visual: tree({
-        layout: "fork",
-        root: { pl: "zwierzęta (cudzożywne)", ua: "тварини (гетеротрофи)" },
-        items: [
-          { pl: "roślinożerca", ua: "рослиноїдний" },
-          { pl: "mięsożerca", ua: "м’ясоїдний" },
-          { pl: "wszystkożerca", ua: "всеїдний" }
-        ]
-      }),
-      items: [
-        { pl: "roślinożerca — rośliny (zając)", ua: "рослиноїдний — рослини (заєць)" },
-        { pl: "mięsożerca — inne zwierzęta (lis)", ua: "м’ясоїдний — інші тварини (лисиця)" },
-        { pl: "wszystkożerca — i rośliny, i zwierzęta (człowiek, dzik)", ua: "всеїдний — і рослини, і тварини (людина, дик)" }
-      ],
+      type: "mistake",
+      heading: { pl: "Typowy błąd. Zając z chloroplastami", ua: "Типова помилка. Заєць із хлоропластами" },
+      claim: {
+        pl: "„Cudzożywny ma chloroplasty, bo je rośliny.”",
+        ua: "«Гетеротроф має хлоропласти, бо їсть рослини.»"
+      },
       text: {
         pl: [
-          ["", em("Roślinożerca"), " je rośliny lub ich części. Przykład: zając, krowa, gąsienica."],
-          ["", em("Mięsożerca"), " je inne zwierzęta. Przykład: lis, jaskółka (owady), szczupak."],
-          ["", em("Wszystkożerca"), " je i pokarm roślinny, i zwierzęcy. Przykład: dzik, człowiek, niedźwiedź."],
-          "To nie są królestwa — to sposoby odżywiania zwierząt."
+          "Jedzenie rośliny nie przenosi chloroplastów do zająca.",
+          "Chloroplasty zostają u samożywnej trawy. Zając tylko pobiera gotowy pokarm."
         ],
         ua: [
-          ["", em("Рослиноїдний"), " їсть рослини або їхні частини. Приклад: заєць, корова, гусінь."],
-          ["", em("М’ясоїдний"), " їсть інших тварин. Приклад: лисиця, ластівка (комахи), щука."],
-          ["", em("Всеїдний"), " їсть і рослинну, і тваринну поживу. Приклад: дик, людина, ведмідь."],
-          "Це не царства — це способи живлення тварин."
+          "Їжа рослини не переносить хлоропласти до зайця.",
+          "Хлоропласти лишаються в саможивної трави. Заєць лише бере готову поживу."
         ]
-      },
+      }
+    },
+    {
+      type: "practice",
+      heading: { pl: "Sam. Niedźwiedź i dąb", ua: "Сам. Ведмідь і дуб" },
       task: {
-        id: "l11-e2",
+        id: "l11-p1",
         type: "single-choice",
-        question: { pl: "Które połączenie jest poprawne?", ua: "Яке поєднання правильне?" },
+        question: {
+          pl: "Który organizm jest cudzożywny?",
+          ua: "Який організм гетеротрофний?"
+        },
         options: [
-          { id: "a", label: { pl: "zając — roślinożerca; lis — mięsożerca; człowiek — wszystkożerca", ua: "заєць — рослиноїдний; лисиця — м’ясоїдна; людина — всеїдна" } },
-          { id: "b", label: { pl: "wszystkie trzy fotosyntetyzują w chloroplastach", ua: "усі три фотосинтезують у хлоропластах" } },
-          { id: "c", label: { pl: "lis jest samożywny", ua: "лисиця саможивна" } }
+          { id: "a", label: { pl: "niedźwiedź", ua: "ведмідь" } },
+          { id: "b", label: { pl: "dąb prowadzący fotosyntezę", ua: "дуб, що веде фотосинтез" } },
+          { id: "c", label: { pl: "oba, bo oba są zielone", ua: "обидва, бо обидва зелені" } }
         ],
         answer: "a",
-        explanation: { pl: "Zwierzęta są cudzożywne. Różnią się tym, co jedzą.", ua: "Тварини гетеротрофні. Різняться тим, що їдять." }
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Dąb sam wytwarza pokarm w fotosyntezie. To samożywność. Cudzożywny jest niedźwiedź, bo pobiera gotowy pokarm.",
+              ua: "Дуб сам виробляє поживу у фотосинтезі. Це саможивлення. Гетеротрофним є ведмідь, бо бере готову поживу."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Zielony jest dąb, nie niedźwiedź. Kolor liścia nie robi ze zwierzęcia rośliny samożywnej.",
+              ua: "Зеленим є дуб, не ведмідь. Колір листка не робить із тварини саможивну рослину."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Niedźwiedź pobiera gotowy pokarm. Dąb sam go wytwarza.",
+          ua: "Ведмідь бере готову поживу. Дуб сам її виробляє."
+        }
       }
     },
+
     {
       type: "concept",
-      heading: { pl: "Saprobionty", ua: "Сапробіонти" },
-      visual: vizGh("l11-saprobiont.png", {
-        alt: { pl: "Grzyby na martwym pniu", ua: "Гриби на мертвому пні" },
-        title: { pl: "Pokarm ze szczątków — nie z polowania i nie z chloroplastu.", ua: "Пожива з решток — не з полювання і не з хлоропласта." },
-        prompt: { pl: "Fotorealistyczne zdjęcie 16:9. Kapeluszowe grzyby na spróchniałym pniu w lesie, dzień, mech. Etykieta PL: saprobiont — odżywia się martwymi szczątkami. Bez trujących znaków, bez angielskiego, bez logotypów, bez grozy." }
+      heading: { pl: "Pojęcie. Trzy diety zwierząt", ua: "Поняття. Три дієти тварин" },
+      visual: vizGh("l11-diety.png", {
+        alt: { pl: "Roślinożerca, mięsożerca i wszystkożerca", ua: "Рослиноїдний, м’ясоїдний і всеїдний" },
+        title: { pl: "To sposoby jedzenia, nie królestwa.", ua: "Це способи їжі, не царства." },
+        prompt: { pl: "Kolaż lekcji 11: trzy diety zwierząt." }
       }),
       text: {
         pl: [
-          ["", em("Saprobiont"), " odżywia się martwymi szczątkami organizmów: opadłymi liśćmi, drewnem, resztkami jedzenia."],
-          "Tak żyje wiele grzybów i bakterii. Rozkładają szczątki — dzięki temu substancje wracają do gleby.",
-          "To nadal cudzożywność: pokarm jest gotowy, tylko nie „upolowany” i nie „zerwany z krzaka jako żywa liść w pędzie zająca”, tylko ze szczątków."
+          [em("Roślinożerca"), " je rośliny lub ich części. Przykład: zając, krowa, gąsienica."],
+          [em("Mięsożerca"), " je inne zwierzęta. Przykład: lis, jaskółka, która łapie owady, szczupak."],
+          [em("Wszystkożerca"), " je i pokarm roślinny, i zwierzęcy. Przykład: dzik, człowiek, niedźwiedź."],
+          "To sposoby odżywiania zwierząt. Wszystkie trzy grupy są cudzożywne."
         ],
         ua: [
-          ["", em("Сапробіонт"), " живиться мертвими рештками організмів: опалим листям, деревиною, залишками їжі."],
-          "Так живуть багато грибів і бактерій. Розкладають рештки — завдяки цьому речовини повертаються в ґрунт.",
-          "Це й далі гетеротрофне живлення: пожива готова, з решток."
+          [em("Рослиноїдний"), " їсть рослини або їхні частини. Приклад: заєць, корова, гусінь."],
+          [em("М’ясоїдний"), " їсть інших тварин. Приклад: лисиця, ластівка, що ловить комах, щука."],
+          [em("Всеїдний"), " їсть і рослинну, і тваринну поживу. Приклад: кабан, людина, ведмідь."],
+          "Це способи живлення тварин. Усі три групи гетеротрофні."
         ]
-      },
-      task: {
-        id: "l11-e3",
-        type: "true-false",
-        question: { pl: "Saprobiont odżywia się martwymi szczątkami organizmów.", ua: "Сапробіонт живиться мертвими рештками організмів." },
-        answer: true,
-        explanation: { pl: "Grzyby na pniu, wiele bakterii. Cudzożywność ze szczątków.", ua: "Гриби на пні, багато бактерій." }
       }
     },
     {
-      type: "concept",
-      heading: { pl: "Pasożyty", ua: "Паразити" },
-      visual: vizGh("l11-pasozyt.png", {
-        alt: { pl: "Kleszcz na źdźble — bez zbliżenia na ranę", ua: "Кліщ на стеблі — без зближення на рану" },
-        title: { pl: "Żyje kosztem żywego gospodarza.", ua: "Живе коштом живого хазяїна." },
-        prompt: { pl: "Spokojne edukacyjne zdjęcie 16:9. Kleszcz na źdźble trawy, makro, dzień. Etykieta PL: pasożyt — pobiera pokarm z żywego organizmu-gospodarza. Absolutnie bez krwi, bez ran, bez grozy, bez twarzy, bez angielskiego, bez logotypów." }
-      }),
-      text: {
-        pl: [
-          ["", em("Pasożyt"), " pobiera pokarm z żywego organizmu, którego nazywamy gospodarzem. Gospodarz na tym traci."],
-          "Przykłady z życia: kleszcz na ssaku; tasiemiec w jelicie; kanianka (roślina bez chlorofilu) na innych roślinach.",
-          "Pasożytnictwo to nadal cudzożywność. Nie myl z saprobiontem: saprobiont korzysta ze szczątków, pasożyt — z żywego gospodarza.",
-          "Wirusy nie są tu żywymi komórkami-pasożytami do rysowania — wrócą na lekcji 16."
-        ],
-        ua: [
-          ["", em("Паразит"), " бере поживу з живого організму, якого називаємо хазяїном. Хазяїн на цьому втрачає."],
-          "Приклади: кліщ на ссавці; стьожковий черв у кишці; повитиця на інших рослинах.",
-          "Паразитизм — це й далі гетеротрофне живлення. Не плутай із сапробіонтом: сапробіонт — рештки, паразит — живий хазяїн.",
-          "Віруси тут не малюємо — урок 16."
-        ]
-      },
-      task: {
-        id: "l11-e4",
-        type: "single-choice",
-        question: { pl: "Czym pasożyt różni się od saprobionta?", ua: "Чим паразит відрізняється від сапробіонта?" },
-        options: [
-          { id: "a", label: { pl: "pasożyt pobiera pokarm z żywego gospodarza; saprobiont — z martwych szczątków", ua: "паразит бере поживу з живого хазяїна; сапробіонт — з мертвих решток" } },
-          { id: "b", label: { pl: "oba fotosyntetyzują w liściu moczarki", ua: "обидва фотосинтезують у листку елодеї" } },
-          { id: "c", label: { pl: "nie ma żadnej różnicy", ua: "немає жодної різниці" } }
-        ],
-        answer: "a",
-        explanation: { pl: "Żywy gospodarz vs szczątki. Oba są cudzożywne.", ua: "Живий хазяїн vs рештки." }
-      }
-    },
-    {
-      type: "classification",
-      heading: { pl: "Trzy warianty cudzożywności", ua: "Три варіанти гетеротрофності" },
-      visual: tree({
-        layout: "fork",
-        root: { pl: "cudzożywność", ua: "гетеротрофність" },
-        items: [
-          { pl: "zjadanie (diety)", ua: "з’їдання (дієти)" },
-          { pl: "saprobiont", ua: "сапробіонт" },
-          { pl: "pasożyt", ua: "паразит" }
-        ]
-      }),
-      items: [
-        { pl: "roślinożerca / mięsożerca / wszystkożerca — zjada organizmy", ua: "рослиноїдний / м’ясоїдний / всеїдний — з’їдає організми" },
-        { pl: "saprobiont — martwe szczątki", ua: "сапробіонт — мертві рештки" },
-        { pl: "pasożyt — żywy gospodarz", ua: "паразит — живий хазяїн" }
+      type: "example",
+      heading: { pl: "Przykład. Łąka", ua: "Приклад. Лука" },
+      reveal: true,
+      steps: [
+        {
+          text: {
+            pl: ["Zając je trawę. Roślinożerca."],
+            ua: ["Заєць їсть траву. Рослиноїдний."]
+          }
+        },
+        {
+          text: {
+            pl: ["Lis zjada zająca. Mięsożerca."],
+            ua: ["Лисиця з’їдає зайця. М’ясоїдна."]
+          }
+        },
+        {
+          text: {
+            pl: ["Człowiek je i chleb, i ser. Wszystkożerca. Żadne z nich nie robi fotosyntezy."],
+            ua: ["Людина їсть і хліб, і сир. Всеїдна. Жоден із них не робить фотосинтез."]
+          }
+        }
       ]
     },
     {
+      type: "guided-practice",
+      heading: { pl: "Krótkie pytanie. Kto co je?", ua: "Коротке питання. Хто що їсть?" },
+      task: {
+        id: "l11-g2",
+        type: "single-choice",
+        question: {
+          pl: "Które połączenie jest poprawne?",
+          ua: "Яке поєднання правильне?"
+        },
+        options: [
+          { id: "a", label: { pl: "zając — roślinożerca; lis — mięsożerca; człowiek — wszystkożerca", ua: "заєць — рослиноїдний; лисиця — м’ясоїдна; людина — всеїдна" } },
+          { id: "b", label: { pl: "lis — samożywny; zając — mięsożerca; człowiek — roślina", ua: "лисиця — саможивна; заєць — м’ясоїдний; людина — рослина" } },
+          { id: "c", label: { pl: "wszystkie trzy wytwarzają glukozę w chloroplastach", ua: "усі три виробляють глюкозу в хлоропластах" } }
+        ],
+        answer: "a",
+        hint: {
+          pl: "Patrz, co jedzą: rośliny, inne zwierzęta albo i to, i to.",
+          ua: "Дивись, що їдять: рослини, інших тварин або і те, і те."
+        },
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Lis je inne zwierzęta, więc jest mięsożercą, nie rośliną samożywną. Zając je rośliny.",
+              ua: "Лисиця їсть інших тварин, тож вона м’ясоїдна, не саможивна рослина. Заєць їсть рослини."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Glukozę w chloroplastach wytwarza samożywna roślina. Te trzy organizmy pobierają gotowy pokarm.",
+              ua: "Глюкозу в хлоропластах виробляє саможивна рослина. Ці три організми беруть готову поживу."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Zając je rośliny, lis je zwierzęta, człowiek je jedne i drugie.",
+          ua: "Заєць їсть рослини, лисиця їсть тварин, людина їсть і те, і те."
+        }
+      }
+    },
+    {
+      type: "mistake",
+      heading: { pl: "Typowy błąd. Dieta to królestwo", ua: "Типова помилка. Дієта — це царство" },
+      claim: {
+        pl: "„Roślinożerca, mięsożerca i wszystkożerca to trzy królestwa organizmów.”",
+        ua: "«Рослиноїдний, м’ясоїдний і всеїдний — це три царства організмів.»"
+      },
+      text: {
+        pl: [
+          "To tylko sposoby jedzenia zwierząt.",
+          "Królestwa uporządkujesz później. Dziś liczy się, co zwierzę zjada."
+        ],
+        ua: [
+          "Це лише способи їжі тварин.",
+          "Царства впорядкуєш пізніше. Сьогодні важливе те, що тварина з’їдає."
+        ]
+      }
+    },
+    {
+      type: "practice",
+      heading: { pl: "Sam. Gąsienica na liściu", ua: "Сам. Гусінь на листку" },
+      task: {
+        id: "l11-p2",
+        type: "single-choice",
+        question: {
+          pl: "Gąsienica zjada liście. Jaki to sposób odżywiania?",
+          ua: "Гусінь з’їдає листки. Який це спосіб живлення?"
+        },
+        options: [
+          { id: "a", label: { pl: "roślinożerca", ua: "рослиноїдний" } },
+          { id: "b", label: { pl: "mięsożerca", ua: "м’ясоїдний" } },
+          { id: "c", label: { pl: "saprobiont, bo liść jest rośliną", ua: "сапробіонт, бо листок є рослиною" } }
+        ],
+        answer: "a",
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Mięsożerca je inne zwierzęta. Gąsienica je liście, więc jest roślinożercą.",
+              ua: "М’ясоїдний їсть інших тварин. Гусінь їсть листки, тож вона рослиноїдна."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Saprobiont bierze martwe szczątki. Gąsienica zjada części żywej rośliny. To roślinożerność.",
+              ua: "Сапробіонт бере мертві рештки. Гусінь з’їдає частини живої рослини. Це рослиноїдність."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Gąsienica je rośliny, więc jest roślinożercą.",
+          ua: "Гусінь їсть рослини, тож вона рослиноїдна."
+        }
+      }
+    },
+
+    {
       type: "concept",
-      heading: { pl: "Skąd bierze się energia w pokarmie?", ua: "Звідки береться енергія в поживі?" },
+      heading: { pl: "Pojęcie. Saprobiont", ua: "Поняття. Сапробіонт" },
+      visual: vizGh("l11-saprobiont.png", {
+        alt: { pl: "Grzyby na martwym pniu", ua: "Гриби на мертвому пні" },
+        title: { pl: "Pokarm ze szczątków.", ua: "Пожива з решток." },
+        prompt: { pl: "Zdjęcie lekcji 11: grzyby na spróchniałym pniu." }
+      }),
+      text: {
+        pl: [
+          [em("Saprobiont"), " odżywia się martwymi szczątkami organizmów: opadłymi liśćmi, drewnem, resztkami jedzenia."],
+          "Tak żyje wiele grzybów i bakterii. Rozkładają szczątki, więc substancje wracają do gleby.",
+          "To nadal cudzożywność. Pokarm jest gotowy, tylko pochodzi ze szczątków, nie z polowania."
+        ],
+        ua: [
+          [em("Сапробіонт"), " живиться мертвими рештками організмів: опалим листям, деревиною, залишками їжі."],
+          "Так живуть багато грибів і бактерій. Розкладають рештки, тож речовини повертаються в ґрунт.",
+          "Це й далі гетеротрофне живлення. Пожива готова, лише походить із решток, не з полювання."
+        ]
+      }
+    },
+    {
+      type: "example",
+      heading: { pl: "Przykład. Grzyb na pniu", ua: "Приклад. Гриб на пні" },
+      reveal: true,
+      steps: [
+        {
+          text: {
+            pl: ["Pień jest martwy. Grzyb nie goni zwierzęcia i nie ma chloroplastów."],
+            ua: ["Пень мертвий. Гриб не женеться за твариною і не має хлоропластів."]
+          }
+        },
+        {
+          text: {
+            pl: ["Bierze pokarm z drewna. To saprobiont."],
+            ua: ["Бере поживу з деревини. Це сапробіонт."]
+          }
+        },
+        {
+          text: {
+            pl: ["Rozkład wraca substancje do gleby. To nadal gotowy pokarm, nie fotosynteza."],
+            ua: ["Розклад повертає речовини в ґрунт. Це й далі готова пожива, не фотосинтез."]
+          }
+        }
+      ]
+    },
+    {
+      type: "guided-practice",
+      heading: { pl: "Krótkie pytanie. Czym się żywi?", ua: "Коротке питання. Чим живиться?" },
+      task: {
+        id: "l11-g3",
+        type: "single-choice",
+        question: {
+          pl: "Czym odżywia się saprobiont?",
+          ua: "Чим живиться сапробіонт?"
+        },
+        options: [
+          { id: "a", label: { pl: "martwymi szczątkami organizmów", ua: "мертвими рештками організмів" } },
+          { id: "b", label: { pl: "światłem w chloroplastach, jak trawa", ua: "світлом у хлоропластах, як трава" } },
+          { id: "c", label: { pl: "tylko żywego lisa, którego goni", ua: "лише живу лисицю, за якою женеться" } }
+        ],
+        answer: "a",
+        hint: {
+          pl: "Szukaj martwego pnia, opadłych liści albo resztek, nie polowania.",
+          ua: "Шукай мертвий пень, опале листя або рештки, не полювання."
+        },
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Światło i chloroplasty to samożywność trawy. Saprobiont bierze gotowy pokarm ze szczątków.",
+              ua: "Світло і хлоропласти — це саможивлення трави. Сапробіонт бере готову поживу з решток."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Gonienie żywego zwierzęcia to mięsożerność. Saprobiont zostaje przy martwych szczątkach.",
+              ua: "Погоня за живою твариною — це м’ясоїдність. Сапробіонт лишається при мертвих рештках."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Saprobiont odżywia się martwymi szczątkami.",
+          ua: "Сапробіонт живиться мертвими рештками."
+        }
+      }
+    },
+    {
+      type: "mistake",
+      heading: { pl: "Typowy błąd. Grzyb poluje", ua: "Типова помилка. Гриб полює" },
+      claim: {
+        pl: "„Grzyb na pniu jest mięsożercą, bo zjada pień jak lis zająca.”",
+        ua: "«Гриб на пні м’ясоїдний, бо з’їдає пень, як лисиця зайця.»"
+      },
+      text: {
+        pl: [
+          "Pień nie jest żywym zwierzęciem. Jest szczątkiem.",
+          "Grzyb jest saprobiontem. Lis, który zjada zająca, jest mięsożercą."
+        ],
+        ua: [
+          "Пень не є живою твариною. Це рештка.",
+          "Гриб є сапробіонтом. Лисиця, яка з’їдає зайця, є м’ясоїдною."
+        ]
+      }
+    },
+    {
+      type: "practice",
+      heading: { pl: "Sam. Bakterie na liściach", ua: "Сам. Бактерії на листі" },
+      task: {
+        id: "l11-p3",
+        type: "single-choice",
+        question: {
+          pl: "Bakterie rozkładają opadłe liście w lesie. Jaki to sposób odżywiania?",
+          ua: "Бактерії розкладають опале листя в лісі. Який це спосіб живлення?"
+        },
+        options: [
+          { id: "a", label: { pl: "saprobiontyczny — martwe szczątki", ua: "сапробіонтний — мертві рештки" } },
+          { id: "b", label: { pl: "pasożytniczy — żywy gospodarz", ua: "паразитичний — живий хазяїн" } },
+          { id: "c", label: { pl: "samożywny — fotosynteza w tych liściach", ua: "саможивний — фотосинтез у цьому листі" } }
+        ],
+        answer: "a",
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Pasożyt bierze pokarm z żywego gospodarza. Opadłe liście są już szczątkami, więc to saprobiont.",
+              ua: "Паразит бере поживу з живого хазяїна. Опале листя вже є рештками, тож це сапробіонт."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Fotosyntezę prowadził żywy liść. Opadłe liście bakterie rozkładają. To pokarm ze szczątków.",
+              ua: "Фотосинтез вів живий листок. Опале листя бактерії розкладають. Це пожива з решток."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Bakterie na opadłych liściach są saprobiontami.",
+          ua: "Бактерії на опалому листі є сапробіонтами."
+        }
+      }
+    },
+
+    {
+      type: "concept",
+      heading: { pl: "Pojęcie. Pasożyt", ua: "Поняття. Паразит" },
+      visual: vizGh("l11-pasozyt.png", {
+        alt: { pl: "Kleszcz na źdźble trawy", ua: "Кліщ на стеблі трави" },
+        title: { pl: "Pokarm z żywego gospodarza.", ua: "Пожива з живого хазяїна." },
+        prompt: { pl: "Zdjęcie lekcji 11: kleszcz na źdźble, bez grozy." }
+      }),
+      text: {
+        pl: [
+          [em("Pasożyt"), " pobiera pokarm z żywego organizmu. Ten organizm nazywamy ", em("gospodarzem"), ". Gospodarz na tym traci."],
+          "Przykłady: kleszcz na ssaku, tasiemiec w jelicie, kanianka — roślina bez chlorofilu — na innych roślinach.",
+          "To nadal cudzożywność. Saprobiont bierze szczątki, pasożyt bierze pokarm z żywego gospodarza. Zając, który zjada trawę, jest roślinożercą, nie pasożytem trawy.",
+          "Wirusów dziś nie rysujemy. Wrócą na lekcji 16."
+        ],
+        ua: [
+          [em("Паразит"), " бере поживу з живого організму. Цей організм називаємо ", em("хазяїном"), ". Хазяїн на цьому втрачає."],
+          "Приклади: кліщ на ссавці, стьожковий черв у кишці, повитиця — рослина без хлорофілу — на інших рослинах.",
+          "Це й далі гетеротрофне живлення. Сапробіонт бере рештки, паразит бере поживу з живого хазяїна. Заєць, який з’їдає траву, є рослиноїдним, не паразитом трави.",
+          "Вірусів сьогодні не малюємо. Повернуться на уроці 16."
+        ]
+      }
+    },
+    {
+      type: "example",
+      heading: { pl: "Przykład. Kleszcz i pień", ua: "Приклад. Кліщ і пень" },
+      reveal: true,
+      steps: [
+        {
+          text: {
+            pl: ["Kleszcz pobiera pokarm z żywego ssaka. Ssak jest gospodarzem."],
+            ua: ["Кліщ бере поживу з живого ссавця. Ссавець є хазяїном."]
+          }
+        },
+        {
+          text: {
+            pl: ["Grzyb na martwym pniu nie ma żywego gospodarza. To saprobiont."],
+            ua: ["Гриб на мертвому пні не має живого хазяїна. Це сапробіонт."]
+          }
+        },
+        {
+          text: {
+            pl: ["Kanianka jest rośliną, ale bez chlorofilu bierze pokarm z innej żywej rośliny. Wtedy roślina też jest pasożytem."],
+            ua: ["Повитиця є рослиною, але без хлорофілу бере поживу з іншої живої рослини. Тоді рослина теж є паразитом."]
+          }
+        }
+      ]
+    },
+    {
+      type: "guided-practice",
+      heading: { pl: "Krótkie pytanie. Żywy czy martwy?", ua: "Коротке питання. Живий чи мертвий?" },
+      task: {
+        id: "l11-g4",
+        type: "single-choice",
+        question: {
+          pl: "Czym pasożyt różni się od saprobionta?",
+          ua: "Чим паразит відрізняється від сапробіонта?"
+        },
+        options: [
+          { id: "a", label: { pl: "pasożyt pobiera pokarm z żywego gospodarza; saprobiont — z martwych szczątków", ua: "паразит бере поживу з живого хазяїна; сапробіонт — з мертвих решток" } },
+          { id: "b", label: { pl: "oba wytwarzają glukozę w liściu moczarki", ua: "обидва виробляють глюкозу в листку елодеї" } },
+          { id: "c", label: { pl: "nie ma różnicy: zając na trawie też jest pasożytem", ua: "немає різниці: заєць на траві теж є паразитом" } }
+        ],
+        answer: "a",
+        hint: {
+          pl: "Jedno słowo rozdziela te sposoby: żywy gospodarz albo martwe szczątki.",
+          ua: "Одне слово розділяє ці способи: живий хазяїн або мертві рештки."
+        },
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Glukoza w liściu moczarki to fotosynteza. I pasożyt, i saprobiont pobierają gotowy pokarm.",
+              ua: "Глюкоза в листку елодеї — це фотосинтез. І паразит, і сапробіонт беруть готову поживу."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Zając zjada roślinę jako roślinożerca. Pasożyt żyje kosztem żywego gospodarza, saprobiont bierze szczątki.",
+              ua: "Заєць з’їдає рослину як рослиноїдний. Паразит живе коштом живого хазяїна, сапробіонт бере рештки."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Pasożyt — żywy gospodarz. Saprobiont — martwe szczątki.",
+          ua: "Паразит — живий хазяїн. Сапробіонт — мертві рештки."
+        }
+      }
+    },
+    {
+      type: "mistake",
+      heading: { pl: "Typowy błąd. Zając jest pasożytem trawy", ua: "Типова помилка. Заєць є паразитом трави" },
+      claim: {
+        pl: "„Zając, który zjada trawę, jest jej pasożytem.”",
+        ua: "«Заєць, який з’їдає траву, є її паразитом.»"
+      },
+      text: {
+        pl: [
+          "Zając jest roślinożercą. Zjada roślinę, ale nie żyje na niej jako pasożyt.",
+          "Pasożytem jest na przykład kleszcz, który pobiera pokarm z żywego gospodarza."
+        ],
+        ua: [
+          "Заєць є рослиноїдним. З’їдає рослину, але не живе на ній як паразит.",
+          "Паразитом є, наприклад, кліщ, який бере поживу з живого хазяїна."
+        ]
+      }
+    },
+    {
+      type: "practice",
+      heading: { pl: "Sam. Kanianka", ua: "Сам. Повитиця" },
+      task: {
+        id: "l11-p4",
+        type: "single-choice",
+        question: {
+          pl: "Kanianka nie ma chlorofilu i pobiera pokarm z innej żywej rośliny. Czym jest?",
+          ua: "Повитиця не має хлорофілу і бере поживу з іншої живої рослини. Чим вона є?"
+        },
+        options: [
+          { id: "a", label: { pl: "pasożytem — gospodarzem jest żywa roślina", ua: "паразитом — хазяїном є жива рослина" } },
+          { id: "b", label: { pl: "saprobiontem — bo każda roślina to szczątek", ua: "сапробіонтом — бо кожна рослина є решткою" } },
+          { id: "c", label: { pl: "samożywną, bo jest rośliną", ua: "саможивною, бо є рослиною" } }
+        ],
+        answer: "a",
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Żywa roślina nie jest szczątkiem. Kanianka pobiera pokarm z żywego gospodarza, więc jest pasożytem.",
+              ua: "Жива рослина не є решткою. Повитиця бере поживу з живого хазяїна, тож вона паразит."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Samożywność potrzebuje wytwarzania pokarmu, zwykle z chlorofilem. Kanianka chlorofilu nie ma i bierze gotowy pokarm.",
+              ua: "Саможивленню потрібне вироблення поживи, зазвичай із хлорофілом. Повитиця хлорофілу не має і бере готову поживу."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Kanianka jest pasożytem. Żywa roślina jest jej gospodarzem.",
+          ua: "Повитиця є паразитом. Жива рослина є її хазяїном."
+        }
+      }
+    },
+
+    {
+      type: "concept",
+      heading: { pl: "Pojęcie. Skąd jest pokarm", ua: "Поняття. Звідки пожива" },
       visual: vizGh("l11-lancuch.png", {
-        alt: { pl: "Trawa → zając → lis", ua: "Трава → заєць → лисиця" },
-        title: { pl: "Na początku łańcucha jest samożywna roślina.", ua: "На початку ланцюга є саможивна рослина." },
-        prompt: { pl: "Prosty edukacyjny schemat 16:9, trzy ogniwa, polskie etykiety: trawa (samożywna) → zając (roślinożerca) → lis (mięsożerca). Bez długich sieci, bez angielskiego, bez logotypów, bez krwi." }
+        alt: { pl: "Trawa, zając i lis w prostym łańcuchu", ua: "Трава, заєць і лисиця в простому ланцюзі" },
+        title: { pl: "Na początku jest samożywna roślina.", ua: "На початку є саможивна рослина." },
+        prompt: { pl: "Schemat lekcji 11: trawa, zając, lis." }
       }),
       text: {
         pl: [
           "Cudzożywny organizm nie wytwarza cukru z dwutlenku węgla i wody tak jak liść.",
-          "Bierze gotowe związki: z rośliny, ze zwierzęcia albo ze szczątków. Energia zapisana w tym pokarmie pochodzi — wcześniej — z fotosyntezy.",
-          "Na lekcji 12 zobaczysz, jak komórka uwalnia z pokarmu energię (oddychanie tlenowe). Dziś zapamiętaj źródło pokarmu, nie mitochondrium."
+          "Bierze gotowe związki: z rośliny, ze zwierzęcia albo ze szczątków. Energia zapisana w tym pokarmie pochodzi wcześniej z fotosyntezy.",
+          "Prosty łańcuch: trawa (samożywna) → zając (roślinożerca) → lis (mięsożerca). Na lekcji 12 zobaczysz, jak komórka uwalnia energię z pokarmu. Dziś zapamiętaj źródło pokarmu."
         ],
         ua: [
-          "Гетеротроф не виробляє цукор з вуглекислого газу і води так, як листок.",
-          "Бере готові сполуки: з рослини, з тварини або з решток. Енергія в цій поживі походить раніше з фотосинтезу.",
-          "На уроці 12 побачиш, як клітина вивільняє з поживи енергію. Сьогодні запам’ятай джерело поживи."
+          "Гетеротрофний організм не виробляє цукор із вуглекислого газу і води так, як листок.",
+          "Бере готові сполуки: з рослини, з тварини або з решток. Енергія, записана в цій поживі, походить раніше з фотосинтезу.",
+          "Простий ланцюг: трава (саможивна) → заєць (рослиноїдний) → лисиця (м’ясоїдна). На уроці 12 побачиш, як клітина вивільняє енергію з поживи. Сьогодні запам’ятай джерело поживи."
         ]
-      },
-      task: {
-        id: "l11-e5",
-        type: "true-false",
-        question: { pl: "Cudzożywne organizmy biorą gotowy pokarm z innych organizmów lub ze szczątków.", ua: "Гетеротрофні організми беруть готову поживу з інших організмів або з решток." },
-        answer: true,
-        explanation: { pl: "To definicja cudzożywności na klasę 5.", ua: "Це визначення гетеротрофного живлення для 5 класу." }
       }
     },
     {
-      type: "concept",
-      heading: { pl: "Nie wszystko, co zielone, jest „tylko rośliną do zjedzenia”", ua: "Не все зелене є «лише рослиною на з’їдення»" },
-      visual: vizGh("l11-diety.png", {
-        alt: { pl: "Trzy diety zwierząt", ua: "Три дієти тварин" },
-        title: { pl: "Roślina bywa pokarmem. Sama zostaje samożywna.", ua: "Рослина буває поживою. Сама лишається саможивною." },
-        prompt: { pl: "Ten sam kolaż trzech diet." }
-      }),
+      type: "example",
+      heading: { pl: "Przykład. Trzy ogniwa", ua: "Приклад. Три ланки" },
+      reveal: true,
+      steps: [
+        {
+          text: {
+            pl: ["Trawa robi pokarm w fotosyntezie."],
+            ua: ["Трава робить поживу у фотосинтезі."]
+          }
+        },
+        {
+          text: {
+            pl: ["Zając zjada trawę. Pokarm jest już gotowy."],
+            ua: ["Заєць з’їдає траву. Пожива вже готова."]
+          }
+        },
+        {
+          text: {
+            pl: ["Lis zjada zająca. Jego pokarm też zaczyna się od rośliny, nie od chloroplastów lisa."],
+            ua: ["Лисиця з’їдає зайця. Її пожива теж починається від рослини, не від хлоропластів лисиці."]
+          }
+        }
+      ]
+    },
+    {
+      type: "guided-practice",
+      heading: { pl: "Krótkie pytanie. Skąd pokarm zająca?", ua: "Коротке питання. Звідки пожива зайця?" },
+      task: {
+        id: "l11-g5",
+        type: "single-choice",
+        question: {
+          pl: "Skąd zając bierze pokarm?",
+          ua: "Звідки заєць бере поживу?"
+        },
+        options: [
+          { id: "a", label: { pl: "z rośliny, która sama go wytworzyła", ua: "з рослини, яка сама його виробила" } },
+          { id: "b", label: { pl: "z własnych chloroplastów w futrze", ua: "із власних хлоропластів у хутрі" } },
+          { id: "c", label: { pl: "z powietrza, bez żadnych związków z innych organizmów", ua: "з повітря, без жодних сполук з інших організмів" } }
+        ],
+        answer: "a",
+        hint: {
+          pl: "Zając nie ma chloroplastów. Szukaj gotowego pokarmu rośliny.",
+          ua: "Заєць не має хлоропластів. Шукай готову поживу рослини."
+        },
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Futro nie ma chloroplastów. Pokarm zająca pochodzi z rośliny, którą zjada.",
+              ua: "Хутро не має хлоропластів. Пожива зайця походить із рослини, яку він з’їдає."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Samo powietrze nie jest obiadem zająca. Zając pobiera gotowe substancje z rośliny.",
+              ua: "Саме повітря не є вечерею зайця. Заєць бере готові речовини з рослини."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Zając bierze gotowy pokarm z rośliny.",
+          ua: "Заєць бере готову поживу з рослини."
+        }
+      }
+    },
+    {
+      type: "mistake",
+      heading: { pl: "Typowy błąd. Lis ma liście", ua: "Типова помилка. Лисиця має листки" },
+      claim: {
+        pl: "„Lis wytwarza glukozę we własnych liściach.”",
+        ua: "«Лисиця виробляє глюкозу у власних листках.»"
+      },
       text: {
         pl: [
-          "Pelargonia jest samożywna. Zając, który ją zje, jest cudzożywny. Jedno nie zamienia się w drugie od zjedzenia.",
-          "Niektóre rośliny (np. kanianka) są pasożytami — wtedy roślina też bywa cudzożywna. To wyjątek, który pokazuje: „roślina” i „samożywność” zwykle idą w parze, ale nie zawsze."
+          "Lis nie ma liści ani chloroplastów.",
+          "Jego pokarm jest gotowy. Wcześniej zaczął się od samożywnej rośliny."
         ],
         ua: [
-          "Пеларгонія саможивна. Заєць, який її з’їсть, гетеротрофний.",
-          "Деякі рослини (повитиця) — паразити. «Рослина» і «саможивлення» зазвичай разом, але не завжди."
+          "Лисиця не має листків і хлоропластів.",
+          "Її пожива готова. Раніше вона почалася від саможивної рослини."
         ]
-      },
-      task: {
-        id: "l11-e6",
-        type: "multiple-choice",
-        question: { pl: "Zaznacz organizmy cudzożywne.", ua: "Познач гетеротрофні організми." },
-        options: [
-          { id: "a", label: { pl: "lis", ua: "лисиця" } },
-          { id: "b", label: { pl: "grzyb na pniu (saprobiont)", ua: "гриб на пні (сапробіонт)" } },
-          { id: "c", label: { pl: "kleszcz (pasożyt)", ua: "кліщ (паразит)" } },
-          { id: "d", label: { pl: "zielona trawa prowadząca fotosyntezę", ua: "зелена трава, що веде фотосинтез" } }
-        ],
-        answer: ["a", "b", "c"],
-        explanation: { pl: "Trawa z chlorofilem jest samożywna. Reszta pobiera gotowy pokarm.", ua: "Трава з хлорофілом саможивна." }
       }
     },
     {
       type: "practice",
-      heading: { pl: "Praktyka. Definicja", ua: "Практика. Визначення" },
-      task: {
-        id: "l11-p1",
-        type: "single-choice",
-        question: { pl: "Które zdanie opisuje cudzożywność?", ua: "Яке речення описує гетеротрофне живлення?" },
-        options: [
-          { id: "a", label: { pl: "organizm pobiera gotowe substancje odżywcze z innych organizmów lub ze szczątków", ua: "організм бере готові поживні речовини з інших організмів або з решток" } },
-          { id: "b", label: { pl: "organizm wytwarza glukozę w chloroplastach", ua: "організм виробляє глюкозу в хлоропластах" } },
-          { id: "c", label: { pl: "organizm nie potrzebuje pokarmu", ua: "організм не потребує поживи" } }
-        ],
-        answer: "a",
-        explanation: { pl: "b to samożywność / fotosynteza.", ua: "b — саможивлення / фотосинтез." }
-      }
-    },
-    {
-      type: "practice",
-      heading: { pl: "Diety", ua: "Дієти" },
-      task: {
-        id: "l11-p2",
-        type: "multiple-choice",
-        question: { pl: "Zaznacz poprawne przykłady.", ua: "Познач правильні приклади." },
-        options: [
-          { id: "a", label: { pl: "krowa — roślinożerca", ua: "корова — рослиноїдна" } },
-          { id: "b", label: { pl: "szczupak — mięsożerca", ua: "щука — м’ясоїдна" } },
-          { id: "c", label: { pl: "człowiek — wszystkożerca", ua: "людина — всеїдна" } },
-          { id: "d", label: { pl: "krowa — samożywna jak pelargonia", ua: "корова — саможивна як пеларгонія" } }
-        ],
-        answer: ["a", "b", "c"],
-        explanation: { pl: "Krowa je rośliny, ale ich nie wytwarza fotosyntezą.", ua: "Корова їсть рослини, але не виробляє їх фотосинтезом." }
-      }
-    },
-    {
-      type: "practice",
-      heading: { pl: "Saprobiont", ua: "Сапробіонт" },
-      task: {
-        id: "l11-p3",
-        type: "true-false",
-        question: { pl: "Grzyb rozkładający martwy pień jest saprobiontem.", ua: "Гриб, що розкладає мертвий пень, є сапробіонтом." },
-        answer: true,
-        explanation: { pl: "Szczątki, nie żywy gospodarz.", ua: "Рештки, не живий хазяїн." }
-      }
-    },
-    {
-      type: "practice",
-      heading: { pl: "Pasożyt", ua: "Паразит" },
-      task: {
-        id: "l11-p4",
-        type: "single-choice",
-        question: { pl: "Który przykład jest pasożytem?", ua: "Який приклад є паразитом?" },
-        options: [
-          { id: "a", label: { pl: "kleszcz pobierający pokarm z żywego ssaka", ua: "кліщ, що бере поживу з живого ссавця" } },
-          { id: "b", label: { pl: "pelargonia na świetle", ua: "пеларгонія на світлі" } },
-          { id: "c", label: { pl: "zając jedzący trawę (to nie pasożytnictwo, to roślinożerność)", ua: "заєць, що їсть траву (це не паразитизм, це рослиноїдність)" } }
-        ],
-        answer: "a",
-        explanation: { pl: "Zając zjada roślinę, ale nie żyje w niej jako pasożyt. Kleszcz żeruje na żywym gospodarzu.", ua: "Заєць з’їдає рослину, але не живе в ній як паразит." }
-      }
-    },
-    {
-      type: "practice",
-      heading: { pl: "Źródło pokarmu", ua: "Джерело поживи" },
+      heading: { pl: "Sam. Szczupak", ua: "Сам. Щука" },
       task: {
         id: "l11-p5",
         type: "single-choice",
-        question: { pl: "Skąd cudzożywne biorą pokarm?", ua: "Звідки гетеротрофи беруть поживу?" },
+        question: {
+          pl: "Szczupak zjadł mniejszą rybę. Skąd wcześniej wzięła się energia zapisana w tym pokarmie?",
+          ua: "Щука з’їла меншу рибу. Звідки раніше взялася енергія, записана в цій поживі?"
+        },
         options: [
-          { id: "a", label: { pl: "z innych organizmów albo z ich szczątków — nie z własnej fotosyntezy", ua: "з інших організмів або з їхніх решток — не з власного фотосинтезу" } },
-          { id: "b", label: { pl: "wyłącznie z dwutlenku węgla i chlorofilu we własnych liściach", ua: "виключно з вуглекислого газу і хлорофілу у власних листках" } },
-          { id: "c", label: { pl: "z powietrza bez żadnych związków organicznych", ua: "з повітря без жодних органічних сполук" } }
+          { id: "a", label: { pl: "z fotosyntezy na początku łańcucha, nie z chloroplastów szczupaka", ua: "з фотосинтезу на початку ланцюга, не з хлоропластів щуки" } },
+          { id: "b", label: { pl: "szczupak sam zrobił cukier z dwutlenku węgla w łuskach", ua: "щука сама зробила цукор із вуглекислого газу в лусці" } },
+          { id: "c", label: { pl: "energia powstała w jodynie na liściu", ua: "енергія виникла в йоді на листку" } }
         ],
         answer: "a",
-        explanation: { pl: "Gotowy pokarm. Fotosynteza to samożywność.", ua: "Готова пожива." }
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Szczupak nie prowadzi fotosyntezy. Cukier na początku zrobiła samożywna roślina, a dalej pokarm szedł przez inne organizmy.",
+              ua: "Щука не веде фотосинтез. Цукор на початку зробила саможивна рослина, а далі пожива йшла через інші організми."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Jodyna tylko pokazuje skrobię w doświadczeniu. Energii w pokarmie szczupaka nie wytwarza.",
+              ua: "Йод лише показує крохмаль у досліді. Енергії в поживі щуки він не виробляє."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Energia w pokarmie szczupaka pochodzi wcześniej z fotosyntezy.",
+          ua: "Енергія в поживі щуки походить раніше з фотосинтезу."
+        }
       }
     },
+
     {
-      type: "check",
-      heading: { pl: "Sprawdzenie 1. Cudzożywność", ua: "Перевірка 1. Гетеротрофне живлення" },
+      type: "goal",
+      heading: { pl: "Sprawdzian bez podpowiedzi", ua: "Перевірка без підказок" },
       text: {
-        pl: ["To sprawdzenie Paszportu."],
-        ua: ["Це перевірка Паспорта."]
-      },
+        pl: [
+          "Pięć pytań jak w szkole. Przycisku podpowiedzi nie ma.",
+          "Jeśli odpowiedź będzie nietrafiona, zobaczysz, który sposób odżywiania sprawdziłeś nie tym słowem."
+        ],
+        ua: [
+          "П’ять питань як у школі. Кнопки підказки немає.",
+          "Якщо відповідь не підійде, побачиш, який спосіб живлення ти перевірив не тим словом."
+        ]
+      }
+    },
+    {
+      type: "check",
+      heading: { pl: "Sprawdzian 1. Cudzożywność", ua: "Перевірка 1. Гетеротрофне живлення" },
       task: {
-        id: "l11-s1",
+        id: "l11-t1",
         type: "single-choice",
-        question: { pl: "Czym jest cudzożywność?", ua: "Що таке гетеротрофне живлення?" },
+        question: {
+          pl: "Czym jest cudzożywność?",
+          ua: "Що таке гетеротрофне живлення?"
+        },
         options: [
-          { id: "a", label: { pl: "pobieranie gotowych substancji odżywczych z innych organizmów lub ze szczątków — w odróżnieniu od samożywności", ua: "вбирання готових поживних речовин з інших організмів або з решток — на відміну від саможивлення" } },
+          { id: "a", label: { pl: "pobieranie gotowych substancji odżywczych z innych organizmów lub ze szczątków", ua: "вбирання готових поживних речовин з інших організмів або з решток" } },
           { id: "b", label: { pl: "wytwarzanie glukozy w chloroplastach", ua: "вироблення глюкози в хлоропластах" } },
-          { id: "c", label: { pl: "brak pokarmu", ua: "відсутність поживи" } }
+          { id: "c", label: { pl: "brak pokarmu, bo organizm niczego nie potrzebuje", ua: "відсутність поживи, бо організм нічого не потребує" } }
         ],
         answer: "a",
-        explanation: { pl: "Gotowy pokarm vs wytwarzanie w fotosyntezie.", ua: "Готова пожива vs вироблення у фотосинтезі." }
-      }
-    },
-    {
-      type: "check",
-      heading: { pl: "Sprawdzenie 2. Diety", ua: "Перевірка 2. Дієти" },
-      task: {
-        id: "l11-s2",
-        type: "multiple-choice",
-        question: { pl: "Zaznacz poprawne pary.", ua: "Познач правильні пари." },
-        options: [
-          { id: "a", label: { pl: "roślinożerca — zając", ua: "рослиноїдний — заєць" } },
-          { id: "b", label: { pl: "mięsożerca — lis", ua: "м’ясоїдний — лисиця" } },
-          { id: "c", label: { pl: "wszystkożerca — człowiek", ua: "всеїдний — людина" } },
-          { id: "d", label: { pl: "lis — samożywny", ua: "лисиця — саможивна" } }
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Glukoza w chloroplastach to samożywność. Cudzożywność zaczyna się od gotowego pokarmu.",
+              ua: "Глюкоза в хлоропластах — це саможивлення. Гетеротрофне живлення починається з готової поживи."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Pokarm jest potrzebny. Cudzożywny go pobiera, samożywny go wytwarza.",
+              ua: "Пожива потрібна. Гетеротроф її бере, саможивний її виробляє."
+            }
+          }
         ],
-        answer: ["a", "b", "c"],
-        explanation: { pl: "Lis nie fotosyntetyzuje.", ua: "Лисиця не фотосинтезує." }
+        explanation: {
+          pl: "Cudzożywność to pobieranie gotowego pokarmu z innych organizmów lub ze szczątków.",
+          ua: "Гетеротрофне живлення — це вбирання готової поживи з інших організмів або з решток."
+        }
       }
     },
     {
       type: "check",
-      heading: { pl: "Sprawdzenie 3. Saprobiont", ua: "Перевірка 3. Сапробіонт" },
+      heading: { pl: "Sprawdzian 2. Diety", ua: "Перевірка 2. Дієти" },
       task: {
-        id: "l11-s3",
+        id: "l11-t2",
         type: "single-choice",
-        question: { pl: "Czym jest odżywianie saprobiontyczne?", ua: "Що таке сапробіонтне живлення?" },
+        question: {
+          pl: "Który zestaw przykładów jest prawdziwy?",
+          ua: "Який набір прикладів правдивий?"
+        },
         options: [
-          { id: "a", label: { pl: "odżywianie się martwymi szczątkami organizmów (np. grzyb na pniu)", ua: "живлення мертвими рештками організмів (напр. гриб на пні)" } },
-          { id: "b", label: { pl: "fotosynteza w chloroplastach", ua: "фотосинтез у хлоропластах" } },
-          { id: "c", label: { pl: "polowanie lisa na zająca", ua: "полювання лисиці на зайця" } }
+          { id: "a", label: { pl: "krowa — roślinożerca; szczupak — mięsożerca; niedźwiedź — wszystkożerca", ua: "корова — рослиноїдна; щука — м’ясоїдна; ведмідь — всеїдний" } },
+          { id: "b", label: { pl: "krowa — samożywna; szczupak — roślinożerca; niedźwiedź — saprobiont", ua: "корова — саможивна; щука — рослиноїдна; ведмідь — сапробіонт" } },
+          { id: "c", label: { pl: "wszystkie trzy są pasożytami trawy", ua: "усі три є паразитами трави" } }
         ],
         answer: "a",
-        explanation: { pl: "Szczątki. Polowanie to mięsożerność, nie saprobiont.", ua: "Рештки. Полювання — м’ясоїдність." }
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Krowa je rośliny, ale ich nie wytwarza. Szczupak je inne zwierzęta. Niedźwiedź je i rośliny, i zwierzęta.",
+              ua: "Корова їсть рослини, але їх не виробляє. Щука їсть інших тварин. Ведмідь їсть і рослини, і тварин."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Pasożyt żyje kosztem żywego gospodarza. Krowa, szczupak i niedźwiedź mają diety, nie są pasożytami trawy.",
+              ua: "Паразит живе коштом живого хазяїна. Корова, щука і ведмідь мають дієти, не є паразитами трави."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Krowa je rośliny, szczupak je zwierzęta, niedźwiedź je jedne i drugie.",
+          ua: "Корова їсть рослини, щука їсть тварин, ведмідь їсть і те, і те."
+        }
       }
     },
     {
       type: "check",
-      heading: { pl: "Sprawdzenie 4. Pasożyt", ua: "Перевірка 4. Паразит" },
+      heading: { pl: "Sprawdzian 3. Saprobiont", ua: "Перевірка 3. Сапробіонт" },
       task: {
-        id: "l11-s4",
+        id: "l11-t3",
         type: "single-choice",
-        question: { pl: "Czym jest pasożytnictwo?", ua: "Що таке паразитизм?" },
+        question: {
+          pl: "Czym jest odżywianie saprobiontyczne?",
+          ua: "Що таке сапробіонтне живлення?"
+        },
         options: [
-          { id: "a", label: { pl: "pobieranie pokarmu z żywego gospodarza, ze szkodą dla gospodarza", ua: "вбирання поживи з живого хазяїна, зі шкодою для хазяїна" } },
-          { id: "b", label: { pl: "rozkładanie opadłych liści jak saprobiont", ua: "розкладання опалого листя як сапробіонт" } },
+          { id: "a", label: { pl: "odżywianie się martwymi szczątkami, na przykład grzyb na pniu", ua: "живлення мертвими рештками, наприклад гриб на пні" } },
+          { id: "b", label: { pl: "fotosynteza w chloroplastach trawy", ua: "фотосинтез у хлоропластах трави" } },
+          { id: "c", label: { pl: "lis zjada żywego zająca", ua: "лисиця з’їдає живого зайця" } }
+        ],
+        answer: "a",
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Fotosynteza to samożywność. Saprobiont bierze gotowy pokarm z martwych szczątków.",
+              ua: "Фотосинтез — це саможивлення. Сапробіонт бере готову поживу з мертвих решток."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Lis, który zjada zająca, jest mięsożercą. Saprobiont zostaje przy szczątkach, nie przy żywym zwierzęciu.",
+              ua: "Лисиця, яка з’їдає зайця, є м’ясоїдною. Сапробіонт лишається при рештках, не при живій тварині."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Saprobiont odżywia się martwymi szczątkami.",
+          ua: "Сапробіонт живиться мертвими рештками."
+        }
+      }
+    },
+    {
+      type: "check",
+      heading: { pl: "Sprawdzian 4. Pasożyt", ua: "Перевірка 4. Паразит" },
+      task: {
+        id: "l11-t4",
+        type: "single-choice",
+        question: {
+          pl: "Czym jest pasożytnictwo?",
+          ua: "Що таке паразитизм?"
+        },
+        options: [
+          { id: "a", label: { pl: "pobieranie pokarmu z żywego gospodarza, a gospodarz na tym traci", ua: "вбирання поживи з живого хазяїна, а хазяїн на цьому втрачає" } },
+          { id: "b", label: { pl: "rozkładanie opadłych liści", ua: "розкладання опалого листя" } },
           { id: "c", label: { pl: "wytwarzanie tlenu w liściu", ua: "вироблення кисню в листку" } }
         ],
         answer: "a",
-        explanation: { pl: "Żywy gospodarz. Nie mylić ze szczątkami.", ua: "Живий хазяїн. Не плутати з рештками." }
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Opadłe liście to szczątki. Tak żyje saprobiont. Pasożyt pobiera pokarm z żywego gospodarza.",
+              ua: "Опале листя — це рештки. Так живе сапробіонт. Паразит бере поживу з живого хазяїна."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Tlen w liściu powstaje w fotosyntezie. Pasożytnictwo jest pobieraniem gotowego pokarmu z żywego gospodarza.",
+              ua: "Кисень у листку виникає у фотосинтезі. Паразитизм є вбиранням готової поживи з живого хазяїна."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Pasożyt pobiera pokarm z żywego gospodarza. Gospodarz na tym traci.",
+          ua: "Паразит бере поживу з живого хазяїна. Хазяїн на цьому втрачає."
+        }
       }
     },
     {
       type: "check",
-      heading: { pl: "Sprawdzenie 5. Źródło pokarmu", ua: "Перевірка 5. Джерело поживи" },
+      heading: { pl: "Sprawdzian 5. Źródło pokarmu", ua: "Перевірка 5. Джерело поживи" },
       task: {
-        id: "l11-s5",
-        type: "true-false",
-        question: { pl: "Cudzożywne organizmy biorą pokarm z innych organizmów lub ze szczątków — nie wytwarzają go fotosyntezą.", ua: "Гетеротрофні організми беруть поживу з інших організмів або з решток — не виробляють її фотосинтезом." },
-        answer: true,
-        explanation: { pl: "To domknięcie paszportu.", ua: "Це замикання паспорта." }
+        id: "l11-t5",
+        type: "single-choice",
+        question: {
+          pl: "Skąd cudzożywne organizmy biorą pokarm?",
+          ua: "Звідки гетеротрофні організми беруть поживу?"
+        },
+        options: [
+          { id: "a", label: { pl: "z innych organizmów albo z ich szczątków; nie wytwarzają go własną fotosyntezą", ua: "з інших організмів або з їхніх решток; не виробляють її власним фотосинтезом" } },
+          { id: "b", label: { pl: "wyłącznie z dwutlenku węgla we własnych liściach", ua: "виключно з вуглекислого газу у власних листках" } },
+          { id: "c", label: { pl: "z jodyny, która wytwarza glukozę", ua: "з йоду, який виробляє глюкозу" } }
+        ],
+        answer: "a",
+        mistakes: [
+          {
+            answer: "b",
+            feedback: {
+              pl: "Dwutlenek węgla i liście to fotosynteza samożywnej rośliny. Cudzożywny bierze gotowy pokarm.",
+              ua: "Вуглекислий газ і листки — це фотосинтез саможивної рослини. Гетеротроф бере готову поживу."
+            }
+          },
+          {
+            answer: "c",
+            feedback: {
+              pl: "Jodyna nie wytwarza glukozy. Pokarm cudzożywnych pochodzi od innych organizmów albo z ich szczątków.",
+              ua: "Йод не виробляє глюкозу. Пожива гетеротрофів походить від інших організмів або з їхніх решток."
+            }
+          }
+        ],
+        explanation: {
+          pl: "Cudzożywne biorą gotowy pokarm z innych organizmów albo ze szczątków.",
+          ua: "Гетеротрофні беруть готову поживу з інших організмів або з решток."
+        }
       }
     },
     {
       type: "summary",
       heading: { pl: "Zapamiętaj", ua: "Запам’ятай" },
       visual: vizGh("l11-lancuch.png", {
-        alt: { pl: "Łańcuch: roślina, zając, lis", ua: "Ланцюг: рослина, заєць, лисиця" },
-        title: { pl: "Gotowy pokarm. Różne sposoby jego pobierania.", ua: "Готова пожива. Різні способи її вбирання." },
-        prompt: { pl: "Ten sam prosty łańcuch trawa–zając–lis." }
+        alt: { pl: "Łańcuch: trawa, zając, lis", ua: "Ланцюг: трава, заєць, лисиця" },
+        title: { pl: "Gotowy pokarm. Na początku jest roślina.", ua: "Готова пожива. На початку є рослина." },
+        prompt: { pl: "Ten sam łańcuch trawa–zając–lis." }
       }),
       text: {
         pl: [
-          "Cudzożywność: gotowy pokarm z innych organizmów lub ze szczątków. Samożywność: wytwarzanie (fotosynteza).",
-          "Zwierzęta: roślinożerca, mięsożerca, wszystkożerca.",
-          "Saprobiont — szczątki. Pasożyt — żywy gospodarz.",
-          "Na początku większości łańcuchów pokarmowych jest samożywna roślina."
+          "Cudzożywność: gotowy pokarm z innych organizmów lub ze szczątków. Samożywność: wytwarzanie, na przykład fotosynteza.",
+          "Zwierzęta: roślinożerca, mięsożerca, wszystkożerca. To diety, nie królestwa.",
+          "Saprobiont — martwe szczątki. Pasożyt — żywy gospodarz.",
+          "Na początku łańcucha trawa → zając → lis jest samożywna roślina."
         ],
         ua: [
-          "Гетеротрофне живлення: готова пожива. Саможивлення: вироблення (фотосинтез).",
-          "Тварини: рослиноїдний, м’ясоїдний, всеїдний.",
-          "Сапробіонт — рештки. Паразит — живий хазяїн.",
-          "На початку більшості ланцюгів є саможивна рослина."
+          "Гетеротрофне живлення: готова пожива з інших організмів або з решток. Саможивлення: вироблення, наприклад фотосинтез.",
+          "Тварини: рослиноїдний, м’ясоїдний, всеїдний. Це дієти, не царства.",
+          "Сапробіонт — мертві рештки. Паразит — живий хазяїн.",
+          "На початку ланцюга трава → заєць → лисиця є саможивна рослина."
         ]
       }
     },
     {
       type: "review",
-      heading: { pl: "Paszport zaliczony", ua: "Паспорт зараховано" },
+      heading: { pl: "Co już umiem", ua: "Що я вже вмію" },
       items: [
-        { pl: "Potrafię wyjaśnić cudzożywność wobec samożywności.", ua: "Можу пояснити гетеротрофне живлення супроти саможивлення." },
-        { pl: "Potrafię podać przykłady trzech diet zwierząt.", ua: "Можу навести приклади трьох дієт тварин." },
-        { pl: "Potrafię powiedzieć, czym jest odżywianie saprobiontyczne.", ua: "Можу сказати, що таке сапробіонтне живлення." },
-        { pl: "Potrafię powiedzieć, czym jest pasożytnictwo.", ua: "Можу сказати, що таке паразитизм." },
-        { pl: "Potrafię wyjaśnić, skąd cudzożywne biorą pokarm.", ua: "Можу пояснити, звідки гетеротрофи беруть поживу." }
+        { pl: "Wyjaśnię, czym cudzożywność różni się od samożywności.", ua: "Поясню, чим гетеротрофне живлення відрізняється від саможивлення." },
+        { pl: "Podam przykłady roślinożercy, mięsożercy i wszystkożercy.", ua: "Наведу приклади рослиноїдного, м’ясоїдного і всеїдного." },
+        { pl: "Powiem, czym jest odżywianie saprobiontyczne.", ua: "Скажу, що таке сапробіонтне живлення." },
+        { pl: "Powiem, czym jest pasożytnictwo.", ua: "Скажу, що таке паразитизм." },
+        { pl: "Wyjaśnię, skąd cudzożywne organizmy biorą pokarm.", ua: "Поясню, звідки гетеротрофні організми беруть поживу." },
+        { pl: "Jeśli któraś odpowiedź nie siadła, wracam do tej części, a nie do całego działu.", ua: "Якщо якась відповідь не сіла, повертаюся до тієї частини, а не до всього розділу." }
       ]
     }
   ]

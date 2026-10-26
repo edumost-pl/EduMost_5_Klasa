@@ -34,6 +34,13 @@
     return state;
   }
 
+  function update(subject, topicId, fn) {
+    const state = get(subject, topicId);
+    fn(state);
+    put(subject, topicId, state);
+    return state;
+  }
+
   function recordTask(subject, topicId, taskId, result) {
     const state = get(subject, topicId);
     state.tasks = state.tasks || {};
@@ -42,5 +49,5 @@
     return state;
   }
 
-  g.EduMostProgress = { get: get, visit: visit, recordTask: recordTask };
+  g.EduMostProgress = { get: get, visit: visit, update: update, recordTask: recordTask };
 })(window);

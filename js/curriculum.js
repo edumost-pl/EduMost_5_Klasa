@@ -123,6 +123,26 @@ window.EduMostCurriculum = {
             ]
           }
         ]
+      },
+      {
+        id: "kartkowki-szkolne",
+        title: { pl: "Kartkówki i sprawdziany", ua: "Картатки і контрольні" },
+        chapters: [
+          {
+            id: "przygotowanie-sprawdzian-2710",
+            title: { pl: "Przygotowanie do sprawdzianu", ua: "Підготовка до контрольної" },
+            topics: [
+              {
+                id: "sprawdzian-2026-10-27",
+                lesson: "sprawdzian-2026-10-27",
+                title: {
+                  pl: "Sprawdzian 27.10 — działania pisemne i liczby pierwsze",
+                  ua: "Контрольна 27.10 — письмові дії і прості числа"
+                }
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -305,6 +325,20 @@ window.EduMostCurriculum = {
                 title: {
                   pl: "Jak analizować nowy wiersz?",
                   ua: "Як аналізувати новий вірш?"
+                }
+              }
+            ]
+          },
+          {
+            id: "przygotowanie-sprawdzian-1910",
+            title: { pl: "Przygotowanie do sprawdzianu", ua: "Підготовка до контрольної" },
+            topics: [
+              {
+                id: "sprawdzian-2026-10-19",
+                lesson: "sprawdzian-2026-10-19",
+                title: {
+                  pl: "Sprawdzian 19.10 — wiersz, rzeczownik, ortografia",
+                  ua: "Контрольна 19.10 — вірш, іменник, орфографія"
                 }
               }
             ]
@@ -508,7 +542,7 @@ window.EduMostCurriculum = {
   historia: {
     id: "historia",
     icon: "🏛️",
-    name: { pl: "Historia", ua: "Історія" },
+    name: { pl: "Historia", ua: "Історія", ru: "История" },
     book: {
       title: "Wczoraj i dziś",
       parts: "podręcznik do klasy 5",
@@ -521,20 +555,20 @@ window.EduMostCurriculum = {
     parts: [
       {
         id: "podrecznik",
-        title: { pl: "Podręcznik", ua: "Підручник" },
+        title: { pl: "Podręcznik", ua: "Підручник", ru: "Учебник" },
         chapters: [
           {
             id: "pierwsze-cywilizacje",
             roman: "I",
-            title: { pl: "Pierwsze cywilizacje", ua: "Перші цивілізації" },
+            title: { pl: "Pierwsze cywilizacje", ua: "Перші цивілізації", ru: "Первые цивилизации" },
             topics: [
-              { id: "zycie-pierwszych-ludzi", page: 8, lesson: "01-zycie-pierwszych-ludzi", title: { pl: "Życie pierwszych ludzi", ua: "Життя перших людей" } },
-              { id: "miasta-panstwa-mezopotamii", page: 14, lesson: "02-miasta-panstwa-mezopotamii", title: { pl: "Miasta-państwa Mezopotamii", ua: "Міста-держави Месопотамії" } },
-              { id: "w-egipcie-faraonow", page: 20, lesson: "03-w-egipcie-faraonow", title: { pl: "W Egipcie faraonów", ua: "У Єгипті фараонів" } },
-              { id: "w-starozytnym-izraelu", page: 26, lesson: "04-w-starozytnym-izraelu", title: { pl: "W starożytnym Izraelu", ua: "У стародавньому Ізраїлі" } },
-              { id: "cywilizacje-indii-i-chin", page: 30, lesson: "05-cywilizacje-indii-i-chin", title: { pl: "Cywilizacje Indii i Chin", ua: "Цивілізації Індії і Китаю" } },
-              { id: "od-hieroglifow-do-alfabetu", page: 35, lesson: "06-od-hieroglifow-do-alfabetu", title: { pl: "Od hieroglifów do alfabetu", ua: "Від ієрогліфів до алфавіту" } },
-              { id: "powtorzenie-pierwsze-cywilizacje", lesson: "powtorzenie-pierwsze-cywilizacje", title: { pl: "Powtórzenie i sprawdzian · Pierwsze cywilizacje", ua: "Повторення і перевірка · Перші цивілізації" } }
+              { id: "zycie-pierwszych-ludzi", page: 8, lesson: "01-zycie-pierwszych-ludzi", title: { pl: "Życie pierwszych ludzi", ua: "Життя перших людей", ru: "Жизнь первых людей" } },
+              { id: "miasta-panstwa-mezopotamii", page: 14, lesson: "02-miasta-panstwa-mezopotamii", title: { pl: "Miasta-państwa Mezopotamii", ua: "Міста-держави Месопотамії", ru: "Города-государства Месопотамии" } },
+              { id: "w-egipcie-faraonow", page: 20, lesson: "03-w-egipcie-faraonow", title: { pl: "W Egipcie faraonów", ua: "У Єгипті фараонів", ru: "В Египте фараонов" } },
+              { id: "w-starozytnym-izraelu", page: 26, lesson: "04-w-starozytnym-izraelu", title: { pl: "W starożytnym Izraelu", ua: "У стародавньому Ізраїлі", ru: "В древнем Израиле" } },
+              { id: "cywilizacje-indii-i-chin", page: 30, lesson: "05-cywilizacje-indii-i-chin", title: { pl: "Cywilizacje Indii i Chin", ua: "Цивілізації Індії і Китаю", ru: "Цивилизации Индии и Китая" } },
+              { id: "od-hieroglifow-do-alfabetu", page: 35, lesson: "06-od-hieroglifow-do-alfabetu", title: { pl: "Od hieroglifów do alfabetu", ua: "Від ієрогліфів до алфавіту", ru: "От иероглифов к алфавиту" } },
+              { id: "powtorzenie-pierwsze-cywilizacje", lesson: "powtorzenie-pierwsze-cywilizacje", title: { pl: "Powtórzenie i sprawdzian · Pierwsze cywilizacje", ua: "Повторення і перевірка · Перші цивілізації", ru: "Повторение и sprawdzian · Первые цивилизации" } }
             ]
           },
           {
@@ -615,6 +649,26 @@ window.EduMostCurriculum = {
               { id: "czasy-swietnosci-dynastii-jagiellonow", page: 216, lesson: "37-czasy-swietnosci-dynastii-jagiellonow", title: { pl: "Czasy świetności dynastii Jagiellonów", ua: "Часи розквіту династії Ягеллонів" } },
               { id: "monarchia-stanowa-w-polsce", page: 222, lesson: "38-monarchia-stanowa-w-polsce", title: { pl: "Monarchia stanowa w Polsce", ua: "Станова монархія в Польщі" } },
               { id: "powtorzenie-polska-xiii-xv", lesson: "powtorzenie-polska-xiii-xv", title: { pl: "Powtórzenie i sprawdzian · Polska w XIII–XV wieku", ua: "Повторення і перевірка · Польща в XIII–XV століттях" } }
+            ]
+          }
+        ]
+      },
+      {
+        id: "kartkowki-szkolne",
+        title: { pl: "Kartkówki i sprawdziany", ua: "Картатки і контрольні" },
+        chapters: [
+          {
+            id: "przygotowanie-sprawdzian-3010",
+            title: { pl: "Przygotowanie do sprawdzianu", ua: "Підготовка до контрольної" },
+            topics: [
+              {
+                id: "sprawdzian-2026-10-30",
+                lesson: "sprawdzian-2026-10-30",
+                title: {
+                  pl: "Sprawdzian 30.10 — Pierwsze cywilizacje",
+                  ua: "Контрольна 30.10 — Перші цивілізації"
+                }
+              }
             ]
           }
         ]

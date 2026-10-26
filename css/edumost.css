@@ -288,14 +288,18 @@ body {
 
 .chapter summary .name-ua,
 .part-title .name-ua,
-.topic-main .name-ua {
+.topic-main .name-ua,
+.chapter summary .name-ru,
+.part-title .name-ru,
+.topic-main .name-ru {
   display: block;
   font-weight: 500;
   font-size: .82rem;
   color: var(--accent2);
   margin-top: .12rem;
 }
-.part-title .name-ua { display: inline; margin-left: .45rem; font-size: .85rem; text-transform: none; letter-spacing: 0; }
+.part-title .name-ua,
+.part-title .name-ru { display: inline; margin-left: .45rem; font-size: .85rem; text-transform: none; letter-spacing: 0; }
 .topic-main { flex: 1; display: flex; gap: .45rem; min-width: 0; }
 .topic-main .dot { flex-shrink: 0; margin-top: .38rem; }
 .topic-titles { min-width: 0; }
@@ -539,6 +543,10 @@ body {
 .polski-assess-item.is-kart {
   border-left: 5px solid #b45309;
   background: #fffbeb;
+}
+.polski-assess-item.is-sprawdzian {
+  border-left-color: #6d28d9;
+  background: #f5f3ff;
 }
 .polski-assess-open {
   display: inline-block;

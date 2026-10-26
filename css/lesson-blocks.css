@@ -112,6 +112,8 @@
 
 .tx-pl {font-size: 1.15rem; }
 .tx-ua { color: var(--accent2); font-size: 1rem; margin-top: .45rem;}
+.tx-ru { color: #1c1917; font-size: 1.08rem; margin-top: .4rem; line-height: 1.5; }
+.tx-ru .tx-mark { color: #9a3412; }
 .tx-pl + .tx-pl,
 .tx-ua + .tx-ua { margin-top: .35rem; }
 .tx-pl strong,
@@ -173,24 +175,25 @@
   inset: 0;
   z-index: 4000;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  padding: 1rem;
-  background: rgba(12, 10, 9, .88);
+  box-sizing: border-box;
+  padding: .75rem;
+  background: rgba(12, 10, 9, .96);
   cursor: zoom-out;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
 }
 .viz-lightbox[hidden] { display: none; }
 .viz-lightbox-img {
-  max-width: min(960px, 100%);
-  max-height: none;
-  width: auto;
-  height: auto;
+  display: block;
+  width: calc(100vw - 1.5rem);
+  height: calc(100dvh - 1.5rem);
+  max-width: calc(100vw - 1.5rem);
+  max-height: calc(100dvh - 1.5rem);
   object-fit: contain;
+  object-position: center;
   border-radius: 8px;
   cursor: zoom-out;
-  margin: 0 auto 1.5rem;
 }
 body.viz-lightbox-open { overflow: hidden; }
 
@@ -4429,3 +4432,145 @@ body:is([data-topic="tulaczka-odyseusza"], [data-topic="tulaczka-odyseusza-akcja
   cursor: zoom-in;
 }
 body:is([data-topic="tulaczka-odyseusza"], [data-topic="tulaczka-odyseusza-akcja"]) .block-list li { margin: 0.35rem 0; line-height: 1.5; }
+
+body[data-topic="sprawdzian-2026-10-19"] .tx-pl,
+body[data-topic="sprawdzian-2026-10-19"] .tx-ua,
+body[data-topic="sprawdzian-2026-10-19"] .prompt,
+body[data-topic="sprawdzian-2026-10-19"] .task-opt,
+body[data-topic="sprawdzian-2026-10-19"] .math-line {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+body[data-topic="sprawdzian-2026-10-19"] .lesson-block[data-type="observe"] .block-body > p.tx-pl,
+body[data-topic="sprawdzian-2026-10-19"] .lesson-block[data-type="concept"] .block-body > p.tx-pl,
+body[data-topic="sprawdzian-2026-10-19"] .lesson-block[data-type="example"] .block-body > p.tx-pl,
+body[data-topic="sprawdzian-2026-10-19"] .lesson-block[data-type="summary"] .block-body > p.tx-pl,
+body[data-topic="sprawdzian-2026-10-19"] .lesson-block[data-type="check"] .block-body > p.tx-pl {
+  font-size: 1.12rem;
+  line-height: 1.55;
+  margin: .16rem 0;
+}
+body[data-topic="sprawdzian-2026-10-19"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="sprawdzian-2026-10-19"] .lesson-block[data-type="observe"] .block-body > p.tx-pl:nth-of-type(7),
+body[data-topic="sprawdzian-2026-10-19"] .lesson-block[data-type="example"] .block-body > p.tx-pl:nth-of-type(6),
+body[data-topic="sprawdzian-2026-10-19"] .lesson-block[data-type="example"] .block-body > p.tx-pl:nth-of-type(7) {
+  height: auto;
+  margin: .16rem 0;
+  font-size: 1.12rem;
+  line-height: 1.55;
+  overflow: visible;
+}
+body[data-topic="sprawdzian-2026-10-19"] .block-list li {
+  margin: .4rem 0;
+  line-height: 1.45;
+}
+body[data-topic="sprawdzian-2026-10-19"] .rule-card {
+  background: #f6f3b8;
+  border: 2px solid #1e4638;
+  border-radius: 22px;
+  padding: .95rem 1.15rem 1.05rem;
+  margin: .15rem 0 1rem;
+}
+body[data-topic="sprawdzian-2026-10-19"] .rule-kicker {
+  margin: 0 0 .55rem;
+  color: #1b4d32;
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+body[data-topic="sprawdzian-2026-10-19"] .rule-line {
+  margin: .42rem 0;
+  color: #1b4d32;
+  font-size: 1.12rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+body[data-topic="sprawdzian-2026-10-19"] .rule-line .tx-bold {
+  font-weight: 800;
+}
+body[data-topic="sprawdzian-2026-10-19"] .lesson-block .task-card {
+  margin-top: 1.15rem;
+}
+
+.lesson-modes,
+.lesson-modules {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin: 0 0 .65rem;
+}
+.lesson-modes button,
+.lesson-modules button {
+  font: inherit;
+  font-size: .92rem;
+  line-height: 1.3;
+  padding: .42rem .75rem;
+  border: 1.5px solid #d6d3d1;
+  border-radius: 999px;
+  background: #fff;
+  color: #1c1917;
+  cursor: pointer;
+}
+.lesson-modes button.is-on,
+.lesson-modules button.is-on {
+  background: #1c1917;
+  color: #fff;
+  border-color: #1c1917;
+}
+.viz-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: .35rem;
+  margin: .7rem 0;
+}
+.viz-flow-step {
+  flex: 1 1 8.5rem;
+  max-width: 14rem;
+  background: #fff7ed;
+  border: 1.5px solid #fdba74;
+  border-radius: 10px;
+  padding: .55rem .7rem;
+}
+.viz-flow-step strong { display: block; font-size: .98rem; }
+.viz-flow-step span { display: block; font-size: .88rem; margin-top: .2rem; }
+.viz-flow-arrow { align-self: center; font-size: 1.35rem; font-weight: 700; }
+
+.zeszyt-card {
+  margin-top: 1rem;
+  padding: .9rem 1rem;
+  border: 2px solid #1c1917;
+  border-radius: 12px;
+  background: #fffbeb;
+}
+.zeszyt-lead .tx-pl,
+.zeszyt-lead .tx-ru,
+.zeszyt-lead .tx-ua { font-size: 1.05rem; }
+.zeszyt-open,
+.zeszyt-again,
+.zeszyt-mark button {
+  font: inherit;
+  font-size: 1rem;
+  margin: .35rem .4rem .35rem 0;
+  padding: .55rem .8rem;
+  border-radius: 8px;
+  border: 2px solid #1c1917;
+  background: #1c1917;
+  color: #fff;
+  cursor: pointer;
+}
+.zeszyt-again,
+.zeszyt-mark button { background: #fff; color: #1c1917; }
+.zeszyt-key { margin-top: .8rem; }
+.zeszyt-note {
+  font-size: .95rem;
+  margin: 0 0 .6rem;
+}
+.zeszyt-answer {
+  background: #fff;
+  border-left: 4px solid #1c1917;
+  padding: .45rem .7rem;
+  margin: .45rem 0;
+}
+.zeszyt-saved { font-weight: 700; }

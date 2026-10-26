@@ -2801,6 +2801,30 @@ window.EduMostPolskiCourse = {
       "prepHref": "../lessons/polski/kartkowka-wiersz/index.html",
       "prepTitlePl": "Jak analizować nowy wiersz?",
       "prepTitleUa": "Як аналізувати новий вірш?"
+    },
+    {
+      "id": "S-2026-10-19",
+      "kind": "sprawdzian",
+      "date": "2026-10-19",
+      "teacher": "Wawrzyniak Paweł",
+      "titlePl": "Synonimy, rzeczownik, wiedza o wierszu, ortografia",
+      "titleUa": "Синоніми, іменник, знання про вірш, орфографія",
+      "teacherRequirements": [
+        "synonimy",
+        "rzeczownik: kto? co?, własne i pospolite, konkretne i abstrakcyjne",
+        "przypadki, rodzaj, liczba, temat i końcówka",
+        "nie z rzeczownikiem",
+        "podmiot liryczny, adresat, epitet, apostrofa, nastrój, rym",
+        "ó, rz, ż, ch, h wymienne oraz rz niewymienne"
+      ],
+      "linkedT": ["T2", "T5", "T6", "T7", "T17", "T22", "T23", "T26", "T29", "T31"],
+      "prepHref": "../lessons/polski/sprawdzian-2026-10-19/index.html",
+      "prepTitlePl": "Przygotowanie do sprawdzianu 19.10",
+      "prepTitleUa": "Підготовка до контрольної 19.10",
+      "prepNotePl": "Wiersz, rzeczownik i ortografia. Najpierw sens i przykład, potem pytanie. Na końcu próbny sprawdzian.",
+      "prepNoteUa": "Вірш, іменник і орфографія. Спочатку сенс і приклад, потім питання. Наприкінці пробна контрольна.",
+      "prepFromPl": "Do sprawdzianu powtórz:",
+      "prepFromUa": "До контрольної повтори:"
     }
   ]
 };

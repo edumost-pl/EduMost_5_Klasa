@@ -20,14 +20,16 @@
     if (!el || !task) return;
     const view = EduMostTaskTypes.render(task);
     const subject = (document.body && document.body.getAttribute("data-subject")) || "";
+    const reviewMode = document.body && document.body.getAttribute("data-lesson-mode") === "review";
     const lvl = subject === "polski" ? "" : levelLabel(task.level);
+    const allowHint = task.hint && !reviewMode;
     el.innerHTML =
       '<div class="task-card" data-task-type="' + esc(task.type) + '">' +
         (lvl ? '<p class="task-level">' + esc(lvl) + "</p>" : "") +
         '<div class="task-body">' + view.html + "</div>" +
         '<div class="task-actions">' +
           '<button type="button" class="task-check">' + esc(EduMostI18n.t("checkAnswer")) + "</button>" +
-          (task.hint ? '<button type="button" class="task-hint">' + esc(EduMostI18n.t("showHint")) + "</button>" : "") +
+          (allowHint ? '<button type="button" class="task-hint">' + esc(EduMostI18n.t("showHint")) + "</button>" : "") +
         "</div>" +
         '<div class="task-feedback" hidden></div>' +
       "</div>";
@@ -44,10 +46,18 @@
       });
     }
 
+    let wrongs = 0;
     if (checkBtn) {
       checkBtn.addEventListener("click", function () {
         const answer = view.getAnswer(el);
         const result = EduMostFeedback.evaluate(task, answer);
+        if (result.ok === false && task.coach && !reviewMode && wrongs === 0 && task.hint) {
+          wrongs += 1;
+          feedbackBox.hidden = false;
+          feedbackBox.className = "task-feedback is-hint";
+          feedbackBox.textContent = EduMostFeedback.bilingual(task.hint);
+          return;
+        }
         feedbackBox.hidden = false;
         feedbackBox.className = "task-feedback " +
           (result.ok === true ? "is-ok" : result.ok === false ? "is-bad" : "is-hint");

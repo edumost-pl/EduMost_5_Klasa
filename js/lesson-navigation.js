@@ -24,6 +24,7 @@
 
     if (progressEl) {
       progressEl.innerHTML =
+        moduleBar(state) +
         '<p class="lesson-count">' + (current + 1) + " / " + total + "</p>" +
         '<div class="lesson-dots">' + dots + "</div>" +
         timelineHtml(state.timeline, state.timelineYear, state.timelineId, state.timelineLesson);
@@ -38,6 +39,29 @@
             esc(t("lessonNext")) + " →</button>" +
         "</div>";
     }
+  }
+
+  function moduleBar(state) {
+    if (!state.modules || !state.modules.length) return "";
+    const lang = EduMostI18n.getLang();
+    const mode = state.mode || "learn";
+    let html = '<div class="lesson-modes">' +
+      '<button type="button" data-mode="learn"' + (mode === "learn" ? ' class="is-on"' : "") + ">" +
+        esc(EduMostI18n.t("modeLearn")) + "</button>" +
+      '<button type="button" data-mode="review"' + (mode === "review" ? ' class="is-on"' : "") + ">" +
+        esc(EduMostI18n.t("modeReview")) + "</button></div>";
+    if (mode === "review") return html;
+    html += '<div class="lesson-modules">';
+    state.modules.forEach(function (m) {
+      const on = m.id === state.moduleId;
+      const title = m.title || {};
+      const label = lang === "ua" ? (title.ua || title.pl || m.id)
+        : lang === "ru" ? (title.ru || title.pl || m.id)
+        : (title.pl || m.id);
+      html += '<button type="button" data-module="' + esc(m.id) + '"' +
+        (on ? ' class="is-on"' : "") + ">" + esc(label) + "</button>";
+    });
+    return html + "</div>";
   }
 
   function dual(obj) {
@@ -133,10 +157,13 @@
 
   function bind(progressEl, pagerEl, handlers) {
     function onClick(ev) {
-      const btn = ev.target.closest ? ev.target.closest("[data-go], .prev, .next") : null;
+      const btn = ev.target.closest ? ev.target.closest("[data-go], .prev, .next, [data-module], [data-mode]") : null;
       if (!btn) return;
-      const go = btn.getAttribute("data-go");
-      if (go != null) handlers.go(Number(go));
+      const mode = btn.getAttribute("data-mode");
+      const mod = btn.getAttribute("data-module");
+      if (mode && handlers.setMode) handlers.setMode(mode);
+      else if (mod && handlers.setModule) handlers.setModule(mod);
+      else if (btn.getAttribute("data-go") != null) handlers.go(Number(btn.getAttribute("data-go")));
       else if (btn.classList.contains("prev")) handlers.prev();
       else if (btn.classList.contains("next")) handlers.next();
     }

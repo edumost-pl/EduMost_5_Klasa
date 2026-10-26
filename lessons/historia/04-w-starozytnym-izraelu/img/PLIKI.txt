@@ -1,5 +1,5 @@
 # Lekcja 04 — W starożytnym Izraelu
-# Wrzuć pliki do GitHub: Historia/029.png … 036.png
+# GitHub: Historia/029.png … 036.png
 # https://github.com/edumost-pl/EduMost-szkola_5-klasa-Images/blob/main/Historia/
 
 029.png  MAPA: od Mezopotamii do Kanaanu (Abraham, namioty)
@@ -10,3 +10,8 @@
 034.png  Tora, Dekalog, Arka Przymierza
 035.png  Przekrój Świątyni Jerozolimskiej (sanktuarium, menora, ołtarz)
 036.png  Współczesny Izrael: flaga, menora, mapa, Jerozolima
+
+# Lokalne wycinki z zeszytu (strony 12–13):
+mapa-bliski-wschod-zeszyt.jpg  mapa do zadania 2
+obraz-strona12.jpg             Mojżesz z tablicami (zadanie 1)
+symbole-zeszyt.jpg             Gwiazda Dawida, Tora, menora (zadanie 5)

@@ -5,7 +5,8 @@
   var LESSON_ROOT = {
     matematyka: "lessons/matematyka/",
     "j.polski": "lessons/polski/",
-    "j.ang": "lessons/angielski/"
+    "j.ang": "lessons/angielski/",
+    historia: "lessons/historia/"
   };
   var LESSON_LABEL = {
     "01-dzialania-pamieciowe": "Działania pamięciowe",
@@ -16,7 +17,15 @@
     "07-mnozenie-pisemne": "Mnożenie pisemne",
     "08-dzielenie-i-podzielnosc": "Dzielenie i podzielność",
     "09-liczby-pierwsze-i-zlozone": "Liczby pierwsze i liczby złożone",
-    "10-dzielenie-pisemne": "Dzielenie pisemne"
+    "10-dzielenie-pisemne": "Dzielenie pisemne",
+    "sprawdzian-2026-10-27": "Przygotowanie do sprawdzianu 27.10",
+    "sprawdzian-2026-10-30": "Przygotowanie 30.10 — Pierwsze cywilizacje",
+    "01-zycie-pierwszych-ludzi": "Życie pierwszych ludzi",
+    "02-miasta-panstwa-mezopotamii": "Miasta-państwa Mezopotamii",
+    "03-w-egipcie-faraonow": "W Egipcie faraonów",
+    "04-w-starozytnym-izraelu": "W starożytnym Izraelu",
+    "05-cywilizacje-indii-i-chin": "Cywilizacje Indii i Chin",
+    "06-od-hieroglifow-do-alfabetu": "Od hieroglifów do alfabetu"
   };
   var STATUS_LABEL = {
     normal: "звичайний",

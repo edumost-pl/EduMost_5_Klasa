@@ -42,6 +42,9 @@
 
   function dualTitle(item, lang) {
     const pl = escapeHtml(plName(item));
+    if (lang === "ru" && item.title && item.title.ru) {
+      return pl + '<span class="name-ru">' + escapeHtml(item.title.ru) + "</span>";
+    }
     if (lang !== "ua" || !item.title || !item.title.ua) return pl;
     return pl + '<span class="name-ua">' + escapeHtml(item.title.ua) + "</span>";
   }
@@ -85,10 +88,12 @@
             const numSep = num && /^\d/.test(num) ? ". " : (num ? " · " : "");
             const numHtml = num ? '<span class="topic-num">' + escapeHtml(num) + numSep + "</span>" : "";
             const aboutText = topic.about
-              ? (lang === "ua" && topic.about.ua ? topic.about.ua : topic.about.pl || "")
+              ? (lang === "ua" && topic.about.ua ? topic.about.ua
+                : (lang === "ru" && topic.about.ru ? topic.about.ru : topic.about.pl || ""))
               : "";
             const outcomeText = topic.outcome
-              ? (lang === "ua" && topic.outcome.ua ? topic.outcome.ua : topic.outcome.pl || "")
+              ? (lang === "ua" && topic.outcome.ua ? topic.outcome.ua
+                : (lang === "ru" && topic.outcome.ru ? topic.outcome.ru : topic.outcome.pl || ""))
               : "";
             const notes =
               (aboutText ? '<span class="topic-note"><strong>' + escapeHtml(t("topicAbout")) + ":</strong> " + escapeHtml(aboutText) + "</span>" : "") +
@@ -96,9 +101,11 @@
             const titles = '<span class="topic-main"><i class="dot"></i>' +
               '<span class="topic-titles"><span class="topic-pl">' + numHtml +
               escapeHtml(plName(topic)) + "</span>" +
-              (lang === "ua" && topic.title && topic.title.ua
-                ? '<span class="name-ua">' + escapeHtml(topic.title.ua) + "</span>"
-                : "") +
+              (lang === "ru" && topic.title && topic.title.ru
+                ? '<span class="name-ru">' + escapeHtml(topic.title.ru) + "</span>"
+                : (lang === "ua" && topic.title && topic.title.ua
+                  ? '<span class="name-ua">' + escapeHtml(topic.title.ua) + "</span>"
+                  : "")) +
               notes +
               "</span></span>";
             const statusKey = topic.lesson

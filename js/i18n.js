@@ -116,13 +116,23 @@
       polskiPrepLabel: "Przygotowanie",
       polskiPrepOpen: "Otwórz przygotowanie",
       polskiKartkowkaOne: "Kartkówka",
+      polskiSprawdzianOne: "Sprawdzian",
       polskiKartkowkaDate: "Termin szkolny",
       polskiSprawdziany: "Sprawdziany rozdziałowe",
       polskiFindPage: "Znajdź temat po stronie podręcznika lub numerze lekcji",
       polskiFindPagePh: "np. 69, T36 lub 36-37",
       polskiFindNone: "Nie znaleziono tematów na tej stronie.",
       polskiClear: "Wyczyść",
-      polskiToTop: "↑ Do góry"
+      polskiToTop: "↑ Do góry",
+      modeLearn: "Uczę się",
+      modeReview: "Powtarzam przed sprawdzianem",
+      zeszytOpen: "Zrobiłem w zeszycie — pokaż odpowiedzi",
+      zeszytAgain: "Ukryj odpowiedzi i spróbuj jeszcze raz",
+      zeszytNote: "To wzór do porównania. Aplikacja nie widzi, co napisałeś w zeszycie.",
+      zeszytOk: "Porównałem, wyszło",
+      zeszytHard: "Muszę powtórzyć",
+      zeszytSaved: "Zapisane: to zadanie z zeszytu jest zrobione.",
+      zeszytRepeat: "Zapisane: wróć do wyjaśnienia i spróbuj jeszcze raz."
     },
     ua: {
       home: "← EduMost · Головна",
@@ -238,27 +248,170 @@
       polskiPrepLabel: "Підготовка",
       polskiPrepOpen: "Відкрити підготовку",
       polskiKartkowkaOne: "Картатка",
+      polskiSprawdzianOne: "Контрольна",
       polskiKartkowkaDate: "Шкільний термін",
       polskiSprawdziany: "Контрольні з розділів",
       polskiFindPage: "Знайди тему за сторінкою підручника або номером уроку",
       polskiFindPagePh: "напр. 69, T36 або 36-37",
       polskiFindNone: "Не знайдено тем на цій сторінці.",
       polskiClear: "Очистити",
-      polskiToTop: "↑ Вгору"
+      polskiToTop: "↑ Вгору",
+      modeLearn: "Вчуся",
+      modeReview: "Повторюю перед sprawdzianem",
+      zeszytOpen: "Я зробив у зошиті — показати відповіді",
+      zeszytAgain: "Сховати відповіді і спробувати ще раз",
+      zeszytNote: "Це зразок для звірки. Застосунок не бачить, що ти написав у зошиті.",
+      zeszytOk: "Звірив, вийшло",
+      zeszytHard: "Треба повторити",
+      zeszytSaved: "Записано: це завдання із зошита зроблено.",
+      zeszytRepeat: "Записано: повернись до пояснення і спробуй ще раз."
+    },
+    ru: {
+      home: "← EduMost · Главная",
+      schedule: "📅 Расписание",
+      learn: "📚 Учёба",
+      subjects: "Предметы · 5 класс",
+      heroSub: "Мост между русским объяснением и польской школой",
+      badge: "🇵🇱 🇺🇦 🇷🇺 · Класс 5a · SP nr 3 Poznań · 2026/2027",
+      textbook: "Учебник",
+      author: "Автор",
+      publisher: "Издательство",
+      approval: "Номер допуска",
+      byTextbook: "Учёба по учебнику",
+      myProgress: "Мой прогресс",
+      topicsDone: "тем",
+      openSoon: "Скоро",
+      statusPlanned: "Запланировано",
+      topicAbout: "Содержание",
+      topicOutcome: "После урока",
+      statusLabel: "Статус: ",
+      openLesson: "Открыть",
+      placeholder: "Здесь появится содержание. Этот блок пока пуст.",
+      blockGoals: "Чему научишься?",
+      blockLearn: "Учёба",
+      blockLanguage: "Язык предмета",
+      blockExample: "Посмотри пример",
+      blockTogether: "Сделай вместе со мной",
+      blockTry: "Попробуй сам",
+      blockSchool: "Задание по-польски",
+      blockMistakes: "Частые ошибки",
+      blockCheck: "Проверь себя",
+      blockReview: "Повторение",
+      blockMastered: "Умею",
+      langTerm: "Термин",
+      langTranslation: "Перевод",
+      langExplain: "Пояснение",
+      prevTopic: "Предыдущая тема",
+      nextTopic: "Следующая тема",
+      lessonPrev: "Назад",
+      lessonNext: "Дальше",
+      tryAgain: "Ещё раз.",
+      correct: "Верно.",
+      checkAnswer: "Проверить",
+      showHint: "Подсказка",
+      boolTrue: "Правда",
+      boolFalse: "Ложь",
+      taskStub: "Этот тип задания уже есть в движке. Редактор появится позже.",
+      visualEmpty: "Здесь будет схема.",
+      levelA: "Уровень A · Основа",
+      levelB: "Уровень B · Тренируюсь",
+      levelC: "Уровень C · Думаю",
+      levelD: "Уровень D · Применяю",
+      levelChallenge: "Задание посложнее",
+      blkIntro: "Вступление",
+      blkGoal: "Цель",
+      blkObserve: "Наблюдение",
+      blkConcept: "Главное понятие",
+      blkVisual: "Схема",
+      blkExample: "Разберём пример",
+      blkAlgorithm: "Шаги",
+      blkGuided: "Сделай вместе со мной",
+      blkTry: "Попробуй сам",
+      blkPractice: "Практика",
+      blkMistake: "Найди ошибку",
+      blkCompare: "Сравнение",
+      blkClass: "Классификация",
+      blkProblem: "Задание",
+      blkChallenge: "Если готов",
+      blkCheck: "Проверка",
+      blkSummary: "Что запомнить",
+      blkReflect: "Размышление",
+      blkReview: "Повторение",
+      blkVocab: "Польские слова",
+      nextStep: "Покажи следующий шаг",
+      teacherAsk: "Как может спросить учитель?",
+      verdictNo: "Нет.",
+      verdictYes: "Да.",
+      tocPending: "Список разделов дополним после проверки учебника. Навигация уже есть: учебник → раздел → тема.",
+      pathBook: "Учебник",
+      pathCh: "Разделы",
+      pathTopic: "Темы",
+      pathLearn: "Учёба",
+      pathPractice: "Практика",
+      pathCheck: "Проверка",
+      pathReview: "Повторение",
+      footer: "EduMost · SP nr 3 Poznań · 2026/2027",
+      lessonLabel: "Урок",
+      timelineTitle: "Линия времени",
+      timelineEarlier: "раньше",
+      timelineLater: "позже",
+      timelineBceHint: "линия времени · не в масштабе · до н.э. → наша эра",
+      timelineCeHint: "линия времени · не в масштабе · до н.э. → наша эра → н.э.",
+      timelineCeOnlyHint: "линия времени · не в масштабе · н.э.",
+      parentBlock: "Для родителей",
+      masterPlanTitle: "📋 Master Plan",
+      masterPlanDesc: "Рабочий план EduMost · для родителей",
+      etap15Title: "🔎 ЭТАП 1.5 — оглавления учебников",
+      etap15Desc: "Что уже проверено и что ещё нужно подтвердить",
+      planKirillaTitle: "Plan Kirilla",
+      planKirillaDesc: "План · для родителя",
+      dopTasks: "🧩 Дополнительные задания",
+      polskiTabLessons: "Уроки",
+      polskiTabAssess: "Картатки и контрольные",
+      polskiLegend: "Легенда категорий",
+      polskiHour: "ч.",
+      polskiBook: "Учебник",
+      polskiSkills: "Умения",
+      polskiAfter: "После урока",
+      polskiDone: "Сделано",
+      polskiKartkowki: "Картатки",
+      polskiKartkowkiEmpty: "Здесь появятся темы от учителя.",
+      polskiPrepFrom: "К картатке готовься по:",
+      polskiPrepLabel: "Подготовка",
+      polskiPrepOpen: "Открыть подготовку",
+      polskiKartkowkaOne: "Картатка",
+      polskiSprawdzianOne: "Контрольная",
+      polskiKartkowkaDate: "Школьный срок",
+      polskiSprawdziany: "Контрольные по разделам",
+      polskiFindPage: "Найди тему по странице учебника или номеру урока",
+      polskiFindPagePh: "напр. 69, T36 или 36-37",
+      polskiFindNone: "На этой странице тем не найдено.",
+      polskiClear: "Очистить",
+      polskiToTop: "↑ Наверх",
+      modeLearn: "Учусь",
+      modeReview: "Повторяю перед sprawdzianem",
+      zeszytOpen: "Я закончил в тетради — показать ответы",
+      zeszytAgain: "Скрыть ответы и попробовать ещё раз",
+      zeszytNote: "Это образец для сверки. Приложение не видит, что написано в тетради.",
+      zeszytOk: "Сверил, получилось",
+      zeszytHard: "Нужно повторить",
+      zeszytSaved: "Записано: это задание тетради сделано.",
+      zeszytRepeat: "Записано: вернись к объяснению и попробуй ещё раз."
     }
   };
 
   function getLang() {
     const saved = localStorage.getItem(KEY);
-    return saved === "pl" || saved === "ua" ? saved : "ua";
+    return saved === "pl" || saved === "ua" || saved === "ru" ? saved : "ua";
   }
 
   function setLang(lang) {
+    if (!UI[lang]) lang = "ua";
     localStorage.setItem(KEY, lang);
-    document.documentElement.lang = lang === "pl" ? "pl" : "uk";
+    document.documentElement.lang = lang === "pl" ? "pl" : (lang === "ru" ? "ru" : "uk");
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
       const key = el.getAttribute("data-i18n");
-      if (UI[lang][key]) el.textContent = UI[lang][key];
+      if (UI[lang] && UI[lang][key]) el.textContent = UI[lang][key];
     });
     document.querySelectorAll(".lang-toggle button").forEach(function (btn) {
       btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
@@ -267,7 +420,17 @@
   }
 
   function bindToggle() {
+    document.querySelectorAll(".lang-toggle").forEach(function (bar) {
+      if (bar.querySelector('[data-lang="ru"]')) return;
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.setAttribute("data-lang", "ru");
+      btn.textContent = "🇷🇺 Русский";
+      bar.appendChild(btn);
+    });
     document.querySelectorAll(".lang-toggle button").forEach(function (btn) {
+      if (btn.getAttribute("data-bound") === "1") return;
+      btn.setAttribute("data-bound", "1");
       btn.addEventListener("click", function () {
         setLang(btn.getAttribute("data-lang"));
       });

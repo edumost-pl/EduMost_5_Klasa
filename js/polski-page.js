@@ -291,22 +291,28 @@
         : (item.prepTitlePl || "");
       const req = (item.teacherRequirements || []).filter(Boolean);
       const linked = (item.linkedT || []).filter(Boolean);
+      const prepNote = lang === "ua"
+        ? (item.prepNoteUa || "Новий вірш. Навчишся шукати в тексті те, що буде на картатці.")
+        : (item.prepNotePl || "Nowy wiersz. Nauczysz się, jak znaleźć w tekście to, o co zapyta nauczyciel.");
+      const fromLabel = lang === "ua"
+        ? (item.prepFromUa || t("polskiPrepFrom"))
+        : (item.prepFromPl || t("polskiPrepFrom"));
+      const kindLabel = item.kind === "sprawdzian"
+        ? t("polskiSprawdzianOne")
+        : t("polskiKartkowkaOne");
       let html = "";
       if (item.prepHref) {
         html += '<article class="polski-assess-item is-prep">' +
           '<span class="polski-assess-kicker">📚 ' + escapeHtml(t("polskiPrepLabel")) + "</span>" +
           '<h4 class="polski-assess-title">' + escapeHtml(prepTitle || t("polskiPrepLabel")) + "</h4>" +
-          '<p class="polski-assess-note">' +
-            escapeHtml(lang === "ua"
-              ? "Новий вірш. Навчишся шукати в тексті те, що буде на картатці."
-              : "Nowy wiersz. Nauczysz się, jak znaleźć w tekście to, o co zapyta nauczyciel.") +
-          "</p>" +
+          '<p class="polski-assess-note">' + escapeHtml(prepNote) + "</p>" +
           '<a class="polski-assess-open" href="' + escapeHtml(item.prepHref) + '">' +
             escapeHtml(t("polskiPrepOpen")) + "</a>" +
           "</article>";
       }
-      html += '<article class="polski-assess-item is-kart">' +
-        '<span class="polski-assess-kicker">📝 ' + escapeHtml(t("polskiKartkowkaOne")) + "</span>" +
+      html += '<article class="polski-assess-item is-kart' +
+        (item.kind === "sprawdzian" ? " is-sprawdzian" : "") + '">' +
+        '<span class="polski-assess-kicker">📝 ' + escapeHtml(kindLabel) + "</span>" +
         '<span class="polski-t-id">' + escapeHtml(item.id) + "</span>" +
         '<h4 class="polski-assess-title">' + escapeHtml(title || "Kartkówka") + "</h4>";
       if (item.date) {
@@ -320,7 +326,7 @@
         }).join("") + "</ul>";
       }
       if (linked.length) {
-        html += '<p class="polski-prep">' + escapeHtml(t("polskiPrepFrom")) + "</p>" +
+        html += '<p class="polski-prep">' + escapeHtml(fromLabel) + "</p>" +
           '<div class="polski-linked">' + linked.map(function (tid) {
             return '<span class="polski-t-id">' + escapeHtml(tid) + "</span>";
           }).join(" ") + "</div>";

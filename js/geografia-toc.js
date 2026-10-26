@@ -52,11 +52,12 @@
                 "Odczytasz legendę i rozróżnisz znaki punktowe, liniowe i powierzchniowe.",
                 "Прочитаєш легенду і відрізніш точкові, лінійні й площинні знаки.",
                 "02-mapa-elementy-znaki"),
-              T(3, "skala", "Skala liczbowa, mianowana i podziałka", "Числовий, іменований масштаб і лінійка", "8",
+              T(3, "skala", "Skala liczbowa, mianowana i podziałka", "Числовий, іменований і лінійний масштаб", "8",
                 "Trzy zapisy tej samej skali i zamiana centymetrów na metry i kilometry.",
                 "Три записи одного масштабу і переведення сантиметрів у метри й кілометри.",
                 "Zamienisz skalę liczbową na mianowaną i odczytasz podziałkę.",
-                "Переведеш числовий масштаб в іменований і прочитаєш лінійку.")
+                "Переведеш числовий масштаб в іменований і прочитаєш лінійку.",
+                "03-skala")
             ]
           },
           {
@@ -68,7 +69,8 @@
                 "Odcinek prosty i droga łamana: linijka, centymetry, mnożenie, metry.",
                 "Прямий відрізок і ламана дорога: лінійка, сантиметри, множення, метри.",
                 "Obliczysz odległość w terenie po prostej i po łamanej.",
-                "Обчислиш відстань на місцевості по прямій і по ламаній.")
+                "Обчислиш відстань на місцевості по прямій і по ламаній.",
+                "04-odleglosci")
             ]
           },
           {

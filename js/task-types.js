@@ -9,7 +9,10 @@
   function tx(obj) {
     if (!obj) return "";
     if (typeof obj === "string") return obj;
-    return EduMostI18n.getLang() === "ua" ? (obj.ua || obj.pl || "") : (obj.pl || obj.ua || "");
+    const lang = EduMostI18n.getLang();
+    if (lang === "ua") return obj.ua || obj.pl || "";
+    if (lang === "ru") return obj.ru || obj.pl || "";
+    return obj.pl || obj.ua || "";
   }
 
   function markedHtml(s) {
@@ -67,8 +70,14 @@
   function dual(obj) {
     if (!obj) return "";
     if (typeof obj === "string") return para("tx-pl", obj);
+    const lang = EduMostI18n.getLang();
+    if (lang === "ru") {
+      let html = para("tx-pl", obj.pl);
+      if (obj.ru) html += para("tx-ru", obj.ru);
+      return html;
+    }
     let html = para("tx-pl", obj.pl);
-    if (EduMostI18n.getLang() === "ua" && obj.ua) html += para("tx-ua", obj.ua);
+    if (lang === "ua" && obj.ua) html += para("tx-ua", obj.ua);
     return html;
   }
 

@@ -23,6 +23,7 @@
     if (typeof text === "string") return text;
     const lang = EduMostI18n.getLang();
     if (lang === "ua") return text.ua || text.pl || "";
+    if (lang === "ru") return text.ru || text.pl || "";
     return text.pl || text.ua || "";
   }
 

@@ -533,6 +533,12 @@ window.EduMostLessons = {
     topicId: "siatki-graniastoslupow",
     folder: "50-siatki-graniastoslupow"
   },
+  "matematyka/sprawdzian-2026-10-27": {
+    id: "mat-sprawdzian-2026-10-27",
+    subject: "matematyka",
+    topicId: "sprawdzian-2026-10-27",
+    folder: "sprawdzian-2026-10-27"
+  },
   "polski/sytuacja-komunikacyjna": {
     id: "pol-01-sytuacja-komunikacyjna",
     subject: "polski",
@@ -562,6 +568,12 @@ window.EduMostLessons = {
     subject: "polski",
     topicId: "kartkowka-wiersz",
     folder: "kartkowka-wiersz"
+  },
+  "polski/sprawdzian-2026-10-19": {
+    id: "pol-sprawdzian-2026-10-19",
+    subject: "polski",
+    topicId: "sprawdzian-2026-10-19",
+    folder: "sprawdzian-2026-10-19"
   },
   "polski/tekst-popularnonaukowy": {
     id: "pol-03-tekst-popularnonaukowy",
@@ -1211,6 +1223,12 @@ window.EduMostLessons = {
     topicId: "od-hieroglifow-do-alfabetu",
     folder: "06-od-hieroglifow-do-alfabetu"
   },
+  "historia/sprawdzian-2026-10-30": {
+    id: "his-sprawdzian-2026-10-30",
+    subject: "historia",
+    topicId: "sprawdzian-2026-10-30",
+    folder: "sprawdzian-2026-10-30"
+  },
   "historia/demokratyczne-ateny": {
     id: "his-07-demokratyczne-ateny",
     subject: "historia",
@@ -1510,6 +1528,18 @@ window.EduMostLessons = {
     subject: "geografia",
     topicId: "mapa-elementy-znaki",
     folder: "02-mapa-elementy-znaki"
+  },
+  "geografia/skala": {
+    id: "geo-03-skala",
+    subject: "geografia",
+    topicId: "skala",
+    folder: "03-skala"
+  },
+  "geografia/odleglosci": {
+    id: "geo-04-odleglosci",
+    subject: "geografia",
+    topicId: "odleglosci",
+    folder: "04-odleglosci"
   },
 };
 window.EduMostLessonHref = function (subjectId, topic) {

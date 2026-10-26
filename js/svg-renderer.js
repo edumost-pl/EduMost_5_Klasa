@@ -11,8 +11,13 @@
   function vizText(value) {
     if (value == null || value === "") return "";
     if (typeof value !== "object") return String(value);
-    if (vizLang() === "ua") {
+    const lang = vizLang();
+    if (lang === "ua") {
       if (value.ua != null) return String(value.ua);
+      return value.pl != null ? String(value.pl) : "";
+    }
+    if (lang === "ru") {
+      if (value.ru != null) return String(value.ru);
       return value.pl != null ? String(value.pl) : "";
     }
     if (value.pl != null) return String(value.pl);
@@ -790,6 +795,18 @@
     return classFork(spec);
   }
 
+  function flowRow(spec) {
+    const steps = spec.steps || [];
+    let html = '<div class="viz-flow">';
+    steps.forEach(function (step, i) {
+      if (i) html += '<span class="viz-flow-arrow" aria-hidden="true">→</span>';
+      html += '<div class="viz-flow-step"><strong>' + vizEsc(vizText(step.title)) + "</strong>";
+      if (step.text) html += "<span>" + vizEsc(vizText(step.text)) + "</span>";
+      html += "</div>";
+    });
+    return html + "</div>";
+  }
+
   function render(spec) {
     if (!spec) return "";
     if (spec.kind === "asset" || spec.kind === "image") return fromAsset(spec);
@@ -816,6 +833,7 @@
     if (spec.kind === "youtube") return youtubeEmbed(spec);
     if (spec.kind === "wordwall") return wordwallEmbed(spec);
     if (spec.kind === "class-tree" || spec.kind === "tree") return classTree(spec);
+    if (spec.kind === "flow") return flowRow(spec);
     if (spec.kind === "map-placeholder" || spec.kind === "image-placeholder") {
       return mediaPlaceholder(spec);
     }

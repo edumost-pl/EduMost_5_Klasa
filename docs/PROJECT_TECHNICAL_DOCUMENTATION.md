@@ -12,6 +12,8 @@
 - английский — `docs/ANGIELSKI_CONTENT_DOCUMENTATION.md` (тот же плеер; *Flash* 5; модуль I открыт);
 - польский — `docs/POLSKI_CONTENT_DOCUMENTATION.md` (тот же плеер; *Między nami* 5, каталог T1–T177).
 
+Как писать экран в JSON (`type`, текст, выделение, правило, картинка, видео, список) — `docs/LESSON_BLOCKS.md`.
+
 ---
 
 ## 1. Назначение проекта
@@ -323,6 +325,8 @@ answer: ["IV", "iv"]
 ---
 
 ## 6. Renderer
+
+Поля блока, выделение, правило, картинка, видео и список — `docs/LESSON_BLOCKS.md`. Ниже только место рендерера в плеере.
 
 Файл: `js/lesson-renderer.js`. API: `EduMostLessonRenderer.render(mount, block, ctx)`.
 

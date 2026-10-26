@@ -105,12 +105,24 @@
     return '<p class="' + cls + '">' + inner + "</p>";
   }
 
+  function linesOf(value) {
+    if (Array.isArray(value)) return value;
+    if (value != null && value !== "") return [value];
+    return [];
+  }
+
   function prose(obj) {
     if (!obj) return "";
     if (typeof obj === "string" || Array.isArray(obj)) return paraHtml(obj, "tx-pl");
-    const plLines = Array.isArray(obj.pl) ? obj.pl : (obj.pl != null && obj.pl !== "" ? [obj.pl] : []);
-    const uaLines = Array.isArray(obj.ua) ? obj.ua : (obj.ua != null && obj.ua !== "" ? [obj.ua] : []);
-    if (EduMostI18n.getLang() !== "ua" || !uaLines.length) return paraHtml(obj.pl, "tx-pl");
+    const lang = EduMostI18n.getLang();
+    if (lang === "ru") {
+      const ruLines = linesOf(obj.ru);
+      if (!ruLines.length) return paraHtml(obj.pl, "tx-pl");
+      return ruLines.map(function (line) { return onePara(line, "tx-ru"); }).join("");
+    }
+    const plLines = linesOf(obj.pl);
+    const uaLines = linesOf(obj.ua);
+    if (lang !== "ua" || !uaLines.length) return paraHtml(obj.pl, "tx-pl");
     let html = "";
     const n = Math.max(plLines.length, uaLines.length);
     for (let i = 0; i < n; i++) {
@@ -123,6 +135,21 @@
   function mathLine(s) {
     if (!s) return "";
     return '<p class="math-line">' + esc(s) + "</p>";
+  }
+
+  function ruleCard(block) {
+    const rule = block && block.rule;
+    if (!rule) return "";
+    const lines = Array.isArray(rule) ? rule : rule.pl;
+    if (!lines || !lines.length) return "";
+    let html = '<div class="rule-card"><p class="rule-kicker">Reguła</p>' +
+      paraHtml(lines, "rule-line");
+    if (!Array.isArray(rule) && rule.ru && EduMostI18n.getLang() === "ru") {
+      html += paraHtml(rule.ru, "tx-ru");
+    } else if (!Array.isArray(rule) && rule.ua && EduMostI18n.getLang() === "ua") {
+      html += paraHtml(rule.ua, "tx-ua");
+    }
+    return html + "</div>";
   }
 
   function visualBox(spec) {
@@ -155,10 +182,15 @@
     const custom = block.heading;
     let titleHtml;
     if (custom && typeof custom === "object") {
-      const pl = esc(custom.pl || "");
-      const ua = EduMostI18n.getLang() === "ua" && custom.ua
-        ? '<span class="name-ua">' + esc(custom.ua) + "</span>" : "";
-      titleHtml = pl + ua;
+      const lang = EduMostI18n.getLang();
+      if (lang === "ru" && custom.ru) {
+        titleHtml = esc(custom.ru);
+      } else {
+        const pl = esc(custom.pl || "");
+        const ua = lang === "ua" && custom.ua
+          ? '<span class="name-ua">' + esc(custom.ua) + "</span>" : "";
+        titleHtml = pl + ua;
+      }
     } else {
       const title = custom
         ? String(custom)
@@ -219,8 +251,10 @@
   function vocabHtml(block) {
     const rows = block.rows || [];
     let body = "";
+    const lang = EduMostI18n.getLang();
     rows.forEach(function (row) {
-      body += "<tr><td><strong>" + esc(row.pl || "") + "</strong></td><td>" + esc(row.ua || "") + "</td></tr>";
+      const gloss = lang === "ru" ? (row.ru || "") : (row.ua || "");
+      body += "<tr><td><strong>" + esc(row.pl || "") + "</strong></td><td>" + esc(gloss) + "</td></tr>";
     });
     let html = '<table class="vocab-table"><thead><tr><th>' + esc(EduMostI18n.t("langTerm")) +
       "</th><th>" + esc(EduMostI18n.t("langTranslation")) + "</th></tr></thead><tbody>" + body + "</tbody></table>";
@@ -257,6 +291,75 @@
     while (tmp.firstChild) slot.appendChild(tmp.firstChild);
   }
 
+  function zeszytNode(spec, ctx) {
+    const box = document.createElement("section");
+    box.className = "zeszyt-card";
+    const lead = document.createElement("div");
+    lead.className = "zeszyt-lead";
+    lead.innerHTML = prose(spec.lead);
+    const open = document.createElement("button");
+    open.type = "button";
+    open.className = "zeszyt-open";
+    open.textContent = EduMostI18n.t("zeszytOpen");
+    const again = document.createElement("button");
+    again.type = "button";
+    again.className = "zeszyt-again";
+    again.hidden = true;
+    again.textContent = EduMostI18n.t("zeszytAgain");
+    const key = document.createElement("div");
+    key.className = "zeszyt-key";
+    key.hidden = true;
+    let html = '<p class="zeszyt-note">' + esc(EduMostI18n.t("zeszytNote")) + "</p>";
+    (spec.answers || []).forEach(function (row) {
+      html += '<div class="zeszyt-answer">';
+      if (row.label) html += prose(row.label);
+      if (row.text) html += prose(row.text);
+      if (row.why) html += prose(row.why);
+      html += "</div>";
+    });
+    key.innerHTML = html;
+    const mark = document.createElement("div");
+    mark.className = "zeszyt-mark";
+    mark.hidden = true;
+    const okBtn = document.createElement("button");
+    okBtn.type = "button";
+    okBtn.textContent = EduMostI18n.t("zeszytOk");
+    const hardBtn = document.createElement("button");
+    hardBtn.type = "button";
+    hardBtn.textContent = EduMostI18n.t("zeszytHard");
+    function report(ok) {
+      if (ctx && ctx.onTask && spec.id) ctx.onTask({ id: spec.id }, { ok: ok });
+      const note = document.createElement("p");
+      note.className = "zeszyt-saved";
+      note.textContent = EduMostI18n.t(ok ? "zeszytSaved" : "zeszytRepeat");
+      mark.appendChild(note);
+      okBtn.disabled = true;
+      hardBtn.disabled = true;
+    }
+    okBtn.addEventListener("click", function () { report(true); });
+    hardBtn.addEventListener("click", function () { report(false); });
+    mark.appendChild(okBtn);
+    mark.appendChild(hardBtn);
+    open.addEventListener("click", function () {
+      key.hidden = false;
+      mark.hidden = false;
+      again.hidden = false;
+      open.hidden = true;
+    });
+    again.addEventListener("click", function () {
+      key.hidden = true;
+      mark.hidden = true;
+      again.hidden = true;
+      open.hidden = false;
+    });
+    box.appendChild(lead);
+    box.appendChild(open);
+    box.appendChild(again);
+    box.appendChild(key);
+    box.appendChild(mark);
+    return box;
+  }
+
   function render(mount, block, ctx) {
     if (!mount || !block) return;
     const wrap = document.createElement("article");
@@ -272,6 +375,8 @@
       ? '<div class="prompt">' + prose(block.prompt) + "</div>"
       : "";
     const promptBefore = block.promptPlace === "before";
+    const ruleHtml = ruleCard(block);
+    if (ruleHtml) appendHtml(slot, ruleHtml);
     if (!special[block.type]) {
       if (block.visual && !block.steps && !visualAfter) appendHtml(slot, visualBox(block.visual));
       if (block.formula) appendHtml(slot, mathLine(block.formula));
@@ -304,6 +409,7 @@
 
     const task = taskNode(block, ctx);
     if (task) slot.appendChild(task);
+    if (block.zeszyt) slot.appendChild(zeszytNode(block.zeszyt, ctx));
 
     // Skip empty placeholder when content is filled later by lesson-local hooks
     // (e.g. enPrompt / taskSequence / flashAudio / speakItems).

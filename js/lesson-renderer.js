@@ -20,7 +20,7 @@
     summary: { icon: "🧠", titleKey: "blkSummary" },
     reflection: { icon: "💭", titleKey: "blkReflect" },
     review: { icon: "🔁", titleKey: "blkReview" },
-    vocabulary: { icon: "🇵🇱", titleKey: "blkVocab" }
+    vocabulary: { icon: "🇵🇱", titleKey: "blkVocab" },
   };
 
   function esc(s) {
@@ -56,12 +56,12 @@
     if (typeof part !== "object") return esc(part);
 
     if (part.emphasis) {
-      const t = part.text != null ? part.text : (part.t != null ? part.t : "");
+      const t = part.text != null ? part.text : part.t != null ? part.t : "";
       if (t === "") return "";
       return '<strong class="tx-mark">' + esc(t) + "</strong>";
     }
     if (part.bold) {
-      const t = part.text != null ? part.text : (part.t != null ? part.t : "");
+      const t = part.text != null ? part.text : part.t != null ? part.t : "";
       if (t === "") return "";
       return '<strong class="tx-bold">' + esc(t) + "</strong>";
     }
@@ -70,14 +70,26 @@
       return "<strong>" + esc(part.mark) + "</strong>";
     }
 
-    const text = part.t != null ? String(part.t) : (part.text != null ? String(part.text) : "");
+    const text =
+      part.t != null
+        ? String(part.t)
+        : part.text != null
+          ? String(part.text)
+          : "";
     if (!text) return "";
     let html = esc(text);
-    const marks = part.mark == null ? [] : (Array.isArray(part.mark) ? part.mark : [part.mark]);
+    const marks =
+      part.mark == null
+        ? []
+        : Array.isArray(part.mark)
+          ? part.mark
+          : [part.mark];
     marks.forEach(function (m) {
       if (m == null || String(m) === "") return;
       const needle = esc(m);
-      html = html.split(needle).join('<strong class="tx-mark">' + needle + "</strong>");
+      html = html
+        .split(needle)
+        .join('<strong class="tx-mark">' + needle + "</strong>");
     });
     return html;
   }
@@ -90,12 +102,14 @@
   function paraHtml(value, cls) {
     if (value == null || value === "") return "";
     const lines = Array.isArray(value) ? value : [value];
-    return lines.map(function (line) {
-      if (line == null || line === "") return "";
-      const inner = inlineHtml(line);
-      if (!inner) return "";
-      return '<p class="' + cls + '">' + inner + "</p>";
-    }).join("");
+    return lines
+      .map(function (line) {
+        if (line == null || line === "") return "";
+        const inner = inlineHtml(line);
+        if (!inner) return "";
+        return '<p class="' + cls + '">' + inner + "</p>";
+      })
+      .join("");
   }
 
   function onePara(line, cls) {
@@ -113,12 +127,17 @@
 
   function prose(obj) {
     if (!obj) return "";
-    if (typeof obj === "string" || Array.isArray(obj)) return paraHtml(obj, "tx-pl");
+    if (typeof obj === "string" || Array.isArray(obj))
+      return paraHtml(obj, "tx-pl");
     const lang = EduMostI18n.getLang();
     if (lang === "ru") {
       const ruLines = linesOf(obj.ru);
       if (!ruLines.length) return paraHtml(obj.pl, "tx-pl");
-      return ruLines.map(function (line) { return onePara(line, "tx-ru"); }).join("");
+      return ruLines
+        .map(function (line) {
+          return onePara(line, "tx-ru");
+        })
+        .join("");
     }
     const plLines = linesOf(obj.pl);
     const uaLines = linesOf(obj.ua);
@@ -140,16 +159,35 @@
   function ruleCard(block) {
     const rule = block && block.rule;
     if (!rule) return "";
-    const lines = Array.isArray(rule) ? rule : rule.pl;
-    if (!lines || !lines.length) return "";
-    let html = '<div class="rule-card"><p class="rule-kicker">Reguła</p>' +
-      paraHtml(lines, "rule-line");
-    if (!Array.isArray(rule) && rule.ru && EduMostI18n.getLang() === "ru") {
-      html += paraHtml(rule.ru, "tx-ru");
-    } else if (!Array.isArray(rule) && rule.ua && EduMostI18n.getLang() === "ua") {
-      html += paraHtml(rule.ua, "tx-ua");
+
+    const lang = EduMostI18n.getLang();
+
+    let lines;
+
+    if (Array.isArray(rule)) {
+      lines = rule;
+    } else {
+      lines = lang === "ru" ? rule.ru : lang === "ua" ? rule.ua : rule.pl;
     }
-    return html + "</div>";
+
+    if (!lines || !lines.length) return "";
+
+    // paraHtml получает массив строк
+    if (!Array.isArray(lines)) {
+      lines = [lines];
+    }
+
+    const kicker =
+      lang === "ru" ? "Запомни" : lang === "ua" ? "Запам'ятай" : "Reguła";
+
+    return (
+      '<div class="rule-card">' +
+      '<p class="rule-kicker">' +
+      kicker +
+      "</p>" +
+      paraHtml(lines, "rule-line") +
+      "</div>"
+    );
   }
 
   function visualBox(spec) {
@@ -161,16 +199,20 @@
   const ICONS = {
     visual:
       '<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none" focusable="false">' +
-        '<rect x="2.75" y="3.75" width="26.5" height="24.5" rx="6.5" stroke="currentColor" stroke-width="1.75" fill="currentColor" fill-opacity=".08"/>' +
-        '<rect x="8" y="16.75" width="4.3" height="7.25" rx="1.15" fill="currentColor" fill-opacity=".38"/>' +
-        '<rect x="13.85" y="12.6" width="4.3" height="11.4" rx="1.15" fill="currentColor" fill-opacity=".68"/>' +
-        '<rect x="19.7" y="9.35" width="4.3" height="14.65" rx="1.15" fill="currentColor"/>' +
-      "</svg>"
+      '<rect x="2.75" y="3.75" width="26.5" height="24.5" rx="6.5" stroke="currentColor" stroke-width="1.75" fill="currentColor" fill-opacity=".08"/>' +
+      '<rect x="8" y="16.75" width="4.3" height="7.25" rx="1.15" fill="currentColor" fill-opacity=".38"/>' +
+      '<rect x="13.85" y="12.6" width="4.3" height="11.4" rx="1.15" fill="currentColor" fill-opacity=".68"/>' +
+      '<rect x="19.7" y="9.35" width="4.3" height="14.65" rx="1.15" fill="currentColor"/>' +
+      "</svg>",
   };
 
   function headingIcon(meta) {
     if (meta.iconKind && ICONS[meta.iconKind]) {
-      return '<span class="block-icon" aria-hidden="true">' + ICONS[meta.iconKind] + "</span>";
+      return (
+        '<span class="block-icon" aria-hidden="true">' +
+        ICONS[meta.iconKind] +
+        "</span>"
+      );
     }
     const icon = meta.icon || "";
     if (!icon) return "";
@@ -187,28 +229,39 @@
         titleHtml = esc(custom.ru);
       } else {
         const pl = esc(custom.pl || "");
-        const ua = lang === "ua" && custom.ua
-          ? '<span class="name-ua">' + esc(custom.ua) + "</span>" : "";
+        const ua =
+          lang === "ua" && custom.ua
+            ? '<span class="name-ua">' + esc(custom.ua) + "</span>"
+            : "";
         titleHtml = pl + ua;
       }
     } else {
       const title = custom
         ? String(custom)
-        : (meta.titleKey ? EduMostI18n.t(meta.titleKey) : block.type);
+        : meta.titleKey
+          ? EduMostI18n.t(meta.titleKey)
+          : block.type;
       titleHtml = esc(title);
     }
     const iconHtml = headingIcon(meta);
     if (meta.iconKind && ICONS[meta.iconKind]) {
-      return '<h2 class="block-title">' + iconHtml +
-        '<span class="block-title-text">' + titleHtml + "</span></h2>";
+      return (
+        '<h2 class="block-title">' +
+        iconHtml +
+        '<span class="block-title-text">' +
+        titleHtml +
+        "</span></h2>"
+      );
     }
     return '<h2 class="block-title">' + iconHtml + titleHtml + "</h2>";
   }
 
   function stepHtml(step) {
-    return (step.formula ? mathLine(step.formula) : "") +
+    return (
+      (step.formula ? mathLine(step.formula) : "") +
       (step.visual ? visualBox(step.visual) : "") +
-      (step.text ? prose(step.text) : "");
+      (step.text ? prose(step.text) : "")
+    );
   }
 
   function revealNode(steps) {
@@ -216,9 +269,12 @@
     wrap.className = "step-reveal";
     let shown = 1;
     function paint() {
-      wrap.innerHTML = steps.slice(0, shown).map(function (step, i) {
-        return '<div class="reveal-step">' + stepHtml(step) + "</div>";
-      }).join("");
+      wrap.innerHTML = steps
+        .slice(0, shown)
+        .map(function (step, i) {
+          return '<div class="reveal-step">' + stepHtml(step) + "</div>";
+        })
+        .join("");
       if (shown < steps.length) {
         const btn = document.createElement("button");
         btn.type = "button";
@@ -243,7 +299,7 @@
     EduMostTaskEngine.mount(hold, task, {
       onResult: function (result) {
         if (ctx && ctx.onTask) ctx.onTask(task, result);
-      }
+      },
     });
     return hold;
   }
@@ -253,13 +309,27 @@
     let body = "";
     const lang = EduMostI18n.getLang();
     rows.forEach(function (row) {
-      const gloss = lang === "ru" ? (row.ru || "") : (row.ua || "");
-      body += "<tr><td><strong>" + esc(row.pl || "") + "</strong></td><td>" + esc(gloss) + "</td></tr>";
+      const gloss = lang === "ru" ? row.ru || "" : row.ua || "";
+      body +=
+        "<tr><td><strong>" +
+        esc(row.pl || "") +
+        "</strong></td><td>" +
+        esc(gloss) +
+        "</td></tr>";
     });
-    let html = '<table class="vocab-table"><thead><tr><th>' + esc(EduMostI18n.t("langTerm")) +
-      "</th><th>" + esc(EduMostI18n.t("langTranslation")) + "</th></tr></thead><tbody>" + body + "</tbody></table>";
+    let html =
+      '<table class="vocab-table"><thead><tr><th>' +
+      esc(EduMostI18n.t("langTerm")) +
+      "</th><th>" +
+      esc(EduMostI18n.t("langTranslation")) +
+      "</th></tr></thead><tbody>" +
+      body +
+      "</tbody></table>";
     if (block.phrases && block.phrases.length) {
-      html += '<p class="phrases-label">' + esc(EduMostI18n.t("teacherAsk")) + "</p><ul class=\"phrase-list\">";
+      html +=
+        '<p class="phrases-label">' +
+        esc(EduMostI18n.t("teacherAsk")) +
+        '</p><ul class="phrase-list">';
       block.phrases.forEach(function (p) {
         html += "<li>" + prose(p) + "</li>";
       });
@@ -271,17 +341,33 @@
   function goalHtml(block) {
     const items = block.items || [];
     if (!items.length) return prose(block.text);
-    return '<ul class="goal-list">' + items.map(function (item) {
-      return '<li><span class="goal-box" aria-hidden="true"></span>' + prose(item) + "</li>";
-    }).join("") + "</ul>";
+    return (
+      '<ul class="goal-list">' +
+      items
+        .map(function (item) {
+          return (
+            '<li><span class="goal-box" aria-hidden="true"></span>' +
+            prose(item) +
+            "</li>"
+          );
+        })
+        .join("") +
+      "</ul>"
+    );
   }
 
   function mistakeHtml(block) {
     const no = EduMostI18n.t("verdictNo");
-    return '<div class="claim">' + (block.claim ? prose(block.claim) : "") + "</div>" +
-      '<p class="verdict">❌ ' + esc(no) + "</p>" +
+    return (
+      '<div class="claim">' +
+      (block.claim ? prose(block.claim) : "") +
+      "</div>" +
+      '<p class="verdict">❌ ' +
+      esc(no) +
+      "</p>" +
       (block.visual ? visualBox(block.visual) : "") +
-      (block.text ? prose(block.text) : "");
+      (block.text ? prose(block.text) : "")
+    );
   }
 
   function appendHtml(slot, html) {
@@ -309,7 +395,8 @@
     const key = document.createElement("div");
     key.className = "zeszyt-key";
     key.hidden = true;
-    let html = '<p class="zeszyt-note">' + esc(EduMostI18n.t("zeszytNote")) + "</p>";
+    let html =
+      '<p class="zeszyt-note">' + esc(EduMostI18n.t("zeszytNote")) + "</p>";
     (spec.answers || []).forEach(function (row) {
       html += '<div class="zeszyt-answer">';
       if (row.label) html += prose(row.label);
@@ -336,8 +423,12 @@
       okBtn.disabled = true;
       hardBtn.disabled = true;
     }
-    okBtn.addEventListener("click", function () { report(true); });
-    hardBtn.addEventListener("click", function () { report(false); });
+    okBtn.addEventListener("click", function () {
+      report(true);
+    });
+    hardBtn.addEventListener("click", function () {
+      report(false);
+    });
     mark.appendChild(okBtn);
     mark.appendChild(hardBtn);
     open.addEventListener("click", function () {
@@ -360,6 +451,69 @@
     return box;
   }
 
+  function orderedContent(slot, items, ctx) {
+    (items || []).forEach(function (item) {
+      if (!item) return;
+      if (item.type === "text") {
+        console.log("Текстовый блок:", item.text);
+        appendHtml(
+          slot,
+          '<div class="ordered-content-text">' + prose(item.text) + "</div>",
+        );
+      } else if (item.type === "image") {
+        appendHtml(slot, visualBox(item.visual || item.image));
+      } else if (item.type === "question") {
+        const questionWrap = document.createElement("section");
+        questionWrap.className = "ordered-content-question";
+        if (item.prompt)
+          appendHtml(
+            questionWrap,
+            '<div class="prompt">' + prose(item.prompt) + "</div>",
+          );
+        const task = taskNode({ task: item.task }, ctx);
+        if (task) questionWrap.appendChild(task);
+        if (questionWrap.childNodes.length) slot.appendChild(questionWrap);
+      } else if (item.type === "formula") {
+        const lang = EduMostI18n.getLang();
+        const value = item.value || item.formula;
+
+        let formula = value;
+
+        if (value && typeof value === "object") {
+          formula =
+            lang === "ru"
+              ? value.ru || value.pl
+              : lang === "ua"
+                ? value.ua || value.pl
+                : value.pl || value.ru;
+        }
+
+        appendHtml(slot, mathLine(formula));
+      } else if (item.type === "rule") {
+        console.log("RULE ITEM:", item);
+
+        const html = ruleCard(item);
+        console.log("RULE HTML:", html);
+
+        appendHtml(slot, html);
+      } else if (item.type === "items") {
+        const list = document.createElement("ul");
+        list.className = "block-list ordered-content-items";
+        (item.items || []).forEach(function (row) {
+          if (!row) return;
+
+          const li = document.createElement("li");
+          li.innerHTML = prose(row);
+          list.appendChild(li);
+        });
+
+        if (list.children.length) {
+          slot.appendChild(list);
+        }
+      }
+    });
+  }
+
   function render(mount, block, ctx) {
     if (!mount || !block) return;
     const wrap = document.createElement("article");
@@ -376,48 +530,76 @@
       : "";
     const promptBefore = block.promptPlace === "before";
     const ruleHtml = ruleCard(block);
-    if (ruleHtml) appendHtml(slot, ruleHtml);
-    if (!special[block.type]) {
-      if (block.visual && !block.steps && !visualAfter) appendHtml(slot, visualBox(block.visual));
+    if (ruleHtml && !Array.isArray(block.content)) appendHtml(slot, ruleHtml);
+    if (Array.isArray(block.content)) {
+      orderedContent(slot, block.content, ctx);
+    } else if (!special[block.type]) {
+      if (block.visual && !block.steps && !visualAfter)
+        appendHtml(slot, visualBox(block.visual));
       if (block.formula) appendHtml(slot, mathLine(block.formula));
       if (promptBefore) appendHtml(slot, promptHtml);
       if (block.text) appendHtml(slot, prose(block.text));
       if (!promptBefore) appendHtml(slot, promptHtml);
-      if (visualAfter && !block.steps) appendHtml(slot, visualBox(block.visual));
+      if (visualAfter && !block.steps)
+        appendHtml(slot, visualBox(block.visual));
     }
 
-    if (block.type === "goal") {
+    if (!Array.isArray(block.content) && block.type === "goal") {
       if (promptBefore) appendHtml(slot, promptHtml);
       appendHtml(slot, goalHtml(block));
       if (!promptBefore) appendHtml(slot, promptHtml);
-    } else if (block.type === "vocabulary") {
+    } else if (!Array.isArray(block.content) && block.type === "vocabulary") {
       if (promptBefore) appendHtml(slot, promptHtml);
       appendHtml(slot, vocabHtml(block));
       if (!promptBefore) appendHtml(slot, promptHtml);
-    }
-    else if (block.type === "mistake") appendHtml(slot, mistakeHtml(block));
-    else if (block.items) {
-      appendHtml(slot, "<ul class=\"block-list\">" + block.items.map(function (item) {
-        return "<li>" + prose(item) + "</li>";
-      }).join("") + "</ul>");
+    } else if (!Array.isArray(block.content) && block.type === "mistake")
+      appendHtml(slot, mistakeHtml(block));
+    else if (!Array.isArray(block.content) && block.items) {
+      appendHtml(
+        slot,
+        '<ul class="block-list">' +
+          block.items
+            .map(function (item) {
+              return "<li>" + prose(item) + "</li>";
+            })
+            .join("") +
+          "</ul>",
+      );
     }
 
-    if (block.steps && block.steps.length) {
+    if (!Array.isArray(block.content) && block.steps && block.steps.length) {
       if (block.reveal) slot.appendChild(revealNode(block.steps));
       else appendHtml(slot, block.steps.map(stepHtml).join(""));
     }
 
-    const task = taskNode(block, ctx);
-    if (task) slot.appendChild(task);
-    if (block.zeszyt) slot.appendChild(zeszytNode(block.zeszyt, ctx));
+    if (!Array.isArray(block.content)) {
+      const task = taskNode(block, ctx);
+      if (task) slot.appendChild(task);
+      if (block.zeszyt) slot.appendChild(zeszytNode(block.zeszyt, ctx));
+    }
 
     // Skip empty placeholder when content is filled later by lesson-local hooks
     // (e.g. enPrompt / taskSequence / flashAudio / speakItems).
-    const deferred = !!(block.taskSequence || block.enPrompt || block.flashAudio ||
-      block.speakItems || block.speakBoard || block.speak || block.atTimeTeach ||
-      block.thenTeach || block.phraseDive || block.speakingPrep || block.lessonClose);
+    const deferred = !!(
+      block.taskSequence ||
+      block.enPrompt ||
+      block.flashAudio ||
+      block.speakItems ||
+      block.speakBoard ||
+      block.speak ||
+      block.atTimeTeach ||
+      block.thenTeach ||
+      block.phraseDive ||
+      block.speakingPrep ||
+      block.lessonClose
+    );
     if (!slot.childNodes.length && !deferred) {
-      appendHtml(slot, '<div class="block-empty">' + esc(EduMostI18n.t("placeholder")) + "</div>");
+      appendHtml(
+        slot,
+        '<div class="block-empty">' +
+          esc(EduMostI18n.t("placeholder")) +
+          "</div>",
+      );
     }
 
     wrap.appendChild(slot);

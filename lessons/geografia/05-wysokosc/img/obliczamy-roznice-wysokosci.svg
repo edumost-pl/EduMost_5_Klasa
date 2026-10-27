@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="390" viewBox="0 0 1000 390">
+<rect width="1000" height="390" rx="24" fill="#fff9e8"/>
+<text x="40" y="55" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#17324d">JAK OBLICZYĆ WYSOKOŚĆ WZGLĘDNĄ?</text>
+<rect x="40" y="95" width="920" height="95" rx="18" fill="#e8f5df" stroke="#6aaa45" stroke-width="3"/>
+<text x="75" y="135" font-family="Arial,sans-serif" font-size="25" fill="#244c22">Wysokość szczytu</text>
+<text x="75" y="170" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#244c22">720 m n.p.m.</text>
+<text x="475" y="155" font-family="Arial,sans-serif" font-size="42" font-weight="700" fill="#17324d">−</text>
+<text x="550" y="135" font-family="Arial,sans-serif" font-size="25" fill="#244c22">Wysokość podnóża</text>
+<text x="550" y="170" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#244c22">200 m n.p.m.</text>
+<path d="M500 205 L500 240" stroke="#17324d" stroke-width="4"/><path d="M488 230 L500 244 L512 230" fill="none" stroke="#17324d" stroke-width="4"/>
+<rect x="155" y="255" width="690" height="92" rx="18" fill="#dff1ff" stroke="#1686bf" stroke-width="3"/>
+<text x="200" y="292" font-family="Arial,sans-serif" font-size="25" fill="#125c86">Wysokość względna</text>
+<text x="200" y="329" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#125c86">720 m − 200 m = 520 m</text>
+</svg>

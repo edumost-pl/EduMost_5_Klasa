@@ -82,7 +82,7 @@
                 "Wysokość od poziomu morza i różnica wysokości między dwoma punktami.",
                 "Висота від рівня моря і різниця висот між двома точками.",
                 "Odróżnisz wysokość bezwzględną od względnej i odczytasz n.p.m.",
-                "Відрізніш абсолютну висоту від відносної і прочитаєш н.р.м."),
+                "Відрізніш абсолютну висоту від відносної і прочитаєш н.р.м.","05-wysokosc"),
               T(6, "poziomice", "Poziomice", "Горизонталі", "15",
                 "Linie tej samej wysokości: góra, dolina, kotlina i stromy stok.",
                 "Лінії однієї висоти: гора, долина, улоговина і крутий схил.",

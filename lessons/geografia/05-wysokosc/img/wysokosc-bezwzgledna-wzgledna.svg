@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e9f7ff"/><stop offset="1" stop-color="#ffffff"/></linearGradient><linearGradient id="hill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#86c95e"/><stop offset="1" stop-color="#347c42"/></linearGradient></defs>
+<rect width="1000" height="560" rx="24" fill="url(#sky)"/>
+<text x="44" y="48" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#17324d">WYSOKOŚĆ BEZWZGLĘDNA I WZGLĘDNA</text>
+<path d="M0 430 Q150 425 250 350 T470 125 Q525 65 580 145 T760 350 Q870 425 1000 430 L1000 560 L0 560Z" fill="url(#hill)"/>
+<path d="M0 455 L1000 455 L1000 560 L0 560Z" fill="#b7dff2"/>
+<line x1="0" y1="455" x2="1000" y2="455" stroke="#1686bf" stroke-width="4"/>
+<text x="40" y="493" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#125c86">POZIOM MORZA = 0 m</text>
+<circle cx="525" cy="84" r="9" fill="#d93636" stroke="#fff" stroke-width="3"/>
+<text x="548" y="91" font-family="Arial,sans-serif" font-size="26" font-weight="700" fill="#17324d">Szczyt: 720 m n.p.m.</text>
+<circle cx="250" cy="350" r="9" fill="#f0b323" stroke="#fff" stroke-width="3"/>
+<text x="38" y="330" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#17324d">Podnóże: 200 m n.p.m.</text>
+<line x1="830" y1="455" x2="830" y2="84" stroke="#d93636" stroke-width="5"/>
+<path d="M818 98 L830 78 L842 98 M818 441 L830 461 L842 441" fill="none" stroke="#d93636" stroke-width="5"/>
+<rect x="690" y="218" width="285" height="76" rx="16" fill="#fff" stroke="#d93636" stroke-width="3"/>
+<text x="710" y="249" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#b32828">Wysokość bezwzględna</text><text x="710" y="278" font-family="Arial,sans-serif" font-size="23" fill="#b32828">szczytu = 720 m</text>
+<line x1="250" y1="350" x2="525" y2="84" stroke="#f0b323" stroke-width="5" stroke-dasharray="12 10"/>
+<rect x="315" y="205" width="270" height="70" rx="16" fill="#fff" stroke="#d99b00" stroke-width="3"/>
+<text x="335" y="235" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#805800">Wysokość względna</text><text x="335" y="262" font-family="Arial,sans-serif" font-size="22" fill="#805800">720 − 200 = 520 m</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="580" viewBox="0 0 1000 580">
+<rect width="1000" height="580" rx="24" fill="#f2f9ff"/>
+<text x="40" y="48" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#17324d">TEN SAM SZCZYT — RÓŻNA WYSOKOŚĆ WZGLĘDNA</text>
+<path d="M0 470 Q130 460 230 350 Q350 210 500 105 Q650 210 770 350 Q860 440 1000 470 L1000 580 L0 580Z" fill="#79bd57"/>
+<circle cx="500" cy="105" r="9" fill="#c62828" stroke="#fff" stroke-width="3"/>
+<text x="520" y="112" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#17324d">Szczyt 720 m n.p.m.</text>
+<circle cx="230" cy="350" r="9" fill="#f0b323" stroke="#fff" stroke-width="3"/>
+<text x="35" y="330" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#17324d">Punkt A: 200 m</text>
+<circle cx="770" cy="350" r="9" fill="#1686bf" stroke="#fff" stroke-width="3"/>
+<text x="700" y="325" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#17324d">Punkt B: 400 m</text>
+<path d="M260 350 L475 125" stroke="#d99b00" stroke-width="5" stroke-dasharray="12 9" fill="none"/>
+<path d="M750 350 L525 125" stroke="#1686bf" stroke-width="5" stroke-dasharray="12 9" fill="none"/>
+<rect x="40" y="500" width="420" height="56" rx="14" fill="#fff" stroke="#d99b00" stroke-width="3"/>
+<text x="60" y="535" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#805800">Od A: 720 − 200 = 520 m</text>
+<rect x="530" y="500" width="430" height="56" rx="14" fill="#fff" stroke="#1686bf" stroke-width="3"/>
+<text x="550" y="535" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#125c86">Od B: 720 − 400 = 320 m</text>
+</svg>

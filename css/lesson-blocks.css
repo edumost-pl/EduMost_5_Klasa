@@ -4464,28 +4464,35 @@ body[data-topic="sprawdzian-2026-10-19"] .block-list li {
   margin: .4rem 0;
   line-height: 1.45;
 }
-body[data-topic="sprawdzian-2026-10-19"] .rule-card {
+body[data-topic="sprawdzian-2026-10-19"] .rule-card .lesson-block{
   background: #f6f3b8;
   border: 2px solid #1e4638;
   border-radius: 22px;
   padding: .95rem 1.15rem 1.05rem;
   margin: .15rem 0 1rem;
 }
-body[data-topic="sprawdzian-2026-10-19"] .rule-kicker {
+.lesson-block .rule-card {
+  background: #f6f3b8;
+  border: 2px solid #1e4638;
+  border-radius: 22px;
+  padding: .95rem 1.15rem 1.05rem;
+  margin: .15rem 0 1rem;
+}
+.lesson-block .rule-kicker {
   margin: 0 0 .55rem;
   color: #1b4d32;
   font-size: 1.2rem;
   font-weight: 800;
   line-height: 1.2;
 }
-body[data-topic="sprawdzian-2026-10-19"] .rule-line {
+.lesson-block .rule-line {
   margin: .42rem 0;
   color: #1b4d32;
   font-size: 1.12rem;
   font-weight: 600;
   line-height: 1.4;
 }
-body[data-topic="sprawdzian-2026-10-19"] .rule-line .tx-bold {
+.lesson-block .rule-line .tx-bold {
   font-weight: 800;
 }
 body[data-topic="sprawdzian-2026-10-19"] .lesson-block .task-card {
